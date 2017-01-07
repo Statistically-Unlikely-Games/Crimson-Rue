@@ -1,0 +1,21 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 106, in script
+    return
+Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Apothecary Game/game/script.rpy', 1483748516, 7).
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 106, in script
+    return
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1367, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\execution.py", line 523, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Apothecary Game/game/script.rpy', 1483748516, 7).
+
+Windows-8-6.2.9200
+Ren'Py 6.99.11.1749
+Apothecary Game 0.1
