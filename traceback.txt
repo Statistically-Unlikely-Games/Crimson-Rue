@@ -1,49 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 154, in script
-    $ renpy.pause()
-  File "game/script.rpy", line 154, in <module>
-    $ renpy.pause()
-  File "game/inventory.rpy", line 175, in execute
-    screen inventory_craft(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
-  File "game/inventory.rpy", line 175, in execute
-    screen inventory_craft(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
-  File "game/inventory.rpy", line 180, in execute
-    frame:
-  File "game/inventory.rpy", line 182, in execute
-    hbox:
-  File "game/inventory.rpy", line 191, in execute
-    use crafting_per(first_inventory)
-  File "game/inventory.rpy", line 303, in execute
-    screen crafting_per(inventory):
-  File "game/inventory.rpy", line 303, in execute
-    screen crafting_per(inventory):
-  File "game/inventory.rpy", line 304, in execute
-    vbox:
-  File "game/inventory.rpy", line 310, in execute
-    side "c r":
-  File "game/inventory.rpy", line 312, in execute
-    viewport id "craftlist":
-  File "game/inventory.rpy", line 315, in execute
-    vbox:
-  File "game/inventory.rpy", line 316, in execute
-    for item in craftlist:
-NameError: name 'craftlist' is not defined
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+Exception: Required parameter first_inventory has no value.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 154, in script
-    $ renpy.pause()
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 805, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\python.py", line 1641, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/script.rpy", line 154, in <module>
-    $ renpy.pause()
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\exports.py", line 1267, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward)
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ui.py", line 278, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
@@ -64,32 +38,11 @@ Full traceback:
     self.update()
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 573, in update
     self.screen.function(**self.scope)
-  File "game/inventory.rpy", line 175, in execute
-    screen inventory_craft(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
-  File "game/inventory.rpy", line 175, in execute
-    screen inventory_craft(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
-  File "game/inventory.rpy", line 180, in execute
-    frame:
-  File "game/inventory.rpy", line 182, in execute
-    hbox:
-  File "game/inventory.rpy", line 191, in execute
-    use crafting_per(first_inventory)
-  File "game/inventory.rpy", line 303, in execute
-    screen crafting_per(inventory):
-  File "game/inventory.rpy", line 303, in execute
-    screen crafting_per(inventory):
-  File "game/inventory.rpy", line 304, in execute
-    vbox:
-  File "game/inventory.rpy", line 310, in execute
-    side "c r":
-  File "game/inventory.rpy", line 312, in execute
-    viewport id "craftlist":
-  File "game/inventory.rpy", line 315, in execute
-    vbox:
-  File "game/inventory.rpy", line 316, in execute
-    for item in craftlist:
-  File "<screen language>", line 316, in <module>
-NameError: name 'craftlist' is not defined
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 148, in apply_arguments
+    return parameters.apply(args, kwargs, ignore_errors)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 117, in apply
+    raise Exception("Required parameter %s has no value." % name)
+Exception: Required parameter first_inventory has no value.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749

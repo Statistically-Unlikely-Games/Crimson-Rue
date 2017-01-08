@@ -53,10 +53,12 @@ label start:
         herb004_col = True
         herb005_col = True
     
+    
     ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
     $ cookbook = list() 
-        
     call items
+    $ craftlist = [extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010]
+    
     
     $ pc_inv.take(water,50)
     $ pc_inv.take(herb001,4)

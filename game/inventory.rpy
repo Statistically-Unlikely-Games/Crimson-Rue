@@ -188,7 +188,7 @@ screen inventory_craft(first_inventory, second_inventory=True, trade_mode=False,
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 textbutton "Close" action Hide("inventory_craft")
-            use crafting_per(first_inventory)
+            use crafting_workbench(first_inventory)
                 
 screen inventory_view(inventory, second_inventory=False, trade_mode=False):     
     side "c r":
@@ -300,7 +300,7 @@ screen crafting(inventory):
             vbar value YScrollValue("cookbook") 
         textbutton "Hide" action ToggleScreenVariable("crafting_screen") xalign 0.5
         
-screen crafting_per(inventory):
+screen crafting_workbench(inventory):
     vbox:            
         label "Recipes"
         hbox:
@@ -309,11 +309,11 @@ screen crafting_per(inventory):
             text "Ingredients" xalign 0.5   
         side "c r":
             area (0,0,600,400)
-            viewport id "cookbook":           
+            viewport id "craftlist":           
                 draggable True
                 mousewheel True
                 vbox:
-                    for item in cookbook:
+                    for item in craftlist:
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
@@ -333,7 +333,7 @@ screen crafting_per(inventory):
                                     text "x" + str(i[1]) bold True
                                 else:
                                     text "x" + str(i[1])             
-            vbar value YScrollValue("cookbook") 
+            vbar value YScrollValue("craftlist") 
 
                 
 screen view_nav(inventory):
