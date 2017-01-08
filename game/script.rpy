@@ -45,8 +45,6 @@ label start:
     $ calendar = Calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
-    $ cnt = 1
-    
     init python:
         timeofday = "sunrise"
         herb001_col = True
@@ -55,11 +53,10 @@ label start:
         herb004_col = True
         herb005_col = True
     
-    call items
-    
     ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
     $ cookbook = list() 
-    $ craftlist = list(extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010)
+        
+    call items
     
     $ pc_inv.take(water,50)
     $ pc_inv.take(herb001,4)

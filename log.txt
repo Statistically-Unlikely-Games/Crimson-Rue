@@ -1,21 +1,21 @@
-Sat Jan 07 17:50:59 2017
+Sat Jan 07 19:20:41 2017
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749
  
 
-Bootstrap to the start of init.init took 0.06s
+Bootstrap to the start of init.init took 0.07s
 Early init took 0.03s
-Loader init took 0.04s
+Loader init took 0.16s
 Loading error handling took 0.02s
-Loading script took 0.14s
+Loading script took 0.23s
 Loading persistent took 0.05s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.08s
+Running init code took 0.07s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Ari\\AppData\\Roaming/RenPy/backups\\Apothecary Game':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.10s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.500000
@@ -25,16 +25,17 @@ Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.10s
+Save screen analysis took 0.13s
 Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.28s
 Save bytecode. took 0.08s
 Running _start took 0.00s
-Interface start took 0.02s
+Performance test:
+Interface start took 0.00s
 
 primary display bounds: (0, 0, 1920, 1080)
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1728, 972) drawable=(1728, 972)
+Screen sizes: virtual=(1280, 720) physical=(1736, 976) drawable=(1736, 976)
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics 530'
 Version: '4.4.0 - Build 21.20.16.4534'
@@ -264,9 +265,10 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.37199997902s
-Traceback (most recent call last):
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\execution.py", line 408, in run
-    node.execute()
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 805, in execute
-    renpy.python.py_e
+Total time until interface ready: 1.82999992371s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.009000 seconds.
+- Frame drawn at 0.015000 seconds.
+- Frame drawn at 0.031000 seconds.
+- Frame drawn

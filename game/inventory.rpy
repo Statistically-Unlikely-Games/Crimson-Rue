@@ -6,7 +6,6 @@ init python:
     class Item(store.object):
         def __init__(self, name, desc, icon=False, value=0, act=Show("inventory_popup", message="Nothing happened!"), type="item", recipe=False):
             global cookbook
-            global craftlist
             self.name = name
             self.desc = desc
             self.icon = icon
@@ -310,11 +309,11 @@ screen crafting_per(inventory):
             text "Ingredients" xalign 0.5   
         side "c r":
             area (0,0,600,400)
-            viewport id "craftlist":           
+            viewport id "cookbook":           
                 draggable True
                 mousewheel True
                 vbox:
-                    for item in craftlist:
+                    for item in cookbook:
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
@@ -335,6 +334,7 @@ screen crafting_per(inventory):
                                 else:
                                     text "x" + str(i[1])             
             vbar value YScrollValue("cookbook") 
+
                 
 screen view_nav(inventory):
     hbox:
@@ -374,6 +374,3 @@ init -2:
     style invstyle_label:
         xalign 0.5    
     
-label test01:
-    $ cnt += 1
-    "This is a test. [cnt]"

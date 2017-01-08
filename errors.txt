@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/inventory.rpy", line 181: expected a keyword argument or end of line.
-    style group "invstyle"
-                ^
+File "game/overworld.rpy", line 26: u'True' is not a keyword argument or valid child for the imagebutton statement.
+    imagebutton auto "gui/button.overworld.forest_%s.png" xpos 0 ypos 0 action focus_mask True Jump("forest001")
+                                                                                              ^
 
 Ren'Py Version: Ren'Py 6.99.11.1749
