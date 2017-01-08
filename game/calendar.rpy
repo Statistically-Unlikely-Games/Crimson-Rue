@@ -157,7 +157,7 @@ screen calendar_testing:
         
 screen calendar:
     
-    tag menu3
+    tag menu
     
     python:
         if calendar.day < 10:

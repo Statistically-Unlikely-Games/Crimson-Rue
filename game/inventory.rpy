@@ -6,6 +6,7 @@ init python:
     class Item(store.object):
         def __init__(self, name, desc, icon=False, value=0, act=Show("inventory_popup", message="Nothing happened!"), type="item", recipe=False):
             global cookbook
+            global craftlist
             self.name = name
             self.desc = desc
             self.icon = icon
@@ -147,7 +148,7 @@ screen tooltip(item=False,seller=false):
 screen inventory_screen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     default crafting_screen = False
     tag menu
-    modal False        
+    modal True       
     frame:
         style_group "invstyle"          
         hbox:
@@ -171,6 +172,24 @@ screen inventory_screen(first_inventory, second_inventory=False, trade_mode=Fals
                     use sort_nav(second_inventory)
             if crafting_screen:
                 use crafting(first_inventory)
+                
+screen inventory_craft(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
+    default crafting_screen = True
+    tag menu
+    modal True 
+    
+    frame:
+        style_group "invstyle"
+        hbox:
+            spacing 25
+            vbox:
+                label first_inventory.name                   
+                use money(first_inventory, second_inventory, bank_mode) 
+                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use view_nav(first_inventory)
+                use sort_nav(first_inventory)
+                textbutton "Close" action Hide("inventory_craft")
+            use crafting_per(first_inventory)
                 
 screen inventory_view(inventory, second_inventory=False, trade_mode=False):     
     side "c r":
@@ -281,6 +300,41 @@ screen crafting(inventory):
                                     text "x" + str(i[1])             
             vbar value YScrollValue("cookbook") 
         textbutton "Hide" action ToggleScreenVariable("crafting_screen") xalign 0.5
+        
+screen crafting_per(inventory):
+    vbox:            
+        label "Recipes"
+        hbox:
+            xmaximum 600 xminimum 600 xfill True         
+            text "Name" xalign 0.5   
+            text "Ingredients" xalign 0.5   
+        side "c r":
+            area (0,0,600,400)
+            viewport id "craftlist":           
+                draggable True
+                mousewheel True
+                vbox:
+                    for item in craftlist:
+                        hbox:                            
+                            first_spacing 25 spacing 10
+                            hbox:
+                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                if item.icon:
+                                    add im.FactorScale(item.icon, 0.33)
+                                if inventory.check_recipe(item):
+                                    textbutton item.name action Function(inventory.craft,item)
+                                else:                                                                   
+                                    text item.name
+                            for i in item.recipe: 
+                                if i[0].icon:
+                                    add im.FactorScale(i[0].icon, 0.33)
+                                else:
+                                    text i[0].name
+                                if inventory.qty(i[0]) >= i[1]:
+                                    text "x" + str(i[1]) bold True
+                                else:
+                                    text "x" + str(i[1])             
+            vbar value YScrollValue("cookbook") 
                 
 screen view_nav(inventory):
     hbox:
@@ -320,3 +374,6 @@ init -2:
     style invstyle_label:
         xalign 0.5    
     
+label test01:
+    $ cnt += 1
+    "This is a test. [cnt]"

@@ -1,20 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 106, in script
-    return
-Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Apothecary Game/game/script.rpy', 1483748516, 7).
+  File "game/script.rpy", line 58, in script call
+    call items
+  File "game/items.rpy", line 49, in script
+    $ extract001 = Item("Herbal Extract 01", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb001,1]])
+  File "game/items.rpy", line 49, in <module>
+    $ extract001 = Item("Herbal Extract 01", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb001,1]])
+  File "game/inventory.rpy", line 19, in __init__
+    cookbook.append(self)
+NameError: global name 'cookbook' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 106, in script
-    return
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1367, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\execution.py", line 523, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Apothecary Game/game/script.rpy', 1483748516, 7).
+  File "game/script.rpy", line 58, in script call
+    call items
+  File "game/items.rpy", line 49, in script
+    $ extract001 = Item("Herbal Extract 01", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb001,1]])
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 805, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\python.py", line 1641, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/items.rpy", line 49, in <module>
+    $ extract001 = Item("Herbal Extract 01", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb001,1]])
+  File "game/inventory.rpy", line 19, in __init__
+    cookbook.append(self)
+NameError: global name 'cookbook' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749
