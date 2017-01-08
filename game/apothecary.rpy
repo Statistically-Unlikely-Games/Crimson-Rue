@@ -14,7 +14,7 @@ screen apothecary:
             textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
             textbutton "Exit" action Quit(confirm=False)
     
-    imagebutton auto "gui/button.shop.workbench_%s.png" xpos 570 ypos 450 focus_mask True action Show("inventory_craft", first_inventory=pc_inv)
+    imagebutton auto "gui/button.shop.workbench_%s.png" xpos 570 ypos 450 focus_mask True action Show("inventory_craftbalm", first_inventory=pc_inv)
     imagebutton auto "gui/button.shop.storage_%s.png" xpos 1221 ypos 0 focus_mask True action Show("inventory_screen", first_inventory=pc_inv, second_inventory=chest, trade_mode=True, bank_mode=True)
     imagebutton auto "gui/button.shop.herblist_%s.png" xpos 1125 ypos 331 focus_mask True action Jump("herblist")
     imagebutton auto "gui/button.shop.door_%s.png" xpos 405 ypos 80 focus_mask True action Jump("overworld01")

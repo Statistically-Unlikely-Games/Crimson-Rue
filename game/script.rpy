@@ -57,7 +57,13 @@ label start:
     ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
     $ cookbook = list() 
     call items
-    $ craftlist = [extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010]
+    $ balmslist = [balm001,balm002,balm003,balm004,balm005,balm006,balm007,balm008,balm009,balm010]
+    $ creamslist = [cream001,cream002,cream003,cream004,cream005,cream006,cream007,cream008,cream009,cream010]
+    $ extractslist = [extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010]
+    $ herboilslist = [herb_oil001,herb_oil002,herb_oil003,herb_oil004,herb_oil005,herb_oil006,herb_oil007,herb_oil008,herb_oil009,herb_oil010]
+    $ infusionslist = [infusion001,infusion002,infusion003,infusion004,infusion005,infusion006,infusion007,infusion008,infusion009,infusion010]
+    $ salveslist = [salve001,salve002,salve003,salve004,salve005,salve006,salve007,salve008,salve009,salve010]
+    $ tinctureslist = [tincture001,tincture002,tincture003,tincture004,tincture005,tincture006,tincture007,tincture008,tincture009,tincture010]
     
     
     $ pc_inv.take(water,50)

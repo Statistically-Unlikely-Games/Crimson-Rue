@@ -1,17 +1,17 @@
-Sat Jan 07 19:40:13 2017
+Sat Jan 07 20:48:57 2017
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749
  
 
 Bootstrap to the start of init.init took 0.07s
 Early init took 0.03s
-Loader init took 0.17s
+Loader init took 0.18s
 Loading error handling took 0.02s
-Loading script took 0.23s
+Loading script took 0.32s
 Loading persistent took 0.04s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.07s
-Loading analysis data took 0.05s
+Running init code took 0.08s
+Loading analysis data took 0.06s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Ari\\AppData\\Roaming/RenPy/backups\\Apothecary Game':
@@ -24,18 +24,18 @@ Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
+Analyze screens took 0.02s
 Save screen analysis took 0.12s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.08s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.36s
+Save bytecode. took 0.59s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.01s
 
 primary display bounds: (0, 0, 1920, 1080)
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1733, 975) drawable=(1733, 975)
+Screen sizes: virtual=(1280, 720) physical=(1728, 972) drawable=(1728, 972)
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics 530'
 Version: '4.4.0 - Build 21.20.16.4534'
@@ -265,10 +265,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.55800008774s
+Total time until interface ready: 2.55999994278s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.014000 seconds.
-- Frame drawn at 0.031000 seconds.
+- Frame drawn at 0.016000 seconds.
+- Frame drawn at 0.032000 seconds.
 - Frame drawn at 0.048000 seconds.
-- Frame drawn
+- Frame drawn at 0.065000 seconds.
+- 0.065000 seconds to render 5 frames.
