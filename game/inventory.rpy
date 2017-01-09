@@ -1,10 +1,10 @@
 ##Ren'Py Inventory System v. 1.5 provided under public domain by saguaro
 
-init -50 python: 
+init python: 
     import renpy.store as store    
     
     class Item(store.object):
-        def __init__(self, name, desc, icon=False, value=0, act=Show("inventory_popup", message="Nothing happened!",item="item"), type="item", recipe=False):
+        def __init__(self, name, desc, icon=False, value=0, act=Show("inventory_popup", message="Nothing happened!"), type="item", recipe=False):
             global cookbook
             self.name = name
             self.desc = desc
@@ -68,7 +68,7 @@ init -50 python:
                 self.drop(line[0], line[1])
             self.take(item)  
             message = "Crafted %s!" % (item.name)
-            renpy.show_screen("inventory_popup", message=message,item=item.name)   
+            renpy.show_screen("inventory_popup2", message=message,item=item.name)   
                             
         def deposit(self, amount):
             self.money -= amount   
@@ -120,7 +120,7 @@ init -50 python:
             withdrawer.withdraw(amount) 
         else:
             message = "Sorry, %s doesn't have %d!" % (buyer.name, amount) 
-            renpy.show_screen("inventory_popup", message=message,item=item.name) 
+            renpy.show_screen("inventory_popup", message=message) 
 
     def trade(seller, buyer, item):
         seller.drop(item[0])
@@ -133,7 +133,7 @@ init -50 python:
             buyer.buy(item, price)
         else:
             message = "Sorry, %s doesn't have enough money!" % (buyer.name)
-            renpy.show_screen("inventory_popup", message=message,item=item.name)
+            renpy.show_screen("inventory_popup", message=message)
 
     transfer_amount = 0
                 
@@ -692,14 +692,22 @@ screen craft_nav(inventory):
         textbutton "Salves" action Show("inventory_craftsalve", first_inventory=pc_inv)
         textbutton "Tinctures" action Show("inventory_crafttincture", first_inventory=pc_inv)
 
-screen inventory_popup(message,item):
+screen inventory_popup(message):
+    zorder 100
+    frame:
+        style_group "invstyle"
+        vbox:
+            text message
+    timer 0.8 action Hide("inventory_popup")
+    
+screen inventory_popup2(message,item):
     zorder 100
     imagebutton idle "gui/"+item+"_notification.png" xalign 0.5 yalign 0.35
     frame:
         style_group "msgstyle"
         vbox:
             text message
-    timer 0.8 action Hide("inventory_popup")
+    timer 0.8 action Hide("inventory_popup2")
     
 init -2: 
 

@@ -89,31 +89,31 @@ screen forest:
     
 label herb001:
     $ pc_inv.take(herb001)
-    show screen inventory_popup(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
     
     jump forest001
     
 label herb002:
     $ pc_inv.take(herb002)
-    show screen inventory_popup(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
     
     jump forest001
     
 label herb003:
     $ pc_inv.take(herb003)
-    show screen inventory_popup(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
     
     jump forest001
     
 label herb004:
     $ pc_inv.take(herb004)
-    show screen inventory_popup(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
     
     jump forest001
     
 label herb005:
     $ pc_inv.take(herb005)
-    show screen inventory_popup(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
     
     jump forest001
     
