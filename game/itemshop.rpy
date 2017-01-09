@@ -46,7 +46,6 @@ screen itemshop:
         xanchor 0 yanchor 0
     
 label leave_itemshop:
-    "I think I'm done here for now."
     show screen overworld
     $ time_cnt += 1
     if time_cnt > 5:

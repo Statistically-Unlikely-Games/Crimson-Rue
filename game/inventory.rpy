@@ -1,10 +1,10 @@
 ##Ren'Py Inventory System v. 1.5 provided under public domain by saguaro
 
-init python: 
+init -50 python: 
     import renpy.store as store    
     
     class Item(store.object):
-        def __init__(self, name, desc, icon=False, value=0, act=Show("inventory_popup", message="Nothing happened!"), type="item", recipe=False):
+        def __init__(self, name, desc, icon=False, value=0, act=Show("inventory_popup", message="Nothing happened!",item="item"), type="item", recipe=False):
             global cookbook
             self.name = name
             self.desc = desc
@@ -43,7 +43,9 @@ init python:
             
         def buy(self, item, price):            
             self.deposit(price)            
-            self.take(item[0])                
+            self.take(item[0]) #Why is the zero there? Adding a popup doesn't work, maybe because of the zero. Says the object has no name.
+#            message = "Purchased %s!" % (item.name)
+#            renpy.show_screen("inventory_popup", message=message,item=item.name)
 
         def check(self, item):
             if self.qty(item):
@@ -65,8 +67,8 @@ init python:
             for line in item.recipe:
                 self.drop(line[0], line[1])
             self.take(item)  
-            message = "Crafted a %s!" % (item.name)
-            renpy.show_screen("inventory_popup", message=message)   
+            message = "Crafted %s!" % (item.name)
+            renpy.show_screen("inventory_popup", message=message,item=item.name)   
                             
         def deposit(self, amount):
             self.money -= amount   
@@ -118,7 +120,7 @@ init python:
             withdrawer.withdraw(amount) 
         else:
             message = "Sorry, %s doesn't have %d!" % (buyer.name, amount) 
-            renpy.show_screen("inventory_popup", message=message) 
+            renpy.show_screen("inventory_popup", message=message,item=item.name) 
 
     def trade(seller, buyer, item):
         seller.drop(item[0])
@@ -131,7 +133,7 @@ init python:
             buyer.buy(item, price)
         else:
             message = "Sorry, %s doesn't have enough money!" % (buyer.name)
-            renpy.show_screen("inventory_popup", message=message)
+            renpy.show_screen("inventory_popup", message=message,item=item.name)
 
     transfer_amount = 0
                 
@@ -690,13 +692,14 @@ screen craft_nav(inventory):
         textbutton "Salves" action Show("inventory_craftsalve", first_inventory=pc_inv)
         textbutton "Tinctures" action Show("inventory_crafttincture", first_inventory=pc_inv)
 
-screen inventory_popup(message):
+screen inventory_popup(message,item):
     zorder 100
+    imagebutton idle "gui/"+item+"_notification.png" xalign 0.5 yalign 0.35
     frame:
-        style_group "invstyle"
-        hbox:
+        style_group "msgstyle"
+        vbox:
             text message
-    timer 1.5 action Hide("inventory_popup")
+    timer 0.8 action Hide("inventory_popup")
     
 init -2: 
 
@@ -709,5 +712,15 @@ init -2:
         size 30
         
     style invstyle_label:
-        xalign 0.5    
-    
+        xalign 0.5 
+        
+    style msgstyle_frame:
+        xalign 0.5
+        yalign 0.61
+        
+    style msgstyle_label_text:
+        size 30
+        
+    style msgstyle_label:
+        xalign 0.5 
+

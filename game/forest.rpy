@@ -5,6 +5,10 @@
 
 
 label forest001:
+    init python: 
+        message = "message"
+    
+    show bg forest001
     show screen forest
     
     "Everything is so full of life."
@@ -12,8 +16,6 @@ label forest001:
 
 screen forest:
     tag menu2
-    
-    add "bg/forest001.png"
     
     frame:
         yalign 0.0 xalign 0.95
@@ -43,7 +45,7 @@ screen forest:
             idle "inv/herb001_idle.png"
             hover "inv/herb001_hover.png"
             focus_mask True
-            clicked [ SetVariable("herb001_col", False), Jump("herb001") ]
+            clicked [ SetVariable("herb001_col", False), Jump("herb001"), Show("inventory_popup", message="Nothing happened!", item="herb001") ]
             xpos 300 ypos 500
             xanchor 0 yanchor 0
             
@@ -87,31 +89,35 @@ screen forest:
     
 label herb001:
     $ pc_inv.take(herb001)
-    "You picked herb1."
+    show screen inventory_popup(message="Received Herb1",item="Herb 1")
+    
     jump forest001
     
 label herb002:
-    $ pc_inv.take(herb002)
-    "You picked herb2."
+    $ pc_inv.take(herb001)
+    show screen inventory_popup(message="Received Herb2",item="Herb 2")
+    
     jump forest001
-
+    
 label herb003:
-    $ pc_inv.take(herb003)
-    "You picked herb3."
+    $ pc_inv.take(herb001)
+    show screen inventory_popup(message="Received Herb3",item="Herb 3")
+    
     jump forest001
-
+    
 label herb004:
-    $ pc_inv.take(herb004)
-    "You picked herb4."
+    $ pc_inv.take(herb001)
+    show screen inventory_popup(message="Received Herb4",item="Herb 4")
+    
     jump forest001
-
+    
 label herb005:
-    $ pc_inv.take(herb005)
-    "You picked herb5."
+    $ pc_inv.take(herb001)
+    show screen inventory_popup(message="Received Herb5",item="Herb 5")
+    
     jump forest001
     
 label leave_forest:
-    "I think I'm done here for now."
     show screen overworld
     $ time_cnt += 1
     if time_cnt > 5:

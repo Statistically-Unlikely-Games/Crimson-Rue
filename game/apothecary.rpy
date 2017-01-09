@@ -35,6 +35,3 @@ screen apothecary:
     add moon_img align(0.17, 0.02)
     add time_img align(0.02, 0.135)
     
-label herblist:
-    "Sorry, I haven't programmed that yet!"
-    jump looping

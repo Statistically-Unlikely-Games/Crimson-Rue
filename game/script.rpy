@@ -18,6 +18,12 @@ init python hide:
             name = file.replace('cg/', '').replace('.png','')
             renpy.image(name, Image(file))
             
+init python hide:
+    for file in renpy.list_files():
+        if file.startswith('gui/') and file.endswith('notification.png'):
+            name = file.replace('gui/', '').replace('.png','')
+            renpy.image(name, Image(file))
+            
             
 # This is the splash screen. Should show my logo, and then the 
 # instructions for playing on the Ouya.
@@ -94,6 +100,20 @@ label start:
     
     jump apothecary_shop
 
+    
+label looping:
+    $ renpy.pause()
+    jump looping
+    
+label apothecary_shop:    
+    
+    show screen apothecary
+    
+    "You are in your apothecary shop."
+    
+    jump looping
+
+
 #    menu:
 #        "Feature demo":
 #            pass
@@ -157,16 +177,3 @@ label start:
 #    "That's it! Exit to end the demo when you are finished."    
     
 #    show screen overlay
-    
-label looping:
-    $ renpy.pause()
-    jump looping
-    
-label apothecary_shop:    
-    
-    show screen apothecary
-    
-    "You are in your apothecary shop."
-    
-    jump looping
-

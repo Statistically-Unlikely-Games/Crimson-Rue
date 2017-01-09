@@ -2,8 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/overworld.rpy", line 26: u'True' is not a keyword argument or valid child for the imagebutton statement.
-    imagebutton auto "gui/button.overworld.forest_%s.png" xpos 0 ypos 0 action focus_mask True Jump("forest001")
-                                                                                              ^
+File "game/inventory.rpy", line 7: is not terminated with a newline. (Check strings and parenthesis.)
+            def __init__(self, name, desc, icon=False, value=0, act=Show("inventory_popup", message="Nothing happened!",item="item", type="item", recipe=False):
 
 Ren'Py Version: Ren'Py 6.99.11.1749
