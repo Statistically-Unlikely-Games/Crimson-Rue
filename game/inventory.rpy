@@ -188,7 +188,7 @@ screen inventory_craftbalm(first_inventory, second_inventory=True, trade_mode=Fa
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craft")
+                textbutton "Close" action Hide("inventory_craftbalm")
             use crafting_balms(first_inventory)
             
 screen inventory_craftcream(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
@@ -207,7 +207,7 @@ screen inventory_craftcream(first_inventory, second_inventory=True, trade_mode=F
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craft")
+                textbutton "Close" action Hide("inventory_craftcream")
             use crafting_creams(first_inventory)
             
 screen inventory_craftextract(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
@@ -226,7 +226,7 @@ screen inventory_craftextract(first_inventory, second_inventory=True, trade_mode
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craft")
+                textbutton "Close" action Hide("inventory_craftextract")
             use crafting_extracts(first_inventory)
             
 screen inventory_craftherboil(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
@@ -245,7 +245,7 @@ screen inventory_craftherboil(first_inventory, second_inventory=True, trade_mode
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craft")
+                textbutton "Close" action Hide("inventory_craftherboil")
             use crafting_herboil(first_inventory)
             
 screen inventory_craftinfusion(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
@@ -264,7 +264,7 @@ screen inventory_craftinfusion(first_inventory, second_inventory=True, trade_mod
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craft")
+                textbutton "Close" action Hide("inventory_craftinfusion")
             use crafting_infusions(first_inventory)
             
 screen inventory_craftsalve(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
@@ -283,7 +283,7 @@ screen inventory_craftsalve(first_inventory, second_inventory=True, trade_mode=F
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craft")
+                textbutton "Close" action Hide("inventory_craftsalve")
             use crafting_salves(first_inventory)
             
 screen inventory_crafttincture(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
@@ -302,7 +302,7 @@ screen inventory_crafttincture(first_inventory, second_inventory=True, trade_mod
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craft")
+                textbutton "Close" action Hide("inventory_crafttincture")
             use crafting_tinctures(first_inventory)
                 
 screen inventory_view(inventory, second_inventory=False, trade_mode=False):     
