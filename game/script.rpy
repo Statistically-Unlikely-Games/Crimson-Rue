@@ -62,7 +62,10 @@ label start:
     
     ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
     $ cookbook = list() 
-    call items
+    
+    call define_items
+    call define_inventories
+    
     $ balmslist = [balm001,balm002,balm003,balm004,balm005,balm006,balm007,balm008,balm009,balm010]
     $ creamslist = [cream001,cream002,cream003,cream004,cream005,cream006,cream007,cream008,cream009,cream010]
     $ extractslist = [extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010]
@@ -70,33 +73,6 @@ label start:
     $ infusionslist = [infusion001,infusion002,infusion003,infusion004,infusion005,infusion006,infusion007,infusion008,infusion009,infusion010]
     $ salveslist = [salve001,salve002,salve003,salve004,salve005,salve006,salve007,salve008,salve009,salve010]
     $ tinctureslist = [tincture001,tincture002,tincture003,tincture004,tincture005,tincture006,tincture007,tincture008,tincture009,tincture010]
-    
-    
-    $ pc_inv.take(water,50)
-    $ pc_inv.take(herb001,4)
-    $ pc_inv.take(herb002)
-    $ pc_inv.take(herb003)
-    $ pc_inv.take(herb004,2)
-    $ pc_inv.take(herb005,3)
-    $ pc_inv.take(herb006,2)   
-    
-    $ pc_inv.money = 5000  
-    $ shop_inv = Inventory("Shop", 5000, 75)
-    $ shop_inv.take(herb007,4)
-    $ shop_inv.take(herb008,3)
-    $ shop_inv.take(herb009,2)
-    $ shop_inv.take(herb010)
-    $ shop_inv.take(bandages,50)
-    $ shop_inv.take(empty_bottle,50)
-    $ shop_inv.take(oil,50)
-    $ shop_inv.take(wine,50)
-    $ shop_inv.take(empty_tin,50)
-    $ shop_inv.take(wax,50)
-    $ shop_inv.take(empty_jar,50)
-    
-    $ chest = Inventory("Storage Chest")   
-    
-    "All inventory items have been generated."
     
     jump apothecary_shop
 

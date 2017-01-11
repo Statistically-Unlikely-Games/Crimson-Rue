@@ -174,7 +174,7 @@ screen inventory_screen(first_inventory, second_inventory=False, trade_mode=Fals
             if crafting_screen:
                 use crafting(first_inventory)
                 
-screen inventory_craftbalm(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
+screen inventory_craftbalm(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     default crafting_screen = True
     tag menu
     modal True 
@@ -193,7 +193,7 @@ screen inventory_craftbalm(first_inventory, second_inventory=True, trade_mode=Fa
                 textbutton "Close" action Hide("inventory_craftbalm")
             use crafting_balms(first_inventory)
             
-screen inventory_craftcream(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
+screen inventory_craftcream(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     default crafting_screen = True
     tag menu
     modal True 
@@ -212,7 +212,7 @@ screen inventory_craftcream(first_inventory, second_inventory=True, trade_mode=F
                 textbutton "Close" action Hide("inventory_craftcream")
             use crafting_creams(first_inventory)
             
-screen inventory_craftextract(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
+screen inventory_craftextract(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     default crafting_screen = True
     tag menu
     modal True 
@@ -231,7 +231,7 @@ screen inventory_craftextract(first_inventory, second_inventory=True, trade_mode
                 textbutton "Close" action Hide("inventory_craftextract")
             use crafting_extracts(first_inventory)
             
-screen inventory_craftherboil(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
+screen inventory_craftherboil(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     default crafting_screen = True
     tag menu
     modal True 
@@ -250,7 +250,7 @@ screen inventory_craftherboil(first_inventory, second_inventory=True, trade_mode
                 textbutton "Close" action Hide("inventory_craftherboil")
             use crafting_herboil(first_inventory)
             
-screen inventory_craftinfusion(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
+screen inventory_craftinfusion(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     default crafting_screen = True
     tag menu
     modal True 
@@ -269,7 +269,7 @@ screen inventory_craftinfusion(first_inventory, second_inventory=True, trade_mod
                 textbutton "Close" action Hide("inventory_craftinfusion")
             use crafting_infusions(first_inventory)
             
-screen inventory_craftsalve(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
+screen inventory_craftsalve(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     default crafting_screen = True
     tag menu
     modal True 
@@ -288,7 +288,7 @@ screen inventory_craftsalve(first_inventory, second_inventory=True, trade_mode=F
                 textbutton "Close" action Hide("inventory_craftsalve")
             use crafting_salves(first_inventory)
             
-screen inventory_crafttincture(first_inventory, second_inventory=True, trade_mode=False, bank_mode=False):
+screen inventory_crafttincture(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     default crafting_screen = True
     tag menu
     modal True 

@@ -1,8 +1,4 @@
-label items:
-    "You are now in the items label."
-
-    ######### DEFINE INVENTORIES ##########    
-    $ pc_inv = Inventory("Aeth")
+label define_items:
     
     ######### DEFINE ITEM OBJECTS ##########
     ### The format is name, description, icon image (if applicable), value (if applicable, selling/buying value), action (screen language action to be performed when icon is clicked on inventory screen), and recipe (if craftable).
@@ -123,6 +119,6 @@ label items:
     $ balm009 = Item("Balm09", "Medicine applied to the skin.", "inv/tin.medicine05.png", 1400, recipe=[[wax,1],[herb_oil009,1]])
     $ balm010 = Item("Balm10", "Medicine applied to the skin.", "inv/tin.medicine05.png", 1400, recipe=[[wax,1],[herb_oil010,1]])
     
-    "Let's return to script."
+    "Items have been defined."
     
     return 

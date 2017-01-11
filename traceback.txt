@@ -1,75 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 112, in script
-    "You are in your apothecary shop."
-  File "game/inventory.rpy", line 140, in execute
-    screen tooltip(item=False,seller=false):
-  File "game/inventory.rpy", line 140, in execute
-    screen tooltip(item=False,seller=false):
-  File "game/inventory.rpy", line 141, in execute
-    if item:
-  File "game/inventory.rpy", line 142, in execute
-    hbox:
-  File "game/inventory.rpy", line 144, in execute
-    if seller:
-  File "game/inventory.rpy", line 145, in execute
-    text ("[item[0].name]: [item[0].desc] (Sell Value: " + str(calculate_price(item, seller)) + ")")
-  File "game/inventory.rpy", line 114, in calculate_price
-    price = item[0].value * (buyer.barter * 0.01)
-AttributeError: 'bool' object has no attribute 'barter'
+  File "game/script.rpy", line 67, in script call
+    call define_inventory
+  File "game/script.rpy", line 67, in script call
+    call define_inventory
+ScriptError: could not find label 'define_inventory'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 112, in script
-    "You are in your apothecary shop."
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 603, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\exports.py", line 1135, in say
-    who(what, interact=interact)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 873, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 719, in do_display
-    **display_args)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 510, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ui.py", line 278, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2764, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 394, in visit_all
-    callback(self)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2764, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 404, in per_interact
-    self.update()
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 573, in update
-    self.screen.function(**self.scope)
-  File "game/inventory.rpy", line 140, in execute
-    screen tooltip(item=False,seller=false):
-  File "game/inventory.rpy", line 140, in execute
-    screen tooltip(item=False,seller=false):
-  File "game/inventory.rpy", line 141, in execute
-    if item:
-  File "game/inventory.rpy", line 142, in execute
-    hbox:
-  File "game/inventory.rpy", line 144, in execute
-    if seller:
-  File "game/inventory.rpy", line 145, in execute
-    text ("[item[0].name]: [item[0].desc] (Sell Value: " + str(calculate_price(item, seller)) + ")")
-  File "<screen language>", line 145, in <module>
-  File "game/inventory.rpy", line 114, in calculate_price
-    price = item[0].value * (buyer.barter * 0.01)
-AttributeError: 'bool' object has no attribute 'barter'
+  File "game/script.rpy", line 67, in script call
+    call define_inventory
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1313, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 67, in script call
+    call define_inventory
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\script.py", line 843, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'define_inventory'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749
