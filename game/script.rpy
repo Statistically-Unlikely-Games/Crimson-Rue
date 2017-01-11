@@ -114,6 +114,8 @@ label start:
     call define_items
     call define_inventories
     
+    $ cooklist = [balm001,cream002,extract003,herb_oil004,infusion005,salve006,tincture007]
+    
     $ balmslist = [balm001,balm002,balm003,balm004,balm005,balm006,balm007,balm008,balm009,balm010]
     $ creamslist = [cream001,cream002,cream003,cream004,cream005,cream006,cream007,cream008,cream009,cream010]
     $ extractslist = [extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010]

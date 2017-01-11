@@ -306,6 +306,24 @@ screen inventory_crafttincture(first_inventory, second_inventory=False, trade_mo
                 use craft_nav(first_inventory)
                 textbutton "Close" action Hide("inventory_crafttincture")
             use crafting_tinctures(first_inventory)
+
+screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    default crafting_screen = True
+    tag menu
+    modal True 
+    
+    frame:
+        style_group "invstyle"
+        hbox:
+            spacing 25
+            vbox:
+                label first_inventory.name                   
+                use money(first_inventory, second_inventory, bank_mode) 
+                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use view_nav(first_inventory)
+                use sort_nav(first_inventory)
+                textbutton "Close" action Hide("inventory_craftkitchen")
+            use crafting_kitchen(first_inventory)
                 
 screen inventory_view(inventory, second_inventory=False, trade_mode=False):     
     side "c r":
@@ -661,6 +679,41 @@ screen crafting_tinctures(inventory):
                                 else:
                                     text "x" + str(i[1])             
             vbar value YScrollValue("tinctureslist") 
+
+screen crafting_kitchen(inventory):
+    vbox:            
+        label "Recipes"
+        hbox:
+            xmaximum 600 xminimum 600 xfill True         
+            text "Name" xalign 0.5   
+            text "Ingredients" xalign 0.5   
+        side "c r":
+            area (0,0,600,400)
+            viewport id "cooklist":           
+                draggable True
+                mousewheel True
+                vbox:
+                    for item in cooklist:
+                        hbox:                            
+                            first_spacing 25 spacing 10
+                            hbox:
+                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                if item.icon:
+                                    add im.FactorScale(item.icon, 0.33)
+                                if inventory.check_recipe(item):
+                                    textbutton item.name action Function(inventory.craft,item)
+                                else:                                                                   
+                                    text item.name
+                            for i in item.recipe: 
+                                if i[0].icon:
+                                    add im.FactorScale(i[0].icon, 0.33)
+                                else:
+                                    text i[0].name
+                                if inventory.qty(i[0]) >= i[1]:
+                                    text "x" + str(i[1]) bold True
+                                else:
+                                    text "x" + str(i[1])             
+            vbar value YScrollValue("cooklist") 
 
                 
 screen view_nav(inventory):

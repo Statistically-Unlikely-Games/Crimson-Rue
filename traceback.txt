@@ -1,20 +1,95 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 106, in script
-    return
-Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Apothecary Game/game/forest.rpy', 1483772999, 14).
+  File "game/apothecary.rpy", line 48, in script
+    "You are in the kitchen."
+  File "game/inventory.rpy", line 310, in execute
+    screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+  File "game/inventory.rpy", line 310, in execute
+    screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+  File "game/inventory.rpy", line 315, in execute
+    frame:
+  File "game/inventory.rpy", line 317, in execute
+    hbox:
+  File "game/inventory.rpy", line 326, in execute
+    use crafting_kitchen(first_inventory)
+  File "game/inventory.rpy", line 683, in execute
+    screen crafting_kitchen(inventory):
+  File "game/inventory.rpy", line 683, in execute
+    screen crafting_kitchen(inventory):
+  File "game/inventory.rpy", line 684, in execute
+    vbox:
+  File "game/inventory.rpy", line 690, in execute
+    side "c r":
+  File "game/inventory.rpy", line 692, in execute
+    viewport id "cooklist":
+  File "game/inventory.rpy", line 695, in execute
+    vbox:
+  File "game/inventory.rpy", line 696, in execute
+    for item in cooklist:
+NameError: name 'cooklist' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 106, in script
-    return
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1367, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\execution.py", line 523, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Apothecary Game/game/forest.rpy', 1483772999, 14).
+  File "game/apothecary.rpy", line 48, in script
+    "You are in the kitchen."
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 603, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\exports.py", line 1135, in say
+    who(what, interact=interact)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 873, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 719, in do_display
+    **display_args)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 510, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ui.py", line 278, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2764, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 394, in visit_all
+    callback(self)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2764, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 404, in per_interact
+    self.update()
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 573, in update
+    self.screen.function(**self.scope)
+  File "game/inventory.rpy", line 310, in execute
+    screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+  File "game/inventory.rpy", line 310, in execute
+    screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+  File "game/inventory.rpy", line 315, in execute
+    frame:
+  File "game/inventory.rpy", line 317, in execute
+    hbox:
+  File "game/inventory.rpy", line 326, in execute
+    use crafting_kitchen(first_inventory)
+  File "game/inventory.rpy", line 683, in execute
+    screen crafting_kitchen(inventory):
+  File "game/inventory.rpy", line 683, in execute
+    screen crafting_kitchen(inventory):
+  File "game/inventory.rpy", line 684, in execute
+    vbox:
+  File "game/inventory.rpy", line 690, in execute
+    side "c r":
+  File "game/inventory.rpy", line 692, in execute
+    viewport id "cooklist":
+  File "game/inventory.rpy", line 695, in execute
+    vbox:
+  File "game/inventory.rpy", line 696, in execute
+    for item in cooklist:
+  File "<screen language>", line 696, in <module>
+NameError: name 'cooklist' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749
