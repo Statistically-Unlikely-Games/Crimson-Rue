@@ -1,24 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 67, in script call
-    call define_inventory
-  File "game/script.rpy", line 67, in script call
-    call define_inventory
-ScriptError: could not find label 'define_inventory'.
+  File "renpy/common/00start.rpy", line 106, in script
+    return
+Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Apothecary Game/game/forest.rpy', 1483772999, 14).
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 67, in script call
-    call define_inventory
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1313, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/script.rpy", line 67, in script call
-    call define_inventory
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\script.py", line 843, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'define_inventory'.
+  File "renpy/common/00start.rpy", line 106, in script
+    return
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1367, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\execution.py", line 523, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Apothecary Game/game/forest.rpy', 1483772999, 14).
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749

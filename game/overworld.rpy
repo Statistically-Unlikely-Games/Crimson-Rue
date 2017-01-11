@@ -5,6 +5,7 @@
 
 
 label overworld01:
+    show screen basic_overlay
     show screen overworld
     
     "The town where I live."
@@ -18,6 +19,7 @@ screen overworld:
     imagebutton:
          auto "gui/button.overworld.apothecary_%s.png" 
          focus_mask True 
+         clicked [ Hide("basic_overlay"), Jump("apothecary_shop") ]
          action Jump("apothecary_shop")
          xpos 717 ypos 427 
          xanchor 0 yanchor 0
@@ -25,14 +27,14 @@ screen overworld:
     imagebutton:
         auto "gui/button.overworld.itemshop_%s.png" 
         focus_mask True 
-        action Jump("item_shop")
+        clicked [ Hide("basic_overlay"), Jump("item_shop") ]
         xpos 1030 ypos 360 
         xanchor 0 yanchor 0
         
     imagebutton:
         auto "gui/button.overworld.forest_%s.png" 
         focus_mask True
-        action Jump("overworld02")
+        clicked [ Hide("basic_overlay"), Jump("overworld02") ]
         xpos 0 ypos 0 
         xanchor 0 yanchor 0
             

@@ -1,8 +1,10 @@
 screen basic_overlay:
+    zorder 50
     frame:
         yalign 0.0 xalign 0.95
         vbox:
             textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
+            textbutton "Return Home" action Jump("apothecary_shop")
             textbutton "Exit" action Quit(confirm=False)
     
     python:

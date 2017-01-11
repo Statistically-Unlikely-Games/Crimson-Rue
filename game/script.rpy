@@ -53,11 +53,59 @@ label start:
     $ day_cnt = 1
     init python:
         timeofday = "sunrise"
-        herb001_col = True
-        herb002_col = True
-        herb003_col = True
-        herb004_col = True
-        herb005_col = True
+        forest001_herb001_col = True
+        forest001_herb002_col = True
+        forest001_herb003_col = True
+        forest001_herb004_col = True
+        forest001_herb005_col = True
+        
+        forest002_herb001_col = True
+        forest002_herb002_col = True
+        forest002_herb003_col = True
+        forest002_herb004_col = True
+        forest002_herb005_col = True
+        
+        forest003_herb001_col = True
+        forest003_herb002_col = True
+        forest003_herb003_col = True
+        forest003_herb004_col = True
+        forest003_herb005_col = True
+        
+        forest004_herb001_col = True
+        forest004_herb002_col = True
+        forest004_herb003_col = True
+        forest004_herb004_col = True
+        forest004_herb005_col = True
+        
+        forest005_herb001_col = True
+        forest005_herb002_col = True
+        forest005_herb003_col = True
+        forest005_herb004_col = True
+        forest005_herb005_col = True
+        
+        forest006_herb001_col = True
+        forest006_herb002_col = True
+        forest006_herb003_col = True
+        forest006_herb004_col = True
+        forest006_herb005_col = True
+        
+        forest007_herb001_col = True
+        forest007_herb002_col = True
+        forest007_herb003_col = True
+        forest007_herb004_col = True
+        forest007_herb005_col = True
+        
+        forest008_herb001_col = True
+        forest008_herb002_col = True
+        forest008_herb003_col = True
+        forest008_herb004_col = True
+        forest008_herb005_col = True
+        
+        forest009_herb001_col = True
+        forest009_herb002_col = True
+        forest009_herb003_col = True
+        forest009_herb004_col = True
+        forest009_herb005_col = True
     
     
     ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
@@ -83,6 +131,7 @@ label looping:
     
 label apothecary_shop:    
     
+    hide screen basic_overlay
     show screen apothecary
     
     "You are in your apothecary shop."

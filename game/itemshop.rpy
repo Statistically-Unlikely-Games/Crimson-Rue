@@ -46,6 +46,7 @@ screen itemshop:
         xanchor 0 yanchor 0
     
 label leave_itemshop:
+    show screen basic_overlay
     show screen overworld
     $ time_cnt += 1
     if time_cnt > 5:
