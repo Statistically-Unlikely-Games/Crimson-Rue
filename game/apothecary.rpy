@@ -3,10 +3,26 @@
 #
 # Where you live. 
 
+label return_home:
+    "It's getting late. Better head home."
+    jump apothecary_shop
+
+label looping:
+    $ renpy.pause()
+    jump looping
+    
+label apothecary_shop:    
+    
+    show bg apothecary
+    hide screen basic_overlay
+    show screen apothecary
+    
+    "You are in your apothecary shop."
+    
+    jump looping
+
 screen apothecary:
     tag menu2
-    
-    add "bg/apothecary.png"
     
     frame:
         yalign 0.0 xalign 0.95

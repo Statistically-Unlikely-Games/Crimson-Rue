@@ -3,7 +3,6 @@
 #
 # Explore the forest.
 
-
 label overworld02:
     show screen basic_overlay
     show screen overworld02
@@ -65,6 +64,8 @@ label overworld02:
         $ forest009_herb003_col = True
         $ forest009_herb004_col = True
         $ forest009_herb005_col = True
+        
+        jump return_home
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"
@@ -101,56 +102,56 @@ screen overworld02:
     imagebutton:
         auto "gui/button.forest002_%s.png" 
         focus_mask True 
-        clicked [ Hide("basic_overlay"), Jump("forest002") ]
+        clicked [ Hide("basic_overlay"), Jump("forest002_layout") ]
         xpos 853 ypos 206
         xanchor 0 yanchor 0
         
     imagebutton:
         auto "gui/button.forest003_%s.png" 
         focus_mask True 
-        clicked [ Hide("basic_overlay"), Jump("forest003") ]
+        clicked [ Hide("basic_overlay"), Jump("forest003_layout") ]
         xpos 482 ypos 0
         xanchor 0 yanchor 0
         
     imagebutton:
         auto "gui/button.forest004_%s.png" 
         focus_mask True 
-        clicked [ Hide("basic_overlay"), Jump("forest004") ]
+        clicked [ Hide("basic_overlay"), Jump("forest004_layout") ]
         xpos 575 ypos 0
         xanchor 0 yanchor 0
     
     imagebutton:
         auto "gui/button.forest005_%s.png" 
         focus_mask True 
-        clicked [ Hide("basic_overlay"), Jump("forest005") ]
+        clicked [ Hide("basic_overlay"), Jump("forest005_layout") ]
         xpos 88 ypos 0
         xanchor 0 yanchor 0
     
     imagebutton:
         auto "gui/button.forest006_%s.png" 
         focus_mask True 
-        clicked [ Hide("basic_overlay"), Jump("forest006") ]
+        clicked [ Hide("basic_overlay"), Jump("forest006_layout") ]
         xpos 0 ypos 0
         xanchor 0 yanchor 0
     
     imagebutton:
         auto "gui/button.forest007_%s.png" 
         focus_mask True 
-        clicked [ Hide("basic_overlay"), Jump("forest007") ]
+        clicked [ Hide("basic_overlay"), Jump("forest007_layout") ]
         xpos 0 ypos 240
         xanchor 0 yanchor 0
     
     imagebutton:
         auto "gui/button.forest008_%s.png" 
         focus_mask True 
-        clicked [ Hide("basic_overlay"), Jump("forest008") ]
+        clicked [ Hide("basic_overlay"), Jump("forest008_layout") ]
         xpos 665 ypos 295
         xanchor 0 yanchor 0
         
     imagebutton:
         auto "gui/button.forest009_%s.png" 
         focus_mask True 
-        clicked [ Hide("basic_overlay"), Jump("forest009") ]
+        clicked [ Hide("basic_overlay"), Jump("forest009_layout") ]
         xpos 922 ypos 405
         xanchor 0 yanchor 0
         

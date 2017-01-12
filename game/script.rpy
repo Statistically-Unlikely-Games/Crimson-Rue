@@ -54,9 +54,6 @@ label start:
     init python:
         timeofday = "sunrise"
         
-        forest001_spawn = 1
-        forest002_spawn = 1
-        
         forest001_herb001_col = True
         forest001_herb001_col = True
         forest001_herb002_col = True
@@ -130,20 +127,6 @@ label start:
     $ tinctureslist = [tincture001,tincture002,tincture003,tincture004,tincture005,tincture006,tincture007,tincture008,tincture009,tincture010]
     
     jump apothecary_shop
-
-    
-label looping:
-    $ renpy.pause()
-    jump looping
-    
-label apothecary_shop:    
-    
-    hide screen basic_overlay
-    show screen apothecary
-    
-    "You are in your apothecary shop."
-    
-    jump looping
 
 
 #    menu:

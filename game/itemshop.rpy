@@ -5,6 +5,7 @@
 
 
 label item_shop:
+    show bg itemshop
     show screen itemshop
     
     "I can sell my wares and buy new supplies here."
@@ -12,8 +13,6 @@ label item_shop:
 
 screen itemshop:
     tag menu2
-    
-    add "bg/itemshop.png"
     
     frame:
         yalign 0.0 xalign 0.95
@@ -106,6 +105,8 @@ label leave_itemshop:
         $ forest009_herb003_col = True
         $ forest009_herb004_col = True
         $ forest009_herb005_col = True
+        
+        jump return_home
 
                 
     if time_cnt == 1:
@@ -120,6 +121,7 @@ label leave_itemshop:
     elif time_cnt == 4:
         $ timeofday = "sunset"
         "It is now sunset."
+        jump shop_closed
     else:
         $ timeofday = "night"
         "It is now night."
