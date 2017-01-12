@@ -3,6 +3,9 @@
 #
 # Collect herbs.
 
+label f1_layout:
+    $ f1 = renpy.random.randint(1, 5)
+    
 
 label forest001:
     init python: 
@@ -11,6 +14,7 @@ label forest001:
     show bg forest001
     show screen forest001
     
+    "Your random number is [f1]."
     "Everything is so full of life."
     jump forest001
 
@@ -40,51 +44,247 @@ screen forest001:
     add moon_img align(0.17, 0.02)
     add time_img align(0.02, 0.135)
     
-    if forest001_herb001_col:
-        imagebutton:
-            idle "inv/herb001_idle.png"
-            hover "inv/herb001_hover.png"
-            focus_mask True
-            clicked [ SetVariable("forest001_herb001_col", False), Jump("forest001_herb001") ]
-            xpos 300 ypos 500
-            xanchor 0 yanchor 0
-            
-    if forest001_herb002_col:
-        imagebutton:
-            idle "inv/herb002_idle.png"
-            hover "inv/herb002_hover.png"
-            focus_mask True
-            clicked [ SetVariable("forest001_herb002_col", False), Jump("forest001_herb002") ]
-            xpos 1120 ypos 480
-            xanchor 0 yanchor 0
+    if f1 == 1:
     
-    if forest001_herb003_col:
-        imagebutton:
-            idle "inv/herb003_idle.png"
-            hover "inv/herb003_hover.png"
-            focus_mask True
-            clicked [ SetVariable("forest001_herb003_col", False), Jump("forest001_herb003") ]
-            xpos 200 ypos 330
-            xanchor 0 yanchor 0
+        if forest001_herb001_col:
+            imagebutton:
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb001_col", False), Jump("forest001_herb001") ]
+                xpos 300 ypos 500
+                xanchor 0 yanchor 0
+            
+        if forest001_herb002_col:
+            imagebutton:
+                idle "inv/herb002_idle.png"
+                hover "inv/herb002_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb002_col", False), Jump("forest001_herb002") ]
+                xpos 1120 ypos 480
+                xanchor 0 yanchor 0
+    
+        if forest001_herb003_col:
+            imagebutton:
+                idle "inv/herb003_idle.png"
+                hover "inv/herb003_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb003_col", False), Jump("forest001_herb003") ]
+                xpos 200 ypos 330
+                xanchor 0 yanchor 0
             
             
-    if forest001_herb004_col:
-        imagebutton:
-            idle "inv/herb004_idle.png"
-            hover "inv/herb004_hover.png"
-            focus_mask True
-            clicked [ SetVariable("forest001_herb004_col", False), Jump("forest001_herb004") ]
-            xpos 600 ypos 390
-            xanchor 0 yanchor 0
+        if forest001_herb004_col:
+            imagebutton:
+                idle "inv/herb004_idle.png"
+                hover "inv/herb004_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb004_col", False), Jump("forest001_herb004") ]
+                xpos 600 ypos 390
+                xanchor 0 yanchor 0
             
-    if forest001_herb005_col:
-        imagebutton:
-            idle "inv/herb005_idle.png"
-            hover "inv/herb005_hover.png"
-            focus_mask True
-            clicked [ SetVariable("forest001_herb005_col", False), Jump("forest001_herb005") ]
-            xpos 800 ypos 320
-            xanchor 0 yanchor 0
+        if forest001_herb005_col:
+            imagebutton:
+                idle "inv/herb005_idle.png"
+                hover "inv/herb005_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb005_col", False), Jump("forest001_herb005") ]
+                xpos 800 ypos 320
+                xanchor 0 yanchor 0
+                
+    if f1 == 2:
+        
+        if forest001_herb001_col:
+            imagebutton:
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb001_col", False), Jump("forest001_herb001") ]
+                xpos 600 ypos 390
+                xanchor 0 yanchor 0
+            
+        if forest001_herb002_col:
+            imagebutton:
+                idle "inv/herb002_idle.png"
+                hover "inv/herb002_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb002_col", False), Jump("forest001_herb002") ]
+                xpos 1120 ypos 480
+                xanchor 0 yanchor 0
+    
+        if forest001_herb003_col:
+            imagebutton:
+                idle "inv/herb003_idle.png"
+                hover "inv/herb003_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb003_col", False), Jump("forest001_herb003") ]
+                xpos 300 ypos 500
+                xanchor 0 yanchor 0
+            
+            
+        if forest001_herb004_col:
+            imagebutton:
+                idle "inv/herb004_idle.png"
+                hover "inv/herb004_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb004_col", False), Jump("forest001_herb004") ]
+                xpos 200 ypos 330
+                xanchor 0 yanchor 0
+            
+        if forest001_herb005_col:
+            imagebutton:
+                idle "inv/herb005_idle.png"
+                hover "inv/herb005_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb005_col", False), Jump("forest001_herb005") ]
+                xpos 800 ypos 320
+                xanchor 0 yanchor 0
+                
+    if f1 == 3:
+    
+        if forest001_herb001_col:
+            imagebutton:
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb001_col", False), Jump("forest001_herb001") ]
+                xpos 200 ypos 330
+                xanchor 0 yanchor 0
+            
+        if forest001_herb002_col:
+            imagebutton:
+                idle "inv/herb002_idle.png"
+                hover "inv/herb002_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb002_col", False), Jump("forest001_herb002") ]
+                xpos 1120 ypos 480
+                xanchor 0 yanchor 0
+    
+        if forest001_herb003_col:
+            imagebutton:
+                idle "inv/herb003_idle.png"
+                hover "inv/herb003_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb003_col", False), Jump("forest001_herb003") ]
+                xpos 600 ypos 390
+                xanchor 0 yanchor 0
+            
+        if forest001_herb004_col:
+            imagebutton:
+                idle "inv/herb004_idle.png"
+                hover "inv/herb004_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb004_col", False), Jump("forest001_herb004") ]
+                xpos 800 ypos 320
+                xanchor 0 yanchor 0
+            
+        if forest001_herb005_col:
+            imagebutton:
+                idle "inv/herb005_idle.png"
+                hover "inv/herb005_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb005_col", False), Jump("forest001_herb005") ]
+                xpos 300 ypos 500
+                xanchor 0 yanchor 0
+                
+    if f1 == 4:
+    
+        if forest001_herb001_col:
+            imagebutton:
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb001_col", False), Jump("forest001_herb001") ]
+                xpos 800 ypos 320
+                xanchor 0 yanchor 0
+            
+        if forest001_herb002_col:
+            imagebutton:
+                idle "inv/herb002_idle.png"
+                hover "inv/herb002_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb002_col", False), Jump("forest001_herb002") ]
+                xpos 1120 ypos 480
+                xanchor 0 yanchor 0
+    
+        if forest001_herb003_col:
+            imagebutton:
+                idle "inv/herb003_idle.png"
+                hover "inv/herb003_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb003_col", False), Jump("forest001_herb003") ]
+                xpos 600 ypos 390
+                xanchor 0 yanchor 0
+            
+            
+        if forest001_herb004_col:
+            imagebutton:
+                idle "inv/herb004_idle.png"
+                hover "inv/herb004_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb004_col", False), Jump("forest001_herb004") ]
+                xpos 300 ypos 500
+                xanchor 0 yanchor 0
+            
+        if forest001_herb005_col:
+            imagebutton:
+                idle "inv/herb005_idle.png"
+                hover "inv/herb005_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb005_col", False), Jump("forest001_herb005") ]
+                xpos 200 ypos 330
+                xanchor 0 yanchor 0
+    
+    if f1 == 5:
+    
+        if forest001_herb001_col:
+            imagebutton:
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb001_col", False), Jump("forest001_herb001") ]
+                xpos 800 ypos 320
+                xanchor 0 yanchor 0
+            
+        if forest001_herb002_col:
+            imagebutton:
+                idle "inv/herb002_idle.png"
+                hover "inv/herb002_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb002_col", False), Jump("forest001_herb002") ]
+                xpos 600 ypos 390
+                xanchor 0 yanchor 0
+    
+        if forest001_herb003_col:
+            imagebutton:
+                idle "inv/herb003_idle.png"
+                hover "inv/herb003_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb003_col", False), Jump("forest001_herb003") ]
+                xpos 1120 ypos 480
+                xanchor 0 yanchor 0
+            
+            
+        if forest001_herb004_col:
+            imagebutton:
+                idle "inv/herb004_idle.png"
+                hover "inv/herb004_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb004_col", False), Jump("forest001_herb004") ]
+                xpos 200 ypos 330
+                xanchor 0 yanchor 0
+            
+        if forest001_herb005_col:
+            imagebutton:
+                idle "inv/herb005_idle.png"
+                hover "inv/herb005_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_herb005_col", False), Jump("forest001_herb005") ]
+                xpos 300 ypos 500
+                xanchor 0 yanchor 0
+    
+    else: 
+        text "There was an error in the random number generator."
             
     
 label forest001_herb001:

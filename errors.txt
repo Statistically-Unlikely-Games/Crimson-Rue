@@ -2,32 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/apothecary.rpy", line 45: expected statement.
-    tag menu
-        ^
-
-File "game/apothecary.rpy", line 49: expected statement.
-    frame:
-         ^
-
-File "game/apothecary.rpy", line 71: expected statement.
-    add month_img xpos 22 ypos 12
-                                 ^
-
-File "game/apothecary.rpy", line 72: expected statement.
-    add day_img xpos 22 ypos 12
-                               ^
-
-File "game/apothecary.rpy", line 73: expected statement.
-    add dotw_img xpos 22 ypos 12
-                                ^
-
-File "game/apothecary.rpy", line 74: expected statement.
-    add moon_img align(0.17, 0.02)
-                      ^
-
-File "game/apothecary.rpy", line 75: expected statement.
-    add time_img align(0.02, 0.135)
-                      ^
+File "game/forest_screens.rpy", line 287: expected a keyword argument or child statement.
+    "There was an error in the random number generator."
+    ^
 
 Ren'Py Version: Ren'Py 6.99.11.1749

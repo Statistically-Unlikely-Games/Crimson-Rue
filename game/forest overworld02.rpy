@@ -19,7 +19,7 @@ screen overworld02:
     imagebutton:
         auto "gui/button.forest001_%s.png" 
         focus_mask True 
-        clicked [ Hide("basic_overlay"), Jump("forest001") ]
+        clicked [ Hide("basic_overlay"), Jump("f1_layout") ]
         xpos 908 ypos 0
         xanchor 0 yanchor 0
         
