@@ -61,7 +61,7 @@ screen kitchen:
             textbutton "Shop Front" action Jump("apothecary_shop")
             textbutton "Exit" action Quit(confirm=False)
     
-    imagebutton auto "gui/button.kitchen.stove_%s.png" xpos 588 ypos 0 focus_mask True action Show("inventory_craftkitchen", first_inventory=pc_inv)
+    imagebutton auto "gui/button.kitchen.stove_%s.png" xpos 588 ypos 0 focus_mask True action Show("inventory_kitchen", first_inventory=pc_inv)
     imagebutton auto "gui/button.kitchen.door_%s.png" xpos 45 ypos 445 focus_mask True action Jump("apothecary_shop")
     
     python:

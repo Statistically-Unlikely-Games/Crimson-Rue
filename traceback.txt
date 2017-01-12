@@ -1,95 +1,49 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/apothecary.rpy", line 48, in script
-    "You are in the kitchen."
-  File "game/inventory.rpy", line 310, in execute
-    screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
-  File "game/inventory.rpy", line 310, in execute
-    screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
-  File "game/inventory.rpy", line 315, in execute
-    frame:
-  File "game/inventory.rpy", line 317, in execute
-    hbox:
-  File "game/inventory.rpy", line 326, in execute
-    use crafting_kitchen(first_inventory)
-  File "game/inventory.rpy", line 683, in execute
-    screen crafting_kitchen(inventory):
-  File "game/inventory.rpy", line 683, in execute
-    screen crafting_kitchen(inventory):
-  File "game/inventory.rpy", line 684, in execute
-    vbox:
-  File "game/inventory.rpy", line 690, in execute
-    side "c r":
-  File "game/inventory.rpy", line 692, in execute
-    viewport id "cooklist":
-  File "game/inventory.rpy", line 695, in execute
-    vbox:
-  File "game/inventory.rpy", line 696, in execute
-    for item in cooklist:
-NameError: name 'cooklist' is not defined
+  File "game/forest_screens.rpy", line 364, in script
+    show screen forest002
+  File "renpy/common/000statements.rpy", line 458, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+  File "game/forest_screens.rpy", line 370, in execute
+    screen forest002:
+  File "game/forest_screens.rpy", line 370, in execute
+    screen forest002:
+  File "game/forest_screens.rpy", line 396, in execute
+    if forest002_spawn == 1:
+NameError: name 'forest002_spawn' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/apothecary.rpy", line 48, in script
-    "You are in the kitchen."
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 603, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\exports.py", line 1135, in say
-    who(what, interact=interact)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 873, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 719, in do_display
-    **display_args)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 510, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ui.py", line 278, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2764, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 394, in visit_all
-    callback(self)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2764, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 404, in per_interact
+  File "game/forest_screens.rpy", line 364, in script
+    show screen forest002
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1696, in execute
+    self.call("execute")
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1714, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\statements.py", line 144, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 458, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 1026, in show_screen
+    sls.add(_layer, d, _tag, zorder=d.zorder, transient=_transient, keep_st=True, name=name)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 984, in add
+    self.hide_or_replace(layer, remove_index, "replaced")
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 1006, in hide_or_replace
+    d = oldsle.displayable._hide(now - st, now - at, prefix)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 438, in _hide
     self.update()
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 573, in update
     self.screen.function(**self.scope)
-  File "game/inventory.rpy", line 310, in execute
-    screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
-  File "game/inventory.rpy", line 310, in execute
-    screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
-  File "game/inventory.rpy", line 315, in execute
-    frame:
-  File "game/inventory.rpy", line 317, in execute
-    hbox:
-  File "game/inventory.rpy", line 326, in execute
-    use crafting_kitchen(first_inventory)
-  File "game/inventory.rpy", line 683, in execute
-    screen crafting_kitchen(inventory):
-  File "game/inventory.rpy", line 683, in execute
-    screen crafting_kitchen(inventory):
-  File "game/inventory.rpy", line 684, in execute
-    vbox:
-  File "game/inventory.rpy", line 690, in execute
-    side "c r":
-  File "game/inventory.rpy", line 692, in execute
-    viewport id "cooklist":
-  File "game/inventory.rpy", line 695, in execute
-    vbox:
-  File "game/inventory.rpy", line 696, in execute
-    for item in cooklist:
-  File "<screen language>", line 696, in <module>
-NameError: name 'cooklist' is not defined
+  File "game/forest_screens.rpy", line 370, in execute
+    screen forest002:
+  File "game/forest_screens.rpy", line 370, in execute
+    screen forest002:
+  File "game/forest_screens.rpy", line 396, in execute
+    if forest002_spawn == 1:
+  File "<screen language>", line 396, in <module>
+NameError: name 'forest002_spawn' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749

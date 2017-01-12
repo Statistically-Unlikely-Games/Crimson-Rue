@@ -53,6 +53,11 @@ label start:
     $ day_cnt = 1
     init python:
         timeofday = "sunrise"
+        
+        forest001_spawn = 1
+        forest002_spawn = 1
+        
+        forest001_herb001_col = True
         forest001_herb001_col = True
         forest001_herb002_col = True
         forest001_herb003_col = True

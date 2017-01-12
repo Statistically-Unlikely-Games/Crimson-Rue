@@ -307,7 +307,7 @@ screen inventory_crafttincture(first_inventory, second_inventory=False, trade_mo
                 textbutton "Close" action Hide("inventory_crafttincture")
             use crafting_tinctures(first_inventory)
 
-screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+screen inventory_kitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     default crafting_screen = True
     tag menu
     modal True 
@@ -322,7 +322,7 @@ screen inventory_craftkitchen(first_inventory, second_inventory=False, trade_mod
                 use inventory_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craftkitchen")
+                textbutton "Close" action Hide("inventory_kitchen")
             use crafting_kitchen(first_inventory)
                 
 screen inventory_view(inventory, second_inventory=False, trade_mode=False):     

@@ -3,8 +3,8 @@
 #
 # Collect herbs.
 
-label f1_layout:
-    $ f1 = renpy.random.randint(1, 5)
+label forest001_layout:
+    $ forest001_spawn = renpy.random.randint(1, 5)
     
 
 label forest001:
@@ -14,7 +14,7 @@ label forest001:
     show bg forest001
     show screen forest001
     
-    "Your random number is [f1]."
+    "Your random number is [forest001_spawn]."
     "Everything is so full of life."
     jump forest001
 
@@ -44,7 +44,7 @@ screen forest001:
     add moon_img align(0.17, 0.02)
     add time_img align(0.02, 0.135)
     
-    if f1 == 1:
+    if forest001_spawn == 1:
     
         if forest001_herb001_col:
             imagebutton:
@@ -55,12 +55,12 @@ screen forest001:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if forest001_herb002_col:
+        if forest001_herb004_col:
             imagebutton:
                 idle "inv/herb002_idle.png"
                 hover "inv/herb002_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_herb002_col", False), Jump("forest001_herb002") ]
+                clicked [ SetVariable("forest001_herb004_col", False), Jump("forest001_herb004") ]
                 xpos 1120 ypos 480
                 xanchor 0 yanchor 0
     
@@ -92,7 +92,7 @@ screen forest001:
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
                 
-    if f1 == 2:
+    if forest001_spawn == 2:
         
         if forest001_herb001_col:
             imagebutton:
@@ -140,7 +140,7 @@ screen forest001:
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
                 
-    if f1 == 3:
+    if forest001_spawn == 3:
     
         if forest001_herb001_col:
             imagebutton:
@@ -187,7 +187,7 @@ screen forest001:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
                 
-    if f1 == 4:
+    if forest001_spawn == 4:
     
         if forest001_herb001_col:
             imagebutton:
@@ -235,7 +235,7 @@ screen forest001:
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
     
-    if f1 == 5:
+    if forest001_spawn == 5:
     
         if forest001_herb001_col:
             imagebutton:
@@ -282,9 +282,6 @@ screen forest001:
                 clicked [ SetVariable("forest001_herb005_col", False), Jump("forest001_herb005") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
-    
-    else: 
-        text "There was an error in the random number generator."
             
     
 label forest001_herb001:
@@ -321,31 +318,7 @@ label leave_forest001:
     show screen basic_overlay
     show screen overworld02
     $ time_cnt += 1
-    if time_cnt > 5:
-        $ time_cnt = 1
-        $ day_cnt += 1
-        $ calendar.next()
-        $ forest001_herb001_col = True
-        $ forest001_herb002_col = True
-        $ forest001_herb003_col = True
-        $ forest001_herb004_col = True
-        $ forest001_herb005_col = True
-                
-    if time_cnt == 1:
-        $ timeofday = "sunrise"
-        "It is now sunrise."
-    elif time_cnt == 2:
-        $ timeofday = "morning"
-        "It is now morning."
-    elif time_cnt == 3:
-        $ timeofday = "noon"
-        "It is now noon."
-    elif time_cnt == 4:
-        $ timeofday = "sunset"
-        "It is now sunset."
-    else:
-        $ timeofday = "night"
-        "It is now night."
+    
     jump overworld02
     
 
@@ -472,15 +445,6 @@ label leave_forest002:
     show screen basic_overlay
     show screen overworld02
     $ time_cnt += 1
-    if time_cnt > 5:
-        $ time_cnt = 1
-        $ day_cnt += 1
-        $ calendar.next()
-        $ forest002_herb001_col = True
-        $ forest002_herb002_col = True
-        $ forest002_herb003_col = True
-        $ forest002_herb004_col = True
-        $ forest002_herb005_col = True
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"
@@ -623,15 +587,6 @@ label leave_forest003:
     show screen basic_overlay
     show screen overworld02
     $ time_cnt += 1
-    if time_cnt > 5:
-        $ time_cnt = 1
-        $ day_cnt += 1
-        $ calendar.next()
-        $ forest003_herb001_col = True
-        $ forest003_herb002_col = True
-        $ forest003_herb003_col = True
-        $ forest003_herb004_col = True
-        $ forest003_herb005_col = True
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"
@@ -774,15 +729,6 @@ label leave_forest004:
     show screen basic_overlay
     show screen overworld02
     $ time_cnt += 1
-    if time_cnt > 5:
-        $ time_cnt = 1
-        $ day_cnt += 1
-        $ calendar.next()
-        $ forest004_herb001_col = True
-        $ forest004_herb002_col = True
-        $ forest004_herb003_col = True
-        $ forest004_herb004_col = True
-        $ forest004_herb005_col = True
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"
@@ -925,15 +871,6 @@ label leave_forest005:
     show screen basic_overlay
     show screen overworld02
     $ time_cnt += 1
-    if time_cnt > 5:
-        $ time_cnt = 1
-        $ day_cnt += 1
-        $ calendar.next()
-        $ forest005_herb001_col = True
-        $ forest005_herb002_col = True
-        $ forest005_herb003_col = True
-        $ forest005_herb004_col = True
-        $ forest005_herb005_col = True
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"
@@ -1076,15 +1013,6 @@ label leave_forest006:
     show screen basic_overlay
     show screen overworld02
     $ time_cnt += 1
-    if time_cnt > 5:
-        $ time_cnt = 1
-        $ day_cnt += 1
-        $ calendar.next()
-        $ forest006_herb001_col = True
-        $ forest006_herb002_col = True
-        $ forest006_herb003_col = True
-        $ forest006_herb004_col = True
-        $ forest006_herb005_col = True
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"
@@ -1227,15 +1155,6 @@ label leave_forest007:
     show screen basic_overlay
     show screen overworld02
     $ time_cnt += 1
-    if time_cnt > 5:
-        $ time_cnt = 1
-        $ day_cnt += 1
-        $ calendar.next()
-        $ forest007_herb001_col = True
-        $ forest007_herb002_col = True
-        $ forest007_herb003_col = True
-        $ forest007_herb004_col = True
-        $ forest007_herb005_col = True
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"
@@ -1378,15 +1297,6 @@ label leave_forest008:
     show screen basic_overlay
     show screen overworld02
     $ time_cnt += 1
-    if time_cnt > 5:
-        $ time_cnt = 1
-        $ day_cnt += 1
-        $ calendar.next()
-        $ forest008_herb001_col = True
-        $ forest008_herb002_col = True
-        $ forest008_herb003_col = True
-        $ forest008_herb004_col = True
-        $ forest008_herb005_col = True
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"
@@ -1529,15 +1439,6 @@ label leave_forest009:
     show screen basic_overlay
     show screen overworld02
     $ time_cnt += 1
-    if time_cnt > 5:
-        $ time_cnt = 1
-        $ day_cnt += 1
-        $ calendar.next()
-        $ forest009_herb001_col = True
-        $ forest009_herb002_col = True
-        $ forest009_herb003_col = True
-        $ forest009_herb004_col = True
-        $ forest009_herb005_col = True
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"

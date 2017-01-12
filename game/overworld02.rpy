@@ -1,54 +1,13 @@
 ##############################################################################
-# Item Shop
+# Forest Overworld
 #
-# Sell and buy.
+# Explore the forest.
 
 
-label item_shop:
-    show screen itemshop
-    
-    "I can sell my wares and buy new supplies here."
-    jump item_shop
-
-screen itemshop:
-    tag menu2
-    
-    add "bg/itemshop.png"
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv)
-            textbutton "Leave Shop" action Jump("leave_itemshop")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
-        
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
-    
-    imagebutton: 
-        auto "gui/button.itemshop.desk_%s.png" 
-        focus_mask True 
-        action Show("inventory_screen", first_inventory=pc_inv, second_inventory=shop_inv)
-        xpos 655 ypos 420 
-        xanchor 0 yanchor 0
-    
-label leave_itemshop:
+label overworld02:
     show screen basic_overlay
-    show screen overworld
-    $ time_cnt += 1
+    show screen overworld02
+    
     if time_cnt > 5:
         $ time_cnt = 1
         $ day_cnt += 1
@@ -106,7 +65,6 @@ label leave_itemshop:
         $ forest009_herb003_col = True
         $ forest009_herb004_col = True
         $ forest009_herb005_col = True
-
                 
     if time_cnt == 1:
         $ timeofday = "sunrise"
@@ -123,4 +81,78 @@ label leave_itemshop:
     else:
         $ timeofday = "night"
         "It is now night."
-    jump overworld01
+    
+    "The forest outside of town."
+    
+    jump overworld02
+
+screen overworld02:
+    tag menu2
+    
+    add "bg/overworld02.png"
+    
+    imagebutton:
+        auto "gui/button.forest001_%s.png" 
+        focus_mask True 
+        clicked [ Hide("basic_overlay"), Jump("forest001_layout") ]
+        xpos 908 ypos 0
+        xanchor 0 yanchor 0
+        
+    imagebutton:
+        auto "gui/button.forest002_%s.png" 
+        focus_mask True 
+        clicked [ Hide("basic_overlay"), Jump("forest002") ]
+        xpos 853 ypos 206
+        xanchor 0 yanchor 0
+        
+    imagebutton:
+        auto "gui/button.forest003_%s.png" 
+        focus_mask True 
+        clicked [ Hide("basic_overlay"), Jump("forest003") ]
+        xpos 482 ypos 0
+        xanchor 0 yanchor 0
+        
+    imagebutton:
+        auto "gui/button.forest004_%s.png" 
+        focus_mask True 
+        clicked [ Hide("basic_overlay"), Jump("forest004") ]
+        xpos 575 ypos 0
+        xanchor 0 yanchor 0
+    
+    imagebutton:
+        auto "gui/button.forest005_%s.png" 
+        focus_mask True 
+        clicked [ Hide("basic_overlay"), Jump("forest005") ]
+        xpos 88 ypos 0
+        xanchor 0 yanchor 0
+    
+    imagebutton:
+        auto "gui/button.forest006_%s.png" 
+        focus_mask True 
+        clicked [ Hide("basic_overlay"), Jump("forest006") ]
+        xpos 0 ypos 0
+        xanchor 0 yanchor 0
+    
+    imagebutton:
+        auto "gui/button.forest007_%s.png" 
+        focus_mask True 
+        clicked [ Hide("basic_overlay"), Jump("forest007") ]
+        xpos 0 ypos 240
+        xanchor 0 yanchor 0
+    
+    imagebutton:
+        auto "gui/button.forest008_%s.png" 
+        focus_mask True 
+        clicked [ Hide("basic_overlay"), Jump("forest008") ]
+        xpos 665 ypos 295
+        xanchor 0 yanchor 0
+        
+    imagebutton:
+        auto "gui/button.forest009_%s.png" 
+        focus_mask True 
+        clicked [ Hide("basic_overlay"), Jump("forest009") ]
+        xpos 922 ypos 405
+        xanchor 0 yanchor 0
+        
+        
+            
