@@ -59,6 +59,7 @@ screen apothecary:
     
 label kitchen:  
     
+    show bg kitchen
     show screen kitchen
     
     "You are in the kitchen."
@@ -68,8 +69,6 @@ label kitchen:
 screen kitchen:
     tag menu2
     
-    add "bg/kitchen.png"
-    
     frame:
         yalign 0.0 xalign 0.95
         vbox:
@@ -78,7 +77,7 @@ screen kitchen:
             textbutton "Exit" action Quit(confirm=False)
     
     imagebutton auto "gui/button.kitchen.stove_%s.png" xpos 588 ypos 0 focus_mask True action Show("inventory_kitchen", first_inventory=pc_inv)
-    imagebutton auto "gui/button.kitchen.door_%s.png" xpos 45 ypos 445 focus_mask True action Jump("apothecary_shop")
+    imagebutton auto "gui/button.kitchen.door_%s.png" xpos 45 ypos 445 focus_mask True action Jump("cellar")
     
     python:
         if calendar.day < 10:
@@ -98,7 +97,54 @@ screen kitchen:
     
     
 ##############################################################################
-# Cellar
+# Root Cellar
 #
 # Where you get water. 
 
+    
+label cellar:  
+    
+    show bg cellar
+    show screen cellar
+    
+    "You are in the cellar."
+    
+    jump looping
+    
+label fountain:
+    if pc_inv.qty(empty_bottle):
+        show screen inventory_popup2(message="Received Bottle of Water",item="Bottle of Water")
+        "You draw water from the fountain."
+        $ pc_inv.take(water)
+    else: 
+        "You need a bottle to collect water."
+    
+    jump cellar
+    
+screen cellar:
+    tag menu2
+    
+    frame:
+        yalign 0.0 xalign 0.95
+        vbox:
+            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
+            textbutton "Kitchen" action Jump("kitchen")
+            textbutton "Exit" action Quit(confirm=False)
+    
+    imagebutton auto "gui/button.cellar.fountain_%s.png" xpos 0 ypos 480 focus_mask True action Jump("fountain")
+    
+    python:
+        if calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        else:
+            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+        time_img = "".join(["cal/cal ", timeofday, ".png"])
+        
+    add month_img xpos 22 ypos 12
+    add day_img xpos 22 ypos 12
+    add dotw_img xpos 22 ypos 12
+    add moon_img align(0.17, 0.02)
+    add time_img align(0.02, 0.135)

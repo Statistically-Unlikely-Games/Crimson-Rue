@@ -1,49 +1,84 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/forest_screens.rpy", line 364, in script
-    show screen forest002
-  File "renpy/common/000statements.rpy", line 458, in execute_show_screen
-    renpy.show_screen(name, *args, **kwargs)
-  File "game/forest_screens.rpy", line 370, in execute
-    screen forest002:
-  File "game/forest_screens.rpy", line 370, in execute
-    screen forest002:
-  File "game/forest_screens.rpy", line 396, in execute
-    if forest002_spawn == 1:
-NameError: name 'forest002_spawn' is not defined
+While loading <'Image' 'gui/water_notification.png'>:
+  File "game/apothecary.rpy", line 117, in script
+    "You draw water from the fountain."
+IOError: Couldn't find file 'gui/water_notification.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/forest_screens.rpy", line 364, in script
-    show screen forest002
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1696, in execute
-    self.call("execute")
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 1714, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\statements.py", line 144, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 458, in execute_show_screen
-    renpy.show_screen(name, *args, **kwargs)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 1026, in show_screen
-    sls.add(_layer, d, _tag, zorder=d.zorder, transient=_transient, keep_st=True, name=name)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 984, in add
-    self.hide_or_replace(layer, remove_index, "replaced")
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 1006, in hide_or_replace
-    d = oldsle.displayable._hide(now - st, now - at, prefix)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 438, in _hide
-    self.update()
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 573, in update
-    self.screen.function(**self.scope)
-  File "game/forest_screens.rpy", line 370, in execute
-    screen forest002:
-  File "game/forest_screens.rpy", line 370, in execute
-    screen forest002:
-  File "game/forest_screens.rpy", line 396, in execute
-    if forest002_spawn == 1:
-  File "<screen language>", line 396, in <module>
-NameError: name 'forest002_spawn' is not defined
+  File "game/apothecary.rpy", line 117, in script
+    "You draw water from the fountain."
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 603, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\exports.py", line 1135, in say
+    who(what, interact=interact)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 873, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 719, in do_display
+    **display_args)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 510, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ui.py", line 278, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2850, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 1916, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 416, in renpy.display.render.render_screen (gen\renpy.display.render.c:6685)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 618, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\behavior.py", line 686, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 1046, in render
+    st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 478, in render
+    im = cache.get(self)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 200, in get
+    surf = image.load()
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 529, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\loader.py", line 536, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'gui/water_notification.png'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749
