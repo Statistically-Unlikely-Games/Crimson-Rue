@@ -66,9 +66,22 @@ init python:
         def craft(self, item):
             for line in item.recipe:
                 self.drop(line[0], line[1])
+#                if item.name == "Tincture01":
+#                    bottles[0] +=1
+#                    renpy.show_screen("bottle_check",num=bottles)
             self.take(item)  
             message = "Crafted %s!" % (item.name)
-            renpy.show_screen("inventory_popup2", message=message,item=item.name)   
+            renpy.show_screen("inventory_popup2", message=message,item=item.name)  
+            #if bottles > 2:
+                #add empty bottle to inventory
+                #bottles -= 1
+                #if bottles > 2:
+                    #add empty bottle to inventory
+                    #bottles -= 1
+                        #if bottles > 2:
+                            #add empty bottle to inventory
+                            #bottles -= 1
+            
                             
         def deposit(self, amount):
             self.money -= amount   
@@ -761,6 +774,7 @@ screen inventory_popup2(message,item):
         vbox:
             text message
     timer 0.8 action Hide("inventory_popup2")
+    
     
 init -2: 
 

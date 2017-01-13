@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/forest_screens.rpy", line 287: expected a keyword argument or child statement.
-    "There was an error in the random number generator."
-    ^
+File "game/inventory.rpy", line 70: invalid syntax
+                    $ bottles +=1
+                     ^
+    
 
 Ren'Py Version: Ren'Py 6.99.11.1749

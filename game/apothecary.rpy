@@ -113,9 +113,10 @@ label cellar:
     
 label fountain:
     if pc_inv.qty(empty_bottle):
+        $ pc_inv.take(water)
+        $ pc_inv.drop(empty_bottle) 
         show screen inventory_popup2(message="Received Bottle of Water",item="Bottle of Water")
         "You draw water from the fountain."
-        $ pc_inv.take(water)
     else: 
         "You need a bottle to collect water."
     

@@ -51,7 +51,7 @@ label start:
     $ calendar = Calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
-    init python:
+    init -1 python:
         timeofday = "sunrise"
         
         forest001_herb001_col = True
