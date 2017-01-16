@@ -9,6 +9,7 @@ label overworld02:
     
     if time_cnt > 5:
         $ time_cnt = 1
+        $ timeofday = "sunrise"
         $ day_cnt += 1
         $ calendar.next()
         $ forest001_herb001_col = True
@@ -64,6 +65,8 @@ label overworld02:
         $ forest009_herb003_col = True
         $ forest009_herb004_col = True
         $ forest009_herb005_col = True
+        
+        hide screen overworld02
         
         jump return_home
                 
