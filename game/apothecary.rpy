@@ -4,6 +4,7 @@
 # Where you live. 
 
 label return_home:
+    hide screen basic_overlay
     "It's getting late. Better head home."
     jump apothecary_shop
 

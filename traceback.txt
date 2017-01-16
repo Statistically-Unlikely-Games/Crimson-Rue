@@ -1,29 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/apothecary.rpy", line 20, in script
-    "You are in your apothecary shop."
-  File "renpy/common/00action_other.rpy", line 463, in __call__
-    rv = self.callable(*self.args, **self.kwargs)
-  File "game/inventory.rpy", line 71, in craft
-    renpy.show_screen("bottle_check",num=bottles)
-  File "game/inventory.rpy", line 780, in execute
-    screen bottle_check(num):
-  File "game/inventory.rpy", line 780, in execute
-    screen bottle_check(num):
-  File "game/inventory.rpy", line 782, in execute
-    frame:
-  File "game/inventory.rpy", line 784, in execute
-    vbox:
-  File "game/inventory.rpy", line 785, in execute
-    text "Bottles is " + bottles[0]
-TypeError: cannot concatenate 'str' and 'int' objects
+While loading <'Image' 'gui/Herb 03_notification.png'>:
+  File "game/forest_screens.rpy", line 17, in script
+    "Your random number is [forest001_spawn]."
+IOError: Couldn't find file 'gui/Herb 03_notification.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/apothecary.rpy", line 20, in script
-    "You are in your apothecary shop."
+  File "game/forest_screens.rpy", line 17, in script
+    "Your random number is [forest001_spawn]."
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 603, in execute
     renpy.exports.say(who, what, interact=self.interact)
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\exports.py", line 1135, in say
@@ -38,68 +24,61 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
     repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 3172, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 928, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 928, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 928, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 646, in event
-    rv = self.child.event(ev, x, y, st)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 928, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 204, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 928, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 928, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 204, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\viewport.py", line 287, in event
-    rv = super(Viewport, self).event(ev, x, y, st)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 204, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 928, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 928, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 928, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\behavior.py", line 868, in event
-    return handle_click(self.clicked)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\behavior.py", line 803, in handle_click
-    rv = run(action)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\behavior.py", line 302, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_other.rpy", line 463, in __call__
-    rv = self.callable(*self.args, **self.kwargs)
-  File "game/inventory.rpy", line 71, in craft
-    renpy.show_screen("bottle_check",num=bottles)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 1026, in show_screen
-    sls.add(_layer, d, _tag, zorder=d.zorder, transient=_transient, keep_st=True, name=name)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 984, in add
-    self.hide_or_replace(layer, remove_index, "replaced")
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 1006, in hide_or_replace
-    d = oldsle.displayable._hide(now - st, now - at, prefix)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 438, in _hide
-    self.update()
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 573, in update
-    self.screen.function(**self.scope)
-  File "game/inventory.rpy", line 780, in execute
-    screen bottle_check(num):
-  File "game/inventory.rpy", line 780, in execute
-    screen bottle_check(num):
-  File "game/inventory.rpy", line 782, in execute
-    frame:
-  File "game/inventory.rpy", line 784, in execute
-    vbox:
-  File "game/inventory.rpy", line 785, in execute
-    text "Bottles is " + bottles[0]
-  File "<screen language>", line 785, in <module>
-TypeError: cannot concatenate 'str' and 'int' objects
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2850, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 1916, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 416, in renpy.display.render.render_screen (gen\renpy.display.render.c:6685)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 618, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\behavior.py", line 686, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 1046, in render
+    st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 478, in render
+    im = cache.get(self)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 200, in get
+    surf = image.load()
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 529, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\loader.py", line 536, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'gui/Herb 03_notification.png'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749

@@ -3,7 +3,7 @@ label define_inventories:
     ######### DEFINE INVENTORIES ##########    
     $ pc_inv = Inventory("Aeth")
     
-    $ pc_inv.take(water,50)
+    $ pc_inv.take(empty_bottle,5)
     $ pc_inv.take(herb001,4)
     $ pc_inv.take(herb002)
     $ pc_inv.take(herb003)
