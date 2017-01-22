@@ -8,6 +8,12 @@ init python hide:
             
 init python hide:
     for file in renpy.list_files():
+        if file.startswith('cg/') and file.endswith('.jpg'):
+            name = file.replace('cg/', '').replace('.jpg','')
+            renpy.image(name, Image(file))
+            
+init python hide:
+    for file in renpy.list_files():
         if file.startswith('spr/') and file.endswith('.png'):
             name = file.replace('spr/', '').replace('.png','')
             renpy.image(name, Image(file))
@@ -64,6 +70,7 @@ label start:
         forest001_eighth_herb_col = True
         forest001_ninth_herb_col = True
         forest001_tenth_herb_col = True
+        forest001_eleventh_herb_col = True
         
         forest002_first_herb_col = True
         forest002_second_herb_col = True

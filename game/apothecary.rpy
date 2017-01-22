@@ -5,7 +5,9 @@
 
 label return_home:
     hide screen basic_overlay
+    show bg black
     "It's getting late. Better head home."
+    "You have a peaceful night's rest."
     jump apothecary_shop
 
 label looping:

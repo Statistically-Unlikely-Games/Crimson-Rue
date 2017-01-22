@@ -168,21 +168,21 @@ screen forest001:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if forest001_forth_herb_col:
+        if forest001_tenth_herb_col:
             imagebutton:
                 idle "inv/herb014_idle.png"
                 hover "inv/herb014_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_forth_herb_col", False), Jump("forest001_forth_herb") ]
+                clicked [ SetVariable("forest001_tenth_herb_col", False), Jump("forest001_tenth_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
-        if forest001_fifth_herb_col:
+        if forest001_eleventh_herb_col:
             imagebutton:
                 idle "inv/herb015_idle.png"
                 hover "inv/herb015_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_fifth_herb_col", False), Jump("forest001_fifth_herb") ]
+                clicked [ SetVariable("forest001_eleventh_herb_col", False), Jump("forest001_eleventh_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
                 
@@ -225,12 +225,12 @@ screen forest001:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if forest001_fifth_herb_col:
+        if forest001_eleventh_herb_col:
             imagebutton:
                 idle "inv/herb015_idle.png"
                 hover "inv/herb015_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_fifth_herb_col", False), Jump("forest001_fifth_herb") ]
+                clicked [ SetVariable("forest001_eleventh_herb_col", False), Jump("forest001_eleventh_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
     
@@ -285,61 +285,67 @@ screen forest001:
     
 label forest001_first_herb:
     $ pc_inv.take(herb001)
-    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest001
     
 label forest001_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest001
     
 label forest001_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
     
     jump forest001
     
 label forest001_forth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest001
     
 label forest001_fifth_herb:
     $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
     
     jump forest001
     
 label forest001_sixth_herb:
     $ pc_inv.take(herb006)
-    show screen inventory_popup2(message="Received Herb6",item="Herb 6")
+    show screen inventory_popup2(message="Received Marsh Marigold",item="Marsh Marigold")
     
     jump forest001
     
 label forest001_seventh_herb:
     $ pc_inv.take(herb011)
-    show screen inventory_popup2(message="Received Herb11",item="Herb 11")
+    show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest001
     
 label forest001_eighth_herb:
     $ pc_inv.take(herb012)
-    show screen inventory_popup2(message="Received Herb12",item="Herb 12")
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest001
     
 label forest001_ninth_herb:
     $ pc_inv.take(herb013)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 13")
+    show screen inventory_popup2(message="Received Oak",item="Oak")
     
     jump forest001
     
 label forest001_tenth_herb:
     $ pc_inv.take(herb014)
-    show screen inventory_popup2(message="Received Herb6",item="Herb 14")
+    show screen inventory_popup2(message="Received Garlic",item="Garlic")
+    
+    jump forest001
+
+label forest001_eleventh_herb:
+    $ pc_inv.take(herb015)
+    show screen inventory_popup2(message="Received Laurel",item="Laurel")
     
     jump forest001
     
@@ -639,31 +645,31 @@ screen forest002:
     
 label forest002_first_herb:
     $ pc_inv.take(herb001)
-    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest002
     
 label forest002_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest002
     
 label forest002_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
     
     jump forest002
     
 label forest002_forth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest002
     
 label forest002_fifth_herb:
     $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
     
     jump forest002
     
@@ -964,31 +970,31 @@ screen forest003:
     
 label forest003_first_herb:
     $ pc_inv.take(herb001)
-    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest003
     
 label forest003_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest003
     
 label forest003_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
     
     jump forest003
     
 label forest003_forth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest003
     
 label forest003_fifth_herb:
     $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
     
     jump forest003
     
@@ -1289,31 +1295,31 @@ screen forest004:
     
 label forest004_first_herb:
     $ pc_inv.take(herb001)
-    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest004
     
 label forest004_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest004
     
 label forest004_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
     
     jump forest004
     
 label forest004_forth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest004
     
 label forest004_fifth_herb:
     $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
     
     jump forest004
     
@@ -1614,31 +1620,31 @@ screen forest005:
     
 label forest005_first_herb:
     $ pc_inv.take(herb001)
-    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest005
     
 label forest005_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest005
     
 label forest005_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
     
     jump forest005
     
 label forest005_forth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest005
     
 label forest005_fifth_herb:
     $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
     
     jump forest005
     
@@ -1939,31 +1945,31 @@ screen forest006:
     
 label forest006_first_herb:
     $ pc_inv.take(herb001)
-    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest006
     
 label forest006_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest006
     
 label forest006_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
     
     jump forest006
     
 label forest006_forth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest006
     
 label forest006_fifth_herb:
     $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
     
     jump forest006
     
@@ -2264,31 +2270,31 @@ screen forest007:
     
 label forest007_first_herb:
     $ pc_inv.take(herb001)
-    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest007
     
 label forest007_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest007
     
 label forest007_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
     
     jump forest007
     
 label forest007_forth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest007
     
 label forest007_fifth_herb:
     $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
     
     jump forest007
     
@@ -2589,31 +2595,31 @@ screen forest008:
     
 label forest008_first_herb:
     $ pc_inv.take(herb001)
-    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest008
     
 label forest008_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest008
     
 label forest008_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
     
     jump forest008
     
 label forest008_forth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest008
     
 label forest008_fifth_herb:
     $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
     
     jump forest008
     
@@ -2914,31 +2920,31 @@ screen forest009:
     
 label forest009_first_herb:
     $ pc_inv.take(herb001)
-    show screen inventory_popup2(message="Received Herb1",item="Herb 1")
+    show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest009
     
 label forest009_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Herb2",item="Herb 2")
+    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest009
     
 label forest009_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Herb3",item="Herb 3")
+    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
     
     jump forest009
     
 label forest009_forth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Herb4",item="Herb 4")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest009
     
 label forest009_fifth_herb:
     $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Herb5",item="Herb 5")
+    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
     
     jump forest009
     

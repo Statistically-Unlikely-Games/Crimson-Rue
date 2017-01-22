@@ -1,84 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' 'gui/Herb 03_notification.png'>:
-  File "game/forest_screens.rpy", line 17, in script
-    "Your random number is [forest001_spawn]."
-IOError: Couldn't find file 'gui/Herb 03_notification.png'.
+While running game code:
+  File "game/gallery.rpy", line 51, in script
+    init +1 python:
+  File "game/gallery.rpy", line 55, in <module>
+    renpy.image (gal_item + " butt", im.Scale(ImageReference(gal_item), thumbnail_x, thumbnail_y))
+Exception: Expected an image, but got a general displayable.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/forest_screens.rpy", line 17, in script
-    "Your random number is [forest001_spawn]."
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 603, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\exports.py", line 1135, in say
-    who(what, interact=interact)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 873, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 719, in do_display
-    **display_args)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\character.py", line 510, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ui.py", line 278, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2850, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 1916, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 416, in renpy.display.render.render_screen (gen\renpy.display.render.c:6685)
-    rv = render(root, width, height, 0, 0)
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 618, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 661, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\behavior.py", line 686, in render
-    rv = super(Button, self).render(width, height, st, at)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\layout.py", line 1046, in render
-    st, at)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 478, in render
-    im = cache.get(self)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 200, in get
-    surf = image.load()
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 529, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\loader.py", line 536, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'gui/Herb 03_notification.png'.
+  File "game/gallery.rpy", line 51, in script
+    init +1 python:
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 805, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\python.py", line 1641, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/gallery.rpy", line 55, in <module>
+    renpy.image (gal_item + " butt", im.Scale(ImageReference(gal_item), thumbnail_x, thumbnail_y))
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 668, in __init__
+    im = image(im)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 1570, in image
+    return image(arg.target, loose=loose, **properties)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 1585, in image
+    raise Exception("Expected an image, but got a general displayable.")
+Exception: Expected an image, but got a general displayable.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749

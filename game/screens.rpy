@@ -565,9 +565,9 @@ init -2 python:
 ##############################################################################
 # Game Menu
 #
-# Screen that appears when the player presses the escape button.
+# Screen that appears when the player presses the escape button. Or right clicks, apparently. 
 
-image logo = "logo.jpg"
+image logo = "bg/logo.png"
 
 screen game_menu:
     tag menu

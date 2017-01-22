@@ -155,7 +155,7 @@ screen tooltip(item=False,seller=false):
         hbox:
             xalign 0.5 yalign 1.0
             if seller:
-                text ("[item[0].name]: [item[0].desc] (Sell Value: " + str(calculate_price(item, seller)) + ")")
+                text ("[item[0].name]: [item[0].desc] (Value: " + str(calculate_price(item, seller)) + ")")
             else:
                 text "[item[0].name]: [item[0].desc] (Value: [item[0].value])" 
 
