@@ -1,30 +1,72 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/gallery.rpy", line 51, in script
-    init +1 python:
-  File "game/gallery.rpy", line 55, in <module>
-    renpy.image (gal_item + " butt", im.Scale(ImageReference(gal_item), thumbnail_x, thumbnail_y))
-Exception: Expected an image, but got a general displayable.
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "game/encyclopaedia.rpy", line 428, in execute
+    screen encyclopaedia_entry:
+  File "game/encyclopaedia.rpy", line 428, in execute
+    screen encyclopaedia_entry:
+  File "game/encyclopaedia.rpy", line 438, in execute
+    window:
+  File "game/encyclopaedia.rpy", line 445, in execute
+    vbox:
+  File "game/encyclopaedia.rpy", line 448, in execute
+    frame:
+  File "game/encyclopaedia.rpy", line 453, in execute
+    $page_indicator= "0" + str(encyclopaedia.getEntryData()[0]) + ": " + str(encyclopaedia.getEntryData()[1].name)
+  File "game/encyclopaedia.rpy", line 453, in <module>
+    $page_indicator= "0" + str(encyclopaedia.getEntryData()[0]) + ": " + str(encyclopaedia.getEntryData()[1].name)
+AttributeError: 'int' object has no attribute 'name'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/gallery.rpy", line 51, in script
-    init +1 python:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ast.py", line 805, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "E:\_RenPy\renpy-6.99.11-sdk\renpy\python.py", line 1641, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/gallery.rpy", line 55, in <module>
-    renpy.image (gal_item + " butt", im.Scale(ImageReference(gal_item), thumbnail_x, thumbnail_y))
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 668, in __init__
-    im = image(im)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 1570, in image
-    return image(arg.target, loose=loose, **properties)
-  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\im.py", line 1585, in image
-    raise Exception("Expected an image, but got a general displayable.")
-Exception: Expected an image, but got a general displayable.
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\ui.py", line 278, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2764, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 464, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 394, in visit_all
+    callback(self)
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\core.py", line 2764, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 404, in per_interact
+    self.update()
+  File "E:\_RenPy\renpy-6.99.11-sdk\renpy\display\screen.py", line 573, in update
+    self.screen.function(**self.scope)
+  File "game/encyclopaedia.rpy", line 428, in execute
+    screen encyclopaedia_entry:
+  File "game/encyclopaedia.rpy", line 428, in execute
+    screen encyclopaedia_entry:
+  File "game/encyclopaedia.rpy", line 438, in execute
+    window:
+  File "game/encyclopaedia.rpy", line 445, in execute
+    vbox:
+  File "game/encyclopaedia.rpy", line 448, in execute
+    frame:
+  File "game/encyclopaedia.rpy", line 453, in execute
+    $page_indicator= "0" + str(encyclopaedia.getEntryData()[0]) + ": " + str(encyclopaedia.getEntryData()[1].name)
+  File "game/encyclopaedia.rpy", line 453, in <module>
+    $page_indicator= "0" + str(encyclopaedia.getEntryData()[0]) + ": " + str(encyclopaedia.getEntryData()[1].name)
+AttributeError: 'int' object has no attribute 'name'
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749

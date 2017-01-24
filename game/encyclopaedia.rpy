@@ -441,6 +441,7 @@ screen encyclopaedia_entry:
 
   xfill True
   yfill True
+   
   vbox:
    spacing 10
   
@@ -460,14 +461,20 @@ screen encyclopaedia_entry:
       
     hbox:
      xfill True
-     textbutton "Previous Entry" xalign .02 action PreviousEntry(encyclopaedia,cmin)
-     textbutton "Next Entry" xalign .98 action NextEntry(encyclopaedia,cmax)  
+     if encyclopaedia.getEntryData()[1].hasSubEntry:  
+      textbutton "Previous Page" xalign .02 action PreviousPage(sub_cmin)
+      python:
+        ui.text("Page " + str(sub_current_position) + " / " + str(encyclopaedia.getEntryData()[1].pages) ) 
+      textbutton "Next Page" xalign .98 action NextPage(sub_cmax) 
+     else: 
+      text("") 
        
    hbox:
     $ddd = config.screen_width
     $dd = config.screen_width/1.4
     $pp = config.screen_height/1.321
     $pp2 = config.screen_height/2
+    
     if encyclopaedia.getEntryData()[1].hasImage:   
      frame:
       xmargin 10
@@ -484,7 +491,7 @@ screen encyclopaedia_entry:
      ui.window(id="entry_window",xmargin=10,xfill=True,yfill=True,xalign=.5,xmaximum=ddd,ymaximum=pp2)
      ui.viewport(scrollbars="vertical",mousewheel=True,draggable=True,edgescroll=(0,0),xfill=True,yfill=True)
      ui.text(entry_text)
-   
+     
     hbox:
 
      xfill True  
@@ -508,3 +515,6 @@ screen encyclopaedia_entry:
     $sorting_mode_display = "Sorting Mode: " + encyclopaedia.sortingMode 
     text sorting_mode_display
     textbutton "Close Entry" id "close_entry_button" xalign .98 clicked [ SetVariable("sub_current_position",1), Show("encyclopaedia_list")] 
+
+  textbutton "Previous Entry" xpos 910 ypos 13 action PreviousEntry(encyclopaedia,cmin)
+  textbutton "Next Entry" xpos 1110 ypos 13 action NextEntry(encyclopaedia,cmax)
