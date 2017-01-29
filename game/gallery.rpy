@@ -60,45 +60,49 @@ init +1 python:
         
 screen cg_gallery:
     tag menu
-    use navigation
-    frame background None xpos 10:
-        grid gal_rows gal_cols:
-            ypos 10
-            $ i = 0
-            $ next_cg_page = cg_page + 1            
-            if next_cg_page > int(len(gallery_cg_items)/gal_cells):
-                $ next_cg_page = 0
-            for gal_item in gallery_cg_items:
-                $ i += 1
-                if i <= (cg_page+1)*gal_cells and i>cg_page*gal_cells:
-                    add g_cg.make_button(gal_item + " butt", gal_item + " butt", im.Scale("gui/gallocked.png", thumbnail_x, thumbnail_y), xalign=0.5, yalign=0.5, idle_border=None, background=None, bottom_margin=24)
-            for j in range(i, (cg_page+1)*gal_cells): #we need this to fully fill the grid
-                null
-        frame:
-            yalign 0.97
-            vbox:
-                if len(gallery_cg_items)>gal_cells:
-                    textbutton _("Next Page") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery")]
+    use game_menu("CG Gallery"):
+        
+
+        frame background None xpos 10:
+            grid gal_rows gal_cols:
+                ypos 0
+                $ i = 0
+                $ next_cg_page = cg_page + 1            
+                if next_cg_page > int(len(gallery_cg_items)/gal_cells):
+                    $ next_cg_page = 0
+                for gal_item in gallery_cg_items:
+                    $ i += 1
+                    if i <= (cg_page+1)*gal_cells and i>cg_page*gal_cells:
+                        add g_cg.make_button(gal_item + " butt", gal_item + " butt", im.Scale("gui/gallocked.png", thumbnail_x, thumbnail_y), xalign=0.5, yalign=0.5, idle_border=None, background=None, bottom_margin=24)
+                for j in range(i, (cg_page+1)*gal_cells): #we need this to fully fill the grid
+                    null
+            frame:
+                yalign 1.03
+                xalign 1.005
+                vbox:
+                    if len(gallery_cg_items)>gal_cells:
+                        textbutton _("Next Page") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery")]
 
 screen bg_gallery:
 #The BG gallery screen is more or less copy pasted from the CG screen above, I only changed "make_button" to include a grayscale thumbnail for locked items
     tag menu
-    use navigation
-    frame background None xpos 10:
-        grid gal_rows gal_cols:
-            ypos 10
-            $ i = 0
-            $ next_bg_page = bg_page + 1
-            if next_bg_page > int(len(gallery_bg_items)/gal_cells):
-                $ next_bg_page = 0
-            for gal_item in gallery_bg_items:
-                $ i += 1
-                if i <= (bg_page+1)*gal_cells and i>bg_page*gal_cells:
-                    add g_bg.make_button(gal_item + " butt", gal_item + " butt", gal_item + " butt dis", xalign=0.5, yalign=0.5, idle_border=None, background=None, bottom_margin=24)
-            for j in range(i, (bg_page+1)*gal_cells):
-                null
-        frame:
-            yalign 0.97
-            vbox:
-                if len(gallery_bg_items)>gal_cells:
-                    textbutton _("Next Page") action [SetVariable('bg_page', next_bg_page), ShowMenu("bg_gallery")]
+    use game_menu("BG Gallery"):
+        frame background None xpos 10:
+            grid gal_rows gal_cols:
+                ypos 0
+                $ i = 0
+                $ next_bg_page = bg_page + 1
+                if next_bg_page > int(len(gallery_bg_items)/gal_cells):
+                    $ next_bg_page = 0
+                for gal_item in gallery_bg_items:
+                    $ i += 1
+                    if i <= (bg_page+1)*gal_cells and i>bg_page*gal_cells:
+                        add g_bg.make_button(gal_item + " butt", gal_item + " butt", gal_item + " butt dis", xalign=0.5, yalign=0.5, idle_border=None, background=None, bottom_margin=24)
+                for j in range(i, (bg_page+1)*gal_cells):
+                    null
+            frame:
+                yalign 1.03
+                xalign 1.005
+                vbox:
+                    if len(gallery_bg_items)>gal_cells:
+                        textbutton _("Next Page") action [SetVariable('bg_page', next_bg_page), ShowMenu("bg_gallery")]
