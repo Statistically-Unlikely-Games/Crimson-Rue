@@ -199,7 +199,7 @@ screen inventory_craftbalm(first_inventory, second_inventory=False, trade_mode=F
             vbox:
                 label first_inventory.name                   
                 use money(first_inventory, second_inventory, bank_mode) 
-                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
@@ -218,7 +218,7 @@ screen inventory_craftcream(first_inventory, second_inventory=False, trade_mode=
             vbox:
                 label first_inventory.name                   
                 use money(first_inventory, second_inventory, bank_mode) 
-                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
@@ -237,7 +237,7 @@ screen inventory_craftextract(first_inventory, second_inventory=False, trade_mod
             vbox:
                 label first_inventory.name                   
                 use money(first_inventory, second_inventory, bank_mode) 
-                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
@@ -256,7 +256,7 @@ screen inventory_craftherboil(first_inventory, second_inventory=False, trade_mod
             vbox:
                 label first_inventory.name                   
                 use money(first_inventory, second_inventory, bank_mode) 
-                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
@@ -275,7 +275,7 @@ screen inventory_craftinfusion(first_inventory, second_inventory=False, trade_mo
             vbox:
                 label first_inventory.name                   
                 use money(first_inventory, second_inventory, bank_mode) 
-                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
@@ -294,7 +294,7 @@ screen inventory_craftsalve(first_inventory, second_inventory=False, trade_mode=
             vbox:
                 label first_inventory.name                   
                 use money(first_inventory, second_inventory, bank_mode) 
-                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
@@ -313,7 +313,7 @@ screen inventory_crafttincture(first_inventory, second_inventory=False, trade_mo
             vbox:
                 label first_inventory.name                   
                 use money(first_inventory, second_inventory, bank_mode) 
-                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 use craft_nav(first_inventory)
@@ -332,7 +332,7 @@ screen inventory_kitchen(first_inventory, second_inventory=False, trade_mode=Fal
             vbox:
                 label first_inventory.name                   
                 use money(first_inventory, second_inventory, bank_mode) 
-                use inventory_view(first_inventory, second_inventory, trade_mode)                          
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
                 textbutton "Close" action Hide("inventory_kitchen")
@@ -348,6 +348,56 @@ screen inventory_view(inventory, second_inventory=False, trade_mode=False):
             xsize 350 ysize 400
             if inventory.grid_view:
                 cols 3 spacing 10
+            else:
+                cols 1 spacing 25
+            for item in inventory.inv:
+                $ name = item[0].name
+                $ desc = item[0].desc
+                $ value = item[0].value
+                $ qty = str(item[1])
+                hbox:
+                    if item[0].icon:
+                        $ icon = item[0].icon
+                        $ hover_icon = im.Sepia(icon)                              
+                        imagebutton:
+                            idle LiveComposite((100,100), (0,0), icon, (0,0), Text(qty))
+                            hover LiveComposite((100,100), (0,0), hover_icon, (0,0), Text(qty))
+                            action (If(not second_inventory, item[0].act, (If(trade_mode, Function(trade,inventory, second_inventory, item), Function(transaction,inventory, second_inventory, item)))))
+                            hovered Show("tooltip",item=item,seller=second_inventory)
+                            unhovered Hide("tooltip")
+                        if not inventory.grid_view:
+                            vbox:
+                                text name
+                                if not trade_mode:
+                                    text "List Value: [value]"                                        
+                                    if second_inventory:                                            
+                                        text ("Sell Value: " + str(calculate_price(item, second_inventory)) + ")")
+                    
+                    else:                               
+                        textbutton "[name] ([qty])" action (If(not second_inventory, item[0].act,(If(trade_mode, Function(trade,inventory, second_inventory, item), Function(transaction,inventory, second_inventory, item))))) hovered Show("tooltip",item=item,seller=second_inventory) unhovered Hide("tooltip")
+                        if not inventory.grid_view:
+                            vbox:                        
+                                text "List Value: [value]"
+                                if not trade_mode and second_inventory:
+                                    text "Sell Value: " + str(calculate_price(item, second_inventory)) + ")"
+            
+            ## maintains spacing in empty inventories.
+            if len(inventory.inv) == 0:
+                add Null(height=100,width=100)
+                                    
+        vbar value YScrollValue("vp"+inventory.name)
+        
+
+screen craftinv_view(inventory, second_inventory=False, trade_mode=False):     
+    side "c r":
+        style_group "invstyle"
+        area (0, 0, 450, 530) 
+        vpgrid id ("vp"+inventory.name):
+            draggable True   
+            mousewheel True
+            xsize 450 ysize 530
+            if inventory.grid_view:
+                cols 4 spacing 10
             else:
                 cols 1 spacing 25
             for item in inventory.inv:
@@ -452,11 +502,11 @@ screen crafting_balms(inventory):
     vbox:            
         label "Recipes"
         hbox:
-            xmaximum 600 xminimum 600 xfill True         
-            text "Name" xalign 0.5   
-            text "Ingredients" xalign 0.5   
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2
         side "c r":
-            area (0,0,600,400)
+            area (0,0,1280,530)
             viewport id "balmslist":           
                 draggable True
                 mousewheel True
@@ -465,7 +515,7 @@ screen crafting_balms(inventory):
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
-                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
                                 if item.icon:
                                     add im.FactorScale(item.icon, 0.33)
                                 if inventory.check_recipe(item):
@@ -487,11 +537,11 @@ screen crafting_creams(inventory):
     vbox:            
         label "Recipes"
         hbox:
-            xmaximum 600 xminimum 600 xfill True         
-            text "Name" xalign 0.5   
-            text "Ingredients" xalign 0.5   
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2  
         side "c r":
-            area (0,0,600,400)
+            area (0,0,1280,530)
             viewport id "creamslist":           
                 draggable True
                 mousewheel True
@@ -500,7 +550,7 @@ screen crafting_creams(inventory):
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
-                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
                                 if item.icon:
                                     add im.FactorScale(item.icon, 0.33)
                                 if inventory.check_recipe(item):
@@ -522,11 +572,11 @@ screen crafting_extracts(inventory):
     vbox:            
         label "Recipes"
         hbox:
-            xmaximum 600 xminimum 600 xfill True         
-            text "Name" xalign 0.5   
-            text "Ingredients" xalign 0.5   
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2  
         side "c r":
-            area (0,0,600,400)
+            area (0,0,1280,530)
             viewport id "extractslist":           
                 draggable True
                 mousewheel True
@@ -535,7 +585,7 @@ screen crafting_extracts(inventory):
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
-                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
                                 if item.icon:
                                     add im.FactorScale(item.icon, 0.33)
                                 if inventory.check_recipe(item):
@@ -557,11 +607,11 @@ screen crafting_herboil(inventory):
     vbox:            
         label "Recipes"
         hbox:
-            xmaximum 600 xminimum 600 xfill True         
-            text "Name" xalign 0.5   
-            text "Ingredients" xalign 0.5   
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2 
         side "c r":
-            area (0,0,600,400)
+            area (0,0,1280,530)
             viewport id "herboilslist":           
                 draggable True
                 mousewheel True
@@ -570,7 +620,7 @@ screen crafting_herboil(inventory):
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
-                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
                                 if item.icon:
                                     add im.FactorScale(item.icon, 0.33)
                                 if inventory.check_recipe(item):
@@ -592,11 +642,11 @@ screen crafting_infusions(inventory):
     vbox:            
         label "Recipes"
         hbox:
-            xmaximum 600 xminimum 600 xfill True         
-            text "Name" xalign 0.5   
-            text "Ingredients" xalign 0.5   
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2 
         side "c r":
-            area (0,0,600,400)
+            area (0,0,1280,530)
             viewport id "infusionslist":           
                 draggable True
                 mousewheel True
@@ -605,7 +655,7 @@ screen crafting_infusions(inventory):
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
-                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
                                 if item.icon:
                                     add im.FactorScale(item.icon, 0.33)
                                 if inventory.check_recipe(item):
@@ -627,11 +677,11 @@ screen crafting_salves(inventory):
     vbox:            
         label "Recipes"
         hbox:
-            xmaximum 600 xminimum 600 xfill True         
-            text "Name" xalign 0.5   
-            text "Ingredients" xalign 0.5   
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2
         side "c r":
-            area (0,0,600,400)
+            area (0,0,1280,530)
             viewport id "salveslist":           
                 draggable True
                 mousewheel True
@@ -640,7 +690,7 @@ screen crafting_salves(inventory):
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
-                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
                                 if item.icon:
                                     add im.FactorScale(item.icon, 0.33)
                                 if inventory.check_recipe(item):
@@ -662,11 +712,11 @@ screen crafting_tinctures(inventory):
     vbox:            
         label "Recipes"
         hbox:
-            xmaximum 600 xminimum 600 xfill True         
-            text "Name" xalign 0.5   
-            text "Ingredients" xalign 0.5   
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2
         side "c r":
-            area (0,0,600,400)
+            area (0,0,1280,530)
             viewport id "tinctureslist":           
                 draggable True
                 mousewheel True
@@ -675,7 +725,7 @@ screen crafting_tinctures(inventory):
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
-                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
                                 if item.icon:
                                     add im.FactorScale(item.icon, 0.33)
                                 if inventory.check_recipe(item):
@@ -697,11 +747,11 @@ screen crafting_kitchen(inventory):
     vbox:            
         label "Recipes"
         hbox:
-            xmaximum 600 xminimum 600 xfill True         
-            text "Name" xalign 0.5   
-            text "Ingredients" xalign 0.5   
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2
         side "c r":
-            area (0,0,600,400)
+            area (0,0,1280,530)
             viewport id "cooklist":           
                 draggable True
                 mousewheel True
@@ -710,7 +760,7 @@ screen crafting_kitchen(inventory):
                         hbox:                            
                             first_spacing 25 spacing 10
                             hbox:
-                                xmaximum 250 xminimum 250 xfill True box_wrap True
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
                                 if item.icon:
                                     add im.FactorScale(item.icon, 0.33)
                                 if inventory.check_recipe(item):
