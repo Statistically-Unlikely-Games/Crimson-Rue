@@ -1,9 +1,10 @@
 label timecount:
+    
     if time_cnt > 5:
         $ time_cnt = 1
         $ timeofday = "sunrise"
         $ day_cnt += 1
-        $ calendar.next()
+        $ _calendar.next()
         $ forest001_first_herb_col = True
         $ forest001_second_herb_col = True
         $ forest001_third_herb_col = True

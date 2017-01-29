@@ -7,6 +7,7 @@ label return_home:
     hide screen basic_overlay
     show bg black
     "It's getting late. Better head home."
+    call calendar_ani(1)
     "You have a peaceful night's rest."
     jump apothecary_shop
 
@@ -40,13 +41,13 @@ screen apothecary:
     imagebutton auto "gui/button.shop.door_%s.png" xpos 405 ypos 80 focus_mask True action Jump("overworld01")
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12

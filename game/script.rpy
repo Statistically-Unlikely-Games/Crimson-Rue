@@ -29,8 +29,8 @@ init python hide:
         if file.startswith('gui/') and file.endswith('notification.png'):
             name = file.replace('gui/', '').replace('.png','')
             renpy.image(name, Image(file))
-            
-            
+
+
 # This is the splash screen. Should show my logo, and then the 
 # instructions for playing on the Ouya.
 label splashscreen:
@@ -54,9 +54,10 @@ label start:
     ## ------------ ESC MENU AND TIME TRACKING --------------------
     
     $ _game_menu_screen = "game_menu" # This code activates the "pause menu" in screens.rpy
-    $ calendar = Calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
+    $ _calendar = _calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
+
     init -1 python:
         timeofday = "sunrise"
         

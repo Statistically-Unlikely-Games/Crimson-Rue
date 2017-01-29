@@ -1,13 +1,13 @@
 ﻿##############################################################################
-# Calendar
+# _calendar
 #
-# Keeps track of the day, month, year, leap year, and lunar calendar.
+# Keeps track of the day, month, year, leap year, and lunar _calendar.
 # Thanks to xela from the lemmasoft forums!
 
 init python:
-    class Calendar(object):
+    class _calendar(object):
         '''Provides time-related information.
-        Cheers to Rudi for mooncalendar calculations.
+        Cheers to Rudi for moon_calendar calculations.
         '''
         def __init__(self, day=1, month=1, year=1, leapyear=False):
             """
@@ -141,32 +141,32 @@ init python:
                         self.year += 1
                        
            
-screen calendar_testing:
+screen _calendar_testing:
     vbox:
         xminimum 500
         xfill True
         spacing 10
         align(0.5, 0.1)
-        text ("Day: %d"%calendar.game_day)
-        text ("Week: %d"%calendar.game_week)
-        text ("Date: %s"%calendar.string)
-        text ("Next Leap Year: %s"%calendar.leapyear)
-        text ("Lunar Progress: %d%%"%calendar.lunarprogress)
-        text ("Moon Phase: %s"%calendar.moonphase.capitalize())
-        text ("Last day of the month: %s"%calendar.last_day_of_the_month)
+        text ("Day: %d"%_calendar.game_day)
+        text ("Week: %d"%_calendar.game_week)
+        text ("Date: %s"%_calendar.string)
+        text ("Next Leap Year: %s"%_calendar.leapyear)
+        text ("Lunar Progress: %d%%"%_calendar.lunarprogress)
+        text ("Moon Phase: %s"%_calendar.moonphase.capitalize())
+        text ("Last day of the month: %s"%_calendar.last_day_of_the_month)
         
-screen calendar:
+screen _calendar:
     
     tag menu
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12

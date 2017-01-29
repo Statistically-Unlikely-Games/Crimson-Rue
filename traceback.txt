@@ -1,24 +1,83 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/encyclopaedia_data.rpy", line 7, in script
-    init python:
-  File "game/encyclopaedia_data.rpy", line 1654, in <module>
-    locking_unlocking_entries,
-NameError: name 'locking_unlocking_entries' is not defined
+  File "game/apothecary.rpy", line 10, in script call
+    call calendar_ani(1)
+  File "game/calendar_ani.rpy", line 167, in script
+    pause startDelay
+  File "renpy/common/000statements.rpy", line 383, in execute_pause
+    renpy.with_statement(Pause(delay))
+  File "game/calendar_ani.rpy", line 221, in execute
+    screen CBtn1(day, direction, distance, posX, posY, startDelay, speed):
+  File "game/calendar_ani.rpy", line 221, in execute
+    screen CBtn1(day, direction, distance, posX, posY, startDelay, speed):
+  File "game/calendar_ani.rpy", line 222, in execute
+    use CalendarButton(day, direction, distance, posX, posY, startDelay, speed)
+  File "game/calendar_ani.rpy", line 245, in execute
+    screen CalendarButton(day, direction, distance, posX, posY, startDelay, speed):
+  File "game/calendar_ani.rpy", line 245, in execute
+    screen CalendarButton(day, direction, distance, posX, posY, startDelay, speed):
+  File "game/calendar_ani.rpy", line 246, in execute
+    frame:
+  File "game/calendar_ani.rpy", line 259, in execute
+    add dayButton ypos 30 #Trying to figure out how to make this into moon_img, but where each day is different...
+NameError: name 'dayButton' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/encyclopaedia_data.rpy", line 7, in script
-    init python:
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/encyclopaedia_data.rpy", line 1654, in <module>
-    locking_unlocking_entries,
-NameError: name 'locking_unlocking_entries' is not defined
+  File "game/apothecary.rpy", line 10, in script call
+    call calendar_ani(1)
+  File "game/calendar_ani.rpy", line 167, in script
+    pause startDelay
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 1706, in execute
+    self.call("execute")
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 1724, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\statements.py", line 145, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 383, in execute_pause
+    renpy.with_statement(Pause(delay))
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1376, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2062, in do_with
+    clear=clear)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2759, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 399, in visit_all
+    callback(self)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2759, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 409, in per_interact
+    self.update()
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 578, in update
+    self.screen.function(**self.scope)
+  File "game/calendar_ani.rpy", line 221, in execute
+    screen CBtn1(day, direction, distance, posX, posY, startDelay, speed):
+  File "game/calendar_ani.rpy", line 221, in execute
+    screen CBtn1(day, direction, distance, posX, posY, startDelay, speed):
+  File "game/calendar_ani.rpy", line 222, in execute
+    use CalendarButton(day, direction, distance, posX, posY, startDelay, speed)
+  File "game/calendar_ani.rpy", line 245, in execute
+    screen CalendarButton(day, direction, distance, posX, posY, startDelay, speed):
+  File "game/calendar_ani.rpy", line 245, in execute
+    screen CalendarButton(day, direction, distance, posX, posY, startDelay, speed):
+  File "game/calendar_ani.rpy", line 246, in execute
+    frame:
+  File "game/calendar_ani.rpy", line 259, in execute
+    add dayButton ypos 30 #Trying to figure out how to make this into moon_img, but where each day is different...
+  File "<screen language>", line 259, in <module>
+NameError: name 'dayButton' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

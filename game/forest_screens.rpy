@@ -29,13 +29,13 @@ screen forest001:
             textbutton "Exit" action Quit(confirm=False)
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -388,13 +388,13 @@ screen forest002:
             textbutton "Exit" action Quit(confirm=False)
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -713,13 +713,13 @@ screen forest003:
             textbutton "Exit" action Quit(confirm=False)
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -1038,13 +1038,13 @@ screen forest004:
             textbutton "Exit" action Quit(confirm=False)
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -1363,13 +1363,13 @@ screen forest005:
             textbutton "Exit" action Quit(confirm=False)
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -1688,13 +1688,13 @@ screen forest006:
             textbutton "Exit" action Quit(confirm=False)
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -2013,13 +2013,13 @@ screen forest007:
             textbutton "Exit" action Quit(confirm=False)
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -2338,13 +2338,13 @@ screen forest008:
             textbutton "Exit" action Quit(confirm=False)
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -2663,13 +2663,13 @@ screen forest009:
             textbutton "Exit" action Quit(confirm=False)
     
     python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+        if _calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
