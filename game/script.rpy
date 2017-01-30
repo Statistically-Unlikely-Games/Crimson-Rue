@@ -57,7 +57,7 @@ label start:
     ## ------------ ESC MENU AND TIME TRACKING --------------------
     
     $ _game_menu_screen = "game_menu" # This code activates the "pause menu" in screens.rpy
-    $ calendar = calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
+    $ calendar = Calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
 

@@ -1,24 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 60, in script
-    $ calendar = calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
-  File "game/script.rpy", line 60, in <module>
-    $ calendar = calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
-NameError: name 'calendar' is not defined
+  File "game/apothecary.rpy", line 10, in script call
+    call calendar_ani(1)
+  File "game/apothecary.rpy", line 10, in script call
+    call calendar_ani(1)
+ScriptError: could not find label 'calendar_ani'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 60, in script
-    $ calendar = calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/script.rpy", line 60, in <module>
-    $ calendar = calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
-NameError: name 'calendar' is not defined
+  File "game/apothecary.rpy", line 10, in script call
+    call calendar_ani(1)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 1322, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/apothecary.rpy", line 10, in script call
+    call calendar_ani(1)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\script.py", line 857, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'calendar_ani'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

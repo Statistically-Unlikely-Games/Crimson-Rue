@@ -1,11 +1,11 @@
 ﻿##############################################################################
-# calendar
+# Calendar
 #
 # Keeps track of the day, month, year, leap year, and lunar calendar.
 # Thanks to xela from the lemmasoft forums!
 
 init python:
-    class calendar(object):
+    class Calendar(object):
         '''Provides time-related information.
         Cheers to Rudi for mooncalendar calculations.
         '''
