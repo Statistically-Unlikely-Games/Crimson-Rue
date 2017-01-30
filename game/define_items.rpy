@@ -39,7 +39,11 @@ label define_items:
     $ herb012 = Item("Borage", "A medicinal herb.", "inv/herb012_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
     $ herb013 = Item("Crown Flower", "A medicinal herb.", "inv/herb013_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
     $ herb014 = Item("Marsh Marigold", "A medicinal herb.", "inv/herb014_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
-    
+    $ herb015 = Item("Plantain", "A medicinal herb.", "inv/herb015_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb016 = Item("Chamomile", "A medicinal herb.", "inv/herb016_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb017 = Item("Calendula", "A medicinal herb.", "inv/herb017_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb018 = Item("Violet", "A medicinal herb.", "inv/herb018_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+
     $ bandages = Item("Bandages", "For wrapping wounds.", "inv/bandages.png", 5, act=Show("inventory_popup", message="This item is only used in crafting"))
     $ empty_bottle = Item("Empty Bottle", "Fill it with all kinds of things.", "inv/bottle.empty.png", 300, act=Show("inventory_popup", message="This item is only used in crafting"))
     $ water = Item("Bottle of Water", "Medicine made with this spread easy but spoil faster.", "inv/bottle.water.png", 300, act=Show("inventory_popup", message="This item is only used in crafting"))
@@ -65,6 +69,10 @@ label define_items:
     $ extract012 = Item("Barage Extract", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb012,1]])
     $ extract013 = Item("Crown Flower Extract", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb013,1]]) 
     $ extract014 = Item("Marsh Marigold Extract", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb014,1]]) 
+    $ extract015 = Item("Plantain Extract", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb015,1]]) 
+    $ extract016 = Item("Chamomile Extract", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb016,1]]) 
+    $ extract017 = Item("Calendula Extract", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb017,1]]) 
+    $ extract018 = Item("Violet Extract", "Made by boiling herbs.", "inv/bottle.extract.png", 550, recipe=[[water,1],[herb018,1]]) 
     
     $ herb_oil001 = Item("Thistle Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb001,1]]) 
     $ herb_oil002 = Item("Dandelion Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb002,1]]) 
@@ -80,6 +88,10 @@ label define_items:
     $ herb_oil012 = Item("Barage Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb012,1]]) 
     $ herb_oil013 = Item("Crown Flower Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb013,1]]) 
     $ herb_oil014 = Item("Marsh Marigold Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb014,1]]) 
+    $ herb_oil015 = Item("Plantain Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb015,1]]) 
+    $ herb_oil016 = Item("Chamomile Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb016,1]]) 
+    $ herb_oil017 = Item("Calendula Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb017,1]]) 
+    $ herb_oil018 = Item("Violet Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb018,1]]) 
  
  #Tier 3 Items
 
@@ -97,6 +109,10 @@ label define_items:
     $ balm012 = Item("Barage Balm", "Medicine applied to the skin.", "inv/tin.medicine05.png", 1400, recipe=[[wax,1],[herb_oil012,1]])
     $ balm013 = Item("Crown Flower Balm", "Medicine applied to the skin.", "inv/tin.medicine05.png", 1400, recipe=[[wax,1],[herb_oil013,1]])
     $ balm014 = Item("Marsh Marigold Balm", "Medicine applied to the skin.", "inv/tin.medicine05.png", 1400, recipe=[[wax,1],[herb_oil014,1]])
+    $ balm015 = Item("Plantain Balm", "Medicine applied to the skin.", "inv/tin.medicine05.png", 1400, recipe=[[wax,1],[herb_oil015,1]])
+    $ balm016 = Item("Chamomile Balm", "Medicine applied to the skin.", "inv/tin.medicine05.png", 1400, recipe=[[wax,1],[herb_oil016,1]])
+    $ balm017 = Item("Calendula Balm", "Medicine applied to the skin.", "inv/tin.medicine05.png", 1400, recipe=[[wax,1],[herb_oil017,1]])
+    $ balm018 = Item("Violet Balm", "Medicine applied to the skin.", "inv/tin.medicine05.png", 1400, recipe=[[wax,1],[herb_oil018,1]])
 
     $ cream001 = Item("Thistle Cream", "Medicine applied to the skin.", "inv/jar.medicine04.png", 2400, recipe=[[empty_jar,1],[water,2],[wax,1],[herb_oil001,1]])
     $ cream002 = Item("Dandelion Cream", "Medicine applied to the skin.", "inv/jar.medicine04.png", 2400, recipe=[[empty_jar,1],[water,2],[wax,1],[herb_oil002,1]])
@@ -112,7 +128,11 @@ label define_items:
     $ cream012 = Item("Barage Cream", "Medicine applied to the skin.", "inv/jar.medicine04.png", 2400, recipe=[[empty_jar,1],[water,2],[wax,1],[herb_oil012,1]])
     $ cream013 = Item("Crown Flower Cream", "Medicine applied to the skin.", "inv/jar.medicine04.png", 2400, recipe=[[empty_jar,1],[water,2],[wax,1],[herb_oil013,1]])
     $ cream014 = Item("Marsh Marigold Cream", "Medicine applied to the skin.", "inv/jar.medicine04.png", 2400, recipe=[[empty_jar,1],[water,2],[wax,1],[herb_oil014,1]])
-       
+    $ cream014 = Item("Plantain Cream", "Medicine applied to the skin.", "inv/jar.medicine04.png", 2400, recipe=[[empty_jar,1],[water,2],[wax,1],[herb_oil015,1]])
+    $ cream014 = Item("Chamomile Cream", "Medicine applied to the skin.", "inv/jar.medicine04.png", 2400, recipe=[[empty_jar,1],[water,2],[wax,1],[herb_oil016,1]])
+    $ cream014 = Item("Calendula Cream", "Medicine applied to the skin.", "inv/jar.medicine04.png", 2400, recipe=[[empty_jar,1],[water,2],[wax,1],[herb_oil017,1]])
+    $ cream014 = Item("Violet Cream", "Medicine applied to the skin.", "inv/jar.medicine04.png", 2400, recipe=[[empty_jar,1],[water,2],[wax,1],[herb_oil018,1]])
+
     $ infusion001 = Item("Thistle Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract001,1]])
     $ infusion002 = Item("Dandelion Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract002,1]])
     $ infusion003 = Item("Blackberry Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract003,1]])
@@ -127,7 +147,11 @@ label define_items:
     $ infusion012 = Item("Barage Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract012,1]])
     $ infusion013 = Item("Crown Flower Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract013,1]])
     $ infusion014 = Item("Marsh Marigold Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract014,1]])
-        
+    $ infusion015 = Item("Plantain Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract015,1]])
+    $ infusion016 = Item("Chamomile Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract016,1]])
+    $ infusion017 = Item("Calendula Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract017,1]])
+    $ infusion018 = Item("Violet Infusion", "Medicine you can drink.", "inv/bottle.medicine01.png", 1200, recipe=[[water,1],[extract018,1]])
+    
     $ salve001 = Item("Thistle Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil001,1]])
     $ salve002 = Item("Dandelion Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil002,1]])
     $ salve003 = Item("Blackberry Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil003,1]])
@@ -142,6 +166,10 @@ label define_items:
     $ salve012 = Item("Barage Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil012,1]])
     $ salve013 = Item("Crown Flower Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil013,1]])
     $ salve014 = Item("Marsh Marigold Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil014,1]])
+    $ salve015 = Item("Plantain Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil015,1]])
+    $ salve016 = Item("Chamomile Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil016,1]])
+    $ salve017 = Item("Calendula Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil017,1]])
+    $ salve018 = Item("Violet Salve", "Medicine applied to the skin.", "inv/jar.medicine03.png", 3000, recipe=[[empty_jar,1],[oil,2],[wax,1],[herb_oil018,1]])
     
     $ tincture001 = Item("Thistle Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract001,1]]) 
     $ tincture002 = Item("Dandelion Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract002,1]]) 
@@ -157,6 +185,10 @@ label define_items:
     $ tincture012 = Item("Barage Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract012,1]]) 
     $ tincture013 = Item("Crown Flower Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract013,1]]) 
     $ tincture014 = Item("Marsh Marigold Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract014,1]]) 
+    $ tincture015 = Item("Plantain Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract015,1]]) 
+    $ tincture016 = Item("Chamomile Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract016,1]]) 
+    $ tincture017 = Item("Calendula Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract017,1]]) 
+    $ tincture018 = Item("Violet Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract018,1]]) 
     
     "Items have been defined."
     

@@ -1,8 +1,5 @@
 ﻿## inventory 1.5 demo
 
-init python:
-    config.use_cpickle = False
-
 init python hide:
     for file in renpy.list_files():
         if file.startswith('bg/') and file.endswith('.png'):

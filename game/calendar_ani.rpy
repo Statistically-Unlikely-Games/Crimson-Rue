@@ -275,8 +275,8 @@ transform swipe_in(xPos, yPos):
 ###
 #Image resources
 ###
-image calendar_bg = "calendar/1280x720/bg.png" #Background image
-image dayButton = "calendar/1280x720/day.png" #Image representing each week day
+image calendar_bg = "cal/1280x720/bg.png" #Background image
+image dayButton = "cal/1280x720/day.png" #Image representing each week day
 
 label calendar_ani(toMove):
 
