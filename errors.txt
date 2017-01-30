@@ -2,8 +2,12 @@
 errors listed below, and try again.
 
 
-File "game/gallery.rpy", line 107: vbox expects a non-empty block.
-    if len(gallery_bg_items)>gal_cells:
-                                       ^
+File "game/calendar_ani.rpy", line 379: expected statement.
+    Contact GitHub API Training Shop Blog About
+                                               ^
+
+File "game/calendar_ani.rpy", line 380: expected statement.
+    © 2017 GitHub, Inc. Terms Privacy Security Status Help
+                 ^
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029

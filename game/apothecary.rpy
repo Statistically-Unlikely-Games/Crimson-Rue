@@ -41,13 +41,13 @@ screen apothecary:
     imagebutton auto "gui/button.shop.door_%s.png" xpos 405 ypos 80 focus_mask True action Jump("overworld01")
     
     python:
-        if _calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
+        if calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -84,13 +84,13 @@ screen kitchen:
     imagebutton auto "gui/button.kitchen.door_%s.png" xpos 45 ypos 445 focus_mask True action Jump("cellar")
     
     python:
-        if _calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
+        if calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12
@@ -139,13 +139,13 @@ screen cellar:
     imagebutton auto "gui/button.cellar.fountain_%s.png" xpos 0 ypos 480 focus_mask True action Jump("fountain")
     
     python:
-        if _calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(_calendar.day), ".png"])
+        if calendar.day < 10:
+            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(_calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", _calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", _calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", _calendar.moonphase, ".png"])
+            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
+        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
+        month_img = "".join(["cal/cal ", calendar.month, ".png"])
+        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
     add month_img xpos 22 ypos 12

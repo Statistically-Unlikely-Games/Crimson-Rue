@@ -4,7 +4,7 @@ label timecount:
         $ time_cnt = 1
         $ timeofday = "sunrise"
         $ day_cnt += 1
-        $ _calendar.next()
+        $ calendar.next()
         $ forest001_first_herb_col = True
         $ forest001_second_herb_col = True
         $ forest001_third_herb_col = True

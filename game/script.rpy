@@ -1,5 +1,8 @@
 ﻿## inventory 1.5 demo
 
+init python:
+    config.use_cpickle = False
+
 init python hide:
     for file in renpy.list_files():
         if file.startswith('bg/') and file.endswith('.png'):
@@ -54,7 +57,7 @@ label start:
     ## ------------ ESC MENU AND TIME TRACKING --------------------
     
     $ _game_menu_screen = "game_menu" # This code activates the "pause menu" in screens.rpy
-    $ _calendar = _calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
+    $ calendar = calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
 

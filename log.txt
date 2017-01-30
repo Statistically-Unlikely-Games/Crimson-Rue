@@ -1,21 +1,21 @@
-Sun Jan 29 17:32:34 2017
+Sun Jan 29 21:18:17 2017
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029
  
 
-Bootstrap to the start of init.init took 0.06s
+Bootstrap to the start of init.init took 0.07s
 Early init took 0.04s
-Loader init took 0.06s
+Loader init took 0.09s
 Loading error handling took 0.02s
-Loading script took 0.79s
-Loading persistent took 0.06s
+Loading script took 0.35s
+Loading persistent took 0.04s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.11s
-Loading analysis data took 0.46s
+Running init code took 0.14s
+Loading analysis data took 0.55s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Ari\\AppData\\Roaming/RenPy/backups\\Apothecary Game':
-Dump and make backups. took 0.14s
+Dump and make backups. took 0.12s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.500000
@@ -24,11 +24,11 @@ Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.20s
-Prepare screens took 0.28s
-Save pyanalysis. took 1.99s
-Save bytecode. took 0.50s
+Analyze screens took 0.04s
+Save screen analysis took 0.22s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.01s
@@ -265,14 +265,14 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 5.38499999046s
+Total time until interface ready: 2.51900005341s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.012000 seconds.
-- Frame drawn at 0.030000 seconds.
-- Frame drawn at 0.048000 seconds.
-- Frame drawn at 0.065000 seconds.
-- 0.065000 seconds to render 5 frames.
+- Frame drawn at 0.015000 seconds.
+- Frame drawn at 0.031000 seconds.
+- Frame drawn at 0.047000 seconds.
+- Frame drawn at 0.064000 seconds.
+- 0.064000 seconds to render 5 frames.
 Traceback (most recent call last):
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\execution.py", line 438, in run
     node.execute()
@@ -280,10 +280,6 @@ Traceback (most recent call last):
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "renpy/common/00keymap.rpy", line 403, in <module>
-    renpy.save("_reload-1", "reload save game")
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\loadsave.py", line 286, in save
-    dump((roots, renpy.game.log), logf)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\loadsave.py", line 45, in dump
-    cPickle.dump(o, f, cPickle.HIGHEST_PROTOCOL)
-PicklingError: Can't pickle <class 'store._calendar'>: it's not the same object as store._calendar
+  File "game/script.rpy", line 60, in <module>
+    $ calendar = calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
+NameError: name 'calendar' is not defined
