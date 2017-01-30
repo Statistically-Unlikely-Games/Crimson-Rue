@@ -64,62 +64,83 @@ label start:
         forest001_first_herb_col = True
         forest001_second_herb_col = True
         forest001_third_herb_col = True
-        forest001_forth_herb_col = True
+        forest001_fourth_herb_col = True
         forest001_fifth_herb_col = True
         forest001_sixth_herb_col = True
         forest001_seventh_herb_col = True
         forest001_eighth_herb_col = True
-        forest001_ninth_herb_col = True
-        forest001_tenth_herb_col = True
-        forest001_eleventh_herb_col = True
         
         forest002_first_herb_col = True
         forest002_second_herb_col = True
         forest002_third_herb_col = True
-        forest002_forth_herb_col = True
+        forest002_fourth_herb_col = True
         forest002_fifth_herb_col = True
+        forest002_sixth_herb_col = True
+        forest002_seventh_herb_col = True
+        forest002_eighth_herb_col = True
         
         forest003_first_herb_col = True
         forest003_second_herb_col = True
         forest003_third_herb_col = True
-        forest003_forth_herb_col = True
+        forest003_fourth_herb_col = True
         forest003_fifth_herb_col = True
+        forest003_sixth_herb_col = True
+        forest003_seventh_herb_col = True
+        forest003_eighth_herb_col = True
         
         forest004_first_herb_col = True
         forest004_second_herb_col = True
         forest004_third_herb_col = True
-        forest004_forth_herb_col = True
+        forest004_fourth_herb_col = True
         forest004_fifth_herb_col = True
+        forest004_sixth_herb_col = True
+        forest004_seventh_herb_col = True
+        forest004_eighth_herb_col = True
         
         forest005_first_herb_col = True
         forest005_second_herb_col = True
         forest005_third_herb_col = True
-        forest005_forth_herb_col = True
+        forest005_fourth_herb_col = True
         forest005_fifth_herb_col = True
+        forest005_sixth_herb_col = True
+        forest005_seventh_herb_col = True
+        forest005_eighth_herb_col = True
         
         forest006_first_herb_col = True
         forest006_second_herb_col = True
         forest006_third_herb_col = True
-        forest006_forth_herb_col = True
+        forest006_fourth_herb_col = True
         forest006_fifth_herb_col = True
+        forest006_sixth_herb_col = True
+        forest006_seventh_herb_col = True
+        forest006_eighth_herb_col = True
         
         forest007_first_herb_col = True
         forest007_second_herb_col = True
         forest007_third_herb_col = True
-        forest007_forth_herb_col = True
+        forest007_fourth_herb_col = True
         forest007_fifth_herb_col = True
+        forest007_sixth_herb_col = True
+        forest007_seventh_herb_col = True
+        forest007_eighth_herb_col = True
         
         forest008_first_herb_col = True
         forest008_second_herb_col = True
         forest008_third_herb_col = True
-        forest008_forth_herb_col = True
+        forest008_fourth_herb_col = True
         forest008_fifth_herb_col = True
+        forest008_sixth_herb_col = True
+        forest008_seventh_herb_col = True
+        forest008_eighth_herb_col = True
         
         forest009_first_herb_col = True
         forest009_second_herb_col = True
         forest009_third_herb_col = True
-        forest009_forth_herb_col = True
+        forest009_fourth_herb_col = True
         forest009_fifth_herb_col = True
+        forest009_sixth_herb_col = True
+        forest009_seventh_herb_col = True
+        forest009_eighth_herb_col = True
     
     
     ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
@@ -130,13 +151,14 @@ label start:
     
     $ cooklist = [balm001,cream002,extract003,herb_oil004,infusion005,salve006,tincture007]
     
-    $ balmslist = [balm001,balm002,balm003,balm004,balm005,balm006,balm007,balm008,balm009,balm010]
-    $ creamslist = [cream001,cream002,cream003,cream004,cream005,cream006,cream007,cream008,cream009,cream010]
-    $ extractslist = [extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010]
-    $ herboilslist = [herb_oil001,herb_oil002,herb_oil003,herb_oil004,herb_oil005,herb_oil006,herb_oil007,herb_oil008,herb_oil009,herb_oil010]
-    $ infusionslist = [infusion001,infusion002,infusion003,infusion004,infusion005,infusion006,infusion007,infusion008,infusion009,infusion010]
-    $ salveslist = [salve001,salve002,salve003,salve004,salve005,salve006,salve007,salve008,salve009,salve010]
-    $ tinctureslist = [tincture001,tincture002,tincture003,tincture004,tincture005,tincture006,tincture007,tincture008,tincture009,tincture010]
+    $ extractslist = [extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010,extract011,extract012,extract013,extract014]
+    $ herboilslist = [herb_oil001,herb_oil002,herb_oil003,herb_oil004,herb_oil005,herb_oil006,herb_oil007,herb_oil008,herb_oil009,herb_oil010,herb_oil011,herb_oil012,herb_oil013,herb_oil014]
+
+    $ balmslist = [balm001,balm002,balm003,balm004,balm005,balm006,balm007,balm008,balm009,balm010,balm011,balm012,balm013,balm014]
+    $ creamslist = [cream001,cream002,cream003,cream004,cream005,cream006,cream007,cream008,cream009,cream010,cream011,cream012,cream013,cream014]
+    $ infusionslist = [infusion001,infusion002,infusion003,infusion004,infusion005,infusion006,infusion007,infusion008,infusion009,infusion010,infusion011,infusion012,infusion013,infusion014]
+    $ salveslist = [salve001,salve002,salve003,salve004,salve005,salve006,salve007,salve008,salve009,salve010,salve011,salve012,salve013,salve014]
+    $ tinctureslist = [tincture001,tincture002,tincture003,tincture004,tincture005,tincture006,tincture007,tincture008,tincture009,tincture010,tincture011,tincture012,tincture013,tincture014]
     
     jump apothecary_shop
 

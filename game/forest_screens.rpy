@@ -46,94 +46,94 @@ screen forest001:
     
     if forest001_spawn == 1:
     
+        if forest001_second_herb_col:
+            imagebutton:
+                idle "inv/herb003_idle.png"
+                hover "inv/herb003_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_second_herb_col", False), Jump("forest001_second_herb") ]
+                xpos 300 ypos 500
+                xanchor 0 yanchor 0
+            
+        if forest001_fourth_herb_col:
+            imagebutton:
+                idle "inv/herb006_idle.png"
+                hover "inv/herb006_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_fourth_herb_col", False), Jump("forest001_fourth_herb") ]
+                xpos 1120 ypos 480
+                xanchor 0 yanchor 0
+    
+        if forest001_fifth_herb_col:
+            imagebutton:
+                idle "inv/herb007_idle.png"
+                hover "inv/herb007_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_fifth_herb_col", False), Jump("forest001_fifth_herb") ]
+                xpos 200 ypos 330
+                xanchor 0 yanchor 0
+            
+        if forest001_first_herb_col:
+            imagebutton:
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_first_herb_col", False), Jump("forest001_first_herb") ]
+                xpos 600 ypos 390
+                xanchor 0 yanchor 0
+            
+        if forest001_third_herb_col:
+            imagebutton:
+                idle "inv/herb005_idle.png"
+                hover "inv/herb005_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_third_herb_col", False), Jump("forest001_third_herb") ]
+                xpos 800 ypos 320
+                xanchor 0 yanchor 0
+                
+    if forest001_spawn == 2:
+        
+        if forest001_third_herb_col:
+            imagebutton:
+                idle "inv/herb005_idle.png"
+                hover "inv/herb005_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_third_herb_col", False), Jump("forest001_third_herb") ]
+                xpos 600 ypos 390
+                xanchor 0 yanchor 0
+            
         if forest001_eighth_herb_col:
             imagebutton:
                 idle "inv/herb012_idle.png"
                 hover "inv/herb012_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_eighth_herb_col", False), Jump("forest001_eighth_herb") ]
-                xpos 300 ypos 500
-                xanchor 0 yanchor 0
-            
-        if forest001_second_herb_col:
-            imagebutton:
-                idle "inv/herb002_idle.png"
-                hover "inv/herb002_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest001_second_herb_col", False), Jump("forest001_second_herb") ]
                 xpos 1120 ypos 480
                 xanchor 0 yanchor 0
     
-        if forest001_third_herb_col:
-            imagebutton:
-                idle "inv/herb003_idle.png"
-                hover "inv/herb003_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest001_third_herb_col", False), Jump("forest001_third_herb") ]
-                xpos 200 ypos 330
-                xanchor 0 yanchor 0
-            
-        if forest001_forth_herb_col:
-            imagebutton:
-                idle "inv/herb004_idle.png"
-                hover "inv/herb004_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest001_forth_herb_col", False), Jump("forest001_forth_herb") ]
-                xpos 600 ypos 390
-                xanchor 0 yanchor 0
-            
-        if forest001_seventh_herb_col:
-            imagebutton:
-                idle "inv/herb011_idle.png"
-                hover "inv/herb011_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest001_seventh_herb_col", False), Jump("forest001_seventh_herb") ]
-                xpos 800 ypos 320
-                xanchor 0 yanchor 0
-                
-    if forest001_spawn == 2:
-        
-        if forest001_sixth_herb_col:
+        if forest001_fourth_herb_col:
             imagebutton:
                 idle "inv/herb006_idle.png"
                 hover "inv/herb006_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_sixth_herb_col", False), Jump("forest001_sixth_herb") ]
-                xpos 600 ypos 390
-                xanchor 0 yanchor 0
-            
-        if forest001_second_herb_col:
-            imagebutton:
-                idle "inv/herb002_idle.png"
-                hover "inv/herb002_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest001_second_herb_col", False), Jump("forest001_second_herb") ]
-                xpos 1120 ypos 480
-                xanchor 0 yanchor 0
-    
-        if forest001_third_herb_col:
-            imagebutton:
-                idle "inv/herb003_idle.png"
-                hover "inv/herb003_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest001_third_herb_col", False), Jump("forest001_third_herb") ]
+                clicked [ SetVariable("forest001_fourth_herb_col", False), Jump("forest001_fourth_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
             
-        if forest001_seventh_herb_col:
+        if forest001_first_herb_col:
             imagebutton:
-                idle "inv/herb011_idle.png"
-                hover "inv/herb011_hover.png"
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_seventh_herb_col", False), Jump("forest001_seventh_herb") ]
+                clicked [ SetVariable("forest001_first_herb_col", False), Jump("forest001_first_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
         if forest001_fifth_herb_col:
             imagebutton:
-                idle "inv/herb005_idle.png"
-                hover "inv/herb005_hover.png"
+                idle "inv/herb007_idle.png"
+                hover "inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_fifth_herb_col", False), Jump("forest001_fifth_herb") ]
                 xpos 800 ypos 320
@@ -141,52 +141,70 @@ screen forest001:
                 
     if forest001_spawn == 3:
     
-        if forest001_first_herb_col:
+        if forest001_fourth_herb_col:
             imagebutton:
-                idle "inv/herb005_idle.png"
-                hover "inv/herb005_hover.png"
+                idle "inv/herb006_idle.png"
+                hover "inv/herb006_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_first_herb_col", False), Jump("forest001_first_herb") ]
+                clicked [ SetVariable("forest001_fourth_herb_col", False), Jump("forest001_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
-        if forest001_eighth_herb_col:
+        if forest001_second_herb_col:
             imagebutton:
-                idle "inv/herb012_idle.png"
-                hover "inv/herb012_hover.png"
+                idle "inv/herb003_idle.png"
+                hover "inv/herb003_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_eighth_herb_col", False), Jump("forest001_eighth_herb") ]
+                clicked [ SetVariable("forest001_second_herb_col", False), Jump("forest001_second_herb") ]
                 xpos 1120 ypos 480
                 xanchor 0 yanchor 0
     
-        if forest001_ninth_herb_col:
+        if forest001_fifth_herb_col:
             imagebutton:
-                idle "inv/herb013_idle.png"
-                hover "inv/herb013_hover.png"
+                idle "inv/herb007_idle.png"
+                hover "inv/herb007_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_ninth_herb_col", False), Jump("forest001_ninth_herb") ]
+                clicked [ SetVariable("forest001_fifth_herb_col", False), Jump("forest001_fifth_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if forest001_tenth_herb_col:
+        if forest001_seventh_herb_col:
             imagebutton:
-                idle "inv/herb014_idle.png"
-                hover "inv/herb014_hover.png"
+                idle "inv/herb011_idle.png"
+                hover "inv/herb011_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_tenth_herb_col", False), Jump("forest001_tenth_herb") ]
+                clicked [ SetVariable("forest001_seventh_herb_col", False), Jump("forest001_seventh_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
-        if forest001_eleventh_herb_col:
+        if forest001_first_herb_col:
             imagebutton:
-                idle "inv/herb015_idle.png"
-                hover "inv/herb015_hover.png"
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_eleventh_herb_col", False), Jump("forest001_eleventh_herb") ]
+                clicked [ SetVariable("forest001_first_herb_col", False), Jump("forest001_first_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
                 
     if forest001_spawn == 4:
+    
+        if forest001_fifth_herb_col:
+            imagebutton:
+                idle "inv/herb007_idle.png"
+                hover "inv/herb007_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_fifth_herb_col", False), Jump("forest001_fifth_herb") ]
+                xpos 800 ypos 320
+                xanchor 0 yanchor 0
+            
+        if forest001_third_herb_col:
+            imagebutton:
+                idle "inv/herb005_idle.png"
+                hover "inv/herb005_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest001_third_herb_col", False), Jump("forest001_third_herb") ]
+                xpos 1120 ypos 480
+                xanchor 0 yanchor 0
     
         if forest001_first_herb_col:
             imagebutton:
@@ -194,91 +212,73 @@ screen forest001:
                 hover "inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_first_herb_col", False), Jump("forest001_first_herb") ]
-                xpos 800 ypos 320
-                xanchor 0 yanchor 0
-            
-        if forest001_second_herb_col:
-            imagebutton:
-                idle "inv/herb002_idle.png"
-                hover "inv/herb002_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest001_second_herb_col", False), Jump("forest001_second_herb") ]
-                xpos 1120 ypos 480
-                xanchor 0 yanchor 0
-    
-        if forest001_third_herb_col:
-            imagebutton:
-                idle "inv/herb003_idle.png"
-                hover "inv/herb003_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest001_third_herb_col", False), Jump("forest001_third_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
             
-        if forest001_tenth_herb_col:
+        if forest001_second_herb_col:
             imagebutton:
-                idle "inv/herb014_idle.png"
-                hover "inv/herb014_hover.png"
+                idle "inv/herb003_idle.png"
+                hover "inv/herb003_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_tenth_herb_col", False), Jump("forest001_tenth_herb") ]
+                clicked [ SetVariable("forest001_second_herb_col", False), Jump("forest001_second_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if forest001_eleventh_herb_col:
+        if forest001_sixth_herb_col:
             imagebutton:
-                idle "inv/herb015_idle.png"
-                hover "inv/herb015_hover.png"
+                idle "inv/herb009_idle.png"
+                hover "inv/herb009_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_eleventh_herb_col", False), Jump("forest001_eleventh_herb") ]
+                clicked [ SetVariable("forest001_sixth_herb_col", False), Jump("forest001_sixth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
     
     if forest001_spawn == 5:
     
-        if forest001_tenth_herb_col:
+        if forest001_third_herb_col:
             imagebutton:
-                idle "inv/herb014_idle.png"
-                hover "inv/herb014_hover.png"
+                idle "inv/herb005_idle.png"
+                hover "inv/herb005_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_tenth_herb_col", False), Jump("forest001_tenth_herb") ]
+                clicked [ SetVariable("forest001_third_herb_col", False), Jump("forest001_third_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
-        if forest001_second_herb_col:
+        if forest001_fourth_herb_col:
             imagebutton:
-                idle "inv/herb002_idle.png"
-                hover "inv/herb002_hover.png"
+                idle "inv/herb006_idle.png"
+                hover "inv/herb006_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_second_herb_col", False), Jump("forest001_second_herb") ]
+                clicked [ SetVariable("forest001_fourth_herb_col", False), Jump("forest001_fourth_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
     
-        if forest001_third_herb_col:
+        if forest001_fifth_herb_col:
             imagebutton:
-                idle "inv/herb003_idle.png"
-                hover "inv/herb003_hover.png"
+                idle "inv/herb007_idle.png"
+                hover "inv/herb007_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_third_herb_col", False), Jump("forest001_third_herb") ]
+                clicked [ SetVariable("forest001_fifth_herb_col", False), Jump("forest001_fifth_herb") ]
                 xpos 1120 ypos 480
                 xanchor 0 yanchor 0
             
             
-        if forest001_forth_herb_col:
+        if forest001_second_herb_col:
             imagebutton:
-                idle "inv/herb004_idle.png"
-                hover "inv/herb004_hover.png"
+                idle "inv/herb003_idle.png"
+                hover "inv/herb003_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_forth_herb_col", False), Jump("forest001_forth_herb") ]
+                clicked [ SetVariable("forest001_second_herb_col", False), Jump("forest001_second_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
-        if forest001_ninth_herb_col:
+        if forest001_first_herb_col:
             imagebutton:
-                idle "inv/herb013_idle.png"
-                hover "inv/herb013_hover.png"
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest001_ninth_herb_col", False), Jump("forest001_ninth_herb") ]
+                clicked [ SetVariable("forest001_first_herb_col", False), Jump("forest001_first_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
@@ -290,62 +290,44 @@ label forest001_first_herb:
     jump forest001
     
 label forest001_second_herb:
-    $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
+    $ pc_inv.take(herb003)
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest001
     
 label forest001_third_herb:
-    $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
+    $ pc_inv.take(herb005)
+    show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest001
     
-label forest001_forth_herb:
-    $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
+label forest001_fourth_herb:
+    $ pc_inv.take(herb006)
+    show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest001
     
 label forest001_fifth_herb:
-    $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
+    $ pc_inv.take(herb007)
+    show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest001
     
 label forest001_sixth_herb:
-    $ pc_inv.take(herb006)
-    show screen inventory_popup2(message="Received Marsh Marigold",item="Marsh Marigold")
+    $ pc_inv.take(herb009)
+    show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest001
     
 label forest001_seventh_herb:
     $ pc_inv.take(herb011)
-    show screen inventory_popup2(message="Received Sage",item="Sage")
+    show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest001
     
 label forest001_eighth_herb:
     $ pc_inv.take(herb012)
-    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
-    
-    jump forest001
-    
-label forest001_ninth_herb:
-    $ pc_inv.take(herb013)
-    show screen inventory_popup2(message="Received Oak",item="Oak")
-    
-    jump forest001
-    
-label forest001_tenth_herb:
-    $ pc_inv.take(herb014)
-    show screen inventory_popup2(message="Received Garlic",item="Garlic")
-    
-    jump forest001
-
-label forest001_eleventh_herb:
-    $ pc_inv.take(herb015)
-    show screen inventory_popup2(message="Received Laurel",item="Laurel")
+    show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest001
     
@@ -414,135 +396,135 @@ screen forest002:
                 xpos 800 ypos 400
                 xanchor 0 yanchor 0
             
-        if forest002_second_herb_col:
+        if forest002_fourth_herb_col:
             imagebutton:
-                idle "inv/herb002_idle.png"
-                hover "inv/herb002_hover.png"
+                idle "inv/herb004_idle.png"
+                hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_second_herb_col", False), Jump("forest002_second_herb") ]
+                clicked [ SetVariable("forest002_fourth_herb_col", False), Jump("forest002_fourth_herb") ]
                 xpos 1000 ypos 550
                 xanchor 0 yanchor 0
     
+        if forest002_sixth_herb_col:
+            imagebutton:
+                idle "inv/herb008_idle.png"
+                hover "inv/herb008_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest002_sixth_herb_col", False), Jump("forest002_sixth_herb") ]
+                xpos 400 ypos 460
+                xanchor 0 yanchor 0
+            
+            
         if forest002_third_herb_col:
             imagebutton:
                 idle "inv/herb003_idle.png"
                 hover "inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_third_herb_col", False), Jump("forest002_third_herb") ]
-                xpos 400 ypos 460
-                xanchor 0 yanchor 0
-            
-            
-        if forest002_forth_herb_col:
-            imagebutton:
-                idle "inv/herb004_idle.png"
-                hover "inv/herb004_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest002_forth_herb_col", False), Jump("forest002_forth_herb") ]
                 xpos 50 ypos 490
                 xanchor 0 yanchor 0
             
-        if forest002_fifth_herb_col:
+        if forest002_second_herb_col:
             imagebutton:
-                idle "inv/herb005_idle.png"
-                hover "inv/herb005_hover.png"
+                idle "inv/herb002_idle.png"
+                hover "inv/herb002_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_fifth_herb_col", False), Jump("forest002_fifth_herb") ]
+                clicked [ SetVariable("forest002_second_herb_col", False), Jump("forest002_second_herb") ]
                 xpos 655 ypos 350
                 xanchor 0 yanchor 0
                 
     if forest002_spawn == 2:
         
-        if forest002_first_herb_col:
-            imagebutton:
-                idle "inv/herb001_idle.png"
-                hover "inv/herb001_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest002_first_herb_col", False), Jump("forest002_first_herb") ]
-                xpos 655 ypos 350
-                xanchor 0 yanchor 0
-            
         if forest002_second_herb_col:
             imagebutton:
                 idle "inv/herb002_idle.png"
                 hover "inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_second_herb_col", False), Jump("forest002_second_herb") ]
+                xpos 655 ypos 350
+                xanchor 0 yanchor 0
+            
+        if forest002_seventh_herb_col:
+            imagebutton:
+                idle "inv/herb010_idle.png"
+                hover "inv/herb010_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest002_seventh_herb_col", False), Jump("forest002_seventh_herb") ]
                 xpos 800 ypos 400
                 xanchor 0 yanchor 0
     
+        if forest002_eighth_herb_col:
+            imagebutton:
+                idle "inv/herb011_idle.png"
+                hover "inv/herb011_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest002_eighth_herb_col", False), Jump("forest002_eighth_herb") ]
+                xpos 1000 ypos 550
+                xanchor 0 yanchor 0
+            
+            
+        if forest002_fifth_herb_col:
+            imagebutton:
+                idle "inv/herb007_idle.png"
+                hover "inv/herb007_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest002_fifth_herb_col", False), Jump("forest002_fifth_herb") ]
+                xpos 400 ypos 460
+                xanchor 0 yanchor 0
+            
         if forest002_third_herb_col:
             imagebutton:
                 idle "inv/herb003_idle.png"
                 hover "inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_third_herb_col", False), Jump("forest002_third_herb") ]
-                xpos 1000 ypos 550
-                xanchor 0 yanchor 0
-            
-            
-        if forest002_forth_herb_col:
-            imagebutton:
-                idle "inv/herb004_idle.png"
-                hover "inv/herb004_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest002_forth_herb_col", False), Jump("forest002_forth_herb") ]
-                xpos 400 ypos 460
-                xanchor 0 yanchor 0
-            
-        if forest002_fifth_herb_col:
-            imagebutton:
-                idle "inv/herb005_idle.png"
-                hover "inv/herb005_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest002_fifth_herb_col", False), Jump("forest002_fifth_herb") ]
                 xpos 50 ypos 490
                 xanchor 0 yanchor 0
                 
     if forest002_spawn == 3:
     
-        if forest002_first_herb_col:
-            imagebutton:
-                idle "inv/herb001_idle.png"
-                hover "inv/herb001_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest002_first_herb_col", False), Jump("forest002_first_herb") ]
-                xpos 50 ypos 490
-                xanchor 0 yanchor 0
-            
         if forest002_second_herb_col:
             imagebutton:
                 idle "inv/herb002_idle.png"
                 hover "inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_second_herb_col", False), Jump("forest002_second_herb") ]
+                xpos 50 ypos 490
+                xanchor 0 yanchor 0
+            
+        if forest002_sixth_herb_col:
+            imagebutton:
+                idle "inv/herb008_idle.png"
+                hover "inv/herb008_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest002_sixth_herb_col", False), Jump("forest002_sixth_herb") ]
                 xpos 655 ypos 350
                 xanchor 0 yanchor 0
     
-        if forest002_third_herb_col:
-            imagebutton:
-                idle "inv/herb003_idle.png"
-                hover "inv/herb003_hover.png"
-                focus_mask True
-                clicked [ SetVariable("forest002_third_herb_col", False), Jump("forest002_third_herb") ]
-                xpos 800 ypos 400
-                xanchor 0 yanchor 0
-            
-        if forest002_forth_herb_col:
+        if forest002_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_forth_herb_col", False), Jump("forest002_forth_herb") ]
-                xpos 1000 ypos 550
+                clicked [ SetVariable("forest002_fourth_herb_col", False), Jump("forest002_fourth_herb") ]
+                xpos 800 ypos 400
                 xanchor 0 yanchor 0
             
         if forest002_fifth_herb_col:
             imagebutton:
-                idle "inv/herb005_idle.png"
-                hover "inv/herb005_hover.png"
+                idle "inv/herb007_idle.png"
+                hover "inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_fifth_herb_col", False), Jump("forest002_fifth_herb") ]
+                xpos 1000 ypos 550
+                xanchor 0 yanchor 0
+            
+        if forest002_first_herb_col:
+            imagebutton:
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
+                focus_mask True
+                clicked [ SetVariable("forest002_first_herb_col", False), Jump("forest002_first_herb") ]
                 xpos 400 ypos 460
                 xanchor 0 yanchor 0
                 
@@ -557,12 +539,12 @@ screen forest002:
                 xpos 400 ypos 460
                 xanchor 0 yanchor 0
             
-        if forest002_second_herb_col:
+        if forest002_eighth_herb_col:
             imagebutton:
-                idle "inv/herb002_idle.png"
-                hover "inv/herb002_hover.png"
+                idle "inv/herb011_idle.png"
+                hover "inv/herb011_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_second_herb_col", False), Jump("forest002_second_herb") ]
+                clicked [ SetVariable("forest002_eighth_herb_col", False), Jump("forest002_eighth_herb") ]
                 xpos 50 ypos 490
                 xanchor 0 yanchor 0
     
@@ -576,32 +558,32 @@ screen forest002:
                 xanchor 0 yanchor 0
             
             
-        if forest002_forth_herb_col:
+        if forest002_second_herb_col:
             imagebutton:
-                idle "inv/herb004_idle.png"
-                hover "inv/herb004_hover.png"
+                idle "inv/herb002_idle.png"
+                hover "inv/herb002_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_forth_herb_col", False), Jump("forest002_forth_herb") ]
+                clicked [ SetVariable("forest002_second_herb_col", False), Jump("forest002_second_herb") ]
                 xpos 800 ypos 400
                 xanchor 0 yanchor 0
             
-        if forest002_fifth_herb_col:
+        if forest002_sixth_herb_col:
             imagebutton:
-                idle "inv/herb005_idle.png"
-                hover "inv/herb005_hover.png"
+                idle "inv/herb008_idle.png"
+                hover "inv/herb008_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_fifth_herb_col", False), Jump("forest002_fifth_herb") ]
+                clicked [ SetVariable("forest002_sixth_herb_col", False), Jump("forest002_sixth_herb") ]
                 xpos 1000 ypos 550
                 xanchor 0 yanchor 0
     
     if forest002_spawn == 5:
     
-        if forest002_first_herb_col:
+        if forest002_fourth_herb_col:
             imagebutton:
-                idle "inv/herb001_idle.png"
-                hover "inv/herb001_hover.png"
+                idle "inv/herb004_idle.png"
+                hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_first_herb_col", False), Jump("forest002_first_herb") ]
+                clicked [ SetVariable("forest002_fourth_herb_col", False), Jump("forest002_fourth_herb") ]
                 xpos 1000 ypos 550
                 xanchor 0 yanchor 0
             
@@ -614,31 +596,31 @@ screen forest002:
                 xpos 400 ypos 460
                 xanchor 0 yanchor 0
     
-        if forest002_third_herb_col:
+        if forest002_first_herb_col:
             imagebutton:
-                idle "inv/herb003_idle.png"
-                hover "inv/herb003_hover.png"
+                idle "inv/herb001_idle.png"
+                hover "inv/herb001_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_third_herb_col", False), Jump("forest002_third_herb") ]
+                clicked [ SetVariable("forest002_first_herb_col", False), Jump("forest002_first_herb") ]
                 xpos 50 ypos 490
                 xanchor 0 yanchor 0
             
             
-        if forest002_forth_herb_col:
+        if forest002_fifth_herb_col:
             imagebutton:
-                idle "inv/herb004_idle.png"
-                hover "inv/herb004_hover.png"
+                idle "inv/herb007_idle.png"
+                hover "inv/herb007_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_forth_herb_col", False), Jump("forest002_forth_herb") ]
+                clicked [ SetVariable("forest002_fifth_herb_col", False), Jump("forest002_fifth_herb") ]
                 xpos 655 ypos 350
                 xanchor 0 yanchor 0
             
-        if forest002_fifth_herb_col:
+        if forest002_seventh_herb_col:
             imagebutton:
-                idle "inv/herb005_idle.png"
-                hover "inv/herb005_hover.png"
+                idle "inv/herb010_idle.png"
+                hover "inv/herb010_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest002_fifth_herb_col", False), Jump("forest002_fifth_herb") ]
+                clicked [ SetVariable("forest002_seventh_herb_col", False), Jump("forest002_seventh_herb") ]
                 xpos 800 ypos 400
                 xanchor 0 yanchor 0
             
@@ -651,25 +633,43 @@ label forest002_first_herb:
     
 label forest002_second_herb:
     $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
+    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest002
     
 label forest002_third_herb:
     $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest002
     
-label forest002_forth_herb:
+label forest002_fourth_herb:
     $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
+    show screen inventory_popup2(message="Received Oak Bark",item="Oak")
     
     jump forest002
     
 label forest002_fifth_herb:
-    $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
+    $ pc_inv.take(herb007)
+    show screen inventory_popup2(message="Received Oregano",item="Oregano")
+    
+    jump forest002
+    
+label forest002_sixth_herb:
+    $ pc_inv.take(herb008)
+    show screen inventory_popup2(message="Received Parsley",item="Parsley")
+    
+    jump forest002
+    
+label forest002_seventh_herb:
+    $ pc_inv.take(herb010)
+    show screen inventory_popup2(message="Received Laurel",item="Laurel")
+    
+    jump forest002
+    
+label forest002_eighth_herb:
+    $ pc_inv.take(herb011)
+    show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest002
     
@@ -758,12 +758,12 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if forest003_forth_herb_col:
+        if forest003_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest003_forth_herb_col", False), Jump("forest003_forth_herb") ]
+                clicked [ SetVariable("forest003_fourth_herb_col", False), Jump("forest003_fourth_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
@@ -806,12 +806,12 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if forest003_forth_herb_col:
+        if forest003_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest003_forth_herb_col", False), Jump("forest003_forth_herb") ]
+                clicked [ SetVariable("forest003_fourth_herb_col", False), Jump("forest003_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -853,12 +853,12 @@ screen forest003:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if forest003_forth_herb_col:
+        if forest003_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest003_forth_herb_col", False), Jump("forest003_forth_herb") ]
+                clicked [ SetVariable("forest003_fourth_herb_col", False), Jump("forest003_fourth_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
@@ -901,12 +901,12 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if forest003_forth_herb_col:
+        if forest003_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest003_forth_herb_col", False), Jump("forest003_forth_herb") ]
+                clicked [ SetVariable("forest003_fourth_herb_col", False), Jump("forest003_fourth_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
@@ -949,12 +949,12 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if forest003_forth_herb_col:
+        if forest003_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest003_forth_herb_col", False), Jump("forest003_forth_herb") ]
+                clicked [ SetVariable("forest003_fourth_herb_col", False), Jump("forest003_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -975,26 +975,44 @@ label forest003_first_herb:
     jump forest003
     
 label forest003_second_herb:
-    $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
+    $ pc_inv.take(herb003)
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest003
     
 label forest003_third_herb:
-    $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
+    $ pc_inv.take(herb005)
+    show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest003
     
-label forest003_forth_herb:
-    $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
+label forest003_fourth_herb:
+    $ pc_inv.take(herb006)
+    show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest003
     
 label forest003_fifth_herb:
-    $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
+    $ pc_inv.take(herb007)
+    show screen inventory_popup2(message="Received Oregano",item="Oregano")
+    
+    jump forest003
+    
+label forest003_sixth_herb:
+    $ pc_inv.take(herb009)
+    show screen inventory_popup2(message="Received Sage",item="Sage")
+    
+    jump forest003
+    
+label forest003_seventh_herb:
+    $ pc_inv.take(herb011)
+    show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
+    
+    jump forest003
+    
+label forest003_eighth_herb:
+    $ pc_inv.take(herb012)
+    show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest003
     
@@ -1083,12 +1101,12 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if forest004_forth_herb_col:
+        if forest004_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest004_forth_herb_col", False), Jump("forest004_forth_herb") ]
+                clicked [ SetVariable("forest004_fourth_herb_col", False), Jump("forest004_fourth_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
@@ -1131,12 +1149,12 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if forest004_forth_herb_col:
+        if forest004_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest004_forth_herb_col", False), Jump("forest004_forth_herb") ]
+                clicked [ SetVariable("forest004_fourth_herb_col", False), Jump("forest004_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -1178,12 +1196,12 @@ screen forest004:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if forest004_forth_herb_col:
+        if forest004_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest004_forth_herb_col", False), Jump("forest004_forth_herb") ]
+                clicked [ SetVariable("forest004_fourth_herb_col", False), Jump("forest004_fourth_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
@@ -1226,12 +1244,12 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if forest004_forth_herb_col:
+        if forest004_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest004_forth_herb_col", False), Jump("forest004_forth_herb") ]
+                clicked [ SetVariable("forest004_fourth_herb_col", False), Jump("forest004_fourth_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
@@ -1274,12 +1292,12 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if forest004_forth_herb_col:
+        if forest004_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest004_forth_herb_col", False), Jump("forest004_forth_herb") ]
+                clicked [ SetVariable("forest004_fourth_herb_col", False), Jump("forest004_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -1300,26 +1318,44 @@ label forest004_first_herb:
     jump forest004
     
 label forest004_second_herb:
-    $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
+    $ pc_inv.take(herb003)
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest004
     
 label forest004_third_herb:
-    $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
+    $ pc_inv.take(herb005)
+    show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest004
     
-label forest004_forth_herb:
-    $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
+label forest004_fourth_herb:
+    $ pc_inv.take(herb006)
+    show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest004
     
 label forest004_fifth_herb:
-    $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
+    $ pc_inv.take(herb007)
+    show screen inventory_popup2(message="Received Oregano",item="Oregano")
+    
+    jump forest004
+    
+label forest004_sixth_herb:
+    $ pc_inv.take(herb009)
+    show screen inventory_popup2(message="Received Sage",item="Sage")
+    
+    jump forest004
+    
+label forest004_seventh_herb:
+    $ pc_inv.take(herb011)
+    show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
+    
+    jump forest004
+    
+label forest004_eighth_herb:
+    $ pc_inv.take(herb012)
+    show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest004
     
@@ -1408,12 +1444,12 @@ screen forest005:
                 xanchor 0 yanchor 0
             
             
-        if forest005_forth_herb_col:
+        if forest005_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest005_forth_herb_col", False), Jump("forest005_forth_herb") ]
+                clicked [ SetVariable("forest005_fourth_herb_col", False), Jump("forest005_fourth_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
@@ -1456,12 +1492,12 @@ screen forest005:
                 xanchor 0 yanchor 0
             
             
-        if forest005_forth_herb_col:
+        if forest005_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest005_forth_herb_col", False), Jump("forest005_forth_herb") ]
+                clicked [ SetVariable("forest005_fourth_herb_col", False), Jump("forest005_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -1503,12 +1539,12 @@ screen forest005:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if forest005_forth_herb_col:
+        if forest005_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest005_forth_herb_col", False), Jump("forest005_forth_herb") ]
+                clicked [ SetVariable("forest005_fourth_herb_col", False), Jump("forest005_fourth_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
@@ -1551,12 +1587,12 @@ screen forest005:
                 xanchor 0 yanchor 0
             
             
-        if forest005_forth_herb_col:
+        if forest005_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest005_forth_herb_col", False), Jump("forest005_forth_herb") ]
+                clicked [ SetVariable("forest005_fourth_herb_col", False), Jump("forest005_fourth_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
@@ -1599,12 +1635,12 @@ screen forest005:
                 xanchor 0 yanchor 0
             
             
-        if forest005_forth_herb_col:
+        if forest005_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest005_forth_herb_col", False), Jump("forest005_forth_herb") ]
+                clicked [ SetVariable("forest005_fourth_herb_col", False), Jump("forest005_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -1625,26 +1661,44 @@ label forest005_first_herb:
     jump forest005
     
 label forest005_second_herb:
-    $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
+    $ pc_inv.take(herb003)
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest005
     
 label forest005_third_herb:
-    $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
+    $ pc_inv.take(herb005)
+    show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest005
     
-label forest005_forth_herb:
-    $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
+label forest005_fourth_herb:
+    $ pc_inv.take(herb006)
+    show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest005
     
 label forest005_fifth_herb:
-    $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
+    $ pc_inv.take(herb007)
+    show screen inventory_popup2(message="Received Oregano",item="Oregano")
+    
+    jump forest005
+    
+label forest005_sixth_herb:
+    $ pc_inv.take(herb009)
+    show screen inventory_popup2(message="Received Sage",item="Sage")
+    
+    jump forest005
+    
+label forest005_seventh_herb:
+    $ pc_inv.take(herb011)
+    show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
+    
+    jump forest005
+    
+label forest005_eighth_herb:
+    $ pc_inv.take(herb012)
+    show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest005
     
@@ -1733,12 +1787,12 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if forest006_forth_herb_col:
+        if forest006_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest006_forth_herb_col", False), Jump("forest006_forth_herb") ]
+                clicked [ SetVariable("forest006_fourth_herb_col", False), Jump("forest006_fourth_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
@@ -1781,12 +1835,12 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if forest006_forth_herb_col:
+        if forest006_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest006_forth_herb_col", False), Jump("forest006_forth_herb") ]
+                clicked [ SetVariable("forest006_fourth_herb_col", False), Jump("forest006_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -1828,12 +1882,12 @@ screen forest006:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if forest006_forth_herb_col:
+        if forest006_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest006_forth_herb_col", False), Jump("forest006_forth_herb") ]
+                clicked [ SetVariable("forest006_fourth_herb_col", False), Jump("forest006_fourth_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
@@ -1876,12 +1930,12 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if forest006_forth_herb_col:
+        if forest006_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest006_forth_herb_col", False), Jump("forest006_forth_herb") ]
+                clicked [ SetVariable("forest006_fourth_herb_col", False), Jump("forest006_fourth_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
@@ -1924,12 +1978,12 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if forest006_forth_herb_col:
+        if forest006_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest006_forth_herb_col", False), Jump("forest006_forth_herb") ]
+                clicked [ SetVariable("forest006_fourth_herb_col", False), Jump("forest006_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -1947,29 +2001,47 @@ label forest006_first_herb:
     $ pc_inv.take(herb001)
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
-    jump forest006
+    jump forest001
     
 label forest006_second_herb:
-    $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
+    $ pc_inv.take(herb003)
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
-    jump forest006
+    jump forest001
     
 label forest006_third_herb:
-    $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
+    $ pc_inv.take(herb005)
+    show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest006
     
-label forest006_forth_herb:
-    $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
+label forest006_fourth_herb:
+    $ pc_inv.take(herb006)
+    show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest006
     
 label forest006_fifth_herb:
-    $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
+    $ pc_inv.take(herb007)
+    show screen inventory_popup2(message="Received Oregano",item="Oregano")
+    
+    jump forest006
+    
+label forest006_sixth_herb:
+    $ pc_inv.take(herb009)
+    show screen inventory_popup2(message="Received Sage",item="Sage")
+    
+    jump forest006
+    
+label forest006_seventh_herb:
+    $ pc_inv.take(herb011)
+    show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
+    
+    jump forest006
+    
+label forest006_eighth_herb:
+    $ pc_inv.take(herb012)
+    show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest006
     
@@ -2058,12 +2130,12 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if forest007_forth_herb_col:
+        if forest007_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest007_forth_herb_col", False), Jump("forest007_forth_herb") ]
+                clicked [ SetVariable("forest007_fourth_herb_col", False), Jump("forest007_fourth_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
@@ -2106,12 +2178,12 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if forest007_forth_herb_col:
+        if forest007_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest007_forth_herb_col", False), Jump("forest007_forth_herb") ]
+                clicked [ SetVariable("forest007_fourth_herb_col", False), Jump("forest007_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -2153,12 +2225,12 @@ screen forest007:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if forest007_forth_herb_col:
+        if forest007_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest007_forth_herb_col", False), Jump("forest007_forth_herb") ]
+                clicked [ SetVariable("forest007_fourth_herb_col", False), Jump("forest007_fourth_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
@@ -2201,12 +2273,12 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if forest007_forth_herb_col:
+        if forest007_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest007_forth_herb_col", False), Jump("forest007_forth_herb") ]
+                clicked [ SetVariable("forest007_fourth_herb_col", False), Jump("forest007_fourth_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
@@ -2249,12 +2321,12 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if forest007_forth_herb_col:
+        if forest007_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest007_forth_herb_col", False), Jump("forest007_forth_herb") ]
+                clicked [ SetVariable("forest007_fourth_herb_col", False), Jump("forest007_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -2275,26 +2347,44 @@ label forest007_first_herb:
     jump forest007
     
 label forest007_second_herb:
-    $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
+    $ pc_inv.take(herb003)
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest007
     
 label forest007_third_herb:
-    $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
+    $ pc_inv.take(herb005)
+    show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest007
     
-label forest007_forth_herb:
-    $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
+label forest007_fourth_herb:
+    $ pc_inv.take(herb006)
+    show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest007
     
 label forest007_fifth_herb:
-    $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
+    $ pc_inv.take(herb007)
+    show screen inventory_popup2(message="Received Oregano",item="Oregano")
+    
+    jump forest007
+    
+label forest007_sixth_herb:
+    $ pc_inv.take(herb009)
+    show screen inventory_popup2(message="Received Sage",item="Sage")
+    
+    jump forest007
+    
+label forest007_seventh_herb:
+    $ pc_inv.take(herb011)
+    show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
+    
+    jump forest007
+    
+label forest007_eighth_herb:
+    $ pc_inv.take(herb012)
+    show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest007
     
@@ -2383,12 +2473,12 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if forest008_forth_herb_col:
+        if forest008_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest008_forth_herb_col", False), Jump("forest008_forth_herb") ]
+                clicked [ SetVariable("forest008_fourth_herb_col", False), Jump("forest008_fourth_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
@@ -2431,12 +2521,12 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if forest008_forth_herb_col:
+        if forest008_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest008_forth_herb_col", False), Jump("forest008_forth_herb") ]
+                clicked [ SetVariable("forest008_fourth_herb_col", False), Jump("forest008_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -2478,12 +2568,12 @@ screen forest008:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if forest008_forth_herb_col:
+        if forest008_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest008_forth_herb_col", False), Jump("forest008_forth_herb") ]
+                clicked [ SetVariable("forest008_fourth_herb_col", False), Jump("forest008_fourth_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
@@ -2526,12 +2616,12 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if forest008_forth_herb_col:
+        if forest008_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest008_forth_herb_col", False), Jump("forest008_forth_herb") ]
+                clicked [ SetVariable("forest008_fourth_herb_col", False), Jump("forest008_fourth_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
@@ -2574,12 +2664,12 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if forest008_forth_herb_col:
+        if forest008_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest008_forth_herb_col", False), Jump("forest008_forth_herb") ]
+                clicked [ SetVariable("forest008_fourth_herb_col", False), Jump("forest008_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -2600,26 +2690,44 @@ label forest008_first_herb:
     jump forest008
     
 label forest008_second_herb:
-    $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
+    $ pc_inv.take(herb003)
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest008
     
 label forest008_third_herb:
-    $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
+    $ pc_inv.take(herb005)
+    show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest008
     
-label forest008_forth_herb:
-    $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
+label forest008_fourth_herb:
+    $ pc_inv.take(herb006)
+    show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest008
     
 label forest008_fifth_herb:
-    $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
+    $ pc_inv.take(herb007)
+    show screen inventory_popup2(message="Received Oregano",item="Oregano")
+    
+    jump forest008
+    
+label forest008_sixth_herb:
+    $ pc_inv.take(herb009)
+    show screen inventory_popup2(message="Received Sage",item="Sage")
+    
+    jump forest008
+    
+label forest008_seventh_herb:
+    $ pc_inv.take(herb011)
+    show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
+    
+    jump forest008
+    
+label forest008_eighth_herb:
+    $ pc_inv.take(herb012)
+    show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest008
     
@@ -2708,12 +2816,12 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if forest009_forth_herb_col:
+        if forest009_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest009_forth_herb_col", False), Jump("forest009_forth_herb") ]
+                clicked [ SetVariable("forest009_fourth_herb_col", False), Jump("forest009_fourth_herb") ]
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
@@ -2756,12 +2864,12 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if forest009_forth_herb_col:
+        if forest009_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest009_forth_herb_col", False), Jump("forest009_forth_herb") ]
+                clicked [ SetVariable("forest009_fourth_herb_col", False), Jump("forest009_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -2803,12 +2911,12 @@ screen forest009:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if forest009_forth_herb_col:
+        if forest009_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest009_forth_herb_col", False), Jump("forest009_forth_herb") ]
+                clicked [ SetVariable("forest009_fourth_herb_col", False), Jump("forest009_fourth_herb") ]
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
@@ -2851,12 +2959,12 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if forest009_forth_herb_col:
+        if forest009_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest009_forth_herb_col", False), Jump("forest009_forth_herb") ]
+                clicked [ SetVariable("forest009_fourth_herb_col", False), Jump("forest009_fourth_herb") ]
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
@@ -2899,12 +3007,12 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if forest009_forth_herb_col:
+        if forest009_fourth_herb_col:
             imagebutton:
                 idle "inv/herb004_idle.png"
                 hover "inv/herb004_hover.png"
                 focus_mask True
-                clicked [ SetVariable("forest009_forth_herb_col", False), Jump("forest009_forth_herb") ]
+                clicked [ SetVariable("forest009_fourth_herb_col", False), Jump("forest009_fourth_herb") ]
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
@@ -2922,29 +3030,47 @@ label forest009_first_herb:
     $ pc_inv.take(herb001)
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
-    jump forest009
+    jump forest001
     
 label forest009_second_herb:
-    $ pc_inv.take(herb002)
-    show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
+    $ pc_inv.take(herb003)
+    show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest009
     
 label forest009_third_herb:
-    $ pc_inv.take(herb003)
-    show screen inventory_popup2(message="Received Black Rizeria",item="Black Rizeria")
+    $ pc_inv.take(herb005)
+    show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest009
     
-label forest009_forth_herb:
-    $ pc_inv.take(herb004)
-    show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
+label forest009_fourth_herb:
+    $ pc_inv.take(herb006)
+    show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest009
     
 label forest009_fifth_herb:
-    $ pc_inv.take(herb005)
-    show screen inventory_popup2(message="Received Nanairoha",item="Nanairoha")
+    $ pc_inv.take(herb007)
+    show screen inventory_popup2(message="Received Oregano",item="Oregano")
+    
+    jump forest009
+    
+label forest009_sixth_herb:
+    $ pc_inv.take(herb009)
+    show screen inventory_popup2(message="Received Sage",item="Sage")
+    
+    jump forest009
+    
+label forest009_seventh_herb:
+    $ pc_inv.take(herb011)
+    show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
+    
+    jump forest009
+    
+label forest009_eighth_herb:
+    $ pc_inv.take(herb012)
+    show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest009
     

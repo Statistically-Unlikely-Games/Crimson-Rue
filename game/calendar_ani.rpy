@@ -57,7 +57,7 @@
 #    call calendar(2) #Moves from Mar 5th to Mar 7th
 ###
 
-default calDate = datetime.datetime(2017, 6, 1, 12, 0, 0) #20th August 2001, midday
+default calDate = datetime.datetime(2017, 1, 6, 12, 0, 0) #20th August 2001, midday
 
 #The date to display, or the starting date of a time lapse.
 #Current month. 1 = January, 12 = December
