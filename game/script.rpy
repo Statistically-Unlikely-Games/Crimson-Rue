@@ -53,7 +53,7 @@ label start:
     #For some reason after this line, small text in the dialogue box stops being white?
     
     ## ------------ ESC MENU AND TIME TRACKING --------------------
-    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
+    $ calendar = Calendar(2, 1, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
 
@@ -227,38 +227,6 @@ label start:
     show screen past_testing
     
     "Three hundred days in the past."
-    
-    hide screen past_testing
-    
-    $ calendar.getpast(310)
-    
-    show screen past_testing
-    
-    "310 days in the past."
-    
-    hide screen past_testing
-    
-    $ calendar.getpast(311)
-    
-    show screen past_testing
-    
-    "311 days in the past."
-    
-    hide screen past_testing
-    
-    $ calendar.getpast(312)
-    
-    show screen past_testing
-    
-    "312 days in the past."
-    
-    hide screen past_testing
-    
-    $ calendar.getpast(313)
-    
-    show screen past_testing
-    
-    "313 days in the past."
     
     hide screen past_testing
     

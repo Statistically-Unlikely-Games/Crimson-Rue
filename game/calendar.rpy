@@ -69,6 +69,18 @@ init python:
             '''Returns the name of the current day according to daycount.'''
             daylistidx = self.daycount_from_gamestart % len(self.days)
             return self.days[daylistidx]
+        
+        @property   
+        def future_weekday(self):
+            '''Returns the name of the current day according to daycount.'''
+            daylistidx = self.future_daycount % len(self.days)
+            return self.days[daylistidx]
+            
+        @property   
+        def past_weekday(self):
+            '''Returns the name of the current day according to daycount.'''
+            daylistidx = self.past_daycount % len(self.days)
+            return self.days[daylistidx]
            
         @property
         def month_number(self):
@@ -213,7 +225,7 @@ init python:
             """
             self.past_daycount = self.daycount_from_gamestart
             self.past_days_count = self.days_count
-            self.past_daycount += days
+            self.past_daycount -= days
             self.past_date = self.day
             self._pastmonth = self._month
             self.past_year = self.year
@@ -264,6 +276,7 @@ screen future_testing:
         spacing 10
         align(0.5, 0.1)
         text ("Future Date: %d"%calendar.future_date)
+        text ("Future Weekday: %s"%calendar.future_weekday)
         text ("Future Month: %s"%calendar.future_month)
         text ("Future Year: %d"%calendar.future_year)
         
@@ -273,7 +286,9 @@ screen past_testing:
         xfill True
         spacing 10
         align(0.5, 0.1)
+        text ("Day Count: %d"%calendar.past_daycount)
         text ("Past Date: %d"%calendar.past_date)
+        text ("Past Weekday: %s"%calendar.past_weekday)
         text ("Past Month: %s"%calendar.past_month)
         text ("Past Year: %d"%calendar.past_year)
         

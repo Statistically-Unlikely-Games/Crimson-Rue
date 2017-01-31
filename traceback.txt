@@ -1,32 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 56, in script
-    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
-  File "game/script.rpy", line 56, in <module>
-    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
-  File "game/calendar.rpy", line 41, in __init__
-    self.future_month = month
-AttributeError: can't set attribute
+  File "game/script.rpy", line 225, in script
+    $ calendar.getpast(300)
+  File "game/script.rpy", line 225, in <module>
+    $ calendar.getpast(300)
+  File "game/calendar.rpy", line 246, in getpast
+    self.past_date = self.past_days_count[self._pastmonth]
+TypeError: 'int' object has no attribute '__getitem__'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 56, in script
-    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
+  File "game/script.rpy", line 225, in script
+    $ calendar.getpast(300)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/script.rpy", line 56, in <module>
-    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
-  File "game/calendar.rpy", line 41, in __init__
-    self.future_month = month
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 610, in do_mutation
-    return method(self, *args, **kwargs)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 889, in __setattr__
-    object.__setattr__(self, attr, value)
-AttributeError: can't set attribute
+  File "game/script.rpy", line 225, in <module>
+    $ calendar.getpast(300)
+  File "game/calendar.rpy", line 246, in getpast
+    self.past_date = self.past_days_count[self._pastmonth]
+TypeError: 'int' object has no attribute '__getitem__'
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029
