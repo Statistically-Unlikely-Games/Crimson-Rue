@@ -26,7 +26,9 @@ init python:
                 self.leapyear = leapyear
            
             self.daycount_from_gamestart = 0
-           
+            
+            #Because you don't enter a day of the week, the date you enter is set to the first day on this list
+            #If you want to start your game on any day other than Monday, you'll need to change the order so that day is first
             self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
             self.month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
                                                'August', 'September', 'October', 'November', 'December']
@@ -48,6 +50,8 @@ init python:
             self._pastmonth = 0
             self.past_year = 0
             self.past_leapyear = 0
+            
+            self.dates_diff = 0
            
         @property   
         def game_day(self):
@@ -190,6 +194,7 @@ init python:
                         self.year += 1
 
 
+        #This function allows you to check the date X days in the future without changing the current date. 
         def getfuture(self, days=1):
             """
             Next day counter.
@@ -217,7 +222,8 @@ init python:
                         self._futuremonth = 0
                         self.future_year += 1
                         
-            
+        
+        #This function allows you to check the date X days in the past without changing the current date. 
         def getpast(self, days=1):
             """
             Next day counter.
@@ -246,6 +252,13 @@ init python:
                     else:
                         self._pastmonth -= 1
                         self.past_date = self.past_days_count[self._pastmonth]
+        
+        
+        #This function tells you how many days have passed between two dates. 
+        #Calculates using daycount/future_daycount/past_daycount
+        def between_dates(self, cnt1=0, cnt2=0):
+            self.dates_diff = abs(cnt1) + abs(cnt2)
+                
         
                        
            
@@ -291,6 +304,17 @@ screen past_testing:
         text ("Past Weekday: %s"%calendar.past_weekday)
         text ("Past Month: %s"%calendar.past_month)
         text ("Past Year: %d"%calendar.past_year)
+        
+screen between_testing:
+    vbox:
+        xminimum 500
+        xfill True
+        spacing 10
+        align(0.5, 0.1)
+        text ("Days Count: %d"%calendar.daycount_from_gamestart)
+        text ("Future Days Count: %d"%calendar.past_daycount)
+        text ("Past Days Count: %d"%calendar.past_daycount)
+        text ("Difference: %d"%calendar.dates_diff)
         
 screen calendar:
     

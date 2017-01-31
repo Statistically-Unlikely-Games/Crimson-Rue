@@ -53,6 +53,7 @@ label start:
     #For some reason after this line, small text in the dialogue box stops being white?
     
     ## ------------ ESC MENU AND TIME TRACKING --------------------
+    #First day of the game is set to Monday unless you change the calendar code on L32
     $ calendar = Calendar(2, 1, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
@@ -237,6 +238,26 @@ label start:
     "Three thousand days in the past."
     
     hide screen past_testing
+    
+    "Testing between dates function."
+    
+    $ calendar.getpast(5)
+    
+    $ calendar.between_dates(cnt1=calendar.daycount_from_gamestart, cnt2=calendar.past_daycount)
+    
+    show screen between_testing
+    
+    "The difference between daycount and past_daycount is five."
+    
+    hide screen between_testing
+    
+    $calendar.getfuture(5)
+    
+    $ calendar.between_dates(cnt1=calendar.future_daycount, cnt2=calendar.past_daycount)
+    
+    show screen between_testing
+    
+    "The difference between future_daycount and past_daycount is ten."
     
     jump apothecary_shop
 
