@@ -170,6 +170,26 @@ label start:
     
     hide screen calendar_testing
     
+    "Testing future calendar projections."
+    
+    $ calendar.getfuture(30)
+    
+    show screen future_testing
+    
+    "How does it look?"
+    
+    hide screen future_testing
+    
+    "Testing future calendar projections."
+    
+    $ calendar.getpast(3)
+    
+    show screen past_testing
+    
+    "How does it look?"
+    
+    hide screen past_testing
+    
     jump apothecary_shop
 
 

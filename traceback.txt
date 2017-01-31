@@ -1,48 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 173, in <module>
-    $ ui.interact()
-Exception: Required parameter title has no value.
+  File "game/script.rpy", line 56, in script
+    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
+  File "game/script.rpy", line 56, in <module>
+    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
+  File "game/calendar.rpy", line 41, in __init__
+    self.future_month = month
+AttributeError: can't set attribute
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    $ ui.interact()
+  File "game/script.rpy", line 56, in script
+    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "renpy/common/00gamemenu.rpy", line 173, in <module>
-    $ ui.interact()
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2759, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 399, in visit_all
-    callback(self)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2759, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 409, in per_interact
-    self.update()
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 578, in update
-    self.screen.function(**self.scope)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 152, in apply_arguments
-    return parameters.apply(args, kwargs, ignore_errors)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 120, in apply
-    raise Exception("Required parameter %s has no value." % name)
-Exception: Required parameter title has no value.
+  File "game/script.rpy", line 56, in <module>
+    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
+  File "game/calendar.rpy", line 41, in __init__
+    self.future_month = month
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 610, in do_mutation
+    return method(self, *args, **kwargs)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 889, in __setattr__
+    object.__setattr__(self, attr, value)
+AttributeError: can't set attribute
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

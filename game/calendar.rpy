@@ -34,6 +34,20 @@ init python:
            
             self.mooncycle = 29
             self.newmoonday = 1
+            
+            self.future_daycount = 0
+            self.future_days_count = 0
+            self.future_date = 0
+            self._futuremonth = 0
+            self.future_year = 0
+            self.future_leapyear = 0
+            
+            self.past_daycount = 0
+            self.past_days_count = 0
+            self.past_date = 0
+            self._pastmonth = 0
+            self.past_year = 0
+            self.past_leapyear = 0
            
         @property   
         def game_day(self):
@@ -59,10 +73,26 @@ init python:
         @property
         def month_number(self):
             return self._month + 1
+            
+        @property
+        def future_month_number(self):
+            return self._futuremonth + 1
+        
+        @property
+        def past_month_number(self):
+            return self._pastmonth + 1
            
         @property
         def month(self):
             return self.month_names[self._month]
+            
+        @property
+        def future_month(self):
+            return self.month_names[self._futuremonth]
+        
+        @property
+        def past_month(self):
+            return self.month_names[self._pastmonth]
            
         @property   
         def lunarprogress(self):
@@ -146,6 +176,64 @@ init python:
                         self._month = 0
                         self.oldyear = self.year
                         self.year += 1
+
+
+        def getfuture(self, days=1):
+            """
+            Next day counter.
+            Now supports skipping.
+            """
+            self.future_daycount = self.daycount_from_gamestart
+            self.future_days_count = self.days_count
+            self.future_daycount += days
+            self.future_date = self.day
+            self._futuremonth = self._month
+            self.future_year = self.year
+            self.future_leapyear = self.leapyear
+            while days:
+                self.future_date += 1
+                days -= 1
+                if self.future_leapyear == self.future_year and self._futuremonth == 1:
+                    if self.future_date > self.future_days_count[self._futuremonth] + 1:
+                        self._futuremonth += 1
+                        self.future_date = 1
+                        self.future_leapyear += 4
+                elif self.future_date > self.future_days_count[self._futuremonth]:
+                    self._futuremonth += 1
+                    self.future_date = 1
+                    if self._futuremonth > 11:
+                        self._futuremonth = 0
+                        self.future_year += 1
+                        
+            
+        def getpast(self, days=1):
+            """
+            Next day counter.
+            Now supports skipping.
+            """
+            self.past_daycount = self.daycount_from_gamestart
+            self.past_days_count = self.days_count
+            self.past_daycount += days
+            self.past_date = self.day
+            self._pastmonth = self._month
+            self.past_year = self.year
+            self.past_leapyear = self.leapyear
+            while days:
+                self.past_date -= 1
+                days -= 1
+                if self.past_leapyear == self.past_year and self._pastmonth == 2:
+                    if self.past_date == 1:
+                        self._pastmonth -= 1
+                        self.past_date = 29
+                        self.past_leapyear -= 4
+                elif self.past_date == 1:
+                    if self._pastmonth == 0:
+                        self._pastmonth = 11
+                        self.past_year -= 1
+                    if self._pastmonth > 0:
+                        self._pastmonth -= 1
+                        self.past_date = self.past_days_count[self._pastmonth]
+        
                        
            
 screen calendar_testing:
@@ -167,6 +255,26 @@ screen calendar_testing:
         text ("Lunar Progress: %d%%"%calendar.lunarprogress)
         text ("Moon Phase: %s"%calendar.moonphase.capitalize())
         text ("Last day of the month: %s"%calendar.last_day_of_the_month)
+        
+screen future_testing:
+    vbox:
+        xminimum 500
+        xfill True
+        spacing 10
+        align(0.5, 0.1)
+        text ("Future Date: %d"%calendar.future_date)
+        text ("Future Month: %s"%calendar.future_month)
+        text ("Future Year: %d"%calendar.future_year)
+        
+screen past_testing:
+    vbox:
+        xminimum 500
+        xfill True
+        spacing 10
+        align(0.5, 0.1)
+        text ("Past Date: %d"%calendar.past_date)
+        text ("Past Month: %s"%calendar.past_month)
+        text ("Past Year: %d"%calendar.past_year)
         
 screen calendar:
     
