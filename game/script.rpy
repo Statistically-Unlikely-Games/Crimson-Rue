@@ -49,12 +49,11 @@ label splashscreen:
       
 label start:  
     
-    "Game start" 
-        
-    ## ------------ ESC MENU AND TIME TRACKING --------------------
+    "Setting Variables" 
+    #For some reason after this line, small text in the dialogue box stops being white?
     
-    $ _game_menu_screen = "game_menu" # This code activates the "pause menu" in screens.rpy
-    $ calendar = Calendar(6, 1, 2017, 2020) # Calendar(day, month, year, first leap year (can be ignored))
+    ## ------------ ESC MENU AND TIME TRACKING --------------------
+    $ calendar = Calendar(6, 5, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
 
@@ -142,12 +141,19 @@ label start:
         forest009_seventh_herb_col = True
         forest009_eighth_herb_col = True
     
+    "All variables set."
+    
+    show screen calendar_testing
     
     ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
     $ cookbook = list() 
     
+    "Defining Items and Inventories."
+    
     call define_items
     call define_inventories
+    
+    "Defining cookbooks."
     
     $ cooklist = [balm001,cream002,extract003,herb_oil004,infusion005,salve006,tincture007]
     
@@ -159,6 +165,10 @@ label start:
     $ infusionslist = [infusion001,infusion002,infusion003,infusion004,infusion005,infusion006,infusion007,infusion008,infusion009,infusion010,infusion011,infusion012,infusion013,infusion014]
     $ salveslist = [salve001,salve002,salve003,salve004,salve005,salve006,salve007,salve008,salve009,salve010,salve011,salve012,salve013,salve014]
     $ tinctureslist = [tincture001,tincture002,tincture003,tincture004,tincture005,tincture006,tincture007,tincture008,tincture009,tincture010,tincture011,tincture012,tincture013,tincture014]
+    
+    "Cookbooks defined."
+    
+    hide screen calendar_testing
     
     jump apothecary_shop
 

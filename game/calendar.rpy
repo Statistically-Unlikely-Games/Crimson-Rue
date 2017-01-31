@@ -9,14 +9,17 @@ init python:
         '''Provides time-related information.
         Cheers to Rudi for mooncalendar calculations.
         '''
-        def __init__(self, day=1, month=1, year=1, leapyear=False):
+        def __init__(self, day=1, oldday = 0, month=1, oldmonth=0, year=1, oldyear=0, leapyear=False):
             """
             Expects day/month/year as they are numbered in normal calender.
             If you wish to add leapyear, specify a number of the first Leap year to come.
             """
             self.day = day
+            self.oldday = oldday
             self._month = month - 1
+            self.oldmonth = oldmonth
             self.year = year
+            self.oldyear = oldyear
             if not leapyear:
                 self.leapyear = self.year + 4
             else:   
@@ -126,18 +129,22 @@ init python:
             """
             self.daycount_from_gamestart += days
             while days:
+                self.oldday = self.day
                 self.day += 1
                 days -= 1
                 if self.leapyear == self.year and self._month == 1:
                     if self.day > self.days_count[self._month] + 1:
+                        self.oldmonth = self.month
                         self._month += 1
                         self.day = 1
                         self.leapyear += 4
                 elif self.day > self.days_count[self._month]:
+                    self.oldmonth = self.month
                     self._month += 1
                     self.day = 1
                     if self._month > 11:
                         self._month = 0
+                        self.oldyear = self.year
                         self.year += 1
                        
            
@@ -148,8 +155,14 @@ screen calendar_testing:
         spacing 10
         align(0.5, 0.1)
         text ("Day: %d"%calendar.game_day)
+        text ("Date: %d"%calendar.day)
+        text ("Yesterday's Date: %d"%calendar.oldday)
+        text ("Month: %d"%calendar.month_number)
+        text ("Last Month: %s"%calendar.oldmonth)
+        text ("Year: %d"%calendar.year)
+        text ("Last Year: %d"%calendar.oldyear)
         text ("Week: %d"%calendar.game_week)
-        text ("Date: %s"%calendar.string)
+        text ("Full Date: %s"%calendar.string)
         text ("Next Leap Year: %s"%calendar.leapyear)
         text ("Lunar Progress: %d%%"%calendar.lunarprogress)
         text ("Moon Phase: %s"%calendar.moonphase.capitalize())

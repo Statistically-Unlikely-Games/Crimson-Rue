@@ -22,3 +22,9 @@ screen basic_overlay:
     add dotw_img xpos 22 ypos 12
     add moon_img align(0.17, 0.02)
     add time_img align(0.02, 0.135)
+    
+
+label moon_check:
+    python: 
+        month_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
+    return

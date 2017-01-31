@@ -1,33 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/forest_screens.rpy", line 358, in script
-    "Your random number is [forest002_spawn]."
-  File "game/forest_screens.rpy", line 362, in execute
-    screen forest002:
-  File "game/forest_screens.rpy", line 362, in execute
-    screen forest002:
-  File "game/forest_screens.rpy", line 372, in execute
-    python:
-  File "game/forest_screens.rpy", line 373, in <module>
-    if _calendar.day < 10:
-NameError: name '_calendar' is not defined
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+Exception: Required parameter title has no value.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/forest_screens.rpy", line 358, in script
-    "Your random number is [forest002_spawn]."
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
-    who(what, interact=interact)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 876, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 715, in do_display
-    **display_args)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 507, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
@@ -48,15 +38,11 @@ Full traceback:
     self.update()
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 578, in update
     self.screen.function(**self.scope)
-  File "game/forest_screens.rpy", line 362, in execute
-    screen forest002:
-  File "game/forest_screens.rpy", line 362, in execute
-    screen forest002:
-  File "game/forest_screens.rpy", line 372, in execute
-    python:
-  File "game/forest_screens.rpy", line 373, in <module>
-    if _calendar.day < 10:
-NameError: name '_calendar' is not defined
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 152, in apply_arguments
+    return parameters.apply(args, kwargs, ignore_errors)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 120, in apply
+    raise Exception("Required parameter %s has no value." % name)
+Exception: Required parameter title has no value.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029
