@@ -217,20 +217,21 @@ init python:
             self.past_date = self.day
             self._pastmonth = self._month
             self.past_year = self.year
-            self.past_leapyear = self.leapyear
+            self.past_leapyear = self.leapyear - 4
             while days:
                 self.past_date -= 1
                 days -= 1
                 if self.past_leapyear == self.past_year and self._pastmonth == 2:
-                    if self.past_date == 1:
+                    if self.past_date < 1:
                         self._pastmonth -= 1
-                        self.past_date = 29
+                        self.past_date = self.past_days_count[self._pastmonth] + 1
                         self.past_leapyear -= 4
-                elif self.past_date == 1:
+                elif self.past_date < 1:
                     if self._pastmonth == 0:
                         self._pastmonth = 11
+                        self.past_date = self.past_days_count[self._pastmonth]
                         self.past_year -= 1
-                    if self._pastmonth > 0:
+                    else:
                         self._pastmonth -= 1
                         self.past_date = self.past_days_count[self._pastmonth]
         

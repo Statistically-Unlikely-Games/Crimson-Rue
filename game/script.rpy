@@ -172,21 +172,101 @@ label start:
     
     "Testing future calendar projections."
     
+    $ calendar.getfuture(3)
+    
+    show screen future_testing
+    
+    "Three days in the future."
+    
+    hide screen future_testing
+    
     $ calendar.getfuture(30)
     
     show screen future_testing
     
-    "How does it look?"
+    "Thirty days in the future."
     
     hide screen future_testing
     
-    "Testing future calendar projections."
+    $ calendar.getfuture(300)
+    
+    show screen future_testing
+    
+    "Three hundred days in the future."
+    
+    hide screen future_testing
+    
+    $ calendar.getfuture(3000)
+    
+    show screen future_testing
+    
+    "Three thousand days in the future."
+    
+    hide screen future_testing
+    
+    "Testing past calendar projections."
     
     $ calendar.getpast(3)
     
     show screen past_testing
     
-    "How does it look?"
+    "Three days in the past."
+    
+    hide screen past_testing
+    
+    $ calendar.getpast(30)
+    
+    show screen past_testing
+    
+    "Thirty days in the past."
+    
+    hide screen past_testing
+    
+    $ calendar.getpast(300)
+    
+    show screen past_testing
+    
+    "Three hundred days in the past."
+    
+    hide screen past_testing
+    
+    $ calendar.getpast(310)
+    
+    show screen past_testing
+    
+    "310 days in the past."
+    
+    hide screen past_testing
+    
+    $ calendar.getpast(311)
+    
+    show screen past_testing
+    
+    "311 days in the past."
+    
+    hide screen past_testing
+    
+    $ calendar.getpast(312)
+    
+    show screen past_testing
+    
+    "312 days in the past."
+    
+    hide screen past_testing
+    
+    $ calendar.getpast(313)
+    
+    show screen past_testing
+    
+    "313 days in the past."
+    
+    hide screen past_testing
+    
+    $ calendar.getpast(3000)
+    
+    show screen past_testing
+    
+    "Three thousand days in the past."
     
     hide screen past_testing
     
