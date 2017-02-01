@@ -349,7 +349,7 @@ init -1500:
         img_screen_width = config.screen_width / 1.46
         img_screen_height = config.screen_height / 1.575
         img_text_width = config.screen_width / 3
-        img_text_height = config.screen_height / 1.575
+        img_text_height = config.screen_height / 1.575 #For some reason, this can only be an integer or it breaks
 
         # Encyclopaedia Colours
         color_scroll_bar = "#003C78"

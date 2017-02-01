@@ -1,24 +1,63 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 246, in script
-    $ calendar.between_dates(cnt1=daycount_from_gamestart, cnt2=calendar.past_daycount)
-  File "game/script.rpy", line 246, in <module>
-    $ calendar.between_dates(cnt1=daycount_from_gamestart, cnt2=calendar.past_daycount)
-NameError: name 'daycount_from_gamestart' is not defined
+  File "game/overworld02.rpy", line 18, in script
+    "It is now sunrise."
+  File "game/overworld02.rpy", line 36, in execute
+    screen overworld02:
+  File "game/overworld02.rpy", line 36, in execute
+    screen overworld02:
+  File "game/overworld02.rpy", line 41, in execute
+    imagebutton:
+  File "game/overworld02.rpy", line 41, in keywords
+    imagebutton:
+NameError: name 'F1Hover' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 246, in script
-    $ calendar.between_dates(cnt1=daycount_from_gamestart, cnt2=calendar.past_daycount)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/script.rpy", line 246, in <module>
-    $ calendar.between_dates(cnt1=daycount_from_gamestart, cnt2=calendar.past_daycount)
-NameError: name 'daycount_from_gamestart' is not defined
+  File "game/overworld02.rpy", line 18, in script
+    "It is now sunrise."
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
+    who(what, interact=interact)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 876, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 715, in do_display
+    **display_args)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 507, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2759, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 482, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 399, in visit_all
+    callback(self)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2759, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 409, in per_interact
+    self.update()
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 578, in update
+    self.screen.function(**self.scope)
+  File "game/overworld02.rpy", line 36, in execute
+    screen overworld02:
+  File "game/overworld02.rpy", line 36, in execute
+    screen overworld02:
+  File "game/overworld02.rpy", line 41, in execute
+    imagebutton:
+  File "game/overworld02.rpy", line 41, in keywords
+    imagebutton:
+  File "<screen language>", line 43, in <module>
+NameError: name 'F1Hover' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

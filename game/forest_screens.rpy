@@ -285,48 +285,56 @@ screen forest001:
     
 label forest001_first_herb:
     $ pc_inv.take(herb001)
+    $ F1Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest001
     
 label forest001_second_herb:
     $ pc_inv.take(herb003)
+    $ F1Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest001
     
 label forest001_third_herb:
     $ pc_inv.take(herb005)
+    $ F1Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest001
     
 label forest001_fourth_herb:
     $ pc_inv.take(herb006)
+    $ F1Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest001
     
 label forest001_fifth_herb:
     $ pc_inv.take(herb007)
+    $ F1Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest001
     
 label forest001_sixth_herb:
     $ pc_inv.take(herb009)
+    $ F1Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest001
     
 label forest001_seventh_herb:
     $ pc_inv.take(herb011)
+    $ F1Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest001
     
 label forest001_eighth_herb:
     $ pc_inv.take(herb012)
+    $ F1Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest001
@@ -627,48 +635,56 @@ screen forest002:
     
 label forest002_first_herb:
     $ pc_inv.take(herb001)
+    $ F2Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest002
     
 label forest002_second_herb:
     $ pc_inv.take(herb002)
+    $ F2Harvest = True
     show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest002
     
 label forest002_third_herb:
     $ pc_inv.take(herb003)
+    $ F2Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest002
     
 label forest002_fourth_herb:
     $ pc_inv.take(herb004)
+    $ F2Harvest = True
     show screen inventory_popup2(message="Received Oak Bark",item="Oak")
     
     jump forest002
     
 label forest002_fifth_herb:
     $ pc_inv.take(herb007)
+    $ F2Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest002
     
 label forest002_sixth_herb:
     $ pc_inv.take(herb008)
+    $ F2Harvest = True
     show screen inventory_popup2(message="Received Parsley",item="Parsley")
     
     jump forest002
     
 label forest002_seventh_herb:
     $ pc_inv.take(herb010)
+    $ F2Harvest = True
     show screen inventory_popup2(message="Received Laurel",item="Laurel")
     
     jump forest002
     
 label forest002_eighth_herb:
     $ pc_inv.take(herb011)
+    $ F2Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest002
@@ -970,48 +986,56 @@ screen forest003:
     
 label forest003_first_herb:
     $ pc_inv.take(herb001)
+    $ F3Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest003
     
 label forest003_second_herb:
     $ pc_inv.take(herb003)
+    $ F3Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest003
     
 label forest003_third_herb:
     $ pc_inv.take(herb005)
+    $ F3Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest003
     
 label forest003_fourth_herb:
     $ pc_inv.take(herb006)
+    $ F3Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest003
     
 label forest003_fifth_herb:
     $ pc_inv.take(herb007)
+    $ F3Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest003
     
 label forest003_sixth_herb:
     $ pc_inv.take(herb009)
+    $ F3Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest003
     
 label forest003_seventh_herb:
     $ pc_inv.take(herb011)
+    $ F3Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest003
     
 label forest003_eighth_herb:
     $ pc_inv.take(herb012)
+    $ F3Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest003
@@ -1313,48 +1337,56 @@ screen forest004:
     
 label forest004_first_herb:
     $ pc_inv.take(herb001)
+    $ F4Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest004
     
 label forest004_second_herb:
     $ pc_inv.take(herb003)
+    $ F4Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest004
     
 label forest004_third_herb:
     $ pc_inv.take(herb005)
+    $ F4Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest004
     
 label forest004_fourth_herb:
     $ pc_inv.take(herb006)
+    $ F4Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest004
     
 label forest004_fifth_herb:
     $ pc_inv.take(herb007)
+    $ F4Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest004
     
 label forest004_sixth_herb:
     $ pc_inv.take(herb009)
+    $ F4Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest004
     
 label forest004_seventh_herb:
     $ pc_inv.take(herb011)
+    $ F4Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest004
     
 label forest004_eighth_herb:
     $ pc_inv.take(herb012)
+    $ F4Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest004
@@ -1656,48 +1688,56 @@ screen forest005:
     
 label forest005_first_herb:
     $ pc_inv.take(herb001)
+    $ F5Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest005
     
 label forest005_second_herb:
     $ pc_inv.take(herb003)
+    $ F5Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest005
     
 label forest005_third_herb:
     $ pc_inv.take(herb005)
+    $ F5Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest005
     
 label forest005_fourth_herb:
     $ pc_inv.take(herb006)
+    $ F5Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest005
     
 label forest005_fifth_herb:
     $ pc_inv.take(herb007)
+    $ F5Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest005
     
 label forest005_sixth_herb:
     $ pc_inv.take(herb009)
+    $ F5Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest005
     
 label forest005_seventh_herb:
     $ pc_inv.take(herb011)
+    $ F5Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest005
     
 label forest005_eighth_herb:
     $ pc_inv.take(herb012)
+    $ F5Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest005
@@ -2342,48 +2382,56 @@ screen forest007:
     
 label forest007_first_herb:
     $ pc_inv.take(herb001)
+    $ F7Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest007
     
 label forest007_second_herb:
     $ pc_inv.take(herb003)
+    $ F7Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest007
     
 label forest007_third_herb:
     $ pc_inv.take(herb005)
+    $ F7Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest007
     
 label forest007_fourth_herb:
     $ pc_inv.take(herb006)
+    $ F7Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest007
     
 label forest007_fifth_herb:
     $ pc_inv.take(herb007)
+    $ F7Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest007
     
 label forest007_sixth_herb:
     $ pc_inv.take(herb009)
+    $ F7Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest007
     
 label forest007_seventh_herb:
     $ pc_inv.take(herb011)
+    $ F7Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest007
     
 label forest007_eighth_herb:
     $ pc_inv.take(herb012)
+    $ F7Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest007
@@ -2685,48 +2733,56 @@ screen forest008:
     
 label forest008_first_herb:
     $ pc_inv.take(herb001)
+    $ F8Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest008
     
 label forest008_second_herb:
     $ pc_inv.take(herb003)
+    $ F8Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest008
     
 label forest008_third_herb:
     $ pc_inv.take(herb005)
+    $ F8Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest008
     
 label forest008_fourth_herb:
     $ pc_inv.take(herb006)
+    $ F8Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest008
     
 label forest008_fifth_herb:
     $ pc_inv.take(herb007)
+    $ F8Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest008
     
 label forest008_sixth_herb:
     $ pc_inv.take(herb009)
+    $ F8Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest008
     
 label forest008_seventh_herb:
     $ pc_inv.take(herb011)
+    $ F8Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest008
     
 label forest008_eighth_herb:
     $ pc_inv.take(herb012)
+    $ F8Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest008
@@ -3028,48 +3084,56 @@ screen forest009:
     
 label forest009_first_herb:
     $ pc_inv.take(herb001)
+    $ F9Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest001
     
 label forest009_second_herb:
     $ pc_inv.take(herb003)
+    $ F9Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest009
     
 label forest009_third_herb:
     $ pc_inv.take(herb005)
+    $ F9Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest009
     
 label forest009_fourth_herb:
     $ pc_inv.take(herb006)
+    $ F9Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest009
     
 label forest009_fifth_herb:
     $ pc_inv.take(herb007)
+    $ F9Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest009
     
 label forest009_sixth_herb:
     $ pc_inv.take(herb009)
+    $ F9Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest009
     
 label forest009_seventh_herb:
     $ pc_inv.take(herb011)
+    $ F9Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest009
     
 label forest009_eighth_herb:
     $ pc_inv.take(herb012)
+    $ F9Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest009

@@ -2,9 +2,32 @@
 errors listed below, and try again.
 
 
-File "game/calendar.rpy", line 260: invalid syntax
-                self.dates_diff = abs{cnt1) + abs(cnt2)
-                                      ^
-    
+File "game/timecount.rpy", line 19: expected statement.
+    F2Harvest = False
+              ^
+
+File "game/timecount.rpy", line 29: expected statement.
+    F3Harvest = False
+              ^
+
+File "game/timecount.rpy", line 39: expected statement.
+    F4Harvest = False
+              ^
+
+File "game/timecount.rpy", line 49: expected statement.
+    F5Harvest = False
+              ^
+
+File "game/timecount.rpy", line 68: expected statement.
+    F7Harvest = False
+              ^
+
+File "game/timecount.rpy", line 78: expected statement.
+    F8Harvest = False
+              ^
+
+File "game/timecount.rpy", line 88: expected statement.
+    F9Harvest = False
+              ^
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029

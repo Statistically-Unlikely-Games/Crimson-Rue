@@ -61,6 +61,7 @@ label start:
     init -1 python:
         timeofday = "sunrise"
         
+        F1Harvest = False
         forest001_first_herb_col = True
         forest001_second_herb_col = True
         forest001_third_herb_col = True
@@ -70,6 +71,7 @@ label start:
         forest001_seventh_herb_col = True
         forest001_eighth_herb_col = True
         
+        F2Harvest = False
         forest002_first_herb_col = True
         forest002_second_herb_col = True
         forest002_third_herb_col = True
@@ -79,6 +81,7 @@ label start:
         forest002_seventh_herb_col = True
         forest002_eighth_herb_col = True
         
+        F3Harvest = False
         forest003_first_herb_col = True
         forest003_second_herb_col = True
         forest003_third_herb_col = True
@@ -88,6 +91,7 @@ label start:
         forest003_seventh_herb_col = True
         forest003_eighth_herb_col = True
         
+        F4Harvest = False
         forest004_first_herb_col = True
         forest004_second_herb_col = True
         forest004_third_herb_col = True
@@ -97,6 +101,7 @@ label start:
         forest004_seventh_herb_col = True
         forest004_eighth_herb_col = True
         
+        F5Harvest = False
         forest005_first_herb_col = True
         forest005_second_herb_col = True
         forest005_third_herb_col = True
@@ -115,6 +120,7 @@ label start:
         forest006_seventh_herb_col = True
         forest006_eighth_herb_col = True
         
+        F7Harvest = False
         forest007_first_herb_col = True
         forest007_second_herb_col = True
         forest007_third_herb_col = True
@@ -124,6 +130,7 @@ label start:
         forest007_seventh_herb_col = True
         forest007_eighth_herb_col = True
         
+        F8Harvest = False
         forest008_first_herb_col = True
         forest008_second_herb_col = True
         forest008_third_herb_col = True
@@ -133,6 +140,7 @@ label start:
         forest008_seventh_herb_col = True
         forest008_eighth_herb_col = True
         
+        F9Harvest = False
         forest009_first_herb_col = True
         forest009_second_herb_col = True
         forest009_third_herb_col = True
@@ -149,25 +157,10 @@ label start:
     ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
     $ cookbook = list() 
     
-    "Defining Items and Inventories."
+    "Defining Items, Cookbooks and Inventories."
     
     call define_items
     call define_inventories
-    
-    "Defining cookbooks."
-    
-    $ cooklist = [balm001,cream002,extract003,herb_oil004,infusion005,salve006,tincture007]
-    
-    $ extractslist = [extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010,extract011,extract012,extract013,extract014]
-    $ herboilslist = [herb_oil001,herb_oil002,herb_oil003,herb_oil004,herb_oil005,herb_oil006,herb_oil007,herb_oil008,herb_oil009,herb_oil010,herb_oil011,herb_oil012,herb_oil013,herb_oil014]
-
-    $ balmslist = [balm001,balm002,balm003,balm004,balm005,balm006,balm007,balm008,balm009,balm010,balm011,balm012,balm013,balm014]
-    $ creamslist = [cream001,cream002,cream003,cream004,cream005,cream006,cream007,cream008,cream009,cream010,cream011,cream012,cream013,cream014]
-    $ infusionslist = [infusion001,infusion002,infusion003,infusion004,infusion005,infusion006,infusion007,infusion008,infusion009,infusion010,infusion011,infusion012,infusion013,infusion014]
-    $ salveslist = [salve001,salve002,salve003,salve004,salve005,salve006,salve007,salve008,salve009,salve010,salve011,salve012,salve013,salve014]
-    $ tinctureslist = [tincture001,tincture002,tincture003,tincture004,tincture005,tincture006,tincture007,tincture008,tincture009,tincture010,tincture011,tincture012,tincture013,tincture014]
-    
-    "Cookbooks defined."
     
     hide screen calendar_testing
     
@@ -258,6 +251,8 @@ label start:
     show screen between_testing
     
     "The difference between future_daycount and past_daycount is ten."
+    
+    hide screen between_testing
     
     jump apothecary_shop
 

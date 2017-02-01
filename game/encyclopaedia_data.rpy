@@ -80,7 +80,7 @@ init python:
     encyclopaedia = Encyclopaedia(
         sorting_mode = Encyclopaedia.SORT_NUMBER,
         show_locked_buttons=True,
-        show_locked_entry=True,
+        show_locked_entry=False,
         entry_screen="encyclopaedia_entry"
     )
 

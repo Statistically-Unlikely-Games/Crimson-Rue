@@ -262,3 +262,15 @@ class ToggleShowLockedEntryAction(EncyclopaediaAction):
     def __call__(self):
         self.enc.show_locked_entry = not self.enc.show_locked_entry
         renpy.restart_interaction()
+
+
+#This is currently broken. It says UnlockEncEntry is not defined. 
+#Need to investigate when the action code for encyclopedia runs. 
+class UnlockEncEntry(EncyclopaediaAction):
+    #Calls EncEntry.unlock_entry, can be assigned to a button
+    def __init__(self, entry):
+        self.entry = entry
+
+    def __call__(self):
+        entry.unlock_entry()
+

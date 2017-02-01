@@ -277,24 +277,35 @@ transform swipe_in(xPos, yPos):
 #Image resources
 ###
 image calendar_bg = "cal/1280x720/bg.png" #Background image
-image dayButton: #Image representing each week day
+#image dayButton: #Image representing each week day
     #want to set to choice(calendar.moonphase == 'new moon'):
-    choice:
-        "cal/1280x720/new moon.png"
-    choice: 
-        "cal/1280x720/waning crescent.png"
-    choice: 
-        "cal/1280x720/last quarter.png"
-    choice: 
-        "cal/1280x720/waning moon.png"
-    choice: 
-        "cal/1280x720/full moon.png"
-    choice: 
-        "cal/1280x720/waxing moon.png"
-    choice: 
-        "cal/1280x720/first quarter.png"
-    choice: 
-        "cal/1280x720/waxing crescent.png"
+#    choice:
+#        "cal/1280x720/new moon.png"
+#    choice: 
+#        "cal/1280x720/waning crescent.png"
+#    choice: 
+#        "cal/1280x720/last quarter.png"
+#    choice: 
+#        "cal/1280x720/waning moon.png"
+#    choice: 
+#        "cal/1280x720/full moon.png"
+#    choice: 
+#        "cal/1280x720/waxing moon.png"
+#    choice: 
+#        "cal/1280x720/first quarter.png"
+#    choice: 
+#        "cal/1280x720/waxing crescent.png"
+        
+image dayButton = ConditionSwitch(
+    "calendar.moonphase == 'waning crescent' ", Image ("cal/1280x720/waning crescent.png"),
+    "calendar.moonphase == 'last quarter' ", Image ("cal/1280x720/last quarter.png"),
+    "calendar.moonphase == 'waning moon' ", Image ("cal/1280x720/waning moon.png"),
+    "calendar.moonphase == 'full moon' ", Image ("cal/1280x720/full moon.png"),
+    "calendar.moonphase == 'waxing moon' ", Image ("cal/1280x720/waxing moon.png"),
+    "calendar.moonphase == 'first quarter' ", Image ("cal/1280x720/first quarter.png"),
+    "calendar.moonphase == 'waxing crescent' ", Image ("cal/1280x720/waxing crescent.png"),
+    "True", Image ("cal/1280x720/new moon.png"),
+    )
 
 label calendar_ani(toMove):
 
@@ -351,6 +362,8 @@ label calendar_ani(toMove):
         show text "{size=48}{color=#545454CC}[displayTime]{/color}{/size}" as calendar_time at fade_in(700, monthPos + 6)
     if displayWeather:
         show text "{size=42}{color=#545454CC}[displayWeather]{/color}{/size}" as calendar_weather at fade_in(700, monthPos + 52)
+
+#Shows position of images at end of animation
 
     show dayButton as db_1 at fade_in_immediately(posX, posY)
     show text ("{size=28}"+getRelativeDay(-1)+"{/size}") as dr_1 at fade_in_immediately(posX, posY)

@@ -1,0 +1,11 @@
+init-1:
+    
+    image ch bust ten neu = ConditionSwitch(
+        "kid == 'fairy' ", Image ("spr/fairy bust ten neu.png"),
+        "kid == 'god' ", Image ("spr/god bust ten neu.png"),
+        "kid == 'elf' ", Image ("spr/elf bust ten neu.png"),
+        "kid == 'human' ", Image ("spr/human bust ten neu.png"),
+        "kid == 'dragon' ", Image ("spr/dragon bust ten neu.png"),
+        "kid == 'demon' ", Image ("spr/demon bust ten neu.png"),
+        "True", Image ("spr/god bust ten neu.png"),
+        )

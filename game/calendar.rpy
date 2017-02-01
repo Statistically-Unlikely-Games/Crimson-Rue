@@ -258,8 +258,11 @@ init python:
         #Calculates using daycount/future_daycount/past_daycount
         def between_dates(self, cnt1=0, cnt2=0):
             self.dates_diff = abs(cnt1) + abs(cnt2)
-                
         
+        #Eventually, I want to use this in order to check how long something has been fermenting, soaking, etc.
+        #I would need a new function, possibly in the inventory, which stores the date when the item was obtained.
+        #Then, when you check on the item in the root cellar, it uses between_dates to tell you how long it's been there. 
+        #If the dates_diff is > a specific number, then the item would change into a different item. (Ex. juice into wine.)
                        
            
 screen calendar_testing:

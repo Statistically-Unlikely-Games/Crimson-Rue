@@ -23,6 +23,11 @@ label define_items:
 #    $ doll = Item("Handmade Doll", "Guaranteed to bring luck. (Or not?) Very huggable, mind the needle.", "inv/doll.png", 100000, recipe=[[but,2],[fabric,3],[yarn,1]]) 
 
 
+#Books
+     #This is currently broken. It says UnlockEncEntry is not defined. 
+     #Need to investigate when the action code for encyclopedia runs. 
+#    $ book = Item("Herb Identification Guide", "A book of herbs", "inv/book.png", 5000, act=UnlockEncEntry(en2))
+
 #Tier 1 Items
     
     $ herb001 = Item("Thistle", "A medicinal herb.", "inv/herb001_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
@@ -191,6 +196,17 @@ label define_items:
     $ tincture018 = Item("Violet Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract018,1]]) 
     
     "Items have been defined."
+    
+    $ cooklist = [balm001,cream002,extract003,herb_oil004,infusion005,salve006,tincture007]
+    
+    $ extractslist = [extract001,extract002,extract003,extract004,extract005,extract006,extract007,extract008,extract009,extract010,extract011,extract012,extract013,extract014]
+    $ herboilslist = [herb_oil001,herb_oil002,herb_oil003,herb_oil004,herb_oil005,herb_oil006,herb_oil007,herb_oil008,herb_oil009,herb_oil010,herb_oil011,herb_oil012,herb_oil013,herb_oil014]
+
+    $ balmslist = [balm001,balm002,balm003,balm004,balm005,balm006,balm007,balm008,balm009,balm010,balm011,balm012,balm013,balm014]
+    $ creamslist = [cream001,cream002,cream003,cream004,cream005,cream006,cream007,cream008,cream009,cream010,cream011,cream012,cream013,cream014]
+    $ infusionslist = [infusion001,infusion002,infusion003,infusion004,infusion005,infusion006,infusion007,infusion008,infusion009,infusion010,infusion011,infusion012,infusion013,infusion014]
+    $ salveslist = [salve001,salve002,salve003,salve004,salve005,salve006,salve007,salve008,salve009,salve010,salve011,salve012,salve013,salve014]
+    $ tinctureslist = [tincture001,tincture002,tincture003,tincture004,tincture005,tincture006,tincture007,tincture008,tincture009,tincture010,tincture011,tincture012,tincture013,tincture014]
     
     return 
     

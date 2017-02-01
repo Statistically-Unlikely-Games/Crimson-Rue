@@ -261,3 +261,17 @@ class EncEntry(store.object):
         self.add_entry(entry)
 
         self.viewed = False
+    
+    #This is currently broken. It says UnlockEncEntry is not defined. 
+    #Need to investigate when the action code for encyclopedia runs. 
+    def unlock_entry(self):
+        #Changes the locked status of an entry and all sub-entries
+        self.locked = False
+        self.viewed = False
+        
+        if entry.has_sub_entry:
+            for subent_data in self.sub_entry_list:
+                subent_data[1].locked = False
+                self.add_entry(subent_data[1])
+                self.viewed = False
+
