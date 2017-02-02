@@ -48,8 +48,8 @@ label splashscreen:
     
       
 label start:  
-    
-    "Setting Variables" 
+    "Game Start"
+#    "Setting Variables" 
     #For some reason after this line, small text in the dialogue box stops being white?
     
     ## ------------ ESC MENU AND TIME TRACKING --------------------
@@ -150,109 +150,76 @@ label start:
         forest009_seventh_herb_col = True
         forest009_eighth_herb_col = True
     
-    "All variables set."
+#    "All variables set."
     
-    show screen calendar_testing
+#    show screen calendar_testing
     
     ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
     $ cookbook = list() 
     
-    "Defining Items, Cookbooks and Inventories."
+#    "Defining Items, Cookbooks and Inventories."
     
     call define_items
     call define_inventories
+
+#    hide screen calendar_testing
     
-    hide screen calendar_testing
+#    "Testing future calendar projections."
     
-    "Testing future calendar projections."
+#    $ calendar.getfuture(3)
+#    show screen future_testing
+#    "Three days in the future."
+#    hide screen future_testing
     
-    $ calendar.getfuture(3)
+#    $ calendar.getfuture(30)
+#    show screen future_testing
+#    "Thirty days in the future."
+#    hide screen future_testing
     
-    show screen future_testing
+#    $ calendar.getfuture(300)
+#    show screen future_testing
+#    "Three hundred days in the future."
+#    hide screen future_testing
     
-    "Three days in the future."
+#    $ calendar.getfuture(3000)
+#    show screen future_testing
+#    "Three thousand days in the future."
+#    hide screen future_testing
     
-    hide screen future_testing
+#    "Testing past calendar projections."
     
-    $ calendar.getfuture(30)
+#    $ calendar.getpast(3)
+#    show screen past_testing
+#    "Three days in the past."
+#    hide screen past_testing
     
-    show screen future_testing
+#    $ calendar.getpast(30)
+#    show screen past_testing
+#    "Thirty days in the past."
+#    hide screen past_testing
     
-    "Thirty days in the future."
+#    $ calendar.getpast(300)
+#    show screen past_testing
+#    "Three hundred days in the past."
+#    hide screen past_testing
+
+#    $ calendar.getpast(3000)
+#    show screen past_testing
+#    "Three thousand days in the past."
+#    hide screen past_testing
+
+#    "Testing between dates function."
+#    $ calendar.getpast(5)
+#    $ calendar.between_dates(cnt1=calendar.daycount_from_gamestart, cnt2=calendar.past_daycount)
+#    show screen between_testing
+#    "The difference between daycount and past_daycount is five."
+#    hide screen between_testing
     
-    hide screen future_testing
-    
-    $ calendar.getfuture(300)
-    
-    show screen future_testing
-    
-    "Three hundred days in the future."
-    
-    hide screen future_testing
-    
-    $ calendar.getfuture(3000)
-    
-    show screen future_testing
-    
-    "Three thousand days in the future."
-    
-    hide screen future_testing
-    
-    "Testing past calendar projections."
-    
-    $ calendar.getpast(3)
-    
-    show screen past_testing
-    
-    "Three days in the past."
-    
-    hide screen past_testing
-    
-    $ calendar.getpast(30)
-    
-    show screen past_testing
-    
-    "Thirty days in the past."
-    
-    hide screen past_testing
-    
-    $ calendar.getpast(300)
-    
-    show screen past_testing
-    
-    "Three hundred days in the past."
-    
-    hide screen past_testing
-    
-    $ calendar.getpast(3000)
-    
-    show screen past_testing
-    
-    "Three thousand days in the past."
-    
-    hide screen past_testing
-    
-    "Testing between dates function."
-    
-    $ calendar.getpast(5)
-    
-    $ calendar.between_dates(cnt1=calendar.daycount_from_gamestart, cnt2=calendar.past_daycount)
-    
-    show screen between_testing
-    
-    "The difference between daycount and past_daycount is five."
-    
-    hide screen between_testing
-    
-    $calendar.getfuture(5)
-    
-    $ calendar.between_dates(cnt1=calendar.future_daycount, cnt2=calendar.past_daycount)
-    
-    show screen between_testing
-    
-    "The difference between future_daycount and past_daycount is ten."
-    
-    hide screen between_testing
+#    $calendar.getfuture(5)
+#    $ calendar.between_dates(cnt1=calendar.future_daycount, cnt2=calendar.past_daycount)
+#    show screen between_testing
+#    "The difference between future_daycount and past_daycount is ten."
+#    hide screen between_testing
     
     jump apothecary_shop
 

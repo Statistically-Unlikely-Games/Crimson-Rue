@@ -1,4 +1,6 @@
 label define_items:
+    $ import enc_code.actions 
+    "Encyclopaedia Actions have been imported."
     
     ######### DEFINE ITEM OBJECTS ##########
     ### The format is name, description, icon image (if applicable), value (if applicable, selling/buying value), action (screen language action to be performed when icon is clicked on inventory screen), and recipe (if craftable).
@@ -24,9 +26,12 @@ label define_items:
 
 
 #Books
-     #This is currently broken. It says UnlockEncEntry is not defined. 
-     #Need to investigate when the action code for encyclopedia runs. 
-#    $ book = Item("Herb Identification Guide", "A book of herbs", "inv/book.png", 5000, act=UnlockEncEntry(en2))
+    #This is currently broken. It says UnlockEncEntry is not defined. 
+    #Need to investigate when the action code for encyclopedia runs. 
+    
+    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked")])
+    $ herbID2 = Item("Herb Identification vol. 2", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en2),Show("inventory_popup", message="New Herbs Unlocked")])
+    $ herbID3 = Item("Herb Identification vol. 3", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en3),Show("inventory_popup", message="New Herbs Unlocked")])
 
 #Tier 1 Items
     

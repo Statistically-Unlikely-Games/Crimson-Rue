@@ -1,7 +1,7 @@
 init -1500 python:
     # Import the Encyclopaedia
-    from encyclopaedia import Encyclopaedia
-    from encyclopaedia import EncEntry
+    from enc_code import Encyclopaedia
+    from enc_code import EncEntry
 
 
 ################################################################################
@@ -110,7 +110,7 @@ screen encyclopaedia_list(enc):
                 hbox:
                     xfill True
                     # Percentage unlocked display
-                    text "{} Complete".format(enc.labels.percentage_unlocked)
+#                    text "{} Complete".format(enc.labels.percentage_unlocked)
 
             frame:
                 style_prefix "encyclopaedia"

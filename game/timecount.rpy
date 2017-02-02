@@ -96,3 +96,7 @@ label timecount:
         $ forest009_eighth_herb_col = True
         
         return
+        
+label time_inc:
+    $ time_cnt += 1
+    return

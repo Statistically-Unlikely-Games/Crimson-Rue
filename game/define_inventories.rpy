@@ -3,7 +3,7 @@ label define_inventories:
     ######### DEFINE INVENTORIES ##########    
     $ pc_inv = Inventory("Aeth")
     
-#    $ pc_inv.take(book)
+    $ pc_inv.take(herbID2)
     $ pc_inv.take(empty_bottle,5)
     $ pc_inv.take(herb001,4)
     $ pc_inv.take(herb002)
@@ -16,8 +16,12 @@ label define_inventories:
     
     $ chest = Inventory("Storage Chest")
     
+    $ chest.take(herbID1)
+    
     $ shop_inv = Inventory("Item Shop", 5000, 75)
     
+    $ shop_inv.take(herbID2)
+    $ shop_inv.take(herbID3)
     $ shop_inv.take(bandages,50)
     $ shop_inv.take(empty_bottle,50)
     $ shop_inv.take(oil,50)
