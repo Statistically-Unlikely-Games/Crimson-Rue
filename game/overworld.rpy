@@ -3,9 +3,9 @@
 #
 # Explore the town.
 
-label shop_closed:
-    "The shop closes soon, I better leave."
-    jump overworld01
+label overworld01_loop:
+    $ renpy.pause()
+    jump overworld01_loop
 
 label overworld01:
     show screen basic_overlay
@@ -13,28 +13,13 @@ label overworld01:
     
     if time_cnt > 5:
         call timecount
+        hide screen basic_overlay
         hide screen overworld
-        
         jump return_home
-                
-    if time_cnt == 1:
-        $ timeofday = "sunrise"
-        "It is now sunrise."
-    elif time_cnt == 2:
-        $ timeofday = "morning"
-        "It is now morning."
-    elif time_cnt == 3:
-        $ timeofday = "noon"
-        "It is now noon."
-    elif time_cnt == 4:
-        $ timeofday = "sunset"
-        "It is now sunset."
-    else:
-        $ timeofday = "night"
-        "It is now night."
+    call timecount
     
     "The town where I live."
-    jump overworld01
+    jump overworld01_loop
 
 screen overworld:
     tag menu2

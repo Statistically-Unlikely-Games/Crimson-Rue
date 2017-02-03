@@ -3,6 +3,10 @@
 #
 # Collect herbs.
 
+label forest_loop:
+    $ renpy.pause()
+    jump forest_loop
+
 label forest001_layout:
     $ forest001_spawn = renpy.random.randint(1, 5)
     
@@ -16,7 +20,7 @@ label forest001:
     
     "Your random number is [forest001_spawn]."
     "Everything is so full of life."
-    jump forest001
+    jump forest_loop
 
 screen forest001:
     tag menu2
@@ -365,7 +369,7 @@ label forest002:
     
     "Your random number is [forest002_spawn]."
     "Everything is so full of life."
-    jump forest002
+    jump forest_loop
 
 screen forest002:
     tag menu2
@@ -716,7 +720,7 @@ label forest003:
     
     "Your random number is [forest003_spawn]."
     "Everything is so full of life."
-    jump forest003
+    jump forest_loop
 
 screen forest003:
     tag menu2
@@ -1067,7 +1071,7 @@ label forest004:
     
     "Your random number is [forest004_spawn]."
     "Everything is so full of life."
-    jump forest004
+    jump forest_loop
 
 screen forest004:
     tag menu2
@@ -1418,7 +1422,7 @@ label forest005:
     
     "Your random number is [forest005_spawn]."
     "Everything is so full of life."
-    jump forest005
+    jump forest_loop
 
 screen forest005:
     tag menu2
@@ -1769,7 +1773,7 @@ label forest006:
     
     "Your random number is [forest006_spawn]."
     "Everything is so full of life."
-    jump forest006
+    jump forest_loop
 
 screen forest006:
     tag menu2
@@ -2112,7 +2116,7 @@ label forest007:
     
     "Your random number is [forest007_spawn]."
     "Everything is so full of life."
-    jump forest007
+    jump forest_loop
 
 screen forest007:
     tag menu2
@@ -2463,7 +2467,7 @@ label forest008:
     
     "Your random number is [forest008_spawn]."
     "Everything is so full of life."
-    jump forest008
+    jump forest_loop
 
 screen forest008:
     tag menu2
@@ -2814,7 +2818,7 @@ label forest009:
     
     "Your random number is [forest009_spawn]."
     "Everything is so full of life."
-    jump forest009
+    jump forest_loop
 
 screen forest009:
     tag menu2

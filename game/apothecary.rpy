@@ -11,9 +11,11 @@ label return_home:
     "You have a peaceful night's rest."
     jump apothecary_shop
 
-label looping:
+label aplooping:
     $ renpy.pause()
-    jump looping
+    call timecount2
+    call time_img
+    jump aplooping
     
 label apothecary_shop:    
     
@@ -23,7 +25,7 @@ label apothecary_shop:
     
     "You are in your apothecary shop."
     
-    jump looping
+    jump aplooping
 
 screen apothecary:
     tag menu2
@@ -68,7 +70,7 @@ label kitchen:
     
     "You are in the kitchen."
     
-    jump looping
+    jump aplooping
     
 screen kitchen:
     tag menu2
@@ -113,7 +115,7 @@ label cellar:
     
     "You are in the cellar."
     
-    jump looping
+    jump aplooping
     
 label fountain:
     if pc_inv.qty(empty_bottle):

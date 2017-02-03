@@ -48,27 +48,9 @@ label leave_itemshop:
     show screen basic_overlay
     show screen overworld
     $ time_cnt += 1
+    hide screen itemshop
     if time_cnt > 5:
         call timecount
-        hide screen itemshop
-        
         jump return_home
-
-                
-    if time_cnt == 1:
-        $ timeofday = "sunrise"
-        "It is now sunrise."
-    elif time_cnt == 2:
-        $ timeofday = "morning"
-        "It is now morning."
-    elif time_cnt == 3:
-        $ timeofday = "noon"
-        "It is now noon."
-    elif time_cnt == 4:
-        $ timeofday = "sunset"
-        "It is now sunset."
-        jump shop_closed
-    else:
-        $ timeofday = "night"
-        "It is now night."
+    
     jump overworld01

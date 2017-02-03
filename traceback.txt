@@ -4,10 +4,10 @@ While running game code:
   File "game/script.rpy", line 162, in script call
     call define_items
   File "game/define_items.rpy", line 32, in script
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), Call("time_inc")])
+    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(Renpy.call, "time_img")])
   File "game/define_items.rpy", line 32, in <module>
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), Call("time_inc")])
-NameError: name 'Call' is not defined
+    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(Renpy.call, "time_img")])
+NameError: name 'Renpy' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -15,14 +15,14 @@ Full traceback:
   File "game/script.rpy", line 162, in script call
     call define_items
   File "game/define_items.rpy", line 32, in script
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), Call("time_inc")])
+    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(Renpy.call, "time_img")])
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
     exec bytecode in globals, locals
   File "game/define_items.rpy", line 32, in <module>
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), Call("time_inc")])
-NameError: name 'Call' is not defined
+    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(Renpy.call, "time_img")])
+NameError: name 'Renpy' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029
