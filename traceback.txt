@@ -1,28 +1,82 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 162, in script call
-    call define_items
-  File "game/define_items.rpy", line 32, in script
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(Renpy.call, "time_img")])
-  File "game/define_items.rpy", line 32, in <module>
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(Renpy.call, "time_img")])
-NameError: name 'Renpy' is not defined
+  File "game/overworld.rpy", line 19, in script call
+    call timecount
+  File "game/overworld.rpy", line 19, in script call
+    call timecount
+  File "game/apothecary.rpy", line 26, in script
+    "You are in your apothecary shop."
+  File "renpy/common/00action_other.rpy", line 480, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/inventory.rpy", line 72, in craft
+    for line in item.containers:
+TypeError: 'bool' object is not iterable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 162, in script call
-    call define_items
-  File "game/define_items.rpy", line 32, in script
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(Renpy.call, "time_img")])
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/define_items.rpy", line 32, in <module>
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(Renpy.call, "time_img")])
-NameError: name 'Renpy' is not defined
+  File "game/overworld.rpy", line 19, in script call
+    call timecount
+  File "game/overworld.rpy", line 19, in script call
+    call timecount
+  File "game/apothecary.rpy", line 26, in script
+    "You are in your apothecary shop."
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
+    who(what, interact=interact)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 876, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 715, in do_display
+    **display_args)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 507, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 3166, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 651, in event
+    rv = self.child.event(ev, x, y, st)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\viewport.py", line 290, in event
+    rv = super(Viewport, self).event(ev, x, y, st)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 889, in event
+    return handle_click(self.clicked)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 824, in handle_click
+    rv = run(action)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 306, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_other.rpy", line 480, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/inventory.rpy", line 72, in craft
+    for line in item.containers:
+TypeError: 'bool' object is not iterable
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

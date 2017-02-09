@@ -4,21 +4,22 @@ init python:
     import renpy.store as store    
     
     class Item(store.object):
-        def __init__(self, name, desc, icon=False, value=0, act=Show("inventory_popup", message="Nothing happened!"), type="item", recipe=False):
+        def __init__(self, name, desc, icon=False, value=0, act=Show("inventory_popup", message="Nothing happened!"), type="item", recipe=False, containers=False):
             global cookbook
             self.name = name
             self.desc = desc
             self.icon = icon
-            self.value = value               
+            self.value = value
             self.act = act # screen action
             self.type = type # type of item
-            self.recipe = recipe # nested list of [ingredient, qty]   
+            self.recipe = recipe # nested list of [ingredient, qty]  
+            self.containers = containers
             
             if recipe:
                 cookbook.append(self)
                 cookbook.sort(key=lambda i: i.name) #alpha order
 
-        def change(self, name, desc=False, icon=False, value=False, act=False, recipe=False): 
+        def change(self, name, desc=False, icon=False, value=False, act=False, recipe=False, containers=False): 
             self.name = name
             if desc:
                 self.desc = desc
@@ -29,7 +30,9 @@ init python:
             if act:
                 self.act = act
             if recipe:
-                self.recipe = recipe                
+                self.recipe = recipe  
+            if containers:
+                self.containers = containers
             
     class Inventory(store.object):
         def __init__(self, name, money=0, barter=100):
@@ -66,21 +69,13 @@ init python:
         def craft(self, item):
             for line in item.recipe:
                 self.drop(line[0], line[1])
-#                if item.name == "Tincture01":
-#                    bottles[0] +=1
-#                    renpy.show_screen("bottle_check",num=bottles)
-            self.take(item)  
+            for line in item.containers:
+                self.take(line[0], line[1])
+
+            self.take(item)
+            #if new item bottles is not 0, take empty bottles equal to the number of bottles -1
             message = "Crafted %s!" % (item.name)
             renpy.show_screen("inventory_popup2", message=message,item=item.name)  
-            #if bottles > 2:
-                #add empty bottle to inventory
-                #bottles -= 1
-                #if bottles > 2:
-                    #add empty bottle to inventory
-                    #bottles -= 1
-                        #if bottles > 2:
-                            #add empty bottle to inventory
-                            #bottles -= 1
             
                             
         def deposit(self, amount):
