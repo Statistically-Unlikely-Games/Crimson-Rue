@@ -14,39 +14,19 @@ label forest001_layout:
 label forest001:
     init python: 
         message = "message"
+    $ in_forest001 = True
     
     show bg forest001
     show screen forest001
+    show screen basic_overlay
     
     "Your random number is [forest001_spawn]."
     "Everything is so full of life."
     jump forest_loop
 
+
 screen forest001:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
-            textbutton "Leave Forest" action Jump("leave_forest001")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
-        
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
     
     if forest001_spawn == 1:
     
@@ -346,6 +326,7 @@ label forest001_eighth_herb:
 label leave_forest001:
     show screen basic_overlay
     show screen overworld02
+    $ in_forest001 = False
     $ time_cnt += 1
     
     jump overworld02
@@ -363,9 +344,11 @@ label forest002_layout:
 label forest002:
     init python: 
         message = "message"
+    $ in_forest002 = True
     
     show bg forest002
     show screen forest002
+    show screen basic_overlay
     
     "Your random number is [forest002_spawn]."
     "Everything is so full of life."
@@ -373,30 +356,7 @@ label forest002:
 
 screen forest002:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
-            textbutton "Leave Forest" action Jump("leave_forest002")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
         
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
-    
     if forest002_spawn == 1:
     
         if forest002_first_herb_col:
@@ -696,6 +656,7 @@ label forest002_eighth_herb:
 label leave_forest002:
     show screen basic_overlay
     show screen overworld02
+    $ in_forest002 = False
     $ time_cnt += 1
     
     jump overworld02
@@ -714,9 +675,11 @@ label forest003_layout:
 label forest003:
     init python: 
         message = "message"
+    $ in_forest003 = True
     
     show bg forest003
     show screen forest003
+    show screen basic_overlay
     
     "Your random number is [forest003_spawn]."
     "Everything is so full of life."
@@ -724,30 +687,7 @@ label forest003:
 
 screen forest003:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
-            textbutton "Leave Forest" action Jump("leave_forest003")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
         
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
-    
     if forest003_spawn == 1:
     
         if forest003_first_herb_col:
@@ -1047,6 +987,7 @@ label forest003_eighth_herb:
 label leave_forest003:
     show screen basic_overlay
     show screen overworld02
+    $ in_forest003 = False
     $ time_cnt += 1
     
     jump overworld02
@@ -1065,9 +1006,11 @@ label forest004_layout:
 label forest004:
     init python: 
         message = "message"
+    $ in_forest004 = True
     
     show bg forest004
     show screen forest004
+    show screen basic_overlay
     
     "Your random number is [forest004_spawn]."
     "Everything is so full of life."
@@ -1075,29 +1018,6 @@ label forest004:
 
 screen forest004:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
-            textbutton "Leave Forest" action Jump("leave_forest004")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
-        
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
     
     if forest004_spawn == 1:
     
@@ -1398,6 +1318,7 @@ label forest004_eighth_herb:
 label leave_forest004:
     show screen basic_overlay
     show screen overworld02
+    $ in_forest004 = False
     $ time_cnt += 1
     
     jump overworld02
@@ -1416,9 +1337,11 @@ label forest005_layout:
 label forest005:
     init python: 
         message = "message"
+    $ in_forest005 = True
     
     show bg forest005
     show screen forest005
+    show screen basic_overlay
     
     "Your random number is [forest005_spawn]."
     "Everything is so full of life."
@@ -1426,29 +1349,6 @@ label forest005:
 
 screen forest005:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
-            textbutton "Leave Forest" action Jump("leave_forest005")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
-        
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
     
     if forest005_spawn == 1:
     
@@ -1749,6 +1649,7 @@ label forest005_eighth_herb:
 label leave_forest005:
     show screen basic_overlay
     show screen overworld02
+    $ in_forest005 = False
     $ time_cnt += 1
     
     jump overworld02
@@ -1767,9 +1668,11 @@ label forest006_layout:
 label forest006:
     init python: 
         message = "message"
+    $ in_forest006 = True
     
     show bg forest006
     show screen forest006
+    show screen basic_overlay
     
     "Your random number is [forest006_spawn]."
     "Everything is so full of life."
@@ -1777,29 +1680,6 @@ label forest006:
 
 screen forest006:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
-            textbutton "Leave Forest" action Jump("leave_forest006")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
-        
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
     
     if forest006_spawn == 1:
     
@@ -2092,6 +1972,7 @@ label forest006_eighth_herb:
 label leave_forest006:
     show screen basic_overlay
     show screen overworld02
+    $ in_forest006 = False
     $ time_cnt += 1
     
     jump overworld02
@@ -2110,9 +1991,11 @@ label forest007_layout:
 label forest007:
     init python: 
         message = "message"
+    $ in_forest007 = True
     
     show bg forest007
     show screen forest007
+    show screen basic_overlay
     
     "Your random number is [forest007_spawn]."
     "Everything is so full of life."
@@ -2120,29 +2003,6 @@ label forest007:
 
 screen forest007:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
-            textbutton "Leave Forest" action Jump("leave_forest007")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
-        
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
     
     if forest007_spawn == 1:
     
@@ -2443,6 +2303,7 @@ label forest007_eighth_herb:
 label leave_forest007:
     show screen basic_overlay
     show screen overworld02
+    $ in_forest007 = False
     $ time_cnt += 1
     
     jump overworld02
@@ -2461,9 +2322,11 @@ label forest008_layout:
 label forest008:
     init python: 
         message = "message"
+    $ in_forest008 = True
     
     show bg forest008
     show screen forest008
+    show screen basic_overlay
     
     "Your random number is [forest008_spawn]."
     "Everything is so full of life."
@@ -2471,29 +2334,6 @@ label forest008:
 
 screen forest008:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
-            textbutton "Leave Forest" action Jump("leave_forest008")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
-        
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
     
     if forest008_spawn == 1:
     
@@ -2794,6 +2634,7 @@ label forest008_eighth_herb:
 label leave_forest008:
     show screen basic_overlay
     show screen overworld02
+    $ in_forest008 = False
     $ time_cnt += 1
     
     jump overworld02
@@ -2813,8 +2654,11 @@ label forest009:
     init python: 
         message = "message"
     
+    $ in_forest009 = True
+    
     show bg forest009
     show screen forest009
+    show screen basic_overlay
     
     "Your random number is [forest009_spawn]."
     "Everything is so full of life."
@@ -2822,29 +2666,6 @@ label forest009:
 
 screen forest009:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv) 
-            textbutton "Leave Forest" action Jump("leave_forest009")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
-        
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
     
     if forest009_spawn == 1:
     
@@ -3145,6 +2966,7 @@ label forest009_eighth_herb:
 label leave_forest009:
     show screen basic_overlay
     show screen overworld02
+    $ in_forest009 = False
     $ time_cnt += 1
     
     jump overworld02    

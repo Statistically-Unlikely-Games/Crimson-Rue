@@ -73,7 +73,6 @@ init python:
                 self.take(line[0], line[1])
 
             self.take(item)
-            #if new item bottles is not 0, take empty bottles equal to the number of bottles -1
             message = "Crafted %s!" % (item.name)
             renpy.show_screen("inventory_popup2", message=message,item=item.name)  
             

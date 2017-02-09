@@ -1,82 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/overworld.rpy", line 19, in script call
+  File "game/overworld.rpy", line 22, in script call
     call timecount
-  File "game/overworld.rpy", line 19, in script call
-    call timecount
-  File "game/apothecary.rpy", line 26, in script
-    "You are in your apothecary shop."
-  File "renpy/common/00action_other.rpy", line 480, in __call__
-    rv = self.callable(*self.args, **self.kwargs)
-  File "game/inventory.rpy", line 72, in craft
-    for line in item.containers:
-TypeError: 'bool' object is not iterable
+  File "game/overworld02.rpy", line 17, in script
+    if time_cnt > 5:
+SyntaxError: invalid syntax (game/overworld02.rpy, line 26)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/overworld.rpy", line 19, in script call
+  File "game/overworld.rpy", line 22, in script call
     call timecount
-  File "game/overworld.rpy", line 19, in script call
-    call timecount
-  File "game/apothecary.rpy", line 26, in script
-    "You are in your apothecary shop."
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
-    who(what, interact=interact)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 876, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 715, in do_display
-    **display_args)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 507, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 3166, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 651, in event
-    rv = self.child.event(ev, x, y, st)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\viewport.py", line 290, in event
-    rv = super(Viewport, self).event(ev, x, y, st)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 889, in event
-    return handle_click(self.clicked)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 824, in handle_click
-    rv = run(action)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 306, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_other.rpy", line 480, in __call__
-    rv = self.callable(*self.args, **self.kwargs)
-  File "game/inventory.rpy", line 72, in craft
-    for line in item.containers:
-TypeError: 'bool' object is not iterable
+  File "game/overworld02.rpy", line 17, in script
+    if time_cnt > 5:
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 1656, in execute
+    if renpy.python.py_eval(condition):
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1724, in py_eval
+    code = py_compile(code, 'eval')
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 576, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/overworld02.rpy, line 26)
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

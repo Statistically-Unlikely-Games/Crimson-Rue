@@ -5,38 +5,19 @@
 
 
 label item_shop:
+    
+    $ in_itemshop = True
+    
     show bg itemshop
     show screen itemshop
+    show screen basic_overlay
     
     "I can sell my wares and buy new supplies here."
     jump item_shop
 
 screen itemshop:
     tag menu2
-    
-    frame:
-        yalign 0.0 xalign 0.95
-        vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv)
-            textbutton "Leave Shop" action Jump("leave_itemshop")
-            textbutton "Exit" action Quit(confirm=False)
-    
-    python:
-        if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
-        else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
         
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
-    
     imagebutton: 
         auto "gui/button.itemshop.desk_%s.png" 
         focus_mask True 
@@ -47,6 +28,7 @@ screen itemshop:
 label leave_itemshop:
     show screen basic_overlay
     show screen overworld
+    $ in_itemshop = False
     $ time_cnt += 1
     hide screen itemshop
     if time_cnt > 5:
