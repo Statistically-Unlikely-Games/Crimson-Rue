@@ -145,6 +145,7 @@ init python:
     transfer_amount = 0
                 
 screen tooltip(item=False,seller=false):      
+    zorder 5
     if item:
         hbox:
             xalign 0.5 yalign 1.0
@@ -154,6 +155,7 @@ screen tooltip(item=False,seller=false):
                 text "[item[0].name]: [item[0].desc] (Value: [item[0].value])" 
 
 screen inventory_screen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
     default crafting_screen = False
     tag menu
     modal True       
@@ -182,6 +184,7 @@ screen inventory_screen(first_inventory, second_inventory=False, trade_mode=Fals
                 use crafting(first_inventory)
                 
 screen inventory_craftbalm(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
     default crafting_screen = True
     tag menu
     modal True 
@@ -201,6 +204,7 @@ screen inventory_craftbalm(first_inventory, second_inventory=False, trade_mode=F
             use crafting_balms(first_inventory)
             
 screen inventory_craftcream(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
     default crafting_screen = True
     tag menu
     modal True 
@@ -239,6 +243,7 @@ screen inventory_craftextract(first_inventory, second_inventory=False, trade_mod
             use crafting_extracts(first_inventory)
             
 screen inventory_craftherboil(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
     default crafting_screen = True
     tag menu
     modal True 
@@ -258,6 +263,7 @@ screen inventory_craftherboil(first_inventory, second_inventory=False, trade_mod
             use crafting_herboil(first_inventory)
             
 screen inventory_craftinfusion(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
     default crafting_screen = True
     tag menu
     modal True 
@@ -296,6 +302,7 @@ screen inventory_craftsalve(first_inventory, second_inventory=False, trade_mode=
             use crafting_salves(first_inventory)
             
 screen inventory_crafttincture(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
     default crafting_screen = True
     tag menu
     modal True 
@@ -315,6 +322,7 @@ screen inventory_crafttincture(first_inventory, second_inventory=False, trade_mo
             use crafting_tinctures(first_inventory)
 
 screen inventory_kitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
     default crafting_screen = True
     tag menu
     modal True 
@@ -332,7 +340,8 @@ screen inventory_kitchen(first_inventory, second_inventory=False, trade_mode=Fal
                 textbutton "Close" action Hide("inventory_kitchen")
             use crafting_kitchen(first_inventory)
                 
-screen inventory_view(inventory, second_inventory=False, trade_mode=False):     
+screen inventory_view(inventory, second_inventory=False, trade_mode=False):   
+    zorder 3
     side "c r":
         style_group "invstyle"
         area (0, 0, 350, 400) 
@@ -383,6 +392,7 @@ screen inventory_view(inventory, second_inventory=False, trade_mode=False):
         
 
 screen craftinv_view(inventory, second_inventory=False, trade_mode=False):     
+    zorder 3
     side "c r":
         style_group "invstyle"
         area (0, 0, 450, 530) 

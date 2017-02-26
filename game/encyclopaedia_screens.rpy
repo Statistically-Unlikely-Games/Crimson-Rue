@@ -110,7 +110,7 @@ screen encyclopaedia_list(enc):
                 hbox:
                     xfill True
                     # Percentage unlocked display
-#                    text "{} Complete".format(enc.labels.percentage_unlocked)
+                    text "{} Complete".format(enc.labels.percentage_unlocked)
 
             frame:
                 style_prefix "encyclopaedia"
@@ -157,8 +157,8 @@ screen encyclopaedia_list(enc):
                         textbutton "Sort by %s" % enc.labels.sort_unread_label action enc.Sort(sorting_mode=enc.SORT_UNREAD) style "encyclopaedia_button" xfill True
 
                         # Buttons to show different styles of hiding locked data.
-                        textbutton "Show/Hide Locked Buttons" action enc.ToggleShowLockedButtons() style "encyclopaedia_button" xfill True
-                        textbutton "Show/Hide Locked Entry" action enc.ToggleShowLockedEntry() style "encyclopaedia_button" xfill True
+                        #textbutton "Show/Hide Locked Buttons" action enc.ToggleShowLockedButtons() style "encyclopaedia_button" xfill True
+                        #textbutton "Show/Hide Locked Entry" action enc.ToggleShowLockedEntry() style "encyclopaedia_button" xfill True
 
                         # Sort and SaveStatus are unnecessary if you're not using persistent data (ie: if the encyclopaedia is save game independent)
                         # Sorting mode has to be by Number to save properly. "new_0" should be whatever the prefix you choose for the persistent dictionary is.

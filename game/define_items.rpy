@@ -1,6 +1,6 @@
 label define_items:
     $ import enc_code.actions 
-    "Encyclopaedia Actions have been imported."
+    #"Encyclopaedia Actions have been imported."
     
     ######### DEFINE ITEM OBJECTS ##########
     ### The format is name, description, icon image (if applicable), value (if applicable, selling/buying value), action (screen language action to be performed when icon is clicked on inventory screen), and recipe (if craftable).
@@ -200,7 +200,7 @@ label define_items:
     $ tincture017 = Item("Calendula Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract017,1]], containers=[[empty_bottle,1]])
     $ tincture018 = Item("Violet Tincture", "Medicine you can drink.", "inv/bottle.medicine02.png", 1500, recipe=[[wine,1],[extract018,1]], containers=[[empty_bottle,1]])
     
-    "Items have been defined."
+    #"Items have been defined."
     
     $ cooklist = [balm001,cream002,extract003,herb_oil004,infusion005,salve006,tincture007]
     

@@ -48,7 +48,7 @@ label splashscreen:
     
       
 label start:  
-    "Game Start"
+    #"Game Start"
 #    "Setting Variables" 
     #For some reason after this line, small text in the dialogue box stops being white?
     

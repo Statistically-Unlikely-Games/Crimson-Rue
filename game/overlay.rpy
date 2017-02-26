@@ -1,5 +1,5 @@
 screen basic_overlay:
-    zorder 50
+    zorder 2
         
     frame:
         yalign 0.0 xalign 0.95

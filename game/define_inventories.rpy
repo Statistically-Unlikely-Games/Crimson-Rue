@@ -30,4 +30,4 @@ label define_inventories:
     $ shop_inv.take(wax,50)
     $ shop_inv.take(empty_jar,50)
     
-    "Inventories have been defined and populated."
+    #"Inventories have been defined and populated."
