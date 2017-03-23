@@ -1,23 +1,25 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 173, in <module>
-    $ ui.interact()
-ValueError: EncEntry: 02: Herb Identification vol. 2 is not in list
+  File "game/apothecary.rpy", line 57, in script
+    "You are in your apothecary shop."
+TypeError: unlock_entry() takes exactly 1 argument (2 given)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    $ ui.interact()
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00gamemenu.rpy", line 173, in <module>
-    $ ui.interact()
+  File "game/apothecary.rpy", line 57, in script
+    "You are in your apothecary shop."
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
+    who(what, interact=interact)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 876, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 715, in do_display
+    **display_args)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 507, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
@@ -42,24 +44,22 @@ Full traceback:
     rv = i.event(ev, x - xo, y - yo, cst)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
     rv = d.event(ev, x - xo, y - yo, st)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
-    rv = d.event(ev, x - xo, y - yo, st)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\viewport.py", line 290, in event
     rv = super(Viewport, self).event(ev, x, y, st)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
     rv = d.event(ev, x - xo, y - yo, st)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
     rv = i.event(ev, x - xo, y - yo, cst)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 889, in event
     return handle_click(self.clicked)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 824, in handle_click
     rv = run(action)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 299, in run
+    new_rv = run(i, *args, **kwargs)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 306, in run
     return action(*args, **kwargs)
-  File "enc_code/actions.py", line 33, in __call__
-ValueError: EncEntry: 02: Herb Identification vol. 2 is not in list
+  File "enc_code/actions.py", line 275, in __call__
+TypeError: unlock_entry() takes exactly 1 argument (2 given)
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

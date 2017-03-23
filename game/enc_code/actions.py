@@ -267,9 +267,10 @@ class ToggleShowLockedEntryAction(EncyclopaediaAction):
 
 class UnlockEncEntry(EncyclopaediaAction):
     #Calls EncEntry.unlock_entry, can be assigned to a button
-    def __init__(self, entry):
+    def __init__(self, entry, encyclopaedia):
         self.entry = entry
+        self.encyclopaedia = encyclopaedia
 
     def __call__(self):
-        enc_code.encentry.EncEntry.unlock_entry(self.entry)
+        enc_code.encentry.EncEntry.unlock_entry(self.entry, self.encyclopaedia)
 

@@ -6,6 +6,8 @@ from renpy.python import RevertableList
 
 from encexceptions import MissingImageError
 
+import enc_code.encyclopaedia
+
 
 class EncEntry(store.object):
     """Stores an Entry's content.
@@ -262,10 +264,12 @@ class EncEntry(store.object):
 
         self.viewed = False
     
-    def unlock_entry(self):
+    def unlock_entry(self, encyclopaedia):
         #Changes the locked status of an entry and all sub-entries
         self.locked = False
         self.viewed = False
+        
+        enc_code.encyclopaedia.Encyclopaedia.unlock_entry(encyclopaedia, self)
         
         if self.has_sub_entry:
             for subent_data in self.sub_entry_list:

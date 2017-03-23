@@ -29,9 +29,9 @@ label define_items:
     #This is currently broken. It says UnlockEncEntry is not defined. 
     #Need to investigate when the action code for encyclopedia runs. 
     
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
-    $ herbID2 = Item("Herb Identification vol. 2", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en2),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
-    $ herbID3 = Item("Herb Identification vol. 3", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en3),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en1, encyclopaedia),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ herbID2 = Item("Herb Identification vol. 2", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en2, encyclopaedia),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ herbID3 = Item("Herb Identification vol. 3", "A book of herbs", "inv/book.png", 5000, act=[enc_code.actions.UnlockEncEntry(en3, encyclopaedia),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
 
 #Tier 1 Items
     
