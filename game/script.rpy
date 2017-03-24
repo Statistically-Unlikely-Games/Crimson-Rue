@@ -237,6 +237,15 @@ label start:
 #    "The difference between future_daycount and past_daycount is ten."
 #    hide screen between_testing
     
+    
+label intro: 
+    
+    show aeth neu at left
+    show elaine neu at right
+    show child neu at center
+    
+    "This is a dialogue test."
+    
     jump apothecary_shop
 
 

@@ -2912,7 +2912,7 @@ label forest009_first_herb:
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
-    jump forest001
+    jump forest009
     
 label forest009_second_herb:
     $ pc_inv.take(herb003)

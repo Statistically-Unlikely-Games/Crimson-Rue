@@ -271,9 +271,9 @@ class EncEntry(store.object):
         
         enc_code.encyclopaedia.Encyclopaedia.unlock_entry(encyclopaedia, self)
         
-        if self.has_sub_entry:
-            for subent_data in self.sub_entry_list:
-                subent_data[1].locked = False
-                self.add_entry(subent_data[1])
-                self.viewed = False
+#        if self.has_sub_entry:
+#            for subent_data in self.sub_entry_list:
+#                subent_data[1].locked = False
+#                self.add_entry(subent_data[1])
+#                self.viewed = False
 
