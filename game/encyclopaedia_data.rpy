@@ -1,110 +1,186 @@
-# In the following example, an encyclopaedia is created inside an "init python" block.
-# This allows an encyclopaedia's content to be independent of the saved games. 
-# ie: Whenever encyclopaedia content is unlocked, it's unlocked for all save games.
-# If you want an encyclopaedia that is bound to a save game file, create the encyclopaedia in a "python" block inside the "start" label.
-# Then, for the "locked" argument in each entry, don't use a persistent variable.    
-
 init python:
 
+    #Defining Encyclopedia images
 
-    # Variables to hold the image paths. The path is relative to your game/ directory.
-    image_getting_started = "enc/getting_started.png"
-    image_translations = "enc/translations.png"
-    en1_image = "enc/Botanical_Thistle.png"
-    en1_2_image = "enc/Botanical_Dandelion.png"
-    en1_3_image = "enc/Botanical_Blackberry.png"
-    en1_4_image = "enc/Botanical_Oak.png"
-    en1_5_image = "enc/Botanical_Garlic.png"
-    en1_6_image = "enc/Botanical_Mint.png"
-    en1_7_image = "enc/Botanical_Oregano.png"
-    en1_8_image = "enc/Botanical_Parsley.png"
-    en1_9_image = "enc/Botanical_Sage.png"
-    en1_10_image = "enc/Botanical_Laurel.png"
-    en1_11_image = "enc/Botanical_Hyssop.png"
-    en1_12_image = "enc/Botanical_Borage.png"
-    en1_13_image = "enc/Botanical_Crown Flower.png"
-    en1_14_image = "enc/Botanical_Marsh Marigold.png"
-    en1_15_image = "enc/Botanical_Plantain.png"
-    en1_16_image = "enc/Botanical_Chamomile.png"
-    en1_17_image = "enc/Botanical_Calendula.png"
-    en1_18_image = "enc/Botanical_Violet.png"
-    en1_19_image = "enc/Botanical_Thistle.png"
-    en1_20_image = "enc/Botanical_Thistle.png"
+    B1_1_image = "enc/Botanical_Thistle.png"
+    B1_2_image = "enc/Botanical_Dandelion.png"
+    B1_3_image = "enc/Botanical_Blackberry.png"
+    B1_4_image = "enc/Botanical_Oak.png"
+    B1_5_image = "enc/Botanical_Garlic.png"
+    B1_6_image = "enc/Botanical_Mint.png"
+    B1_7_image = "enc/Botanical_Oregano.png"
+    B1_8_image = "enc/Botanical_Parsley.png"
+    B1_9_image = "enc/Botanical_Sage.png"
+    B1_10_image = "enc/Botanical_Laurel.png"
+    B1_11_image = "enc/Botanical_Hyssop.png"
+    B1_12_image = "enc/Botanical_Borage.png"
+    B1_13_image = "enc/Botanical_Crown Flower.png"
+    B1_14_image = "enc/Botanical_Marsh Marigold.png"
+    B1_15_image = "enc/Botanical_Plantain.png"
+    B1_16_image = "enc/Botanical_Chamomile.png"
+    B1_17_image = "enc/Botanical_Calendula.png"
+    B1_18_image = "enc/Botanical_Violet.png"
+    B1_19_image = "enc/Botanical_Thistle.png"
+    B1_20_image = "enc/Botanical_Thistle.png"
     
-    en2_image = "enc/Botanical_Thistle.png"
-    en2_2_image = "enc/Botanical_Dandelion.png"
-    en2_3_image = "enc/Botanical_Blackberry.png"
-    en2_4_image = "enc/Botanical_Oak.png"
-    en2_5_image = "enc/Botanical_Garlic.png"
-    en2_6_image = "enc/Botanical_Mint.png"
-    en2_7_image = "enc/Botanical_Oregano.png"
-    en2_8_image = "enc/Botanical_Parsley.png"
-    en2_9_image = "enc/Botanical_Sage.png"
-    en2_10_image = "enc/Botanical_Laurel.png"
-    en2_11_image = "enc/Botanical_Hyssop.png"
-    en2_12_image = "enc/Botanical_Borage.png"
-    en2_13_image = "enc/Botanical_Crown Flower.png"
-    en2_14_image = "enc/Botanical_Marsh Marigold.png"
-    en2_15_image = "enc/Botanical_Plantain.png"
-    en2_16_image = "enc/Botanical_Chamomile.png"
-    en2_17_image = "enc/Botanical_Calendula.png"
-    en2_18_image = "enc/Botanical_Violet.png"
-    en2_19_image = "enc/Botanical_Thistle.png"
-    en2_20_image = "enc/Botanical_Thistle.png"
+    B2_1_image = "enc/Botanical_Thistle.png"
+    B2_2_image = "enc/Botanical_Dandelion.png"
+    B2_3_image = "enc/Botanical_Blackberry.png"
+    B2_4_image = "enc/Botanical_Oak.png"
+    B2_5_image = "enc/Botanical_Garlic.png"
+    B2_6_image = "enc/Botanical_Mint.png"
+    B2_7_image = "enc/Botanical_Oregano.png"
+    B2_8_image = "enc/Botanical_Parsley.png"
+    B2_9_image = "enc/Botanical_Sage.png"
+    B2_10_image = "enc/Botanical_Laurel.png"
+    B2_11_image = "enc/Botanical_Hyssop.png"
+    B2_12_image = "enc/Botanical_Borage.png"
+    B2_13_image = "enc/Botanical_Crown Flower.png"
+    B2_14_image = "enc/Botanical_Marsh Marigold.png"
+    B2_15_image = "enc/Botanical_Plantain.png"
+    B2_16_image = "enc/Botanical_Chamomile.png"
+    B2_17_image = "enc/Botanical_Calendula.png"
+    B2_18_image = "enc/Botanical_Violet.png"
+    B2_19_image = "enc/Botanical_Thistle.png"
+    B2_20_image = "enc/Botanical_Thistle.png"
     
-    en3_image = "enc/Botanical_Thistle.png"
-    en3_2_image = "enc/Botanical_Dandelion.png"
-    en3_3_image = "enc/Botanical_Blackberry.png"
-    en3_4_image = "enc/Botanical_Oak.png"
-    en3_5_image = "enc/Botanical_Garlic.png"
-    en3_6_image = "enc/Botanical_Mint.png"
-    en3_7_image = "enc/Botanical_Oregano.png"
-    en3_8_image = "enc/Botanical_Parsley.png"
-    en3_9_image = "enc/Botanical_Sage.png"
-    en3_10_image = "enc/Botanical_Laurel.png"
-    en3_11_image = "enc/Botanical_Hyssop.png"
-    en3_12_image = "enc/Botanical_Borage.png"
-    en3_13_image = "enc/Botanical_Crown Flower.png"
-    en3_14_image = "enc/Botanical_Marsh Marigold.png"
-    en3_15_image = "enc/Botanical_Plantain.png"
-    en3_16_image = "enc/Botanical_Chamomile.png"
-    en3_17_image = "enc/Botanical_Calendula.png"
-    en3_18_image = "enc/Botanical_Violet.png"
-    en3_19_image = "enc/Botanical_Thistle.png"
-    en3_20_image = "enc/Botanical_Thistle.png"
-
-    en4_image = "enc/Xord_concept.jpg"
-    en7_image = "enc/Thanatos_sprite.png"
-
-    # Define an encyclopaedia object.
-    encyclopaedia = Encyclopaedia(
-        sorting_mode = Encyclopaedia.SORT_NUMBER,
-        show_locked_buttons=True,
-        show_locked_entry=False,
-        entry_screen="encyclopaedia_entry"
-    )
-
-    # If the encyclopaedia is save game independent, run this function to generate the persistent status variables. 
-    # If the encyclopaedia is unique for each save game, comment out or delete this.
+    B3_1_image = "enc/Botanical_Thistle.png"
+    B3_2_image = "enc/Botanical_Dandelion.png"
+    B3_3_image = "enc/Botanical_Blackberry.png"
+    B3_4_image = "enc/Botanical_Oak.png"
+    B3_5_image = "enc/Botanical_Garlic.png"
+    B3_6_image = "enc/Botanical_Mint.png"
+    B3_7_image = "enc/Botanical_Oregano.png"
+    B3_8_image = "enc/Botanical_Parsley.png"
+    B3_9_image = "enc/Botanical_Sage.png"
+    B3_10_image = "enc/Botanical_Laurel.png"
+    B3_11_image = "enc/Botanical_Hyssop.png"
+    B3_12_image = "enc/Botanical_Borage.png"
+    B3_13_image = "enc/Botanical_Crown Flower.png"
+    B3_14_image = "enc/Botanical_Marsh Marigold.png"
+    B3_15_image = "enc/Botanical_Plantain.png"
+    B3_16_image = "enc/Botanical_Chamomile.png"
+    B3_17_image = "enc/Botanical_Calendula.png"
+    B3_18_image = "enc/Botanical_Violet.png"
+    B3_19_image = "enc/Botanical_Thistle.png"
+    B3_20_image = "enc/Botanical_Thistle.png"
     
-    # entries_total is the total number of EncEntries the Encyclopaedia will hold.
-    # master_key and name are what determines the name of the status variables and the name of each key.
-    # only change master_key and name if you need multiple encyclopaedias in a game.
-    persistent_status_flags(
-        total=8,
-        master_key="new",
-        status_name="new_status"
-    )
+    B4_1_image = "enc/Botanical_Thistle.png"
+    B4_2_image = "enc/Botanical_Dandelion.png"
+    B4_3_image = "enc/Botanical_Blackberry.png"
+    B4_4_image = "enc/Botanical_Oak.png"
+    B4_5_image = "enc/Botanical_Garlic.png"
+    B4_6_image = "enc/Botanical_Mint.png"
+    B4_7_image = "enc/Botanical_Oregano.png"
+    B4_8_image = "enc/Botanical_Parsley.png"
+    B4_9_image = "enc/Botanical_Sage.png"
+    B4_10_image = "enc/Botanical_Laurel.png"
+    B4_11_image = "enc/Botanical_Hyssop.png"
+    B4_12_image = "enc/Botanical_Borage.png"
+    B4_13_image = "enc/Botanical_Crown Flower.png"
+    B4_14_image = "enc/Botanical_Marsh Marigold.png"
+    B4_15_image = "enc/Botanical_Plantain.png"
+    B4_16_image = "enc/Botanical_Chamomile.png"
+    B4_17_image = "enc/Botanical_Calendula.png"
+    B4_18_image = "enc/Botanical_Violet.png"
+    B4_19_image = "enc/Botanical_Thistle.png"
+    B4_20_image = "enc/Botanical_Thistle.png"
+    
+    B5_1_image = "enc/Botanical_Thistle.png"
+    B5_2_image = "enc/Botanical_Dandelion.png"
+    B5_3_image = "enc/Botanical_Blackberry.png"
+    B5_4_image = "enc/Botanical_Oak.png"
+    B5_5_image = "enc/Botanical_Garlic.png"
+    B5_6_image = "enc/Botanical_Mint.png"
+    B5_7_image = "enc/Botanical_Oregano.png"
+    B5_8_image = "enc/Botanical_Parsley.png"
+    B5_9_image = "enc/Botanical_Sage.png"
+    B5_10_image = "enc/Botanical_Laurel.png"
+    B5_11_image = "enc/Botanical_Hyssop.png"
+    B5_12_image = "enc/Botanical_Borage.png"
+    B5_13_image = "enc/Botanical_Crown Flower.png"
+    B5_14_image = "enc/Botanical_Marsh Marigold.png"
+    B5_15_image = "enc/Botanical_Plantain.png"
+    B5_16_image = "enc/Botanical_Chamomile.png"
+    B5_17_image = "enc/Botanical_Calendula.png"
+    B5_18_image = "enc/Botanical_Violet.png"
+    B5_19_image = "enc/Botanical_Thistle.png"
+    B5_20_image = "enc/Botanical_Thistle.png"
+    
+    B6_1_image = "enc/Botanical_Thistle.png"
+    B6_2_image = "enc/Botanical_Dandelion.png"
+    B6_3_image = "enc/Botanical_Blackberry.png"
+    B6_4_image = "enc/Botanical_Oak.png"
+    B6_5_image = "enc/Botanical_Garlic.png"
+    B6_6_image = "enc/Botanical_Mint.png"
+    B6_7_image = "enc/Botanical_Oregano.png"
+    B6_8_image = "enc/Botanical_Parsley.png"
+    B6_9_image = "enc/Botanical_Sage.png"
+    B6_10_image = "enc/Botanical_Laurel.png"
+    B6_11_image = "enc/Botanical_Hyssop.png"
+    B6_12_image = "enc/Botanical_Borage.png"
+    B6_13_image = "enc/Botanical_Crown Flower.png"
+    B6_14_image = "enc/Botanical_Marsh Marigold.png"
+    B6_15_image = "enc/Botanical_Plantain.png"
+    B6_16_image = "enc/Botanical_Chamomile.png"
+    B6_17_image = "enc/Botanical_Calendula.png"
+    B6_18_image = "enc/Botanical_Violet.png"
+    B6_19_image = "enc/Botanical_Thistle.png"
+    B6_20_image = "enc/Botanical_Thistle.png"
 
-    ################
-    # Documentation
-    ################
 
-    # Herb Identification vol. 1
-    en1 = EncEntry(
-        encyclopaedia,
-        1,
-        "Herb Identification vol. 1",
+label define_books: 
+    
+#Tutorials
+    $ book_1.add_page(
+        "Basic Controls",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Basic controls for the game.",
+            "Spacebar or enter to move through dialogue.",
+            "Page up to roll back to previous text.",
+        ],
+        0)
+    
+    $ book_1.add_page(
+        "Gathering Herbs",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "How to gather herbs.",
+            "Click an herb to pick it up.",
+            "A sickle will appear to mark areas you have already gathered.",
+        ],
+        0)
+    
+    $ book_1.add_page(
+        "Making Medicine",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "How to craft medicine.",
+            "To craft medicine, you must first use a craft table.",
+        ],
+        "Tutorial",
+        0)
+    
+    $ book_1.add_page(
+        "Relationships",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Increasing your relationships.",
+            "You can become closer to people by talking to them.",
+        ],
+        0)
+    
+
+#Herb Identification vol. 1
+    $ book_2.add_page(
+        "Common Thistle",
+        B2_1_image,
+        "icon",
         [
             "Thistle. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
@@ -120,16 +196,12 @@ init python:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "Herb Identification",
-        viewed=persistent.new_status["new_01"],
-        locked=False,
-        image=en1_image,
-    )
-
-    en1_2 = EncEntry(
-        en1,
-        2,
-        "Herb Identification vol. 1",
+        "5")
+    
+    $ book_2.add_page(
+        "Dandelion",
+        B2_2_image,
+        "icon",
         [
             "Dandelion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
@@ -145,16 +217,12 @@ init python:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_2_image,
-    )
-
-    en1_3 = EncEntry(
-        en1,
-        3,
-        "Herb Identification vol. 1",
+        "5")
+    
+    $ book_2.add_page(
+        "Blackberry",
+        B2_3_image,
+        "icon",
         [
             "Blackberry. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
@@ -170,16 +238,12 @@ init python:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_3_image,
-    )
-    
-    en1_4 = EncEntry(
-        en1,
-        4,
-        "Herb Identification vol. 1",
+        "5")
+        
+    $ book_2.add_page(
+        "Oak",
+        B2_4_image,
+        "icon",
         [
             "Oak. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
@@ -195,16 +259,12 @@ init python:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_4_image,
-    )
-    
-    en1_5 = EncEntry(
-        en1,
-        5,
-        "Herb Identification vol. 1",
+        "5")
+        
+    $ book_2.add_page(
+        "Garlic",
+        B2_5_image,
+        "icon",
         [
             "Garlic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
@@ -220,1464 +280,6 @@ init python:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_5_image,
-    )
-    
-    en1_6 = EncEntry(
-        en1,
-        6,
-        "Herb Identification vol. 1",
-        [
-            "Mint. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_6_image,
-    )
-    
-    en1_7 = EncEntry(
-        en1,
-        7,
-        "Herb Identification vol. 1",
-        [
-            "Oregano. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_7_image,
-    )
-    
-    en1_8 = EncEntry(
-        en1,
-        8,
-        "Herb Identification vol. 1",
-        [
-            "Parsley. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_8_image,
-    )
-    
-    en1_9 = EncEntry(
-        en1,
-        9,
-        "Herb Identification vol. 1",
-        [
-            "Sage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_9_image,
-    )
-    
-    en1_10 = EncEntry(
-        en1,
-        10,
-        "Herb Identification vol. 1",
-        [
-            "Laurel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_10_image,
-    )
-    
-    en1_11 = EncEntry(
-        en1,
-        11,
-        "Herb Identification vol. 1",
-        [
-            "Hyssop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_11_image,
-    )
-    
-    en1_12 = EncEntry(
-        en1,
-        12,
-        "Herb Identification vol. 1",
-        [
-            "Borage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_12_image,
-    )
-    
-    en1_13 = EncEntry(
-        en1,
-        13,
-        "Herb Identification vol. 1",
-        [
-            "Crown Flower. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_13_image,
-    )
-    
-    en1_14 = EncEntry(
-        en1,
-        14,
-        "Herb Identification vol. 1",
-        [
-            "Marsh Marigold. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_14_image,
-    )
-    
-    en1_15 = EncEntry(
-        en1,
-        15,
-        "Herb Identification vol. 1",
-        [
-            "Plantain. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_15_image,
-    )
-    
-    en1_16 = EncEntry(
-        en1,
-        16,
-        "Herb Identification vol. 1",
-        [
-            "Chamomile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_16_image,
-    )
-    
-    en1_17 = EncEntry(
-        en1,
-        17,
-        "Herb Identification vol. 1",
-        [
-            "Calendula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_17_image,
-    )
-    
-    en1_18 = EncEntry(
-        en1,
-        18,
-        "Herb Identification vol. 1",
-        [
-            "Violet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_18_image,
-    )
-    
-    en1_19 = EncEntry(
-        en1,
-        19,
-        "Herb Identification vol. 1",
-        [
-            "Herb 019. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_19_image,
-    )
-    
-    en1_20 = EncEntry(
-        en1,
-        20,
-        "Herb Identification vol. 1",
-        [
-            "Herb 20. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=False,
-        image=en1_20_image,
-    )
-
-
-#Herb Identification vol. 2
-    en2 = EncEntry(
-        encyclopaedia,
-        2,
-        "Herb Identification vol. 2",
-        [
-            "Thistle. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=persistent.new_status["new_01"],
-        locked=True,
-        image=en2_image,
-    )
-
-    en2_2 = EncEntry(
-        en2,
-        2,
-        "Herb Identification vol. 2",
-        [
-            "Dandelion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_2_image,
-    )
-
-    en2_3 = EncEntry(
-        en2,
-        3,
-        "Herb Identification vol. 2",
-        [
-            "Blackberry. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_3_image,
-    )
-    
-    en2_4 = EncEntry(
-        en2,
-        4,
-        "Herb Identification vol. 2",
-        [
-            "Oak. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_4_image,
-    )
-    
-    en2_5 = EncEntry(
-        en2,
-        5,
-        "Herb Identification vol. 2",
-        [
-            "Garlic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_5_image,
-    )
-    
-    en2_6 = EncEntry(
-        en2,
-        6,
-        "Herb Identification vol. 2",
-        [
-            "Mint. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_6_image,
-    )
-    
-    en2_7 = EncEntry(
-        en2,
-        7,
-        "Herb Identification vol. 2",
-        [
-            "Oregano. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_7_image,
-    )
-    
-    en2_8 = EncEntry(
-        en2,
-        8,
-        "Herb Identification vol. 2",
-        [
-            "Parsley. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_8_image,
-    )
-    
-    en2_9 = EncEntry(
-        en2,
-        9,
-        "Herb Identification vol. 2",
-        [
-            "Sage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_9_image,
-    )
-    
-    en2_10 = EncEntry(
-        en2,
-        10,
-        "Herb Identification vol. 2",
-        [
-            "Laurel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_10_image,
-    )
-    
-    en2_11 = EncEntry(
-        en2,
-        11,
-        "Herb Identification vol. 2",
-        [
-            "Hyssop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_11_image,
-    )
-    
-    en2_12 = EncEntry(
-        en2,
-        12,
-        "Herb Identification vol. 2",
-        [
-            "Borage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_12_image,
-    )
-    
-    en2_13 = EncEntry(
-        en2,
-        13,
-        "Herb Identification vol. 2",
-        [
-            "Crown Flower. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_13_image,
-    )
-    
-    en2_14 = EncEntry(
-        en2,
-        14,
-        "Herb Identification vol. 2",
-        [
-            "Marsh Marigold. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_14_image,
-    )
-    
-    en2_15 = EncEntry(
-        en2,
-        15,
-        "Herb Identification vol. 2",
-        [
-            "Plantain. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_15_image,
-    )
-    
-    en2_16 = EncEntry(
-        en2,
-        16,
-        "Herb Identification vol. 2",
-        [
-            "Chamomile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_16_image,
-    )
-    
-    en2_17 = EncEntry(
-        en2,
-        17,
-        "Herb Identification vol. 2",
-        [
-            "Calendula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_17_image,
-    )
-    
-    en2_18 = EncEntry(
-        en2,
-        18,
-        "Herb Identification vol. 2",
-        [
-            "Violet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_18_image,
-    )
-    
-    en2_19 = EncEntry(
-        en2,
-        19,
-        "Herb Identification vol. 2",
-        [
-            "Herb 019. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_19_image,
-    )
-    
-    en2_20 = EncEntry(
-        en2,
-        20,
-        "Herb Identification vol. 2",
-        [
-            "Herb 20. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en2_20_image,
-    )
-    
-    
-# Herb Identification vol. 3
-    en3 = EncEntry(
-        encyclopaedia,
-        3,
-        "Herb Identification vol. 3",
-        [
-            "Thistle. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=persistent.new_status["new_01"],
-        locked=True,
-        image=en3_image,
-    )
-
-    en3_2 = EncEntry(
-        en3,
-        2,
-        "Herb Identification vol. 3",
-        [
-            "Dandelion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_2_image,
-    )
-
-    en3_3 = EncEntry(
-        en3,
-        3,
-        "Herb Identification vol. 3",
-        [
-            "Blackberry. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_3_image,
-    )
-    
-    en3_4 = EncEntry(
-        en3,
-        4,
-        "Herb Identification vol. 3",
-        [
-            "Oak. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_4_image,
-    )
-    
-    en3_5 = EncEntry(
-        en3,
-        5,
-        "Herb Identification vol. 3",
-        [
-            "Garlic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_5_image,
-    )
-    
-    en3_6 = EncEntry(
-        en3,
-        6,
-        "Herb Identification vol. 3",
-        [
-            "Mint. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_6_image,
-    )
-    
-    en3_7 = EncEntry(
-        en3,
-        7,
-        "Herb Identification vol. 3",
-        [
-            "Oregano. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_7_image,
-    )
-    
-    en3_8 = EncEntry(
-        en3,
-        8,
-        "Herb Identification vol. 3",
-        [
-            "Parsley. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_8_image,
-    )
-    
-    en3_9 = EncEntry(
-        en3,
-        9,
-        "Herb Identification vol. 3",
-        [
-            "Sage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_9_image,
-    )
-    
-    en3_10 = EncEntry(
-        en3,
-        10,
-        "Herb Identification vol. 3",
-        [
-            "Laurel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_10_image,
-    )
-    
-    en3_11 = EncEntry(
-        en3,
-        11,
-        "Herb Identification vol. 3",
-        [
-            "Hyssop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_11_image,
-    )
-    
-    en3_12 = EncEntry(
-        en3,
-        12,
-        "Herb Identification vol. 3",
-        [
-            "Borage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_12_image,
-    )
-    
-    en3_13 = EncEntry(
-        en3,
-        13,
-        "Herb Identification vol. 3",
-        [
-            "Crown Flower. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_13_image,
-    )
-    
-    en3_14 = EncEntry(
-        en3,
-        14,
-        "Herb Identification vol. 3",
-        [
-            "Marsh Marigold. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_14_image,
-    )
-    
-    en3_15 = EncEntry(
-        en3,
-        15,
-        "Herb Identification vol. 3",
-        [
-            "Plantain. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_15_image,
-    )
-    
-    en3_16 = EncEntry(
-        en3,
-        16,
-        "Herb Identification vol. 3",
-        [
-            "Chamomile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_16_image,
-    )
-    
-    en3_17 = EncEntry(
-        en3,
-        17,
-        "Herb Identification vol. 3",
-        [
-            "Calendula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_17_image,
-    )
-    
-    en3_18 = EncEntry(
-        en3,
-        18,
-        "Herb Identification vol. 3",
-        [
-            "Violet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_18_image,
-    )
-    
-    en3_19 = EncEntry(
-        en3,
-        19,
-        "Herb Identification vol. 3",
-        [
-            "Herb 019. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_19_image,
-    )
-    
-    en3_20 = EncEntry(
-        en3,
-        20,
-        "Herb Identification vol. 3",
-        [
-            "Herb 20. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "Herb Identification",
-        viewed=False,
-        locked=True,
-        image=en3_20_image,
-    )    
-
-    placeholders = EncEntry(
-        encyclopaedia,
-        4,
-        "Placeholders",
-        [""],
-        "Basic Usage"
-    )
-
-    # In-Depth
-    # Encyclopaedia
-    # EncEntry
-    # Actions
-
-    encyclopaedia_options = EncEntry(
-        encyclopaedia,
-        5,
-        "Encyclopaedia",
-        [
-            "Encyclopaedias can take four optional arguments when being created:"
-            " \n 1 - The default sorting mode. If not set, will be by number."
-            " \n 2 - If locked buttons should be displayed or not. Default is False. Locked buttons will use placeholder values."
-            " \n 3 - If locked entries should be displayed or not. Default is False. Locked entries will use placeholder values."
-            " \n 4 - The screen to display individual entries on. Default is 'encyclopaedia_entry'."
-        ],
-        "In-Depth",
-        viewed=False,
-        locked=False
-    )
-
-    customizing_screens = EncEntry(
-        encyclopaedia,
-        6,
-        "Customizing Screens",
-        [""],
-        "In-Depth",
-    )
-
-    translations = EncEntry(
-        encyclopaedia,
-        7,
-        "Translations",
-        [
-            "Translating the labels used by an Encyclopaedia can be done through the LabelController object.",
-            "Every Encyclopaedia is created with a default one that can be replaced.",
-        ],
-        "In-Depth",
-        image=image_translations
-    )
-
-    # Sorting
-    # Filtering
-
-    # Stress testing
-    #for x in range(25, 30):
-    #    e = EncEntry(
-    #        encyclopaedia,
-    #        x,
-    #        "Test Entry: " + str(x),
-    #        "Test Entry",
-    #        "Test Entries",
-    #    )
-
-
-    # When creating sub-entries, the main entry is considered page 1,
-    # so always start at 2.
-
-#    locking_unlocking_entries_3 = EncEntry(
-#        locking_unlocking_entries,
-#        3,
-#        "Locking and Unlocking Entries",
-#        [
-#            "This entry was unlocked while playing."
-#        ],
-#        "Basic Usage",
-#        locked = persistent.lock_unlock_3
-#    )
+        "5")
+        
+        

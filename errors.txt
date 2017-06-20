@@ -2,7 +2,27 @@
 errors listed below, and try again.
 
 
-File "game/define_items.rpy", line 104: is not terminated with a newline. (Check strings and parenthesis.)
-        $ herb_oil018 = Item("Violet Oil", "Made by soaking herbs in oil.", "inv/bottle.extract.png", 800, recipe=[[oil,1],[herb018,1], containers=[])
+File "game/encyclopaedia_data.rpy", line 243: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    $ book_2.add_page(
+    ^
+            "Oak",
+            B2_4_image,
+            "icon",
+            [
+                "Oak. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+                "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+                "Sed non dapibus augue, quis hendrerit diam. ",
+                "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+                "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+                "Curabitur laoreet posuere orci eu eleifend. ",
+                "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+                "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+                "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+                "Duis eu sollicitudin mauris. ",
+                "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+                "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+                "Etiam posuere fringilla purus.",
+            ],
+            "stats")
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029

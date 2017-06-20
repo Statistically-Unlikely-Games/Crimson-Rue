@@ -1,5 +1,7 @@
 ﻿## inventory 1.5 demo
 
+# Declaring images
+
 init python hide:
     for file in renpy.list_files():
         if file.startswith('bg/') and file.endswith('.png'):
@@ -29,6 +31,22 @@ init python hide:
         if file.startswith('gui/') and file.endswith('notification.png'):
             name = file.replace('gui/', '').replace('.png','')
             renpy.image(name, Image(file))
+            
+
+# Declaring characters
+
+define aeth = Character('Aeth', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
+
+
+# Declaring books
+
+default shelf = Shelf("Library", 20)
+default book_1 = Book("Tutorial", "Tutorial", "Author", "Year")
+default book_2 = Book("Herb Identification Guide vol. 1", "kind1", "author", "year")
+#default book_3 = Book("Herb Identification Guide vol. 2", "kind2", "author", "year")
+#default book_4 = Book("Herb Identification Guide vol. 3", "kind2", "author", "year")
+#default book_5 = Book("Medical Journal vol. 1", "kind1", "author", "year")
+#default book_6 = Book("Medical Journal vol. 2", "kind2", "author", "year")
 
 
 # This is the splash screen. Should show my logo, and then the 
@@ -54,7 +72,7 @@ label start:
     
     ## ------------ ESC MENU AND TIME TRACKING --------------------
     #First day of the game is set to Monday unless you change the calendar code on L32
-    $ calendar = Calendar(2, 1, 1, 12, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
+    $ calendar = Calendar(3, 2, 6, 5, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
 
@@ -174,7 +192,11 @@ label start:
     $ cookbook = list() 
     
 #    "Defining Items, Cookbooks and Inventories."
-    
+
+    $ shelf.add_book(book_1)
+    $ shelf.add_book(book_2)
+
+    call define_books
     call define_items
     call define_inventories
 
@@ -240,13 +262,66 @@ label start:
     
 label intro: 
     
-    show aeth neu at left
-    show elaine neu at right
-    show child neu at center
+#    show aeth neu at left
+#    show elaine neu at right
+#    show child neu at center
     
-    "This is a dialogue test."
+#    "This is a dialogue test."
+
+    show bg overworld01
+
+    "The cold air felt sharp as Aeth breathed it in, carrying the familiar scent of pine."
+    
+    "It had been several years since their last visit home. And many more years than that since they'd seen it this time of year."
+    
+    "The snow fell heavy here, and usually one wouldn't want to risk getting stuck. This time, though, that wasn't a problem."
+    
+    show bg forest001
+    show aeth neu at left
+    
+    "They separated from the caravan before entering town, avoiding the main street."
+    
+    "Given the circumstances, they didn't want to have to explain themselves to any friendly faces they might run into on the way."
+    
+    "In short time they arrived at their destination, pulled back their hood, and thought about what they would say."
+    
+    "Waiting wouldn't make it any easier. They pushed open the heavy oak door, and in a breath called out"
+    
+    show bg kitchen
+    
+    aeth "Mother, I'm home. Please cover up, I don't want to accidentally walk in on you again. You never lock the door and it's really problematic."
+    
+    hide aeth neu
+    
+# Opening video?
+
+# Funny scene where Aeth walks in on Kayen about to get it on with her female lover
+# Wasn't expecting Aeth to come this time of the year, something serious must have happened
+# All three have dinner, Aeth avoids giving details about why they came home
+# Aeth was dating Teal in secret bc their mom wouldn't approve of a noble, now mother was proved right
+# Mother instructs Aeth to go speak with Master Elaine, it has been a long time and she'll be offended if they don't see her first
+# Gunna go first thing tomorrow
+
+# Next Day
+# Walks through town to see Master Elaine, possibly runs into a few love interests on the way there?
+# Possibly see Lufte, small child, hanging out around the front of the shop?
+# Elaine is very outgoing and friendly, suggests Aeth start working in the shop again
+# Gotta do something, and they were talented. Apprentice moved out and got their own shop, it would help to have another hand around
+# Aeth should say they will think about it, they don't want to be a burden on their mother but have some things to sort out
+# Elaine will mention that winter is just around the corner, they should use this time to catch up before things get busy
+
+# Timeskip to spring? Should I have more than that here? More introductions?
+# Worried putting gameplay off for too long will cause some players to get bored...
     
     jump apothecary_shop
+
+
+
+
+
+
+
+
 
 
 #    menu:

@@ -1,372 +1,435 @@
-init -1500 python:
-    # Import the Encyclopaedia
-    from enc_code import Encyclopaedia
-    from enc_code import EncEntry
+init python:
 
+    class Shelf():
 
-################################################################################
-# Entry Button
-#
-# Sub-screen to determine what sort of button to show for an entry.
-# Used by the Vertical List sub-screen.
-#
-# Args:
-#   enc (Encyclopaedia): The encyclopaedia to use on this screen.
-#   entry (EncEntry): The entry to associate with the button.
-################################################################################
-screen entry_button(enc, entry):
-    if enc.show_locked_buttons:
-        # If the entry is unlocked, add an active button.
-        if entry.locked is False:
-            textbutton entry.name action enc.SetEntry(entry) style "encyclopaedia_entry_button"
+        def __init__(self, name, limit):
+            self.name = name
+            self.limit = limit
 
-            if not entry.viewed:
-                text enc.labels.unread_entry_label
+            self.filtering = ""
+            self.sorting = "default"
+            self.completion = 0
 
-        # If the entry is locked, add a button depending on what should be shown.
-        else:
-            if enc.show_locked_entry:
-                textbutton enc.labels.locked_entry_label action enc.SetEntry(entry) style "encyclopaedia_entry_button"
-            else:
-                textbutton enc.labels.locked_entry_label style "encyclopaedia_entry_button"
+            self.store = []
+            self.available_filters = set()
 
-    elif enc.show_locked_buttons is False:
-        textbutton entry.name action enc.SetEntry(entry) style "encyclopaedia_entry_button"
+        def add_book(self, book):
+            if len(self.store) >= self.limit:
+                return
 
-        # Add tag next to the button, if it hasn't been viewed yet.
-        if not entry.viewed:
-            text enc.labels.unread_entry_label
+            self.store.append(book)
+            self.available_filters.add(book.kind)
 
-################################################################################
-# Vertical List
-#
-# Sub-screen that displays a vertical list of entry buttons.
-# Used by the Encyclopaedia List screen.
-#
-# Args:
-#   enc (Encyclopaedia): The encyclopaedia to use on this screen.
-################################################################################
-screen vertical_list(enc):
-    # The list used is chosen based on if we want to show locked entries on
-    #   the entry select screen or not.
+        def filter(self, key):
+            self.filtering = key
 
-    if enc.sorting_mode == enc.SORT_SUBJECT:
-        # Split entries by subject
-        for key, group in groupby(enc.current_entries, attrgetter("subject")):
-           text key  # The subject heading
-           for entry in group:
-               hbox:
-                   use entry_button(enc, entry)
+        def sort(self, method="asc"):
+            if method == "asc":
+                self.store.sort(key=lambda book: book.name)
+            elif method == "dsc":
+                self.store.sort(key=lambda book: book.name, reverse=True)
 
-    elif enc.sorting_mode == enc.SORT_NUMBER:
-        for entry in enc.current_entries:
-            hbox:
-                spacing 10
-                text "{:02}".format(entry.number)
-                use entry_button(enc, entry)
+        def get_completion(self):
+            return len(self.store) / float(self.limit) * 100
 
-    # If sorting Alphabetically, Reverse-Alphabetically, or by Unread.
-    else:
-        if enc.nest_alphabetical_sort:
-            # Split entries by first letter
-            for key, group in groupby(enc.current_entries, key=lambda x: x.name[0]):
-                text key  # The letter heading
-                for entry in group:
-                    hbox:
-                        use entry_button(enc, entry)
+        def list_books(self):
+            return [book for book in self.store if not self.filtering or book.kind == self.filtering]
 
-        else:
-            for entry in enc.current_entries:
-                hbox:
-                    use entry_button(enc, entry)
+    class Book():
 
-################################################################################
-# Encyclopaedia List
-#
-# Screen that's used to display the list of entries.
-# Args:
-#   enc (Encyclopaedia): The encyclopaedia to use on this screen.
-################################################################################
-screen encyclopaedia_list(enc):
-    tag menu
-    modal True
+        def __init__(self, name, kind, author, year):
+            self.name = name
+            self.kind = kind
+            self.year = year
+            self.author = author
 
-    window:
-        style_prefix "encyclopaedia"
+            self.pages = 0
+            self.last_opened_page = 0
 
-        vbox:
-            spacing 10
-  
-            frame:
-                style_prefix "encyclopaedia"
-                xfill True
+            self.store = []
 
-                text "Welcome to the Demo Encyclopaedia"
-    
-            frame:
-                style_prefix "encyclopaedia"
-                xfill True
-    
-                hbox:
-                    xfill True
-                    # Percentage unlocked display
-                    text "{} Complete".format(enc.labels.percentage_unlocked)
+        def add_page(self, title, image, icon, text, stats, page_no=0, unlocked=False):
+            self.pages += 1
 
-            frame:
-                style_prefix "encyclopaedia"
-                xfill True
+            if not page_no:
+                page_no = self.pages
 
-                vbox:
-                    text "Filters"
-                    hbox:
-                        xfill True
-                        # Percentage unlocked display
-                        textbutton "All" action enc.ClearFilter() style "encyclopaedia_button"
-                        for subject in enc.subjects:
-                            textbutton subject action enc.FilterBySubject(subject) style "encyclopaedia_button"
+            entry = Page(title, image, icon, text, stats, page_no, unlocked)
+            self.store.insert(page_no, entry)
 
-            hbox:
-                frame:
-                    style_prefix "encyclopaedia"
-                    yfill True
-                    xmaximum 600
-                    bottom_margin 10
+        def remove_page(self, page_no):
+            page_no -= 1
 
-                    viewport:
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        vbox:
-                            # Flavour text to display the current sorting mode.
-                            text enc.labels.sorting_mode xalign 0.5
+            # Remove the page from the book
+            self.store[page_no].rip()
 
-                            use vertical_list(enc) id "vertical list"
+        def restore_page(self, page_no):
+            page_no -= 1
 
-                frame:
-                    style_prefix "encyclopaedia"
-                    xfill True
-                    bottom_margin 10
-                    yalign 0.95
+            # Add the page from the book
+            self.store[page_no].restore()
 
-                    vbox:
-                        # Buttons to sort entries.
-                        textbutton "Sort by %s" % enc.labels.sort_number_label action enc.Sort(sorting_mode=enc.SORT_NUMBER) style "encyclopaedia_button" xfill True
-                        textbutton "Sort by %s" % enc.labels.sort_alphabetical_label action enc.Sort(sorting_mode=enc.SORT_ALPHABETICAL) style "encyclopaedia_button" xfill True
-                        textbutton "Sort by %s" % enc.labels.sort_reverse_alphabetical_label action enc.Sort(sorting_mode=enc.SORT_REVERSE_ALPHABETICAL) style "encyclopaedia_button" xfill True
-                        textbutton "Sort by %s" % enc.labels.sort_subject_label action enc.Sort(sorting_mode=enc.SORT_SUBJECT) style "encyclopaedia_button" xfill True
-                        textbutton "Sort by %s" % enc.labels.sort_unread_label action enc.Sort(sorting_mode=enc.SORT_UNREAD) style "encyclopaedia_button" xfill True
+        def unlock_page(self, page_no):
+            page_no -=  1
 
-                        # Buttons to show different styles of hiding locked data.
-                        #textbutton "Show/Hide Locked Buttons" action enc.ToggleShowLockedButtons() style "encyclopaedia_button" xfill True
-                        #textbutton "Show/Hide Locked Entry" action enc.ToggleShowLockedEntry() style "encyclopaedia_button" xfill True
+            self.store[page_no].unlock()
 
-                        # Sort and SaveStatus are unnecessary if you're not using persistent data (ie: if the encyclopaedia is save game independent)
-                        # Sorting mode has to be by Number to save properly. "new_0" should be whatever the prefix you choose for the persistent dictionary is.
-                        textbutton "Return"  action [enc.Sort(sorting_mode=enc.default_sorting_mode),
-                                                     enc.SaveStatus(persistent.new_status, "new"),
-                                                     Hide("encyclopaedia_list"),
-                                                     Return()] style "encyclopaedia_button" xfill True
+        def unlock_range(self, type, start=0, number=0):
+            """
+            type: String. Can be "next", "previous", "all"
+            """
 
-################################################################################
-# Encyclopaedia Entry
-#
-# Screen that's used to display an individual entry.
-# Args:
-#   enc (Encyclopaedia): The encyclopaedia to use on this screen.
-################################################################################
-screen encyclopaedia_entry(enc):
-    tag menu
-    modal True
+            if type == "next":
+                first = start
+                last = start + number
+            elif type == "previous":
+                first = start + number
+                last = start
+            elif type == "all":
+                for page in self.store:
+                    page.unlock()
+                return
 
-    window:
-        style_prefix "encyclopaedia"
+            page_range = [i for i in range(first, last)]
 
-        vbox:
-            spacing 10
-  
-            frame:
-                style_prefix "encyclopaedia"
-                xfill True
-                # Flavour text to indicate which entry we're currently on
-                text enc.active.label
-  
-            frame:
-                style_prefix "encyclopaedia"
-                id "entry_nav"
-                xfill True
-                hbox:
-                    xfill True
-                    # Previous / Next is relative to the sorting mode
-                    textbutton "Previous Entry" xalign .02 action enc.PreviousEntry() style "encyclopaedia_button"
-                    textbutton "Next Entry" xalign .98 action enc.NextEntry() style "encyclopaedia_button"
-       
-            hbox:
-                # If the entry or sub-entry has an image
-                if enc.active.current_page.has_image:
-                    frame:
-                        style_prefix "encyclopaedia"
-                        yfill True
-                        xfill True
+            for i in page_range:
+                self.unlock_page(i)
 
-                        xmaximum img_screen_width
-                        ymaximum img_screen_height
-                        
-                        $current_image = enc.active.current_page.image
-                        add current_image crop (0,10,img_screen_width-33,img_screen_height-25)
+        def get_toc(self):
+            return self.store
 
-#                        viewport:
-#                            scrollbars False
-#                            draggable True
-#                            mousewheel True
-#                            edgescroll (1.0, 1.0)
-#                            add enc.active.current_page.image
-   
-                    frame:
-                        style_prefix "encyclopaedia"
-                        id "entry_window"
-                        xfill True
-                        yfill True
-                        xmaximum img_text_width
-                        ymaximum half_screen_height
-                        viewport:
-                            scrollbars "vertical"
-                            mousewheel True  
-                            draggable True
-                            xfill True
-                            yfill True  
-                            vbox:
-                                spacing 15
-                                # Display the current entry's text
-                                for item in enc.active.current_page.text:
-                                    text item
+        def get_page(self, page=0, move=""):
+            """
+            move: String. Can be next, previous
+            """
 
-                # If there's no image                        
-                else:
-                    frame:
-                        style_prefix "encyclopaedia"
-                        id "entry_window"
-                        xfill True
-                        yfill True
-                        xmaximum config.screen_width
-                        ymaximum half_screen_height
-                        viewport:
-                            scrollbars "vertical"
-                            mousewheel True  
-                            draggable True
-                            xfill True
-                            yfill True  
-                            vbox:
-                                spacing 15
-                                # Display the current entry's text
-                                for item in enc.active.current_page.text:
-                                    text item
+            if page:
+                self.last_opened_page = page - 1
+                print self.last_opened_page
 
-            frame:
-                style_prefix "encyclopaedia"
-                xfill True
-                yfill False
+            if move == "next":
+                self.last_opened_page += 1
+            elif move == "previous":
+                self.last_opened_page -= 1
 
-                if enc.active.has_sub_entry:
-                    hbox:
-                        xfill True
+            return self.store[self.last_opened_page]
 
-                        # If there's a sub-entry, add Prev/Next Page buttons
-                        textbutton "Previous Page" xalign .02 action enc.PreviousPage() style "encyclopaedia_button"
+        def next_page(self):
+            if self.last_opened_page < len(self.store) - 1:
+                return True
+            return False
 
-                        # Flavour text to indicate which sub-page out of the total is being viewed
-                        text enc.labels.entry_current_page
+        def previous_page(self):
+            if self.last_opened_page > 0:
+                return True
+            return False
 
-                        textbutton "Next Page" xalign .98 action enc.NextPage() style "encyclopaedia_button"
+    class Page():
 
-                else:
-                    xpadding 10
-                    ypadding 14
-                    text " "
+        def __init__(self, title, image, icon, text, stats, page_no, unlocked):
+            self.icon = icon
+            self.text = text
+            self.title = title
+            self.image = image
+            self.stats = stats
+            self.page_no = page_no
+            self.unlocked = unlocked
 
-        frame:
-            style_prefix "encyclopaedia"
+            self.original = {
+                "icon": self.icon,
+                "text": self.text,
+                "title": self.title,
+                "image": self.image,
+                "stats": self.stats
+            }
+
+        def unlock(self):
+            self.unlocked = True
+
+        def lock(self):
+            self.unlocked = False
+
+        def reorder(self, new_no):
+            self.page_no = new_no
+
+        def update_text(self, new):
+            self.text = new
+
+        def update_stats(self, new):
+            self.stats = new
+
+        def rip(self):
+            self.icon = "Ripped"
+            self.text = "Ripped"
+            self.title = "Ripped"
+            self.image = Null()
+            self.stats = "Ripped"
+
+        def restore(self):
+            self.icon = self.original["icon"]
+            self.text = self.original["text"]
+            self.title = self.original["title"]
+            self.image = self.original["image"]
+            self.stats = self.original["stats"]
+
+    class NextPage(Action):
+
+        def __init__(self, book):
+            self.book = book
+
+        def __call__(self):
+            cs = renpy.current_screen()
+
+            cs.scope["page"] = self.book.get_page(move="next")
+            renpy.restart_interaction()
+
+        def get_sensitive(self):
+            return self.book.next_page()
+
+    class PreviousPage(Action):
+
+        def __init__(self, book):
+            self.book = book
+
+        def __call__(self):
+            cs = renpy.current_screen()
+
+            cs.scope["page"] = self.book.get_page(move="previous")
+            renpy.restart_interaction()
+
+        def get_sensitive(self):
+            return self.book.previous_page()
+
+    class ShowPage(Action):
+
+        def __init__(self, book, page_no):
+            self.book = book
+            self.page_no = page_no
+
+        def __call__(self):
+            cs = renpy.current_screen()
+
+            cs.scope["page"] = self.book.get_page(page=self.page_no)
+            renpy.restart_interaction()
+
+screen book_shelf():
+    tag encyclopedia
+    add Solid("#000000") alpha 0.75
+
+    frame:
+        xsize 200
+        ysize 40
+
+        background Solid("#d3d3d3")
+
+        text shelf.name size 32 xalign 0.5 yalign 0.5
+        xalign 0.5
+        ypos -1
+        
+    frame:
+        xsize 100
+        xalign 1.0
+        ypos 60
+        background Solid("#d3d3d3")
+
+        button:
             xfill True
 
-            yalign .98
-            hbox:
+            idle_background Solid("#d3d3d3")
+            hover_background Solid( Color("#d3d3d3").tint(0.5) )
+            selected_background Solid( Color("#d3d3d3").shade(0.5) )
+
+            text "X" color "#000000" align (0.5, 0.5)
+
+            action [Hide("book_shelf"), Jump("apothecary_shop")]
+
+    vbox:
+        ypos 150
+        spacing 15
+
+        for book in shelf.list_books():
+            button:
                 xfill True
-                # Flavour text that displays the current sorting mode
-                text "Sorting Mode: {}".format(enc.labels.sorting_mode)
-                textbutton "Close Entry" id "close_entry_button" xalign .98 clicked [enc.ResetSubPage(), Show("encyclopaedia_list", None, enc)] style "encyclopaedia_button"
 
+                idle_background Solid("#d3d3d3")
+                hover_background Solid( Color("#d3d3d3").tint(0.5) )
+                selected_background Solid( Color("#d3d3d3").shade(0.5) )
 
-########################
-# Encyclopaedia Styles
-########################
-style encyclopaedia_window is default:
-    background color_enc_bg
-    xsize config.screen_width
-    ysize config.screen_height
-    xfill True
-    yfill True
+                text book.name xalign 0.5 yalign 0.5
 
-style encyclopaedia_frame is default:
-    background color_enc_frame
-    size 16
-    padding (8, 8)
-    xmargin 8
-    top_margin 8
+                action Show("open_book", book=book)
 
-style encyclopaedia_scrollbar is scrollbar:
-    base_bar Frame(Solid(color_scroll_empty), gui.scrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame(Solid(color_scroll_bar), gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    hbox:
+        spacing 10
+        xalign 1.0
+        yalign 1.0
 
-style encyclopaedia_vscrollbar is vscrollbar:
-    base_bar Frame(Solid(color_scroll_empty), gui.scrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame(Solid(color_scroll_bar), gui.scrollbar_borders, tile=gui.scrollbar_tile)
+        textbutton _("Sort") action Function(callable=shelf.sort, method="dsc")
+        textbutton _("R Sort") action Function(callable=shelf.sort)
 
-style encyclopaedia_button:
-    background color_enc_button
-    hover_background color_scroll_bar
-    insensitive_background color_alt_frame
+    hbox:
+        spacing 10
+        xalign 0.0
+        yalign 1.0
 
-style encyclopaedia_button_text:
-    color color_hover_text
-    idle_color color_enc_text
-    insensitive_color color_alt_text
+        for i in shelf.available_filters:
+            textbutton _(i) action Function(callable=shelf.filter, key=i)
 
-style encyclopaedia_entry_button is encyclopaedia_button:
-    xfill True
+        textbutton _("None") action Function(callable=shelf.filter, key="")
 
-style encyclopaedia_entry_button_text is encyclopaedia_button_text
+screen open_book(book):
+    tag encyclopedia
+    add Solid("#000000") alpha 0.75
 
+    default page = book.get_page()
+    default toc = False
+    default hide_text = False
 
-############################
-# Encyclopaedia Misc Setup
-############################
-init -1500:
-    python:
-        from itertools import groupby
-        from operator import attrgetter
+    frame:
+        xfill True
+        background Solid("#d3d3d3")
 
-        half_screen_width = config.screen_width / 2
-        half_screen_height = config.screen_height / 2
-        img_screen_width = config.screen_width / 1.46
-        img_screen_height = config.screen_height / 1.575
-        img_text_width = config.screen_width / 3
-        img_text_height = config.screen_height / 1.575 #For some reason, this can only be an integer or it breaks
+        text book.name xalign 0.5 yalign 0.5
 
-        # Encyclopaedia Colours
-        color_scroll_bar = "#003C78"
-        color_scroll_empty = "#DCEBFF"
-        color_alt_frame = "#DCEBFF"
+    frame:
+        xsize 500
+        xalign 0.5
+        ypos 60
+        background Solid("#d3d3d3")
 
-        color_enc_bg = "#DCEBFF"
-        color_enc_frame = "#6496C8"
-        color_enc_button = "#003C78"
+        text page.title xalign 0.5 yalign 0.5
 
-        color_alt_text = "#003C78"
-        color_enc_text = "#C8FFFF"
+    frame:
+        xsize 100
+        xalign 1.0
+        ypos 60
+        background Solid("#d3d3d3")
 
-        color_hover_text = "#FFFFFF"
+        button:
+            xfill True
 
+            idle_background Solid("#d3d3d3")
+            hover_background Solid( Color("#d3d3d3").tint(0.5) )
+            selected_background Solid( Color("#d3d3d3").shade(0.5) )
 
-###############################################################################
-## Encyclopaedia Button
-## Contains a button to open the encyclopaedia at any time during the game
-#screen show_enc_button:
+            text "X" color "#000000" align (0.5, 0.5)
+
+            action Show("book_shelf")
+
+    hbox:
+        ysize 40
+        spacing 12
+        yalign 0.98
+
+        button:
+            xsize config.screen_width / 3 - 6
+
+            idle_background Solid("#d3d3d3")
+            hover_background Solid( Color("#d3d3d3").tint(0.5) )
+            selected_background Solid( Color("#d3d3d3").shade(0.5) )
+            insensitive_background Solid( Color("#d3d3d3").tint(1.0) )
+
+            text "<<" color "#000000" align (0.5, 0.5)
+
+            action PreviousPage(book)
+
+        button:
+            xsize config.screen_width / 3 - 6
+
+            idle_background Solid("#d3d3d3")
+            hover_background Solid( Color("#d3d3d3").tint(0.5) )
+            selected_background Solid( Color("#d3d3d3").shade(0.5) )
+
+            text "Table of Content" color "#000000" align (0.5, 0.5)
+
+            action SetScreenVariable("toc", True)
+
+        button:
+            xsize config.screen_width / 3 - 6
+
+            idle_background Solid("#d3d3d3")
+            hover_background Solid( Color("#d3d3d3").tint(0.5) )
+            selected_background Solid( Color("#d3d3d3").shade(0.5) )
+            insensitive_background Solid( Color("#d3d3d3").tint(0.95) )
+
+            text ">>" color "#000000" align (0.5, 0.5)
+
+            action NextPage(book)
+
+    frame:
+        xfill True
+        ysize 520
+
+        yalign 0.64
+
+        if page.image:
+            background page.image
+        else:
+            background Solid("#000000")
+
+        button:
+            xsize config.screen_width - 280
+            ysize 520
+
+            background Solid("#00000000")
+
+            action ToggleScreenVariable("hide_text", true_value=True, false_value=False)
+
+        if not hide_text:
+            frame:
+                xsize 350
+                ysize 520
+                xalign 1.0
+                xoffset 4
+                ypos -5
+
+                background Solid("#00000050")
+
+                viewport:
+                    draggable True
+                    mousewheel True
+
+                    area (0, 0, 350, 515)
+
+                    text page.text color "#FFFFFF"
+
+    if toc:
+        frame:
+            xsize 500
+            ysize 650
+
+            xalign 0.5
+            yalign 0.5
+
+            background Solid("#000000")
+
+            text "Table of Contents" xalign 0.5 ypos 10
+            button:
+                xysize(35, 35)
+                align (1.0, 0.012)
+
+                text "X" xalign 0.5 yalign 0.5
+
+                action SetScreenVariable("toc", False)
+
+            viewport:
+                draggable True
+                mousewheel True
+
+                area (0, 50, 500, 600)
+
+                vbox:
+                    for i in book.get_toc():
+                        button:
+                            xfill True
+                            ysize 50
+
+                            idle_background Solid("#d3d3d3")
+                            hover_background Solid( Color("#d3d3d3").tint(0.5) )
+                            selected_background Solid( Color("#d3d3d3").shade(0.5) )
+
+                            text i.title xmaximum 380 xalign 0.1 yalign 0.5
+                            text str(i.page_no) xalign 0.95 yalign 0.5
+
+                            selected (i.page_no == page.page_no)
+                            action ShowPage(book, i.page_no)

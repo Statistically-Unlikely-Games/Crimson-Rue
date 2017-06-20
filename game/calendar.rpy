@@ -324,6 +324,7 @@ screen calendar:
     tag menu
     
     python:
+        cal_base = "cal/cal base.png"
         if calendar.day < 10:
             day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
         else:
@@ -333,10 +334,11 @@ screen calendar:
         moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
         time_img = "".join(["cal/cal ", timeofday, ".png"])
         
-    add month_img xpos 22 ypos 12
-    add day_img xpos 22 ypos 12
-    add dotw_img xpos 22 ypos 12
-    add moon_img align(0.17, 0.02)
-    add time_img align(0.02, 0.135)
+    add cal_base xpos 0 ypos 0
+    add month_img xpos 0 ypos 0
+    add day_img xpos 0 ypos 0
+    add dotw_img xpos 0 ypos 0
+    add moon_img xpos 0 ypos 0
+    add time_img xpos 0 ypos 0
     
     
