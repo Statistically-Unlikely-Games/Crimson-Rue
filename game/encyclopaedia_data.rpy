@@ -20,8 +20,8 @@ init python:
     B1_16_image = "enc/Botanical_Chamomile.png"
     B1_17_image = "enc/Botanical_Calendula.png"
     B1_18_image = "enc/Botanical_Violet.png"
-    B1_19_image = "enc/Botanical_Thistle.png"
-    B1_20_image = "enc/Botanical_Thistle.png"
+    B1_19_image = "enc/Botanical_Rosemary.png"
+    B1_20_image = "enc/Botanical_Basil.png"
     
     B2_1_image = "enc/Botanical_Thistle.png"
     B2_2_image = "enc/Botanical_Dandelion.png"
@@ -41,8 +41,8 @@ init python:
     B2_16_image = "enc/Botanical_Chamomile.png"
     B2_17_image = "enc/Botanical_Calendula.png"
     B2_18_image = "enc/Botanical_Violet.png"
-    B2_19_image = "enc/Botanical_Thistle.png"
-    B2_20_image = "enc/Botanical_Thistle.png"
+    B2_19_image = "enc/Botanical_Rosemary.png"
+    B2_20_image = "enc/Botanical_Basil.png"
     
     B3_1_image = "enc/Botanical_Thistle.png"
     B3_2_image = "enc/Botanical_Dandelion.png"
@@ -62,8 +62,8 @@ init python:
     B3_16_image = "enc/Botanical_Chamomile.png"
     B3_17_image = "enc/Botanical_Calendula.png"
     B3_18_image = "enc/Botanical_Violet.png"
-    B3_19_image = "enc/Botanical_Thistle.png"
-    B3_20_image = "enc/Botanical_Thistle.png"
+    B3_19_image = "enc/Botanical_Rosemary.png"
+    B3_20_image = "enc/Botanical_Basil.png"
     
     B4_1_image = "enc/Botanical_Thistle.png"
     B4_2_image = "enc/Botanical_Dandelion.png"
@@ -83,8 +83,8 @@ init python:
     B4_16_image = "enc/Botanical_Chamomile.png"
     B4_17_image = "enc/Botanical_Calendula.png"
     B4_18_image = "enc/Botanical_Violet.png"
-    B4_19_image = "enc/Botanical_Thistle.png"
-    B4_20_image = "enc/Botanical_Thistle.png"
+    B4_19_image = "enc/Botanical_Rosemary.png"
+    B4_20_image = "enc/Botanical_Basil.png"
     
     B5_1_image = "enc/Botanical_Thistle.png"
     B5_2_image = "enc/Botanical_Dandelion.png"
@@ -104,8 +104,8 @@ init python:
     B5_16_image = "enc/Botanical_Chamomile.png"
     B5_17_image = "enc/Botanical_Calendula.png"
     B5_18_image = "enc/Botanical_Violet.png"
-    B5_19_image = "enc/Botanical_Thistle.png"
-    B5_20_image = "enc/Botanical_Thistle.png"
+    B5_19_image = "enc/Botanical_Rosemary.png"
+    B5_20_image = "enc/Botanical_Basil.png"
     
     B6_1_image = "enc/Botanical_Thistle.png"
     B6_2_image = "enc/Botanical_Dandelion.png"
@@ -125,8 +125,8 @@ init python:
     B6_16_image = "enc/Botanical_Chamomile.png"
     B6_17_image = "enc/Botanical_Calendula.png"
     B6_18_image = "enc/Botanical_Violet.png"
-    B6_19_image = "enc/Botanical_Thistle.png"
-    B6_20_image = "enc/Botanical_Thistle.png"
+    B6_19_image = "enc/Botanical_Rosemary.png"
+    B6_20_image = "enc/Botanical_Basil.png"
 
 
 label define_books: 
@@ -282,4 +282,1183 @@ label define_books:
         ],
         "5")
         
+    $ book_2.add_page(
+        "Mint",
+        B2_6_image,
+        "icon",
+        [
+            "Mint. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Oregano",
+        B2_7_image,
+        "icon",
+        [
+            "Oregano. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Parsley",
+        B2_8_image,
+        "icon",
+        [
+            "Parsley. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Sage",
+        B2_9_image,
+        "icon",
+        [
+            "Sage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Laurel",
+        B2_10_image,
+        "icon",
+        [
+            "Laurel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Hyssop",
+        B2_11_image,
+        "icon",
+        [
+            "Hyssop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Borage",
+        B2_12_image,
+        "icon",
+        [
+            "Borage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Crown Flower",
+        B2_13_image,
+        "icon",
+        [
+            "Crown Flower. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Marsh Marigold",
+        B2_14_image,
+        "icon",
+        [
+            "Marsh Marigold. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Plantain",
+        B2_15_image,
+        "icon",
+        [
+            "Plantain. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Chamomile",
+        B2_16_image,
+        "icon",
+        [
+            "Chamomile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Calendula",
+        B2_17_image,
+        "icon",
+        [
+            "Calendula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Violet",
+        B2_18_image,
+        "icon",
+        [
+            "Violet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Rosemary",
+        B2_19_image,
+        "icon",
+        [
+            "Rosemary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_2.add_page(
+        "Basil",
+        B2_20_image,
+        "icon",
+        [
+            "Basil. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+#Herb Identification vol. 2
+    $ book_3.add_page(
+        "Common Thistle",
+        B3_1_image,
+        "icon",
+        [
+            "Thistle. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Dandelion",
+        B3_2_image,
+        "icon",
+        [
+            "Dandelion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Blackberry",
+        B3_3_image,
+        "icon",
+        [
+            "Blackberry. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
         
+    $ book_3.add_page(
+        "Oak",
+        B3_4_image,
+        "icon",
+        [
+            "Oak. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+        
+    $ book_3.add_page(
+        "Garlic",
+        B3_5_image,
+        "icon",
+        [
+            "Garlic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+        
+    $ book_3.add_page(
+        "Mint",
+        B3_6_image,
+        "icon",
+        [
+            "Mint. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Oregano",
+        B3_7_image,
+        "icon",
+        [
+            "Oregano. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Parsley",
+        B3_8_image,
+        "icon",
+        [
+            "Parsley. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Sage",
+        B3_9_image,
+        "icon",
+        [
+            "Sage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Laurel",
+        B3_10_image,
+        "icon",
+        [
+            "Laurel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Hyssop",
+        B3_11_image,
+        "icon",
+        [
+            "Hyssop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Borage",
+        B3_12_image,
+        "icon",
+        [
+            "Borage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Crown Flower",
+        B3_13_image,
+        "icon",
+        [
+            "Crown Flower. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Marsh Marigold",
+        B3_14_image,
+        "icon",
+        [
+            "Marsh Marigold. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Plantain",
+        B3_15_image,
+        "icon",
+        [
+            "Plantain. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Chamomile",
+        B3_16_image,
+        "icon",
+        [
+            "Chamomile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Calendula",
+        B3_17_image,
+        "icon",
+        [
+            "Calendula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Violet",
+        B3_18_image,
+        "icon",
+        [
+            "Violet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Rosemary",
+        B3_19_image,
+        "icon",
+        [
+            "Rosemary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_3.add_page(
+        "Basil",
+        B3_20_image,
+        "icon",
+        [
+            "Basil. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+#Herb Identification vol. 3
+    $ book_4.add_page(
+        "Common Thistle",
+        B4_1_image,
+        "icon",
+        [
+            "Thistle. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Dandelion",
+        B4_2_image,
+        "icon",
+        [
+            "Dandelion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Blackberry",
+        B4_3_image,
+        "icon",
+        [
+            "Blackberry. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+        
+    $ book_4.add_page(
+        "Oak",
+        B4_4_image,
+        "icon",
+        [
+            "Oak. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+        
+    $ book_4.add_page(
+        "Garlic",
+        B4_5_image,
+        "icon",
+        [
+            "Garlic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+        
+    $ book_4.add_page(
+        "Mint",
+        B4_6_image,
+        "icon",
+        [
+            "Mint. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Oregano",
+        B4_7_image,
+        "icon",
+        [
+            "Oregano. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Parsley",
+        B4_8_image,
+        "icon",
+        [
+            "Parsley. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Sage",
+        B4_9_image,
+        "icon",
+        [
+            "Sage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Laurel",
+        B4_10_image,
+        "icon",
+        [
+            "Laurel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Hyssop",
+        B4_11_image,
+        "icon",
+        [
+            "Hyssop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Borage",
+        B4_12_image,
+        "icon",
+        [
+            "Borage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Crown Flower",
+        B4_13_image,
+        "icon",
+        [
+            "Crown Flower. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Marsh Marigold",
+        B4_14_image,
+        "icon",
+        [
+            "Marsh Marigold. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Plantain",
+        B4_15_image,
+        "icon",
+        [
+            "Plantain. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Chamomile",
+        B4_16_image,
+        "icon",
+        [
+            "Chamomile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Calendula",
+        B4_17_image,
+        "icon",
+        [
+            "Calendula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Violet",
+        B4_18_image,
+        "icon",
+        [
+            "Violet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Rosemary",
+        B4_19_image,
+        "icon",
+        [
+            "Rosemary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+    $ book_4.add_page(
+        "Basil",
+        B4_20_image,
+        "icon",
+        [
+            "Basil. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        "5")
+    
+#Medical Journal vol. 1
+    $ book_5.add_page(
+        "Common Cold",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of the common cold.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+    
+#Medical Journal vol. 2
+    $ book_6.add_page(
+        "Asthma",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
