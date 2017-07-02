@@ -224,6 +224,7 @@ screen inventory_craftcream(first_inventory, second_inventory=False, trade_mode=
             use crafting_creams(first_inventory)
             
 screen inventory_craftextract(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
     default crafting_screen = True
     tag menu
     modal True 
@@ -283,6 +284,7 @@ screen inventory_craftinfusion(first_inventory, second_inventory=False, trade_mo
             use crafting_infusions(first_inventory)
             
 screen inventory_craftsalve(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
     default crafting_screen = True
     tag menu
     modal True 

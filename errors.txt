@@ -2,9 +2,14 @@
 errors listed below, and try again.
 
 
-File "game/define_items.rpy", line 32: invalid syntax
-    herbID2 = Item("Herb Identification vol. 2", "A book of herbs", "inv/book.png", 5000, act=[shelf.add_book(book_3), "all"),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
-                                                                                                                             ^
+File "game/encyclopaedia_data.rpy", line 243: invalid syntax
+                "Inedible or rarely eaten parts of the garlic plant include the "skin" covering each clove and root cluster. ",
+                                                                                     ^
+    
+
+File "game/encyclopaedia_data.rpy", line 368: invalid syntax
+                "Each flower consists of five pointed petals and a small "crown" rising from the center which holds the stamens. ",
+                                                                               ^
     
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029

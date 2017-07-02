@@ -36,17 +36,22 @@ init python hide:
 # Declaring characters
 
 define aeth = Character('Aeth', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
+define kayen = Character('Kayen', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
+define elaine = Character('Master Elaine', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
+define orthrus = Character('Orthrus', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
+define harte = Character('Harte', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
+define mikael = Character('Mikael', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
 
 
 # Declaring books
 
 default shelf = Shelf("Library", 20)
 default book_1 = Book("Tutorial", "Tutorial", "Author", "Year")
-default book_2 = Book("Herb Identification Guide vol. 1", "kind1", "author", "year")
-#default book_3 = Book("Herb Identification Guide vol. 2", "kind2", "author", "year")
-#default book_4 = Book("Herb Identification Guide vol. 3", "kind2", "author", "year")
-#default book_5 = Book("Medical Journal vol. 1", "kind1", "author", "year")
-#default book_6 = Book("Medical Journal vol. 2", "kind2", "author", "year")
+default book_2 = Book("Herb Identification Guide vol. 1", "Herb Identification", "author", "year")
+default book_3 = Book("Herb Identification Guide vol. 2", "Herb Identification", "author", "year")
+default book_4 = Book("Herb Identification Guide vol. 3", "Herb Identification", "author", "year")
+default book_5 = Book("Medical Journal vol. 1", "Medical Journal", "author", "year")
+default book_6 = Book("Medical Journal vol. 2", "Medical Journal", "author", "year")
 
 
 # This is the splash screen. Should show my logo, and then the 
@@ -77,6 +82,12 @@ label start:
     $ day_cnt = 1
 
     init -1 python:
+        herb_book1 = False
+        herb_book2 = False
+        herb_book3 = False
+        med_book1 = False
+        med_book2 = False
+        
         in_overworld01 = False
         in_overworld02 = False
         in_apothecary = False
@@ -194,7 +205,6 @@ label start:
 #    "Defining Items, Cookbooks and Inventories."
 
     $ shelf.add_book(book_1)
-    $ shelf.add_book(book_2)
 
     call define_books
     call define_items
@@ -269,6 +279,18 @@ label intro:
 #    "This is a dialogue test."
 
     show bg overworld01
+    
+    "Skip Intro?"
+    
+    menu:
+
+        "Yes":
+            jump apothecary_shop
+
+
+        "No":
+            "Get on with it, then."
+
 
     "The cold air felt sharp as Aeth breathed it in, carrying the familiar scent of pine."
     
@@ -289,9 +311,216 @@ label intro:
     
     show bg kitchen
     
-    aeth "Mother, I'm home. Please cover up, I don't want to accidentally walk in on you again. You never lock the door and it's really problematic."
+    aeth "Mother, I'm home. Are you there?"
+    
+    "There was a brief shuffling sound from the back of the room. Aeth's eyes were still adjusting to the dim lighting when their mother appeared before them."
+    
+    show kayen neu at right
+    
+    kayen "Aeth-- What are you doing back this time of year?"
+    
+    "She looked disheveled, as if she'd just gotten out of bed. It was a bit too early for that, but seeing another figure move further in, Aeth realized they had interrupted."
+    
+    aeth "Sorry to surprise you. Some... things happened. I decided to come home early."
+    
+    "Aeth's body language was withdrawn, and their tone flat. Kayen's eyes narrowed as they inspected their child, then softened."
+    
+    kayen "You know you are always welcome home. You've been traveling a long time, it's good to have a break once in a while."
+    
+    kayen "Why don't you drop by Elaine's shop tomorrow? I'm sure you've gathered a lot more experience while you were out, and she's been flooded with customers recently."
+    
+    kayen "And of course, she'd be horribly offended if you take too long to visit now that you're in town."
+    
+    "She laughed heartily, and Aeth had to smile. Elaine, who was like a grandmother to them, could be exceedingly petty when she felt slighted."
+    
+    kayen "You should rest for today, though. Bring your stuff in, we'll get dinner ready. I'm sure you haven't been eating. XXX is over, we'll have a full table!"
+    
+    "Aeth noded, and carried their things into one of the spare rooms."
+    
+    hide kayen neu
+    
+    show bg cellar
+    
+    "Aeth put their bag on the floor and prepared for dinner."
     
     hide aeth neu
+    
+    show bg black
+    
+    "Aeth went to sleep."
+    
+    show bg forest002
+    
+    "The next day, they went into town."
+    
+    "As they approached their master's shop, they saw a small child hiding around the corner."
+    
+    show lufte neu at right
+    
+    "Child" "..."
+    
+    show aeth neu at center
+    
+    aeth "Do you need any help?"
+    
+    "The child seemed surprised to hear a voice behind them, and jumped slightly. Aeth stared blankly at them, waiting."
+    
+    "The child backed away slowly before turning and running around a corner."
+    
+    hide lufte neu
+    
+    "Aeth stared after them for a moment, then went about their business."
+    
+    show aeth neu at left
+    
+    show bg apothecary
+    
+    "When they entered the shop, Master Elaine was busily preparing the morning's medication."
+    
+    show elaine neu at right
+    
+    elaine "Aeth! My dear, you are certainly home early, aren't you? Well, I'm sure there's a long explanation for that, but we simply don't have the time."
+    
+    "She hurriedly shoved an assortment of bottles and tools on the counter, and pushed them in Aeth's direction."
+    
+    elaine "I'll need you to prepare some dried X, a Y tincture, and get the Z started."
+    
+    hide elaine neu
+    
+    show bg forest002
+    
+    "Faster than they could register, the morning was over. Elaine sent them out to pick up supplies and deliver medications in town."
+    
+    "They started with deliveries, so that they only had to carry supplies on the way back."
+    
+    "Aeth approached a small house on the outskirts of town."
+    
+    aeth "Hm, this seems to be the right place."
+    
+    "Supposedly a young man lived here named Orthrus, and they were delivering medication for his younger sister."
+    
+    "As they approached the door, a voice stopped them."
+    
+    show orthrus neuR at left behind aeth
+    
+    "Young Man" "You have business with me?"
+    
+    "He leaned over from behind Aeth, uncomfortably close, though they never heard him approach. Their body instinctively tensed."
+    
+    show orthrus neu  at left behind aeth
+    
+    aeth "Master Elaine sent me to deliver medicine to Orthrus."
+    
+    show orthrus neu at center
+    
+    "He stepped back, and their muscles eased back to their previous position."
+    
+    orthrus "Ah, that'll be for me. Thanks for dropping them by, we'd just about run out."
+    
+    "A wide grin spread across his face as he reached out and took the bag."
+    
+    orthrus "You're Aeth, yeah? Kayen's kid? We met a few times when we were younger, dunno if you remember me?"
+    
+    "Orthrus's family ran a merchant caravan, and he and his sister often traveled with them away from town."
+    
+    "By the time they disappeared, Aeth had already left on their journey, and because of this they hadn't had much interaction with either sibling."
+    
+    "It was possible they'd seen each other in passing, but Aeth would have a hard time picking his face out of a crowd."
+    
+    "They'd learned that being so direct was considered rude by most, and remained silent unsure of what to say in response."
+    
+    orthrus "Er, it was a long time ago in any case. If you're helping out at Elaine's shop I'm sure we'll see more of each other from now on."
+    
+    orthrus "We'll just call this our first meeting then-- thanks in advanced for your hard work! These meds make a life a lot easier."
+    
+    "Aeth inclined their head towards Orthrus in a greeting and replied"
+    
+    aeth "Thank you for your patronage."
+    
+    "As they turned to leave, Orthrus waved cheekily at them from behind."
+    
+    hide orthrus neu
+    
+    "That ended up being a bit more stressful than they'd anticipated, but Aeth figured it worked out okay."
+    
+    "The next stop on their agenda was the general store. They needed to pick up some more glass bottles, and a few other essentials."
+    
+    show bg itemshop
+    
+    "Aeth walked in and was greeted by the shopkeeper, Harte."
+    
+    show harte neu at right
+    
+    harte "Aeth! I heard you were back in town early. Elaine got you running errands already?"
+    
+    "Aeth gave a small smile as they replied."
+    
+    aeth "You know Master Elaine. She goes at her own pace, and anyone around will get dragged right along."
+    
+    harte "Haha, you got that right! So, she send you for the regular refills?"
+    
+    aeth "The regular, plus an extra case of containers and wax."
+    
+    harte "I'm on it!"
+    
+    "Harte disappeared into the back room for a moment, then came out with a large, heavy box. They placed it on the counter, then added a few extra items from the supply shelf."
+    
+    harte "This should get you set up. You okay to carry all that?"
+    
+    aeth "I'll be fine, thanks."
+    
+    harte "They put you to work on the caravan, eh? Haha, good to see you back again in any case. Feel free to drop by anytime you need something!"
+    
+    aeth "I will-- have a good day."
+    
+    hide harte neu
+    show bg forest002
+    
+    "Aeth left the shop and made their way towards the last errand."
+    
+    "They took the main street in the center of town and ended up in front of a shop with a sign that wasn't there last time they were here."
+    
+    "It shown the Healer's crest, just like their master's shop. Aeth stepped in and took a look around."
+    
+    show bg apothecary
+    
+    "The front of the shop had a more clinical feel than Master Elaine's-- it was missing the racks of dried herbs and general clutter."
+    
+    "Instead, there were more seats, and a curtain near the back of the room. Not long after the door shut behind them a familiar figure stepped out from behind it."
+    
+    show mikael neu at center
+    
+    aeth "Mikael?"
+    
+    mikael "Aeth, it's good to see you. Sorry for the delay, I was just wiping down the examination table."
+    
+    aeth "No, it's fine. Is this your shop?"
+    
+    mikael "Ah, right-- you were gone quite a while this time. I opened shop near the beginning of last year, with Master Elaine's blessings of course."
+    
+    mikael "She had been looking to step back from Guild work, so I've been taking on more of the administrative tasks. I've not quite taken over as representative, but..."
+    
+    mikael "Master Elaine has been wanting to tell the Healer's in Harvest City to get off her back for a while, haha."
+    
+    "His face emanated warmth, and Aeth couldn't help but smile at the image of Master Elaine chasing the powerful guild members out of her shop."
+    
+    mikael "Ahem, in any case, I'm guessing Master Elaine has you running her errands?"
+    
+    aeth "Yes, I'm here to pick up some distilled alcohol, and a few other specialty items."
+    
+    "Mikael looks down and sees the fairly large and heavy box Aeth is carrying."
+    
+    mikael "Well, I was just planning on closing the shop for a lunch break, why don't I help you take these back? That box looks pretty heavy."
+    
+    aeth "I've got this covered. But I wouldn't mind the company on the way back. It's been a while, it would be good to catch up."
+    
+    mikael "Alright, just give me a moment to pack up those supplies."
+    
+    hide mikael neu
+    
+    hide aeth neu
+    
+    
     
 # Opening video?
 

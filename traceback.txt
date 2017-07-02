@@ -1,23 +1,49 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'enc/Botanical_Thistle.png'>:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 173, in <module>
-    $ ui.interact()
-IOError: Couldn't find file 'enc/Botanical_Thistle.png'.
+While loading <'Image' u'gui/Blackberry Extract_notification.png'>:
+  File "game/overworld.rpy", line 36, in script call
+    call timecount
+  File "game/overworld02.rpy", line 36, in script call
+    call timecount
+  File "game/overworld02.rpy", line 36, in script call
+    call timecount
+  File "game/overworld02.rpy", line 36, in script call
+    call timecount
+  File "game/overworld02.rpy", line 36, in script call
+    call timecount
+  File "game/overworld.rpy", line 36, in script call
+    call timecount
+  File "game/apothecary.rpy", line 97, in script
+    "You are in the kitchen."
+IOError: Couldn't find file 'gui/Blackberry Extract_notification.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 173, in script
-    $ ui.interact()
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00gamemenu.rpy", line 173, in <module>
-    $ ui.interact()
+  File "game/overworld.rpy", line 36, in script call
+    call timecount
+  File "game/overworld02.rpy", line 36, in script call
+    call timecount
+  File "game/overworld02.rpy", line 36, in script call
+    call timecount
+  File "game/overworld02.rpy", line 36, in script call
+    call timecount
+  File "game/overworld02.rpy", line 36, in script call
+    call timecount
+  File "game/overworld.rpy", line 36, in script call
+    call timecount
+  File "game/apothecary.rpy", line 97, in script
+    "You are in the kitchen."
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
+    who(what, interact=interact)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 876, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 715, in do_display
+    **display_args)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 507, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
@@ -60,8 +86,10 @@ Full traceback:
     cpdef render(d, object widtho, object heighto, double st, double at):
   File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2859)
     rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 1101, in render
-    back = render(style.background, bw, bh, st, at)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 707, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 1073, in render
+    st, at)
   File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3321)
     cpdef render(d, object widtho, object heighto, double st, double at):
   File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2859)
@@ -74,7 +102,7 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\loader.py", line 543, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'enc/Botanical_Thistle.png'.
+IOError: Couldn't find file 'gui/Blackberry Extract_notification.png'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

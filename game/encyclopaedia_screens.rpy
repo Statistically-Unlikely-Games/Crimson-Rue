@@ -212,6 +212,14 @@ init python:
             cs.scope["page"] = self.book.get_page(page=self.page_no)
             renpy.restart_interaction()
 
+    class AddBook(Action):
+
+        def __init__(self, book):
+            self.book = book
+
+        def __call__(self):
+            shelf.add_book(self.book)
+
 screen book_shelf():
     tag encyclopedia
     add Solid("#000000") alpha 0.75
@@ -279,7 +287,6 @@ screen book_shelf():
 
 screen open_book(book):
     tag encyclopedia
-    add Solid("#000000") alpha 0.75
 
     default page = book.get_page()
     default toc = False
@@ -391,7 +398,7 @@ screen open_book(book):
 
                     area (0, 0, 350, 515)
 
-                    text page.text color "#FFFFFF"
+                    text page.text color "#000000"
 
     if toc:
         frame:

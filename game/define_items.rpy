@@ -28,9 +28,9 @@ label define_items:
     #This is currently broken. It says UnlockEncEntry is not defined. 
     #Need to investigate when the action code for encyclopedia runs. 
     
-    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[shelf.add_book(book_2),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
-    $ herbID2 = Item("Herb Identification vol. 2", "A book of herbs", "inv/book.png", 5000, act=[shelf.add_book(book_3),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
-    $ herbID3 = Item("Herb Identification vol. 3", "A book of herbs", "inv/book.png", 5000, act=[shelf.add_book(book_4),Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[AddBook(book_2), Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('herb_book1',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ herbID2 = Item("Herb Identification vol. 2", "A book of herbs", "inv/book.png", 5000, act=[AddBook(book_3), Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('herb_book2',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ herbID3 = Item("Herb Identification vol. 3", "A book of herbs", "inv/book.png", 5000, act=[AddBook(book_4), Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('herb_book3',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
 
 #Tier 1 Items
     
@@ -52,6 +52,18 @@ label define_items:
     $ herb016 = Item("Chamomile", "A medicinal herb.", "inv/herb016_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
     $ herb017 = Item("Calendula", "A medicinal herb.", "inv/herb017_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
     $ herb018 = Item("Violet", "A medicinal herb.", "inv/herb018_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb019 = Item("Rosemary", "A medicinal herb.", "inv/herb019_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb020 = Item("Basil", "A medicinal herb.", "inv/herb020_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb021 = Item("Poppy", "A medicinal herb.", "inv/herb021_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb022 = Item("Mullein", "A medicinal herb.", "inv/herb022_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb023 = Item("Red Clover", "A medicinal herb.", "inv/herb023_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb024 = Item("St. John's Wort", "A medicinal herb.", "inv/herb024_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb025 = Item("Yellow Dock", "A medicinal herb.", "inv/herb025_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb026 = Item("Burdock", "A medicinal herb.", "inv/herb026_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb027 = Item("Comfrey", "A medicinal herb.", "inv/herb027_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb028 = Item("Goldenseal", "A medicinal herb.", "inv/herb028_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb029 = Item("Lemon Balm", "A medicinal herb.", "inv/herb029_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
+    $ herb030 = Item("Licorice", "A medicinal herb.", "inv/herb030_idle.png", 100, act=Show("inventory_popup", message="This item is only used in crafting"))
 
     $ bandages = Item("Bandages", "For wrapping wounds.", "inv/bandages.png", 5, act=Show("inventory_popup", message="This item is only used in crafting"))
     $ empty_bottle = Item("Empty Bottle", "Fill it with all kinds of things.", "inv/bottle.empty.png", 300, act=Show("inventory_popup", message="This item is only used in crafting"))

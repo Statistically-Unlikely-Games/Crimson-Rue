@@ -12,16 +12,6 @@ init python:
     B1_8_image = "enc/Botanical_Parsley.png"
     B1_9_image = "enc/Botanical_Sage.png"
     B1_10_image = "enc/Botanical_Laurel.png"
-    B1_11_image = "enc/Botanical_Hyssop.png"
-    B1_12_image = "enc/Botanical_Borage.png"
-    B1_13_image = "enc/Botanical_Crown Flower.png"
-    B1_14_image = "enc/Botanical_Marsh Marigold.png"
-    B1_15_image = "enc/Botanical_Plantain.png"
-    B1_16_image = "enc/Botanical_Chamomile.png"
-    B1_17_image = "enc/Botanical_Calendula.png"
-    B1_18_image = "enc/Botanical_Violet.png"
-    B1_19_image = "enc/Botanical_Rosemary.png"
-    B1_20_image = "enc/Botanical_Basil.png"
     
     B2_1_image = "enc/Botanical_Thistle.png"
     B2_2_image = "enc/Botanical_Dandelion.png"
@@ -33,58 +23,28 @@ init python:
     B2_8_image = "enc/Botanical_Parsley.png"
     B2_9_image = "enc/Botanical_Sage.png"
     B2_10_image = "enc/Botanical_Laurel.png"
-    B2_11_image = "enc/Botanical_Hyssop.png"
-    B2_12_image = "enc/Botanical_Borage.png"
-    B2_13_image = "enc/Botanical_Crown Flower.png"
-    B2_14_image = "enc/Botanical_Marsh Marigold.png"
-    B2_15_image = "enc/Botanical_Plantain.png"
-    B2_16_image = "enc/Botanical_Chamomile.png"
-    B2_17_image = "enc/Botanical_Calendula.png"
-    B2_18_image = "enc/Botanical_Violet.png"
-    B2_19_image = "enc/Botanical_Rosemary.png"
-    B2_20_image = "enc/Botanical_Basil.png"
     
-    B3_1_image = "enc/Botanical_Thistle.png"
-    B3_2_image = "enc/Botanical_Dandelion.png"
-    B3_3_image = "enc/Botanical_Blackberry.png"
-    B3_4_image = "enc/Botanical_Oak.png"
-    B3_5_image = "enc/Botanical_Garlic.png"
-    B3_6_image = "enc/Botanical_Mint.png"
-    B3_7_image = "enc/Botanical_Oregano.png"
-    B3_8_image = "enc/Botanical_Parsley.png"
-    B3_9_image = "enc/Botanical_Sage.png"
-    B3_10_image = "enc/Botanical_Laurel.png"
-    B3_11_image = "enc/Botanical_Hyssop.png"
-    B3_12_image = "enc/Botanical_Borage.png"
-    B3_13_image = "enc/Botanical_Crown Flower.png"
-    B3_14_image = "enc/Botanical_Marsh Marigold.png"
-    B3_15_image = "enc/Botanical_Plantain.png"
-    B3_16_image = "enc/Botanical_Chamomile.png"
-    B3_17_image = "enc/Botanical_Calendula.png"
-    B3_18_image = "enc/Botanical_Violet.png"
-    B3_19_image = "enc/Botanical_Rosemary.png"
-    B3_20_image = "enc/Botanical_Basil.png"
+    B3_1_image = "enc/Botanical_Hyssop.png"
+    B3_2_image = "enc/Botanical_Borage.png"
+    B3_3_image = "enc/Botanical_Crown Flower.png"
+    B3_4_image = "enc/Botanical_Marsh Marigold.png"
+    B3_5_image = "enc/Botanical_Plantain.png"
+    B3_6_image = "enc/Botanical_Chamomile.png"
+    B3_7_image = "enc/Botanical_Calendula.png"
+    B3_8_image = "enc/Botanical_Violet.png"
+    B3_9_image = "enc/Botanical_Rosemary.png"
+    B3_10_image = "enc/Botanical_Basil.png"
     
-    B4_1_image = "enc/Botanical_Thistle.png"
-    B4_2_image = "enc/Botanical_Dandelion.png"
-    B4_3_image = "enc/Botanical_Blackberry.png"
-    B4_4_image = "enc/Botanical_Oak.png"
-    B4_5_image = "enc/Botanical_Garlic.png"
-    B4_6_image = "enc/Botanical_Mint.png"
-    B4_7_image = "enc/Botanical_Oregano.png"
-    B4_8_image = "enc/Botanical_Parsley.png"
-    B4_9_image = "enc/Botanical_Sage.png"
-    B4_10_image = "enc/Botanical_Laurel.png"
-    B4_11_image = "enc/Botanical_Hyssop.png"
-    B4_12_image = "enc/Botanical_Borage.png"
-    B4_13_image = "enc/Botanical_Crown Flower.png"
-    B4_14_image = "enc/Botanical_Marsh Marigold.png"
-    B4_15_image = "enc/Botanical_Plantain.png"
-    B4_16_image = "enc/Botanical_Chamomile.png"
-    B4_17_image = "enc/Botanical_Calendula.png"
-    B4_18_image = "enc/Botanical_Violet.png"
-    B4_19_image = "enc/Botanical_Rosemary.png"
-    B4_20_image = "enc/Botanical_Basil.png"
+    B4_1_image = "enc/Botanical_Poppy.png"
+    B4_2_image = "enc/Botanical_Mullein.png"
+    B4_3_image = "enc/Botanical_Red Clover.png"
+    B4_4_image = "enc/Botanical_St Johns Wort.png"
+    B4_5_image = "enc/Botanical_Yellow Dock.png"
+    B4_6_image = "enc/Botanical_Burdock.png"
+    B4_7_image = "enc/Botanical_Comfrey.png"
+    B4_8_image = "enc/Botanical_Goldenseal.png"
+    B4_9_image = "enc/Botanical_Lemon Balm.png"
+    B4_10_image = "enc/Botanical_Licorice.png"
     
     B5_1_image = "enc/Botanical_Thistle.png"
     B5_2_image = "enc/Botanical_Dandelion.png"
@@ -96,16 +56,6 @@ init python:
     B5_8_image = "enc/Botanical_Parsley.png"
     B5_9_image = "enc/Botanical_Sage.png"
     B5_10_image = "enc/Botanical_Laurel.png"
-    B5_11_image = "enc/Botanical_Hyssop.png"
-    B5_12_image = "enc/Botanical_Borage.png"
-    B5_13_image = "enc/Botanical_Crown Flower.png"
-    B5_14_image = "enc/Botanical_Marsh Marigold.png"
-    B5_15_image = "enc/Botanical_Plantain.png"
-    B5_16_image = "enc/Botanical_Chamomile.png"
-    B5_17_image = "enc/Botanical_Calendula.png"
-    B5_18_image = "enc/Botanical_Violet.png"
-    B5_19_image = "enc/Botanical_Rosemary.png"
-    B5_20_image = "enc/Botanical_Basil.png"
     
     B6_1_image = "enc/Botanical_Thistle.png"
     B6_2_image = "enc/Botanical_Dandelion.png"
@@ -117,16 +67,6 @@ init python:
     B6_8_image = "enc/Botanical_Parsley.png"
     B6_9_image = "enc/Botanical_Sage.png"
     B6_10_image = "enc/Botanical_Laurel.png"
-    B6_11_image = "enc/Botanical_Hyssop.png"
-    B6_12_image = "enc/Botanical_Borage.png"
-    B6_13_image = "enc/Botanical_Crown Flower.png"
-    B6_14_image = "enc/Botanical_Marsh Marigold.png"
-    B6_15_image = "enc/Botanical_Plantain.png"
-    B6_16_image = "enc/Botanical_Chamomile.png"
-    B6_17_image = "enc/Botanical_Calendula.png"
-    B6_18_image = "enc/Botanical_Violet.png"
-    B6_19_image = "enc/Botanical_Rosemary.png"
-    B6_20_image = "enc/Botanical_Basil.png"
 
 
 label define_books: 
@@ -182,61 +122,36 @@ label define_books:
         B2_1_image,
         "icon",
         [
-            "Thistle. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A widely distributed herbaceous plant of the daisy family, which typically has a prickly stem and leaves and rounded heads of purple flowers. ",
+            "Prickles occur all over the plant – on the stem and flat parts of leaves. ",
+            "They are an adaptation that protects the plant from being eaten by herbivores. ",
+            "Medieval writers had thought it could return hair to bald heads and that in the early modern period it had been believed to be a remedy for headaches, plague, canker sores, vertigo, and jaundice. ",
         ],
-        "5")
+        5)
     
     $ book_2.add_page(
         "Dandelion",
         B2_2_image,
         "icon",
         [
-            "Dandelion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A widely distributed weed of the daisy family, with a rosette of leaves, bright yellow flowers followed by globular heads of seeds with downy tufts, and stems containing a milky latex. ",
+            "Like other members of the Asteraceae family, they have very small flowers collected together into a composite flower head. ",
+            "Each single flower in a head is called a floret. ",
+            "Dandelions are edible in their entirety. ",
+            "Historically, dandelion was prized for a variety of medicinal properties, and it contains a number of pharmacologically active compounds. ",
+            "It has been used in herbal medicine to treat infections, bile and liver problems and as a diuretic. ",
         ],
-        "5")
+        5)
     
     $ book_2.add_page(
         "Blackberry",
         B2_3_image,
         "icon",
         [
-            "Blackberry. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "The prickly climbing shrub of the rose family that bears an edible soft fruit, consisting of a cluster of soft purple-black drupelets, and that grows extensively in the wild. ",
+            "The soft fruit is popular for use in desserts, jams, seedless jelly, and sometimes wine. ",
+            "It is often mixed with apples for pies and crumbles. ",
+            "Blackberries are also used to produce candy. ",
         ],
         "5")
         
@@ -245,391 +160,138 @@ label define_books:
         B2_4_image,
         "icon",
         [
-            "Oak. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A tree that bears acorns as fruit, and typically has lobed deciduous leaves. ",
+            "Oaks have spirally arranged leaves, with lobate margins in many species; some have serrated leaves or entire leaf with smooth margins. ",
+            "Also, the acorns contain tannic acid, as do the leaves, which helps to guard from fungi and insects. ",
+            "The fruit is a nut called an acorn, borne in a cup-like structure known as a cupule; each acorn contains one seed (rarely two or three) and takes 6–18 months to mature, depending on their species. ",
+            "Oak wood is particularly dense, leading to great hardness and strength. ",
+            "The bark of the White Oak is dried and used in medical preparations. ",
         ],
-        "5")
+        5)
         
     $ book_2.add_page(
         "Garlic",
         B2_5_image,
         "icon",
         [
-            "Garlic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A plant, closely related to the onion, that produces a strong-smelling pungent-tasting bulb, used as a flavoring in cooking and in herbal medicine. ",
+            "The garlic plant's bulb is the most commonly used part of the plant. ",
+            "They have a characteristic pungent, spicy flavor that mellows and sweetens considerably with cooking. ",
+            "Other parts of the garlic plant are also edible. ",
+            "The leaves and flowers (bulbils) on the head (spathe) are sometimes eaten. ",
+            "They are milder in flavor than the bulbs, and are most often consumed while immature and still tender. ",
+            "Inedible or rarely eaten parts of the garlic plant include the 'skin' covering each clove and root cluster. ",
+            "The papery, protective layers of 'skin' over various parts of the plant are generally discarded during preparation for most culinary uses. ",
+            "The root cluster attached to the basal plate of the bulb is the only part not typically considered palatable in any form. ",
+            "Garlic was used as an antiseptic to prevent gangrene. ",
         ],
-        "5")
+        5)
         
     $ book_2.add_page(
         "Mint",
         B2_6_image,
         "icon",
         [
-            "Mint. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "An aromatic plant native to temperate regions of the Old World, several kinds of which are used as culinary herbs. ",
+            "They have wide-spreading underground and overground stolons and erect, square, branched stems. ",
+            "The leaves are arranged in opposite pairs, from oblong to lanceolate, often downy, and with a serrated margin. ",
+            "Leaf colors range from dark green and gray-green to purple, blue, and sometimes pale yellow. ",
+            "The flowers are white to purple and produced in false whorls called verticillasters. ",
+            "The corolla is two-lipped with four subequal lobes, the upper lobe usually the largest. ",
+            "The fruit is a nutlet, containing one to four seeds. ",
+            "Mints grow best in wet environments and moist soils. ",
+            "Mints will grow 10–120 cm tall and have a tendency to spread unchecked. ",
+            "Mint was originally used as a medicinal herb to treat stomach ache and chest pains. ",
+            "As an essential oil, it can also be used in aromatherapy to alleviate nausea. ",
         ],
-        "5")
+        5)
     
     $ book_2.add_page(
         "Oregano",
         B2_7_image,
         "icon",
         [
-            "Oregano. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "An aromatic plant related to marjoram, with leaves that are used fresh or dried as a culinary herb. ",
+            "Oregano is a perennial herb, growing from 20–80 cm (7.9–31.5 in) tall, with opposite leaves 1–4 cm (0.39–1.57 in) long. ",
+            "The flowers are purple, 3–4 mm (0.12–0.16 in) long, produced in erect spikes. ",
+            "It is sometimes called wild marjoram, and its close relative O. majorana is known as sweet marjoram. ",
+            "Oregano is an important culinary herb, used for the flavour of its leaves, which can be more flavourful when dried than fresh. ",
+            "It has an aromatic, warm, and slightly bitter taste, which can vary in intensity. ",
+            "Good-quality oregano may be strong enough almost to numb the tongue, but cultivars adapted to colder climates often have a lesser flavor. ",
+            "Factors such as climate, season, and soil composition may affect the aromatic oils present, and this effect may be greater than the differences between the various species of plants. ",
+            "Oregano oil and oregano have been used in folk medicine since ancient times, and is extracted from the leaves of the oregano plant. ",
         ],
-        "5")
+        5)
     
     $ book_2.add_page(
         "Parsley",
         B2_8_image,
         "icon",
         [
-            "Parsley. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A biennial plant with white flowers and aromatic leaves that are either crinkly or flat and used as a culinary herb and for garnishing food. ",
+            "It forms a rosette of tripinnate leaves 10–25 cm (3.9–9.8 in) long with numerous 1–3 cm (0.4–1.2 in) leaflets, and a taproot used as a food store over the winter. ",
+            "Excessive consumption of parsley should be avoided by pregnant women. ",
+            "It is safe in normal food quantities, but large amounts may have uterotonic effects. ",
         ],
-        "5")
+        5)
     
     $ book_2.add_page(
         "Sage",
         B2_9_image,
         "icon",
         [
-            "Sage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "An aromatic plant with grayish-green leaves that are used as a culinary herb, native to southern Europe and the Mediterranean. ",
+            "A perennial, evergreen subshrub, with woody stems, grayish leaves, and blue to purplish flowers. ",
+            "It has a long history of medicinal and culinary use. ",
+            "Common sage is grown in parts of Europe for distillation of an essential oil, though other species such as Salvia fruticosa may also be harvested and distilled with it. ",
         ],
-        "5")
+        5)
     
     $ book_2.add_page(
         "Laurel",
         B2_10_image,
         "icon",
         [
-            "Laurel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "An aromatic evergreen shrub related to the bay tree, several kinds of which form forests in tropical and warm countries. ",
+            "The plant is the source of several popular herbs and one spice used in a wide variety of recipes. ",
+            "Whole bay leaves are used almost exclusively as flavor agents during the food preparation stage. ",
+            "They are typically removed from dishes before serving, unless used as a simple garnish. ",
+            "Whole bay leaves have a long shelf life of about one year, under normal temperature and humidity. ",
+            "Aqueous extracts of bay laurel can also be used as astringents and even as a reasonable salve for open wounds. ",
+            "In massage therapy, the essential oil of bay laurel is reputed to alleviate arthritis and rheumatism, while in aromatherapy, it is used to treat earaches and high blood pressure. ",
         ],
-        "5")
+        5)
     
-    $ book_2.add_page(
-        "Hyssop",
-        B2_11_image,
-        "icon",
-        [
-            "Hyssop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_2.add_page(
-        "Borage",
-        B2_12_image,
-        "icon",
-        [
-            "Borage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_2.add_page(
-        "Crown Flower",
-        B2_13_image,
-        "icon",
-        [
-            "Crown Flower. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_2.add_page(
-        "Marsh Marigold",
-        B2_14_image,
-        "icon",
-        [
-            "Marsh Marigold. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_2.add_page(
-        "Plantain",
-        B2_15_image,
-        "icon",
-        [
-            "Plantain. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_2.add_page(
-        "Chamomile",
-        B2_16_image,
-        "icon",
-        [
-            "Chamomile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_2.add_page(
-        "Calendula",
-        B2_17_image,
-        "icon",
-        [
-            "Calendula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_2.add_page(
-        "Violet",
-        B2_18_image,
-        "icon",
-        [
-            "Violet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_2.add_page(
-        "Rosemary",
-        B2_19_image,
-        "icon",
-        [
-            "Rosemary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_2.add_page(
-        "Basil",
-        B2_20_image,
-        "icon",
-        [
-            "Basil. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
     
 #Herb Identification vol. 2
+
     $ book_3.add_page(
-        "Common Thistle",
+        "Hyssop",
         B3_1_image,
         "icon",
         [
-            "Thistle. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A small bushy aromatic plant of the mint family, the bitter minty leaves of which are used in cooking and herbal medicine. ",
+            "Hyssop is a brightly coloured shrub or subshrub that ranges from 30 to 60 cm (12 to 24 in) in height. ",
+            "The stem is woody at the base, from which grow a number of straight branches. ",
+            "Its leaves are lanceolate, dark green in colour, and from 2 to 2.5 cm (0.79 to 0.98 in) long. ",
+            "During the summer, the plant produces bunches of pink, blue, or, more rarely, white fragrant flowers. ",
+            "The species as a whole is resistant to drought, and tolerant of chalky, sandy soils. ",
+            "It thrives in full sun and warm climates. ",
+            "Due to its properties as an antiseptic, cough reliever, and expectorant, it is commonly used as a medicinal plant. ",
         ],
-        "5")
+        5)
     
     $ book_3.add_page(
-        "Dandelion",
+        "Borage",
         B3_2_image,
         "icon",
         [
-            "Dandelion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
+            "A herbaceous plant with bright blue flowers and hairy leaves, used medicinally and as a salad green. ",
+            "It is native to the Mediterranean region and has naturalized in many other locales. ",
+            "The plant is also commercially cultivated for borage seed oil extracted from its seeds. ",
+            "Traditionally, Borago officinalis has been used in hyperactive gastrointestinal, respiratory and cardiovascular disorders, such as gastrointestinal (colic, cramps, diarrhea), airways (asthma, bronchitis), cardiovascular, (cardiotonic, antihypertensive and blood purifier), urinary (diuretic and kidney/bladder disorders). ",
+            "Naturopathic practitioners use borage for regulation of metabolism and the hormonal system, and consider it to be a good remedy for PMS and menopause symptoms such as the hot flash. ",
+            "The flowers can be prepared in infusion. ",
             "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
             "Duis venenatis sem eu ipsum condimentum adipiscing. ",
             "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
@@ -638,39 +300,39 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
     
     $ book_3.add_page(
-        "Blackberry",
+        "Crown Flower",
         B3_3_image,
         "icon",
         [
-            "Blackberry. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A large shrub growing to 4 m (13 ft) tall with clusters of waxy flowers that are either white or lavender in colour. ",
+            "Each flower consists of five pointed petals and a small 'crown' rising from the center which holds the stamens. ",
+            "The plant has oval, light green leaves and milky stem. ",
+            "The flowers are long lasting, and as such they are used in floral arrangements. ",
+            "The extract of flowers and leaves have shown hypoglycemic effect in preclinical studies. ",
+            "The fruit is a follicle and when dry, seed dispersal is by wind ",
+            "Calotropis yields a durable fiber (commercially known as bowstring of India) useful for ropes, carpets, fishing nets, and sewing thread. ",
+            "Floss, obtained from seeds, is used as stuffing. ",
+            "Fermented mixture of Calotropis and salt is used to remove the hair from goat skins for production of 'nari leather' and of sheep skins to make leather which is much used for inexpensive book binding. ",
+            "Extracts of plant parts such as root, stem, and leaf affect germination and seedling vigor of many agricultural crops. ",
+            "Calotropis is a poisonous plant, with the active principles uscharin, calotoxin, calactin, and calotropin. ",
+            "The leaves and stem when incised yield thick milky juice. ",
+            "It is used as an arrow poison, cattle poison, rarely for suicide and homicide and mostly an accidental poison. ",
         ],
-        "5")
-        
+        5)
+    
     $ book_3.add_page(
-        "Oak",
+        "Marsh Marigold",
         B3_4_image,
         "icon",
         [
-            "Oak. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "A plant of the buttercup family that has large yellow flowers and grows in damp ground and shallow water, native to north temperate regions. ",
+            "Caltha palustris is a 10–80 cm high, hairless, fleshy, perennial, herbaceous plant, that dies down in autumn and overwinters with buds near the surface of the marshy soil. ",
+            "Early spring greens and buds of Caltha palustris are edible when cooked. ",
+            "Young leaves or buds should be submerged a few times in fresh boiling water until barely tender, cut into bite-sized pieces, lightly salted, and served with melted butter and vinegar. ",
+            "Very young flowerbuds have been prepared like capers and used as a spice. ",
             "Curabitur laoreet posuere orci eu eleifend. ",
             "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
             "Duis venenatis sem eu ipsum condimentum adipiscing. ",
@@ -680,351 +342,102 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
-        
+        5)
+    
     $ book_3.add_page(
-        "Garlic",
+        "Plantain",
         B3_5_image,
         "icon",
         [
-            "Garlic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A low-growing plant that typically has a rosette of leaves and a slender green flower spike, widely growing as a weed. ",
+            "Plantago species have been used since prehistoric times as herbal remedies. ",
+            "The herb is astringent, anti-toxic, antimicrobial, anti-inflammatory, anti-histamine, as well as demulcent, expectorant, styptic and diuretic. ",
+            "Externally, a poultice of the leaves is useful for insect bites, poison-ivy rashes, minor sores, and boils. ",
+            "Internally, it is used for coughs and bronchitis, as a tea, tincture, or syrup. ",
+            "Plantain seed husks expand and become mucilaginous when wet, especially those of P. psyllium, which is used in common over-the-counter bulk laxative and fiber supplement products such as Metamucil. P. psyllium seed is useful for constipation, irritable bowel syndrome, dietary fiber supplementation, and diverticular disease.  ",
         ],
-        "5")
-        
+        5)
+    
     $ book_3.add_page(
-        "Mint",
+        "Chamomile",
         B3_6_image,
         "icon",
         [
-            "Mint. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "An aromatic European plant of the daisy family, with white and yellow daisylike flowers. ",
+            "Commonly used to make herb infusions to serve various medicinal purposes. ",
+            "Popular uses of chamomile preparations include treating hay fever, inflammation, muscle spasms, menstrual disorders, insomnia, ulcers, gastrointestinal disorders, and hemorrhoids. ",
+            "Chamomile tea is also used to treat skin conditions such as eczema, chickenpox, and psoriasis. ",
         ],
-        "5")
+        5)
     
     $ book_3.add_page(
-        "Oregano",
+        "Calendula",
         B3_7_image,
         "icon",
         [
-            "Oregano. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A Mediterranean plant of a genus that includes the common (or pot) marigold. ",
+            "A small genus of yellow-rayed composite herbs of temperate regions. ",
+            "Calendula species have been used traditionally as culinary and medicinal herbs. ",
+            "The dried florets of plants of the genus Calendula (especially C. officinalis) sometimes used as a mild aromatic and diaphoretic. ",
+            "The petals are edible and can be used fresh in salads or dried and used to color cheese or as a replacement for saffron. ",
+            "A yellow dye has been extracted from the flowers. ",
+            "Calendula ointments are skin products used to treat minor cuts, burns, and skin irritation. ",
+            "Calendula oil is still used medicinally. The oil of C. officinalis is used as an anti-inflammatory, an antitumor agent, and a remedy for healing wounds. ",
+            "In herbalism, Calendula in suspension or in tincture is used topically for treating acne, reducing inflammation, controlling bleeding, and soothing irritated tissue. ",
+            "Calendula has been used traditionally for abdominal cramps and constipation. ",
+            "Calendula plants are known to cause allergic reactions and should be avoided during pregnancy. ",
         ],
-        "5")
+        5)
     
     $ book_3.add_page(
-        "Parsley",
+        "Violet",
         B3_8_image,
         "icon",
         [
-            "Parsley. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "A herbaceous plant of temperate regions, typically having purple, blue, or white five-petaled flowers, one of which forms a landing pad for pollinating insects. ",
+            "Many Viola species contain antioxidants called anthocyanins. ",
+            "Viola odorata is used as a source for scents in the perfume industry. ",
+            "Violet is known to have a 'flirty' scent as its fragrance comes and goes. ",
+            "Ionone is present in the flowers, which turns off the ability for humans to smell the fragrant compound for moments at a time. ",
         ],
-        "5")
+        5)
     
     $ book_3.add_page(
-        "Sage",
+        "Rosemary",
         B3_9_image,
         "icon",
         [
-            "Sage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "An evergreen aromatic shrub of the mint family, native to southern Europe. ",
+            "It has fragrant, evergreen, needle-like leaves, white, pink, purple, or blue flowers, and a fibrous root system. ",
+            "Upon cultivation, the leaves, twigs, and flowering apices are extracted for use. ",
+            "Rosemary grows on friable loam soil with good drainage in an open, sunny position. ",
+            "It is drought-resistant, will not withstand waterlogging, and some varieties are susceptible to frost. ",
+            "It grows best in neutral to alkaline conditions (pH 7–7.8) with average fertility. ",
         ],
-        "5")
+        5)
     
     $ book_3.add_page(
-        "Laurel",
+        "Basil",
         B3_10_image,
         "icon",
         [
-            "Laurel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
+            "An aromatic annual herb of the mint family, native to tropical Asia. ",
+            "Depending on the species and cultivar, the leaves may taste somewhat like anise, with a strong, pungent, often sweet smell. ",
+            "Basil is most commonly used fresh in cooked recipes. ",
+            "In general, it is added at the last moment, as cooking quickly destroys the flavor. ",
+            "The dried herb also loses most of its flavor, and what little flavor remains tastes very different, with a weak coumarin flavor, like hay. ",
+            "When soaked in water, the seeds of several basil varieties become gelatinous. ",
         ],
-        "5")
-    
-    $ book_3.add_page(
-        "Hyssop",
-        B3_11_image,
-        "icon",
-        [
-            "Hyssop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_3.add_page(
-        "Borage",
-        B3_12_image,
-        "icon",
-        [
-            "Borage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_3.add_page(
-        "Crown Flower",
-        B3_13_image,
-        "icon",
-        [
-            "Crown Flower. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_3.add_page(
-        "Marsh Marigold",
-        B3_14_image,
-        "icon",
-        [
-            "Marsh Marigold. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_3.add_page(
-        "Plantain",
-        B3_15_image,
-        "icon",
-        [
-            "Plantain. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_3.add_page(
-        "Chamomile",
-        B3_16_image,
-        "icon",
-        [
-            "Chamomile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_3.add_page(
-        "Calendula",
-        B3_17_image,
-        "icon",
-        [
-            "Calendula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_3.add_page(
-        "Violet",
-        B3_18_image,
-        "icon",
-        [
-            "Violet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_3.add_page(
-        "Rosemary",
-        B3_19_image,
-        "icon",
-        [
-            "Rosemary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_3.add_page(
-        "Basil",
-        B3_20_image,
-        "icon",
-        [
-            "Basil. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
+        5)
+
     
 #Herb Identification vol. 3
     $ book_4.add_page(
-        "Common Thistle",
+        "Poppy",
         B4_1_image,
         "icon",
         [
-            "Thistle. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Poppy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1038,14 +451,14 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
     
     $ book_4.add_page(
-        "Dandelion",
+        "Mullein",
         B4_2_image,
         "icon",
         [
-            "Dandelion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Mullein. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1059,14 +472,14 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
     
     $ book_4.add_page(
-        "Blackberry",
+        "Red Clover",
         B4_3_image,
         "icon",
         [
-            "Blackberry. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Red Clover. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1080,14 +493,14 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
         
     $ book_4.add_page(
-        "Oak",
+        "St. John's Wort",
         B4_4_image,
         "icon",
         [
-            "Oak. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "St. John's Wort. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1101,14 +514,14 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
         
     $ book_4.add_page(
-        "Garlic",
+        "Yellow Dock",
         B4_5_image,
         "icon",
         [
-            "Garlic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Yellow Dock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1122,14 +535,14 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
         
     $ book_4.add_page(
-        "Mint",
+        "Burdock",
         B4_6_image,
         "icon",
         [
-            "Mint. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Burdock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1143,14 +556,14 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
     
     $ book_4.add_page(
-        "Oregano",
+        "Comfrey",
         B4_7_image,
         "icon",
         [
-            "Oregano. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Comfrey. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1164,14 +577,14 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
     
     $ book_4.add_page(
-        "Parsley",
+        "Goldenseal",
         B4_8_image,
         "icon",
         [
-            "Parsley. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Goldenseal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1185,14 +598,14 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
     
     $ book_4.add_page(
-        "Sage",
+        "Lemon Balm",
         B4_9_image,
         "icon",
         [
-            "Sage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Lemon Balm. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1206,14 +619,14 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
     
     $ book_4.add_page(
-        "Laurel",
+        "Licorice",
         B4_10_image,
         "icon",
         [
-            "Laurel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Licorice. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
             "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
             "Sed non dapibus augue, quis hendrerit diam. ",
             "Quisque bibendum turpis vitae orci iaculis volutpat. ",
@@ -1227,217 +640,8 @@ label define_books:
             "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
             "Etiam posuere fringilla purus.",
         ],
-        "5")
+        5)
     
-    $ book_4.add_page(
-        "Hyssop",
-        B4_11_image,
-        "icon",
-        [
-            "Hyssop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_4.add_page(
-        "Borage",
-        B4_12_image,
-        "icon",
-        [
-            "Borage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_4.add_page(
-        "Crown Flower",
-        B4_13_image,
-        "icon",
-        [
-            "Crown Flower. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_4.add_page(
-        "Marsh Marigold",
-        B4_14_image,
-        "icon",
-        [
-            "Marsh Marigold. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_4.add_page(
-        "Plantain",
-        B4_15_image,
-        "icon",
-        [
-            "Plantain. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_4.add_page(
-        "Chamomile",
-        B4_16_image,
-        "icon",
-        [
-            "Chamomile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_4.add_page(
-        "Calendula",
-        B4_17_image,
-        "icon",
-        [
-            "Calendula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_4.add_page(
-        "Violet",
-        B4_18_image,
-        "icon",
-        [
-            "Violet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_4.add_page(
-        "Rosemary",
-        B4_19_image,
-        "icon",
-        [
-            "Rosemary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
-    
-    $ book_4.add_page(
-        "Basil",
-        B4_20_image,
-        "icon",
-        [
-            "Basil. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
-            "Sed non dapibus augue, quis hendrerit diam. ",
-            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
-            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
-            "Curabitur laoreet posuere orci eu eleifend. ",
-            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
-            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
-            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
-            "Duis eu sollicitudin mauris. ",
-            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
-            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
-            "Etiam posuere fringilla purus.",
-        ],
-        "5")
     
 #Medical Journal vol. 1
     $ book_5.add_page(
