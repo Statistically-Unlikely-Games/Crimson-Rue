@@ -1,39 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'gui/Blackberry Extract_notification.png'>:
-  File "game/overworld.rpy", line 36, in script call
-    call timecount
-  File "game/overworld02.rpy", line 36, in script call
-    call timecount
-  File "game/overworld02.rpy", line 36, in script call
-    call timecount
-  File "game/overworld02.rpy", line 36, in script call
-    call timecount
-  File "game/overworld02.rpy", line 36, in script call
-    call timecount
-  File "game/overworld.rpy", line 36, in script call
-    call timecount
-  File "game/apothecary.rpy", line 97, in script
-    "You are in the kitchen."
-IOError: Couldn't find file 'gui/Blackberry Extract_notification.png'.
+While loading <'Image' u'gui/Dried Thistle_notification.png'>:
+  File "game/apothecary.rpy", line 57, in script
+    "You are in your apothecary shop."
+IOError: Couldn't find file 'gui/Dried Thistle_notification.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/overworld.rpy", line 36, in script call
-    call timecount
-  File "game/overworld02.rpy", line 36, in script call
-    call timecount
-  File "game/overworld02.rpy", line 36, in script call
-    call timecount
-  File "game/overworld02.rpy", line 36, in script call
-    call timecount
-  File "game/overworld02.rpy", line 36, in script call
-    call timecount
-  File "game/overworld.rpy", line 36, in script call
-    call timecount
-  File "game/apothecary.rpy", line 97, in script
-    "You are in the kitchen."
+  File "game/apothecary.rpy", line 57, in script
+    "You are in your apothecary shop."
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
     renpy.exports.say(who, what, interact=self.interact)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
@@ -102,7 +78,7 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\loader.py", line 543, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'gui/Blackberry Extract_notification.png'.
+IOError: Couldn't find file 'gui/Dried Thistle_notification.png'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

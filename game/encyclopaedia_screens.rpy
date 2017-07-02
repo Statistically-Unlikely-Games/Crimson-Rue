@@ -398,7 +398,7 @@ screen open_book(book):
 
                     area (0, 0, 350, 515)
 
-                    text page.text color "#000000"
+                    text page.text color "#ffffff"
 
     if toc:
         frame:

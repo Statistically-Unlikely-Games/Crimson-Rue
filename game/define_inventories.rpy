@@ -25,7 +25,7 @@ label define_inventories:
     $ shop_inv.take(bandages,50)
     $ shop_inv.take(empty_bottle,50)
     $ shop_inv.take(oil,50)
-    $ shop_inv.take(wine,50)
+    $ shop_inv.take(vodka,50)
     $ shop_inv.take(empty_tin,50)
     $ shop_inv.take(wax,50)
     $ shop_inv.take(empty_jar,50)

@@ -2,14 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/encyclopaedia_data.rpy", line 243: invalid syntax
-                "Inedible or rarely eaten parts of the garlic plant include the "skin" covering each clove and root cluster. ",
-                                                                                     ^
-    
-
-File "game/encyclopaedia_data.rpy", line 368: invalid syntax
-                "Each flower consists of five pointed petals and a small "crown" rising from the center which holds the stamens. ",
-                                                                               ^
+File "game/define_items.rpy", line 115: invalid syntax
+    dried_herb030 = Item("Dried Licorice", "A dried medicinal herb.", "inv/herb030_idle.png", 2        00, recipe=[[empty_jar,1],[herb030,1]], containers=[])
+                                                                                                         ^
     
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029
