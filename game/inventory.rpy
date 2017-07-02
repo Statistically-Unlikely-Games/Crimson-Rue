@@ -481,7 +481,7 @@ screen craftinv_view(inventory, second_inventory=False, trade_mode=False):
         vpgrid id ("vp"+inventory.name):
             draggable True   
             mousewheel True
-            xsize 450 ysize 480
+            xsize 450 ysize 460
             if inventory.grid_view:
                 cols 4 spacing 10
             else:

@@ -1,25 +1,25 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'gui/Dried Thistle_notification.png'>:
-  File "game/apothecary.rpy", line 57, in script
-    "You are in your apothecary shop."
-IOError: Couldn't find file 'gui/Dried Thistle_notification.png'.
+While loading <'Image' u'gui/Calendula Decoction_notification.png'>:
+  File "game/apothecary.rpy", line 30, in script
+    $ renpy.pause()
+  File "game/apothecary.rpy", line 30, in <module>
+    $ renpy.pause()
+IOError: Couldn't find file 'gui/Calendula Decoction_notification.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/apothecary.rpy", line 57, in script
-    "You are in your apothecary shop."
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 613, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1142, in say
-    who(what, interact=interact)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 876, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 715, in do_display
-    **display_args)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\character.py", line 507, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "game/apothecary.rpy", line 30, in script
+    $ renpy.pause()
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/apothecary.rpy", line 30, in <module>
+    $ renpy.pause()
+  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1273, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
@@ -78,7 +78,7 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\loader.py", line 543, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'gui/Dried Thistle_notification.png'.
+IOError: Couldn't find file 'gui/Calendula Decoction_notification.png'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029
