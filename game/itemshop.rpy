@@ -32,7 +32,7 @@ label leave_itemshop:
     $ time_cnt += 1
     hide screen itemshop
     if time_cnt > 5:
-        call timecount
+        call timecount_msg
         jump return_home
     
     jump overworld01

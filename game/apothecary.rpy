@@ -28,7 +28,7 @@ label return_home:
 
 label aplooping:
     $ renpy.pause()
-    call timecount2
+    call timecount_nomsg
     call time_img
     jump aplooping
     
@@ -61,9 +61,12 @@ label apothecary_shop:
 screen apothecary:
     tag menu2
     
-    imagebutton auto "gui/button.shop.workbench_%s.png" xpos 570 ypos 450 focus_mask True action Show("inventory_craftdriedherbs", first_inventory=pc_inv)
+    imagebutton auto "gui/button.shop.rack_%s.png" xpos 844 ypos 152 focus_mask True action Show("inventory_rack", first_inventory=pc_inv)
+    imagebutton auto "gui/button.shop.scale_%s.png" xpos 652 ypos 397 focus_mask True action Show("inventory_craftherboils", first_inventory=pc_inv)
+    imagebutton auto "gui/button.shop.mortar_%s.png" xpos 810 ypos 446 focus_mask True action Show("inventory_mortar", first_inventory=pc_inv)
+#    imagebutton auto "gui/button.shop.workbench_%s.png" xpos 570 ypos 450 focus_mask True action Show("inventory_craftdriedherbs", first_inventory=pc_inv)
     imagebutton auto "gui/button.shop.storage_%s.png" xpos 1221 ypos 0 focus_mask True action Show("inventory_screen", first_inventory=pc_inv, second_inventory=chest, trade_mode=True, bank_mode=True)
-    imagebutton auto "gui/button.shop.herblist_%s.png" xpos 1125 ypos 331 focus_mask True action [Hide("basic_overlay"), Hide("apothecary"), ShowMenu("book_shelf")]
+    imagebutton auto "gui/button.shop.books_%s.png" xpos 1125 ypos 331 focus_mask True action [Hide("basic_overlay"), Hide("apothecary"), ShowMenu("book_shelf")]
     imagebutton auto "gui/button.shop.door_%s.png" xpos 405 ypos 80 focus_mask True action [Hide("basic_overlay"), SetVariable('in_apothecary', False), Jump("overworld01")]
     
     

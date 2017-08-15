@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/define_items.rpy", line 115: invalid syntax
-    dried_herb030 = Item("Dried Licorice", "A dried medicinal herb.", "inv/herb030_idle.png", 2        00, recipe=[[empty_jar,1],[herb030,1]], containers=[])
-                                                                                                         ^
-    
+File "game/script.rpy", line 364: choice menuitem expects a non-empty block.
+    "No":
+         ^
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029

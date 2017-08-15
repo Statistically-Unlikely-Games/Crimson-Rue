@@ -107,93 +107,166 @@ label start:
         timeofday = "sunrise"
         
         F1Harvest = False
-        forest001_first_herb_col = True
-        forest001_second_herb_col = True
-        forest001_third_herb_col = True
-        forest001_fourth_herb_col = True
-        forest001_fifth_herb_col = True
-        forest001_sixth_herb_col = True
-        forest001_seventh_herb_col = True
-        forest001_eighth_herb_col = True
+        forest001_thistle_col = True
+        forest001_blackberry_col = True
+        forest001_oak_col = True
+        forest001_garlic_col = True
+        forest001_mint_col = True
+        forest001_oregano_col = True
+        forest001_chamomile_col = True
+        forest001_mullein_col = True
+        forest001_redclover_col = True
+        forest001_stjohns_col = True
+        forest001_burdock_col = True
+        forest001_sage_col = True
+        forest001_hyssop_col = True
+        forest001_borage_col = True
+        forest001_rosemary_col = True
+        forest001_licorice_col = True
+        forest001_poppy_col = True
         
         F2Harvest = False
-        forest002_first_herb_col = True
-        forest002_second_herb_col = True
-        forest002_third_herb_col = True
-        forest002_fourth_herb_col = True
-        forest002_fifth_herb_col = True
-        forest002_sixth_herb_col = True
-        forest002_seventh_herb_col = True
-        forest002_eighth_herb_col = True
+        forest002_thistle_col = True
+        forest002_dandelion_col = True
+        forest002_blackberry_col = True
+        forest002_oak_col = True
+        forest002_oregano_col = True
+        forest002_parsley_col = True
+        forest002_chamomile_col = True
+        forest002_mullein_col = True
+        forest002_redclover_col = True
+        forest002_stjohns_col = True
+        forest002_burdock_col = True
+        forest002_laurel_col = True
+        forest002_hyssop_col = True
+        forest002_calendula_col = True
+        forest002_rosemary_col = True
+        forest002_licorice_col = True
         
         F3Harvest = False
-        forest003_first_herb_col = True
-        forest003_second_herb_col = True
-        forest003_third_herb_col = True
-        forest003_fourth_herb_col = True
-        forest003_fifth_herb_col = True
-        forest003_sixth_herb_col = True
-        forest003_seventh_herb_col = True
-        forest003_eighth_herb_col = True
+        forest003_thistle_col = True
+        forest003_blackberry_col = True
+        forest003_oak_col = True
+        forest003_garlic_col = True
+        forest003_oregano_col = True
+        forest003_parsley_col = True
+        forest003_chamomile_col = True
+        forest003_chamomile2_col = True
+        forest003_mullein_col = True
+        forest003_redclover_col = True
+        forest003_stjohns_col = True
+        forest003_burdock_col = True
+        forest003_sage_col = True
+        forest003_borage_col = True
+        forest003_calendula_col = True
+        forest003_rosemary_col = True
+        forest003_licorice_col = True
         
         F4Harvest = False
-        forest004_first_herb_col = True
-        forest004_second_herb_col = True
-        forest004_third_herb_col = True
-        forest004_fourth_herb_col = True
-        forest004_fifth_herb_col = True
-        forest004_sixth_herb_col = True
-        forest004_seventh_herb_col = True
-        forest004_eighth_herb_col = True
+        forest004_dandelion_col = True
+        forest004_blackberry_col = True
+        forest004_oak_col = True
+        forest004_mint_col = True
+        forest004_oregano_col = True
+        forest004_parsley_col = True
+        forest004_plantain_col = True
+        forest004_chamomile_col = True
+        forest004_violet_col = True
+        forest004_mullein_col = True
+        forest004_stjohns_col = True
+        forest004_burdock_col = True
+        forest004_sage_col = True
+        forest004_hyssop_col = True
+        forest004_calendula_col = True
+        forest004_rosemary_col = True
+        forest004_licorice_col = True
         
         F5Harvest = False
-        forest005_first_herb_col = True
-        forest005_second_herb_col = True
-        forest005_third_herb_col = True
-        forest005_fourth_herb_col = True
-        forest005_fifth_herb_col = True
-        forest005_sixth_herb_col = True
-        forest005_seventh_herb_col = True
-        forest005_eighth_herb_col = True
+        forest005_thistle_col = True
+        forest005_dandelion_col = True
+        forest005_blackberry_col = True
+        forest005_oak_col = True
+        forest005_garlic_col = True
+        forest005_mint_col = True
+        forest005_plantain_col = True
+        forest005_chamomile_col = True
+        forest005_violet_col = True
+        forest005_mullein_col = True
+        forest005_stjohns_col = True
+        forest005_burdock_col = True
+        forest005_laurel_col = True
+        forest005_calendula_col = True
+        forest005_rosemary_col = True
+        forest005_lemonbalm_col = True
+        forest005_licorice_col = True
+        forest005_crownflower_col = True
         
-        forest006_first_herb_col = True
-        forest006_second_herb_col = True
-        forest006_third_herb_col = True
-        forest006_fourth_herb_col = True
-        forest006_fifth_herb_col = True
-        forest006_sixth_herb_col = True
-        forest006_seventh_herb_col = True
-        forest006_eighth_herb_col = True
+        forest006_thistle_col = True
+        forest006_dandelion_col = True
+        forest006_oak_col = True
+        forest006_garlic_col = True
+        forest006_mint_col = True
+        forest006_oregano_col = True
+        forest006_parsley_col = True
+        forest006_redclover_col = True
+        forest006_burdock_col = True
+        forest006_calendula_col = True
+        forest006_rosemary_col = True
+        forest006_comfrey_col = True
+        forest006_crownflower_col = True
+        forest006_poppy_col = True
+        forest006_goldenseal_col = True
         
         F7Harvest = False
-        forest007_first_herb_col = True
-        forest007_second_herb_col = True
-        forest007_third_herb_col = True
-        forest007_fourth_herb_col = True
-        forest007_fifth_herb_col = True
-        forest007_sixth_herb_col = True
-        forest007_seventh_herb_col = True
-        forest007_eighth_herb_col = True
+        forest007_thistle_col = True
+        forest007_dandelion_col = True
+        forest007_blackberry_col = True
+        forest007_mint_col = True
+        forest007_oregano_col = True
+        forest007_parsley_col = True
+        forest007_violet_col = True
+        forest007_basil_col = True
+        forest007_stjohns_col = True
+        forest007_yellowdock_col = True
+        forest007_comfrey_col = True
+        forest007_lemonbalm_col = True
+        forest007_marshmarigold_col = True
+        forest007_goldenseal_col = True
         
         F8Harvest = False
-        forest008_first_herb_col = True
-        forest008_second_herb_col = True
-        forest008_third_herb_col = True
-        forest008_fourth_herb_col = True
-        forest008_fifth_herb_col = True
-        forest008_sixth_herb_col = True
-        forest008_seventh_herb_col = True
-        forest008_eighth_herb_col = True
+        forest008_thistle_col = True
+        forest008_dandelion_col = True
+        forest008_blackberry_col = True
+        forest008_oak_col = True
+        forest008_garlic_col = True
+        forest008_oregano_col = True
+        forest008_parsley_col = True
+        forest008_plantain_col = True
+        forest008_plantain2_col = True
+        forest008_violet_col = True
+        forest008_basil_col = True
+        forest008_stjohns_col = True
+        forest008_yellowdock_col = True
+        forest008_borage_col = True
+        forest008_lemonbalm_col = True
+        forest008_marshmarigold_col = True
         
         F9Harvest = False
-        forest009_first_herb_col = True
-        forest009_second_herb_col = True
-        forest009_third_herb_col = True
-        forest009_fourth_herb_col = True
-        forest009_fifth_herb_col = True
-        forest009_sixth_herb_col = True
-        forest009_seventh_herb_col = True
-        forest009_eighth_herb_col = True
+        forest009_thistle_col = True
+        forest009_dandelion_col = True
+        forest009_blackberry_col = True
+        forest009_violet_col = True
+        forest009_basil_col = True
+        forest009_stjohns_col = True
+        forest009_yellowdock_col = True
+        forest009_sage_col = True
+        forest009_laurel_col = True
+        forest009_hyssop_col = True
+        forest009_comfrey_col = True
+        forest009_lemonbalm_col = True
+        forest009_marshmarigold_col = True
+        forest009_marshmarigold2_col = True
+        forest009_goldenseal_col = True
     
 #    "All variables set."
     
@@ -287,43 +360,43 @@ label intro:
         "Yes":
             jump apothecary_shop
 
-
         "No":
-            "Get on with it, then."
+            "The cold air feels sharp as you breath it in, carrying the familiar scent of pine."
 
-
-    "The cold air felt sharp as Aeth breathed it in, carrying the familiar scent of pine."
+    "It has been several years since your last visit home, and much longer than that since you'd been here in this weather."
     
-    "It had been several years since their last visit home. And many more years than that since they'd seen it this time of year."
+    "The snow falls heavy here, and you wouldn't usually be visiting at this time of year. The roads become impassable, and you wouldn't be able to leave until spring."
     
-    "The snow fell heavy here, and usually one wouldn't want to risk getting stuck. This time, though, that wasn't a problem."
+    "But this time, that isn't a problem."
     
     show bg forest001
     show aeth neu at left
     
-    "They separated from the caravan before entering town, avoiding the main street."
+    "You branched off from the caravan before they rode into town, avoiding the main street."
     
-    "Given the circumstances, they didn't want to have to explain themselves to any friendly faces they might run into on the way."
+    "Given the circumstances, you don't want to have to explain yourself to any familiar faces you would run into going that way."
     
-    "In short time they arrived at their destination, pulled back their hood, and thought about what they would say."
+    "In short time you arrive at your destination, pull back your hood, and start thinking about what you're going to say."
     
-    "Waiting wouldn't make it any easier. They pushed open the heavy oak door, and in a breath called out"
+    "Waiting won't make it any easier. You take a deep breath as you push open the heavy oak door and call out"
     
     show bg kitchen
     
     aeth "Mother, I'm home. Are you there?"
     
-    "There was a brief shuffling sound from the back of the room. Aeth's eyes were still adjusting to the dim lighting when their mother appeared before them."
+    "You hear a brief shuffling sound from the back of the room. As your eyes are adjusting to the dim lighting, you see your mother come out to greet you."
     
     show kayen neu at right
     
     kayen "Aeth-- What are you doing back this time of year?"
     
-    "She looked disheveled, as if she'd just gotten out of bed. It was a bit too early for that, but seeing another figure move further in, Aeth realized they had interrupted."
+    "She looks disheveled, as if she'd just gotten out of bed. It is a bit too early for that, but seeing another figure move further in, you realize you've interrupted."
     
     aeth "Sorry to surprise you. Some... things happened. I decided to come home early."
     
-    "Aeth's body language was withdrawn, and their tone flat. Kayen's eyes narrowed as they inspected their child, then softened."
+    "You keep your arms in close, and the tone of your voice comes out more distant than you'd intended."
+    
+    "Kayen's eyes narrow as she takes a moment to inspect you. She had always been able to catch on quick, and her eyes soften."
     
     kayen "You know you are always welcome home. You've been traveling a long time, it's good to have a break once in a while."
     
@@ -331,29 +404,29 @@ label intro:
     
     kayen "And of course, she'd be horribly offended if you take too long to visit now that you're in town."
     
-    "She laughed heartily, and Aeth had to smile. Elaine, who was like a grandmother to them, could be exceedingly petty when she felt slighted."
+    "She laughs heartily, and you have to smile. Elaine, who was like a grandmother to you, could be exceedingly petty when she felt slighted."
     
     kayen "You should rest for today, though. Bring your stuff in, we'll get dinner ready. I'm sure you haven't been eating. XXX is over, we'll have a full table!"
     
-    "Aeth noded, and carried their things into one of the spare rooms."
+    "You nod and carry your things into one of the spare rooms."
     
     hide kayen neu
     
     show bg cellar
     
-    "Aeth put their bag on the floor and prepared for dinner."
+    "You dump your bag onto the floor and start preparing for dinner."
     
     hide aeth neu
     
     show bg black
     
-    "Aeth went to sleep."
+    "You lay down as sleep takes you, exhausted from your long journey."
     
     show bg forest002
     
-    "The next day, they went into town."
+    "The next day, you decide to head into town."
     
-    "As they approached their master's shop, they saw a small child hiding around the corner."
+    "As you approach your master's shop, you see a small child hiding around the corner."
     
     show lufte neu at right
     
@@ -363,25 +436,25 @@ label intro:
     
     aeth "Do you need any help?"
     
-    "The child seemed surprised to hear a voice behind them, and jumped slightly. Aeth stared blankly at them, waiting."
+    "The child seems surprised to hear a voice behind them, and jumps slightly. You stare blankly at them, waiting for a response."
     
-    "The child backed away slowly before turning and running around a corner."
+    "The child backs away slowly and then turns to run around a corner."
     
     hide lufte neu
     
-    "Aeth stared after them for a moment, then went about their business."
+    "You stare after them for a moment, considering if you need to go after them. But it doesn't look like they were hurting anything, so you go about your business."
     
     show aeth neu at left
     
     show bg apothecary
     
-    "When they entered the shop, Master Elaine was busily preparing the morning's medication."
+    "When you enter the shop, Master Elaine is busily preparing the morning's medication."
     
     show elaine neu at right
     
     elaine "Aeth! My dear, you are certainly home early, aren't you? Well, I'm sure there's a long explanation for that, but we simply don't have the time."
     
-    "She hurriedly shoved an assortment of bottles and tools on the counter, and pushed them in Aeth's direction."
+    "She hurriedly shoves an assortment of bottles and tools on the counter, and pushes them in your direction."
     
     elaine "I'll need you to prepare some dried X, a Y tincture, and get the Z started."
     
@@ -389,23 +462,23 @@ label intro:
     
     show bg forest002
     
-    "Faster than they could register, the morning was over. Elaine sent them out to pick up supplies and deliver medications in town."
+    "Faster than you can register, the morning is over. Elaine sent you out to pick up supplies and deliver medications in town."
     
-    "They started with deliveries, so that they only had to carry supplies on the way back."
+    "You started with deliveries, figuring that you'd then only have to carry supplies on the way home."
     
-    "Aeth approached a small house on the outskirts of town."
+    "You approach a small house on the outskirts of town."
     
     aeth "Hm, this seems to be the right place."
     
-    "Supposedly a young man lived here named Orthrus, and they were delivering medication for his younger sister."
+    "Supposedly a young man lives here named Orthrus, and you are supposed to deliver medication for his younger sister."
     
-    "As they approached the door, a voice stopped them."
+    "As you approached the door, a voice stops you."
     
     show orthrus neuR at left behind aeth
     
     "Young Man" "You have business with me?"
     
-    "He leaned over from behind Aeth, uncomfortably close, though they never heard him approach. Their body instinctively tensed."
+    "He leans over you from behind, inches away from your ear. You did't hear him approach, and the sudden closeness causes you to instinctively tense up."
     
     show orthrus neu  at left behind aeth
     
@@ -413,47 +486,47 @@ label intro:
     
     show orthrus neu at center
     
-    "He stepped back, and their muscles eased back to their previous position."
+    "He steps back, and you're able to relax your muscles."
     
     orthrus "Ah, that'll be for me. Thanks for dropping them by, we'd just about run out."
     
-    "A wide grin spread across his face as he reached out and took the bag."
+    "A wide grin spreads across his face as he reaches out and takes the bag."
     
     orthrus "You're Aeth, yeah? Kayen's kid? We met a few times when we were younger, dunno if you remember me?"
     
-    "Orthrus's family ran a merchant caravan, and he and his sister often traveled with them away from town."
+    "You remember that Orthrus's family ran a merchant caravan, and he and his sister often traveled with them away from town."
     
-    "By the time they disappeared, Aeth had already left on their journey, and because of this they hadn't had much interaction with either sibling."
+    "By the time they disappeared, you had already left on your journey, and because of this you haven't had much interaction with either sibling."
     
-    "It was possible they'd seen each other in passing, but Aeth would have a hard time picking his face out of a crowd."
+    "It was possible they'd seen each other in passing, but you would have a hard time picking his face out of a crowd."
     
-    "They'd learned that being so direct was considered rude by most, and remained silent unsure of what to say in response."
+    "You've learned that being so direct was considered rude by most, though, and remain silent unsure of what to say in response."
     
     orthrus "Er, it was a long time ago in any case. If you're helping out at Elaine's shop I'm sure we'll see more of each other from now on."
     
     orthrus "We'll just call this our first meeting then-- thanks in advanced for your hard work! These meds make a life a lot easier."
     
-    "Aeth inclined their head towards Orthrus in a greeting and replied"
+    "You tip your head towards Orthrus in a greeting and reply"
     
     aeth "Thank you for your patronage."
     
-    "As they turned to leave, Orthrus waved cheekily at them from behind."
+    "As you turned to leave, Orthrus waves you off cheekily."
     
     hide orthrus neu
     
-    "That ended up being a bit more stressful than they'd anticipated, but Aeth figured it worked out okay."
+    "That ended up being a bit more stressful than you'd anticipated, but you figure it worked out okay."
     
-    "The next stop on their agenda was the general store. They needed to pick up some more glass bottles, and a few other essentials."
+    "The next stop on your agenda is the general store. You need to pick up some more glass bottles, as well as a few other essentials."
     
     show bg itemshop
     
-    "Aeth walked in and was greeted by the shopkeeper, Harte."
+    "You walk in and are greeted by the shopkeeper, Harte."
     
     show harte neu at right
     
     harte "Aeth! I heard you were back in town early. Elaine got you running errands already?"
     
-    "Aeth gave a small smile as they replied."
+    "You give a small smile as they replied."
     
     aeth "You know Master Elaine. She goes at her own pace, and anyone around will get dragged right along."
     
@@ -463,7 +536,7 @@ label intro:
     
     harte "I'm on it!"
     
-    "Harte disappeared into the back room for a moment, then came out with a large, heavy box. They placed it on the counter, then added a few extra items from the supply shelf."
+    "Harte disappears into the back room for a moment, then comes out with a large, heavy box. She places it on the counter, then adds a few extra items from the supply shelf."
     
     harte "This should get you set up. You okay to carry all that?"
     
@@ -476,17 +549,17 @@ label intro:
     hide harte neu
     show bg forest002
     
-    "Aeth left the shop and made their way towards the last errand."
+    "You leave the shop and make your way toward the last errand."
     
-    "They took the main street in the center of town and ended up in front of a shop with a sign that wasn't there last time they were here."
+    "You take the main street through the center of town and end up in front of a shop with a sign that wasn't there last time you were here."
     
-    "It shown the Healer's crest, just like their master's shop. Aeth stepped in and took a look around."
+    "It shows the Healer's crest, just like your master's shop. You step in and take a look around."
     
     show bg apothecary
     
-    "The front of the shop had a more clinical feel than Master Elaine's-- it was missing the racks of dried herbs and general clutter."
+    "The front of the shop has a more clinical feel than Master Elaine's-- it is missing the racks of dried herbs and general clutter."
     
-    "Instead, there were more seats, and a curtain near the back of the room. Not long after the door shut behind them a familiar figure stepped out from behind it."
+    "Instead, there are more seats, and a curtain near the back of the room. Not long after the door shut behind you a familiar figure steps out from behind the counter."
     
     show mikael neu at center
     
@@ -502,7 +575,7 @@ label intro:
     
     mikael "Master Elaine has been wanting to tell the Healer's in Harvest City to get off her back for a while, haha."
     
-    "His face emanated warmth, and Aeth couldn't help but smile at the image of Master Elaine chasing the powerful guild members out of her shop."
+    "His face emanates warmth, and you can't help but smile at the image of Master Elaine chasing the powerful guild members out of her shop."
     
     mikael "Ahem, in any case, I'm guessing Master Elaine has you running her errands?"
     

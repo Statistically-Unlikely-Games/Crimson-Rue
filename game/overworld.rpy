@@ -29,11 +29,11 @@ label overworld01:
     show screen overworld
     
     if time_cnt > 5:
-        call timecount2
+        call timecount_nomsg
         hide screen basic_overlay
         hide screen overworld01
         jump return_home
-    call timecount
+    call timecount_msg
     
     "The town where I live."
     jump overworld01_loop

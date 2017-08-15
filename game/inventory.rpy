@@ -243,26 +243,6 @@ screen inventory_craftdecoctions(first_inventory, second_inventory=False, trade_
                 textbutton "Close" action Hide("inventory_craftdecoctions")
             use crafting_decoctions(first_inventory)
             
-screen inventory_craftdriedherbs(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
-    zorder 3
-    default crafting_screen = True
-    tag menu
-    modal True 
-    
-    frame:
-        style_group "invstyle"
-        hbox:
-            spacing 25
-            vbox:
-                label first_inventory.name                   
-                use money(first_inventory, second_inventory, bank_mode) 
-                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
-                use view_nav(first_inventory)
-                use sort_nav(first_inventory)
-                use craft_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craftdriedherbs")
-            use crafting_driedherbs(first_inventory)
-            
 screen inventory_craftherboils(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     zorder 3
     default crafting_screen = True
@@ -343,26 +323,6 @@ screen inventory_craftpoultices(first_inventory, second_inventory=False, trade_m
                 textbutton "Close" action Hide("inventory_craftpoultices")
             use crafting_poultices(first_inventory)
             
-screen inventory_craftpowderedherbs(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
-    zorder 3
-    default crafting_screen = True
-    tag menu
-    modal True 
-    
-    frame:
-        style_group "invstyle"
-        hbox:
-            spacing 25
-            vbox:
-                label first_inventory.name                   
-                use money(first_inventory, second_inventory, bank_mode) 
-                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
-                use view_nav(first_inventory)
-                use sort_nav(first_inventory)
-                use craft_nav(first_inventory)
-                textbutton "Close" action Hide("inventory_craftpowderedherbs")
-            use crafting_powderedherbs(first_inventory)
-            
 screen inventory_craftsalves(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     zorder 3
     default crafting_screen = True
@@ -402,6 +362,46 @@ screen inventory_crafttinctures(first_inventory, second_inventory=False, trade_m
                 use craft_nav(first_inventory)
                 textbutton "Close" action Hide("inventory_crafttinctures")
             use crafting_tinctures(first_inventory)
+            
+screen inventory_mortar(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
+    default crafting_screen = True
+    tag menu
+    modal True 
+    
+    frame:
+        style_group "invstyle"
+        hbox:
+            spacing 25
+            vbox:
+                label first_inventory.name                   
+                use money(first_inventory, second_inventory, bank_mode) 
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
+                use view_nav(first_inventory)
+                use sort_nav(first_inventory)
+                use empty_nav(first_inventory)
+                textbutton "Close" action Hide("inventory_mortar")
+            use crafting_mortar(first_inventory)
+            
+screen inventory_rack(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
+    zorder 3
+    default crafting_screen = True
+    tag menu
+    modal True 
+    
+    frame:
+        style_group "invstyle"
+        hbox:
+            spacing 25
+            vbox:
+                label first_inventory.name                   
+                use money(first_inventory, second_inventory, bank_mode) 
+                use craftinv_view(first_inventory, second_inventory, trade_mode)                          
+                use view_nav(first_inventory)
+                use sort_nav(first_inventory)
+                use empty_nav(first_inventory)
+                textbutton "Close" action Hide("inventory_rack")
+            use crafting_rack(first_inventory)
 
 screen inventory_kitchen(first_inventory, second_inventory=False, trade_mode=False, bank_mode=False):
     zorder 3
@@ -419,6 +419,7 @@ screen inventory_kitchen(first_inventory, second_inventory=False, trade_mode=Fal
                 use craftinv_view(first_inventory, second_inventory, trade_mode)                          
                 use view_nav(first_inventory)
                 use sort_nav(first_inventory)
+                use empty_nav(first_inventory)
                 textbutton "Close" action Hide("inventory_kitchen")
             use crafting_kitchen(first_inventory)
                 
@@ -477,7 +478,7 @@ screen craftinv_view(inventory, second_inventory=False, trade_mode=False):
     zorder 3
     side "c r":
         style_group "invstyle"
-        area (0, 0, 450, 480) #Controls height of crafting screen
+        area (0, 0, 450, 500) #Controls height of crafting screen
         vpgrid id ("vp"+inventory.name):
             draggable True   
             mousewheel True
@@ -689,41 +690,6 @@ screen crafting_decoctions(inventory):
                                     text "x" + str(i[1])             
             vbar value YScrollValue("decoctions_list") 
             
-screen crafting_driedherbs(inventory):
-    vbox:            
-        label "Recipes"
-        hbox:
-            xmaximum 800 xminimum 800 xfill True         
-            text "Name" xalign 0.6
-            text "Ingredients" xalign 0.2
-        side "c r":
-            area (0,0,1280,530)
-            viewport id "driedherbs_list":           
-                draggable True
-                mousewheel True
-                vbox:
-                    for item in driedherbs_list:
-                        hbox:                            
-                            first_spacing 25 spacing 10
-                            hbox:
-                                xmaximum 400 xminimum 400 xfill True box_wrap True
-                                if item.icon:
-                                    add im.FactorScale(item.icon, 0.33)
-                                if inventory.check_recipe(item):
-                                    textbutton item.name action Function(inventory.craft,item)
-                                else:                                                                   
-                                    text item.name
-                            for i in item.recipe: 
-                                if i[0].icon:
-                                    add im.FactorScale(i[0].icon, 0.33)
-                                else:
-                                    text i[0].name
-                                if inventory.qty(i[0]) >= i[1]:
-                                    text "x" + str(i[1]) bold True
-                                else:
-                                    text "x" + str(i[1])             
-            vbar value YScrollValue("driedherbs_list") 
-            
 screen crafting_herboil(inventory):
     vbox:            
         label "Recipes"
@@ -864,41 +830,6 @@ screen crafting_poultices(inventory):
                                     text "x" + str(i[1])             
             vbar value YScrollValue("poultices_list") 
             
-screen crafting_powderedherbs(inventory):
-    vbox:            
-        label "Recipes"
-        hbox:
-            xmaximum 800 xminimum 800 xfill True         
-            text "Name" xalign 0.6
-            text "Ingredients" xalign 0.2
-        side "c r":
-            area (0,0,1280,530)
-            viewport id "powderedherbs_list":           
-                draggable True
-                mousewheel True
-                vbox:
-                    for item in powderedherbs_list:
-                        hbox:                            
-                            first_spacing 25 spacing 10
-                            hbox:
-                                xmaximum 400 xminimum 400 xfill True box_wrap True
-                                if item.icon:
-                                    add im.FactorScale(item.icon, 0.33)
-                                if inventory.check_recipe(item):
-                                    textbutton item.name action Function(inventory.craft,item)
-                                else:                                                                   
-                                    text item.name
-                            for i in item.recipe: 
-                                if i[0].icon:
-                                    add im.FactorScale(i[0].icon, 0.33)
-                                else:
-                                    text i[0].name
-                                if inventory.qty(i[0]) >= i[1]:
-                                    text "x" + str(i[1]) bold True
-                                else:
-                                    text "x" + str(i[1])             
-            vbar value YScrollValue("powderedherbs_list") 
-            
 screen crafting_salves(inventory):
     vbox:            
         label "Recipes"
@@ -968,6 +899,76 @@ screen crafting_tinctures(inventory):
                                 else:
                                     text "x" + str(i[1])             
             vbar value YScrollValue("tinctures_list") 
+            
+screen crafting_mortar(inventory):
+    vbox:            
+        label "Recipes"
+        hbox:
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2
+        side "c r":
+            area (0,0,1280,530)
+            viewport id "powderedherbs_list":           
+                draggable True
+                mousewheel True
+                vbox:
+                    for item in powderedherbs_list:
+                        hbox:                            
+                            first_spacing 25 spacing 10
+                            hbox:
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
+                                if item.icon:
+                                    add im.FactorScale(item.icon, 0.33)
+                                if inventory.check_recipe(item):
+                                    textbutton item.name action Function(inventory.craft,item)
+                                else:                                                                   
+                                    text item.name
+                            for i in item.recipe: 
+                                if i[0].icon:
+                                    add im.FactorScale(i[0].icon, 0.33)
+                                else:
+                                    text i[0].name
+                                if inventory.qty(i[0]) >= i[1]:
+                                    text "x" + str(i[1]) bold True
+                                else:
+                                    text "x" + str(i[1])             
+            vbar value YScrollValue("powderedherbs_list") 
+            
+screen crafting_rack(inventory):
+    vbox:            
+        label "Recipes"
+        hbox:
+            xmaximum 800 xminimum 800 xfill True         
+            text "Name" xalign 0.6
+            text "Ingredients" xalign 0.2
+        side "c r":
+            area (0,0,1280,530)
+            viewport id "driedherbs_list":           
+                draggable True
+                mousewheel True
+                vbox:
+                    for item in driedherbs_list:
+                        hbox:                            
+                            first_spacing 25 spacing 10
+                            hbox:
+                                xmaximum 400 xminimum 400 xfill True box_wrap True
+                                if item.icon:
+                                    add im.FactorScale(item.icon, 0.33)
+                                if inventory.check_recipe(item):
+                                    textbutton item.name action Function(inventory.craft,item)
+                                else:                                                                   
+                                    text item.name
+                            for i in item.recipe: 
+                                if i[0].icon:
+                                    add im.FactorScale(i[0].icon, 0.33)
+                                else:
+                                    text i[0].name
+                                if inventory.qty(i[0]) >= i[1]:
+                                    text "x" + str(i[1]) bold True
+                                else:
+                                    text "x" + str(i[1])             
+            vbar value YScrollValue("driedherbs_list") 
 
 screen crafting_kitchen(inventory):
     vbox:            
@@ -1024,9 +1025,8 @@ screen sort_nav(inventory):
             
 screen craft_nav(inventory):
     hbox:
-        xalign 1 #1.53
+        xalign 1.02
         xmaximum 250 xminimum 250 xfill True
-        textbutton "Dried Herbs" action Show("inventory_craftdriedherbs", first_inventory=pc_inv)
         textbutton "Herbal Oils" action Show("inventory_craftherboils", first_inventory=pc_inv)
         textbutton "Pastes" action Show("inventory_craftpastes", first_inventory=pc_inv)
         textbutton "Tinctures" action Show("inventory_crafttinctures", first_inventory=pc_inv)
@@ -1034,9 +1034,14 @@ screen craft_nav(inventory):
         textbutton "Creams" action Show("inventory_craftcreams", first_inventory=pc_inv) 
         textbutton "Infusions" action Show("inventory_craftinfusions", first_inventory=pc_inv)
         textbutton "Poultices" action Show("inventory_craftpoultices", first_inventory=pc_inv)
-        textbutton "Powdered Herbs" action Show("inventory_craftpowderedherbs", first_inventory=pc_inv)
         textbutton "Salves" action Show("inventory_craftsalves", first_inventory=pc_inv)
         textbutton "Decoctions" action Show("inventory_craftdecoctions", first_inventory=pc_inv)
+        
+screen empty_nav(inventory):
+    hbox:
+        xalign 1.02
+        xmaximum 250 xminimum 250 xfill True
+        textbutton "            "
 
 screen inventory_popup(message):
     zorder 100

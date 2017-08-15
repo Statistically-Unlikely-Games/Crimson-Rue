@@ -1,84 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'gui/Calendula Decoction_notification.png'>:
-  File "game/apothecary.rpy", line 30, in script
-    $ renpy.pause()
-  File "game/apothecary.rpy", line 30, in <module>
-    $ renpy.pause()
-IOError: Couldn't find file 'gui/Calendula Decoction_notification.png'.
+While running game code:
+  File "game/script.rpy", line 283, in script call
+    call define_items
+  File "game/define_items.rpy", line 340, in script
+    $ decoctions_list = [decoction001,decoction002,decoction003,decoction004,decoction005,decoction006,decoction007,decoction008,decoction009,decoction010,decoction011,decoction012,decoction013,decoction014,decoction015,decoction016,decoction017,decoction018,decoction019,decoction020,decoction021,decoction022,decoction023,decoction024,decoction025,decoction026,decoction027,decoction028,decoction029,decoction030]
+  File "game/define_items.rpy", line 340, in <module>
+    $ decoctions_list = [decoction001,decoction002,decoction003,decoction004,decoction005,decoction006,decoction007,decoction008,decoction009,decoction010,decoction011,decoction012,decoction013,decoction014,decoction015,decoction016,decoction017,decoction018,decoction019,decoction020,decoction021,decoction022,decoction023,decoction024,decoction025,decoction026,decoction027,decoction028,decoction029,decoction030]
+NameError: name 'decoction029' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/apothecary.rpy", line 30, in script
-    $ renpy.pause()
+  File "game/script.rpy", line 283, in script call
+    call define_items
+  File "game/define_items.rpy", line 340, in script
+    $ decoctions_list = [decoction001,decoction002,decoction003,decoction004,decoction005,decoction006,decoction007,decoction008,decoction009,decoction010,decoction011,decoction012,decoction013,decoction014,decoction015,decoction016,decoction017,decoction018,decoction019,decoction020,decoction021,decoction022,decoction023,decoction024,decoction025,decoction026,decoction027,decoction028,decoction029,decoction030]
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/apothecary.rpy", line 30, in <module>
-    $ renpy.pause()
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\exports.py", line 1273, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2845, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\core.py", line 1921, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 416, in renpy.display.render.render_screen (gen\renpy.display.render.c:6687)
-    rv = render(root, width, height, 0, 0)
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2859)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 685, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3321)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2859)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 685, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3321)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2859)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 685, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3321)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2859)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 623, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3321)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2859)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 685, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3321)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2859)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 707, in render
-    rv = super(Button, self).render(width, height, st, at)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 1073, in render
-    st, at)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3321)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2859)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\im.py", line 473, in render
-    im = cache.get(self)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\im.py", line 200, in get
-    surf = image.load()
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\display\im.py", line 524, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\loader.py", line 543, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'gui/Calendula Decoction_notification.png'.
+  File "game/define_items.rpy", line 340, in <module>
+    $ decoctions_list = [decoction001,decoction002,decoction003,decoction004,decoction005,decoction006,decoction007,decoction008,decoction009,decoction010,decoction011,decoction012,decoction013,decoction014,decoction015,decoction016,decoction017,decoction018,decoction019,decoction020,decoction021,decoction022,decoction023,decoction024,decoction025,decoction026,decoction027,decoction028,decoction029,decoction030]
+NameError: name 'decoction029' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029
