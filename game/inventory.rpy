@@ -143,6 +143,8 @@ init python:
             renpy.show_screen("inventory_popup", message=message)
 
     transfer_amount = 0
+    
+    
                 
 screen tooltip(item=False,seller=false):      
     zorder 5

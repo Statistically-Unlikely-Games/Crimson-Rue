@@ -361,42 +361,42 @@ label intro:
             jump apothecary_shop
 
         "No":
-            "The cold air feels sharp as you breath it in, carrying the familiar scent of pine."
+            "The cold air feels sharp as I breath it in, carrying the familiar scent of pine."
 
-    "It has been several years since your last visit home, and much longer than that since you'd been here in this weather."
+    "It has been several years since my last visit home, and much longer than that since I'd been here in this weather."
     
-    "The snow falls heavy here, and you wouldn't usually be visiting at this time of year. The roads become impassable, and you wouldn't be able to leave until spring."
+    "The snow falls heavy here, and I wouldn't usually be visiting at this time of year. The roads become impassable, so I wouldn't be able to leave until spring."
     
     "But this time, that isn't a problem."
     
     show bg forest001
     show aeth neu at left
     
-    "You branched off from the caravan before they rode into town, avoiding the main street."
+    "I branch off from the caravan before they ride into town, avoiding the main street."
     
-    "Given the circumstances, you don't want to have to explain yourself to any familiar faces you would run into going that way."
+    "Given the circumstances, I don't want to have to explain myself to any familiar faces I would run into going that way."
     
-    "In short time you arrive at your destination, pull back your hood, and start thinking about what you're going to say."
+    "In short time I arrive at my destination, pull back my hood, and start thinking about what I'm going to say."
     
-    "Waiting won't make it any easier. You take a deep breath as you push open the heavy oak door and call out"
+    "Waiting won't make it any easier. I take a deep breath as I push open the heavy oak door and call out"
     
     show bg kitchen
     
     aeth "Mother, I'm home. Are you there?"
     
-    "You hear a brief shuffling sound from the back of the room. As your eyes are adjusting to the dim lighting, you see your mother come out to greet you."
+    "I hear a brief shuffling sound from the back of the room. As my eyes are adjusting to the dim lighting, I see my mother come out to greet me."
     
     show kayen neu at right
     
     kayen "Aeth-- What are you doing back this time of year?"
     
-    "She looks disheveled, as if she'd just gotten out of bed. It is a bit too early for that, but seeing another figure move further in, you realize you've interrupted."
+    "She looks disheveled, as if she'd just gotten out of bed. It is a bit too early for that, but seeing another figure move further in, I realize I've interrupted."
     
     aeth "Sorry to surprise you. Some... things happened. I decided to come home early."
     
-    "You keep your arms in close, and the tone of your voice comes out more distant than you'd intended."
+    "I keep my arms in close, and the tone of my voice comes out more distant than I'd intended."
     
-    "Kayen's eyes narrow as she takes a moment to inspect you. She had always been able to catch on quick, and her eyes soften."
+    "Kayen's eyes narrow as she takes a moment to inspect me. She had always been able to catch on quick, and her eyes soften."
     
     kayen "You know you are always welcome home. You've been traveling a long time, it's good to have a break once in a while."
     
@@ -404,29 +404,29 @@ label intro:
     
     kayen "And of course, she'd be horribly offended if you take too long to visit now that you're in town."
     
-    "She laughs heartily, and you have to smile. Elaine, who was like a grandmother to you, could be exceedingly petty when she felt slighted."
+    "She laughs heartily, and I have to smile. Elaine, who was like a grandmother to me, could be exceedingly petty when she felt slighted."
     
     kayen "You should rest for today, though. Bring your stuff in, we'll get dinner ready. I'm sure you haven't been eating. XXX is over, we'll have a full table!"
     
-    "You nod and carry your things into one of the spare rooms."
+    "I nod and carry my things into one of the spare rooms."
     
     hide kayen neu
     
     show bg cellar
     
-    "You dump your bag onto the floor and start preparing for dinner."
+    "I dump my bag onto the floor and start preparing for dinner."
     
     hide aeth neu
     
     show bg black
     
-    "You lay down as sleep takes you, exhausted from your long journey."
+    "I lay down as sleep takes me, exhausted from my long journey."
     
     show bg forest002
     
-    "The next day, you decide to head into town."
+    "The next day, I decide to head into town."
     
-    "As you approach your master's shop, you see a small child hiding around the corner."
+    "As I approach my master's shop, I see a small child hiding around the corner."
     
     show lufte neu at right
     
@@ -436,25 +436,25 @@ label intro:
     
     aeth "Do you need any help?"
     
-    "The child seems surprised to hear a voice behind them, and jumps slightly. You stare blankly at them, waiting for a response."
+    "The child seems surprised to hear a voice behind them, and jumps slightly. I stare blankly at them, waiting for a response."
     
     "The child backs away slowly and then turns to run around a corner."
     
     hide lufte neu
     
-    "You stare after them for a moment, considering if you need to go after them. But it doesn't look like they were hurting anything, so you go about your business."
+    "I stare after them for a moment, considering if I need to go after them. But it doesn't look like they were hurting anything, so I go about my business."
     
     show aeth neu at left
     
     show bg apothecary
     
-    "When you enter the shop, Master Elaine is busily preparing the morning's medication."
+    "When I enter the shop, Master Elaine is busily preparing the morning's medication."
     
     show elaine neu at right
     
     elaine "Aeth! My dear, you are certainly home early, aren't you? Well, I'm sure there's a long explanation for that, but we simply don't have the time."
     
-    "She hurriedly shoves an assortment of bottles and tools on the counter, and pushes them in your direction."
+    "She hurriedly shoves an assortment of bottles and tools on the counter, and pushes them in my direction."
     
     elaine "I'll need you to prepare some dried X, a Y tincture, and get the Z started."
     
@@ -462,23 +462,23 @@ label intro:
     
     show bg forest002
     
-    "Faster than you can register, the morning is over. Elaine sent you out to pick up supplies and deliver medications in town."
+    "Faster than I can register, the morning is over. Elaine sent me out to pick up supplies and deliver medications in town."
     
-    "You started with deliveries, figuring that you'd then only have to carry supplies on the way home."
+    "I started with deliveries, figuring that I'd then only have to carry supplies on the way home."
     
-    "You approach a small house on the outskirts of town."
+    "I approach a small house on the outskirts of town."
     
     aeth "Hm, this seems to be the right place."
     
-    "Supposedly a young man lives here named Orthrus, and you are supposed to deliver medication for his younger sister."
+    "Supposedly a young man lives here named Orthrus, and I am supposed to deliver medication for his younger sister."
     
-    "As you approached the door, a voice stops you."
+    "As I approached the door, a voice stops me."
     
     show orthrus neuR at left behind aeth
     
     "Young Man" "You have business with me?"
     
-    "He leans over you from behind, inches away from your ear. You did't hear him approach, and the sudden closeness causes you to instinctively tense up."
+    "He leans over me from behind, inches away from my ear. I did't hear him approach, and the sudden closeness causes me to instinctively tense up."
     
     show orthrus neu  at left behind aeth
     
@@ -486,7 +486,7 @@ label intro:
     
     show orthrus neu at center
     
-    "He steps back, and you're able to relax your muscles."
+    "He steps back, and I'm able to relax my muscles."
     
     orthrus "Ah, that'll be for me. Thanks for dropping them by, we'd just about run out."
     
@@ -494,39 +494,39 @@ label intro:
     
     orthrus "You're Aeth, yeah? Kayen's kid? We met a few times when we were younger, dunno if you remember me?"
     
-    "You remember that Orthrus's family ran a merchant caravan, and he and his sister often traveled with them away from town."
+    "I remember that Orthrus's family ran a merchant caravan, and he and his sister often traveled with them away from town."
     
-    "By the time they disappeared, you had already left on your journey, and because of this you haven't had much interaction with either sibling."
+    "By the time they disappeared, I had already left on your journey, and because of this I haven't had much interaction with either sibling."
     
-    "It was possible they'd seen each other in passing, but you would have a hard time picking his face out of a crowd."
+    "It was possible they'd seen each other in passing, but I would have a hard time picking his face out of a crowd."
     
-    "You've learned that being so direct was considered rude by most, though, and remain silent unsure of what to say in response."
+    "I've learned that being so direct was considered rude by most, though, and remain silent unsure of what to say in response."
     
     orthrus "Er, it was a long time ago in any case. If you're helping out at Elaine's shop I'm sure we'll see more of each other from now on."
     
     orthrus "We'll just call this our first meeting then-- thanks in advanced for your hard work! These meds make a life a lot easier."
     
-    "You tip your head towards Orthrus in a greeting and reply"
+    "I tip my head towards Orthrus in a greeting and reply"
     
     aeth "Thank you for your patronage."
     
-    "As you turned to leave, Orthrus waves you off cheekily."
+    "As I turned to leave, Orthrus waves me off cheekily."
     
     hide orthrus neu
     
-    "That ended up being a bit more stressful than you'd anticipated, but you figure it worked out okay."
+    "That ended up being a bit more stressful than I'd anticipated, but I figure it worked out okay."
     
-    "The next stop on your agenda is the general store. You need to pick up some more glass bottles, as well as a few other essentials."
+    "The next stop on my agenda is the general store. I need to pick up some more glass bottles, as well as a few other essentials."
     
     show bg itemshop
     
-    "You walk in and are greeted by the shopkeeper, Harte."
+    "I walk in and are greeted by the shopkeeper, Harte."
     
     show harte neu at right
     
     harte "Aeth! I heard you were back in town early. Elaine got you running errands already?"
     
-    "You give a small smile as they replied."
+    "I give a small smile as they replied."
     
     aeth "You know Master Elaine. She goes at her own pace, and anyone around will get dragged right along."
     
@@ -549,17 +549,17 @@ label intro:
     hide harte neu
     show bg forest002
     
-    "You leave the shop and make your way toward the last errand."
+    "I leave the shop and make my way toward the last errand."
     
-    "You take the main street through the center of town and end up in front of a shop with a sign that wasn't there last time you were here."
+    "I take the main street through the center of town and end up in front of a shop with a sign that wasn't there last time I was here."
     
-    "It shows the Healer's crest, just like your master's shop. You step in and take a look around."
+    "It shows the Healer's crest, just like my master's shop. I step in and take a look around."
     
     show bg apothecary
     
     "The front of the shop has a more clinical feel than Master Elaine's-- it is missing the racks of dried herbs and general clutter."
     
-    "Instead, there are more seats, and a curtain near the back of the room. Not long after the door shut behind you a familiar figure steps out from behind the counter."
+    "Instead, there are more seats, and a curtain near the back of the room. Not long after the door shut behind me a familiar figure steps out from behind the counter."
     
     show mikael neu at center
     
@@ -575,7 +575,7 @@ label intro:
     
     mikael "Master Elaine has been wanting to tell the Healer's in Harvest City to get off her back for a while, haha."
     
-    "His face emanates warmth, and you can't help but smile at the image of Master Elaine chasing the powerful guild members out of her shop."
+    "His face emanates warmth, and I can't help but smile at the image of Master Elaine chasing the powerful guild members out of her shop."
     
     mikael "Ahem, in any case, I'm guessing Master Elaine has you running her errands?"
     
