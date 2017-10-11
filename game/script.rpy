@@ -361,54 +361,90 @@ label intro:
             jump apothecary_shop
 
         "No":
-            "The cold air feels sharp as I breath it in, carrying the familiar scent of pine."
-
-    "It has been several years since my last visit home, and much longer than that since I'd been here in this weather."
-    
-    "The snow falls heavy here, and I wouldn't usually be visiting at this time of year. The roads become impassable, so I wouldn't be able to leave until spring."
-    
-    "But this time, that isn't a problem."
+            aeth "..."
+            
+    "(The air is cold and I can smell pine trees.)"
     
     show bg forest001
     show aeth neu at left
     
-    "I branch off from the caravan before they ride into town, avoiding the main street."
+    "I step out into the crisp snow, removing my hood to get a better look."
+            
+    aeth "It's been so long since I was home."
     
-    "Given the circumstances, I don't want to have to explain myself to any familiar faces I would run into going that way."
+    "When I think about how long I've been away, I am even more thankful for the familiar sights and smells."
     
-    "In short time I arrive at my destination, pull back my hood, and start thinking about what I'm going to say."
+    "(I'm glad we were able to make it before the roads snowed in.)"
     
-    "Waiting won't make it any easier. I take a deep breath as I push open the heavy oak door and call out"
+    "Trader" "Aeth! Are you heading out already?"
+    
+    aeth "Yes, I'd like to greet my mother first, so I'm taking a shortcut through the forest."
+    
+    "The trader smiles at me, but it seems somewhat strained."
+    
+    "Trader" "I guess this is where we part ways then."
+    
+    "Trader" "You've been of such great help these past few years, I want you to know you're always welcome back if... things change."
+    
+    "(That is not going to happen, but I'm glad to hear he doesn't resent me.)"
+    
+    aeth "Thank you for your generosity. I hope your trip back to Harvest City goes safely."
+    
+    "Trader" "Aye. And you, too. I hope you're able to settle in quickly."
+    
+    "I exchange short farewells with the other caravan members before making my way home."
+    
+    "(There shouldn't be anyone I know along this path.)"
+    
+    "I still haven't decided how I will explain my early homecoming."
+    
+    "(I wonder if I can get away with not saying anything...)"
+    
+    "Most people are conditioned to go with the flow, so if you act like something is natural, "
+    
+    "they will often accept unusual behavior without questioning it."
+    
+    "I stop for a few minutes, thinking hard before I reach my decision."
+    
+    "(Right. I'll just go with that then.)"
+    
+    "(If anyone corners me I'll just be infuriatingly vague until they give up.)"
+    
+    "I arrive at my mother's house and push open the heavy oak door."
     
     show bg kitchen
     
     aeth "Mother, I'm home. Are you there?"
     
-    "I hear a brief shuffling sound from the back of the room. As my eyes are adjusting to the dim lighting, I see my mother come out to greet me."
+    "The room is dimly lit, and I hear a shuffling sound coming from the back."
+    
+    "My mother scrambles forward, looking disheveled."
     
     show kayen neu at right
     
     kayen "Aeth-- What are you doing back this time of year?"
     
-    "She looks disheveled, as if she'd just gotten out of bed. It is a bit too early for that, but seeing another figure move further in, I realize I've interrupted."
+    "I think I see the shadow of another person back there..."
     
-    aeth "Sorry to surprise you. Some... things happened. I decided to come home early."
+    "(Oops. I must have interrupted. Sorry, Mom.)"
     
-    "I keep my arms in close, and the tone of my voice comes out more distant than I'd intended."
+    aeth "I started missing home, so I came back early."
     
-    "Kayen's eyes narrow as she takes a moment to inspect me. She had always been able to catch on quick, and her eyes soften."
+    aeth "Would it be okay for me to stay over for a bit?"
     
-    kayen "You know you are always welcome home. You've been traveling a long time, it's good to have a break once in a while."
+    aeth "I plan on seeing Master Elaine tomorrow to see if she needs help around the shop."
     
-    kayen "Why don't you drop by Elaine's shop tomorrow? I'm sure you've gathered a lot more experience while you were out, and she's been flooded with customers recently."
+    "She stares at me, a bit too hard, before replying."
     
-    kayen "And of course, she'd be horribly offended if you take too long to visit now that you're in town."
+    kayen "Of course! You're always welcome."
     
-    "She laughs heartily, and I have to smile. Elaine, who was like a grandmother to me, could be exceedingly petty when she felt slighted."
+    kayen "You've been traveling for so long, it will be good to have you around again."
     
-    kayen "You should rest for today, though. Bring your stuff in, we'll get dinner ready. I'm sure you haven't been eating. XXX is over, we'll have a full table!"
+    "A wry grin spreads across her face."
     
-    "I nod and carry my things into one of the spare rooms."
+    kayen "Master Elaine has been so busy since Mikael started his own shop, I'm sure she'll work you to the bone."
+    
+    kayen "Alright, don't just stand in the doorway, bring your things in! You must be exhausted."
     
     hide kayen neu
     

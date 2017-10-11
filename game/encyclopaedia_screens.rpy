@@ -222,221 +222,295 @@ init python:
 
 screen book_shelf():
     tag encyclopedia
-    add Solid("#000000") alpha 0.75
-
-    frame:
-        xsize 200
-        ysize 40
-
-        background Solid("#d3d3d3")
-
-        text shelf.name size 32 xalign 0.5 yalign 0.5
-        xalign 0.5
-        ypos -1
+    modal True
+    
+    window:
+        style_prefix "encyclopaedia"
         
-    frame:
-        xsize 100
-        xalign 1.0
-        ypos 60
-        background Solid("#d3d3d3")
+        vbox:
+            spacing 10
 
-        button:
-            xfill True
-
-            idle_background Solid("#d3d3d3")
-            hover_background Solid( Color("#d3d3d3").tint(0.5) )
-            selected_background Solid( Color("#d3d3d3").shade(0.5) )
-
-            text "X" color "#000000" align (0.5, 0.5)
-
-            action [Hide("book_shelf"), Jump("apothecary_shop")]
-
-    vbox:
-        ypos 150
-        spacing 15
-
-        for book in shelf.list_books():
-            button:
+            frame:
+                style_prefix "encyclopaedia"
+                xfill True
+                # Flavour text to indicate which entry we're currently on
+                text shelf.name
+                
+            frame: 
+                style_prefix "encyclopaedia"
+                xfill True
+                
+                hbox: 
+                    xfill True
+                    # Percentage unlocked display
+                    text "Percentage completion goes here."
+                    
+            frame:
+                style_prefix "encyclopaedia"
                 xfill True
 
-                idle_background Solid("#d3d3d3")
-                hover_background Solid( Color("#d3d3d3").tint(0.5) )
-                selected_background Solid( Color("#d3d3d3").shade(0.5) )
+                vbox:
+                    text "Filters"
+                    hbox:
+                        xfill True
+                        # Filters
+                        textbutton _("All") action Function(callable=shelf.filter, key="")
+                        
+                        for i in shelf.available_filters:
+                            textbutton _(i) action Function(callable=shelf.filter, key=i)
+                            
+            hbox:
+                frame:
+                    style_prefix "encyclopaedia"
+                    yfill True
+                    xmaximum 600
+                    bottom_margin 10
 
-                text book.name xalign 0.5 yalign 0.5
+                    viewport:
+                        scrollbars "vertical"
+                        mousewheel True
+                        draggable True
+                        vbox:
+                            # Flavour text to display the current sorting mode.
+                            text "Sorting Type"
+                            for book in shelf.list_books():
+                                textbutton _(book.name) action Show("open_book", book=book) style "encyclopaedia_button" xfill True
+                                    
+                frame:
+                    style_prefix "encyclopaedia"
+                    xfill True
+                    bottom_margin 10
+                    yalign 0.95
 
-                action Show("open_book", book=book)
+                    vbox:
+                        # Buttons to sort entries.
+                        textbutton _("Sort by Number") style "encyclopaedia_button" xfill True
+                        textbutton _("Sort A to Z") action Function(callable=shelf.sort) style "encyclopaedia_button" xfill True
+                        textbutton _("Sort Z to A") action Function(callable=shelf.sort, method="dsc") style "encyclopaedia_button" xfill True
+                        textbutton _("Sort by Subject") style "encyclopaedia_button" xfill True
+                        textbutton _("Sort by Unread") style "encyclopaedia_button" xfill True
+                        textbutton _("Return") action [Hide("book_shelf"), Jump("apothecary_shop")] style "encyclopaedia_button" xfill True
 
-    hbox:
-        spacing 10
-        xalign 1.0
-        yalign 1.0
-
-        textbutton _("Sort") action Function(callable=shelf.sort, method="dsc")
-        textbutton _("R Sort") action Function(callable=shelf.sort)
-
-    hbox:
-        spacing 10
-        xalign 0.0
-        yalign 1.0
-
-        for i in shelf.available_filters:
-            textbutton _(i) action Function(callable=shelf.filter, key=i)
-
-        textbutton _("None") action Function(callable=shelf.filter, key="")
 
 screen open_book(book):
     tag encyclopedia
+    modal True
 
     default page = book.get_page()
     default toc = False
     default hide_text = False
+    
+    window: 
+        style_prefix "encyclopaedia"
+        
 
-    frame:
-        xfill True
-        background Solid("#d3d3d3")
-
-        text book.name xalign 0.5 yalign 0.5
-
-    frame:
-        xsize 500
-        xalign 0.5
-        ypos 60
-        background Solid("#d3d3d3")
-
-        text page.title xalign 0.5 yalign 0.5
-
-    frame:
-        xsize 100
-        xalign 1.0
-        ypos 60
-        background Solid("#d3d3d3")
-
-        button:
+        frame:
+            style_prefix "encyclopaedia"
             xfill True
 
-            idle_background Solid("#d3d3d3")
-            hover_background Solid( Color("#d3d3d3").tint(0.5) )
-            selected_background Solid( Color("#d3d3d3").shade(0.5) )
+            text book.name xalign 0.5 yalign 0.5
 
-            text "X" color "#000000" align (0.5, 0.5)
+        frame:
+            style_prefix "encyclopaedia"
+            xsize 500
+            xalign 0.5
+            ypos 65
+
+            text page.title xalign 0.5 yalign 0.5
+
+        button:
+            xsize 200
+            xalign 0.994
+            ysize 49
+            ypos 71
+
+            text "Close" align (0.5, 0.5)
 
             action Show("book_shelf")
 
-    hbox:
-        ysize 40
-        spacing 12
-        yalign 0.98
+        hbox:
+            
+            spacing 12
+            yalign 0.98
 
-        button:
-            xsize config.screen_width / 3 - 6
+            button:
+                style_prefix "encyclopaedia"
+                xsize config.screen_width / 3 - 6
 
-            idle_background Solid("#d3d3d3")
-            hover_background Solid( Color("#d3d3d3").tint(0.5) )
-            selected_background Solid( Color("#d3d3d3").shade(0.5) )
-            insensitive_background Solid( Color("#d3d3d3").tint(1.0) )
+                text "Previous Page" align (0.5, 0.5)
 
-            text "<<" color "#000000" align (0.5, 0.5)
+                action PreviousPage(book)
 
-            action PreviousPage(book)
+            button:
+                style_prefix "encyclopaedia"
+                xsize config.screen_width / 3 - 6
 
-        button:
-            xsize config.screen_width / 3 - 6
+                text "Table of Content" align (0.5, 0.5)
 
-            idle_background Solid("#d3d3d3")
-            hover_background Solid( Color("#d3d3d3").tint(0.5) )
-            selected_background Solid( Color("#d3d3d3").shade(0.5) )
+                action SetScreenVariable("toc", True)
 
-            text "Table of Content" color "#000000" align (0.5, 0.5)
+            button:
+                style_prefix "encyclopaedia"
+                xsize config.screen_width / 3 - 6
 
-            action SetScreenVariable("toc", True)
+                text "Next Page" align (0.5, 0.5)
 
-        button:
-            xsize config.screen_width / 3 - 6
+                action NextPage(book)
 
-            idle_background Solid("#d3d3d3")
-            hover_background Solid( Color("#d3d3d3").tint(0.5) )
-            selected_background Solid( Color("#d3d3d3").shade(0.5) )
-            insensitive_background Solid( Color("#d3d3d3").tint(0.95) )
-
-            text ">>" color "#000000" align (0.5, 0.5)
-
-            action NextPage(book)
-
-    frame:
-        xfill True
-        ysize 520
-
-        yalign 0.64
-
-        if page.image:
-            background page.image
-        else:
-            background Solid("#000000")
-
-        button:
-            xsize config.screen_width - 280
+        frame:
+            style_prefix "encyclopaedia"
+            xfill True
             ysize 520
 
-            background Solid("#00000000")
+            yalign 0.64
 
-            action ToggleScreenVariable("hide_text", true_value=True, false_value=False)
+            if page.image:
+                background page.image
+            else:
+                background Solid("#000000")
 
-        if not hide_text:
-            frame:
-                xsize 350
+            button:
+                xsize config.screen_width - 280
                 ysize 520
-                xalign 1.0
-                xoffset 4
-                ypos -5
 
-                background Solid("#00000050")
+                background Solid("#00000000")
+
+                action ToggleScreenVariable("hide_text", true_value=True, false_value=False)
+
+            if not hide_text:
+                frame:
+                    style_prefix "encyclopaedia"
+                    xsize 356
+                    ysize 528
+                    xalign 1.0
+                    xoffset 16
+                    ypos -16
+
+                    background Solid("#00000050")
+
+                    viewport:
+                        draggable True
+                        mousewheel True
+
+                        area (0, 0, 350, 515)
+
+                        text page.text color "#ffffff"
+
+        if toc:
+            frame:
+                style_prefix "encyclopaedia"
+                xsize 500
+                ysize 650
+
+                xalign 0.5
+                yalign 0.5
+
+                background Solid("#000000")
+
+                text "Table of Contents" xalign 0.5 ypos 10
+                button:
+                    xysize(35, 35)
+                    align (1.0, 0.012)
+
+                    text "X" xalign 0.5 yalign 0.5
+
+                    action SetScreenVariable("toc", False)
 
                 viewport:
                     draggable True
                     mousewheel True
 
-                    area (0, 0, 350, 515)
+                    area (0, 50, 500, 600)
 
-                    text page.text color "#ffffff"
+                    vbox:
+                        for i in book.get_toc():
+                            button:
+                                xfill True
+                                ysize 50
 
-    if toc:
-        frame:
-            xsize 500
-            ysize 650
+                                idle_background Solid("#d3d3d3")
+                                hover_background Solid( Color("#d3d3d3").tint(0.5) )
+                                selected_background Solid( Color("#d3d3d3").shade(0.5) )
 
-            xalign 0.5
-            yalign 0.5
+                                text i.title xmaximum 380 xalign 0.1 yalign 0.5
+                                text str(i.page_no) xalign 0.95 yalign 0.5
 
-            background Solid("#000000")
+                                selected (i.page_no == page.page_no)
+                                action ShowPage(book, i.page_no)
+                            
+                            
+                            
+                            
+                            
+########################
+# Encyclopaedia Styles
+########################
+style encyclopaedia_window is default:
+    background color_enc_bg
+    xsize config.screen_width
+    ysize config.screen_height
+    xfill True
+    yfill True
 
-            text "Table of Contents" xalign 0.5 ypos 10
-            button:
-                xysize(35, 35)
-                align (1.0, 0.012)
+style encyclopaedia_frame is default:
+    background color_enc_frame
+    size 16
+    padding (8, 8)
+    xmargin 8
+    top_margin 8
 
-                text "X" xalign 0.5 yalign 0.5
+style encyclopaedia_scrollbar is scrollbar:
+    base_bar Frame(Solid(color_scroll_empty), gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame(Solid(color_scroll_bar), gui.scrollbar_borders, tile=gui.scrollbar_tile)
 
-                action SetScreenVariable("toc", False)
+style encyclopaedia_vscrollbar is vscrollbar:
+    base_bar Frame(Solid(color_scroll_empty), gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame(Solid(color_scroll_bar), gui.scrollbar_borders, tile=gui.scrollbar_tile)
 
-            viewport:
-                draggable True
-                mousewheel True
+style encyclopaedia_button:
+    background color_enc_button
+    hover_background color_scroll_bar
+    insensitive_background color_alt_frame
 
-                area (0, 50, 500, 600)
+style encyclopaedia_button_text:
+    color color_hover_text
+    idle_color color_enc_text
+    insensitive_color color_alt_text
 
-                vbox:
-                    for i in book.get_toc():
-                        button:
-                            xfill True
-                            ysize 50
+style encyclopaedia_entry_button is encyclopaedia_button:
+    xfill True
 
-                            idle_background Solid("#d3d3d3")
-                            hover_background Solid( Color("#d3d3d3").tint(0.5) )
-                            selected_background Solid( Color("#d3d3d3").shade(0.5) )
+style encyclopaedia_entry_button_text is encyclopaedia_button_text
+                            
+                            
+                            
+                            
+                            
+############################
+# Encyclopaedia Misc Setup
+############################
+init -1500:
+    python:
+        from itertools import groupby
+        from operator import attrgetter
 
-                            text i.title xmaximum 380 xalign 0.1 yalign 0.5
-                            text str(i.page_no) xalign 0.95 yalign 0.5
+        half_screen_width = config.screen_width / 2
+        half_screen_height = config.screen_height / 2
+        img_screen_width = config.screen_width / 1.46
+        img_screen_height = config.screen_height / 1.575
+        img_text_width = config.screen_width / 3
+        img_text_height = config.screen_height / 1.575 #For some reason, this can only be an integer or it breaks
 
-                            selected (i.page_no == page.page_no)
-                            action ShowPage(book, i.page_no)
+        # Encyclopaedia Colours
+        color_scroll_bar = "#003C78"
+        color_scroll_empty = "#DCEBFF"
+        color_alt_frame = "#DCEBFF"
+
+        color_enc_bg = "#DCEBFF"
+        color_enc_frame = "#6496C8"
+        color_enc_button = "#003C78"
+
+        color_alt_text = "#003C78"
+        color_enc_text = "#C8FFFF"
+
+        color_hover_text = "#FFFFFF"
