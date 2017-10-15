@@ -213,6 +213,8 @@ init python:
             renpy.restart_interaction()
 
     class AddBook(Action):
+        #Problem, this action will add a book even if that book has 
+        # already been added, causing duplicates. 
 
         def __init__(self, book):
             self.book = book
@@ -360,7 +362,7 @@ screen open_book(book):
         frame:
             style_prefix "encyclopaedia"
             xfill True
-            ysize 520
+            ysize 528
 
             yalign 0.64
 
@@ -371,7 +373,7 @@ screen open_book(book):
 
             button:
                 xsize config.screen_width - 280
-                ysize 520
+                ysize 528
 
                 background Solid("#00000000")
 

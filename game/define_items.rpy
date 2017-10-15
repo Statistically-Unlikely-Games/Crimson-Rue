@@ -24,13 +24,18 @@ label define_items:
 #    $ doll = Item("Handmade Doll", "Guaranteed to bring luck. (Or not?) Very huggable, mind the needle.", "inv/doll.png", 100000, recipe=[[but,2],[fabric,3],[yarn,1]]) 
 
 
-#Books
-    #This is currently broken. It says UnlockEncEntry is not defined. 
-    #Need to investigate when the action code for encyclopedia runs. 
+#Books 
     
     $ herbID1 = Item("Herb Identification vol. 1", "A book of herbs", "inv/book.png", 5000, act=[AddBook(book_2), Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('herb_book1',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
     $ herbID2 = Item("Herb Identification vol. 2", "A book of herbs", "inv/book.png", 5000, act=[AddBook(book_3), Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('herb_book2',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
     $ herbID3 = Item("Herb Identification vol. 3", "A book of herbs", "inv/book.png", 5000, act=[AddBook(book_4), Show("inventory_popup", message="New Herbs Unlocked"), SetVariable('herb_book3',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    
+    $ medJNL1 = Item("Medical Journal vol. 1", "A book of medical symptoms", "inv/book.png", 5000, act=[AddBook(book_5), Show("inventory_popup", message="New Journal Unlocked"), SetVariable('med_book1',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ medJNL2 = Item("Medical Journal vol. 2", "A book of medical symptoms", "inv/book.png", 5000, act=[AddBook(book_6), Show("inventory_popup", message="New Journal Unlocked"), SetVariable('med_book2',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ medJNL3 = Item("Medical Journal vol. 3", "A book of medical symptoms", "inv/book.png", 5000, act=[AddBook(book_7), Show("inventory_popup", message="New Journal Unlocked"), SetVariable('med_book3',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ medJNL4 = Item("Medical Journal vol. 4", "A book of medical symptoms", "inv/book.png", 5000, act=[AddBook(book_8), Show("inventory_popup", message="New Journal Unlocked"), SetVariable('med_book4',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ medJNL5 = Item("Medical Journal vol. 5", "A book of medical symptoms", "inv/book.png", 5000, act=[AddBook(book_9), Show("inventory_popup", message="New Journal Unlocked"), SetVariable('med_book5',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
+    $ medJNL6 = Item("Medical Journal vol. 6", "A book of medical symptoms", "inv/book.png", 5000, act=[AddBook(book_10), Show("inventory_popup", message="New Journal Unlocked"), SetVariable('med_book6',True), SetVariable('time_cnt',time_cnt+1), Function(renpy.call, "time_img")])
 
 #Tier 1 Items
     

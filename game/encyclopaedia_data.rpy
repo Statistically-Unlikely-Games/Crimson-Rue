@@ -67,6 +67,50 @@ init python:
     B6_8_image = "enc/Botanical_Parsley.png"
     B6_9_image = "enc/Botanical_Sage.png"
     B6_10_image = "enc/Botanical_Laurel.png"
+    
+    B7_1_image = "enc/Botanical_Thistle.png"
+    B7_2_image = "enc/Botanical_Dandelion.png"
+    B7_3_image = "enc/Botanical_Blackberry.png"
+    B7_4_image = "enc/Botanical_Oak.png"
+    B7_5_image = "enc/Botanical_Garlic.png"
+    B7_6_image = "enc/Botanical_Mint.png"
+    B7_7_image = "enc/Botanical_Oregano.png"
+    B7_8_image = "enc/Botanical_Parsley.png"
+    B7_9_image = "enc/Botanical_Sage.png"
+    B7_10_image = "enc/Botanical_Laurel.png"
+    
+    B8_1_image = "enc/Botanical_Thistle.png"
+    B8_2_image = "enc/Botanical_Dandelion.png"
+    B8_3_image = "enc/Botanical_Blackberry.png"
+    B8_4_image = "enc/Botanical_Oak.png"
+    B8_5_image = "enc/Botanical_Garlic.png"
+    B8_6_image = "enc/Botanical_Mint.png"
+    B8_7_image = "enc/Botanical_Oregano.png"
+    B8_8_image = "enc/Botanical_Parsley.png"
+    B8_9_image = "enc/Botanical_Sage.png"
+    B8_10_image = "enc/Botanical_Laurel.png"
+    
+    B9_1_image = "enc/Botanical_Thistle.png"
+    B9_2_image = "enc/Botanical_Dandelion.png"
+    B9_3_image = "enc/Botanical_Blackberry.png"
+    B9_4_image = "enc/Botanical_Oak.png"
+    B9_5_image = "enc/Botanical_Garlic.png"
+    B9_6_image = "enc/Botanical_Mint.png"
+    B9_7_image = "enc/Botanical_Oregano.png"
+    B9_8_image = "enc/Botanical_Parsley.png"
+    B9_9_image = "enc/Botanical_Sage.png"
+    B9_10_image = "enc/Botanical_Laurel.png"
+    
+    B10_1_image = "enc/Botanical_Thistle.png"
+    B10_2_image = "enc/Botanical_Dandelion.png"
+    B10_3_image = "enc/Botanical_Blackberry.png"
+    B10_4_image = "enc/Botanical_Oak.png"
+    B10_5_image = "enc/Botanical_Garlic.png"
+    B10_6_image = "enc/Botanical_Mint.png"
+    B10_7_image = "enc/Botanical_Oregano.png"
+    B10_8_image = "enc/Botanical_Parsley.png"
+    B10_9_image = "enc/Botanical_Sage.png"
+    B10_10_image = "enc/Botanical_Laurel.png"
 
 
 label define_books: 
@@ -101,8 +145,16 @@ label define_books:
         [
             "How to craft medicine.",
             "To craft medicine, you must first use a craft table.",
+            "Medicines may have up to four components.",
+            "First is the base, also known as the basis or active ingredient.",
+            "This is the ingredient with the strongest medicinal properties.",
+            "Second is the supplement, also known as the adjuvant.",
+            "These ingredients don't have strong healing properties on their own, ",
+            "but have the ability to enhance the base, or themselves become stronger when used with the base.",
+            "Third, the corrective, which lessens or removes side effects from the first two ingredients.",
+            "Lastly, is the diluent, which adds volume to the medicine making it easier to administer.",
+            "It can also make medicines more safe to take, in the event that they are corosive or irritating when concentrated.",
         ],
-        "Tutorial",
         0)
     
     $ book_1.add_page(
@@ -645,19 +697,121 @@ label define_books:
     
 #Medical Journal vol. 1
     $ book_5.add_page(
-        "Common Cold",
+        "Cough",
         Solid("#ffffff"),
         "icon",
         [
-            "Description of the common cold.",
+            "Coughing is a reflexive expulsion of air which helps clear ones breathing passages.",
+            "Frequent coughing is indicative of disease, most commonly an infection.",
+            "It can also be triggered by choking, smoke, pollen, or other irritants of the throat and lungs.",
+        ],
+        0)
+
+    $ book_5.add_page(
+        "Difficulty Swallowing",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Patient complains of pain or difficulty when trying to swallow.",
+            "Most commonly, the individual will experience difficulty swallowing solid food and will describe it as 'getting stuck' in the throat.",
+            "Generally obstructed food is located at or below the area where the patient perceives it.",
+        ],
+        0)
+
+    $ book_5.add_page(
+        "Nausea/Vomiting",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Nausea is described as unease in the stomach, or a 'sick' feeling, often before vomiting.",
+            "There are many different causes of nausea and vomiting, from infections and food poisoning to allergies or emotional distress.",
+            "Although vomiting is not in itself harmful, it is usually a sign of underlying issues which need treatment.",
+            "Frequent vomiting can cause health problems, such as dehydration, irritation of the mouth and throat, and long-term damage of the teeth.",
+        ],
+        0)
+
+    $ book_5.add_page(
+        "Diarrhea",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Described as loose and watery stool, diarrhea is quite common and usually  not very serious.",
+            "Generally it is caused by a viral infection, and clears up after a few days.",
+            "Excessive diarrhea can cause dehydration.",
+        ],
+        0)
+
+    $ book_5.add_page(
+        "Chills",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Chills, or a patient complaining of suddenly feeling cold, are a symptom of a wide variety of diseases.",
+            "Generally, the cold feeling is followed by a considerable increase in body temperature.",
+            "It is recommended to cover the patient with a light blanket to make it easier to adjust when the fever follows.",
+        ],
+        0)
+
+    $ book_5.add_page(
+        "Fever",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "A fever, or significant increase in body temperature, may occur with almost any type of infection or illness.",
+            "Rarely, a fever may become dangerously hot, especially in children, causing delirium and convulsions.",
+            "In these cases, it is important to cool down the body to prevent permanent damage.",
+            "Otherwise, the patient should be given lots of rest, kept hydrated, and a cold compress may be used for comfort.",
+        ],
+        0)
+
+    $ book_5.add_page(
+        "Hot Flashes",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "A hot flash is distinguished from a fever in that it is generally both sudden and fleeting.",
+            "Generally, the patient will experience intense heat, especially flushing of the face, but their core body temperature will not raise significantly.",
+            "Hot flashes are most often experienced by older individuals who are going through menopause.",
+        ],
+        0)
+
+    $ book_5.add_page(
+        "Excessive Sweating",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Sweating is a normal bodily process, generally triggered by warm temperatures, exercise, or emotional stimulus.",
+            "Excessive sweating generally occurs without these triggers, and may be related to an underlying issue.",
+            "Night sweats are common in patients experiencing menopause.",
+        ],
+        0)
+
+    $ book_5.add_page(
+        "Difficulty Sleeping",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Some patients may have difficulty falling asleep, or may wake frequently in the night and be unable to get proper rest.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
         0)
-    
+
+    $ book_5.add_page(
+        "Difficulty Breathing",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Shortness of breath, or labored breathing, is a sign of a variety of disorders and often indicates a lack of oxygen in the blood.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+
 #Medical Journal vol. 2
     $ book_6.add_page(
-        "Asthma",
+        "Increased Heart Rate",
         Solid("#ffffff"),
         "icon",
         [
@@ -666,3 +820,564 @@ label define_books:
             "Basic treatment plan.",
         ],
         0)
+
+    $ book_6.add_page(
+        "Fainting",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_6.add_page(
+        "Low Blood Pressure",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_6.add_page(
+        "Fatigue",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Fatigue is when a patient suffers from a general feeling of tiredness, and generally builds up gradually.",
+            "People can suffer from physical and mental fatigue.",
+            "Fatigue can be caused by overwork, mental stress, physical conditions like malnutrition and lack of sleep, as well as illness.",
+            "Generally, fatigue is alleviated with simple rest.",
+            "However, when an underlying disease is causing the symptom it can be more difficult.",
+            "Certain medications can help alleviate fatigue, providing energy to an exhausted patient.",
+        ],
+        0)
+
+    $ book_6.add_page(
+        "Tremors",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_6.add_page(
+        "Mental Lethargy",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_6.add_page(
+        "Dizziness",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_6.add_page(
+        "Vertigo",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_6.add_page(
+        "Delirium",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_6.add_page(
+        "Memory Loss",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+
+#Medical Journal vol. 3
+    $ book_7.add_page(
+        "Anxiety/Depression",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
+            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
+            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
+            "Certain drugs can also be used to suppress the immune system.",
+        ],
+        0)
+
+    $ book_7.add_page(
+        "Weight Gain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+    
+    $ book_7.add_page(
+        "Weight Loss",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_7.add_page(
+        "Itchy Skin",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_7.add_page(
+        "Rash",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_7.add_page(
+        "Ring-Shaped Skin Leisons",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
+            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
+            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
+            "Certain drugs can also be used to suppress the immune system.",
+        ],
+        0)
+
+    $ book_7.add_page(
+        "Loss of Skin Color",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_7.add_page(
+        "Swollen Lymph Nodes",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_7.add_page(
+        "Numbness",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_7.add_page(
+        "Muscle Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+
+#Medical Journal vol. 4
+    $ book_8.add_page(
+        "Muscle Cramps",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_8.add_page(
+        "Joint Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
+            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
+            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
+            "Certain drugs can also be used to suppress the immune system.",
+        ],
+        0)
+
+    $ book_8.add_page(
+        "Headache",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_8.add_page(
+        "Eye Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_8.add_page(
+        "Swollen Eyelid",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_8.add_page(
+        "Red Eye",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_8.add_page(
+        "Facial Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_8.add_page(
+        "Ear Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_8.add_page(
+        "Ringing Ears",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_8.add_page(
+        "Hearing Loss",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+
+#Medical Journal vol. 5
+    $ book_9.add_page(
+        "Burning Mouth/Tongue",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+    
+    $ book_9.add_page(
+        "Mouth Ulcers",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_9.add_page(
+        "Crying Infant",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_9.add_page(
+        "Neck Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_9.add_page(
+        "Shoulder Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_9.add_page(
+        "Chest Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
+            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
+            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
+            "Certain drugs can also be used to suppress the immune system.",
+        ],
+        0)
+
+    $ book_9.add_page(
+        "Breast Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
+            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
+            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
+            "Certain drugs can also be used to suppress the immune system.",
+        ],
+        0)
+
+    $ book_9.add_page(
+        "Back Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
+            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
+            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
+            "Certain drugs can also be used to suppress the immune system.",
+        ],
+        0)
+
+    $ book_9.add_page(
+        "Flank Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_9.add_page(
+        "Abdominal and Pelvic Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Vascular diseases are those which affect the patients blood vessels-- the arteries and veins of their circulatory system.",
+            "People can suffer from physical and mental fatigue.",
+            "Fatigue can be caused by overwork, mental stress, physical conditions like malnutrition and lack of sleep, as well as illness.",
+            "Generally, fatigue is alleviated with simple rest.",
+            "However, when an underlying disease is causing the symptom it can be more difficult.",
+            "Certain medications can help alleviate fatigue, providing energy to an exhausted patient.",
+        ],
+        0)
+
+
+#Medical Journal vol. 6
+    $ book_10.add_page(
+        "Painful or Frequent Urination",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_10.add_page(
+        "Blood in Urine",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_10.add_page(
+        "Abnormal Uterine Bleeding",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
+            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
+            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
+            "Certain drugs can also be used to suppress the immune system.",
+        ],
+        0)
+
+    $ book_10.add_page(
+        "Genital Sores",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_10.add_page(
+        "Scrotal Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_10.add_page(
+        "Hip Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_10.add_page(
+        "Leg Pain",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_10.add_page(
+        "Swollen Legs",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_10.add_page(
+        "Seizure",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+
+    $ book_10.add_page(
+        "Stroke",
+        Solid("#ffffff"),
+        "icon",
+        [
+            "Description of asthma.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
+        ],
+        0)
+    
