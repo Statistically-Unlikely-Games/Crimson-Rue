@@ -695,6 +695,533 @@ label define_books:
         5)
     
     
+#Herb Identification vol. 1
+    $ book_2.add_page(
+        "Common Thistle",
+        B2_1_image,
+        "icon",
+        [
+            "A widely distributed herbaceous plant of the daisy family, which typically has a prickly stem and leaves and rounded heads of purple flowers. ",
+            "Prickles occur all over the plant – on the stem and flat parts of leaves. ",
+            "They are an adaptation that protects the plant from being eaten by herbivores. ",
+            "Medieval writers had thought it could return hair to bald heads and that in the early modern period it had been believed to be a remedy for headaches, plague, canker sores, vertigo, and jaundice. ",
+        ],
+        5)
+    
+    $ book_2.add_page(
+        "Dandelion",
+        B2_2_image,
+        "icon",
+        [
+            "A widely distributed weed of the daisy family, with a rosette of leaves, bright yellow flowers followed by globular heads of seeds with downy tufts, and stems containing a milky latex. ",
+            "Like other members of the Asteraceae family, they have very small flowers collected together into a composite flower head. ",
+            "Each single flower in a head is called a floret. ",
+            "Dandelions are edible in their entirety. ",
+            "Historically, dandelion was prized for a variety of medicinal properties, and it contains a number of pharmacologically active compounds. ",
+            "It has been used in herbal medicine to treat infections, bile and liver problems and as a diuretic. ",
+        ],
+        5)
+    
+    $ book_2.add_page(
+        "Blackberry",
+        B2_3_image,
+        "icon",
+        [
+            "The prickly climbing shrub of the rose family that bears an edible soft fruit, consisting of a cluster of soft purple-black drupelets, and that grows extensively in the wild. ",
+            "The soft fruit is popular for use in desserts, jams, seedless jelly, and sometimes wine. ",
+            "It is often mixed with apples for pies and crumbles. ",
+            "Blackberries are also used to produce candy. ",
+        ],
+        "5")
+        
+    $ book_2.add_page(
+        "Oak",
+        B2_4_image,
+        "icon",
+        [
+            "A tree that bears acorns as fruit, and typically has lobed deciduous leaves. ",
+            "Oaks have spirally arranged leaves, with lobate margins in many species; some have serrated leaves or entire leaf with smooth margins. ",
+            "Also, the acorns contain tannic acid, as do the leaves, which helps to guard from fungi and insects. ",
+            "The fruit is a nut called an acorn, borne in a cup-like structure known as a cupule; each acorn contains one seed (rarely two or three) and takes 6–18 months to mature, depending on their species. ",
+            "Oak wood is particularly dense, leading to great hardness and strength. ",
+            "The bark of the White Oak is dried and used in medical preparations. ",
+        ],
+        5)
+        
+    $ book_2.add_page(
+        "Garlic",
+        B2_5_image,
+        "icon",
+        [
+            "A plant, closely related to the onion, that produces a strong-smelling pungent-tasting bulb, used as a flavoring in cooking and in herbal medicine. ",
+            "The garlic plant's bulb is the most commonly used part of the plant. ",
+            "They have a characteristic pungent, spicy flavor that mellows and sweetens considerably with cooking. ",
+            "Other parts of the garlic plant are also edible. ",
+            "The leaves and flowers (bulbils) on the head (spathe) are sometimes eaten. ",
+            "They are milder in flavor than the bulbs, and are most often consumed while immature and still tender. ",
+            "Inedible or rarely eaten parts of the garlic plant include the 'skin' covering each clove and root cluster. ",
+            "The papery, protective layers of 'skin' over various parts of the plant are generally discarded during preparation for most culinary uses. ",
+            "The root cluster attached to the basal plate of the bulb is the only part not typically considered palatable in any form. ",
+            "Garlic was used as an antiseptic to prevent gangrene. ",
+        ],
+        5)
+        
+    $ book_2.add_page(
+        "Mint",
+        B2_6_image,
+        "icon",
+        [
+            "An aromatic plant native to temperate regions of the Old World, several kinds of which are used as culinary herbs. ",
+            "They have wide-spreading underground and overground stolons and erect, square, branched stems. ",
+            "The leaves are arranged in opposite pairs, from oblong to lanceolate, often downy, and with a serrated margin. ",
+            "Leaf colors range from dark green and gray-green to purple, blue, and sometimes pale yellow. ",
+            "The flowers are white to purple and produced in false whorls called verticillasters. ",
+            "The corolla is two-lipped with four subequal lobes, the upper lobe usually the largest. ",
+            "The fruit is a nutlet, containing one to four seeds. ",
+            "Mints grow best in wet environments and moist soils. ",
+            "Mints will grow 10–120 cm tall and have a tendency to spread unchecked. ",
+            "Mint was originally used as a medicinal herb to treat stomach ache and chest pains. ",
+            "As an essential oil, it can also be used in aromatherapy to alleviate nausea. ",
+        ],
+        5)
+    
+    $ book_2.add_page(
+        "Oregano",
+        B2_7_image,
+        "icon",
+        [
+            "An aromatic plant related to marjoram, with leaves that are used fresh or dried as a culinary herb. ",
+            "Oregano is a perennial herb, growing from 20–80 cm (7.9–31.5 in) tall, with opposite leaves 1–4 cm (0.39–1.57 in) long. ",
+            "The flowers are purple, 3–4 mm (0.12–0.16 in) long, produced in erect spikes. ",
+            "It is sometimes called wild marjoram, and its close relative O. majorana is known as sweet marjoram. ",
+            "Oregano is an important culinary herb, used for the flavour of its leaves, which can be more flavourful when dried than fresh. ",
+            "It has an aromatic, warm, and slightly bitter taste, which can vary in intensity. ",
+            "Good-quality oregano may be strong enough almost to numb the tongue, but cultivars adapted to colder climates often have a lesser flavor. ",
+            "Factors such as climate, season, and soil composition may affect the aromatic oils present, and this effect may be greater than the differences between the various species of plants. ",
+            "Oregano oil and oregano have been used in folk medicine since ancient times, and is extracted from the leaves of the oregano plant. ",
+        ],
+        5)
+    
+    $ book_2.add_page(
+        "Parsley",
+        B2_8_image,
+        "icon",
+        [
+            "A biennial plant with white flowers and aromatic leaves that are either crinkly or flat and used as a culinary herb and for garnishing food. ",
+            "It forms a rosette of tripinnate leaves 10–25 cm (3.9–9.8 in) long with numerous 1–3 cm (0.4–1.2 in) leaflets, and a taproot used as a food store over the winter. ",
+            "Excessive consumption of parsley should be avoided by pregnant women. ",
+            "It is safe in normal food quantities, but large amounts may have uterotonic effects. ",
+        ],
+        5)
+    
+    $ book_2.add_page(
+        "Sage",
+        B2_9_image,
+        "icon",
+        [
+            "An aromatic plant with grayish-green leaves that are used as a culinary herb, native to southern Europe and the Mediterranean. ",
+            "A perennial, evergreen subshrub, with woody stems, grayish leaves, and blue to purplish flowers. ",
+            "It has a long history of medicinal and culinary use. ",
+            "Common sage is grown in parts of Europe for distillation of an essential oil, though other species such as Salvia fruticosa may also be harvested and distilled with it. ",
+        ],
+        5)
+    
+    $ book_2.add_page(
+        "Laurel",
+        B2_10_image,
+        "icon",
+        [
+            "An aromatic evergreen shrub related to the bay tree, several kinds of which form forests in tropical and warm countries. ",
+            "The plant is the source of several popular herbs and one spice used in a wide variety of recipes. ",
+            "Whole bay leaves are used almost exclusively as flavor agents during the food preparation stage. ",
+            "They are typically removed from dishes before serving, unless used as a simple garnish. ",
+            "Whole bay leaves have a long shelf life of about one year, under normal temperature and humidity. ",
+            "Aqueous extracts of bay laurel can also be used as astringents and even as a reasonable salve for open wounds. ",
+            "In massage therapy, the essential oil of bay laurel is reputed to alleviate arthritis and rheumatism, while in aromatherapy, it is used to treat earaches and high blood pressure. ",
+        ],
+        5)
+    
+    
+#Herb Identification vol. 2
+
+    $ book_3.add_page(
+        "Hyssop",
+        B3_1_image,
+        "icon",
+        [
+            "A small bushy aromatic plant of the mint family, the bitter minty leaves of which are used in cooking and herbal medicine. ",
+            "Hyssop is a brightly coloured shrub or subshrub that ranges from 30 to 60 cm (12 to 24 in) in height. ",
+            "The stem is woody at the base, from which grow a number of straight branches. ",
+            "Its leaves are lanceolate, dark green in colour, and from 2 to 2.5 cm (0.79 to 0.98 in) long. ",
+            "During the summer, the plant produces bunches of pink, blue, or, more rarely, white fragrant flowers. ",
+            "The species as a whole is resistant to drought, and tolerant of chalky, sandy soils. ",
+            "It thrives in full sun and warm climates. ",
+            "Due to its properties as an antiseptic, cough reliever, and expectorant, it is commonly used as a medicinal plant. ",
+        ],
+        5)
+    
+    $ book_3.add_page(
+        "Borage",
+        B3_2_image,
+        "icon",
+        [
+            "A herbaceous plant with bright blue flowers and hairy leaves, used medicinally and as a salad green. ",
+            "It is native to the Mediterranean region and has naturalized in many other locales. ",
+            "The plant is also commercially cultivated for borage seed oil extracted from its seeds. ",
+            "Traditionally, Borago officinalis has been used in hyperactive gastrointestinal, respiratory and cardiovascular disorders, such as gastrointestinal (colic, cramps, diarrhea), airways (the symptom, bronchitis), cardiovascular, (cardiotonic, antihypertensive and blood purifier), urinary (diuretic and kidney/bladder disorders). ",
+            "Naturopathic practitioners use borage for regulation of metabolism and the hormonal system, and consider it to be a good remedy for PMS and menopause symptoms such as the hot flash. ",
+            "The flowers can be prepared in infusion. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+    
+    $ book_3.add_page(
+        "Crown Flower",
+        B3_3_image,
+        "icon",
+        [
+            "A large shrub growing to 4 m (13 ft) tall with clusters of waxy flowers that are either white or lavender in colour. ",
+            "Each flower consists of five pointed petals and a small 'crown' rising from the center which holds the stamens. ",
+            "The plant has oval, light green leaves and milky stem. ",
+            "The flowers are long lasting, and as such they are used in floral arrangements. ",
+            "The extract of flowers and leaves have shown hypoglycemic effect in preclinical studies. ",
+            "The fruit is a follicle and when dry, seed dispersal is by wind ",
+            "Calotropis yields a durable fiber (commercially known as bowstring of India) useful for ropes, carpets, fishing nets, and sewing thread. ",
+            "Floss, obtained from seeds, is used as stuffing. ",
+            "Fermented mixture of Calotropis and salt is used to remove the hair from goat skins for production of 'nari leather' and of sheep skins to make leather which is much used for inexpensive book binding. ",
+            "Extracts of plant parts such as root, stem, and leaf affect germination and seedling vigor of many agricultural crops. ",
+            "Calotropis is a poisonous plant, with the active principles uscharin, calotoxin, calactin, and calotropin. ",
+            "The leaves and stem when incised yield thick milky juice. ",
+            "It is used as an arrow poison, cattle poison, rarely for suicide and homicide and mostly an accidental poison. ",
+        ],
+        5)
+    
+    $ book_3.add_page(
+        "Marsh Marigold",
+        B3_4_image,
+        "icon",
+        [
+            "A plant of the buttercup family that has large yellow flowers and grows in damp ground and shallow water, native to north temperate regions. ",
+            "Caltha palustris is a 10–80 cm high, hairless, fleshy, perennial, herbaceous plant, that dies down in autumn and overwinters with buds near the surface of the marshy soil. ",
+            "Early spring greens and buds of Caltha palustris are edible when cooked. ",
+            "Young leaves or buds should be submerged a few times in fresh boiling water until barely tender, cut into bite-sized pieces, lightly salted, and served with melted butter and vinegar. ",
+            "Very young flowerbuds have been prepared like capers and used as a spice. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+    
+    $ book_3.add_page(
+        "Plantain",
+        B3_5_image,
+        "icon",
+        [
+            "A low-growing plant that typically has a rosette of leaves and a slender green flower spike, widely growing as a weed. ",
+            "Plantago species have been used since prehistoric times as herbal remedies. ",
+            "The herb is astringent, anti-toxic, antimicrobial, anti-inflammatory, anti-histamine, as well as demulcent, expectorant, styptic and diuretic. ",
+            "Externally, a poultice of the leaves is useful for insect bites, poison-ivy rashes, minor sores, and boils. ",
+            "Internally, it is used for coughs and bronchitis, as a tea, tincture, or syrup. ",
+            "Plantain seed husks expand and become mucilaginous when wet, especially those of P. psyllium, which is used in common over-the-counter bulk laxative and fiber supplement products such as Metamucil. P. psyllium seed is useful for constipation, irritable bowel syndrome, dietary fiber supplementation, and diverticular disease.  ",
+        ],
+        5)
+    
+    $ book_3.add_page(
+        "Chamomile",
+        B3_6_image,
+        "icon",
+        [
+            "An aromatic European plant of the daisy family, with white and yellow daisylike flowers. ",
+            "Commonly used to make herb infusions to serve various medicinal purposes. ",
+            "Popular uses of chamomile preparations include treating hay fever, inflammation, muscle spasms, menstrual disorders, insomnia, ulcers, gastrointestinal disorders, and hemorrhoids. ",
+            "Chamomile tea is also used to treat skin conditions such as eczema, chickenpox, and psoriasis. ",
+        ],
+        5)
+    
+    $ book_3.add_page(
+        "Calendula",
+        B3_7_image,
+        "icon",
+        [
+            "A Mediterranean plant of a genus that includes the common (or pot) marigold. ",
+            "A small genus of yellow-rayed composite herbs of temperate regions. ",
+            "Calendula species have been used traditionally as culinary and medicinal herbs. ",
+            "The dried florets of plants of the genus Calendula (especially C. officinalis) sometimes used as a mild aromatic and diaphoretic. ",
+            "The petals are edible and can be used fresh in salads or dried and used to color cheese or as a replacement for saffron. ",
+            "A yellow dye has been extracted from the flowers. ",
+            "Calendula ointments are skin products used to treat minor cuts, burns, and skin irritation. ",
+            "Calendula oil is still used medicinally. The oil of C. officinalis is used as an anti-inflammatory, an antitumor agent, and a remedy for healing wounds. ",
+            "In herbalism, Calendula in suspension or in tincture is used topically for treating acne, reducing inflammation, controlling bleeding, and soothing irritated tissue. ",
+            "Calendula has been used traditionally for abdominal cramps and constipation. ",
+            "Calendula plants are known to cause allergic reactions and should be avoided during pregnancy. ",
+        ],
+        5)
+    
+    $ book_3.add_page(
+        "Violet",
+        B3_8_image,
+        "icon",
+        [
+            "A herbaceous plant of temperate regions, typically having purple, blue, or white five-petaled flowers, one of which forms a landing pad for pollinating insects. ",
+            "Many Viola species contain antioxidants called anthocyanins. ",
+            "Viola odorata is used as a source for scents in the perfume industry. ",
+            "Violet is known to have a 'flirty' scent as its fragrance comes and goes. ",
+            "Ionone is present in the flowers, which turns off the ability for humans to smell the fragrant compound for moments at a time. ",
+        ],
+        5)
+    
+    $ book_3.add_page(
+        "Rosemary",
+        B3_9_image,
+        "icon",
+        [
+            "An evergreen aromatic shrub of the mint family, native to southern Europe. ",
+            "It has fragrant, evergreen, needle-like leaves, white, pink, purple, or blue flowers, and a fibrous root system. ",
+            "Upon cultivation, the leaves, twigs, and flowering apices are extracted for use. ",
+            "Rosemary grows on friable loam soil with good drainage in an open, sunny position. ",
+            "It is drought-resistant, will not withstand waterlogging, and some varieties are susceptible to frost. ",
+            "It grows best in neutral to alkaline conditions (pH 7–7.8) with average fertility. ",
+        ],
+        5)
+    
+    $ book_3.add_page(
+        "Basil",
+        B3_10_image,
+        "icon",
+        [
+            "An aromatic annual herb of the mint family, native to tropical Asia. ",
+            "Depending on the species and cultivar, the leaves may taste somewhat like anise, with a strong, pungent, often sweet smell. ",
+            "Basil is most commonly used fresh in cooked recipes. ",
+            "In general, it is added at the last moment, as cooking quickly destroys the flavor. ",
+            "The dried herb also loses most of its flavor, and what little flavor remains tastes very different, with a weak coumarin flavor, like hay. ",
+            "When soaked in water, the seeds of several basil varieties become gelatinous. ",
+        ],
+        5)
+
+    
+#Herb Identification vol. 3
+    $ book_4.add_page(
+        "Poppy",
+        B4_1_image,
+        "icon",
+        [
+            "Poppy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+    
+    $ book_4.add_page(
+        "Mullein",
+        B4_2_image,
+        "icon",
+        [
+            "Mullein. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+    
+    $ book_4.add_page(
+        "Red Clover",
+        B4_3_image,
+        "icon",
+        [
+            "Red Clover. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+        
+    $ book_4.add_page(
+        "St. John's Wort",
+        B4_4_image,
+        "icon",
+        [
+            "St. John's Wort. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+        
+    $ book_4.add_page(
+        "Yellow Dock",
+        B4_5_image,
+        "icon",
+        [
+            "Yellow Dock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+        
+    $ book_4.add_page(
+        "Burdock",
+        B4_6_image,
+        "icon",
+        [
+            "Burdock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+    
+    $ book_4.add_page(
+        "Comfrey",
+        B4_7_image,
+        "icon",
+        [
+            "Comfrey. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+    
+    $ book_4.add_page(
+        "Goldenseal",
+        B4_8_image,
+        "icon",
+        [
+            "Goldenseal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+    
+    $ book_4.add_page(
+        "Lemon Balm",
+        B4_9_image,
+        "icon",
+        [
+            "Lemon Balm. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+    
+    $ book_4.add_page(
+        "Licorice",
+        B4_10_image,
+        "icon",
+        [
+            "Licorice. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+            "Vivamus in nisl magna. Fusce nec bibendum magna, sed venenatis erat. ",
+            "Sed non dapibus augue, quis hendrerit diam. ",
+            "Quisque bibendum turpis vitae orci iaculis volutpat. ",
+            "Proin venenatis, nunc quis tempus convallis, lectus eros ultrices sem, eu condimentum tellus nisi sed magna. ",
+            "Curabitur laoreet posuere orci eu eleifend. ",
+            "Vivamus sed dui dignissim, egestas lorem eu, lobortis arcu. ",
+            "Duis venenatis sem eu ipsum condimentum adipiscing. ",
+            "Ut vel augue ut velit bibendum varius pharetra nec ligula. ",
+            "Duis eu sollicitudin mauris. ",
+            "Praesent vestibulum ligula vel ligula condimentum dignissim. ",
+            "Ut risus velit, laoreet sed pellentesque sed, suscipit in massa. ",
+            "Etiam posuere fringilla purus.",
+        ],
+        5)
+    
+    
 #Medical Journal vol. 1
     $ book_5.add_page(
         "Cough",
@@ -815,9 +1342,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Normally, a patients heart rate will increase in response to physical exertion or psychological stress.",
+            "However, sometimes their heart rate will increase without such triggers.",
+            "While this may not cause any other symptoms in the short term, it can cause severe problems long term if left untreated.",
         ],
         0)
 
@@ -826,9 +1353,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Sudden loss of consciousness is usually caused by lack of oxygen to the brain, often due to low blood pressure.",
+            "There are two primary types of fainting-- one where the patient remembers losing consciousness, falling, and other sypmtoms such as blurred vision and dizziness, and one where the patient may remember feeling dizzy, but does not remember falling.",
+            "There are many different conditions which cause a person to faint, and if someone is fainting on a consistent basis it is important to get treatment.",
         ],
         0)
 
@@ -837,8 +1364,8 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
+            "Chronic low blood pressure is almost never serious, but health problems can occur when blood pressure drops suddenly.",
+            "Sudden drops in blood pressure are most common when a person gets up from laying down or sitting, causing them to feel dizzy or light headed.",
             "Basic treatment plan.",
         ],
         0)
@@ -848,7 +1375,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Fatigue is when a patient suffers from a general feeling of tiredness, and generally builds up gradually.",
+            "Fatigue is when a patient suffers from a general feeling of tiredness which builds up gradually.",
             "People can suffer from physical and mental fatigue.",
             "Fatigue can be caused by overwork, mental stress, physical conditions like malnutrition and lack of sleep, as well as illness.",
             "Generally, fatigue is alleviated with simple rest.",
@@ -862,20 +1389,20 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Tremors are an involuntary rhythmic shaking of some part of the body, usually the hands.",
+            "Most commonly tremors occur in otherwise healthy people, but may cause inconvenience to daily tasks.",
+            "Sometimes, they are indicative of an underlying neurological problem, or a side effect to certain drugs.",
         ],
         0)
 
     $ book_6.add_page(
-        "Mental Lethargy",
+        "Lethargy",
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Lethargy is described as feeling sleeping, fatigued, and sluggish.",
+            "The patient may have slow reflexes, difficulty moving, and dulled thinking.",
+            "Many common illnesses are accompanied by lethargy, but it can also be indicative of a more serious medical condition.",
         ],
         0)
 
@@ -884,9 +1411,10 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Dizziness encompasses general feelings of lightheadedness, and lack of stability.",
+            "It is generally painless, but uncomfortable.",
+            "Dizziness can be a one-time event, or a chronic problem.",
+            "Generally feelings of dizziness do not last very long, as the body is good at compensating where there is a problem with its sense of balance.",
         ],
         0)
 
@@ -895,9 +1423,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Vertigo is a more specific type of dizziness which is generally more severe in nature.",
+            "Patients with vertigo experience feeling as if they are spinning, or the world around them is spinning, and it is not uncommonly accompanied by nausea or vomiting.",
+            "Vertigo may be caused by common infections, in which case it will go away in one to six weeks, or it may be caused by an underlying issue.",
         ],
         0)
 
@@ -906,8 +1434,8 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
+            "A patient is delirius if they suffer a sudden and severe confusion.",
+            "Delirium is generally caused by illness, either physical or mental, and is almost always temporary and reversible.",
             "Basic treatment plan.",
         ],
         0)
@@ -917,12 +1445,11 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Causes of memory loss range from medications, lack of sleep/nutrition, head injuries, or dementia.",
+            "Treatment varies greatly depending on the cause.",
+            "Sometimes, it is as simple as switching medicatinos or starting dietary supplements, other times it is more complex.",
         ],
         0)
-
 
 #Medical Journal vol. 3
     $ book_7.add_page(
@@ -930,10 +1457,10 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
-            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
-            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
-            "Certain drugs can also be used to suppress the immune system.",
+            "Depression and anxiety are different disorders, but patients suffering from depression will often experience similar symptoms such as nervousness, irritability, and difficulty sleeping or concentrating.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "There are different types of depression with differing symptom patterns.",
+            "Symptoms of depression include an overwhelming feeling of sadness, a loss of interest and pleasure in most usual activities, decrease or increase in appetite, insomnia or hypersomnia, psycho motor agitation or retardation, constant fatigue, feelings of worthlessness or excessive and inappropriate guilt, recurrent thoughts of death and suicidal ideation with or without specific plans for committing suicide, and cognitive difficulties, such as, diminished ability to think, concentrate and take decisions",
         ],
         0)
 
@@ -942,9 +1469,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "It is natural for people to gain or lose weight in response to changes in their diet or exercise habits.",
+            "However, sometimes individuals experience unintentional weight gain without any major changes to diet or exercise, which can be a sign of an underlying issue.",
+            "Pregnancy, hormonal changes, menstruation, fluid retention, and medication side effects are some potential causes of this type of weight gain.",
         ],
         0)
     
@@ -953,8 +1480,8 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
+            "It is natural for people to gain or lose weight in response to changes in their diet or exercise habits.",
+            "However, sometimes individuals experience unintentional weight loss without any major changes to diet or exercise, which often indicates a serious medical or psychiatric illness.",
             "Basic treatment plan.",
         ],
         0)
@@ -964,9 +1491,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Itchy skin can occur without any noticeable changes to the skin, or it can occur in conjunction with redness, bumps or blisters, or skin that is dry, cracked, scaly, or leathery.",
+            "The causes of itching are numerous, including dry skin, various skin conditions or rashes, diseases, nerve disorders, allergic reactions, drugs, or even pregnancy.",
+            "Most of the time itchy skin will heal or go away with at-home care, but it is important to seek medical attention if it persists longer than two weeks, if it significantly impacts your daily life, if it affects your whole body, comes on suddenly with no discernable cause, or if it is accompanied by other symptoms.",
         ],
         0)
 
@@ -975,9 +1502,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "A rash involves inflammation of the skin, changing its color and texture.",
+            "Often the cause of a rash can be determined via visual examination.",
+            "Rashes may be caused by contact with an irritant, allergies, or certain medical conditions.",
         ],
         0)
 
@@ -986,10 +1513,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
-            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
-            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
-            "Certain drugs can also be used to suppress the immune system.",
+            "Description of the symptom.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
         ],
         0)
 
@@ -998,7 +1524,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1009,7 +1535,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1020,7 +1546,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1031,7 +1557,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1044,7 +1570,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1055,10 +1581,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
-            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
-            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
-            "Certain drugs can also be used to suppress the immune system.",
+            "Description of the symptom.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
         ],
         0)
 
@@ -1067,7 +1592,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1078,7 +1603,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1089,7 +1614,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1100,7 +1625,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1111,7 +1636,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1122,7 +1647,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1133,7 +1658,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1144,7 +1669,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1157,7 +1682,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1168,7 +1693,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1179,7 +1704,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1190,7 +1715,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1201,7 +1726,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1212,10 +1737,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
-            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
-            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
-            "Certain drugs can also be used to suppress the immune system.",
+            "Description of the symptom.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
         ],
         0)
 
@@ -1224,10 +1748,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
-            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
-            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
-            "Certain drugs can also be used to suppress the immune system.",
+            "Description of the symptom.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
         ],
         0)
 
@@ -1236,10 +1759,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
-            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
-            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
-            "Certain drugs can also be used to suppress the immune system.",
+            "Description of the symptom.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
         ],
         0)
 
@@ -1248,7 +1770,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1259,12 +1781,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Vascular diseases are those which affect the patients blood vessels-- the arteries and veins of their circulatory system.",
-            "People can suffer from physical and mental fatigue.",
-            "Fatigue can be caused by overwork, mental stress, physical conditions like malnutrition and lack of sleep, as well as illness.",
-            "Generally, fatigue is alleviated with simple rest.",
-            "However, when an underlying disease is causing the symptom it can be more difficult.",
-            "Certain medications can help alleviate fatigue, providing energy to an exhausted patient.",
+            "Description of the symptom.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
         ],
         0)
 
@@ -1275,7 +1794,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1286,7 +1805,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1297,10 +1816,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "A patient with weakened immune system will find themselves less able to fight off diseases, and experience symptoms from diseases more strongly.",
-            "Most of the time, immunodeficiency is acquired later in life due to damage to the immune system.",
-            "Causes of this damage vary, ranging from infections, age, and malnutrition.",
-            "Certain drugs can also be used to suppress the immune system.",
+            "Description of the symptom.",
+            "More info on the symptoms, how they manifest differently in different people.",
+            "Basic treatment plan.",
         ],
         0)
 
@@ -1309,7 +1827,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1320,7 +1838,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1331,7 +1849,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1342,7 +1860,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1353,7 +1871,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1364,7 +1882,7 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
@@ -1375,9 +1893,8 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of asthma.",
+            "Description of the symptom.",
             "More info on the symptoms, how they manifest differently in different people.",
             "Basic treatment plan.",
         ],
         0)
-    

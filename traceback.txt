@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 283, in script call
-    call define_items
-  File "game/define_items.rpy", line 340, in script
-    $ decoctions_list = [decoction001,decoction002,decoction003,decoction004,decoction005,decoction006,decoction007,decoction008,decoction009,decoction010,decoction011,decoction012,decoction013,decoction014,decoction015,decoction016,decoction017,decoction018,decoction019,decoction020,decoction021,decoction022,decoction023,decoction024,decoction025,decoction026,decoction027,decoction028,decoction029,decoction030]
-  File "game/define_items.rpy", line 340, in <module>
-    $ decoctions_list = [decoction001,decoction002,decoction003,decoction004,decoction005,decoction006,decoction007,decoction008,decoction009,decoction010,decoction011,decoction012,decoction013,decoction014,decoction015,decoction016,decoction017,decoction018,decoction019,decoction020,decoction021,decoction022,decoction023,decoction024,decoction025,decoction026,decoction027,decoction028,decoction029,decoction030]
-NameError: name 'decoction029' is not defined
+  File "game/script.rpy", line 282, in script call
+    call define_books
+  File "game/encyclopaedia_data.rpy", line 1457, in script
+    $ book_7.add_page(
+  File "game/encyclopaedia_data.rpy", line 1457, in <module>
+    $ book_7.add_page(
+NameError: name 'book_7' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 283, in script call
-    call define_items
-  File "game/define_items.rpy", line 340, in script
-    $ decoctions_list = [decoction001,decoction002,decoction003,decoction004,decoction005,decoction006,decoction007,decoction008,decoction009,decoction010,decoction011,decoction012,decoction013,decoction014,decoction015,decoction016,decoction017,decoction018,decoction019,decoction020,decoction021,decoction022,decoction023,decoction024,decoction025,decoction026,decoction027,decoction028,decoction029,decoction030]
+  File "game/script.rpy", line 282, in script call
+    call define_books
+  File "game/encyclopaedia_data.rpy", line 1457, in script
+    $ book_7.add_page(
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/define_items.rpy", line 340, in <module>
-    $ decoctions_list = [decoction001,decoction002,decoction003,decoction004,decoction005,decoction006,decoction007,decoction008,decoction009,decoction010,decoction011,decoction012,decoction013,decoction014,decoction015,decoction016,decoction017,decoction018,decoction019,decoction020,decoction021,decoction022,decoction023,decoction024,decoction025,decoction026,decoction027,decoction028,decoction029,decoction030]
-NameError: name 'decoction029' is not defined
+  File "game/encyclopaedia_data.rpy", line 1457, in <module>
+    $ book_7.add_page(
+NameError: name 'book_7' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2.2029

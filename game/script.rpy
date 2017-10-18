@@ -47,11 +47,15 @@ define mikael = Character('Mikael', color="#5D625B", who_font = "PoiretOne-Regul
 
 default shelf = Shelf("Library", 20)
 default book_1 = Book("Tutorial", "Tutorial", "Author", "Year")
-default book_2 = Book("Herb Identification Guide vol. 1", "Herb Identification", "author", "year")
-default book_3 = Book("Herb Identification Guide vol. 2", "Herb Identification", "author", "year")
-default book_4 = Book("Herb Identification Guide vol. 3", "Herb Identification", "author", "year")
-default book_5 = Book("Medical Journal vol. 1", "Medical Journal", "author", "year")
-default book_6 = Book("Medical Journal vol. 2", "Medical Journal", "author", "year")
+default book_2 = Book("Herb Identification Guide vol. 1", "Herb Identification", "Master Elaine", "year")
+default book_3 = Book("Herb Identification Guide vol. 2", "Herb Identification", "Master Elaine", "year")
+default book_4 = Book("Herb Identification Guide vol. 3", "Herb Identification", "Master Elaine", "year")
+default book_5 = Book("Medical Journal vol. 1", "Medical Journal", "Master Elaine", "year")
+default book_6 = Book("Medical Journal vol. 2", "Medical Journal", "Master Elaine", "year")
+default book_7 = Book("Medical Journal vol. 3", "Medical Journal", "Master Elaine", "year")
+default book_8 = Book("Medical Journal vol. 4", "Medical Journal", "Master Elaine", "year")
+default book_9 = Book("Medical Journal vol. 5", "Medical Journal", "Master Elaine", "year")
+default book_10 = Book("Medical Journal vol. 6", "Medical Journal", "Master Elaine", "year")
 
 
 # This is the splash screen. Should show my logo, and then the 
