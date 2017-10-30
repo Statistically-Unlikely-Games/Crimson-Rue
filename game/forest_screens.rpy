@@ -1,3 +1,8 @@
+#Remember, no herbs will show up unless you have read the herb identification book that unlocks them. 
+#If the forest is empty, check this first before thinking there is a bug.
+
+
+
 ##############################################################################
 # Forest One
 #
