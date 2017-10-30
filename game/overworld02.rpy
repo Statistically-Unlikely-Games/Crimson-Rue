@@ -41,7 +41,7 @@ label overworld02:
 screen overworld02:
     tag menu2
     
-    add "bg/overworld02.png"
+    add "images/bg/bg overworld02.png"
     
     if F1Harvest == True: 
         imagebutton: 

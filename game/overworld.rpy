@@ -41,7 +41,7 @@ label overworld01:
 screen overworld:
     tag menu2
     
-    add "bg/overworld01.png"
+    add "images/bg/bg overworld01.png"
     
     imagebutton:
          auto "gui/button.overworld.apothecary_%s.png" 

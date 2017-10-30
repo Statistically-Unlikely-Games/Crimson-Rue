@@ -8,7 +8,7 @@ label item_shop:
     
     $ in_itemshop = True
     
-    show bg itemshop
+    scene bg itemshop
     show screen itemshop
     show screen basic_overlay
     

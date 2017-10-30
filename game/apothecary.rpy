@@ -20,7 +20,7 @@ label return_home:
     $ in_forest009 = False
 
     hide screen basic_overlay
-    show bg black
+    scene bg black
     "It's getting late. Better head home."
     call calendar_ani(1)
     "You have a peaceful night's rest."
@@ -50,7 +50,7 @@ label apothecary_shop:
     $ in_forest008 = False
     $ in_forest009 = False
     
-    show bg apothecary
+    scene bg apothecary
     show screen apothecary
     show screen basic_overlay
     
@@ -93,7 +93,7 @@ label kitchen:
     $ in_forest008 = False
     $ in_forest009 = False
     
-    show bg kitchen
+    scene bg kitchen
     show screen kitchen
     show screen basic_overlay
     
@@ -132,7 +132,7 @@ label cellar:
     $ in_forest008 = False
     $ in_forest009 = False
     
-    show bg cellar
+    scene bg cellar
     show screen cellar
     show screen basic_overlay
     

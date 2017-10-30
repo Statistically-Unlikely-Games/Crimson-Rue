@@ -7,7 +7,7 @@
 init python:
     #Galleries settings - start
     #list the CG gallery images here:
-    gallery_cg_items = ["cg01", "cg02", "cg03", "cg04", "cg05", "cg06", "cg07", "cg08", "cg09", "cg10", "cg11"]
+    gallery_cg_items = ["cg 01", "cg 02", "cg 03", "cg 04", "cg 05", "cg 06", "cg 07", "cg 08", "cg 09", "cg 10", "cg 11"]
     
     #list the BG gallery images here (do not include variations, such as night version):
     gallery_bg_items = ["bg apothecary", "bg cellar", "bg forest001", "bg forest002", "bg forest003", "bg forest004", "bg forest005", "bg forest006", "bg forest007", "bg forest008", "bg forest009", "bg itemshop", "bg kitchen", "bg overworld01", "bg overworld02"]

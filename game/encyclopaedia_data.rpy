@@ -2,115 +2,115 @@ init python:
 
     #Defining Encyclopedia images
 
-    B1_1_image = "enc/Botanical_Thistle.png"
-    B1_2_image = "enc/Botanical_Dandelion.png"
-    B1_3_image = "enc/Botanical_Blackberry.png"
-    B1_4_image = "enc/Botanical_Oak.png"
-    B1_5_image = "enc/Botanical_Garlic.png"
-    B1_6_image = "enc/Botanical_Mint.png"
-    B1_7_image = "enc/Botanical_Oregano.png"
-    B1_8_image = "enc/Botanical_Parsley.png"
-    B1_9_image = "enc/Botanical_Sage.png"
-    B1_10_image = "enc/Botanical_Laurel.png"
+    B1_1_image = "images/enc/Botanical_Thistle.png"
+    B1_2_image = "images/enc/Botanical_Dandelion.png"
+    B1_3_image = "images/enc/Botanical_Blackberry.png"
+    B1_4_image = "images/enc/Botanical_Oak.png"
+    B1_5_image = "images/enc/Botanical_Garlic.png"
+    B1_6_image = "images/enc/Botanical_Mint.png"
+    B1_7_image = "images/enc/Botanical_Oregano.png"
+    B1_8_image = "images/enc/Botanical_Parsley.png"
+    B1_9_image = "images/enc/Botanical_Sage.png"
+    B1_10_image = "images/enc/Botanical_Laurel.png"
     
-    B2_1_image = "enc/Botanical_Thistle.png"
-    B2_2_image = "enc/Botanical_Dandelion.png"
-    B2_3_image = "enc/Botanical_Blackberry.png"
-    B2_4_image = "enc/Botanical_Oak.png"
-    B2_5_image = "enc/Botanical_Garlic.png"
-    B2_6_image = "enc/Botanical_Mint.png"
-    B2_7_image = "enc/Botanical_Oregano.png"
-    B2_8_image = "enc/Botanical_Parsley.png"
-    B2_9_image = "enc/Botanical_Sage.png"
-    B2_10_image = "enc/Botanical_Laurel.png"
+    B2_1_image = "images/enc/Botanical_Thistle.png"
+    B2_2_image = "images/enc/Botanical_Dandelion.png"
+    B2_3_image = "images/enc/Botanical_Blackberry.png"
+    B2_4_image = "images/enc/Botanical_Oak.png"
+    B2_5_image = "images/enc/Botanical_Garlic.png"
+    B2_6_image = "images/enc/Botanical_Mint.png"
+    B2_7_image = "images/enc/Botanical_Oregano.png"
+    B2_8_image = "images/enc/Botanical_Parsley.png"
+    B2_9_image = "images/enc/Botanical_Sage.png"
+    B2_10_image = "images/enc/Botanical_Laurel.png"
     
-    B3_1_image = "enc/Botanical_Hyssop.png"
-    B3_2_image = "enc/Botanical_Borage.png"
-    B3_3_image = "enc/Botanical_Crown Flower.png"
-    B3_4_image = "enc/Botanical_Marsh Marigold.png"
-    B3_5_image = "enc/Botanical_Plantain.png"
-    B3_6_image = "enc/Botanical_Chamomile.png"
-    B3_7_image = "enc/Botanical_Calendula.png"
-    B3_8_image = "enc/Botanical_Violet.png"
-    B3_9_image = "enc/Botanical_Rosemary.png"
-    B3_10_image = "enc/Botanical_Basil.png"
+    B3_1_image = "images/enc/Botanical_Hyssop.png"
+    B3_2_image = "images/enc/Botanical_Borage.png"
+    B3_3_image = "images/enc/Botanical_Crown Flower.png"
+    B3_4_image = "images/enc/Botanical_Marsh Marigold.png"
+    B3_5_image = "images/enc/Botanical_Plantain.png"
+    B3_6_image = "images/enc/Botanical_Chamomile.png"
+    B3_7_image = "images/enc/Botanical_Calendula.png"
+    B3_8_image = "images/enc/Botanical_Violet.png"
+    B3_9_image = "images/enc/Botanical_Rosemary.png"
+    B3_10_image = "images/enc/Botanical_Basil.png"
     
-    B4_1_image = "enc/Botanical_Poppy.png"
-    B4_2_image = "enc/Botanical_Mullein.png"
-    B4_3_image = "enc/Botanical_Red Clover.png"
-    B4_4_image = "enc/Botanical_St Johns Wort.png"
-    B4_5_image = "enc/Botanical_Yellow Dock.png"
-    B4_6_image = "enc/Botanical_Burdock.png"
-    B4_7_image = "enc/Botanical_Comfrey.png"
-    B4_8_image = "enc/Botanical_Goldenseal.png"
-    B4_9_image = "enc/Botanical_Lemon Balm.png"
-    B4_10_image = "enc/Botanical_Licorice.png"
+    B4_1_image = "images/enc/Botanical_Poppy.png"
+    B4_2_image = "images/enc/Botanical_Mullein.png"
+    B4_3_image = "images/enc/Botanical_Red Clover.png"
+    B4_4_image = "images/enc/Botanical_St Johns Wort.png"
+    B4_5_image = "images/enc/Botanical_Yellow Dock.png"
+    B4_6_image = "images/enc/Botanical_Burdock.png"
+    B4_7_image = "images/enc/Botanical_Comfrey.png"
+    B4_8_image = "images/enc/Botanical_Goldenseal.png"
+    B4_9_image = "images/enc/Botanical_Lemon Balm.png"
+    B4_10_image = "images/enc/Botanical_Licorice.png"
     
-    B5_1_image = "enc/Botanical_Thistle.png"
-    B5_2_image = "enc/Botanical_Dandelion.png"
-    B5_3_image = "enc/Botanical_Blackberry.png"
-    B5_4_image = "enc/Botanical_Oak.png"
-    B5_5_image = "enc/Botanical_Garlic.png"
-    B5_6_image = "enc/Botanical_Mint.png"
-    B5_7_image = "enc/Botanical_Oregano.png"
-    B5_8_image = "enc/Botanical_Parsley.png"
-    B5_9_image = "enc/Botanical_Sage.png"
-    B5_10_image = "enc/Botanical_Laurel.png"
+    B5_1_image = "images/enc/Botanical_Thistle.png"
+    B5_2_image = "images/enc/Botanical_Dandelion.png"
+    B5_3_image = "images/enc/Botanical_Blackberry.png"
+    B5_4_image = "images/enc/Botanical_Oak.png"
+    B5_5_image = "images/enc/Botanical_Garlic.png"
+    B5_6_image = "images/enc/Botanical_Mint.png"
+    B5_7_image = "images/enc/Botanical_Oregano.png"
+    B5_8_image = "images/enc/Botanical_Parsley.png"
+    B5_9_image = "images/enc/Botanical_Sage.png"
+    B5_10_image = "images/enc/Botanical_Laurel.png"
     
-    B6_1_image = "enc/Botanical_Thistle.png"
-    B6_2_image = "enc/Botanical_Dandelion.png"
-    B6_3_image = "enc/Botanical_Blackberry.png"
-    B6_4_image = "enc/Botanical_Oak.png"
-    B6_5_image = "enc/Botanical_Garlic.png"
-    B6_6_image = "enc/Botanical_Mint.png"
-    B6_7_image = "enc/Botanical_Oregano.png"
-    B6_8_image = "enc/Botanical_Parsley.png"
-    B6_9_image = "enc/Botanical_Sage.png"
-    B6_10_image = "enc/Botanical_Laurel.png"
+    B6_1_image = "images/enc/Botanical_Thistle.png"
+    B6_2_image = "images/enc/Botanical_Dandelion.png"
+    B6_3_image = "images/enc/Botanical_Blackberry.png"
+    B6_4_image = "images/enc/Botanical_Oak.png"
+    B6_5_image = "images/enc/Botanical_Garlic.png"
+    B6_6_image = "images/enc/Botanical_Mint.png"
+    B6_7_image = "images/enc/Botanical_Oregano.png"
+    B6_8_image = "images/enc/Botanical_Parsley.png"
+    B6_9_image = "images/enc/Botanical_Sage.png"
+    B6_10_image = "images/enc/Botanical_Laurel.png"
     
-    B7_1_image = "enc/Botanical_Thistle.png"
-    B7_2_image = "enc/Botanical_Dandelion.png"
-    B7_3_image = "enc/Botanical_Blackberry.png"
-    B7_4_image = "enc/Botanical_Oak.png"
-    B7_5_image = "enc/Botanical_Garlic.png"
-    B7_6_image = "enc/Botanical_Mint.png"
-    B7_7_image = "enc/Botanical_Oregano.png"
-    B7_8_image = "enc/Botanical_Parsley.png"
-    B7_9_image = "enc/Botanical_Sage.png"
-    B7_10_image = "enc/Botanical_Laurel.png"
+    B7_1_image = "images/enc/Botanical_Thistle.png"
+    B7_2_image = "images/enc/Botanical_Dandelion.png"
+    B7_3_image = "images/enc/Botanical_Blackberry.png"
+    B7_4_image = "images/enc/Botanical_Oak.png"
+    B7_5_image = "images/enc/Botanical_Garlic.png"
+    B7_6_image = "images/enc/Botanical_Mint.png"
+    B7_7_image = "images/enc/Botanical_Oregano.png"
+    B7_8_image = "images/enc/Botanical_Parsley.png"
+    B7_9_image = "images/enc/Botanical_Sage.png"
+    B7_10_image = "images/enc/Botanical_Laurel.png"
     
-    B8_1_image = "enc/Botanical_Thistle.png"
-    B8_2_image = "enc/Botanical_Dandelion.png"
-    B8_3_image = "enc/Botanical_Blackberry.png"
-    B8_4_image = "enc/Botanical_Oak.png"
-    B8_5_image = "enc/Botanical_Garlic.png"
-    B8_6_image = "enc/Botanical_Mint.png"
-    B8_7_image = "enc/Botanical_Oregano.png"
-    B8_8_image = "enc/Botanical_Parsley.png"
-    B8_9_image = "enc/Botanical_Sage.png"
-    B8_10_image = "enc/Botanical_Laurel.png"
+    B8_1_image = "images/enc/Botanical_Thistle.png"
+    B8_2_image = "images/enc/Botanical_Dandelion.png"
+    B8_3_image = "images/enc/Botanical_Blackberry.png"
+    B8_4_image = "images/enc/Botanical_Oak.png"
+    B8_5_image = "images/enc/Botanical_Garlic.png"
+    B8_6_image = "images/enc/Botanical_Mint.png"
+    B8_7_image = "images/enc/Botanical_Oregano.png"
+    B8_8_image = "images/enc/Botanical_Parsley.png"
+    B8_9_image = "images/enc/Botanical_Sage.png"
+    B8_10_image = "images/enc/Botanical_Laurel.png"
     
-    B9_1_image = "enc/Botanical_Thistle.png"
-    B9_2_image = "enc/Botanical_Dandelion.png"
-    B9_3_image = "enc/Botanical_Blackberry.png"
-    B9_4_image = "enc/Botanical_Oak.png"
-    B9_5_image = "enc/Botanical_Garlic.png"
-    B9_6_image = "enc/Botanical_Mint.png"
-    B9_7_image = "enc/Botanical_Oregano.png"
-    B9_8_image = "enc/Botanical_Parsley.png"
-    B9_9_image = "enc/Botanical_Sage.png"
-    B9_10_image = "enc/Botanical_Laurel.png"
+    B9_1_image = "images/enc/Botanical_Thistle.png"
+    B9_2_image = "images/enc/Botanical_Dandelion.png"
+    B9_3_image = "images/enc/Botanical_Blackberry.png"
+    B9_4_image = "images/enc/Botanical_Oak.png"
+    B9_5_image = "images/enc/Botanical_Garlic.png"
+    B9_6_image = "images/enc/Botanical_Mint.png"
+    B9_7_image = "images/enc/Botanical_Oregano.png"
+    B9_8_image = "images/enc/Botanical_Parsley.png"
+    B9_9_image = "images/enc/Botanical_Sage.png"
+    B9_10_image = "images/enc/Botanical_Laurel.png"
     
-    B10_1_image = "enc/Botanical_Thistle.png"
-    B10_2_image = "enc/Botanical_Dandelion.png"
-    B10_3_image = "enc/Botanical_Blackberry.png"
-    B10_4_image = "enc/Botanical_Oak.png"
-    B10_5_image = "enc/Botanical_Garlic.png"
-    B10_6_image = "enc/Botanical_Mint.png"
-    B10_7_image = "enc/Botanical_Oregano.png"
-    B10_8_image = "enc/Botanical_Parsley.png"
-    B10_9_image = "enc/Botanical_Sage.png"
-    B10_10_image = "enc/Botanical_Laurel.png"
+    B10_1_image = "images/enc/Botanical_Thistle.png"
+    B10_2_image = "images/enc/Botanical_Dandelion.png"
+    B10_3_image = "images/enc/Botanical_Blackberry.png"
+    B10_4_image = "images/enc/Botanical_Oak.png"
+    B10_5_image = "images/enc/Botanical_Garlic.png"
+    B10_6_image = "images/enc/Botanical_Mint.png"
+    B10_7_image = "images/enc/Botanical_Oregano.png"
+    B10_8_image = "images/enc/Botanical_Parsley.png"
+    B10_9_image = "images/enc/Botanical_Sage.png"
+    B10_10_image = "images/enc/Botanical_Laurel.png"
 
 
 label define_books: 
@@ -1513,9 +1513,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of the symptom.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Damaged skin making circular or ring shapes are quite common but usually not serious.",
+            "Most often, they are signs of a fungal infection which can be cleared up with professional treatment.",
+            "In more rare cases, they can be caused by serious illnesses, such as leprosy.",
         ],
         0)
 
@@ -1524,9 +1524,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of the symptom.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "A number of conditions can cause a patient to lose color in their skin.",
+            "Certain conditions, like vitiligo, cause skin to completely lose pigmentation, while skin damage can cause partial loss.",
+            "Individuals with complete loss of color have to be especially careful to avoid sun damage.",
         ],
         0)
 
@@ -1535,9 +1535,9 @@ label define_books:
         Solid("#ffffff"),
         "icon",
         [
-            "Description of the symptom.",
-            "More info on the symptoms, how they manifest differently in different people.",
-            "Basic treatment plan.",
+            "Lymph nodes often swell in reaction to infection or injury.",
+            "If swelling lasts more than two weeks, or is accompanied by other symptoms such as fever or fatigue, it is important to get treatment.",
+            "It is also important to seek immediate care if they are hard to the touch, don't move, or if the skin around them is red and irritated.",
         ],
         0)
 

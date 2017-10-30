@@ -1,29 +1,81 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 282, in script call
-    call define_books
-  File "game/encyclopaedia_data.rpy", line 1457, in script
-    $ book_7.add_page(
-  File "game/encyclopaedia_data.rpy", line 1457, in <module>
-    $ book_7.add_page(
-NameError: name 'book_7' is not defined
+While loading <'Image' u'bg/overworld01.png'>:
+  File "game/overworld.rpy", line 36, in script call
+    call timecount_msg
+  File "game/timecount.rpy", line 173, in script
+    "It is now sunrise."
+IOError: Couldn't find file 'bg/overworld01.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 282, in script call
-    call define_books
-  File "game/encyclopaedia_data.rpy", line 1457, in script
-    $ book_7.add_page(
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\_RenPy\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/encyclopaedia_data.rpy", line 1457, in <module>
-    $ book_7.add_page(
-NameError: name 'book_7' is not defined
+  File "game/overworld.rpy", line 36, in script call
+    call timecount_msg
+  File "game/timecount.rpy", line 173, in script
+    "It is now sunrise."
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 624, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\exports.py", line 1173, in say
+    who(what, *args, **kwargs)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\character.py", line 911, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\character.py", line 747, in do_display
+    **display_args)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\character.py", line 523, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2553, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2916, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 1980, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 430, in renpy.display.render.render_screen (gen\renpy.display.render.c:6938)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 625, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\layout.py", line 702, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\im.py", line 503, in render
+    texture = cache.get(self, texture=True)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\im.py", line 212, in get
+    surf = image.load()
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\im.py", line 553, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\loader.py", line 548, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'bg/overworld01.png'.
 
 Windows-8-6.2.9200
-Ren'Py 6.99.12.2.2029
+Ren'Py 6.99.13.2919
 Apothecary Game 0.1
