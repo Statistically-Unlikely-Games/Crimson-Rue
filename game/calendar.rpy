@@ -324,15 +324,15 @@ screen calendar:
     tag menu
     
     python:
-        cal_base = "cal/cal base.png"
+        cal_base = "gui/cal/cal base.png"
         if calendar.day < 10:
-            day_img = "".join(["cal/cal 0", str(calendar.day), ".png"])
+            day_img = "".join(["gui/cal/cal 0", str(calendar.day), ".png"])
         else:
-            day_img = "".join(["cal/cal ", str(calendar.day), ".png"])
-        dotw_img = "".join(["cal/cal ", calendar.weekday, ".png"])
-        month_img = "".join(["cal/cal ", calendar.month, ".png"])
-        moon_img = "".join(["cal/cal ", calendar.moonphase, ".png"])
-        time_img = "".join(["cal/cal ", timeofday, ".png"])
+            day_img = "".join(["gui/cal/cal ", str(calendar.day), ".png"])
+        dotw_img = "".join(["gui/cal/cal ", calendar.weekday, ".png"])
+        month_img = "".join(["gui/cal/cal ", calendar.month, ".png"])
+        moon_img = "".join(["gui/cal/cal ", calendar.moonphase, ".png"])
+        time_img = "".join(["gui/cal/cal ", timeofday, ".png"])
         
     add cal_base xpos 0 ypos 0
     add month_img xpos 0 ypos 0

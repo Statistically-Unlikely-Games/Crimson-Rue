@@ -36,8 +36,8 @@ screen forest001:
     
         if herb_book3 and forest001_poppy_col:
             imagebutton:
-                idle "images/inv/herb021_idle.png"
-                hover "images/inv/herb021_hover.png"
+                idle "gui/inv/herb021_idle.png"
+                hover "gui/inv/herb021_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_poppy_col", False), Jump("forest001_poppy") ]
                 xpos 300 ypos 500
@@ -45,8 +45,8 @@ screen forest001:
             
         if herb_book3 and forest001_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_stjohns_col", False), Jump("forest001_stjohns") ]
                 xpos 1120 ypos 480
@@ -54,8 +54,8 @@ screen forest001:
     
         if herb_book2 and forest001_rosemary_col:
             imagebutton:
-                idle "images/inv/herb019_idle.png"
-                hover "images/inv/herb019_hover.png"
+                idle "gui/inv/herb019_idle.png"
+                hover "gui/inv/herb019_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_rosemary_col", False), Jump("forest001_rosemary") ]
                 xpos 200 ypos 330
@@ -63,8 +63,8 @@ screen forest001:
             
         if herb_book1 and forest001_mint_col:
             imagebutton:
-                idle "images/inv/herb006_idle.png"
-                hover "images/inv/herb006_hover.png"
+                idle "gui/inv/herb006_idle.png"
+                hover "gui/inv/herb006_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_mint_col", False), Jump("forest001_mint") ]
                 xpos 600 ypos 390
@@ -72,8 +72,8 @@ screen forest001:
             
         if herb_book2 and forest001_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_chamomile_col", False), Jump("forest001_chamomile") ]
                 xpos 800 ypos 320
@@ -83,8 +83,8 @@ screen forest001:
         
         if herb_book1 and forest001_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_thistle_col", False), Jump("forest001_thistle") ]
                 xpos 600 ypos 390
@@ -92,8 +92,8 @@ screen forest001:
             
         if herb_book1 and forest001_oregano_col:
             imagebutton:
-                idle "images/inv/herb007_idle.png"
-                hover "images/inv/herb007_hover.png"
+                idle "gui/inv/herb007_idle.png"
+                hover "gui/inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_oregano_col", False), Jump("forest001_oregano") ]
                 xpos 1120 ypos 480
@@ -101,8 +101,8 @@ screen forest001:
     
         if herb_book3 and forest001_licorice_col:
             imagebutton:
-                idle "images/inv/herb030_idle.png"
-                hover "images/inv/herb030_hover.png"
+                idle "gui/inv/herb030_idle.png"
+                hover "gui/inv/herb030_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_licorice_col", False), Jump("forest001_licorice") ]
                 xpos 300 ypos 500
@@ -111,8 +111,8 @@ screen forest001:
             
         if herb_book3 and forest001_redclover_col:
             imagebutton:
-                idle "images/inv/herb023_idle.png"
-                hover "images/inv/herb023_hover.png"
+                idle "gui/inv/herb023_idle.png"
+                hover "gui/inv/herb023_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_redclover_col", False), Jump("forest001_redclover") ]
                 xpos 200 ypos 330
@@ -120,8 +120,8 @@ screen forest001:
             
         if herb_book3 and forest001_poppy_col:
             imagebutton:
-                idle "images/inv/herb021_idle.png"
-                hover "images/inv/herb021_hover.png"
+                idle "gui/inv/herb021_idle.png"
+                hover "gui/inv/herb021_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_poppy_col", False), Jump("forest001_poppy") ]
                 xpos 800 ypos 320
@@ -131,8 +131,8 @@ screen forest001:
     
         if herb_book1 and forest001_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_blackberry_col", False), Jump("forest001_blackberry") ]
                 xpos 200 ypos 330
@@ -140,8 +140,8 @@ screen forest001:
             
         if herb_book1 and forest001_garlic_col:
             imagebutton:
-                idle "images/inv/herb005_idle.png"
-                hover "images/inv/herb005_hover.png"
+                idle "gui/inv/herb005_idle.png"
+                hover "gui/inv/herb005_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_garlic_col", False), Jump("forest001_garlic") ]
                 xpos 1120 ypos 480
@@ -149,8 +149,8 @@ screen forest001:
     
         if herb_book3 and forest001_mullein_col:
             imagebutton:
-                idle "images/inv/herb022_idle.png"
-                hover "images/inv/herb022_hover.png"
+                idle "gui/inv/herb022_idle.png"
+                hover "gui/inv/herb022_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_mullein_col", False), Jump("forest001_mullein") ]
                 xpos 600 ypos 390
@@ -158,8 +158,8 @@ screen forest001:
             
         if herb_book1 and forest001_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_oak_col", False), Jump("forest001_oak") ]
                 xpos 800 ypos 320
@@ -167,8 +167,8 @@ screen forest001:
             
         if herb_book1 and forest001_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_thistle_col", False), Jump("forest001_thistle") ]
                 xpos 300 ypos 500
@@ -178,8 +178,8 @@ screen forest001:
     
         if herb_book3 and forest001_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_burdock_col", False), Jump("forest001_burdock") ]
                 xpos 800 ypos 320
@@ -187,8 +187,8 @@ screen forest001:
             
         if herb_book3 and forest001_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_stjohns_col", False), Jump("forest001_stjohns") ]
                 xpos 1120 ypos 480
@@ -196,8 +196,8 @@ screen forest001:
     
         if herb_book3 and forest001_poppy_col:
             imagebutton:
-                idle "images/inv/herb021_idle.png"
-                hover "images/inv/herb021_hover.png"
+                idle "gui/inv/herb021_idle.png"
+                hover "gui/inv/herb021_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_poppy_col", False), Jump("forest001_poppy") ]
                 xpos 600 ypos 390
@@ -206,8 +206,8 @@ screen forest001:
             
         if herb_book2 and forest001_hyssop_col:
             imagebutton:
-                idle "images/inv/herb011_idle.png"
-                hover "images/inv/herb011_hover.png"
+                idle "gui/inv/herb011_idle.png"
+                hover "gui/inv/herb011_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_hyssop_col", False), Jump("forest001_hyssop") ]
                 xpos 300 ypos 500
@@ -215,8 +215,8 @@ screen forest001:
             
         if herb_book1 and forest001_mint_col:
             imagebutton:
-                idle "images/inv/herb006_idle.png"
-                hover "images/inv/herb006_hover.png"
+                idle "gui/inv/herb006_idle.png"
+                hover "gui/inv/herb006_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_mint_col", False), Jump("forest001_mint") ]
                 xpos 200 ypos 330
@@ -226,8 +226,8 @@ screen forest001:
     
         if herb_book3 and forest001_mullein_col:
             imagebutton:
-                idle "images/inv/herb022_idle.png"
-                hover "images/inv/herb022_hover.png"
+                idle "gui/inv/herb022_idle.png"
+                hover "gui/inv/herb022_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_mullein_col", False), Jump("forest001_mullein") ]
                 xpos 800 ypos 320
@@ -235,8 +235,8 @@ screen forest001:
             
         if herb_book2 and forest001_borage_col:
             imagebutton:
-                idle "images/inv/herb012_idle.png"
-                hover "images/inv/herb012_hover.png"
+                idle "gui/inv/herb012_idle.png"
+                hover "gui/inv/herb012_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_borage_col", False), Jump("forest001_borage") ]
                 xpos 600 ypos 390
@@ -244,8 +244,8 @@ screen forest001:
     
         if herb_book1 and forest001_sage_col:
             imagebutton:
-                idle "images/inv/herb009_idle.png"
-                hover "images/inv/herb009_hover.png"
+                idle "gui/inv/herb009_idle.png"
+                hover "gui/inv/herb009_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_sage_col", False), Jump("forest001_sage") ]
                 xpos 1120 ypos 480
@@ -254,8 +254,8 @@ screen forest001:
             
         if herb_book1 and forest001_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_blackberry_col", False), Jump("forest001_blackberry") ]
                 xpos 200 ypos 330
@@ -263,8 +263,8 @@ screen forest001:
             
         if herb_book3 and forest001_redclover_col:
             imagebutton:
-                idle "images/inv/herb023_idle.png"
-                hover "images/inv/herb023_hover.png"
+                idle "gui/inv/herb023_idle.png"
+                hover "gui/inv/herb023_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest001_redclover_col", False), Jump("forest001_redclover") ]
                 xpos 300 ypos 500
@@ -427,8 +427,8 @@ screen forest002:
     
         if herb_book2 and forest002_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_chamomile_col", False), Jump("forest002_chamomile") ]
                 xpos 800 ypos 400
@@ -437,8 +437,8 @@ screen forest002:
         
         if herb_book1 and forest002_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_dandelion_col", False), Jump("forest002_dandelion") ]
                 xpos 1000 ypos 550
@@ -446,8 +446,8 @@ screen forest002:
     
         if herb_book1 and forest002_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_blackberry_col", False), Jump("forest002_blackberry") ]
                 xpos 400 ypos 470
@@ -456,8 +456,8 @@ screen forest002:
             
         if herb_book3 and forest002_licorice_col:
             imagebutton:
-                idle "images/inv/herb030_idle.png"
-                hover "images/inv/herb030_hover.png"
+                idle "gui/inv/herb030_idle.png"
+                hover "gui/inv/herb030_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_licorice_col", False), Jump("forest002_licorice") ]
                 xpos 50 ypos 490
@@ -465,8 +465,8 @@ screen forest002:
             
         if herb_book1 and forest002_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_thistle_col", False), Jump("forest002_thistle") ]
                 xpos 665 ypos 360
@@ -476,8 +476,8 @@ screen forest002:
         
         if herb_book3 and forest002_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_burdock_col", False), Jump("forest002_burdock") ]
                 xpos 665 ypos 360
@@ -485,8 +485,8 @@ screen forest002:
             
         if herb_book1 and forest002_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_blackberry_col", False), Jump("forest002_blackberry") ]
                 xpos 800 ypos 400
@@ -494,8 +494,8 @@ screen forest002:
     
         if herb_book2 and forest002_calendula_col:
             imagebutton:
-                idle "images/inv/herb017_idle.png"
-                hover "images/inv/herb017_hover.png"
+                idle "gui/inv/herb017_idle.png"
+                hover "gui/inv/herb017_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_calendula_col", False), Jump("forest002_calendula") ]
                 xpos 1000 ypos 550
@@ -504,8 +504,8 @@ screen forest002:
             
         if herb_book3 and forest002_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_stjohns_col", False), Jump("forest002_stjohns") ]
                 xpos 400 ypos 470
@@ -513,8 +513,8 @@ screen forest002:
             
         if herb_book2 and forest002_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_chamomile_col", False), Jump("forest002_chamomile") ]
                 xpos 50 ypos 490
@@ -524,8 +524,8 @@ screen forest002:
     
         if herb_book1 and forest002_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_oak_col", False), Jump("forest002_oak") ]
                 xpos 50 ypos 490
@@ -533,8 +533,8 @@ screen forest002:
             
         if herb_book2 and forest002_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_chamomile_col", False), Jump("forest002_chamomile") ]
                 xpos 665 ypos 360
@@ -542,8 +542,8 @@ screen forest002:
     
         if herb_book3 and forest002_redclover_col:
             imagebutton:
-                idle "images/inv/herb023_idle.png"
-                hover "images/inv/herb023_hover.png"
+                idle "gui/inv/herb023_idle.png"
+                hover "gui/inv/herb023_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_redclover_col", False), Jump("forest002_redclover") ]
                 xpos 800 ypos 400
@@ -551,8 +551,8 @@ screen forest002:
             
         if herb_book1 and forest002_laurel_col:
             imagebutton:
-                idle "images/inv/herb010_idle.png"
-                hover "images/inv/herb010_hover.png"
+                idle "gui/inv/herb010_idle.png"
+                hover "gui/inv/herb010_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_laurel_col", False), Jump("forest002_laurel") ]
                 xpos 1000 ypos 550
@@ -560,8 +560,8 @@ screen forest002:
             
         if herb_book1 and forest002_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_dandelion_col", False), Jump("forest002_dandelion") ]
                 xpos 400 ypos 470
@@ -571,8 +571,8 @@ screen forest002:
     
         if herb_book2 and forest002_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_chamomile_col", False), Jump("forest002_chamomile") ]
                 xpos 400 ypos 470
@@ -580,8 +580,8 @@ screen forest002:
             
         if herb_book3 and forest002_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_stjohns_col", False), Jump("forest002_stjohns") ]
                 xpos 50 ypos 490
@@ -589,8 +589,8 @@ screen forest002:
     
         if herb_book1 and forest002_parsley_col:
             imagebutton:
-                idle "images/inv/herb008_idle.png"
-                hover "images/inv/herb008_hover.png"
+                idle "gui/inv/herb008_idle.png"
+                hover "gui/inv/herb008_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_parsley_col", False), Jump("forest002_parsley") ]
                 xpos 665 ypos 360
@@ -599,8 +599,8 @@ screen forest002:
             
         if herb_book1 and forest002_oregano_col:
             imagebutton:
-                idle "images/inv/herb007_idle.png"
-                hover "images/inv/herb007_hover.png"
+                idle "gui/inv/herb007_idle.png"
+                hover "gui/inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_oregano_col", False), Jump("forest002_oregano") ]
                 xpos 800 ypos 400
@@ -608,8 +608,8 @@ screen forest002:
             
         if herb_book1 and forest002_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_oak_col", False), Jump("forest002_oak") ]
                 xpos 1000 ypos 550
@@ -619,8 +619,8 @@ screen forest002:
     
         if herb_book2 and forest002_rosemary_col:
             imagebutton:
-                idle "images/inv/herb019_idle.png"
-                hover "images/inv/herb019_hover.png"
+                idle "gui/inv/herb019_idle.png"
+                hover "gui/inv/herb019_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_rosemary_col", False), Jump("forest002_rosemary") ]
                 xpos 1000 ypos 550
@@ -628,8 +628,8 @@ screen forest002:
             
         if herb_book2 and forest002_hyssop_col:
             imagebutton:
-                idle "images/inv/herb011_idle.png"
-                hover "images/inv/herb011_hover.png"
+                idle "gui/inv/herb011_idle.png"
+                hover "gui/inv/herb011_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_hyssop_col", False), Jump("forest002_hyssop") ]
                 xpos 400 ypos 470
@@ -637,8 +637,8 @@ screen forest002:
     
         if herb_book3 and forest002_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_burdock_col", False), Jump("forest002_burdock") ]
                 xpos 50 ypos 490
@@ -647,8 +647,8 @@ screen forest002:
             
         if herb_book3 and forest002_mullein_col:
             imagebutton:
-                idle "images/inv/herb022_idle.png"
-                hover "images/inv/herb022_hover.png"
+                idle "gui/inv/herb022_idle.png"
+                hover "gui/inv/herb022_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_mullein_col", False), Jump("forest002_mullein") ]
                 xpos 665 ypos 360
@@ -656,8 +656,8 @@ screen forest002:
             
         if herb_book2 and forest002_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest002_chamomile_col", False), Jump("forest002_chamomile") ]
                 xpos 800 ypos 400
@@ -814,8 +814,8 @@ screen forest003:
     
         if herb_book2 and forest003_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_chamomile_col", False), Jump("forest003_chamomile") ]
                 xpos 300 ypos 560
@@ -823,8 +823,8 @@ screen forest003:
             
         if herb_book2 and forest003_borage_col:
             imagebutton:
-                idle "images/inv/herb012_idle.png"
-                hover "images/inv/herb012_hover.png"
+                idle "gui/inv/herb012_idle.png"
+                hover "gui/inv/herb012_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_borage_col", False), Jump("forest003_borage") ]
                 xpos 1120 ypos 500
@@ -832,8 +832,8 @@ screen forest003:
     
         if herb_book3 and forest003_redclover_col:
             imagebutton:
-                idle "images/inv/herb023_idle.png"
-                hover "images/inv/herb023_hover.png"
+                idle "gui/inv/herb023_idle.png"
+                hover "gui/inv/herb023_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_redclover_col", False), Jump("forest003_redclover") ]
                 xpos 420 ypos 460
@@ -842,8 +842,8 @@ screen forest003:
             
         if herb_book2 and forest003_chamomile2_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_chamomile2_col", False), Jump("forest003_chamomile2") ]
                 xpos 600 ypos 440
@@ -851,8 +851,8 @@ screen forest003:
             
         if herb_book1 and forest003_sage_col:
             imagebutton:
-                idle "images/inv/herb009_idle.png"
-                hover "images/inv/herb009_hover.png"
+                idle "gui/inv/herb009_idle.png"
+                hover "gui/inv/herb009_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_sage_col", False), Jump("forest003_sage") ]
                 xpos 800 ypos 600
@@ -862,8 +862,8 @@ screen forest003:
         
         if herb_book2 and forest003_rosemary_col:
             imagebutton:
-                idle "images/inv/herb019_idle.png"
-                hover "images/inv/herb019_hover.png"
+                idle "gui/inv/herb019_idle.png"
+                hover "gui/inv/herb019_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_rosemary_col", False), Jump("forest003_rosemary") ]
                 xpos 300 ypos 560
@@ -871,8 +871,8 @@ screen forest003:
             
         if herb_book2 and forest003_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_chamomile_col", False), Jump("forest003_chamomile") ]
                 xpos 1120 ypos 500
@@ -880,8 +880,8 @@ screen forest003:
     
         if herb_book2 and forest003_borage_col:
             imagebutton:
-                idle "images/inv/herb012_idle.png"
-                hover "images/inv/herb012_hover.png"
+                idle "gui/inv/herb012_idle.png"
+                hover "gui/inv/herb012_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_borage_col", False), Jump("forest003_borage") ]
                 xpos 420 ypos 460
@@ -890,8 +890,8 @@ screen forest003:
             
         if herb_book1 and forest003_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_oak_col", False), Jump("forest003_oak") ]
                 xpos 600 ypos 440
@@ -899,8 +899,8 @@ screen forest003:
             
         if herb_book3 and forest003_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_stjohns_col", False), Jump("forest003_stjohns") ]
                 xpos 800 ypos 600
@@ -910,8 +910,8 @@ screen forest003:
     
         if herb_book1 and forest003_parsley_col:
             imagebutton:
-                idle "images/inv/herb008_idle.png"
-                hover "images/inv/herb008_hover.png"
+                idle "gui/inv/herb008_idle.png"
+                hover "gui/inv/herb008_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_parsley_col", False), Jump("forest003_parsley") ]
                 xpos 300 ypos 560
@@ -919,8 +919,8 @@ screen forest003:
             
         if herb_book2 and forest003_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_chamomile_col", False), Jump("forest003_chamomile") ]
                 xpos 1120 ypos 500
@@ -928,8 +928,8 @@ screen forest003:
     
         if herb_book3 and forest003_licorice_col:
             imagebutton:
-                idle "images/inv/herb030_idle.png"
-                hover "images/inv/herb030_hover.png"
+                idle "gui/inv/herb030_idle.png"
+                hover "gui/inv/herb030_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_licorice_col", False), Jump("forest003_licorice") ]
                 xpos 420 ypos 460
@@ -937,8 +937,8 @@ screen forest003:
             
         if herb_book3 and forest003_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_burdock_col", False), Jump("forest003_burdock") ]
                 xpos 600 ypos 440
@@ -946,8 +946,8 @@ screen forest003:
             
         if herb_book1 and forest003_garlic_col:
             imagebutton:
-                idle "images/inv/herb005_idle.png"
-                hover "images/inv/herb005_hover.png"
+                idle "gui/inv/herb005_idle.png"
+                hover "gui/inv/herb005_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_garlic_col", False), Jump("forest003_garlic") ]
                 xpos 800 ypos 600
@@ -957,8 +957,8 @@ screen forest003:
     
         if herb_book1 and forest003_oregano_col:
             imagebutton:
-                idle "images/inv/herb007_idle.png"
-                hover "images/inv/herb007_hover.png"
+                idle "gui/inv/herb007_idle.png"
+                hover "gui/inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_oregano_col", False), Jump("forest003_oregano") ]
                 xpos 300 ypos 560
@@ -966,8 +966,8 @@ screen forest003:
             
         if herb_book3 and forest003_mullein_col:
             imagebutton:
-                idle "images/inv/herb022_idle.png"
-                hover "images/inv/herb022_hover.png"
+                idle "gui/inv/herb022_idle.png"
+                hover "gui/inv/herb022_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_mullein_col", False), Jump("forest003_mullein") ]
                 xpos 1120 ypos 500
@@ -975,8 +975,8 @@ screen forest003:
     
         if herb_book1 and forest003_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_thistle_col", False), Jump("forest003_thistle") ]
                 xpos 420 ypos 460
@@ -985,8 +985,8 @@ screen forest003:
             
         if herb_book2 and forest003_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_chamomile_col", False), Jump("forest003_chamomile") ]
                 xpos 600 ypos 440
@@ -994,8 +994,8 @@ screen forest003:
             
         if herb_book2 and forest003_calendula_col:
             imagebutton:
-                idle "images/inv/herb017_idle.png"
-                hover "images/inv/herb017_hover.png"
+                idle "gui/inv/herb017_idle.png"
+                hover "gui/inv/herb017_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_calendula_col", False), Jump("forest003_calendula") ]
                 xpos 800 ypos 600
@@ -1005,8 +1005,8 @@ screen forest003:
     
         if herb_book3 and forest003_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_burdock_col", False), Jump("forest003_burdock") ]
                 xpos 300 ypos 560
@@ -1014,8 +1014,8 @@ screen forest003:
             
         if herb_book1 and forest003_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_thistle_col", False), Jump("forest003_thistle") ]
                 xpos 1120 ypos 500
@@ -1023,8 +1023,8 @@ screen forest003:
     
         if herb_book2 and forest003_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_chamomile_col", False), Jump("forest003_chamomile") ]
                 xpos 420 ypos 460
@@ -1033,8 +1033,8 @@ screen forest003:
             
         if herb_book1 and forest003_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_blackberry_col", False), Jump("forest003_blackberry") ]
                 xpos 600 ypos 440
@@ -1042,8 +1042,8 @@ screen forest003:
             
         if herb_book1 and forest003_sage_col:
             imagebutton:
-                idle "images/inv/herb009_idle.png"
-                hover "images/inv/herb009_hover.png"
+                idle "gui/inv/herb009_idle.png"
+                hover "gui/inv/herb009_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest003_sage_col", False), Jump("forest003_sage") ]
                 xpos 800 ypos 600
@@ -1207,8 +1207,8 @@ screen forest004:
     
         if herb_book1 and forest004_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_dandelion_col", False), Jump("forest004_dandelion") ]
                 xpos 300 ypos 600
@@ -1216,8 +1216,8 @@ screen forest004:
             
         if herb_book2 and forest004_hyssop_col:
             imagebutton:
-                idle "images/inv/herb011_idle.png"
-                hover "images/inv/herb011_hover.png"
+                idle "gui/inv/herb011_idle.png"
+                hover "gui/inv/herb011_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_hyssop_col", False), Jump("forest004_hyssop") ]
                 xpos 1000 ypos 450
@@ -1225,8 +1225,8 @@ screen forest004:
     
         if herb_book3 and forest004_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_stjohns_col", False), Jump("forest004_stjohns") ]
                 xpos 20 ypos 480
@@ -1235,8 +1235,8 @@ screen forest004:
             
         if herb_book1 and forest004_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_oak_col", False), Jump("forest004_oak") ]
                 xpos 350 ypos 475
@@ -1244,8 +1244,8 @@ screen forest004:
             
         if herb_book2 and forest004_plantain_col:
             imagebutton:
-                idle "images/inv/herb015_idle.png"
-                hover "images/inv/herb015_hover.png"
+                idle "gui/inv/herb015_idle.png"
+                hover "gui/inv/herb015_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_plantain_col", False), Jump("forest004_plantain") ]
                 xpos 800 ypos 550
@@ -1255,8 +1255,8 @@ screen forest004:
         
         if herb_book1 and forest004_mint_col:
             imagebutton:
-                idle "images/inv/herb006_idle.png"
-                hover "images/inv/herb006_hover.png"
+                idle "gui/inv/herb006_idle.png"
+                hover "gui/inv/herb006_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_mint_col", False), Jump("forest004_mint") ]
                 xpos 300 ypos 600
@@ -1264,8 +1264,8 @@ screen forest004:
             
         if herb_book2 and forest004_plantain_col:
             imagebutton:
-                idle "images/inv/herb015_idle.png"
-                hover "images/inv/herb015_hover.png"
+                idle "gui/inv/herb015_idle.png"
+                hover "gui/inv/herb015_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_plantain_col", False), Jump("forest004_plantain") ]
                 xpos 1000 ypos 450
@@ -1273,8 +1273,8 @@ screen forest004:
     
         if herb_book3 and forest004_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_burdock_col", False), Jump("forest004_burdock") ]
                 xpos 20 ypos 480
@@ -1283,8 +1283,8 @@ screen forest004:
             
         if herb_book1 and forest004_sage_col:
             imagebutton:
-                idle "images/inv/herb009_idle.png"
-                hover "images/inv/herb009_hover.png"
+                idle "gui/inv/herb009_idle.png"
+                hover "gui/inv/herb009_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_sage_col", False), Jump("forest004_sage") ]
                 xpos 350 ypos 475
@@ -1292,8 +1292,8 @@ screen forest004:
             
         if herb_book2 and forest004_violet_col:
             imagebutton:
-                idle "images/inv/herb018_idle.png"
-                hover "images/inv/herb018_hover.png"
+                idle "gui/inv/herb018_idle.png"
+                hover "gui/inv/herb018_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_violet_col", False), Jump("forest004_violet") ]
                 xpos 800 ypos 550
@@ -1303,8 +1303,8 @@ screen forest004:
     
         if herb_book1 and forest004_parsley_col:
             imagebutton:
-                idle "images/inv/herb008_idle.png"
-                hover "images/inv/herb008_hover.png"
+                idle "gui/inv/herb008_idle.png"
+                hover "gui/inv/herb008_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_parsley_col", False), Jump("forest004_parsley") ]
                 xpos 300 ypos 600
@@ -1312,8 +1312,8 @@ screen forest004:
             
         if herb_book3 and forest004_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_burdock_col", False), Jump("forest004_burdock") ]
                 xpos 1000 ypos 450
@@ -1321,8 +1321,8 @@ screen forest004:
     
         if herb_book2 and forest004_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_chamomile_col", False), Jump("forest004_chamomile") ]
                 xpos 20 ypos 480
@@ -1330,8 +1330,8 @@ screen forest004:
             
         if herb_book1 and forest004_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_dandelion_col", False), Jump("forest004_dandelion") ]
                 xpos 350 ypos 475
@@ -1339,8 +1339,8 @@ screen forest004:
             
         if herb_book2 and forest004_calendula_col:
             imagebutton:
-                idle "images/inv/herb017_idle.png"
-                hover "images/inv/herb017_hover.png"
+                idle "gui/inv/herb017_idle.png"
+                hover "gui/inv/herb017_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_calendula_col", False), Jump("forest004_calendula") ]
                 xpos 800 ypos 550
@@ -1350,8 +1350,8 @@ screen forest004:
     
         if herb_book3 and forest004_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_stjohns_col", False), Jump("forest004_stjohns") ]
                 xpos 300 ypos 600
@@ -1359,8 +1359,8 @@ screen forest004:
             
         if herb_book1 and forest004_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_blackberry_col", False), Jump("forest004_blackberry") ]
                 xpos 1000 ypos 450
@@ -1368,8 +1368,8 @@ screen forest004:
     
         if herb_book2 and forest004_rosemary_col:
             imagebutton:
-                idle "images/inv/herb019_idle.png"
-                hover "images/inv/herb019_hover.png"
+                idle "gui/inv/herb019_idle.png"
+                hover "gui/inv/herb019_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_rosemary_col", False), Jump("forest004_rosemary") ]
                 xpos 20 ypos 480
@@ -1378,8 +1378,8 @@ screen forest004:
             
         if herb_book3 and forest004_licorice_col:
             imagebutton:
-                idle "images/inv/herb030_idle.png"
-                hover "images/inv/herb030_hover.png"
+                idle "gui/inv/herb030_idle.png"
+                hover "gui/inv/herb030_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_licorice_col", False), Jump("forest004_licorice") ]
                 xpos 350 ypos 475
@@ -1387,8 +1387,8 @@ screen forest004:
             
         if herb_book2 and forest004_violet_col:
             imagebutton:
-                idle "images/inv/herb018_idle.png"
-                hover "images/inv/herb018_hover.png"
+                idle "gui/inv/herb018_idle.png"
+                hover "gui/inv/herb018_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_violet_col", False), Jump("forest004_violet") ]
                 xpos 800 ypos 550
@@ -1398,8 +1398,8 @@ screen forest004:
     
         if herb_book2 and forest004_violet_col:
             imagebutton:
-                idle "images/inv/herb018_idle.png"
-                hover "images/inv/herb018_hover.png"
+                idle "gui/inv/herb018_idle.png"
+                hover "gui/inv/herb018_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_violet_col", False), Jump("forest004_violet") ]
                 xpos 300 ypos 600
@@ -1407,8 +1407,8 @@ screen forest004:
             
         if herb_book1 and forest004_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_oak_col", False), Jump("forest004_oak") ]
                 xpos 1000 ypos 450
@@ -1416,8 +1416,8 @@ screen forest004:
     
         if herb_book1 and forest004_mint_col:
             imagebutton:
-                idle "images/inv/herb006_idle.png"
-                hover "images/inv/herb006_hover.png"
+                idle "gui/inv/herb006_idle.png"
+                hover "gui/inv/herb006_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_mint_col", False), Jump("forest004_mint") ]
                 xpos 20 ypos 480
@@ -1426,8 +1426,8 @@ screen forest004:
             
         if herb_book1 and forest004_oregano_col:
             imagebutton:
-                idle "images/inv/herb007_idle.png"
-                hover "images/inv/herb007_hover.png"
+                idle "gui/inv/herb007_idle.png"
+                hover "gui/inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_oregano_col", False), Jump("forest004_oregano") ]
                 xpos 350 ypos 475
@@ -1435,8 +1435,8 @@ screen forest004:
             
         if herb_book3 and forest004_mullein_col:
             imagebutton:
-                idle "images/inv/herb022_idle.png"
-                hover "images/inv/herb022_hover.png"
+                idle "gui/inv/herb022_idle.png"
+                hover "gui/inv/herb022_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest004_mullein_col", False), Jump("forest004_mullein") ]
                 xpos 800 ypos 550
@@ -1600,8 +1600,8 @@ screen forest005:
     
         if herb_book3 and forest005_mullein_col:
             imagebutton:
-                idle "images/inv/herb022_idle.png"
-                hover "images/inv/herb022_hover.png"
+                idle "gui/inv/herb022_idle.png"
+                hover "gui/inv/herb022_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_mullein_col", False), Jump("forest005_mullein") ]
                 xpos 300 ypos 500
@@ -1609,8 +1609,8 @@ screen forest005:
             
         if herb_book1 and forest005_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_oak_col", False), Jump("forest005_oak") ]
                 xpos 1120 ypos 550
@@ -1618,8 +1618,8 @@ screen forest005:
     
         if herb_book3 and forest005_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_stjohns_col", False), Jump("forest005_stjohns") ]
                 xpos 150 ypos 370
@@ -1628,8 +1628,8 @@ screen forest005:
             
         if herb_book3 and forest005_lemonbalm_col:
             imagebutton:
-                idle "images/inv/herb029_idle.png"
-                hover "images/inv/herb029_hover.png"
+                idle "gui/inv/herb029_idle.png"
+                hover "gui/inv/herb029_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_lemonbalm_col", False), Jump("forest005_lemonbalm") ]
                 xpos 600 ypos 440
@@ -1637,8 +1637,8 @@ screen forest005:
             
         if herb_book3 and forest005_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_burdock_col", False), Jump("forest005_burdock") ]
                 xpos 935 ypos 370
@@ -1648,8 +1648,8 @@ screen forest005:
         
         if herb_book2 and forest005_violet_col:
             imagebutton:
-                idle "images/inv/herb018_idle.png"
-                hover "images/inv/herb018_hover.png"
+                idle "gui/inv/herb018_idle.png"
+                hover "gui/inv/herb018_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_violet_col", False), Jump("forest005_violet") ]
                 xpos 300 ypos 500
@@ -1657,8 +1657,8 @@ screen forest005:
             
         if herb_book1 and forest005_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_blackberry_col", False), Jump("forest005_blackberry") ]
                 xpos 1120 ypos 550
@@ -1666,8 +1666,8 @@ screen forest005:
     
         if herb_book3 and forest005_licorice_col:
             imagebutton:
-                idle "images/inv/herb030_idle.png"
-                hover "images/inv/herb030_hover.png"
+                idle "gui/inv/herb030_idle.png"
+                hover "gui/inv/herb030_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_licorice_col", False), Jump("forest005_licorice") ]
                 xpos 150 ypos 370
@@ -1676,8 +1676,8 @@ screen forest005:
             
         if herb_book2 and forest005_plantain_col:
             imagebutton:
-                idle "images/inv/herb015_idle.png"
-                hover "images/inv/herb015_hover.png"
+                idle "gui/inv/herb015_idle.png"
+                hover "gui/inv/herb015_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_plantain_col", False), Jump("forest005_plantain") ]
                 xpos 600 ypos 440
@@ -1685,8 +1685,8 @@ screen forest005:
             
         if herb_book1 and forest005_mint_col:
             imagebutton:
-                idle "images/inv/herb006_idle.png"
-                hover "images/inv/herb006_hover.png"
+                idle "gui/inv/herb006_idle.png"
+                hover "gui/inv/herb006_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_mint_col", False), Jump("forest005_mint") ]
                 xpos 935 ypos 370
@@ -1696,8 +1696,8 @@ screen forest005:
     
         if herb_book1 and forest005_laurel_col:
             imagebutton:
-                idle "images/inv/herb010_idle.png"
-                hover "images/inv/herb010_hover.png"
+                idle "gui/inv/herb010_idle.png"
+                hover "gui/inv/herb010_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_laurel_col", False), Jump("forest005_laurel") ]
                 xpos 300 ypos 500
@@ -1705,8 +1705,8 @@ screen forest005:
             
         if herb_book1 and forest005_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_thistle_col", False), Jump("forest005_thistle") ]
                 xpos 1120 ypos 550
@@ -1714,8 +1714,8 @@ screen forest005:
     
         if herb_book1 and forest005_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_dandelion_col", False), Jump("forest005_dandelion") ]
                 xpos 150 ypos 370
@@ -1723,8 +1723,8 @@ screen forest005:
             
         if herb_book3 and forest005_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_stjohns_col", False), Jump("forest005_stjohns") ]
                 xpos 600 ypos 440
@@ -1732,8 +1732,8 @@ screen forest005:
             
         if herb_book2 and forest005_plantain_col:
             imagebutton:
-                idle "images/inv/herb015_idle.png"
-                hover "images/inv/herb015_hover.png"
+                idle "gui/inv/herb015_idle.png"
+                hover "gui/inv/herb015_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_plantain_col", False), Jump("forest005_plantain") ]
                 xpos 935 ypos 370
@@ -1743,8 +1743,8 @@ screen forest005:
     
         if herb_book1 and forest005_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_thistle_col", False), Jump("forest005_thistle") ]
                 xpos 300 ypos 500
@@ -1752,8 +1752,8 @@ screen forest005:
             
         if herb_book2 and forest005_rosemary_col:
             imagebutton:
-                idle "images/inv/herb019_idle.png"
-                hover "images/inv/herb019_hover.png"
+                idle "gui/inv/herb019_idle.png"
+                hover "gui/inv/herb019_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_rosemary_col", False), Jump("forest005_rosemary") ]
                 xpos 1120 ypos 550
@@ -1761,8 +1761,8 @@ screen forest005:
     
         if herb_book1 and forest005_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_oak_col", False), Jump("forest005_oak") ]
                 xpos 150 ypos 370
@@ -1771,8 +1771,8 @@ screen forest005:
             
         if herb_book2 and forest005_violet_col:
             imagebutton:
-                idle "images/inv/herb018_idle.png"
-                hover "images/inv/herb018_hover.png"
+                idle "gui/inv/herb018_idle.png"
+                hover "gui/inv/herb018_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_violet_col", False), Jump("forest005_violet") ]
                 xpos 600 ypos 440
@@ -1780,8 +1780,8 @@ screen forest005:
             
         if herb_book2 and forest005_chamomile_col:
             imagebutton:
-                idle "images/inv/herb016_idle.png"
-                hover "images/inv/herb016_hover.png"
+                idle "gui/inv/herb016_idle.png"
+                hover "gui/inv/herb016_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_chamomile_col", False), Jump("forest005_chamomile") ]
                 xpos 935 ypos 370
@@ -1791,8 +1791,8 @@ screen forest005:
     
         if herb_book2 and forest005_crownflower_col:
             imagebutton:
-                idle "images/inv/herb013_idle.png"
-                hover "images/inv/herb013_hover.png"
+                idle "gui/inv/herb013_idle.png"
+                hover "gui/inv/herb013_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_crownflower_col", False), Jump("forest005_crownflower") ]
                 xpos 300 ypos 500
@@ -1800,8 +1800,8 @@ screen forest005:
             
         if herb_book3 and forest005_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_burdock_col", False), Jump("forest005_burdock") ]
                 xpos 1120 ypos 550
@@ -1809,8 +1809,8 @@ screen forest005:
     
         if herb_book1 and forest005_garlic_col:
             imagebutton:
-                idle "images/inv/herb005_idle.png"
-                hover "images/inv/herb005_hover.png"
+                idle "gui/inv/herb005_idle.png"
+                hover "gui/inv/herb005_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_garlic_col", False), Jump("forest005_garlic") ]
                 xpos 150 ypos 370
@@ -1819,8 +1819,8 @@ screen forest005:
             
         if herb_book3 and forest005_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_stjohns_col", False), Jump("forest005_stjohns") ]
                 xpos 600 ypos 440
@@ -1828,8 +1828,8 @@ screen forest005:
             
         if herb_book1 and forest005_mint_col:
             imagebutton:
-                idle "images/inv/herb006_idle.png"
-                hover "images/inv/herb006_hover.png"
+                idle "gui/inv/herb006_idle.png"
+                hover "gui/inv/herb006_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest005_mint_col", False), Jump("forest005_mint") ]
                 xpos 935 ypos 370
@@ -2000,8 +2000,8 @@ screen forest006:
     
         if herb_book1 and forest006_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_dandelion_col", False), Jump("forest006_dandelion") ]
                 xpos 400 ypos 500
@@ -2009,8 +2009,8 @@ screen forest006:
             
         if herb_book1 and forest006_mint_col:
             imagebutton:
-                idle "images/inv/herb006_idle.png"
-                hover "images/inv/herb006_hover.png"
+                idle "gui/inv/herb006_idle.png"
+                hover "gui/inv/herb006_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_mint_col", False), Jump("forest006_mint") ]
                 xpos 1120 ypos 600
@@ -2018,8 +2018,8 @@ screen forest006:
     
         if herb_book3 and forest006_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_burdock_col", False), Jump("forest006_burdock") ]
                 xpos 100 ypos 430
@@ -2028,8 +2028,8 @@ screen forest006:
             
         if herb_book3 and forest006_poppy_col:
             imagebutton:
-                idle "images/inv/herb021_idle.png"
-                hover "images/inv/herb021_hover.png"
+                idle "gui/inv/herb021_idle.png"
+                hover "gui/inv/herb021_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_poppy_col", False), Jump("forest006_poppy") ]
                 xpos 600 ypos 440
@@ -2037,8 +2037,8 @@ screen forest006:
             
         if herb_book1 and forest006_parsley_col:
             imagebutton:
-                idle "images/inv/herb008_idle.png"
-                hover "images/inv/herb008_hover.png"
+                idle "gui/inv/herb008_idle.png"
+                hover "gui/inv/herb008_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_parsley_col", False), Jump("forest006_parsley") ]
                 xpos 840 ypos 420
@@ -2048,8 +2048,8 @@ screen forest006:
         
         if herb_book3 and forest006_goldenseal_col:
             imagebutton:
-                idle "images/inv/herb028_idle.png"
-                hover "images/inv/herb028_hover.png"
+                idle "gui/inv/herb028_idle.png"
+                hover "gui/inv/herb028_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_goldenseal_col", False), Jump("forest006_goldenseal") ]
                 xpos 400 ypos 500
@@ -2057,8 +2057,8 @@ screen forest006:
             
         if herb_book3 and forest006_comfrey_col:
             imagebutton:
-                idle "images/inv/herb027_idle.png"
-                hover "images/inv/herb027_hover.png"
+                idle "gui/inv/herb027_idle.png"
+                hover "gui/inv/herb027_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_comfrey_col", False), Jump("forest006_comfrey") ]
                 xpos 1120 ypos 600
@@ -2066,8 +2066,8 @@ screen forest006:
     
         if herb_book1 and forest006_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_oak_col", False), Jump("forest006_oak") ]
                 xpos 100 ypos 430
@@ -2076,8 +2076,8 @@ screen forest006:
             
         if herb_book1 and forest006_mint_col:
             imagebutton:
-                idle "images/inv/herb006_idle.png"
-                hover "images/inv/herb006_hover.png"
+                idle "gui/inv/herb006_idle.png"
+                hover "gui/inv/herb006_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_mint_col", False), Jump("forest006_mint") ]
                 xpos 600 ypos 440
@@ -2085,8 +2085,8 @@ screen forest006:
             
         if herb_book1 and forest006_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_dandelion_col", False), Jump("forest006_dandelion") ]
                 xpos 840 ypos 420
@@ -2096,8 +2096,8 @@ screen forest006:
     
         if herb_book2 and forest006_crownflower_col:
             imagebutton:
-                idle "images/inv/herb013_idle.png"
-                hover "images/inv/herb013_hover.png"
+                idle "gui/inv/herb013_idle.png"
+                hover "gui/inv/herb013_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_crownflower_col", False), Jump("forest006_crownflower") ]
                 xpos 400 ypos 500
@@ -2105,8 +2105,8 @@ screen forest006:
             
         if herb_book1 and forest006_oregano_col:
             imagebutton:
-                idle "images/inv/herb007_idle.png"
-                hover "images/inv/herb007_hover.png"
+                idle "gui/inv/herb007_idle.png"
+                hover "gui/inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_oregano_col", False), Jump("forest006_oregano") ]
                 xpos 1120 ypos 600
@@ -2114,8 +2114,8 @@ screen forest006:
     
         if herb_book1 and forest006_garlic_col:
             imagebutton:
-                idle "images/inv/herb005_idle.png"
-                hover "images/inv/herb005_hover.png"
+                idle "gui/inv/herb005_idle.png"
+                hover "gui/inv/herb005_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_garlic_col", False), Jump("forest006_garlic") ]
                 xpos 100 ypos 430
@@ -2123,8 +2123,8 @@ screen forest006:
             
         if herb_book3 and forest006_redclover_col:
             imagebutton:
-                idle "images/inv/herb023_idle.png"
-                hover "images/inv/herb023_hover.png"
+                idle "gui/inv/herb023_idle.png"
+                hover "gui/inv/herb023_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_redclover_col", False), Jump("forest006_redclover") ]
                 xpos 600 ypos 440
@@ -2132,8 +2132,8 @@ screen forest006:
             
         if herb_book3 and forest006_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_burdock_col", False), Jump("forest006_burdock") ]
                 xpos 840 ypos 420
@@ -2143,8 +2143,8 @@ screen forest006:
     
         if herb_book3 and forest006_redclover_col:
             imagebutton:
-                idle "images/inv/herb023_idle.png"
-                hover "images/inv/herb023_hover.png"
+                idle "gui/inv/herb023_idle.png"
+                hover "gui/inv/herb023_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_redclover_col", False), Jump("forest006_redclover") ]
                 xpos 400 ypos 500
@@ -2152,8 +2152,8 @@ screen forest006:
             
         if herb_book1 and forest006_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_thistle_col", False), Jump("forest006_thistle") ]
                 xpos 1120 ypos 600
@@ -2161,8 +2161,8 @@ screen forest006:
     
         if herb_book1 and forest006_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_dandelion_col", False), Jump("forest006_dandelion") ]
                 xpos 100 ypos 430
@@ -2171,8 +2171,8 @@ screen forest006:
             
         if herb_book3 and forest006_burdock_col:
             imagebutton:
-                idle "images/inv/herb026_idle.png"
-                hover "images/inv/herb026_hover.png"
+                idle "gui/inv/herb026_idle.png"
+                hover "gui/inv/herb026_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_burdock_col", False), Jump("forest006_burdock") ]
                 xpos 600 ypos 440
@@ -2180,8 +2180,8 @@ screen forest006:
             
         if herb_book1 and forest006_garlic_col:
             imagebutton:
-                idle "images/inv/herb005_idle.png"
-                hover "images/inv/herb005_hover.png"
+                idle "gui/inv/herb005_idle.png"
+                hover "gui/inv/herb005_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_garlic_col", False), Jump("forest006_garlic") ]
                 xpos 840 ypos 420
@@ -2191,8 +2191,8 @@ screen forest006:
     
         if herb_book3 and forest006_goldenseal_col:
             imagebutton:
-                idle "images/inv/herb028_idle.png"
-                hover "images/inv/herb028_hover.png"
+                idle "gui/inv/herb028_idle.png"
+                hover "gui/inv/herb028_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_goldenseal_col", False), Jump("forest006_goldenseal") ]
                 xpos 400 ypos 500
@@ -2200,8 +2200,8 @@ screen forest006:
             
         if herb_book2 and forest006_calendula_col:
             imagebutton:
-                idle "images/inv/herb017_idle.png"
-                hover "images/inv/herb017_hover.png"
+                idle "gui/inv/herb017_idle.png"
+                hover "gui/inv/herb017_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_calendula_col", False), Jump("forest006_calendula") ]
                 xpos 1120 ypos 600
@@ -2209,8 +2209,8 @@ screen forest006:
     
         if herb_book2 and forest006_rosemary_col:
             imagebutton:
-                idle "images/inv/herb019_idle.png"
-                hover "images/inv/herb019_hover.png"
+                idle "gui/inv/herb019_idle.png"
+                hover "gui/inv/herb019_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_rosemary_col", False), Jump("forest006_rosemary") ]
                 xpos 100 ypos 430
@@ -2219,8 +2219,8 @@ screen forest006:
             
         if herb_book1 and forest006_parsley_col:
             imagebutton:
-                idle "images/inv/herb008_idle.png"
-                hover "images/inv/herb008_hover.png"
+                idle "gui/inv/herb008_idle.png"
+                hover "gui/inv/herb008_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_parsley_col", False), Jump("forest006_parsley") ]
                 xpos 600 ypos 440
@@ -2228,8 +2228,8 @@ screen forest006:
             
         if herb_book1 and forest006_oregano_col:
             imagebutton:
-                idle "images/inv/herb007_idle.png"
-                hover "images/inv/herb007_hover.png"
+                idle "gui/inv/herb007_idle.png"
+                hover "gui/inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest006_oregano_col", False), Jump("forest006_oregano") ]
                 xpos 840 ypos 420
@@ -2379,8 +2379,8 @@ screen forest007:
     
         if herb_book1 and forest007_oregano_col:
             imagebutton:
-                idle "images/inv/herb007_idle.png"
-                hover "images/inv/herb007_hover.png"
+                idle "gui/inv/herb007_idle.png"
+                hover "gui/inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_oregano_col", False), Jump("forest007_oregano") ]
                 xpos 300 ypos 560
@@ -2388,8 +2388,8 @@ screen forest007:
             
         if herb_book3 and forest007_comfrey_col:
             imagebutton:
-                idle "images/inv/herb027_idle.png"
-                hover "images/inv/herb027_hover.png"
+                idle "gui/inv/herb027_idle.png"
+                hover "gui/inv/herb027_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_comfrey_col", False), Jump("forest007_comfrey") ]
                 xpos 1180 ypos 420
@@ -2397,8 +2397,8 @@ screen forest007:
     
         if herb_book3 and forest007_yellowdock_col:
             imagebutton:
-                idle "images/inv/herb025_idle.png"
-                hover "images/inv/herb025_hover.png"
+                idle "gui/inv/herb025_idle.png"
+                hover "gui/inv/herb025_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_yellowdock_col", False), Jump("forest007_yellowdock") ]
                 xpos 140 ypos 385
@@ -2407,8 +2407,8 @@ screen forest007:
             
         if herb_book1 and forest007_mint_col:
             imagebutton:
-                idle "images/inv/herb006_idle.png"
-                hover "images/inv/herb006_hover.png"
+                idle "gui/inv/herb006_idle.png"
+                hover "gui/inv/herb006_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_mint_col", False), Jump("forest007_mint") ]
                 xpos 500 ypos 390
@@ -2416,8 +2416,8 @@ screen forest007:
             
         if herb_book2 and forest007_marshmarigold_col:
             imagebutton:
-                idle "images/inv/herb014_idle.png"
-                hover "images/inv/herb014_hover.png"
+                idle "gui/inv/herb014_idle.png"
+                hover "gui/inv/herb014_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_marshmarigold_col", False), Jump("forest007_marshmarigold") ]
                 xpos 800 ypos 480
@@ -2427,8 +2427,8 @@ screen forest007:
         
         if herb_book1 and forest007_parsley_col:
             imagebutton:
-                idle "images/inv/herb008_idle.png"
-                hover "images/inv/herb008_hover.png"
+                idle "gui/inv/herb008_idle.png"
+                hover "gui/inv/herb008_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_parsley_col", False), Jump("forest007_parsley") ]
                 xpos 300 ypos 560
@@ -2436,8 +2436,8 @@ screen forest007:
             
         if herb_book2 and forest007_basil_col:
             imagebutton:
-                idle "images/inv/herb020_idle.png"
-                hover "images/inv/herb020_hover.png"
+                idle "gui/inv/herb020_idle.png"
+                hover "gui/inv/herb020_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_basil_col", False), Jump("forest007_basil") ]
                 xpos 1180 ypos 420
@@ -2445,8 +2445,8 @@ screen forest007:
     
         if herb_book3 and forest007_comfrey_col:
             imagebutton:
-                idle "images/inv/herb027_idle.png"
-                hover "images/inv/herb027_hover.png"
+                idle "gui/inv/herb027_idle.png"
+                hover "gui/inv/herb027_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_comfrey_col", False), Jump("forest007_comfrey") ]
                 xpos 140 ypos 385
@@ -2455,8 +2455,8 @@ screen forest007:
             
         if herb_book1 and forest007_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_thistle_col", False), Jump("forest007_thistle") ]
                 xpos 500 ypos 390
@@ -2464,8 +2464,8 @@ screen forest007:
             
         if herb_book3 and forest007_lemonbalm_col:
             imagebutton:
-                idle "images/inv/herb029_idle.png"
-                hover "images/inv/herb029_hover.png"
+                idle "gui/inv/herb029_idle.png"
+                hover "gui/inv/herb029_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_lemonbalm_col", False), Jump("forest007_lemonbalm") ]
                 xpos 800 ypos 480
@@ -2475,8 +2475,8 @@ screen forest007:
     
         if herb_book3 and forest007_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_stjohns_col", False), Jump("forest007_stjohns") ]
                 xpos 300 ypos 560
@@ -2484,8 +2484,8 @@ screen forest007:
             
         if herb_book2 and forest007_marshmarigold_col:
             imagebutton:
-                idle "images/inv/herb014_idle.png"
-                hover "images/inv/herb014_hover.png"
+                idle "gui/inv/herb014_idle.png"
+                hover "gui/inv/herb014_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_marshmarigold_col", False), Jump("forest007_marshmarigold") ]
                 xpos 1180 ypos 420
@@ -2493,8 +2493,8 @@ screen forest007:
     
         if herb_book2 and forest007_basil_col:
             imagebutton:
-                idle "images/inv/herb020_idle.png"
-                hover "images/inv/herb020_hover.png"
+                idle "gui/inv/herb020_idle.png"
+                hover "gui/inv/herb020_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_basil_col", False), Jump("forest007_basil") ]
                 xpos 140 ypos 385
@@ -2502,8 +2502,8 @@ screen forest007:
             
         if herb_book1 and forest007_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_dandelion_col", False), Jump("forest007_dandelion") ]
                 xpos 500 ypos 390
@@ -2511,8 +2511,8 @@ screen forest007:
             
         if herb_book1 and forest007_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_thistle_col", False), Jump("forest007_thistle") ]
                 xpos 800 ypos 480
@@ -2522,8 +2522,8 @@ screen forest007:
     
         if herb_book2 and forest007_marshmarigold_col:
             imagebutton:
-                idle "images/inv/herb014_idle.png"
-                hover "images/inv/herb014_hover.png"
+                idle "gui/inv/herb014_idle.png"
+                hover "gui/inv/herb014_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_marshmarigold_col", False), Jump("forest007_marshmarigold") ]
                 xpos 300 ypos 560
@@ -2531,8 +2531,8 @@ screen forest007:
             
         if herb_book2 and forest007_basil_col:
             imagebutton:
-                idle "images/inv/herb020_idle.png"
-                hover "images/inv/herb020_hover.png"
+                idle "gui/inv/herb020_idle.png"
+                hover "gui/inv/herb020_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_basil_col", False), Jump("forest007_basil") ]
                 xpos 1180 ypos 420
@@ -2540,8 +2540,8 @@ screen forest007:
     
         if herb_book2 and forest007_basil_col:
             imagebutton:
-                idle "images/inv/herb020_idle.png"
-                hover "images/inv/herb020_hover.png"
+                idle "gui/inv/herb020_idle.png"
+                hover "gui/inv/herb020_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_basil_col", False), Jump("forest007_basil") ]
                 xpos 140 ypos 385
@@ -2550,8 +2550,8 @@ screen forest007:
             
         if herb_book2 and forest007_violet_col:
             imagebutton:
-                idle "images/inv/herb018_idle.png"
-                hover "images/inv/herb018_hover.png"
+                idle "gui/inv/herb018_idle.png"
+                hover "gui/inv/herb018_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_violet_col", False), Jump("forest007_violet") ]
                 xpos 500 ypos 390
@@ -2559,8 +2559,8 @@ screen forest007:
             
         if herb_book1 and forest007_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_blackberry_col", False), Jump("forest007_blackberry") ]
                 xpos 800 ypos 480
@@ -2570,8 +2570,8 @@ screen forest007:
     
         if herb_book1 and forest007_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_blackberry_col", False), Jump("forest007_blackberry") ]
                 xpos 300 ypos 560
@@ -2579,8 +2579,8 @@ screen forest007:
             
         if herb_book3 and forest007_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_stjohns_col", False), Jump("forest007_stjohns") ]
                 xpos 1180 ypos 420
@@ -2588,8 +2588,8 @@ screen forest007:
     
         if herb_book2 and forest007_violet_col:
             imagebutton:
-                idle "images/inv/herb018_idle.png"
-                hover "images/inv/herb018_hover.png"
+                idle "gui/inv/herb018_idle.png"
+                hover "gui/inv/herb018_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_violet_col", False), Jump("forest007_violet") ]
                 xpos 140 ypos 385
@@ -2598,8 +2598,8 @@ screen forest007:
             
         if herb_book3 and forest007_goldenseal_col:
             imagebutton:
-                idle "images/inv/herb028_idle.png"
-                hover "images/inv/herb028_hover.png"
+                idle "gui/inv/herb028_idle.png"
+                hover "gui/inv/herb028_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_goldenseal_col", False), Jump("forest007_goldenseal") ]
                 xpos 500 ypos 390
@@ -2607,8 +2607,8 @@ screen forest007:
             
         if herb_book1 and forest007_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest007_dandelion_col", False), Jump("forest007_dandelion") ]
                 xpos 800 ypos 480
@@ -2751,8 +2751,8 @@ screen forest008:
     
         if herb_book2 and forest008_borage_col:
             imagebutton:
-                idle "images/inv/herb012_idle.png"
-                hover "images/inv/herb012_hover.png"
+                idle "gui/inv/herb012_idle.png"
+                hover "gui/inv/herb012_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_borage_col", False), Jump("forest008_borage") ]
                 xpos 300 ypos 400
@@ -2760,8 +2760,8 @@ screen forest008:
             
         if herb_book3 and forest008_lemonbalm_col:
             imagebutton:
-                idle "images/inv/herb029_idle.png"
-                hover "images/inv/herb029_hover.png"
+                idle "gui/inv/herb029_idle.png"
+                hover "gui/inv/herb029_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_lemonbalm_col", False), Jump("forest008_lemonbalm") ]
                 xpos 1080 ypos 450
@@ -2769,8 +2769,8 @@ screen forest008:
     
         if herb_book3 and forest008_yellowdock_col:
             imagebutton:
-                idle "images/inv/herb025_idle.png"
-                hover "images/inv/herb025_hover.png"
+                idle "gui/inv/herb025_idle.png"
+                hover "gui/inv/herb025_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_yellowdock_col", False), Jump("forest008_yellowdock") ]
                 xpos 20 ypos 330
@@ -2779,8 +2779,8 @@ screen forest008:
             
         if herb_book1 and forest008_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_oak_col", False), Jump("forest008_oak") ]
                 xpos 620 ypos 360
@@ -2788,8 +2788,8 @@ screen forest008:
             
         if herb_book1 and forest008_parsley_col:
             imagebutton:
-                idle "images/inv/herb008_idle.png"
-                hover "images/inv/herb008_hover.png"
+                idle "gui/inv/herb008_idle.png"
+                hover "gui/inv/herb008_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_parsley_col", False), Jump("forest008_parsley") ]
                 xpos 850 ypos 280
@@ -2799,8 +2799,8 @@ screen forest008:
         
         if herb_book3 and forest008_yellowdock_col:
             imagebutton:
-                idle "images/inv/herb025_idle.png"
-                hover "images/inv/herb025_hover.png"
+                idle "gui/inv/herb025_idle.png"
+                hover "gui/inv/herb025_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_yellowdock_col", False), Jump("forest008_yellowdock") ]
                 xpos 300 ypos 400
@@ -2808,8 +2808,8 @@ screen forest008:
             
         if herb_book1 and forest008_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_blackberry_col", False), Jump("forest008_blackberry") ]
                 xpos 1080 ypos 450
@@ -2817,8 +2817,8 @@ screen forest008:
     
         if herb_book3 and forest008_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_stjohns_col", False), Jump("forest008_stjohns") ]
                 xpos 20 ypos 330
@@ -2827,8 +2827,8 @@ screen forest008:
             
         if herb_book2 and forest008_marshmarigold_col:
             imagebutton:
-                idle "images/inv/herb014_idle.png"
-                hover "images/inv/herb014_hover.png"
+                idle "gui/inv/herb014_idle.png"
+                hover "gui/inv/herb014_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_marshmarigold_col", False), Jump("forest008_marshmarigold") ]
                 xpos 620 ypos 360
@@ -2836,8 +2836,8 @@ screen forest008:
             
         if herb_book2 and forest008_basil_col:
             imagebutton:
-                idle "images/inv/herb020_idle.png"
-                hover "images/inv/herb020_hover.png"
+                idle "gui/inv/herb020_idle.png"
+                hover "gui/inv/herb020_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_basil_col", False), Jump("forest008_basil") ]
                 xpos 850 ypos 280
@@ -2847,8 +2847,8 @@ screen forest008:
     
         if herb_book3 and forest008_lemonbalm_col:
             imagebutton:
-                idle "images/inv/herb029_idle.png"
-                hover "images/inv/herb029_hover.png"
+                idle "gui/inv/herb029_idle.png"
+                hover "gui/inv/herb029_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_lemonbalm_col", False), Jump("forest008_lemonbalm") ]
                 xpos 300 ypos 400
@@ -2856,8 +2856,8 @@ screen forest008:
             
         if herb_book2 and forest008_basil_col:
             imagebutton:
-                idle "images/inv/herb020_idle.png"
-                hover "images/inv/herb020_hover.png"
+                idle "gui/inv/herb020_idle.png"
+                hover "gui/inv/herb020_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_basil_col", False), Jump("forest008_basil") ]
                 xpos 1080 ypos 450
@@ -2865,8 +2865,8 @@ screen forest008:
     
         if herb_book1 and forest008_oak_col:
             imagebutton:
-                idle "images/inv/herb004_idle.png"
-                hover "images/inv/herb004_hover.png"
+                idle "gui/inv/herb004_idle.png"
+                hover "gui/inv/herb004_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_oak_col", False), Jump("forest008_oak") ]
                 xpos 20 ypos 330
@@ -2874,8 +2874,8 @@ screen forest008:
             
         if herb_book2 and forest008_borage_col:
             imagebutton:
-                idle "images/inv/herb012_idle.png"
-                hover "images/inv/herb012_hover.png"
+                idle "gui/inv/herb012_idle.png"
+                hover "gui/inv/herb012_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_borage_col", False), Jump("forest008_borage") ]
                 xpos 620 ypos 360
@@ -2883,8 +2883,8 @@ screen forest008:
             
         if herb_book1 and forest008_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_blackberry_col", False), Jump("forest008_blackberry") ]
                 xpos 850 ypos 280
@@ -2894,8 +2894,8 @@ screen forest008:
     
         if herb_book1 and forest008_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_dandelion_col", False), Jump("forest008_dandelion") ]
                 xpos 300 ypos 400
@@ -2903,8 +2903,8 @@ screen forest008:
             
         if herb_book1 and forest008_oregano_col:
             imagebutton:
-                idle "images/inv/herb007_idle.png"
-                hover "images/inv/herb007_hover.png"
+                idle "gui/inv/herb007_idle.png"
+                hover "gui/inv/herb007_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_oregano_col", False), Jump("forest008_oregano") ]
                 xpos 1080 ypos 450
@@ -2912,8 +2912,8 @@ screen forest008:
     
         if herb_book1 and forest008_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_thistle_col", False), Jump("forest008_thistle") ]
                 xpos 20 ypos 330
@@ -2922,8 +2922,8 @@ screen forest008:
             
         if herb_book3 and forest008_yellowdock_col:
             imagebutton:
-                idle "images/inv/herb025_idle.png"
-                hover "images/inv/herb025_hover.png"
+                idle "gui/inv/herb025_idle.png"
+                hover "gui/inv/herb025_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_yellowdock_col", False), Jump("forest008_yellowdock") ]
                 xpos 620 ypos 360
@@ -2931,8 +2931,8 @@ screen forest008:
             
         if herb_book3 and forest008_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_stjohns_col", False), Jump("forest008_stjohns") ]
                 xpos 850 ypos 280
@@ -2942,8 +2942,8 @@ screen forest008:
     
         if herb_book2 and forest008_plantain_col:
             imagebutton:
-                idle "images/inv/herb015_idle.png"
-                hover "images/inv/herb015_hover.png"
+                idle "gui/inv/herb015_idle.png"
+                hover "gui/inv/herb015_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_plantain_col", False), Jump("forest008_plantain") ]
                 xpos 300 ypos 400
@@ -2951,8 +2951,8 @@ screen forest008:
             
         if herb_book1 and forest008_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_blackberry_col", False), Jump("forest008_blackberry") ]
                 xpos 1080 ypos 450
@@ -2960,8 +2960,8 @@ screen forest008:
     
         if herb_book2 and forest008_plantain2_col:
             imagebutton:
-                idle "images/inv/herb015_idle.png"
-                hover "images/inv/herb015_hover.png"
+                idle "gui/inv/herb015_idle.png"
+                hover "gui/inv/herb015_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_plantain2_col", False), Jump("forest008_plantain2") ]
                 xpos 20 ypos 330
@@ -2970,8 +2970,8 @@ screen forest008:
             
         if herb_book1 and forest008_thistle_col:
             imagebutton:
-                idle "images/inv/herb001_idle.png"
-                hover "images/inv/herb001_hover.png"
+                idle "gui/inv/herb001_idle.png"
+                hover "gui/inv/herb001_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_thistle_col", False), Jump("forest008_thistle") ]
                 xpos 620 ypos 360
@@ -2979,8 +2979,8 @@ screen forest008:
             
         if herb_book1 and forest008_garlic_col:
             imagebutton:
-                idle "images/inv/herb005_idle.png"
-                hover "images/inv/herb005_hover.png"
+                idle "gui/inv/herb005_idle.png"
+                hover "gui/inv/herb005_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest008_garlic_col", False), Jump("forest008_garlic") ]
                 xpos 850 ypos 280
@@ -3138,8 +3138,8 @@ screen forest009:
     
         if herb_book1 and forest009_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_blackberry_col", False), Jump("forest009_blackberry") ]
                 xpos 300 ypos 380
@@ -3147,8 +3147,8 @@ screen forest009:
             
         if herb_book1 and forest009_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_dandelion_col", False), Jump("forest009_dandelion") ]
                 xpos 1080 ypos 550
@@ -3156,8 +3156,8 @@ screen forest009:
     
         if herb_book2 and forest009_marshmarigold_col:
             imagebutton:
-                idle "images/inv/herb014_idle.png"
-                hover "images/inv/herb014_hover.png"
+                idle "gui/inv/herb014_idle.png"
+                hover "gui/inv/herb014_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_marshmarigold_col", False), Jump("forest009_marshmarigold") ]
                 xpos 190 ypos 210
@@ -3166,8 +3166,8 @@ screen forest009:
             
         if herb_book1 and forest009_sage_col:
             imagebutton:
-                idle "images/inv/herb009_idle.png"
-                hover "images/inv/herb009_hover.png"
+                idle "gui/inv/herb009_idle.png"
+                hover "gui/inv/herb009_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_sage_col", False), Jump("forest009_sage") ]
                 xpos 600 ypos 240
@@ -3175,8 +3175,8 @@ screen forest009:
             
         if herb_book2 and forest009_basil_col:
             imagebutton:
-                idle "images/inv/herb020_idle.png"
-                hover "images/inv/herb020_hover.png"
+                idle "gui/inv/herb020_idle.png"
+                hover "gui/inv/herb020_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_basil_col", False), Jump("forest009_basil") ]
                 xpos 830 ypos 140
@@ -3186,8 +3186,8 @@ screen forest009:
         
         if herb_book3 and forest009_yellowdock_col:
             imagebutton:
-                idle "images/inv/herb025_idle.png"
-                hover "images/inv/herb025_hover.png"
+                idle "gui/inv/herb025_idle.png"
+                hover "gui/inv/herb025_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_yellowdock_col", False), Jump("forest009_yellowdock") ]
                 xpos 300 ypos 380
@@ -3195,8 +3195,8 @@ screen forest009:
             
         if herb_book1 and forest009_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_blackberry_col", False), Jump("forest009_blackberry") ]
                 xpos 1080 ypos 550
@@ -3204,8 +3204,8 @@ screen forest009:
     
         if herb_book2 and forest009_violet_col:
             imagebutton:
-                idle "images/inv/herb018_idle.png"
-                hover "images/inv/herb018_hover.png"
+                idle "gui/inv/herb018_idle.png"
+                hover "gui/inv/herb018_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_violet_col", False), Jump("forest009_violet") ]
                 xpos 190 ypos 210
@@ -3214,8 +3214,8 @@ screen forest009:
             
         if herb_book3 and forest009_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_stjohns_col", False), Jump("forest009_stjohns") ]
                 xpos 600 ypos 240
@@ -3223,8 +3223,8 @@ screen forest009:
             
         if herb_book1 and forest009_laurel_col:
             imagebutton:
-                idle "images/inv/herb010_idle.png"
-                hover "images/inv/herb010_hover.png"
+                idle "gui/inv/herb010_idle.png"
+                hover "gui/inv/herb010_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_laurel_col", False), Jump("forest009_laurel") ]
                 xpos 830 ypos 140
@@ -3234,8 +3234,8 @@ screen forest009:
     
         if herb_book3 and forest009_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_stjohns_col", False), Jump("forest009_stjohns") ]
                 xpos 300 ypos 380
@@ -3243,8 +3243,8 @@ screen forest009:
             
         if herb_book3 and forest009_goldenseal_col:
             imagebutton:
-                idle "images/inv/herb028_idle.png"
-                hover "images/inv/herb028_hover.png"
+                idle "gui/inv/herb028_idle.png"
+                hover "gui/inv/herb028_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_goldenseal_col", False), Jump("forest009_goldenseal") ]
                 xpos 1080 ypos 550
@@ -3252,8 +3252,8 @@ screen forest009:
     
         if herb_book1 and forest009_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_blackberry_col", False), Jump("forest009_blackberry") ]
                 xpos 190 ypos 210
@@ -3261,8 +3261,8 @@ screen forest009:
             
         if herb_book2 and forest009_violet_col:
             imagebutton:
-                idle "images/inv/herb018_idle.png"
-                hover "images/inv/herb018_hover.png"
+                idle "gui/inv/herb018_idle.png"
+                hover "gui/inv/herb018_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_violet_col", False), Jump("forest009_violet") ]
                 xpos 600 ypos 240
@@ -3270,8 +3270,8 @@ screen forest009:
             
         if herb_book2 and forest009_hyssop_col:
             imagebutton:
-                idle "images/inv/herb011_idle.png"
-                hover "images/inv/herb011_hover.png"
+                idle "gui/inv/herb011_idle.png"
+                hover "gui/inv/herb011_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_hyssop_col", False), Jump("forest009_hyssop") ]
                 xpos 830 ypos 140
@@ -3281,8 +3281,8 @@ screen forest009:
     
         if herb_book2 and forest009_marshmarigold_col:
             imagebutton:
-                idle "images/inv/herb014_idle.png"
-                hover "images/inv/herb014_hover.png"
+                idle "gui/inv/herb014_idle.png"
+                hover "gui/inv/herb014_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_marshmarigold_col", False), Jump("forest009_marshmarigold") ]
                 xpos 300 ypos 380
@@ -3290,8 +3290,8 @@ screen forest009:
             
         if herb_book2 and forest009_marshmarigold2_col:
             imagebutton:
-                idle "images/inv/herb014_idle.png"
-                hover "images/inv/herb014_hover.png"
+                idle "gui/inv/herb014_idle.png"
+                hover "gui/inv/herb014_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_marshmarigold2_col", False), Jump("forest009_marshmarigold2") ]
                 xpos 1080 ypos 550
@@ -3299,8 +3299,8 @@ screen forest009:
     
         if herb_book3 and forest009_stjohns_col:
             imagebutton:
-                idle "images/inv/herb024_idle.png"
-                hover "images/inv/herb024_hover.png"
+                idle "gui/inv/herb024_idle.png"
+                hover "gui/inv/herb024_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_stjohns_col", False), Jump("forest009_stjohns") ]
                 xpos 190 ypos 210
@@ -3309,8 +3309,8 @@ screen forest009:
             
         if herb_book1 and forest009_dandelion_col:
             imagebutton:
-                idle "images/inv/herb002_idle.png"
-                hover "images/inv/herb002_hover.png"
+                idle "gui/inv/herb002_idle.png"
+                hover "gui/inv/herb002_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_dandelion_col", False), Jump("forest009_dandelion") ]
                 xpos 600 ypos 240
@@ -3318,8 +3318,8 @@ screen forest009:
             
         if herb_book3 and forest009_lemonbalm_col:
             imagebutton:
-                idle "images/inv/herb029_idle.png"
-                hover "images/inv/herb029_hover.png"
+                idle "gui/inv/herb029_idle.png"
+                hover "gui/inv/herb029_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_lemonbalm_col", False), Jump("forest009_lemonbalm") ]
                 xpos 830 ypos 140
@@ -3329,8 +3329,8 @@ screen forest009:
     
         if herb_book3 and forest009_yellowdock_col:
             imagebutton:
-                idle "images/inv/herb025_idle.png"
-                hover "images/inv/herb025_hover.png"
+                idle "gui/inv/herb025_idle.png"
+                hover "gui/inv/herb025_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_yellowdock_col", False), Jump("forest009_yellowdock") ]
                 xpos 300 ypos 380
@@ -3338,8 +3338,8 @@ screen forest009:
             
         if herb_book2 and forest009_basil_col:
             imagebutton:
-                idle "images/inv/herb020_idle.png"
-                hover "images/inv/herb020_hover.png"
+                idle "gui/inv/herb020_idle.png"
+                hover "gui/inv/herb020_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_basil_col", False), Jump("forest009_basil") ]
                 xpos 1080 ypos 550
@@ -3347,8 +3347,8 @@ screen forest009:
     
         if herb_book3 and forest009_comfrey_col:
             imagebutton:
-                idle "images/inv/herb027_idle.png"
-                hover "images/inv/herb027_hover.png"
+                idle "gui/inv/herb027_idle.png"
+                hover "gui/inv/herb027_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_comfrey_col", False), Jump("forest009_comfrey") ]
                 xpos 190 ypos 210
@@ -3357,8 +3357,8 @@ screen forest009:
             
         if herb_book1 and forest009_blackberry_col:
             imagebutton:
-                idle "images/inv/herb003_idle.png"
-                hover "images/inv/herb003_hover.png"
+                idle "gui/inv/herb003_idle.png"
+                hover "gui/inv/herb003_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_blackberry_col", False), Jump("forest009_blackberry") ]
                 xpos 600 ypos 240
@@ -3366,8 +3366,8 @@ screen forest009:
             
         if herb_book2 and forest009_marshmarigold_col:
             imagebutton:
-                idle "images/inv/herb014_idle.png"
-                hover "images/inv/herb014_hover.png"
+                idle "gui/inv/herb014_idle.png"
+                hover "gui/inv/herb014_hover.png"
                 focus_mask True
                 clicked [ SetVariable("forest009_marshmarigold_col", False), Jump("forest009_marshmarigold") ]
                 xpos 830 ypos 140

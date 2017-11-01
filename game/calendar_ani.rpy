@@ -276,35 +276,35 @@ transform swipe_in(xPos, yPos):
 ###
 #Image resources
 ###
-image calendar_bg = "cal/1280x720/bg.png" #Background image
+image calendar_bg = "gui/cal/1280x720/bg.png" #Background image
 #image dayButton: #Image representing each week day
     #want to set to choice(calendar.moonphase == 'new moon'):
 #    choice:
-#        "cal/1280x720/new moon.png"
+#        "gui/cal/1280x720/new moon.png"
 #    choice: 
-#        "cal/1280x720/waning crescent.png"
+#        "gui/cal/1280x720/waning crescent.png"
 #    choice: 
-#        "cal/1280x720/last quarter.png"
+#        "gui/cal/1280x720/last quarter.png"
 #    choice: 
-#        "cal/1280x720/waning moon.png"
+#        "gui/cal/1280x720/waning moon.png"
 #    choice: 
-#        "cal/1280x720/full moon.png"
+#        "gui/cal/1280x720/full moon.png"
 #    choice: 
-#        "cal/1280x720/waxing moon.png"
+#        "gui/cal/1280x720/waxing moon.png"
 #    choice: 
-#        "cal/1280x720/first quarter.png"
+#        "gui/cal/1280x720/first quarter.png"
 #    choice: 
-#        "cal/1280x720/waxing crescent.png"
+#        "gui/cal/1280x720/waxing crescent.png"
         
 image dayButton = ConditionSwitch(
-    "calendar.moonphase == 'waning crescent' ", Image ("cal/1280x720/waning crescent.png"),
-    "calendar.moonphase == 'last quarter' ", Image ("cal/1280x720/last quarter.png"),
-    "calendar.moonphase == 'waning moon' ", Image ("cal/1280x720/waning moon.png"),
-    "calendar.moonphase == 'full moon' ", Image ("cal/1280x720/full moon.png"),
-    "calendar.moonphase == 'waxing moon' ", Image ("cal/1280x720/waxing moon.png"),
-    "calendar.moonphase == 'first quarter' ", Image ("cal/1280x720/first quarter.png"),
-    "calendar.moonphase == 'waxing crescent' ", Image ("cal/1280x720/waxing crescent.png"),
-    "True", Image ("cal/1280x720/new moon.png"),
+    "calendar.moonphase == 'waning crescent' ", Image ("gui/cal/1280x720/waning crescent.png"),
+    "calendar.moonphase == 'last quarter' ", Image ("gui/cal/1280x720/last quarter.png"),
+    "calendar.moonphase == 'waning moon' ", Image ("gui/cal/1280x720/waning moon.png"),
+    "calendar.moonphase == 'full moon' ", Image ("gui/cal/1280x720/full moon.png"),
+    "calendar.moonphase == 'waxing moon' ", Image ("gui/cal/1280x720/waxing moon.png"),
+    "calendar.moonphase == 'first quarter' ", Image ("gui/cal/1280x720/first quarter.png"),
+    "calendar.moonphase == 'waxing crescent' ", Image ("gui/cal/1280x720/waxing crescent.png"),
+    "True", Image ("gui/cal/1280x720/new moon.png"),
     )
 
 label calendar_ani(toMove):

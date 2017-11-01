@@ -54,7 +54,10 @@ label apothecary_shop:
     show screen apothecary
     show screen basic_overlay
     
-    "You are in your apothecary shop."
+#    "You are in your apothecary shop."
+# Before the latest update, I could include this line of dialogue
+# and renpy.pause would hide the textbox. After the update, this 
+# seems not to be the case. If I have any dialogue, the box stays.
     
     jump aplooping
 
@@ -97,7 +100,7 @@ label kitchen:
     show screen kitchen
     show screen basic_overlay
     
-    "You are in the kitchen."
+#    "You are in the kitchen."
     
     jump aplooping
     
@@ -136,7 +139,7 @@ label cellar:
     show screen cellar
     show screen basic_overlay
     
-    "You are in the cellar."
+#    "You are in the cellar."
     
     jump aplooping
     

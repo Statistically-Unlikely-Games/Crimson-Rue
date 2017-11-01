@@ -63,9 +63,11 @@ screen cg_gallery:
     use game_menu("CG Gallery"):
         
 
-        frame background None xpos 10:
+        frame background None xpos -10:
             grid gal_rows gal_cols:
-                ypos 0
+                ypos -20
+                yfill True
+                xfill True
                 $ i = 0
                 $ next_cg_page = cg_page + 1            
                 if next_cg_page > int(len(gallery_cg_items)/gal_cells):
@@ -87,9 +89,11 @@ screen bg_gallery:
 #The BG gallery screen is more or less copy pasted from the CG screen above, I only changed "make_button" to include a grayscale thumbnail for locked items
     tag menu
     use game_menu("BG Gallery"):
-        frame background None xpos 10:
+        frame background None xpos -10:
             grid gal_rows gal_cols:
-                ypos 0
+                ypos -20
+                yfill True
+                xfill True
                 $ i = 0
                 $ next_bg_page = bg_page + 1
                 if next_bg_page > int(len(gallery_bg_items)/gal_cells):

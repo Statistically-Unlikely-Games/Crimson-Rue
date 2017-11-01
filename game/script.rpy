@@ -17,12 +17,16 @@ init python hide:
 
 # Declaring characters
 
-define aeth = Character('Aeth', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
+define aeth = Character('Aeth', color="#CFD83C", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#5D625B", 0, 0)])
 define kayen = Character('Kayen', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
 define elaine = Character('Master Elaine', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
 define orthrus = Character('Orthrus', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
 define harte = Character('Harte', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
 define mikael = Character('Mikael', color="#5D625B", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#FFFFFF", 0, 0)])
+
+
+#Defining Transformations
+define slow_dissolve = Dissolve(1.0)
 
 
 # Declaring books
@@ -290,11 +294,11 @@ label intro:
             
     "(The air is cold and I can smell pine trees.)"
     
-    scene bg forest001
-    show aeth neu at left
+    scene bg forest001 with slow_dissolve
+    show aeth neu at left with easeinleft
     
     "I step out into the crisp snow, removing my hood to get a better look."
-            
+    
     aeth "It's been so long since I was home."
     
     "When I think about how long I've been away, I am even more thankful for the familiar sights and smells."
@@ -303,7 +307,7 @@ label intro:
     
     "Trader" "Aeth! Are you heading out already?"
     
-    aeth "Yes, I'd like to greet my mother first, so I'm taking a shortcut through the forest."
+    aeth "Yes. I'd like to greet my mother first, so I'm taking a shortcut through the forest."
     
     "The trader smiles at me, but it seems somewhat strained."
     
@@ -318,6 +322,8 @@ label intro:
     "Trader" "Aye. And you, too. I hope you're able to settle in quickly."
     
     "I exchange short farewells with the other caravan members before making my way home."
+    
+    hide aeth
     
     "(There shouldn't be anyone I know along this path.)"
     
@@ -338,8 +344,8 @@ label intro:
     "I arrive at my mother's house and push open the heavy oak door."
     
     scene bg kitchen
-    
     show aeth neu at left
+    with slow_dissolve
     
     aeth "Mother, I'm home. Are you there?"
     
@@ -374,16 +380,22 @@ label intro:
     kayen "Alright, don't just stand in the doorway, bring your things in! You must be exhausted."
     
     scene bg cellar
+    with slow_dissolve
     
     "I dump my bag onto the floor and start preparing for dinner."
     
     scene bg black
+    with slow_dissolve
     
     "I lay down as sleep takes me, exhausted from my long journey."
     
     scene bg forest002
+    with slow_dissolve
     
     "The next day, I decide to head into town."
+    
+    show aeth neu at left
+    with moveinleft
     
     "As I approach my master's shop, I see a small child hiding around the corner."
     
@@ -392,6 +404,7 @@ label intro:
     "Child" "..."
     
     show aeth neu at center
+    with ease
     
     aeth "Do you need any help?"
     
@@ -404,6 +417,7 @@ label intro:
     "I stare after them for a moment, considering if I need to go after them. But it doesn't look like they were hurting anything, so I go about my business."
     
     scene bg apothecary
+    with slow_dissolve
     
     "When I enter the shop, Master Elaine is busily preparing the morning's medication."
     
@@ -416,6 +430,7 @@ label intro:
     elaine "I'll need you to prepare some dried X, a Y tincture, and get the Z started."
     
     scene bg forest002
+    with slow_dissolve
     
     "Faster than I can register, the morning is over. Elaine sent me out to pick up supplies and deliver medications in town."
     
@@ -440,6 +455,7 @@ label intro:
     aeth "Master Elaine sent me to deliver medicine to Orthrus."
     
     show orthrus neu at center
+    with ease
     
     "He steps back, and I'm able to relax my muscles."
     
@@ -484,6 +500,7 @@ label intro:
     "The next stop on my agenda is the general store. I need to pick up some more glass bottles, as well as a few other essentials."
     
     scene bg itemshop
+    with slow_dissolve
     
     "I walk in and am greeted by the shopkeeper, Harte."
     
@@ -514,6 +531,7 @@ label intro:
     aeth "I will-- have a good day."
     
     scene bg forest002
+    with slow_dissolve
     
     "I leave the shop and make my way toward the last errand."
     
@@ -522,6 +540,7 @@ label intro:
     "It shows the Healer's crest, just like my master's shop. I step in and take a look around."
     
     scene bg apothecary
+    with slow_dissolve
     
     "The front of the shop has a more clinical feel than Master Elaine's-- it is missing the racks of dried herbs and general clutter."
     

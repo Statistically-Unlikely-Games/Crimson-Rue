@@ -33,9 +33,9 @@ label overworld01:
         hide screen basic_overlay
         hide screen overworld01
         jump return_home
-    call timecount_msg
+    call timecount_nomsg
     
-    "The town where I live."
+#    "The town where I live."
     jump overworld01_loop
 
 screen overworld:

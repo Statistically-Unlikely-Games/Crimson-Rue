@@ -2,8 +2,8 @@
 ## Initialization
 ################################################################################
 
-## The init offset statement causes the init code in this file to run before
-## init code in any other file.
+## The init offset statement causes the initialization statements in this file
+## to run before init statements in any other file.
 init offset = -2
 
 ## Calling gui.init resets the styles to sensible default values, and sets the
@@ -14,7 +14,7 @@ init python:
 
 
 ################################################################################
-# GUI Configuration Variables
+## GUI Configuration Variables
 ################################################################################
 
 
@@ -23,47 +23,78 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#FF0000'
-#Overlay text on main menu screen
+define gui.accent_color = '#6DA32F'
+#Main Menu overlay text
+#Pause Menu labels
+# Save/Load page number
+#Default color of character names
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#FF6A00'
+define gui.idle_color = '#A2A86B'
+# Pause Menu unselected options
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#FFD800'
+define gui.idle_small_color = '#aaaaaa'
 #Small text buttons overlaid on textbox
+#Save and Load file names
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#B6FF00'
+define gui.hover_color = '#BEC645'
+#Pause Menu hovered options
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#00FF21'
+define gui.selected_color = '#8AD83C'
+# Pause Menu selected options
+# Crafting selected options
 
 ## The color used for a text button when it cannot be selected.
-define gui.insensitive_color = '#00FFFF'
+define gui.insensitive_color = '#8888887f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = '#0026FF'
-define gui.hover_muted_color = '#B200FF'
+define gui.muted_color = '#003d51'
+define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#ffffff'
-define gui.interface_text_color = '#ffffff'
+define gui.text_color = '#3D2200' 
+# Textbox text
+# Inventory money display
+# Inventory item quantity (list and grid mode)
+# Inventory item names (list mode)
+# View/Sort labels (not type buttons)
+# Crafting Name/Ingredients labels
+# Crafting name of recipe
+# Crafting quantity of recipe components
+# Encyclopedia library title
+# Encyclopedia percentage completion
+# Encyclopedia Filter label (not type buttons)
+# Encyclopedia book titles
+# Encyclopedia page names
+# Encyclopedia button text on pages
+# Encyclopedia Table of Contents label
+# Encyclopedia button text in table of contents
+# Calendar Ani day of week labels
+# Calendar Ani date labels
+
+define gui.interface_text_color = '#BEC645'
+# Yes/No promp question (not buttons)
+# History text
+# About text (not labels or hyperlinks)
+# Inventory/Navigation buttons text
 
 
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.default_font = "DejaVuSans.ttf"
+define gui.text_font = "DejaVuSans.ttf"
 
 ## The font used for character names.
-define gui.name_font = "DejaVuSans.ttf"
+define gui.name_text_font = "DejaVuSans.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 22
@@ -90,9 +121,6 @@ define gui.title_text_size = 50
 define gui.main_menu_background = "gui/main_menu.png"
 define gui.game_menu_background = "gui/game_menu.png"
 
-## Should we show the name and version of the game?
-define gui.show_name = True
-
 
 ## Dialogue ####################################################################
 ##
@@ -110,7 +138,7 @@ define gui.textbox_yalign = 1.0
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
 define gui.name_xpos = 100
-define gui.name_ypos = -8
+define gui.name_ypos = 8
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -133,15 +161,15 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.text_xpos = 120
-define gui.text_ypos = 72
+define gui.dialogue_xpos = 120
+define gui.dialogue_ypos = 72
 
 ## The maximum width of dialogue text, in pixels.
-define gui.text_width = 1050
+define gui.dialogue_width = 1050
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.text_xalign = 0.0
+define gui.dialogue_text_xalign = 0.0
 
 
 ## Buttons #####################################################################
@@ -151,7 +179,7 @@ define gui.text_xalign = 0.0
 
 ## The width and height of a button, in pixels. If None, Ren'Py computes a size.
 define gui.button_width = None
-define gui.button_height = 36
+define gui.button_height = None
 
 ## The borders on each side of the button, in left, top, right, bottom order.
 define gui.button_borders = Borders(4, 4, 4, 4)
@@ -161,19 +189,19 @@ define gui.button_borders = Borders(4, 4, 4, 4)
 define gui.button_tile = False
 
 ## The font used by the button.
-define gui.button_text_font = gui.interface_font
+define gui.button_text_font = gui.interface_text_font
 
 ## The size of the text used by the button.
 define gui.button_text_size = gui.interface_text_size
 
-# The color of button text in various states.
+## The color of button text in various states.
 define gui.button_text_idle_color = gui.idle_color
 define gui.button_text_hover_color = gui.hover_color
 define gui.button_text_selected_color = gui.selected_color
 define gui.button_text_insensitive_color = gui.insensitive_color
 
-# The horizontal alignment of the button text. (0.0 is left, 0.5 is center,
-# 1.0 is right).
+## The horizontal alignment of the button text. (0.0 is left, 0.5 is center, 1.0
+## is right).
 define gui.button_text_xalign = 0.0
 
 
@@ -211,7 +239,7 @@ define gui.choice_button_width = 790
 define gui.choice_button_height = None
 define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(100, 5, 100, 5)
-define gui.choice_button_text_font = gui.default_font
+define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
 define gui.choice_button_text_idle_color = "#cccccc"
@@ -274,13 +302,16 @@ define gui.page_spacing = 0
 ## The spacing between file slots.
 define gui.slot_spacing = 10
 
+## The position of the main menu text.
+define gui.main_menu_text_xalign = 1.0
+
 
 ## Frames ######################################################################
 ##
 ## These variables control the look of frames that can contain user interface
 ## components when an overlay or window is not present.
 
-## Generic frames that are introduced by player code.
+## Generic frames.
 define gui.frame_borders = Borders(4, 4, 4, 4)
 
 ## The frame that is used as part of the confirm screen.
@@ -301,13 +332,13 @@ define gui.frame_tile = False
 ## These control the look and size of bars, scrollbars, and sliders.
 ##
 ## The default GUI only uses sliders and vertical scrollbars. All of the other
-## bars are only used in creator-written code.
+## bars are only used in creator-written screens.
 
 ## The height of horizontal bars, scrollbars, and sliders. The width of vertical
 ## bars, scrollbars, and sliders.
-define gui.bar_size = 36
+define gui.bar_size = 25
 define gui.scrollbar_size = 12
-define gui.slider_size = 30
+define gui.slider_size = 25
 
 ## True if bar images should be tiled. False if they should be linearly scaled.
 define gui.bar_tile = False
@@ -342,14 +373,14 @@ define gui.history_height = 140
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
-define gui.history_name_xpos = 150
+define gui.history_name_xpos = 155
 define gui.history_name_ypos = 0
-define gui.history_name_width = 150
+define gui.history_name_width = 155
 define gui.history_name_xalign = 1.0
 
 ## The position, width, and alignment of the dialogue text.
 define gui.history_text_xpos = 170
-define gui.history_text_ypos = 5
+define gui.history_text_ypos = 2
 define gui.history_text_width = 740
 define gui.history_text_xalign = 0.0
 
@@ -360,6 +391,10 @@ define gui.history_text_xalign = 0.0
 
 ## The borders of the background of the NVL-mode background window.
 define gui.nvl_borders = Borders(0, 10, 0, 20)
+
+## The maximum number of NVL-mode entries Ren'Py will display. When more entries
+## than this are to be show, the oldest entry will be removed.
+define gui.nvl_list_length = 6
 
 ## The height of an NVL-mode entry. Set this to None to have the entries
 ## dynamically adjust height.
@@ -393,10 +428,17 @@ define gui.nvl_thought_xalign = 0.0
 define gui.nvl_button_xpos = 450
 define gui.nvl_button_xalign = 0.0
 
+## Localization ################################################################
+
+## This controls where a line break is permitted. The default is suitable
+## for most languages. A list of available values can be found at https://
+## www.renpy.org/doc/html/style_properties.html#style-property-language
+
+define gui.language = "unicode"
 
 
 ################################################################################
-# Mobile devices
+## Mobile devices
 ################################################################################
 
 init python:
@@ -405,7 +447,7 @@ init python:
     ## on tablets and phones.
     if renpy.variant("touch"):
 
-        gui.quick_button_borders = Borders(60, 14, 60, 0)
+        gui.quick_button_borders = Borders(40, 14, 40, 0)
 
     ## This changes the size and spacing of various GUI elements to ensure they
     ## are easily visible on phones.
@@ -415,9 +457,9 @@ init python:
         gui.text_size = 30
         gui.name_text_size = 36
         gui.notify_text_size = 25
-        gui.interface_text_size = 36
-        gui.button_text_size = 34
-        gui.label_text_size = 36
+        gui.interface_text_size = 30
+        gui.button_text_size = 30
+        gui.label_text_size = 34
 
         ## Adjust the location of the textbox.
         gui.textbox_height = 240
@@ -425,7 +467,9 @@ init python:
         gui.text_xpos = 90
         gui.text_width = 1100
 
-        ## Change the size and spacing of items in the game menu.
+        ## Change the size and spacing of various things.
+        gui.slider_size = 36
+
         gui.choice_button_width = 1240
 
         gui.navigation_spacing = 20
@@ -433,6 +477,8 @@ init python:
 
         gui.history_height = 190
         gui.history_text_width = 690
+
+        gui.quick_button_text_size = 20
 
         ## File button layout.
         gui.file_slot_cols = 2
@@ -453,9 +499,6 @@ init python:
 
         gui.nvl_button_width = 1240
         gui.nvl_button_xpos = 20
-
-        ## Quick buttons.
-        gui.quick_button_text_size = 20
 
 
 

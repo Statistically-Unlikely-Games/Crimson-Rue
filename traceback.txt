@@ -1,19 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'bg/overworld01.png'>:
-  File "game/overworld.rpy", line 36, in script call
-    call timecount_msg
-  File "game/timecount.rpy", line 173, in script
-    "It is now sunrise."
-IOError: Couldn't find file 'bg/overworld01.png'.
+While loading <'Image' u'gui/textbox.png'>:
+  File "game/script.rpy", line 310, in script
+    aeth "Yes. I'd like to greet my mother first, so I'm taking a shortcut through the forest."
+IOError: Couldn't find file 'gui/textbox.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/overworld.rpy", line 36, in script call
-    call timecount_msg
-  File "game/timecount.rpy", line 173, in script
-    "It is now sunrise."
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\bootstrap.py", line 305, in bootstrap
+    renpy.main.main()
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\main.py", line 499, in main
+    run(restart)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\main.py", line 147, in run
+    renpy.execution.run_context(True)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\execution.py", line 795, in run_context
+    context.run()
+  File "game/script.rpy", line 310, in script
+    aeth "Yes. I'd like to greet my mother first, so I'm taking a shortcut through the forest."
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 624, in execute
     renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\exports.py", line 1173, in say
@@ -66,6 +70,12 @@ Full traceback:
     cpdef render(d, object widtho, object heighto, double st, double at):
   File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
     rv = d.render(widtho, heighto, st, at)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\layout.py", line 1121, in render
+    back = render(style.background, bw, bh, st, at)
+  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen\renpy.display.render.c:3445)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen\renpy.display.render.c:2983)
+    rv = d.render(widtho, heighto, st, at)
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\im.py", line 503, in render
     texture = cache.get(self, texture=True)
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\im.py", line 212, in get
@@ -74,8 +84,8 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\loader.py", line 548, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'bg/overworld01.png'.
+IOError: Couldn't find file 'gui/textbox.png'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919
-Apothecary Game 0.1
+Move Test 1.0

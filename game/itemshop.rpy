@@ -4,6 +4,13 @@
 # Sell and buy.
 
 
+label it_looping: 
+    $ renpy.pause()
+    call timecount_nomsg
+    call time_img
+    jump aplooping
+
+
 label item_shop:
     
     $ in_itemshop = True
@@ -12,8 +19,8 @@ label item_shop:
     show screen itemshop
     show screen basic_overlay
     
-    "I can sell my wares and buy new supplies here."
-    jump item_shop
+#    "I can sell my wares and buy new supplies here."
+    jump it_looping
 
 screen itemshop:
     tag menu2
