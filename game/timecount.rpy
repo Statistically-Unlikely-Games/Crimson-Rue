@@ -366,6 +366,8 @@ label timecount_nomsg:
         $ timeofday = "sunset"
     else:
         $ timeofday = "night"
+        
+    jump check_events
     return
     
         
