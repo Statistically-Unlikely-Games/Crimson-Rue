@@ -17,16 +17,6 @@ init python hide:
 
 # Declaring characters
 
-define n = Character(None, what_outlines=[( 0, "#A3A3A3", 2, 2 )])
-
-define base = Character(
-    "",
-
-    window_background = "gui/textbox.png",
-    
-    what_color = "#000000",
-    what_outlines=[( 0, "#A3A3A3", 2, 2 )])
-
 define dialogue = Character(
     None,
 
@@ -61,6 +51,10 @@ define thoughts = Character(
     what_textalign=0.5,
     what_layout='subtitle')
 
+define narrator = Character(None, what_outlines=[( 0, "#A3A3A3", 2, 2 )])
+
+define name_only = Character(None, kind = dialogue)
+
 define aeth = Character('Aeth', kind = dialogue)
 define aeth_int = Character('Aeth', kind = thoughts)
 
@@ -70,10 +64,6 @@ define orthrus = Character('Orthrus', kind = dialogue)
 define harte = Character('Harte', kind = dialogue)
 define mikael = Character('Mikael', kind = dialogue)
 define lufte = Character('Lufte', kind = dialogue)
-
-define trader = Character('Trader', kind = dialogue)
-define lufte_un = Character('Child', kind = dialogue)
-define orthrus_un = Character('Young Man', kind = dialogue)
 
 
 #Defining Transformations
@@ -119,6 +109,21 @@ transform easeout_leftctr:
     subpixel True
     center #starting position
     easein 2.0 offscreenleft #transition, speed, ending position
+    
+transform surprised_left:
+    yalign 1.0 xalign 1.0
+    linear 0.05 yalign 0.9
+    linear 0.1 yalign 1.0
+
+transform surprised_ctr:
+    yalign 1.0 xalign 0.5
+    linear 0.05 yalign 0.9
+    linear 0.1 yalign 1.0
+
+transform surprised_right:
+    yalign 1.0 xalign 0.0
+    linear 0.05 yalign 0.9
+    linear 0.1 yalign 1.0
 
 
 # Declaring books
