@@ -3,7 +3,7 @@
 While running game code:
   File "renpy/common/00start.rpy", line 120, in script
     return
-Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Crimson Rue/game/script.rpy', 1509778341, 27, 'end_translate').
+Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Crimson Rue/game/scenes common.rpy', 1510133496, 57).
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -14,7 +14,7 @@ Full traceback:
     next_node(renpy.game.context().lookup_return(pop=True))
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\execution.py", line 586, in lookup_return
     raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Crimson Rue/game/script.rpy', 1509778341, 27, 'end_translate').
+Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Crimson Rue/game/scenes common.rpy', 1510133496, 57).
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919

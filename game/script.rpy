@@ -17,14 +17,63 @@ init python hide:
 
 # Declaring characters
 
-define aeth = Character('Aeth', color="#CFD83C", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#5D625B", 0, 0)])
-define kayen = Character('Kayen', color="#CCD1C8", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#5D625B", 0, 0)])
-define elaine = Character('Master Elaine', color="#CCD1C8", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#5D625B", 0, 0)])
-define orthrus = Character('Orthrus', color="#CCD1C8", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#5D625B", 0, 0)])
-define harte = Character('Harte', color="#CCD1C8", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#5D625B", 0, 0)])
-define mikael = Character('Mikael', color="#CCD1C8", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#5D625B", 0, 0)])
+define n = Character(None, what_outlines=[( 0, "#A3A3A3", 2, 2 )])
 
-define trader = Character('Trader', color="#CCD1C8", who_font = "PoiretOne-Regular.ttf", who_bold = True, who_outlines = [(3, "#5D625B", 0, 0)])
+define base = Character(
+    "",
+
+    window_background = "gui/textbox.png",
+    
+    what_color = "#000000",
+    what_outlines=[( 0, "#A3A3A3", 2, 2 )])
+
+define dialogue = Character(
+    None,
+
+    window_background = "gui/dialoguebox.png",
+
+    who_font = "PoiretOne-Regular.ttf",
+    who_outlines = [(3, "#FF6C03", 0, 0)],
+    who_color="#FFD200",
+    who_bold = True,
+    who_xalign=0.5,
+    who_textalign=0.5,
+
+    what_color = "#000000",
+    what_xalign=0.5,
+    what_textalign=0.5,
+    what_layout='subtitle')
+
+define thoughts = Character(
+    None,
+
+    window_background = "gui/thoughtbox.png",
+
+    who_font = "PoiretOne-Regular.ttf",
+    who_outlines = [(3, "#FF6C03", 0, 0)],
+    who_color="#FFD200",
+    who_bold = True,
+    who_xalign=0.5,
+    who_textalign=0.5,
+
+    what_color = "#FFFFFF",
+    what_xalign=0.5,
+    what_textalign=0.5,
+    what_layout='subtitle')
+
+define aeth = Character('Aeth', kind = dialogue)
+define aeth_int = Character('Aeth', kind = thoughts)
+
+define kayen = Character('Kayen', kind = dialogue)
+define elaine = Character('Master Elaine', kind = dialogue)
+define orthrus = Character('Orthrus', kind = dialogue)
+define harte = Character('Harte', kind = dialogue)
+define mikael = Character('Mikael', kind = dialogue)
+define lufte = Character('Lufte', kind = dialogue)
+
+define trader = Character('Trader', kind = dialogue)
+define lufte_un = Character('Child', kind = dialogue)
+define orthrus_un = Character('Young Man', kind = dialogue)
 
 
 #Defining Transformations
