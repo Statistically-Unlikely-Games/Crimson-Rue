@@ -1,28 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/common route.rpy", line 141, in script
-    
-  File "game/common route.rpy", line 141, in <module>
-    
-NameError: name 'falling' is not defined
+  File "renpy/common/00start.rpy", line 120, in script
+    return
+Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Crimson Rue/game/common route.rpy', 1510232876, 32).
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/common route.rpy", line 141, in script
-    
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 1089, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 1050, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\python.py", line 1794, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\python.py", line 1788, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/common route.rpy", line 141, in <module>
-    
-NameError: name 'falling' is not defined
+  File "renpy/common/00start.rpy", line 120, in script
+    return
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 1400, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\execution.py", line 586, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Crimson Rue/game/common route.rpy', 1510232876, 32).
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919

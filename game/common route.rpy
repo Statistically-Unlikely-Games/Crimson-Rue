@@ -25,11 +25,15 @@ label intro:
     aeth "This is a test. I need to see how the game deals with very long dialogue and narration. Currently, I have dialogue centered and it should be shorter than the narration, which is unlimited. But unless I know exactly where it will make the cut for dialogue, I can't make a dialogue box. Thus, I need to know how it deals with long text like this."
     
     scene bg forest001 with slow_dissolve
-    show aeth neu at easein_left
+    $ aeth_outfit = 'cloak_up'
+    $ aeth_pose = 'arms_up'
+    show aeth neu at ease(offscreenleft, left, 2.0)
     
-    "I step out into the crisp snow, removing my hood to get a better look."
+    "I step out into the crisp snow, pulling my hood close around my neck."
     
     "It has been so long since I last saw this familiar landscape, smelled this familiar forest."
+    
+    $ aeth_pose = 'arms_down'
     
     aeth_int "(I'm glad we were able to make it before the roads snowed in.)"
     
@@ -82,15 +86,19 @@ label intro:
     
     "My mother scrambles forward, looking disheveled."
     
-    show kayen neu at easein_rightctr
+    $ kayen_pose = 'hand_hair'
+    show kayen neu at ease(offscreenright, center, 2.0)
     
     kayen "Aeth-- What are you doing back this time of year?"
     
+    $ kayen_pose = 'arms_down'
     "I think I see the shadow of another person back there..."
     
     aeth_int "(Oops. I must have interrupted. Sorry, Mom.)"
     
     aeth "I started missing home, so I came back early."
+    
+    $ aeth_pose = 'arms_crossed'
     
     aeth "Would it be okay for me to stay over for a bit?"
     
@@ -98,9 +106,14 @@ label intro:
     
     "She stares at me, a bit too hard, before replying."
     
+    $ kayen_pose = 'arm_up'
+    
     kayen "Of course! You're always welcome."
     
     kayen "You've been traveling for so long, it will be good to have you around again."
+    
+    $ kayen_pose = 'arm_down'
+    $ aeth_pose = 'arms_down'
     
     "A wry grin spreads across her face."
     
@@ -116,31 +129,34 @@ label intro:
     scene bg black
     with slow_dissolve
     
-    "I lay down as sleep takes me, exhausted from my long journey."
+    black_screen "I lay down as sleep takes me, exhausted from my long journey." 
     
     scene bg forest002
     with slow_dissolve
     
     "The next day, I decide to head into town."
     
-    show aeth neu at left
-    with moveinleft
+    $ aeth_outfit = 'vest'
+    show aeth neu at ease(offscreenleft, left, 2.0)
     
     "As I approach my master's shop, I see a small child hiding around the corner."
     
-    show lufte neu right at right
+    $ lufte_facing = 'right'
+    show lufte neu at right
     with dissolve
     
     "Child" "..."
     
-    show aeth neu at center
-    with ease
+    show aeth base right neu at ease(left, center, 3.0)
     
     aeth "Do you need any help?"
     
-    show lufte neu at surprised_left
+    show lufte neu at surprised(right)
+    $ lufte_facing = 'left'
     
     "The child seems surprised to hear a voice behind them and jumps slightly. I stare blankly at them, waiting for a response."
+    
+    show lufte neu at linear(right, offscreenright, 4.0)
     
     "Instead of responding, they back away slowly and then run around a corner."
     
@@ -149,11 +165,10 @@ label intro:
     "I stare after them for a moment, considering if I need to go after them. But it doesn't look like they were hurting anything, so I go about my business."
     
     scene bg apothecary
+    show elaine neu at right
     with slow_dissolve
     
     "When I enter the shop, Master Elaine is busily preparing the morning's medication."
-    
-    show elaine neu at right
     
     elaine "Aeth! My dear, you are certainly home early, aren't you? Well, I'm sure there's a long explanation for that, but we simply don't have the time."
     
@@ -170,15 +185,20 @@ label intro:
     
     "I approach a small house on the outskirts of town."
     
-    show aeth neu at left
+    show aeth neu at ease(offscreenleft, left, 2.0)
     
     aeth "Hm, this seems to be the right place."
     
-    "Supposedly a young man lives here named Orthrus, and I am supposed to deliver medication for his younger sister."
+    "Apparently a young man lives here named Orthrus, and I am supposed to deliver medication for his younger sister."
     
     "As I approached the door, a voice stops me."
     
-    show orthrus neu right at left behind aeth
+    #Orthrus introduction CG
+    
+    $ orthrus_pose = 'arms_up'
+    $ orthrus_facing = 'right'
+    show orthrus neu at left behind aeth
+    with dissolve
     
     "Young Man" "You have business with me?"
     
@@ -186,12 +206,15 @@ label intro:
     
     aeth "Master Elaine sent me to deliver medicine to Orthrus."
     
-    show orthrus neu at center
-    with ease
+    $ orthrus_facing = 'left'
+    $ orthrus_pose = 'arms_crossed'
+    show orthrus neu at ease(left, center, 2.0)
     
     "He steps back, and I'm able to relax my muscles."
     
     orthrus "Ah, that'll be for me. Thanks for dropping them by, we'd just about run out."
+    
+    $ orthrus_pose = 'hands_hips'
     
     "A wide grin spreads across his face as he reaches out and takes the bag."
     
@@ -199,13 +222,17 @@ label intro:
     
     "I remember that Orthrus's family ran a merchant caravan, and he and his sister often traveled with them away from town."
     
-    "By the time they disappeared, I had already left on your journey, and because of this I haven't had much interaction with either sibling."
+    "By the time they disappeared, I had already left on my journey, and because of that I haven't had much interaction with either sibling."
     
     "It was possible we'd seen each other in passing, but I would have a hard time picking his face out of a crowd."
     
     "I've learned that being so direct was considered rude by most, though, and remain silent unsure of what to say in response."
     
+    $ orthrus_pose = 'arms_crossed'
+    
     orthrus "Er, it was a long time ago in any case. If you're helping out at Elaine's shop I'm sure we'll see more of each other from now on."
+    
+    $ orthrus_pose = 'hands_hips'
     
     orthrus "We'll just call this our first meeting then-- thanks in advanced for your hard work! These meds make life a lot easier."
     
@@ -233,21 +260,35 @@ label intro:
     
     "I give a small smile."
     
+    $ aeth_pose = 'arms_crossed'
     show aeth neu at left
     
     aeth "You know Master Elaine. She goes at her own pace, and anyone around will get dragged right along."
     
+    $ harte_pose = 'pages'
+    
     harte "Haha, you got that right! So, she send you for the regular refills?"
+    
+    $ aeth_pose = 'arms_down'
     
     aeth "The regular, plus an extra case of containers and wax."
     
+    $ harte_pose = 'book'
+    
     harte "I'm on it!"
     
+    hide harte
+    with dissolve
+    
     "Harte disappears into the back room for a moment, then comes out with a large, heavy box. She places it on the counter, then adds a few extra items from the supply shelf."
+    
+    show harte neu at right
     
     harte "This should get you set up. You okay to carry all that?"
     
     aeth "I'll be fine, thanks."
+    
+    $ harte_pose = 'leaning'
     
     harte "They put you to work on the caravan, eh? Haha, good to see you back again in any case. Feel free to drop by anytime you need something!"
     
@@ -267,6 +308,7 @@ label intro:
     
     "The front of the shop has a more clinical feel than Master Elaine's-- it is missing the racks of dried herbs and general clutter."
     
+    $ mikael_pose = 'arms_crossed'
     show mikael neu at center
     
     "Instead, there are more seats, and a curtain near the back of the room. Not long after the door shut behind me a familiar figure steps out from behind the counter."
@@ -275,17 +317,23 @@ label intro:
     
     aeth "Mikael?"
     
-    mikael "Aeth, it's good to see you. Sorry for the delay, I was just wiping down the examination table."
+    $ mikael_pose = 'arms_down'
     
-    aeth "No, it's fine. Is this your shop?"
+    mikael "Aeth, it's good to see you back in town. Sorry for the delay, I was just wiping down the examination table."
+    
+    aeth "No, it's fine. I hear this place is yours? It's nice."
     
     mikael "Ah, right-- you were gone quite a while this time. I opened shop near the beginning of last year, with Master Elaine's blessings of course."
     
     mikael "She had been looking to step back from Guild work, so I've been taking on more of the administrative tasks. I've not quite taken over as representative, but..."
     
+    $ mikael_pose = 'hand_ear'
+    
     mikael "Master Elaine has been wanting to tell the Healer's in Harvest City to get off her back for a while, haha."
     
     "His face emanates warmth, and I can't help but smile at the image of Master Elaine chasing the powerful guild members out of her shop."
+    
+    $ mikael_pose = 'arms_down'
     
     mikael "Ahem, in any case, I'm guessing Master Elaine has you running her errands?"
     

@@ -30,6 +30,7 @@ define dialogue = Character(
     who_textalign=0.5,
 
     what_color = "#000000",
+    what_xmaximum = 950,
     what_xalign=0.5,
     what_textalign=0.5,
     what_layout='subtitle')
@@ -47,11 +48,13 @@ define thoughts = Character(
     who_textalign=0.5,
 
     what_color = "#FFFFFF",
+    what_xmaximum = 950,
     what_xalign=0.5,
     what_textalign=0.5,
     what_layout='subtitle')
 
-define narrator = Character(None, what_outlines=[( 0, "#A3A3A3", 2, 2 )])
+define narrator = Character(None, what_color = "#000000", what_outlines=[( 0, "#A3A3A3", 2, 2 )])
+define black_screen = Character(None, what_color = "#FFFFFF", what_outlines=[( 0, "#808080", 2, 2 )])
 
 define name_only = Character(None, kind = dialogue)
 
@@ -70,60 +73,21 @@ define lufte = Character('Lufte', kind = dialogue)
 define slow_dissolve = Dissolve(1.0)
 define fast_dissolve = Dissolve(0.25)
 
-transform easein_right:
+transform ease(start, end, time):
     subpixel True
-    offscreenright #starting position
-    easein 2.0 right #transition, speed, ending position
+    start
+    easein time end
     
-transform easein_rightctr:
+transform linear(start, end, time):
     subpixel True
-    offscreenright #starting position
-    easein 2.0 center #transition, speed, ending position
+    start
+    linear time end
     
-transform easeout_right:
+transform surprised(start):
     subpixel True
-    right #starting position
-    easein 2.0 offscreenright #transition, speed, ending position
-    
-transform easeout_rightctr:
-    subpixel True
-    center #starting position
-    easein 2.0 offscreenright #transition, speed, ending position
-    
-transform easein_left:
-    subpixel True
-    offscreenleft #starting position
-    easein 2.0 left #transition, speed, ending position
-    
-transform easein_leftctr:
-    subpixel True
-    offscreenleft #starting position
-    easein 2.0 center #transition, speed, ending position
-    
-transform easeout_left:
-    subpixel True
-    left #starting position
-    easein 2.0 offscreenleft #transition, speed, ending position
-    
-transform easeout_leftctr:
-    subpixel True
-    center #starting position
-    easein 2.0 offscreenleft #transition, speed, ending position
-    
-transform surprised_left:
-    yalign 1.0 xalign 1.0
+    start
     linear 0.05 yalign 0.9
-    linear 0.1 yalign 1.0
-
-transform surprised_ctr:
-    yalign 1.0 xalign 0.5
-    linear 0.05 yalign 0.9
-    linear 0.1 yalign 1.0
-
-transform surprised_right:
-    yalign 1.0 xalign 0.0
-    linear 0.05 yalign 0.9
-    linear 0.1 yalign 1.0
+    start
 
 
 # Declaring books
@@ -354,6 +318,32 @@ label start:
         forest009_marshmarigold_col = True
         forest009_marshmarigold2_col = True
         forest009_goldenseal_col = True
+        
+        aeth_outfit = 'vest'
+        aeth_pose = 'arms_down'
+        aeth_facing = 'right'
+        
+        elaine_outfit = 'vest'
+        elaine_pose = 'hands_hips'
+        elaine_facing = 'left'
+        
+        harte_outfit = 'desk'
+        harte_pose = 'book'
+        
+        kayen_outfit = 'dress'
+        kayen_pose = 'arm_down'
+        
+        lufte_outfit = 'shirt'
+        lufte_pose = 'arms_down'
+        lufte_facing = 'left'
+        
+        mikael_outfit = 'shirt'
+        mikael_pose = 'arms_down'
+        mikael_facing = 'left'
+        
+        orthrus_outfit = 'shirt'
+        orthrus_pose = 'hands_hips'
+        orthrus_facing = 'left'
         
         orth_tru = 10
         orth_res = 0
