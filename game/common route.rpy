@@ -33,7 +33,9 @@ label intro:
     $ aeth_pose = 'arms_up'
     show aeth neu at ease(offscreenleft, left, 2.0)
     
-    "I step out into the crisp snow, pulling my hood close around my neck."
+    "I step out into the crisp snow, pulling my hood down to get a better view."
+    
+    $ aeth_outfit = 'cloak_down'
     
     "It has been so long since I last saw this familiar landscape, smelled this familiar forest."
     
@@ -55,9 +57,9 @@ label intro:
     
     "Trader" "I guess this is where we part ways then."
     
-    show aeth sad_smile
-    
     "Trader" "You've been of such great help these past few years. I want you to know you're always welcome back if... things change."
+    
+    show aeth sad_smile
     
     "That isn't possible, but I appreciate the gesture. I have been worried the caravan members resented me."
     
@@ -204,6 +206,8 @@ label intro:
     "She hurriedly shoves an assortment of bottles and tools on the counter, and pushes them in my direction."
     
     elaine "I'll need you to prepare some dried X, a Y tincture, and get the Z started."
+    
+    #Good place for a tutorial on crafting. Start with a decent stock of herbs, then learn to gather herbs at a later date
     
     scene bg forest002 #Replace with town backstreet BG
     with slow_dissolve

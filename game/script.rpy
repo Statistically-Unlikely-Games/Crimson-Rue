@@ -58,15 +58,15 @@ define black_screen = Character(None, what_color = "#FFFFFF", what_outlines=[( 0
 
 define name_only = Character(None, kind = dialogue)
 
-define aeth = Character('Aeth', kind = dialogue)
-define aeth_int = Character('Aeth', kind = thoughts)
+define aeth = Character("Aeth", kind = dialogue)
+define aeth_int = Character("Aeth", kind = thoughts)
 
-define kayen = Character('Kayen', kind = dialogue)
-define elaine = Character('Master Elaine', kind = dialogue)
-define orthrus = Character('Orthrus', kind = dialogue)
-define harte = Character('Harte', kind = dialogue)
-define mikael = Character('Mikael', kind = dialogue)
-define lufte = Character('Lufte', kind = dialogue)
+define kayen = Character("Kayen", kind = dialogue)
+define elaine = Character("Master Elaine", kind = dialogue)
+define orthrus = Character("Orthrus", kind = dialogue)
+define harte = Character("Harte", kind = dialogue)
+define mikael = Character("Mikael", kind = dialogue)
+define lufte = Character("Lufte", kind = dialogue)
 
 
 #Defining Transformations

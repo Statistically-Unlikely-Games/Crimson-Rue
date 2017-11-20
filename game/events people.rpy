@@ -195,35 +195,4 @@ label Orthrus_romantic_evt:
 return
 
     
-#Sexual
-label Orthrus_sexual_evt:
-    
-    if orth_sex_rom_1 == False:
-        "Orthrus doesn't seem to notice you romantically."
-        $ orth_sex_evt_1 = True
-    
-    elif orth_sex >= 5 and orth_sex_rom_2 == False:
-        "Orthrus flirts with you."
-        $ orth_sex_evt_2 = True
-    
-    elif orth_sex >= 20 and orth_sex_rom_3 == False:
-    
-        "Orthrus starts inviting you out occasionally."
-        $ orth_sex_evt_3 = True
-    
-    elif orth_sex >= 50 and orth_sex_rom_4 == False:
-    
-        "Orthrus starts spending a lot of time at your house."
-        $ orth_sex_evt_4 = True
-
-    elif orth_sex >= 100 and orth_sex_rom_5 == False:
-    
-        "Orthrus demands you move in with him."
-        $ orth_sex_evt_5 = True
-    
-    else: 
-        "No new sexual Orthrus events."
-        return
-return
-    
 #Poly
