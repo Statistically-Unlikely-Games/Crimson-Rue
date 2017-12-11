@@ -1,5 +1,7 @@
 label intro: 
     
+    $ intro_evt = True
+    
 #    show aeth neu at left
 #    show elaine neu at right
 #    show child neu at center
@@ -411,4 +413,53 @@ label intro:
     
     mikael "Alright, just give me a moment to pack up those supplies."
     
+    scene bg black
+    with dissolve
+    with Pause (0.5)
+    
+    scene bg forest002
+    with dissolve
+    
+    "As we walk back together, Mikael catches me up on what I've missed while I've been gone."
+    
+    "When we get to the shop we part ways."
+    
+    scene bg apothecary
+    
+    show aeth neu at left
+    
+    aeth "Master Elaine, I've finished the deliveries and brought the supplies"
+    
+    show elaine neu at right
+    
+    elaine "Ah, good! Put them over there and help me with this-- NAME will be coming by any moment to pick it up."
+    
+    "The shop is a disaster, but I try to clear some space for the new supplies."
+    
+    aeth_int "I'm amazed Master Elaine can find anything in here, but she must have some kind of system because she keeps filling orders."
+    
+    aeth_int "I should clean when I get the chance though. Even if she can figure out where everything goes, working in this clutter will stress me out."
+    
+    #Tutorial maybe?
+    
+    "I spend the rest of the day laboring under Master Elaine's tutilage, refreshing my memory on various medicines I didn't have the resources to make on the road."
+    
     jump apothecary_shop
+    
+    
+label day_003:
+    
+    $ day_003_evt = True
+    
+    scene bg apothecary
+    
+    "It is the third day of the game."
+    
+    "You should only see this on your third day in the game."
+    
+    "You should only see this event one time."
+    
+    jump apothecary_shop
+    
+    
+    

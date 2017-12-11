@@ -13,13 +13,34 @@ label it_looping:
 
 label item_shop:
     
-    $ in_itemshop = True
+    $ current_loc = "item_shop"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = True
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg itemshop
     show screen itemshop
     show screen basic_overlay
     
 #    "I can sell my wares and buy new supplies here."
+
+    hide screen itemshop
+    call check_events
+    show screen itemshop
+
     jump it_looping
 
 screen itemshop:
@@ -35,7 +56,7 @@ screen itemshop:
 label leave_itemshop:
     show screen basic_overlay
     show screen overworld
-    $ in_itemshop = False
+    $ current_loc = "none"
     $ time_cnt += 1
     hide screen itemshop
     if time_cnt > 5:

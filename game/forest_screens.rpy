@@ -19,13 +19,34 @@ label forest001_layout:
 label forest001:
     init python: 
         message = "message"
-    $ in_forest001 = True
+    
+    $ current_loc = "forest001"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = True
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg forest001
     show screen forest001
     show screen basic_overlay
     
 #    "Your random number is [forest001_spawn]."
+
+    hide screen forest001
+    call check_events
+    show screen forest001
     jump forest_loop
 
 
@@ -393,7 +414,7 @@ label forest001_poppy:
 label leave_forest001:
     show screen basic_overlay
     show screen overworld02
-    $ in_forest001 = False
+    $ current_loc = "none"
     $ time_cnt += 1
     
     jump overworld02
@@ -411,13 +432,35 @@ label forest002_layout:
 label forest002:
     init python: 
         message = "message"
-    $ in_forest002 = True
+    
+    $ current_loc = "forest002"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = True
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg forest002
     show screen forest002
     show screen basic_overlay
     
 #    "Your random number is [forest002_spawn]."
+
+    hide screen forest002
+    call check_events
+    show screen forest002
+
     jump forest_loop
 
 screen forest002:
@@ -779,7 +822,7 @@ label forest002_licorice:
 label leave_forest002:
     show screen basic_overlay
     show screen overworld02
-    $ in_forest002 = False
+    $ current_loc = "none"
     $ time_cnt += 1
     
     jump overworld02
@@ -798,13 +841,35 @@ label forest003_layout:
 label forest003:
     init python: 
         message = "message"
-    $ in_forest003 = True
+    
+    $ current_loc = "forest003"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = True
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg forest003
     show screen forest003
     show screen basic_overlay
     
 #    "Your random number is [forest003_spawn]."
+
+    hide screen forest003
+    call check_events
+    show screen forest003
+    
     jump forest_loop
 
 screen forest003:
@@ -1172,7 +1237,7 @@ label forest003_licorice:
 label leave_forest003:
     show screen basic_overlay
     show screen overworld02
-    $ in_forest003 = False
+    $ current_loc = "none"
     $ time_cnt += 1
     
     jump overworld02
@@ -1191,13 +1256,35 @@ label forest004_layout:
 label forest004:
     init python: 
         message = "message"
-    $ in_forest004 = True
+    
+    $ current_loc = "forest004"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = True
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg forest004
     show screen forest004
     show screen basic_overlay
     
 #    "Your random number is [forest004_spawn]."
+
+    hide screen forest004
+    call check_events
+    show screen forest004
+
     jump forest_loop
 
 screen forest004:
@@ -1565,7 +1652,7 @@ label forest004_licorice:
 label leave_forest004:
     show screen basic_overlay
     show screen overworld02
-    $ in_forest004 = False
+    $ current_loc = "none"
     $ time_cnt += 1
     
     jump overworld02
@@ -1584,13 +1671,35 @@ label forest005_layout:
 label forest005:
     init python: 
         message = "message"
-    $ in_forest005 = True
+    
+    $ current_loc = "forest005"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = True
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg forest005
     show screen forest005
     show screen basic_overlay
     
 #    "Your random number is [forest005_spawn]."
+
+    hide screen forest005
+    call check_events
+    show screen forest005
+
     jump forest_loop
 
 screen forest005:
@@ -1965,7 +2074,7 @@ label forest005_crownflower:
 label leave_forest005:
     show screen basic_overlay
     show screen overworld02
-    $ in_forest005 = False
+    $ current_loc = "none"
     $ time_cnt += 1
     
     jump overworld02
@@ -1984,13 +2093,35 @@ label forest006_layout:
 label forest006:
     init python: 
         message = "message"
-    $ in_forest006 = True
+    
+    $ current_loc = "forest006"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = True
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg forest006
     show screen forest006
     show screen basic_overlay
     
 #    "Your random number is [forest006_spawn]."
+
+    hide screen forest006
+    call check_events
+    show screen forest006
+
     jump forest_loop
 
 screen forest006:
@@ -2344,7 +2475,7 @@ label forest006_goldenseal:
 label leave_forest006:
     show screen basic_overlay
     show screen overworld02
-    $ in_forest006 = False
+    $ current_loc = "none"
     $ time_cnt += 1
     
     jump overworld02
@@ -2363,13 +2494,35 @@ label forest007_layout:
 label forest007:
     init python: 
         message = "message"
-    $ in_forest007 = True
+    
+    $ current_loc = "forest007"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = True
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg forest007
     show screen forest007
     show screen basic_overlay
     
 #    "Your random number is [forest007_spawn]."
+
+    hide screen forest007
+    call check_events
+    show screen forest007
+
     jump forest_loop
 
 screen forest007:
@@ -2716,7 +2869,7 @@ label forest007_goldenseal:
 label leave_forest007:
     show screen basic_overlay
     show screen overworld02
-    $ in_forest007 = False
+    $ current_loc = "none"
     $ time_cnt += 1
     
     jump overworld02
@@ -2735,13 +2888,35 @@ label forest008_layout:
 label forest008:
     init python: 
         message = "message"
-    $ in_forest008 = True
+    
+    $ current_loc = "forest008"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = True
+#    $ in_forest009 = False
     
     scene bg forest008
     show screen forest008
     show screen basic_overlay
     
 #    "Your random number is [forest008_spawn]."
+
+    hide screen forest008
+    call check_events
+    show screen forest008
+
     jump forest_loop
 
 screen forest008:
@@ -3102,7 +3277,7 @@ label forest008_marshmarigold:
 label leave_forest008:
     show screen basic_overlay
     show screen overworld02
-    $ in_forest008 = False
+    $ current_loc = "none"
     $ time_cnt += 1
     
     jump overworld02
@@ -3122,13 +3297,34 @@ label forest009:
     init python: 
         message = "message"
     
-    $ in_forest009 = True
+    $ current_loc = "forest009"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = True
     
     scene bg forest009
     show screen forest009
     show screen basic_overlay
     
 #    "Your random number is [forest009_spawn]."
+
+    hide screen forest009
+    call check_events
+    show screen forest009
+
     jump forest_loop
 
 screen forest009:
@@ -3482,7 +3678,7 @@ label forest009_goldenseal:
 label leave_forest009:
     show screen basic_overlay
     show screen overworld02
-    $ in_forest009 = False
+    $ current_loc = "none"
     $ time_cnt += 1
     
     jump overworld02    

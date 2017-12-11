@@ -367,7 +367,9 @@ label timecount_nomsg:
     else:
         $ timeofday = "night"
         
-    jump check_events
+    #Having the event checker here causes problems bc renpy is still paused in some circumstances
+    #Thus, commands like scene and show do not work
+    
     return
     
         

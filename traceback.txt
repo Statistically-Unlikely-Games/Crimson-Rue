@@ -1,20 +1,60 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 120, in script
-    return
-Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Crimson Rue/game/common route.rpy', 1510232876, 32).
+  File "game/apothecary.rpy", line 34, in script
+    $ renpy.pause()
+  File "game/apothecary.rpy", line 34, in <module>
+    $ renpy.pause()
+  File "renpy/common/00action_data.rpy", line 50, in get_selected
+    return getattr(self.object, self.field) == self.value
+AttributeError: 'StoreModule' object has no attribute 'in_apothecary'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 120, in script
-    return
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 1400, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\execution.py", line 586, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'E:\\_RenPy\\RenPy WIP\\Crimson Rue/game/common route.rpy', 1510232876, 32).
+  File "game/apothecary.rpy", line 34, in script
+    $ renpy.pause()
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\python.py", line 1764, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/apothecary.rpy", line 34, in <module>
+    $ renpy.pause()
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\exports.py", line 1304, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2553, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2821, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 405, in visit_all
+    self.child.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 497, in visit_all
+    callback(self)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2821, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 796, in per_interact
+    if self.is_selected():
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 786, in is_selected
+    return is_selected(self.action)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 356, in is_selected
+    return any(is_selected(i) for i in action)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 356, in <genexpr>
+    return any(is_selected(i) for i in action)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 359, in is_selected
+    return action.get_selected()
+  File "renpy/common/00action_data.rpy", line 50, in get_selected
+    return getattr(self.object, self.field) == self.value
+AttributeError: 'StoreModule' object has no attribute 'in_apothecary'
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919

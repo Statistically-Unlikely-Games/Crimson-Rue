@@ -9,21 +9,23 @@ label overworld02_loop:
 
 label overworld02:
     
-    $ in_overworld01 = False
-    $ in_overworld02 = True
-    $ in_apothecary = False
-    $ in_kitchen = False
-    $ in_cellar = False
-    $ in_itemshop = False
-    $ in_forest001 = False
-    $ in_forest002 = False
-    $ in_forest003 = False
-    $ in_forest004 = False
-    $ in_forest005 = False
-    $ in_forest006 = False
-    $ in_forest007 = False
-    $ in_forest008 = False
-    $ in_forest009 = False
+    $ current_loc = "overworld02"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = True
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     show screen basic_overlay
     show screen overworld02

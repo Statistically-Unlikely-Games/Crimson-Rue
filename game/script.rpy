@@ -133,29 +133,41 @@ label start:
     $ day_cnt = 1
 
     init -1 python:
+        
+        timeofday = "sunrise"
+        
+        current_loc = "none"
+        
+        
+        #LOCATION VARIABLES
+        
+#        in_overworld01 = False
+#        in_overworld02 = False
+#        in_apothecary = False
+#        in_kitchen = False
+#        in_cellar = False
+#        in_itemshop = False
+#        in_forest001 = False
+#        in_forest002 = False
+#        in_forest003 = False
+#        in_forest004 = False
+#        in_forest005 = False
+#        in_forest006 = False
+#        in_forest007 = False
+#        in_forest008 = False
+#        in_forest009 = False
+        
+        
+        #ITEM VARIABLES
+        
         herb_book1 = False
         herb_book2 = False
         herb_book3 = False
         med_book1 = False
         med_book2 = False
         
-        in_overworld01 = False
-        in_overworld02 = False
-        in_apothecary = False
-        in_kitchen = False
-        in_cellar = False
-        in_itemshop = False
-        in_forest001 = False
-        in_forest002 = False
-        in_forest003 = False
-        in_forest004 = False
-        in_forest005 = False
-        in_forest006 = False
-        in_forest007 = False
-        in_forest008 = False
-        in_forest009 = False
         
-        timeofday = "sunrise"
+        #HERB GATHER VARIABLES
         
         F1Harvest = False
         forest001_thistle_col = True
@@ -319,6 +331,9 @@ label start:
         forest009_marshmarigold2_col = True
         forest009_goldenseal_col = True
         
+        
+        #LIVECOMP VARIABLES
+        
         aeth_outfit = 'vest'
         aeth_pose = 'arms_down'
         aeth_facing = 'right'
@@ -344,6 +359,15 @@ label start:
         orthrus_outfit = 'shirt'
         orthrus_pose = 'hands_hips'
         orthrus_facing = 'left'
+        
+        
+        #EVENT VARIABLES
+        
+        intro_evt = False
+        day_003_evt = False
+        
+        
+        #RELATIONSHIP VARIABLES
         
         orth_tru = 10
         orth_res = 0

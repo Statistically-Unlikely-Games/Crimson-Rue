@@ -14,6 +14,16 @@ init python:
             self.type = type # type of item
             self.recipe = recipe # nested list of [ingredient, qty]  
             self.containers = containers
+            #Want a type of item called herb
+            #Herbs need to store a randomly generated level of quality
+            #Herbs need to store the date they are picked from the forest screen and added to the inventory
+            #Herbs in stores will have a set date already
+            #This will be used to cause item quality to deteriorate over time
+            #Different herbs will have different deterioration rates
+            #Maybe instead I can do this as like, Item Stamina, and then have stamina decrease as time gose by?
+            #Optional second date stored, this is the date the herb started to be processed
+            #For example, the date the pickling or fermentation process started
+            #This is used to keep track of when craftable items such as wine and pickles are done
             
             if recipe:
                 cookbook.append(self)
@@ -46,9 +56,13 @@ init python:
             
         def buy(self, item, price):            
             self.deposit(price)            
-            self.take(item[0]) #Why is the zero there? Adding a popup doesn't work, maybe because of the zero. Says the object has no name.
-#            message = "Purchased %s!" % (item.name)
-#            renpy.show_screen("inventory_popup", message=message,item=item.name)
+            self.take(item[0]) #Item zero is referring to the item's code name, under self ex. herbID1
+            message = "Transaction Complete!" 
+            renpy.show_screen("inventory_popup", message=message)
+            #For some reason this does not work when I add the item name
+            # AttributeError: 'RevertableList' object has no attribute 'name'
+            #Also, this message shows up when you buy items but also when you sell them
+            #Code doesn't seem to differentiate between pc inventory and others
 
         def check(self, item):
             if self.qty(item):
@@ -96,6 +110,10 @@ init python:
         def sell(self, item, price):
             self.withdraw(price)
             self.drop(item[0])
+#            message = "Sold Item!" 
+#            renpy.show_screen("inventory_popup", message=message)
+            #For some reason this does not work when I add the item name
+            # AttributeError: 'RevertableList' object has no attribute 'name'
             
         def sort_name(self):
             self.inv.sort(key=lambda i: i[0].name, reverse=self.sort_order)

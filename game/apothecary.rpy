@@ -4,26 +4,30 @@
 # Where you live. 
 
 label return_home:
-    $ in_overworld01 = False
-    $ in_overworld02 = False
-    $ in_kitchen = False
-    $ in_cellar = False
-    $ in_itemshop = False
-    $ in_forest001 = False
-    $ in_forest002 = False
-    $ in_forest003 = False
-    $ in_forest004 = False
-    $ in_forest005 = False
-    $ in_forest006 = False
-    $ in_forest007 = False
-    $ in_forest008 = False
-    $ in_forest009 = False
+    
+    $ current_loc = "apothecary"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = True
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
 
     hide screen basic_overlay
     scene bg black
     "It's getting late. Better head home."
     call calendar_ani(1)
-    "You have a peaceful night's rest."
+    "You have a peaceful night's rest. It has been [day_cnt] days since game start."
     jump apothecary_shop
 
 label aplooping:
@@ -34,21 +38,23 @@ label aplooping:
     
 label apothecary_shop:    
     
-    $ in_overworld01 = False
-    $ in_overworld02 = False
-    $ in_apothecary = True
-    $ in_kitchen = False
-    $ in_cellar = False
-    $ in_itemshop = False
-    $ in_forest001 = False
-    $ in_forest002 = False
-    $ in_forest003 = False
-    $ in_forest004 = False
-    $ in_forest005 = False
-    $ in_forest006 = False
-    $ in_forest007 = False
-    $ in_forest008 = False
-    $ in_forest009 = False
+    $ current_loc = "apothecary"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = True
+#    $ in_kitchen = False
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg apothecary
     show screen apothecary
@@ -58,6 +64,10 @@ label apothecary_shop:
 # Before the latest update, I could include this line of dialogue
 # and renpy.pause would hide the textbox. After the update, this 
 # seems not to be the case. If I have any dialogue, the box stays.
+    
+    hide screen apothecary
+    call check_events
+    show screen apothecary
     
     jump aplooping
 
@@ -70,7 +80,7 @@ screen apothecary:
 #    imagebutton auto "gui/button.shop.workbench_%s.png" xpos 570 ypos 450 focus_mask True action Show("inventory_craftdriedherbs", first_inventory=pc_inv)
     imagebutton auto "gui/button.shop.storage_%s.png" xpos 1221 ypos 0 focus_mask True action Show("inventory_screen", first_inventory=pc_inv, second_inventory=chest, trade_mode=True, bank_mode=True)
     imagebutton auto "gui/button.shop.books_%s.png" xpos 1125 ypos 331 focus_mask True action [Hide("basic_overlay"), Hide("apothecary"), ShowMenu("book_shelf")]
-    imagebutton auto "gui/button.shop.door_%s.png" xpos 405 ypos 80 focus_mask True action [Hide("basic_overlay"), SetVariable('in_apothecary', False), Jump("overworld01")]
+    imagebutton auto "gui/button.shop.door_%s.png" xpos 405 ypos 80 focus_mask True action [Hide("basic_overlay"), SetVariable('current_loc', "none"), Jump("overworld01")]
     
     
 ##############################################################################
@@ -80,27 +90,33 @@ screen apothecary:
     
 label kitchen:  
     
-    $ in_overworld01 = False
-    $ in_overworld02 = False
-    $ in_apothecary = False
-    $ in_kitchen = True
-    $ in_cellar = False
-    $ in_itemshop = False
-    $ in_forest001 = False
-    $ in_forest002 = False
-    $ in_forest003 = False
-    $ in_forest004 = False
-    $ in_forest005 = False
-    $ in_forest006 = False
-    $ in_forest007 = False
-    $ in_forest008 = False
-    $ in_forest009 = False
+    $ current_loc = "kitchen"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = True
+#    $ in_cellar = False
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg kitchen
     show screen kitchen
     show screen basic_overlay
     
 #    "You are in the kitchen."
+
+    hide screen kitchen
+    call check_events
+    show screen kitchen
     
     jump aplooping
     
@@ -108,7 +124,7 @@ screen kitchen:
     tag menu2
     
     imagebutton auto "gui/button.kitchen.stove_%s.png" xpos 588 ypos 0 focus_mask True action [Show("inventory_kitchen", first_inventory=pc_inv)]
-    imagebutton auto "gui/button.kitchen.door_%s.png" xpos 45 ypos 445 focus_mask True action [Hide("basic_overlay"), SetVariable('in_kitchen', False), Jump("cellar")]
+    imagebutton auto "gui/button.kitchen.door_%s.png" xpos 45 ypos 445 focus_mask True action [Hide("basic_overlay"), SetVariable('current_loc', "none"), Jump("cellar")]
     
     
 ##############################################################################
@@ -119,27 +135,33 @@ screen kitchen:
     
 label cellar:  
     
-    $ in_overworld01 = False
-    $ in_overworld02 = False
-    $ in_apothecary = False
-    $ in_kitchen = False
-    $ in_cellar = True
-    $ in_itemshop = False
-    $ in_forest001 = False
-    $ in_forest002 = False
-    $ in_forest003 = False
-    $ in_forest004 = False
-    $ in_forest005 = False
-    $ in_forest006 = False
-    $ in_forest007 = False
-    $ in_forest008 = False
-    $ in_forest009 = False
+    $ current_loc = "cellar"
+    
+#    $ in_overworld01 = False
+#    $ in_overworld02 = False
+#    $ in_apothecary = False
+#    $ in_kitchen = False
+#    $ in_cellar = True
+#    $ in_itemshop = False
+#    $ in_forest001 = False
+#    $ in_forest002 = False
+#    $ in_forest003 = False
+#    $ in_forest004 = False
+#    $ in_forest005 = False
+#    $ in_forest006 = False
+#    $ in_forest007 = False
+#    $ in_forest008 = False
+#    $ in_forest009 = False
     
     scene bg cellar
     show screen cellar
     show screen basic_overlay
     
 #    "You are in the cellar."
+
+    hide screen cellar
+    call check_events
+    show screen cellar
     
     jump aplooping
     

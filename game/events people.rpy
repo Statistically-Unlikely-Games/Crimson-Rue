@@ -7,7 +7,7 @@
 ## ORTHRUS EVENTS
 
 label Orthrus_evt:
-    $ orth_pick = renpy.random.randint(1, 6)
+    $ orth_pick = renpy.random.randint(1, 5)
     "Your random number is [orth_pick]."
     
     if orth_pick == 1:
@@ -20,8 +20,6 @@ label Orthrus_evt:
         jump Orthrus_platonic_evt
     elif orth_pick == 5:
         jump Orthrus_romantic_evt
-    elif orth_pick == 6:
-        jump Orthrus_sexual_evt
     else:
         "This is a random number generator error."
         return

@@ -514,6 +514,127 @@ init-1:
         "True", Image ("images/spr/harte/harte apron book neu.png"),
         )
     
+    image harte angry = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book angry.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages angry.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book angry.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages angry.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning angry.png"),
+
+        "True", Image ("images/spr/harte/harte apron book angry.png"),
+        )
+    
+    image harte competitive = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book competitive.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages competitive.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book competitive.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages competitive.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning competitive.png"),
+
+        "True", Image ("images/spr/harte/harte apron book competitive.png"),
+        )
+    
+    image harte glare = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book glare.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages glare.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book glare.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages glare.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning glare.png"),
+
+        "True", Image ("images/spr/harte/harte apron book glare.png"),
+        )
+    
+    image harte grin = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book grin.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages grin.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book grin.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages grin.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning grin.png"),
+
+        "True", Image ("images/spr/harte/harte apron book grin.png"),
+        )
+    
+    image harte pout = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book pout.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages pout.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book pout.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages pout.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning pout.png"),
+
+        "True", Image ("images/spr/harte/harte apron book pout.png"),
+        )
+    
+    image harte sad = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book sad.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages sad.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book sad.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages sad.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning sad.png"),
+
+        "True", Image ("images/spr/harte/harte apron book sad.png"),
+        )
+    
+    image harte shocked = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book shocked.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages shocked.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book shocked.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages shocked.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning shocked.png"),
+
+        "True", Image ("images/spr/harte/harte apron book shocked.png"),
+        )
+    
+    image harte shout = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book shout.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages shout.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book shout.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages shout.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning shout.png"),
+
+        "True", Image ("images/spr/harte/harte apron book shout.png"),
+        )
+    
+    image harte smile = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book smile.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages smile.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book smile.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages smile.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning smile.png"),
+
+        "True", Image ("images/spr/harte/harte apron book smile.png"),
+        )
+    
+    image harte surprised = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book surprised.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages surprised.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book surprised.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages surprised.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning surprised.png"),
+
+        "True", Image ("images/spr/harte/harte apron book surprised.png"),
+        )
+    
+    image harte thinking = ConditionSwitch(
+        "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book thinking.png"),
+        "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages thinking.png"),
+
+        "harte_outfit == 'desk' and harte_pose == 'book' ", Image ("images/spr/harte/harte desk book thinking.png"),
+        "harte_outfit == 'desk' and harte_pose == 'pages' ", Image ("images/spr/harte/harte desk pages thinking.png"),
+        "harte_outfit == 'desk' and harte_pose == 'leaning' ", Image ("images/spr/harte/harte desk leaning thinking.png"),
+
+        "True", Image ("images/spr/harte/harte apron book thinking.png"),
+        )
+    
     image kayen neu = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down neu.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up neu.png"),
