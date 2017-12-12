@@ -16,6 +16,9 @@ init python:
         def add_book(self, book):
             if len(self.store) >= self.limit:
                 return
+                
+            if book in self.store:
+                return
 
             self.store.append(book)
             self.available_filters.add(book.kind)

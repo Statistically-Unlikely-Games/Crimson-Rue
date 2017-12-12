@@ -1,24 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/apothecary.rpy", line 34, in script
+  File "game/itemshop.rpy", line 8, in script
     $ renpy.pause()
-  File "game/apothecary.rpy", line 34, in <module>
+  File "game/itemshop.rpy", line 8, in <module>
     $ renpy.pause()
-  File "renpy/common/00action_data.rpy", line 50, in get_selected
-    return getattr(self.object, self.field) == self.value
-AttributeError: 'StoreModule' object has no attribute 'in_apothecary'
+  File "game/overlay.rpy", line 1, in execute
+    screen basic_overlay:
+  File "game/overlay.rpy", line 1, in execute
+    screen basic_overlay:
+  File "game/overlay.rpy", line 4, in execute
+    frame:
+  File "game/overlay.rpy", line 6, in execute
+    vbox:
+  File "game/overlay.rpy", line 9, in execute
+    if current_loc == "overworld01":
+  File "game/overlay.rpy", line 20, in execute
+    textbutton "Leave Shop" action [Hide("basic_overlay"), SSetVariable('current_loc',"none"), Jump("leave_itemshop")]
+  File "game/overlay.rpy", line 20, in keywords
+    textbutton "Leave Shop" action [Hide("basic_overlay"), SSetVariable('current_loc',"none"), Jump("leave_itemshop")]
+NameError: name 'SSetVariable' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/apothecary.rpy", line 34, in script
+  File "game/itemshop.rpy", line 8, in script
     $ renpy.pause()
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 827, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\python.py", line 1764, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/apothecary.rpy", line 34, in <module>
+  File "game/itemshop.rpy", line 8, in <module>
     $ renpy.pause()
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\exports.py", line 1304, in pause
     rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward)
@@ -34,27 +46,30 @@ Full traceback:
     d.visit_all(callback)
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 495, in visit_all
     d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 405, in visit_all
-    self.child.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 495, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 497, in visit_all
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 401, in visit_all
     callback(self)
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2821, in <lambda>
     root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 796, in per_interact
-    if self.is_selected():
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 786, in is_selected
-    return is_selected(self.action)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 356, in is_selected
-    return any(is_selected(i) for i in action)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 356, in <genexpr>
-    return any(is_selected(i) for i in action)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\behavior.py", line 359, in is_selected
-    return action.get_selected()
-  File "renpy/common/00action_data.rpy", line 50, in get_selected
-    return getattr(self.object, self.field) == self.value
-AttributeError: 'StoreModule' object has no attribute 'in_apothecary'
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 411, in per_interact
+    self.update()
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 580, in update
+    self.screen.function(**self.scope)
+  File "game/overlay.rpy", line 1, in execute
+    screen basic_overlay:
+  File "game/overlay.rpy", line 1, in execute
+    screen basic_overlay:
+  File "game/overlay.rpy", line 4, in execute
+    frame:
+  File "game/overlay.rpy", line 6, in execute
+    vbox:
+  File "game/overlay.rpy", line 9, in execute
+    if current_loc == "overworld01":
+  File "game/overlay.rpy", line 20, in execute
+    textbutton "Leave Shop" action [Hide("basic_overlay"), SSetVariable('current_loc',"none"), Jump("leave_itemshop")]
+  File "game/overlay.rpy", line 20, in keywords
+    textbutton "Leave Shop" action [Hide("basic_overlay"), SSetVariable('current_loc',"none"), Jump("leave_itemshop")]
+  File "<screen language>", line 20, in <module>
+NameError: name 'SSetVariable' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919

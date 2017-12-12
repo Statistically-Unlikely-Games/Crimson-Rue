@@ -16,8 +16,8 @@ screen basic_overlay:
                 textbutton "Shop Front" action [Hide("basic_overlay"), SetVariable('current_loc',"none"), Jump("apothecary_shop")]
             elif current_loc == "cellar": 
                 textbutton "Kitchen" action [Hide("basic_overlay"), SetVariable('current_loc',"none"), Jump("kitchen")]
-            elif current_loc == "item_shop": 
-                textbutton "Leave Shop" action [Hide("basic_overlay"), SSetVariable('current_loc',"none"), Jump("leave_itemshop")]
+            elif current_loc == "itemshop": 
+                textbutton "Leave Shop" action [Hide("basic_overlay"), SetVariable('current_loc',"none"), Jump("leave_itemshop")]
             elif current_loc == "forest001": 
                 textbutton "Leave Forest" action [SetVariable('current_loc',"none"), Jump("leave_forest001")]
             elif current_loc == "forest002": 

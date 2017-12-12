@@ -13,7 +13,7 @@ label it_looping:
 
 label item_shop:
     
-    $ current_loc = "item_shop"
+    $ current_loc = "itemshop"
     
 #    $ in_overworld01 = False
 #    $ in_overworld02 = False

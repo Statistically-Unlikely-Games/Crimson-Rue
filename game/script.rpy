@@ -361,13 +361,19 @@ label start:
         orthrus_facing = 'left'
         
         
-        #EVENT VARIABLES
+        #COMMON EVENT VARIABLES
         
         intro_evt = False
+        itemshop_day002_evt = False
         day_003_evt = False
         
         
-        #RELATIONSHIP VARIABLES
+        #WORLD EVENT VARIABLES
+        
+        forest001_evt = False
+        
+        
+        #RELATIONSHIP EVENT VARIABLES
         
         orth_tru = 10
         orth_res = 0

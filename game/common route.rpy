@@ -447,6 +447,27 @@ label intro:
     jump apothecary_shop
     
     
+label itemshop_day002:
+    
+    $ itemshop_day002_evt = True
+    
+    scene bg itemshop
+    
+    "It is the second day of the game."
+    
+    show harte neu at right
+    
+    harte "You should only see this on your second day of the game."
+    
+    harte "You should only see this if you are in the item shop."
+    
+    hide harte
+    
+    "You should only see this event one time."
+    
+    jump item_shop
+    
+    
 label day_003:
     
     $ day_003_evt = True
