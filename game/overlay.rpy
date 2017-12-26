@@ -4,7 +4,7 @@ screen basic_overlay:
     frame:
         yalign 0.0 xalign 0.95
         vbox:
-            textbutton "Inventory" action Show("inventory_screen", first_inventory=pc_inv)
+            textbutton "Inventory" action Show("inventory_screen", player_bag)
             
             if current_loc == "overworld01": 
                 textbutton "Return Home" action [Hide("basic_overlay"), SetVariable('current_loc',"none"), Jump("apothecary_shop")]

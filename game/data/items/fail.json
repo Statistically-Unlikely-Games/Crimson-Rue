@@ -1,0 +1,12 @@
+{
+    "id": "coal",
+    "name": "Failed Attempt",
+    "icon": "images/icon_coal.png",
+    "image": "images/image.png",
+    "description": "You have failed to craft anything of use.",
+    "kind": "useless",
+    "cost": 2,
+    "season": "none",
+    "quality": 0,
+    "tags": ["cool", "sweet"]
+}

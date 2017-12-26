@@ -1,0 +1,7 @@
+{
+    "id": "fail_recipe",
+    "name": "Fail Recipe",
+    "ingredients": [],
+    "produces": "fail",
+    "fail_recipe": "true"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "empty_bottle",
+    "name": "Empty Bottle",
+    "icon": "gui/inv/bottle.empty.png",
+    "image": "gui/not/Empty Bottle_notification.png",
+    "description": "Fill it with all kinds of things.",
+    "kind": "container",
+    "cost": 300,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}

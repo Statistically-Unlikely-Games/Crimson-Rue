@@ -1,0 +1,12 @@
+{
+    "id": "wax",
+    "name": "Beeswax",
+    "icon": "gui/inv/tin.wax.png",
+    "image": "gui/not/Empty Tin_notification.png",
+    "description": "Useful in combining water based extracts with oil.",
+    "kind": "container",
+    "cost": 200,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}

@@ -1,0 +1,7 @@
+{
+    "id": "wine001_recipe",
+    "name": "Fail Recipe",
+    "ingredients": [],
+    "produces": "coal",
+    "fail_recipe": "true"
+}

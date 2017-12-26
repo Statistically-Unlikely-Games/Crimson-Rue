@@ -1,0 +1,13 @@
+{
+    "id": "herb_oil001",
+    "name": "Thistle Oil",
+    "icon": "gui/inv/bottle.extract.png",
+    "image": "gui/not/Thistle Oil_notification.png",
+    "description": "Made by soaking herbs in oil.",
+    "kind": "herbal oil",
+    "cost": 800,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

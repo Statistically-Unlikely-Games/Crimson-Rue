@@ -1,0 +1,12 @@
+{
+    "id": "empty_jar",
+    "name": "Empty ar",
+    "icon": "gui/inv/jar.empty.png",
+    "image": "gui/not/Empty Jar_notification.png",
+    "description": "An empty jar.",
+    "kind": "container",
+    "cost": 100,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}

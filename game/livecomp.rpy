@@ -985,6 +985,182 @@ init-1:
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left neu.png"),
         )
     
+    image mikael alert = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right alert.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left alert.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right alert.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left alert.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right alert.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left alert.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left alert.png"),
+        )
+    
+    image mikael angry = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right angry.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left angry.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right angry.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left angry.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right angry.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left angry.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left angry.png"),
+        )
+    
+    image mikael annoyed = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right annoyed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left annoyed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right annoyed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left annoyed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right annoyed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left annoyed.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left annoyed.png"),
+        )
+    
+    image mikael content = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right content.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left content.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right content.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left content.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right content.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left content.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left content.png"),
+        )
+    
+    image mikael depressed = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right depressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left depressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right depressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left depressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right depressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left depressed.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left depressed.png"),
+        )
+    
+    image mikael disapproving = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right disapproving.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left disapproving.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right disapproving.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left disapproving.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right disapproving.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left disapproving.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left disapproving.png"),
+        )
+    
+    image mikael furious = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right furious.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left furious.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right furious.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left furious.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right furious.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left furious.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left furious.png"),
+        )
+    
+    image mikael laugh = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right laugh.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left laugh.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right laugh.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left laugh.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right laugh.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left laugh.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left laugh.png"),
+        )
+    
+    image mikael pained = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right pained.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left pained.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right pained.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left pained.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right pained.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left pained.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left pained.png"),
+        )
+    
+    image mikael pout = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right pout.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left pout.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right pout.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left pout.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right pout.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left pout.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left pout.png"),
+        )
+    
+    image mikael sad = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right sad.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left sad.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right sad.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left sad.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right sad.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left sad.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left sad.png"),
+        )
+    
+    image mikael sad_smile = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right sad_smile.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left sad_smile.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right sad_smile.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left sad_smile.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right sad_smile.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left sad_smile.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left sad_smile.png"),
+        )
+    
+    image mikael shocked = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right shocked.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left shocked.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right shocked.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left shocked.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right shocked.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left shocked.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left shocked.png"),
+        )
+    
+    image mikael surprised = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right surprised.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left surprised.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right surprised.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left surprised.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right surprised.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left surprised.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left surprised.png"),
+        )
+    
+    image mikael uncomfortable = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right uncomfortable.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left uncomfortable.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right uncomfortable.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left uncomfortable.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right uncomfortable.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left uncomfortable.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left uncomfortable.png"),
+        )
+    
+    image mikael unimpressed = ConditionSwitch(
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right unimpressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left unimpressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_down right unimpressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left unimpressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right unimpressed.png"),
+        "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left unimpressed.png"),
+        
+        "True", Image ("images/spr/mikael/mikael shirt arms_crossed left unimpressed.png"),
+        )
+    
     image orthrus neu = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right neu.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left neu.png"),

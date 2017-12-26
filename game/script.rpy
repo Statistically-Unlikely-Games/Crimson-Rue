@@ -1,4 +1,4 @@
-﻿## inventory 1.5 demo
+﻿# The script of the game goes in this file.
 
 # Declaring images
 
@@ -13,7 +13,6 @@ init python hide:
         if file.startswith('images/cg/') and file.endswith('.jpg'):
             name = file.replace('images/cg/', '').replace('.jpg','')
             renpy.image(name, Image(file))
-            
 
 # Declaring characters
 
@@ -67,6 +66,7 @@ define orthrus = Character("Orthrus", kind = dialogue)
 define harte = Character("Harte", kind = dialogue)
 define mikael = Character("Mikael", kind = dialogue)
 define lufte = Character("Lufte", kind = dialogue)
+define vemri = Character("Vemri", kind = dialogue)
 
 
 #Defining Transformations
@@ -88,7 +88,11 @@ transform surprised(start):
     start
     linear 0.05 yalign 0.9
     start
-
+    
+transform zoom_out:
+    subpixel True
+    zoom 0.4
+    
 
 # Declaring books
 
@@ -103,7 +107,6 @@ default book_7 = Book("Medical Journal vol. 3", "Medical Journal", "Master Elain
 default book_8 = Book("Medical Journal vol. 4", "Medical Journal", "Master Elaine", "year")
 default book_9 = Book("Medical Journal vol. 5", "Medical Journal", "Master Elaine", "year")
 default book_10 = Book("Medical Journal vol. 6", "Medical Journal", "Master Elaine", "year")
-
 
 # This is the splash screen. Should show my logo, and then the 
 # instructions for playing on the Ouya.
@@ -120,8 +123,9 @@ label splashscreen:
     
     return 
     
-      
-label start:  
+# The game starts here.
+
+label start:
     #"Game Start"
 #    "Setting Variables" 
     #For some reason after this line, small text in the dialogue box stops being white?
@@ -131,32 +135,12 @@ label start:
     $ calendar = Calendar(3, 2, 11, 10, 2017, 2016, 2020) # Calendar(day, oldday, month, oldmonth, year, oldyear, first leap year (can be ignored))
     $ time_cnt = 1
     $ day_cnt = 1
-
+    
     init -1 python:
         
         timeofday = "sunrise"
         
         current_loc = "none"
-        
-        
-        #LOCATION VARIABLES
-        
-#        in_overworld01 = False
-#        in_overworld02 = False
-#        in_apothecary = False
-#        in_kitchen = False
-#        in_cellar = False
-#        in_itemshop = False
-#        in_forest001 = False
-#        in_forest002 = False
-#        in_forest003 = False
-#        in_forest004 = False
-#        in_forest005 = False
-#        in_forest006 = False
-#        in_forest007 = False
-#        in_forest008 = False
-#        in_forest009 = False
-        
         
         #ITEM VARIABLES
         
@@ -363,14 +347,23 @@ label start:
         
         #COMMON EVENT VARIABLES
         
-        intro_evt = False
-        itemshop_day002_evt = False
-        day_003_evt = False
+        day001_evt = False
+        day002_evt = False
+        day002_itemshop_evt = False
+        day003_evt = False
         
         
         #WORLD EVENT VARIABLES
         
         forest001_evt = False
+        forest002_evt = False
+        forest003_evt = False
+        forest004_evt = False
+        forest005_evt = False
+        forest006_evt = False
+        forest007_evt = False
+        forest008_evt = False
+        forest009_evt = False
         
         
         #RELATIONSHIP EVENT VARIABLES
@@ -419,40 +412,67 @@ label start:
         orth_sex_evt_5 = False
     
 #    "All variables set."
-    
-    ## If using the crafting feature, add an empty cookbook list after start to keep track of recipes
-    $ cookbook = list() 
+
+    $ global_item_store = ItemStore()
+    $ global_recipe_store = RecipeStore()
+    $ global_processor_store = ProcessorStore()
+
+    $ load_data(["items", "recipes", "processors"])
+
+    $ player_bag = BaseInventory("Player", 800000, is_player=True)
+    $ player_processor = ProcessorBox()
+    $ seller_bag = BaseInventory("Seller", 800000)
+
+    $ player_recipes = []
+
+    $ player_bag.add_multi_items(["herb001", "herb001", "oil", "oil", "water", "honey"])
+    $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
+    $ player_bag.add_item("oil", quality=50, custom_tags=["slimy"])
+    $ seller_bag.add_multi_items(["herb001", "herb_oil001", "vodka", "empty_bottle", "wax", "herbID1"])
     
 #    "Defining Items, Cookbooks and Inventories."
 
     $ shelf.add_book(book_1)
 
     call define_books
-    call define_items
-    call define_inventories
     
     
-    
-    jump intro
-    
-    
-# Opening video?
+    jump day001
 
-# Funny scene where Aeth walks in on Kayen about to get it on with her female lover
-# Wasn't expecting Aeth to come this time of the year, something serious must have happened
-# All three have dinner, Aeth avoids giving details about why they came home
-# Aeth was dating Teal in secret bc their mom wouldn't approve of a noble, now mother was proved right
-# Mother instructs Aeth to go speak with Master Elaine, it has been a long time and she'll be offended if they don't see her first
-# Gunna go first thing tomorrow
+#    menu options_check_menu:
+#        "Fermenting":
+#            call screen fermenting_screen
 
-# Next Day
-# Walks through town to see Master Elaine, possibly runs into a few love interests on the way there?
-# Possibly see Lufte, small child, hanging out around the front of the shop?
-# Elaine is very outgoing and friendly, suggests Aeth start working in the shop again
-# Gotta do something, and they were talented. Apprentice moved out and got their own shop, it would help to have another hand around
-# Aeth should say they will think about it, they don't want to be a burden on their mother but have some things to sort out
-# Elaine will mention that winter is just around the corner, they should use this time to catch up before things get busy
+#        "Inventory":
+#            call screen inventory_screen(player_bag)
 
-# Timeskip to spring? Should I have more than that here? More introductions?
-# Worried putting gameplay off for too long will cause some players to get bored...
+#        "Recipe":
+#            call screen recipe_screen(global_recipe_store.get_from_id("herb_oil001_recipe"))
 
+#        "Craft":
+#            call screen craft_screen
+
+#        "Store":
+#            call screen store_screen(player_bag, seller_bag)
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    scene bg room
+
+    # This shows a character sprite. A placeholder is used, but you can
+    # replace it by adding a file named "eileen happy.png" to the images
+    # directory.
+
+    show eileen happy
+
+    # These display lines of dialogue.
+
+    e "You've created a new Ren'Py game."
+
+    e "Once you add a story, pictures, and music, you can release it to the world!"
+
+    # This ends the game.
+
+    return

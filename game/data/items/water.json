@@ -1,0 +1,12 @@
+{
+    "id": "water",
+    "name": "Bottle of Water",
+    "icon": "gui/inv/bottle.water.png",
+    "image": "gui/not/Bottle of Water_notification.png",
+    "description": "Medicine made with this spread easy but spoil faster.",
+    "kind": "resource",
+    "cost": 300,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}

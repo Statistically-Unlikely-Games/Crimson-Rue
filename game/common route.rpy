@@ -1,6 +1,6 @@
-label intro: 
+label day001: 
     
-    $ intro_evt = True
+    $ day001_evt = True
     
 #    show aeth neu at left
 #    show elaine neu at right
@@ -156,7 +156,17 @@ label intro:
     scene bg black
     with slow_dissolve
     
+    #Insert dinner scene with Kayen and Sherylle
+    
     black_screen "I lay down as sleep takes me, exhausted from my long journey." 
+    
+    $ day_cnt += 1
+    $ calendar.next()
+    
+    
+label day002: 
+    
+    $ day002_evt = True
     
     scene bg forest002 #Replace with town back street BG
     with slow_dissolve
@@ -205,11 +215,110 @@ label intro:
     
     elaine "Aeth! My dear, you are certainly home early, aren't you? Well, I'm sure there's a long explanation for that, but we simply don't have the time."
     
-    "She hurriedly shoves an assortment of bottles and tools on the counter, and pushes them in my direction."
+    elaine "I expect you've been practicing while you're on the road?"
     
-    elaine "I'll need you to prepare some dried X, a Y tincture, and get the Z started."
+    "She doesn't wait for an answer before hurriedly shoving an assortment of bottles and tools at me."
     
-    #Good place for a tutorial on crafting. Start with a decent stock of herbs, then learn to gather herbs at a later date
+    elaine "Then this should be easy for you. I'll need you to prepare some dried X, a Y tincture, and get the Z started."
+    
+    hide elaine
+    
+    "CRAFTING TUTORIAL YAAAAAY"
+    
+    #Good place for a tutorial on crafting. Add needed herbs to Aeth's inventory
+    
+    "Master Elaine keeps me busy all morning, and I'm at my wits end trying to keep up with her."
+    
+    "They are all very simple recipes that I've been using during my travels, but I usually don't make so many at once."
+    
+    "It's nice to have all the tools I need on hand-- I couldn't afford to travel with them all-- but the shop is so cluttered that it's difficult to find what I need."
+    
+    "Master Elaine somehow seems to know exactly where everything is, so there must be a method to her madness, but I can't make any sense of it."
+    
+    "Maybe she's just been living in filfth for so long she's developed a sixth sense."
+    
+    "As I'm finishing up the latest order, I hear the entrance bell ring."
+    
+    "Elaine is shuffling around in the back, so I will have to deal with the customer by myself."
+    
+    show aeth neu at right
+    $ aeth_pose = 'arms down'
+    $ aeth_facing = 'left'
+    
+    aeth "I'll be right with you!"
+    
+    "Hastily bottling the brew, I make sure nothing is liable to get knocked off the table and turn towards the shop front."
+    
+    show mikael neu at left
+    $ mikael_pose = 'hand_ear'
+    $ mikael_facing = 'right'
+    
+    "Rather than a customer, I see a familiar face-- Mikael, who apprenticed under Master Elaine at the same time I did."
+    
+    mikael "Aeth! I didn't realize you were back in town."
+    
+    aeth "I just got in yesterday. How have you been, Mikael?"
+    
+    mikael "I've been doing quite well-- I opened my own shop last year. I'm actually here today to put in an order with Master Elaine."
+    
+    mikael "There have been a lot more infections this month, and I ran out of stock earlier than expected."
+    
+    show aeth smile
+    
+    aeth "Congratulations, I'll have to stop by soon. Master Elaine is in the back, but I can take your order down and make sure she sees it."
+    
+    mikael "That would be a big help, thank you."
+    
+    "He pulls a piece of parchment out from his vest pocket and hands it to me."
+    
+    mikael "I've got to get back to the shop, but you need to come by for dinner."
+    
+    "He reaches down and ruffles my hair, just like he did when we were kids."
+    
+    mikael "You've grown so much! I can catch you up on what you've missed, and I know I'd love to hear stories from your journey."
+    
+    show aeth neu
+    
+    aeth "Of course. I'll probably be busy for a few days helping Master Elaine with back-orders, but I'll come over soon."
+    
+    "He waves and disappears out the front door."
+    
+    #More tutorial!
+    
+    scene bg black
+    with slow_dissolve
+    
+    black_screen "I spend the rest of the day filling orders for Master Elaine, and collapse as soon as I get home."
+    
+    $ day_cnt += 1
+    $ calendar.next()
+    
+    
+label day003: 
+    
+    $ day003_evt = True
+    
+    scene bg kitchen #Replace with Kayen's house kitchen BG
+    with slow_dissolve
+    
+    "I get up early the next day and start making breakfast."
+    
+    show aeth neu at center
+    $ aeth_pose = 'arms_down'
+    $ aeth_facing = 'left'
+    
+    "I've always been an early riser, and often made breakfast for my mother before I left."
+    
+    "Every time I visited one of her partners would mention that she'd not been taking care of herself, and was spending the night at their place to mooch."
+    
+    "She's gotten better about it over the years, but I still end up cooking for her out of habit."
+    
+    #Food porn!
+    
+    "When I'm done, I lay the food out on the table and start eating. Who knows when she'll be up, and I need to get to the shop before it opens."
+    
+    kayen "FOOD"
+    
     
     scene bg forest002 #Replace with town backstreet BG
     with slow_dissolve
@@ -447,9 +556,9 @@ label intro:
     jump apothecary_shop
     
     
-label itemshop_day002:
+label day002_itemshop:
     
-    $ itemshop_day002_evt = True
+    $ day002_itemshop_evt = True
     
     scene bg itemshop
     
@@ -467,20 +576,6 @@ label itemshop_day002:
     
     jump item_shop
     
-    
-label day_003:
-    
-    $ day_003_evt = True
-    
-    scene bg apothecary
-    
-    "It is the third day of the game."
-    
-    "You should only see this on your third day in the game."
-    
-    "You should only see this event one time."
-    
-    jump apothecary_shop
     
     
     

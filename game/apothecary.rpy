@@ -40,22 +40,6 @@ label apothecary_shop:
     
     $ current_loc = "apothecary"
     
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = True
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = False
-    
     scene bg apothecary
     show screen apothecary
     show screen basic_overlay
@@ -74,11 +58,10 @@ label apothecary_shop:
 screen apothecary:
     tag menu2
     
-    imagebutton auto "gui/button.shop.rack_%s.png" xpos 844 ypos 152 focus_mask True action Show("inventory_rack", first_inventory=pc_inv)
-    imagebutton auto "gui/button.shop.scale_%s.png" xpos 652 ypos 397 focus_mask True action Show("inventory_craftherboils", first_inventory=pc_inv)
-    imagebutton auto "gui/button.shop.mortar_%s.png" xpos 810 ypos 446 focus_mask True action Show("inventory_mortar", first_inventory=pc_inv)
-#    imagebutton auto "gui/button.shop.workbench_%s.png" xpos 570 ypos 450 focus_mask True action Show("inventory_craftdriedherbs", first_inventory=pc_inv)
-    imagebutton auto "gui/button.shop.storage_%s.png" xpos 1221 ypos 0 focus_mask True action Show("inventory_screen", first_inventory=pc_inv, second_inventory=chest, trade_mode=True, bank_mode=True)
+    imagebutton auto "gui/button.shop.rack_%s.png" xpos 844 ypos 152 focus_mask True action Show("fermenting_screen")
+    imagebutton auto "gui/button.shop.scale_%s.png" xpos 652 ypos 397 focus_mask True action Show("craft_screen")
+    imagebutton auto "gui/button.shop.mortar_%s.png" xpos 810 ypos 446 focus_mask True action Show("craft_screen")
+    imagebutton auto "gui/button.shop.storage_%s.png" xpos 1221 ypos 0 focus_mask True action Show("store_screen", player_bag, seller_bag)
     imagebutton auto "gui/button.shop.books_%s.png" xpos 1125 ypos 331 focus_mask True action [Hide("basic_overlay"), Hide("apothecary"), ShowMenu("book_shelf")]
     imagebutton auto "gui/button.shop.door_%s.png" xpos 405 ypos 80 focus_mask True action [Hide("basic_overlay"), SetVariable('current_loc', "none"), Jump("overworld01")]
     
@@ -91,22 +74,6 @@ screen apothecary:
 label kitchen:  
     
     $ current_loc = "kitchen"
-    
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = True
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = False
     
     scene bg kitchen
     show screen kitchen
@@ -123,7 +90,7 @@ label kitchen:
 screen kitchen:
     tag menu2
     
-    imagebutton auto "gui/button.kitchen.stove_%s.png" xpos 588 ypos 0 focus_mask True action [Show("inventory_kitchen", first_inventory=pc_inv)]
+    imagebutton auto "gui/button.kitchen.stove_%s.png" xpos 588 ypos 0 focus_mask True action Show("craft_screen")
     imagebutton auto "gui/button.kitchen.door_%s.png" xpos 45 ypos 445 focus_mask True action [Hide("basic_overlay"), SetVariable('current_loc', "none"), Jump("cellar")]
     
     
@@ -136,22 +103,6 @@ screen kitchen:
 label cellar:  
     
     $ current_loc = "cellar"
-    
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = True
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = False
     
     scene bg cellar
     show screen cellar

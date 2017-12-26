@@ -1,0 +1,7 @@
+{
+    "id": "balm001_recipe",
+    "name": "Thistle Balm",
+    "ingredients": ["herb001", "herb_oil001"],
+    "produces": "balm001",
+    "containers": ["empty_bottle", "empty_tin"]
+}

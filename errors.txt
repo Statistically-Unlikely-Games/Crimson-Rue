@@ -2,12 +2,16 @@
 errors listed below, and try again.
 
 
-File "game/common route.rpy", line 126: multiple at clauses are prohibited.
-    show aeth neu at left at easein_left
-                            ^
+File "game/inv_craft/inventory.rpy", line 124: u'Hide' is not a keyword argument or valid child for the textbutton statement.
+    textbutton _("Back") action action Hide("inventory_screen") xalign 1.0
+                                           ^
 
-File "game/common route.rpy", line 173: multiple at clauses are prohibited.
-    show aeth neu at left at easein_left
-                            ^
+File "game/inv_craft/inventory.rpy", line 213: u'Hide' is not a keyword argument or valid child for the textbutton statement.
+    textbutton _("Back") action action Hide("store_screen") xalign 1.0
+                                           ^
+
+File "game/inv_craft/recipe.rpy", line 142: u'Hide' is not a keyword argument or valid child for the textbutton statement.
+    textbutton _("Back") action action Hide("recipe_screen") xalign 1.0
+                                           ^
 
 Ren'Py Version: Ren'Py 6.99.13.2919

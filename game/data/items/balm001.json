@@ -1,0 +1,13 @@
+{
+    "id": "balm001",
+    "name": "Thistle Balm",
+    "icon": "gui/inv/tin.medicine05.png",
+    "image": "gui/not/Thistle Balm_notification.png",
+    "description": "Medicine applied to the skin.",
+    "kind": "balm",
+    "cost": 1400,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

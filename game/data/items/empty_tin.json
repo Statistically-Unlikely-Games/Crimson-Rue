@@ -1,0 +1,12 @@
+{
+    "id": "empty_tin",
+    "name": "Empty Tin",
+    "icon": "gui/inv/tin.empty.png",
+    "image": "gui/not/Empty Tin_notification.png",
+    "description": "An empty tin.",
+    "kind": "container",
+    "cost": 100,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}

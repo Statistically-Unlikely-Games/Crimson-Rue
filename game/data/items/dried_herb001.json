@@ -1,0 +1,13 @@
+{
+    "id": "dried_herb001",
+    "name": "Dried Thistle",
+    "icon": "gui/inv/powder.medium.png",
+    "image": "gui/not/Medium Powder_notification.png",
+    "description": "A dried medicinal herb.",
+    "kind": "dried herb",
+    "cost": 200,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

@@ -1,0 +1,10 @@
+{
+    "id": "herb_oil001_recipe",
+    "name": "Thistle Oil",
+    "ingredients": ["herb001", "oil"],
+    "produces": "herb_oil001",
+    "craftable_in": "kitchen",
+    "required_skill": [
+        ["medicine", 1]
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "wine001",
+    "name": "Thistle Wine",
+    "icon": "gui/inv/bottle.extract.png",
+    "image": "gui/not/Thistle Oil_notification.png",
+    "description": "Made by fermenting thistles.",
+    "kind": "herbal wine",
+    "cost": 1000,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

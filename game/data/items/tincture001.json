@@ -1,0 +1,13 @@
+{
+    "id": "tincture001",
+    "name": "Thistle Tincture",
+    "icon": "gui/inv/bottle.medicine02.png",
+    "image": "gui/not/Thistle Tincture_notification.png",
+    "description": "Medicine you can drink.",
+    "kind": "tincture",
+    "cost": 1500,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

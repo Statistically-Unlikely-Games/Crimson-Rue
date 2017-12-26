@@ -177,6 +177,10 @@ init python:
             while days:
                 self.oldday = self.day
                 self.day += 1
+
+                player_bag.refresh_items()
+                player_processor.daily_check()
+
                 days -= 1
                 if self.leapyear == self.year and self._month == 1:
                     if self.day > self.days_count[self._month] + 1:

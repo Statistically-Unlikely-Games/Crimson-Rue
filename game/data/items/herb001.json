@@ -1,0 +1,13 @@
+{
+    "id": "herb001",
+    "name": "Thistle",
+    "icon": "gui/inv/herb001_idle.png",
+    "image": "gui/not/Thistle_notification.png",
+    "description": "A medicinal herb. Seeds are best collected when the flowers have dried out, generally starting in early fall.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

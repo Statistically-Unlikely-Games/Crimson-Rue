@@ -1,0 +1,12 @@
+{
+    "id": "honey",
+    "name": "Jar of Honey",
+    "icon": "gui/inv/jar.honey.png",
+    "image": "gui/not/Empty Jar_notification.png",
+    "description": "A jar of honey.",
+    "kind": "container",
+    "cost": 100,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}
