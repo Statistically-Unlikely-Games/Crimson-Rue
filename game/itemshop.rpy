@@ -49,7 +49,7 @@ screen itemshop:
     imagebutton: 
         auto "gui/button.itemshop.desk_%s.png" 
         focus_mask True 
-        action Show("inventory_screen", seller_bag)
+        action Show("store_screen", player=player_bag, seller=seller_bag)
         xpos 655 ypos 420 
         xanchor 0 yanchor 0
     

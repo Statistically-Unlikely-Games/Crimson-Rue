@@ -30,7 +30,7 @@ init python:
         _data = []
         _tag_count = {}
         cancel_pairs = {"sweet": "bitter", "bitter": "sweet"}
-        tag_upgrade = {"cool": 20, "sweet": 4, "bitter": 4}
+        tag_upgrade = {"cool": 20, "sweet": 4, "bitter": 4, "slimy": 1}
 
         for pair in tags:
             for i in pair:
@@ -75,23 +75,48 @@ init python:
         return _data
 
     def item_added_event(item):
+        #If the item is added to the player's inventory only!
+        #if BaseInventory.is_player != True: 
+        if item.kind != "useless":
+            renpy.show_screen("inventory_popup", message="Received " + item.name,item=item.name)
+        else: 
+            renpy.show_screen("inventory_popup", message="Crafting Failed!",item=item.name)
         if item.kind == "book":
+            #shelf.add_book(eval(item.id))
             pass # do something
 
     def item_sell_event(item):
+        if renpy.get_screen("store_screen"):
+            renpy.show_screen("inventory_popup", message="Sold " + item.name,item=item.name)
+            #renpy.show_screen("inventory_popup", message="Received " item.sell_price + "!",item=item.name)
         if item.kind == "book":
             pass # do something
 
     def item_buy_event(item):
+        if renpy.get_screen("store_screen"):
+            renpy.show_screen("inventory_popup", message="Bought " + item.name,item=item.name)
         if item.kind == "book":
-            shelf.add_book(item.id)
+            shelf.add_book(eval(item.id))
+            item.id_get = True
             pass # do something
 
     def item_fermentation_event(item):
+        renpy.show_screen("inventory_popup", message="Crafted " + item.name,item=item.name)
         if item.kind == "book":
             pass # do something
 
     def item_fermentation_fail_event(item):
+        renpy.show_screen("inventory_popup", message="Can't Process!",item=item.name)
+        if item.kind == "book":
+            pass # do something
+            
+    def item_drying_event(item):
+        renpy.show_screen("inventory_popup", message="Crafted " + item.name,item=item.name)
+        if item.kind == "book":
+            pass # do something
+
+    def item_drying_fail_event(item):
+        renpy.show_screen("inventory_popup", message="Can't Dry!",item=item.name)
         if item.kind == "book":
             pass # do something
 
@@ -108,3 +133,5 @@ init python:
                         global_recipe_store.add_recipe_data(**data)
                     elif tag == "processors":
                         global_processor_store.add_processor_data(**data)
+                    elif tag == "dehydrators":
+                        global_dehydrator_store.add_dehydrator_data(**data)

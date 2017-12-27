@@ -98,7 +98,7 @@ transform zoom_out:
 
 default shelf = Shelf("Library", 20)
 default book_1 = Book("Tutorial", "Tutorial", "Author", "Year")
-default book_2 = Book("Herb Identification Guide vol. 1", "Herb Identification", "Master Elaine", "year")
+default herbID1 = Book("Herb Identification Guide vol. 1", "Herb Identification", "Master Elaine", "year")
 default book_3 = Book("Herb Identification Guide vol. 2", "Herb Identification", "Master Elaine", "year")
 default book_4 = Book("Herb Identification Guide vol. 3", "Herb Identification", "Master Elaine", "year")
 default book_5 = Book("Medical Journal vol. 1", "Medical Journal", "Master Elaine", "year")
@@ -143,6 +143,8 @@ label start:
         current_loc = "none"
         
         #ITEM VARIABLES
+        
+        herbID1_get = False
         
         herb_book1 = False
         herb_book2 = False
@@ -416,11 +418,13 @@ label start:
     $ global_item_store = ItemStore()
     $ global_recipe_store = RecipeStore()
     $ global_processor_store = ProcessorStore()
+    $ global_dehydrator_store = DehydratorStore()
 
-    $ load_data(["items", "recipes", "processors"])
+    $ load_data(["items", "recipes", "processors", "dehydrators"])
 
     $ player_bag = BaseInventory("Player", 800000, is_player=True)
     $ player_processor = ProcessorBox()
+    $ player_dehydrator = DehydratorBox()
     $ seller_bag = BaseInventory("Seller", 800000)
 
     $ player_recipes = []
@@ -428,7 +432,7 @@ label start:
     $ player_bag.add_multi_items(["herb001", "herb001", "oil", "oil", "water", "honey"])
     $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
     $ player_bag.add_item("oil", quality=50, custom_tags=["slimy"])
-    $ seller_bag.add_multi_items(["herb001", "herb_oil001", "vodka", "empty_bottle", "wax", "herbID1"])
+    $ seller_bag.add_multi_items(["herbID1", "herb001", "herb_oil001", "vodka", "empty_bottle", "wax"])
     
 #    "Defining Items, Cookbooks and Inventories."
 

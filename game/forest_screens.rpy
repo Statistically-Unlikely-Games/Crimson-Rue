@@ -82,7 +82,7 @@ screen forest001:
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest001_mint_col:
+        if herbID1_get and forest001_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -102,7 +102,7 @@ screen forest001:
                 
     if forest001_spawn == 2:
         
-        if herb_book1 and forest001_thistle_col:
+        if herbID1_get and forest001_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -111,7 +111,7 @@ screen forest001:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest001_oregano_col:
+        if herbID1_get and forest001_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -150,7 +150,7 @@ screen forest001:
                 
     if forest001_spawn == 3:
     
-        if herb_book1 and forest001_blackberry_col:
+        if herbID1_get and forest001_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -159,7 +159,7 @@ screen forest001:
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest001_garlic_col:
+        if herbID1_get and forest001_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -177,7 +177,7 @@ screen forest001:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest001_oak_col:
+        if herbID1_get and forest001_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -186,7 +186,7 @@ screen forest001:
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest001_thistle_col:
+        if herbID1_get and forest001_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -234,7 +234,7 @@ screen forest001:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest001_mint_col:
+        if herbID1_get and forest001_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -263,7 +263,7 @@ screen forest001:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest001_sage_col:
+        if herbID1_get and forest001_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -273,7 +273,7 @@ screen forest001:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest001_blackberry_col:
+        if herbID1_get and forest001_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -478,7 +478,7 @@ screen forest002:
                 xanchor 0 yanchor 0
             
         
-        if herb_book1 and forest002_dandelion_col:
+        if herbID1_get and forest002_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -487,7 +487,7 @@ screen forest002:
                 xpos 1000 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest002_blackberry_col:
+        if herbID1_get and forest002_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -506,7 +506,7 @@ screen forest002:
                 xpos 50 ypos 490
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest002_thistle_col:
+        if herbID1_get and forest002_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -526,7 +526,7 @@ screen forest002:
                 xpos 665 ypos 360
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest002_blackberry_col:
+        if herbID1_get and forest002_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -565,7 +565,7 @@ screen forest002:
                 
     if forest002_spawn == 3:
     
-        if herb_book1 and forest002_oak_col:
+        if herbID1_get and forest002_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -592,7 +592,7 @@ screen forest002:
                 xpos 800 ypos 400
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest002_laurel_col:
+        if herbID1_get and forest002_laurel_col:
             imagebutton:
                 idle "gui/inv/herb010_idle.png"
                 hover "gui/inv/herb010_hover.png"
@@ -601,7 +601,7 @@ screen forest002:
                 xpos 1000 ypos 550
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest002_dandelion_col:
+        if herbID1_get and forest002_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -630,7 +630,7 @@ screen forest002:
                 xpos 50 ypos 490
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest002_parsley_col:
+        if herbID1_get and forest002_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -640,7 +640,7 @@ screen forest002:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest002_oregano_col:
+        if herbID1_get and forest002_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -649,7 +649,7 @@ screen forest002:
                 xpos 800 ypos 400
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest002_oak_col:
+        if herbID1_get and forest002_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -914,7 +914,7 @@ screen forest003:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest003_sage_col:
+        if herbID1_get and forest003_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -953,7 +953,7 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest003_oak_col:
+        if herbID1_get and forest003_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -973,7 +973,7 @@ screen forest003:
                 
     if forest003_spawn == 3:
     
-        if herb_book1 and forest003_parsley_col:
+        if herbID1_get and forest003_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -1009,7 +1009,7 @@ screen forest003:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest003_garlic_col:
+        if herbID1_get and forest003_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -1020,7 +1020,7 @@ screen forest003:
                 
     if forest003_spawn == 4:
     
-        if herb_book1 and forest003_oregano_col:
+        if herbID1_get and forest003_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -1038,7 +1038,7 @@ screen forest003:
                 xpos 1120 ypos 500
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest003_thistle_col:
+        if herbID1_get and forest003_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -1077,7 +1077,7 @@ screen forest003:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest003_thistle_col:
+        if herbID1_get and forest003_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -1096,7 +1096,7 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest003_blackberry_col:
+        if herbID1_get and forest003_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -1105,7 +1105,7 @@ screen forest003:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest003_sage_col:
+        if herbID1_get and forest003_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -1292,7 +1292,7 @@ screen forest004:
     
     if forest004_spawn == 1:
     
-        if herb_book1 and forest004_dandelion_col:
+        if herbID1_get and forest004_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -1320,7 +1320,7 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest004_oak_col:
+        if herbID1_get and forest004_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -1340,7 +1340,7 @@ screen forest004:
                 
     if forest004_spawn == 2:
         
-        if herb_book1 and forest004_mint_col:
+        if herbID1_get and forest004_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -1368,7 +1368,7 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest004_sage_col:
+        if herbID1_get and forest004_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -1388,7 +1388,7 @@ screen forest004:
                 
     if forest004_spawn == 3:
     
-        if herb_book1 and forest004_parsley_col:
+        if herbID1_get and forest004_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -1415,7 +1415,7 @@ screen forest004:
                 xpos 20 ypos 480
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest004_dandelion_col:
+        if herbID1_get and forest004_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -1444,7 +1444,7 @@ screen forest004:
                 xpos 300 ypos 600
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest004_blackberry_col:
+        if herbID1_get and forest004_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -1492,7 +1492,7 @@ screen forest004:
                 xpos 300 ypos 600
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest004_oak_col:
+        if herbID1_get and forest004_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -1501,7 +1501,7 @@ screen forest004:
                 xpos 1000 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest004_mint_col:
+        if herbID1_get and forest004_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -1511,7 +1511,7 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest004_oregano_col:
+        if herbID1_get and forest004_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -1716,7 +1716,7 @@ screen forest005:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest005_oak_col:
+        if herbID1_get and forest005_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -1764,7 +1764,7 @@ screen forest005:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest005_blackberry_col:
+        if herbID1_get and forest005_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -1792,7 +1792,7 @@ screen forest005:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest005_mint_col:
+        if herbID1_get and forest005_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -1803,7 +1803,7 @@ screen forest005:
                 
     if forest005_spawn == 3:
     
-        if herb_book1 and forest005_laurel_col:
+        if herbID1_get and forest005_laurel_col:
             imagebutton:
                 idle "gui/inv/herb010_idle.png"
                 hover "gui/inv/herb010_hover.png"
@@ -1812,7 +1812,7 @@ screen forest005:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest005_thistle_col:
+        if herbID1_get and forest005_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -1821,7 +1821,7 @@ screen forest005:
                 xpos 1120 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest005_dandelion_col:
+        if herbID1_get and forest005_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -1850,7 +1850,7 @@ screen forest005:
                 
     if forest005_spawn == 4:
     
-        if herb_book1 and forest005_thistle_col:
+        if herbID1_get and forest005_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -1868,7 +1868,7 @@ screen forest005:
                 xpos 1120 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest005_oak_col:
+        if herbID1_get and forest005_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -1916,7 +1916,7 @@ screen forest005:
                 xpos 1120 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest005_garlic_col:
+        if herbID1_get and forest005_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -1935,7 +1935,7 @@ screen forest005:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest005_mint_col:
+        if herbID1_get and forest005_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -2129,7 +2129,7 @@ screen forest006:
     
     if forest006_spawn == 1:
     
-        if herb_book1 and forest006_dandelion_col:
+        if herbID1_get and forest006_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2138,7 +2138,7 @@ screen forest006:
                 xpos 400 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest006_mint_col:
+        if herbID1_get and forest006_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -2166,7 +2166,7 @@ screen forest006:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest006_parsley_col:
+        if herbID1_get and forest006_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -2195,7 +2195,7 @@ screen forest006:
                 xpos 1120 ypos 600
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest006_oak_col:
+        if herbID1_get and forest006_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -2205,7 +2205,7 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest006_mint_col:
+        if herbID1_get and forest006_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -2214,7 +2214,7 @@ screen forest006:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest006_dandelion_col:
+        if herbID1_get and forest006_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2234,7 +2234,7 @@ screen forest006:
                 xpos 400 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest006_oregano_col:
+        if herbID1_get and forest006_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -2243,7 +2243,7 @@ screen forest006:
                 xpos 1120 ypos 600
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest006_garlic_col:
+        if herbID1_get and forest006_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -2281,7 +2281,7 @@ screen forest006:
                 xpos 400 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest006_thistle_col:
+        if herbID1_get and forest006_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -2290,7 +2290,7 @@ screen forest006:
                 xpos 1120 ypos 600
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest006_dandelion_col:
+        if herbID1_get and forest006_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2309,7 +2309,7 @@ screen forest006:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest006_garlic_col:
+        if herbID1_get and forest006_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -2348,7 +2348,7 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest006_parsley_col:
+        if herbID1_get and forest006_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -2357,7 +2357,7 @@ screen forest006:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest006_oregano_col:
+        if herbID1_get and forest006_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -2530,7 +2530,7 @@ screen forest007:
     
     if forest007_spawn == 1:
     
-        if herb_book1 and forest007_oregano_col:
+        if herbID1_get and forest007_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -2558,7 +2558,7 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest007_mint_col:
+        if herbID1_get and forest007_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -2578,7 +2578,7 @@ screen forest007:
                 
     if forest007_spawn == 2:
         
-        if herb_book1 and forest007_parsley_col:
+        if herbID1_get and forest007_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -2606,7 +2606,7 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest007_thistle_col:
+        if herbID1_get and forest007_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -2653,7 +2653,7 @@ screen forest007:
                 xpos 140 ypos 385
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest007_dandelion_col:
+        if herbID1_get and forest007_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2662,7 +2662,7 @@ screen forest007:
                 xpos 500 ypos 390
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest007_thistle_col:
+        if herbID1_get and forest007_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -2710,7 +2710,7 @@ screen forest007:
                 xpos 500 ypos 390
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest007_blackberry_col:
+        if herbID1_get and forest007_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -2721,7 +2721,7 @@ screen forest007:
     
     if forest007_spawn == 5:
     
-        if herb_book1 and forest007_blackberry_col:
+        if herbID1_get and forest007_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -2758,7 +2758,7 @@ screen forest007:
                 xpos 500 ypos 390
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest007_dandelion_col:
+        if herbID1_get and forest007_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2952,7 +2952,7 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest008_oak_col:
+        if herbID1_get and forest008_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -2961,7 +2961,7 @@ screen forest008:
                 xpos 620 ypos 360
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest008_parsley_col:
+        if herbID1_get and forest008_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -2981,7 +2981,7 @@ screen forest008:
                 xpos 300 ypos 400
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest008_blackberry_col:
+        if herbID1_get and forest008_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3038,7 +3038,7 @@ screen forest008:
                 xpos 1080 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest008_oak_col:
+        if herbID1_get and forest008_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -3056,7 +3056,7 @@ screen forest008:
                 xpos 620 ypos 360
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest008_blackberry_col:
+        if herbID1_get and forest008_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3067,7 +3067,7 @@ screen forest008:
                 
     if forest008_spawn == 4:
     
-        if herb_book1 and forest008_dandelion_col:
+        if herbID1_get and forest008_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -3076,7 +3076,7 @@ screen forest008:
                 xpos 300 ypos 400
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest008_oregano_col:
+        if herbID1_get and forest008_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -3085,7 +3085,7 @@ screen forest008:
                 xpos 1080 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest008_thistle_col:
+        if herbID1_get and forest008_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -3124,7 +3124,7 @@ screen forest008:
                 xpos 300 ypos 400
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest008_blackberry_col:
+        if herbID1_get and forest008_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3143,7 +3143,7 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest008_thistle_col:
+        if herbID1_get and forest008_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -3152,7 +3152,7 @@ screen forest008:
                 xpos 620 ypos 360
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest008_garlic_col:
+        if herbID1_get and forest008_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -3332,7 +3332,7 @@ screen forest009:
     
     if forest009_spawn == 1:
     
-        if herb_book1 and forest009_blackberry_col:
+        if herbID1_get and forest009_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3341,7 +3341,7 @@ screen forest009:
                 xpos 300 ypos 380
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest009_dandelion_col:
+        if herbID1_get and forest009_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -3360,7 +3360,7 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest009_sage_col:
+        if herbID1_get and forest009_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -3389,7 +3389,7 @@ screen forest009:
                 xpos 300 ypos 380
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest009_blackberry_col:
+        if herbID1_get and forest009_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3417,7 +3417,7 @@ screen forest009:
                 xpos 600 ypos 240
                 xanchor 0 yanchor 0
             
-        if herb_book1 and forest009_laurel_col:
+        if herbID1_get and forest009_laurel_col:
             imagebutton:
                 idle "gui/inv/herb010_idle.png"
                 hover "gui/inv/herb010_hover.png"
@@ -3446,7 +3446,7 @@ screen forest009:
                 xpos 1080 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book1 and forest009_blackberry_col:
+        if herbID1_get and forest009_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3503,7 +3503,7 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest009_dandelion_col:
+        if herbID1_get and forest009_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -3551,7 +3551,7 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if herb_book1 and forest009_blackberry_col:
+        if herbID1_get and forest009_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"

@@ -1,17 +1,17 @@
 init python:
 
-    class ProcessorStore():
+    class DehydratorStore():
 
         def __init__(self):
             self.store = {}
 
-        def add_processor_data(self, **kwargs):
+        def add_dehydrator_data(self, **kwargs):
             self.store[kwargs["item_id"]] = kwargs
 
-        def return_processor_data(self, item):
-            return Processor(item=item, **self.store[item.id])
+        def return_dehydrator_data(self, item):
+            return Dehydrator(item=item, **self.store[item.id])
 
-    class Processor():
+    class Dehydrator():
 
         def __init__(self, item, item_id, days, produces=None, inc_quality=None):
             self.item = item
@@ -41,17 +41,17 @@ init python:
                 return self.item
             return global_item_store.return_item(self.produces)
 
-    class ProcessorBox():
+    class DehydratorBox():
 
         def __init__(self):
             self.store = []
 
         def add_to_box(self, item):
-            if item.id not in global_processor_store.store:
-                item_fermentation_fail_event(item)
+            if item.id not in global_dehydrator_store.store:
+                item_drying_fail_event(item)
                 return
 
-            self.store.append( global_processor_store.return_processor_data(item) )
+            self.store.append( global_dehydrator_store.return_dehydrator_data(item) )
             player_bag.store.remove(item)
 
         def remove_from_box(self, item):
@@ -69,7 +69,7 @@ init python:
                 if result == "remove":
                     self.store.remove(entry)
 
-screen fermenting_screen():
+screen drying_screen():
     tag inventory_group
     zorder 10
     modal True
@@ -80,7 +80,7 @@ screen fermenting_screen():
 
     add Solid("#000000") alpha 0.5
 
-    textbutton _("Back") action Hide("fermenting_screen") xalign 1.0
+    textbutton _("Back") action Hide("drying_screen") xalign 1.0
 
     frame:
         xysize (1100, 675)
@@ -95,7 +95,7 @@ screen fermenting_screen():
                 area (0, 0, 570, 675)
                 background None
 
-                text "PROCESSOR" size 40 color "#000000" xalign 0.50
+                text "DRYING RACK" size 40 color "#000000" xalign 0.50
 
                 vpgrid:
                     area (0, 55, 520, 500)
@@ -106,7 +106,7 @@ screen fermenting_screen():
 
                     scrollbars "vertical"
 
-                    for item in player_processor.store:
+                    for item in player_dehydrator.store:
                         button:
                             xysize (100, 100)
                             background item.item.icon
@@ -115,8 +115,8 @@ screen fermenting_screen():
 
                             action [ SetScreenVariable("showing", "item"), SetScreenVariable("showing_item", item.get_produces), If(item.inc_quality, true=SetScreenVariable("removeable", item)) ]
 
-                    if len(player_processor.store) < 12:
-                        for i in range(0, 12-len(player_processor.store)):
+                    if len(player_dehydrator.store) < 12:
+                        for i in range(0, 12-len(player_dehydrator.store)):
                             button:
                                 xysize (100, 100)
                                 background Solid("#c0c0c0")
@@ -124,7 +124,7 @@ screen fermenting_screen():
                                 action SetScreenVariable("showing", "inv")
 
             if showing == "inv":
-                use inventory_base_screen(player_bag, "fermenting")
+                use inventory_base_screen(player_bag, "drying")
             if showing == "item":
                 frame:
                     area (0, 0, 570, 675)
@@ -150,4 +150,4 @@ screen fermenting_screen():
                                 text i
 
                         if removeable:
-                            textbutton _("Remove") action [ SetScreenVariable("showing", ""), SetScreenVariable("showing_item", None), Function(player_processor.remove_from_box, item=removeable), If(item.inc_quality, true=SetScreenVariable("removeable", None)) ]
+                            textbutton _("Remove") action [ SetScreenVariable("showing", ""), SetScreenVariable("showing_item", None), Function(player_dehydrator.remove_from_box, item=removeable), If(item.inc_quality, true=SetScreenVariable("removeable", None)) ]

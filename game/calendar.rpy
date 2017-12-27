@@ -180,6 +180,7 @@ init python:
 
                 player_bag.refresh_items()
                 player_processor.daily_check()
+                player_dehydrator.daily_check()
 
                 days -= 1
                 if self.leapyear == self.year and self._month == 1:

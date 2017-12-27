@@ -28,7 +28,8 @@ init python:
             self.store.append(item)
             self.categories.add(item.kind)
 
-            item_added_event(item)
+            if self.is_player:
+                item_added_event(item)
 
         def add_multi_items(self, item_list):
             for item_id in item_list:
@@ -128,7 +129,7 @@ screen inventory_base_screen(bag, case, seller_bag=None):
         area (0, 0, 570, 675)
         background None
 
-        text "INVENTORY" size 40 color "#000000" xalign 0.50
+        text "INVENTORY 1" size 40 color "#000000" xalign 0.50
 
         vpgrid:
             area (0, 55, 520, 500)
@@ -156,8 +157,12 @@ screen inventory_base_screen(bag, case, seller_bag=None):
                                 action Function(bag.add_item_to_put, item=item)
                             elif case == "store":
                                 action BuySell(item=item, buyer=bag, seller=seller_bag)
+                            elif case == "box":
+                                action [ Function(seller_bag.add_item, item=item), Function(bag.remove_item, item=item) ]
                             elif case == "fermenting":
                                 action [Function(player_processor.add_to_box, item=item), SetScreenVariable("showing", "")]
+                            elif case == "drying":
+                                action [Function(player_dehydrator.add_to_box, item=item), SetScreenVariable("showing", "")]
 
                         if case == "store":
                             if bag.is_player:
@@ -207,7 +212,74 @@ screen store_screen(player, seller):
             spacing 5
 
             use inventory_base_screen(player, case="store", seller_bag=seller)
-            add Solid("#000000", xysize=(10, 600)) yalign 0.5 xoffset -30
+            #add Solid("#000000", xysize=(10, 600)) yalign 0.5 xoffset -30
             use inventory_base_screen(seller, case="store", seller_bag=player)
 
     textbutton _("Back") action Hide("store_screen") xalign 1.0
+    
+screen box_screen(player, seller):
+    tag inventory_group
+    zorder 10
+    modal True
+
+    add Solid("#000000") alpha 0.5
+
+    frame:
+        xysize (1100, 675)
+        xalign 0.5
+        yalign 0.5
+
+        background Solid("d3d3d3")
+        
+        hbox:
+            spacing 5
+
+            use inventory_base_screen(player, case="store", seller_bag=seller)
+            #add Solid("#000000", xysize=(10, 600)) yalign 0.5 xoffset -30
+            use inventory_base_screen(seller, case="store", seller_bag=player)
+
+    textbutton _("Back") action Hide("box_screen") xalign 1.0
+
+screen inventory_popup(message,item):
+    zorder 100
+    imagebutton idle "gui/not/" + item + "_notification.png" xalign 0.5 yalign 0.35
+    frame:
+        style_group "msgstyle"
+        vbox:
+            text message
+    timer 0.8 action Hide("inventory_popup")
+    
+init -2: 
+
+    ## STYLES ##
+    style msgstyle_frame:
+        xalign 0.5
+        yalign 0.61
+        
+    style msgstyle_label_text:
+        size 30
+        
+    style msgstyle_label:
+        xalign 0.5 
+        
+screen inventory_popup(message,item):
+    zorder 100
+    imagebutton idle "gui/not/" + item + "_notification.png" xalign 0.5 yalign 0.35
+    frame:
+        style_group "msgstyle"
+        vbox:
+            text message
+    timer 0.8 action Hide("inventory_popup")
+    
+init -2: 
+
+    ## STYLES ##
+    style msgstyle_frame:
+        xalign 0.5
+        yalign 0.61
+        
+    style msgstyle_label_text:
+        size 30
+        
+    style msgstyle_label:
+        xalign 0.5 

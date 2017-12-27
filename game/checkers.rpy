@@ -3,8 +3,8 @@ label check_events:
     if current_loc == "itemshop" and day_cnt == 2 and itemshop_day002_evt == False:
         jump itemshop_day002
     
-    elif current_loc == "apothecary" and day_cnt == 3 and day_003_evt == False:
-        jump day_003
+    elif current_loc == "apothecary" and day_cnt == 3 and day003_evt == False:
+        jump day003
         
     elif current_loc == "forest001" and forest001_evt == False:
         jump forest001_intro
