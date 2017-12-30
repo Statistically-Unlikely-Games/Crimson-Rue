@@ -4,7 +4,7 @@
     "icon": "gui/inv/bottle.vodka.png",
     "image": "gui/not/Bottle of Vodka_notification.png",
     "description": "Useful in makeing tinctures.",
-    "kind": "container",
+    "kind": "ingredient",
     "cost": 500,
     "season": "none",
     "quality": 100,

@@ -160,12 +160,12 @@ screen craft_screen():
         use inventory_base_screen(player_bag, case="crafting")
 
         frame:
-            xysize (500, 670)
+            xysize (550, 670)
             xalign 1.0
             background Solid("d3d3d3")
 
             vbox:
-                ypos 40
+                ypos 5
                 spacing 15
 
                 text "INGREDIENTS" size 45 xalign 0.5

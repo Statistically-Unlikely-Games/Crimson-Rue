@@ -1,0 +1,13 @@
+{
+    "id": "herb024",
+    "name": "St. John's Wort",
+    "icon": "gui/inv/herb024_idle.png",
+    "image": "gui/not/St. John's Wort_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

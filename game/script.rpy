@@ -99,14 +99,14 @@ transform zoom_out:
 default shelf = Shelf("Library", 20)
 default book_1 = Book("Tutorial", "Tutorial", "Author", "Year")
 default herbID1 = Book("Herb Identification Guide vol. 1", "Herb Identification", "Master Elaine", "year")
-default book_3 = Book("Herb Identification Guide vol. 2", "Herb Identification", "Master Elaine", "year")
-default book_4 = Book("Herb Identification Guide vol. 3", "Herb Identification", "Master Elaine", "year")
-default book_5 = Book("Medical Journal vol. 1", "Medical Journal", "Master Elaine", "year")
-default book_6 = Book("Medical Journal vol. 2", "Medical Journal", "Master Elaine", "year")
-default book_7 = Book("Medical Journal vol. 3", "Medical Journal", "Master Elaine", "year")
-default book_8 = Book("Medical Journal vol. 4", "Medical Journal", "Master Elaine", "year")
-default book_9 = Book("Medical Journal vol. 5", "Medical Journal", "Master Elaine", "year")
-default book_10 = Book("Medical Journal vol. 6", "Medical Journal", "Master Elaine", "year")
+default herbID2 = Book("Herb Identification Guide vol. 2", "Herb Identification", "Master Elaine", "year")
+default herbID3 = Book("Herb Identification Guide vol. 3", "Herb Identification", "Master Elaine", "year")
+default medJNL1 = Book("Medical Journal vol. 1", "Medical Journal", "Master Elaine", "year")
+default medJNL2 = Book("Medical Journal vol. 2", "Medical Journal", "Master Elaine", "year")
+default medJNL3 = Book("Medical Journal vol. 3", "Medical Journal", "Master Elaine", "year")
+default medJNL4 = Book("Medical Journal vol. 4", "Medical Journal", "Master Elaine", "year")
+default medJNL5 = Book("Medical Journal vol. 5", "Medical Journal", "Master Elaine", "year")
+default medJNL6 = Book("Medical Journal vol. 6", "Medical Journal", "Master Elaine", "year")
 
 # This is the splash screen. Should show my logo, and then the 
 # instructions for playing on the Ouya.
@@ -143,8 +143,6 @@ label start:
         current_loc = "none"
         
         #ITEM VARIABLES
-        
-        herbID1_get = False
         
         herb_book1 = False
         herb_book2 = False
@@ -426,6 +424,7 @@ label start:
     $ player_processor = ProcessorBox()
     $ player_dehydrator = DehydratorBox()
     $ seller_bag = BaseInventory("Seller", 800000)
+    $ box_bag = BaseInventory("Storage", 0)
 
     $ player_recipes = []
 

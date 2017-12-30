@@ -76,7 +76,6 @@ init python:
 
     def item_added_event(item):
         #If the item is added to the player's inventory only!
-        #if BaseInventory.is_player != True: 
         if item.kind != "useless":
             renpy.show_screen("inventory_popup", message="Received " + item.name,item=item.name)
         else: 

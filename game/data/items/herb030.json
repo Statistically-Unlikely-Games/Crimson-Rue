@@ -1,0 +1,13 @@
+{
+    "id": "herb030",
+    "name": "Licorice",
+    "icon": "gui/inv/herb030_idle.png",
+    "image": "gui/not/Licorice_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

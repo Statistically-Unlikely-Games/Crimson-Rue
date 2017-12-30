@@ -1,0 +1,13 @@
+{
+    "id": "herb009",
+    "name": "Sage",
+    "icon": "gui/inv/herb009_idle.png",
+    "image": "gui/not/Sage_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

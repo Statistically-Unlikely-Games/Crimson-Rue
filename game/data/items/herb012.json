@@ -1,0 +1,13 @@
+{
+    "id": "herb012",
+    "name": "Borage",
+    "icon": "gui/inv/herb012_idle.png",
+    "image": "gui/not/Borage_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

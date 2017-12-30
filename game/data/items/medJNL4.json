@@ -1,0 +1,12 @@
+{
+    "id": "medJNL4",
+    "name": "Medical Journal vol. 4",
+    "icon": "gui/inv/journal.png",
+    "image": "gui/not/Journal_notification.png",
+    "description": "A book of medical symptoms",
+    "kind": "book",
+    "cost": 5000,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}

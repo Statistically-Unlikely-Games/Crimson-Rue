@@ -1,0 +1,12 @@
+{
+    "id": "cheesecloth",
+    "name": "Cheesecloth",
+    "icon": "gui/inv/bandages.png",
+    "image": "gui/not/Bandages_notification.png",
+    "description": "Often used for straining.",
+    "kind": "ingredient",
+    "cost": 100,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}

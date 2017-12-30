@@ -5,21 +5,23 @@ While running game code:
     call screen apothecary
   File "renpy/common/000statements.rpy", line 485, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/dehydrating_box.rpy", line 72, in execute
-    screen drying_screen():
-  File "game/dehydrating_box.rpy", line 72, in execute
-    screen drying_screen():
-  File "game/dehydrating_box.rpy", line 85, in execute
+  File "game/inv_craft/recipe.rpy", line 144, in execute
+    screen craft_screen():
+  File "game/inv_craft/recipe.rpy", line 144, in execute
+    screen craft_screen():
+  File "game/inv_craft/recipe.rpy", line 153, in execute
     frame:
-  File "game/dehydrating_box.rpy", line 92, in execute
-    hbox:
-  File "game/dehydrating_box.rpy", line 94, in execute
+  File "game/inv_craft/recipe.rpy", line 162, in execute
     frame:
-  File "game/dehydrating_box.rpy", line 100, in execute
+  File "game/inv_craft/recipe.rpy", line 167, in execute
+    vbox:
+  File "game/inv_craft/recipe.rpy", line 173, in execute
     vpgrid:
-  File "game/dehydrating_box.rpy", line 109, in execute
-    for item in player_dehydrator.store:
-NameError: name 'player_dehydrator' is not defined
+  File "game/inv_craft/recipe.rpy", line 185, in execute
+    for i in range(0, 8-len(player_bag.items_in_pot)):
+  File "game/inv_craft/recipe.rpy", line 189, in execute
+    text "[item.name]" xalign 0.5
+NameError: Name 'item' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -56,22 +58,35 @@ Full traceback:
     self.update()
   File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 580, in update
     self.screen.function(**self.scope)
-  File "game/dehydrating_box.rpy", line 72, in execute
-    screen drying_screen():
-  File "game/dehydrating_box.rpy", line 72, in execute
-    screen drying_screen():
-  File "game/dehydrating_box.rpy", line 85, in execute
+  File "game/inv_craft/recipe.rpy", line 144, in execute
+    screen craft_screen():
+  File "game/inv_craft/recipe.rpy", line 144, in execute
+    screen craft_screen():
+  File "game/inv_craft/recipe.rpy", line 153, in execute
     frame:
-  File "game/dehydrating_box.rpy", line 92, in execute
-    hbox:
-  File "game/dehydrating_box.rpy", line 94, in execute
+  File "game/inv_craft/recipe.rpy", line 162, in execute
     frame:
-  File "game/dehydrating_box.rpy", line 100, in execute
+  File "game/inv_craft/recipe.rpy", line 167, in execute
+    vbox:
+  File "game/inv_craft/recipe.rpy", line 173, in execute
     vpgrid:
-  File "game/dehydrating_box.rpy", line 109, in execute
-    for item in player_dehydrator.store:
-  File "<screen language>", line 109, in <module>
-NameError: name 'player_dehydrator' is not defined
+  File "game/inv_craft/recipe.rpy", line 185, in execute
+    for i in range(0, 8-len(player_bag.items_in_pot)):
+  File "game/inv_craft/recipe.rpy", line 189, in execute
+    text "[item.name]" xalign 0.5
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\text\text.py", line 1340, in __init__
+    self.set_text(text, scope, substitute)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\text\text.py", line 1440, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\substitutions.py", line 242, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 605, in get_value
+  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\substitutions.py", line 201, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name 'item' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.13.2919

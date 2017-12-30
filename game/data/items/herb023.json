@@ -1,0 +1,13 @@
+{
+    "id": "herb023",
+    "name": "Red Clover",
+    "icon": "gui/inv/herb023_idle.png",
+    "image": "gui/not/Red Clover_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

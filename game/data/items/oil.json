@@ -4,7 +4,7 @@
     "icon": "gui/inv/bottle.oil.png",
     "image": "gui/not/Bottle of Oil_notification.png",
     "description": "Medicine made with this lasts a long time.",
-    "kind": "container",
+    "kind": "ingredient",
     "cost": 500,
     "season": "none",
     "quality": 100,

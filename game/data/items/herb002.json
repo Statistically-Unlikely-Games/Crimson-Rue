@@ -1,0 +1,13 @@
+{
+    "id": "herb002",
+    "name": "Dandelion",
+    "icon": "gui/inv/herb002_idle.png",
+    "image": "gui/not/Dandelion_notification.png",
+    "description": "A medicinal herb. Roots are best harvested in late fall to early spring. Collect from large, vigorous plants.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

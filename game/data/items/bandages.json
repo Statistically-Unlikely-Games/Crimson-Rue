@@ -1,0 +1,12 @@
+{
+    "id": "bandages",
+    "name": "Bandages",
+    "icon": "gui/inv/bandages.png",
+    "image": "gui/not/Bandages_notification.png",
+    "description": "For wrapping wounds.",
+    "kind": "ingredient",
+    "cost": 100,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}

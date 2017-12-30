@@ -1,0 +1,13 @@
+{
+    "id": "herb019",
+    "name": "Rosemary",
+    "icon": "gui/inv/herb019_idle.png",
+    "image": "gui/not/Rosemary_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

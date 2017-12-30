@@ -1,0 +1,13 @@
+{
+    "id": "herb015",
+    "name": "Plantain",
+    "icon": "gui/inv/herb015_idle.png",
+    "image": "gui/not/Plantain_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

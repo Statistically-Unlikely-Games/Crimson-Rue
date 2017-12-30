@@ -22,22 +22,6 @@ label forest001:
     
     $ current_loc = "forest001"
     
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = True
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = False
-    
     scene bg forest001
     show screen forest001
     show screen basic_overlay
@@ -55,7 +39,7 @@ screen forest001:
     
     if forest001_spawn == 1:
     
-        if herb_book3 and forest001_poppy_col:
+        if herbID3 in shelf.list_books() and forest001_poppy_col:
             imagebutton:
                 idle "gui/inv/herb021_idle.png"
                 hover "gui/inv/herb021_hover.png"
@@ -64,7 +48,7 @@ screen forest001:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest001_stjohns_col:
+        if herbID3 in shelf.list_books() and forest001_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -73,7 +57,7 @@ screen forest001:
                 xpos 1120 ypos 480
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest001_rosemary_col:
+        if herbID2 in shelf.list_books() and forest001_rosemary_col:
             imagebutton:
                 idle "gui/inv/herb019_idle.png"
                 hover "gui/inv/herb019_hover.png"
@@ -82,7 +66,7 @@ screen forest001:
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest001_mint_col:
+        if herbID1 in shelf.list_books() and forest001_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -91,7 +75,7 @@ screen forest001:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest001_chamomile_col:
+        if herbID2 in shelf.list_books() and forest001_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -102,7 +86,7 @@ screen forest001:
                 
     if forest001_spawn == 2:
         
-        if herbID1_get and forest001_thistle_col:
+        if herbID1 in shelf.list_books() and forest001_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -111,7 +95,7 @@ screen forest001:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest001_oregano_col:
+        if herbID1 in shelf.list_books() and forest001_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -120,7 +104,7 @@ screen forest001:
                 xpos 1120 ypos 480
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest001_licorice_col:
+        if herbID3 in shelf.list_books() and forest001_licorice_col:
             imagebutton:
                 idle "gui/inv/herb030_idle.png"
                 hover "gui/inv/herb030_hover.png"
@@ -130,7 +114,7 @@ screen forest001:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest001_redclover_col:
+        if herbID3 in shelf.list_books() and forest001_redclover_col:
             imagebutton:
                 idle "gui/inv/herb023_idle.png"
                 hover "gui/inv/herb023_hover.png"
@@ -139,7 +123,7 @@ screen forest001:
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest001_poppy_col:
+        if herbID3 in shelf.list_books() and forest001_poppy_col:
             imagebutton:
                 idle "gui/inv/herb021_idle.png"
                 hover "gui/inv/herb021_hover.png"
@@ -150,7 +134,7 @@ screen forest001:
                 
     if forest001_spawn == 3:
     
-        if herbID1_get and forest001_blackberry_col:
+        if herbID1 in shelf.list_books() and forest001_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -159,7 +143,7 @@ screen forest001:
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest001_garlic_col:
+        if herbID1 in shelf.list_books() and forest001_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -168,7 +152,7 @@ screen forest001:
                 xpos 1120 ypos 480
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest001_mullein_col:
+        if herbID3 in shelf.list_books() and forest001_mullein_col:
             imagebutton:
                 idle "gui/inv/herb022_idle.png"
                 hover "gui/inv/herb022_hover.png"
@@ -177,7 +161,7 @@ screen forest001:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest001_oak_col:
+        if herbID1 in shelf.list_books() and forest001_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -186,7 +170,7 @@ screen forest001:
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest001_thistle_col:
+        if herbID1 in shelf.list_books() and forest001_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -197,7 +181,7 @@ screen forest001:
                 
     if forest001_spawn == 4:
     
-        if herb_book3 and forest001_burdock_col:
+        if herbID3 in shelf.list_books() and forest001_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -206,7 +190,7 @@ screen forest001:
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest001_stjohns_col:
+        if herbID3 in shelf.list_books() and forest001_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -215,7 +199,7 @@ screen forest001:
                 xpos 1120 ypos 480
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest001_poppy_col:
+        if herbID3 in shelf.list_books() and forest001_poppy_col:
             imagebutton:
                 idle "gui/inv/herb021_idle.png"
                 hover "gui/inv/herb021_hover.png"
@@ -225,7 +209,7 @@ screen forest001:
                 xanchor 0 yanchor 0
             
             
-        if herb_book2 and forest001_hyssop_col:
+        if herbID2 in shelf.list_books() and forest001_hyssop_col:
             imagebutton:
                 idle "gui/inv/herb011_idle.png"
                 hover "gui/inv/herb011_hover.png"
@@ -234,7 +218,7 @@ screen forest001:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest001_mint_col:
+        if herbID1 in shelf.list_books() and forest001_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -245,7 +229,7 @@ screen forest001:
     
     if forest001_spawn == 5:
     
-        if herb_book3 and forest001_mullein_col:
+        if herbID3 in shelf.list_books() and forest001_mullein_col:
             imagebutton:
                 idle "gui/inv/herb022_idle.png"
                 hover "gui/inv/herb022_hover.png"
@@ -254,7 +238,7 @@ screen forest001:
                 xpos 800 ypos 320
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest001_borage_col:
+        if herbID2 in shelf.list_books() and forest001_borage_col:
             imagebutton:
                 idle "gui/inv/herb012_idle.png"
                 hover "gui/inv/herb012_hover.png"
@@ -263,7 +247,7 @@ screen forest001:
                 xpos 600 ypos 390
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest001_sage_col:
+        if herbID1 in shelf.list_books() and forest001_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -273,7 +257,7 @@ screen forest001:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest001_blackberry_col:
+        if herbID1 in shelf.list_books() and forest001_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -282,7 +266,7 @@ screen forest001:
                 xpos 200 ypos 330
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest001_redclover_col:
+        if herbID3 in shelf.list_books() and forest001_redclover_col:
             imagebutton:
                 idle "gui/inv/herb023_idle.png"
                 hover "gui/inv/herb023_hover.png"
@@ -293,119 +277,119 @@ screen forest001:
             
     
 label forest001_thistle:
-    $ pc_inv.take(herb001)
+    $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest001
     
 label forest001_blackberry:
-    $ pc_inv.take(herb003)
+    $ player_bag.add_item("herb003", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest001
     
 label forest001_oak:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Oak",item="Oak")
     
     jump forest001
     
 label forest001_garlic:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest001
     
 label forest001_mint:
-    $ pc_inv.take(herb006)
+    $ player_bag.add_item("herb006", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest001
     
 label forest001_oregano:
-    $ pc_inv.take(herb007)
+    $ player_bag.add_item("herb007", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest001
     
 label forest001_chamomile:
-    $ pc_inv.take(herb016)
+    $ player_bag.add_item("herb016", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Chamomile",item="Chamomile")
     
     jump forest001
 
 label forest001_mullein:
-    $ pc_inv.take(herb022)
+    $ player_bag.add_item("herb022", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Mullein",item="Mullein")
     
     jump forest001
 
 label forest001_redclover:
-    $ pc_inv.take(herb023)
+    $ player_bag.add_item("herb023", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Red Clover",item="Red Clover")
     
     jump forest001
 
 label forest001_stjohns:
-    $ pc_inv.take(herb024)
+    $ player_bag.add_item("herb024", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received St. John's Wort",item="St. John's Wort")
     
     jump forest001
 
 label forest001_burdock:
-    $ pc_inv.take(herb026)
+    $ player_bag.add_item("herb026", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Burdock",item="Burdock")
     
     jump forest001
 
 label forest001_sage:
-    $ pc_inv.take(herb009)
+    $ player_bag.add_item("herb009", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest001
 
 label forest001_hyssop:
-    $ pc_inv.take(herb011)
+    $ player_bag.add_item("herb011", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest001
 
 label forest001_borage:
-    $ pc_inv.take(herb012)
+    $ player_bag.add_item("herb012", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest001
 
 label forest001_rosemary:
-    $ pc_inv.take(herb019)
+    $ player_bag.add_item("herb019", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Rosemary",item="Rosemary")
     
     jump forest001
 
 label forest001_licorice:
-    $ pc_inv.take(herb030)
+    $ player_bag.add_item("herb030", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Licorice",item="Licorice")
     
     jump forest001
 
 label forest001_poppy:
-    $ pc_inv.take(herb021)
+    $ player_bag.add_item("herb021", quality=70, custom_tags=["bitter"])
     $ F1Harvest = True
     show screen inventory_popup2(message="Received Poppy",item="Poppy")
     
@@ -435,22 +419,6 @@ label forest002:
     
     $ current_loc = "forest002"
     
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = True
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = False
-    
     scene bg forest002
     show screen forest002
     show screen basic_overlay
@@ -468,7 +436,7 @@ screen forest002:
         
     if forest002_spawn == 1:
     
-        if herb_book2 and forest002_chamomile_col:
+        if herbID2 in shelf.list_books() and forest002_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -478,7 +446,7 @@ screen forest002:
                 xanchor 0 yanchor 0
             
         
-        if herbID1_get and forest002_dandelion_col:
+        if herbID1 in shelf.list_books() and forest002_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -487,7 +455,7 @@ screen forest002:
                 xpos 1000 ypos 550
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest002_blackberry_col:
+        if herbID1 in shelf.list_books() and forest002_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -497,7 +465,7 @@ screen forest002:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest002_licorice_col:
+        if herbID3 in shelf.list_books() and forest002_licorice_col:
             imagebutton:
                 idle "gui/inv/herb030_idle.png"
                 hover "gui/inv/herb030_hover.png"
@@ -506,7 +474,7 @@ screen forest002:
                 xpos 50 ypos 490
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest002_thistle_col:
+        if herbID1 in shelf.list_books() and forest002_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -517,7 +485,7 @@ screen forest002:
                 
     if forest002_spawn == 2:
         
-        if herb_book3 and forest002_burdock_col:
+        if herbID3 in shelf.list_books() and forest002_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -526,7 +494,7 @@ screen forest002:
                 xpos 665 ypos 360
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest002_blackberry_col:
+        if herbID1 in shelf.list_books() and forest002_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -535,7 +503,7 @@ screen forest002:
                 xpos 800 ypos 400
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest002_calendula_col:
+        if herbID2 in shelf.list_books() and forest002_calendula_col:
             imagebutton:
                 idle "gui/inv/herb017_idle.png"
                 hover "gui/inv/herb017_hover.png"
@@ -545,7 +513,7 @@ screen forest002:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest002_stjohns_col:
+        if herbID3 in shelf.list_books() and forest002_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -554,7 +522,7 @@ screen forest002:
                 xpos 400 ypos 470
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest002_chamomile_col:
+        if herbID2 in shelf.list_books() and forest002_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -565,7 +533,7 @@ screen forest002:
                 
     if forest002_spawn == 3:
     
-        if herbID1_get and forest002_oak_col:
+        if herbID1 in shelf.list_books() and forest002_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -574,7 +542,7 @@ screen forest002:
                 xpos 50 ypos 490
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest002_chamomile_col:
+        if herbID2 in shelf.list_books() and forest002_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -583,7 +551,7 @@ screen forest002:
                 xpos 665 ypos 360
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest002_redclover_col:
+        if herbID3 in shelf.list_books() and forest002_redclover_col:
             imagebutton:
                 idle "gui/inv/herb023_idle.png"
                 hover "gui/inv/herb023_hover.png"
@@ -592,7 +560,7 @@ screen forest002:
                 xpos 800 ypos 400
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest002_laurel_col:
+        if herbID1 in shelf.list_books() and forest002_laurel_col:
             imagebutton:
                 idle "gui/inv/herb010_idle.png"
                 hover "gui/inv/herb010_hover.png"
@@ -601,7 +569,7 @@ screen forest002:
                 xpos 1000 ypos 550
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest002_dandelion_col:
+        if herbID1 in shelf.list_books() and forest002_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -612,7 +580,7 @@ screen forest002:
                 
     if forest002_spawn == 4:
     
-        if herb_book2 and forest002_chamomile_col:
+        if herbID2 in shelf.list_books() and forest002_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -621,7 +589,7 @@ screen forest002:
                 xpos 400 ypos 470
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest002_stjohns_col:
+        if herbID3 in shelf.list_books() and forest002_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -630,7 +598,7 @@ screen forest002:
                 xpos 50 ypos 490
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest002_parsley_col:
+        if herbID1 in shelf.list_books() and forest002_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -640,7 +608,7 @@ screen forest002:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest002_oregano_col:
+        if herbID1 in shelf.list_books() and forest002_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -649,7 +617,7 @@ screen forest002:
                 xpos 800 ypos 400
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest002_oak_col:
+        if herbID1 in shelf.list_books() and forest002_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -660,7 +628,7 @@ screen forest002:
     
     if forest002_spawn == 5:
     
-        if herb_book2 and forest002_rosemary_col:
+        if herbID2 in shelf.list_books() and forest002_rosemary_col:
             imagebutton:
                 idle "gui/inv/herb019_idle.png"
                 hover "gui/inv/herb019_hover.png"
@@ -669,7 +637,7 @@ screen forest002:
                 xpos 1000 ypos 550
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest002_hyssop_col:
+        if herbID2 in shelf.list_books() and forest002_hyssop_col:
             imagebutton:
                 idle "gui/inv/herb011_idle.png"
                 hover "gui/inv/herb011_hover.png"
@@ -678,7 +646,7 @@ screen forest002:
                 xpos 400 ypos 470
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest002_burdock_col:
+        if herbID3 in shelf.list_books() and forest002_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -688,7 +656,7 @@ screen forest002:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest002_mullein_col:
+        if herbID3 in shelf.list_books() and forest002_mullein_col:
             imagebutton:
                 idle "gui/inv/herb022_idle.png"
                 hover "gui/inv/herb022_hover.png"
@@ -697,7 +665,7 @@ screen forest002:
                 xpos 665 ypos 360
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest002_chamomile_col:
+        if herbID2 in shelf.list_books() and forest002_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -708,112 +676,112 @@ screen forest002:
             
     
 label forest002_thistle:
-    $ pc_inv.take(herb001)
+    $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest002
 
 label forest002_dandelion:
-    $ pc_inv.take(herb002)
+    $ player_bag.add_item("herb002", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest002
     
 label forest002_blackberry:
-    $ pc_inv.take(herb003)
+    $ player_bag.add_item("herb003", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest002
     
 label forest002_oak:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Oak",item="Oak")
     
     jump forest002
     
 label forest002_oregano:
-    $ pc_inv.take(herb007)
+    $ player_bag.add_item("herb007", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest002
     
 label forest002_parsley:
-    $ pc_inv.take(herb008)
+    $ player_bag.add_item("herb008", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Parsley",item="Parsley")
     
     jump forest002
     
 label forest002_chamomile:
-    $ pc_inv.take(herb016)
+    $ player_bag.add_item("herb016", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Chamomile",item="Chamomile")
     
     jump forest002
     
 label forest002_mullein:
-    $ pc_inv.take(herb022)
+    $ player_bag.add_item("herb022", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Mullein",item="Mullein")
     
     jump forest002
 
 label forest002_redclover:
-    $ pc_inv.take(herb023)
+    $ player_bag.add_item("herb023", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Red Clover",item="Red Clover")
     
     jump forest002
 
 label forest002_stjohns:
-    $ pc_inv.take(herb024)
+    $ player_bag.add_item("herb024", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received St. John's Wort",item="St. John's Wort")
     
     jump forest002
     
 label forest002_burdock:
-    $ pc_inv.take(herb026)
+    $ player_bag.add_item("herb026", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Burdock",item="Burdock")
     
     jump forest002
     
 label forest002_laurel:
-    $ pc_inv.take(herb010)
+    $ player_bag.add_item("herb010", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Laurel",item="Laurel")
     
     jump forest002
 
 label forest002_hyssop:
-    $ pc_inv.take(herb011)
+    $ player_bag.add_item("herb011", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest002
     
 label forest002_calendula:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Calendula",item="Calendula")
     
     jump forest002
 
 label forest002_rosemary:
-    $ pc_inv.take(herb019)
+    $ player_bag.add_item("herb019", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Rosemary",item="Rosemary")
     
     jump forest002
     
 label forest002_licorice:
-    $ pc_inv.take(herb030)
+    $ player_bag.add_item("herb030", quality=70, custom_tags=["bitter"])
     $ F2Harvest = True
     show screen inventory_popup2(message="Received Licorice",item="Licorice")
     
@@ -844,22 +812,6 @@ label forest003:
     
     $ current_loc = "forest003"
     
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = True
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = False
-    
     scene bg forest003
     show screen forest003
     show screen basic_overlay
@@ -877,7 +829,7 @@ screen forest003:
         
     if forest003_spawn == 1:
     
-        if herb_book2 and forest003_chamomile_col:
+        if herbID2 in shelf.list_books() and forest003_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -886,7 +838,7 @@ screen forest003:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest003_borage_col:
+        if herbID2 in shelf.list_books() and forest003_borage_col:
             imagebutton:
                 idle "gui/inv/herb012_idle.png"
                 hover "gui/inv/herb012_hover.png"
@@ -895,7 +847,7 @@ screen forest003:
                 xpos 1120 ypos 500
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest003_redclover_col:
+        if herbID3 in shelf.list_books() and forest003_redclover_col:
             imagebutton:
                 idle "gui/inv/herb023_idle.png"
                 hover "gui/inv/herb023_hover.png"
@@ -905,7 +857,7 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if herb_book2 and forest003_chamomile2_col:
+        if herbID2 in shelf.list_books() and forest003_chamomile2_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -914,7 +866,7 @@ screen forest003:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest003_sage_col:
+        if herbID1 in shelf.list_books() and forest003_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -925,7 +877,7 @@ screen forest003:
                 
     if forest003_spawn == 2:
         
-        if herb_book2 and forest003_rosemary_col:
+        if herbID2 in shelf.list_books() and forest003_rosemary_col:
             imagebutton:
                 idle "gui/inv/herb019_idle.png"
                 hover "gui/inv/herb019_hover.png"
@@ -934,7 +886,7 @@ screen forest003:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest003_chamomile_col:
+        if herbID2 in shelf.list_books() and forest003_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -943,7 +895,7 @@ screen forest003:
                 xpos 1120 ypos 500
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest003_borage_col:
+        if herbID2 in shelf.list_books() and forest003_borage_col:
             imagebutton:
                 idle "gui/inv/herb012_idle.png"
                 hover "gui/inv/herb012_hover.png"
@@ -953,7 +905,7 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest003_oak_col:
+        if herbID1 in shelf.list_books() and forest003_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -962,7 +914,7 @@ screen forest003:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest003_stjohns_col:
+        if herbID3 in shelf.list_books() and forest003_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -973,7 +925,7 @@ screen forest003:
                 
     if forest003_spawn == 3:
     
-        if herbID1_get and forest003_parsley_col:
+        if herbID1 in shelf.list_books() and forest003_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -982,7 +934,7 @@ screen forest003:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest003_chamomile_col:
+        if herbID2 in shelf.list_books() and forest003_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -991,7 +943,7 @@ screen forest003:
                 xpos 1120 ypos 500
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest003_licorice_col:
+        if herbID3 in shelf.list_books() and forest003_licorice_col:
             imagebutton:
                 idle "gui/inv/herb030_idle.png"
                 hover "gui/inv/herb030_hover.png"
@@ -1000,7 +952,7 @@ screen forest003:
                 xpos 420 ypos 460
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest003_burdock_col:
+        if herbID3 in shelf.list_books() and forest003_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -1009,7 +961,7 @@ screen forest003:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest003_garlic_col:
+        if herbID1 in shelf.list_books() and forest003_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -1020,7 +972,7 @@ screen forest003:
                 
     if forest003_spawn == 4:
     
-        if herbID1_get and forest003_oregano_col:
+        if herbID1 in shelf.list_books() and forest003_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -1029,7 +981,7 @@ screen forest003:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest003_mullein_col:
+        if herbID3 in shelf.list_books() and forest003_mullein_col:
             imagebutton:
                 idle "gui/inv/herb022_idle.png"
                 hover "gui/inv/herb022_hover.png"
@@ -1038,7 +990,7 @@ screen forest003:
                 xpos 1120 ypos 500
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest003_thistle_col:
+        if herbID1 in shelf.list_books() and forest003_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -1048,7 +1000,7 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if herb_book2 and forest003_chamomile_col:
+        if herbID2 in shelf.list_books() and forest003_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -1057,7 +1009,7 @@ screen forest003:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest003_calendula_col:
+        if herbID2 in shelf.list_books() and forest003_calendula_col:
             imagebutton:
                 idle "gui/inv/herb017_idle.png"
                 hover "gui/inv/herb017_hover.png"
@@ -1068,7 +1020,7 @@ screen forest003:
     
     if forest003_spawn == 5:
     
-        if herb_book3 and forest003_burdock_col:
+        if herbID3 in shelf.list_books() and forest003_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -1077,7 +1029,7 @@ screen forest003:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest003_thistle_col:
+        if herbID1 in shelf.list_books() and forest003_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -1086,7 +1038,7 @@ screen forest003:
                 xpos 1120 ypos 500
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest003_chamomile_col:
+        if herbID2 in shelf.list_books() and forest003_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -1096,7 +1048,7 @@ screen forest003:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest003_blackberry_col:
+        if herbID1 in shelf.list_books() and forest003_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -1105,7 +1057,7 @@ screen forest003:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest003_sage_col:
+        if herbID1 in shelf.list_books() and forest003_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -1116,34 +1068,35 @@ screen forest003:
             
     
 label forest003_thistle:
-    $ pc_inv.take(herb001)
+    $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest003
     
 label forest003_blackberry:
-    $ pc_inv.take(herb003)
+    $ player_bag.add_item("herb003", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest003
     
 label forest003_oak:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Oak",item="Oak")
     
     jump forest003
     
 label forest003_garlic:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest003
     
 label forest003_oregano:
+    $ player_bag.add_item("herb007", quality=70, custom_tags=["bitter"])
     $ pc_inv.take(herb007)
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
@@ -1151,84 +1104,84 @@ label forest003_oregano:
     jump forest003
     
 label forest003_parsley:
-    $ pc_inv.take(herb008)
+    $ player_bag.add_item("herb008", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Parsley",item="Parsley")
     
     jump forest003
     
 label forest003_chamomile:
-    $ pc_inv.take(herb016)
+    $ player_bag.add_item("herb016", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Chamomile",item="Chamomile")
     
     jump forest003
     
 label forest003_chamomile2:
-    $ pc_inv.take(herb016)
+    $ player_bag.add_item("herb016", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Chamomile",item="Chamomile")
     
     jump forest003
     
 label forest003_mullein:
-    $ pc_inv.take(herb022)
+    $ player_bag.add_item("herb022", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Mullein",item="Mullein")
     
     jump forest003
 
 label forest003_redclover:
-    $ pc_inv.take(herb023)
+    $ player_bag.add_item("herb023", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Red Clover",item="Red Clover")
     
     jump forest003
 
 label forest003_stjohns:
-    $ pc_inv.take(herb024)
+    $ player_bag.add_item("herb024", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received St. John's Wort",item="St. John's Wort")
     
     jump forest003
     
 label forest003_burdock:
-    $ pc_inv.take(herb026)
+    $ player_bag.add_item("herb026", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Burdock",item="Burdock")
     
     jump forest003
 
 label forest003_sage:
-    $ pc_inv.take(herb009)
+    $ player_bag.add_item("herb009", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest003
     
 label forest003_borage:
-    $ pc_inv.take(herb012)
+    $ player_bag.add_item("herb012", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest003
     
 label forest003_calendula:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Calendula",item="Calendula")
     
     jump forest003
 
 label forest003_rosemary:
-    $ pc_inv.take(herb019)
+    $ player_bag.add_item("herb019", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Rosemary",item="Rosemary")
     
     jump forest003
     
 label forest003_licorice:
-    $ pc_inv.take(herb030)
+    $ player_bag.add_item("herb030", quality=70, custom_tags=["bitter"])
     $ F3Harvest = True
     show screen inventory_popup2(message="Received Licorice",item="Licorice")
     
@@ -1259,22 +1212,6 @@ label forest004:
     
     $ current_loc = "forest004"
     
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = True
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = False
-    
     scene bg forest004
     show screen forest004
     show screen basic_overlay
@@ -1292,7 +1229,7 @@ screen forest004:
     
     if forest004_spawn == 1:
     
-        if herbID1_get and forest004_dandelion_col:
+        if herbID1 in shelf.list_books() and forest004_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -1301,7 +1238,7 @@ screen forest004:
                 xpos 300 ypos 600
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest004_hyssop_col:
+        if herbID2 in shelf.list_books() and forest004_hyssop_col:
             imagebutton:
                 idle "gui/inv/herb011_idle.png"
                 hover "gui/inv/herb011_hover.png"
@@ -1310,7 +1247,7 @@ screen forest004:
                 xpos 1000 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest004_stjohns_col:
+        if herbID3 in shelf.list_books() and forest004_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -1320,7 +1257,7 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest004_oak_col:
+        if herbID1 in shelf.list_books() and forest004_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -1329,7 +1266,7 @@ screen forest004:
                 xpos 350 ypos 475
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest004_plantain_col:
+        if herbID2 in shelf.list_books() and forest004_plantain_col:
             imagebutton:
                 idle "gui/inv/herb015_idle.png"
                 hover "gui/inv/herb015_hover.png"
@@ -1340,7 +1277,7 @@ screen forest004:
                 
     if forest004_spawn == 2:
         
-        if herbID1_get and forest004_mint_col:
+        if herbID1 in shelf.list_books() and forest004_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -1349,7 +1286,7 @@ screen forest004:
                 xpos 300 ypos 600
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest004_plantain_col:
+        if herbID2 in shelf.list_books() and forest004_plantain_col:
             imagebutton:
                 idle "gui/inv/herb015_idle.png"
                 hover "gui/inv/herb015_hover.png"
@@ -1358,7 +1295,7 @@ screen forest004:
                 xpos 1000 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest004_burdock_col:
+        if herbID3 in shelf.list_books() and forest004_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -1368,7 +1305,7 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest004_sage_col:
+        if herbID1 in shelf.list_books() and forest004_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -1377,7 +1314,7 @@ screen forest004:
                 xpos 350 ypos 475
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest004_violet_col:
+        if herbID2 in shelf.list_books() and forest004_violet_col:
             imagebutton:
                 idle "gui/inv/herb018_idle.png"
                 hover "gui/inv/herb018_hover.png"
@@ -1388,7 +1325,7 @@ screen forest004:
                 
     if forest004_spawn == 3:
     
-        if herbID1_get and forest004_parsley_col:
+        if herbID1 in shelf.list_books() and forest004_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -1397,7 +1334,7 @@ screen forest004:
                 xpos 300 ypos 600
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest004_burdock_col:
+        if herbID3 in shelf.list_books() and forest004_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -1406,7 +1343,7 @@ screen forest004:
                 xpos 1000 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest004_chamomile_col:
+        if herbID2 in shelf.list_books() and forest004_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -1415,7 +1352,7 @@ screen forest004:
                 xpos 20 ypos 480
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest004_dandelion_col:
+        if herbID1 in shelf.list_books() and forest004_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -1424,7 +1361,7 @@ screen forest004:
                 xpos 350 ypos 475
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest004_calendula_col:
+        if herbID2 in shelf.list_books() and forest004_calendula_col:
             imagebutton:
                 idle "gui/inv/herb017_idle.png"
                 hover "gui/inv/herb017_hover.png"
@@ -1435,7 +1372,7 @@ screen forest004:
                 
     if forest004_spawn == 4:
     
-        if herb_book3 and forest004_stjohns_col:
+        if herbID3 in shelf.list_books() and forest004_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -1444,7 +1381,7 @@ screen forest004:
                 xpos 300 ypos 600
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest004_blackberry_col:
+        if herbID1 in shelf.list_books() and forest004_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -1453,7 +1390,7 @@ screen forest004:
                 xpos 1000 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest004_rosemary_col:
+        if herbID2 in shelf.list_books() and forest004_rosemary_col:
             imagebutton:
                 idle "gui/inv/herb019_idle.png"
                 hover "gui/inv/herb019_hover.png"
@@ -1463,7 +1400,7 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest004_licorice_col:
+        if herbID3 in shelf.list_books() and forest004_licorice_col:
             imagebutton:
                 idle "gui/inv/herb030_idle.png"
                 hover "gui/inv/herb030_hover.png"
@@ -1472,7 +1409,7 @@ screen forest004:
                 xpos 350 ypos 475
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest004_violet_col:
+        if herbID2 in shelf.list_books() and forest004_violet_col:
             imagebutton:
                 idle "gui/inv/herb018_idle.png"
                 hover "gui/inv/herb018_hover.png"
@@ -1483,7 +1420,7 @@ screen forest004:
     
     if forest004_spawn == 5:
     
-        if herb_book2 and forest004_violet_col:
+        if herbID2 in shelf.list_books() and forest004_violet_col:
             imagebutton:
                 idle "gui/inv/herb018_idle.png"
                 hover "gui/inv/herb018_hover.png"
@@ -1492,7 +1429,7 @@ screen forest004:
                 xpos 300 ypos 600
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest004_oak_col:
+        if herbID1 in shelf.list_books() and forest004_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -1501,7 +1438,7 @@ screen forest004:
                 xpos 1000 ypos 450
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest004_mint_col:
+        if herbID1 in shelf.list_books() and forest004_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -1511,7 +1448,7 @@ screen forest004:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest004_oregano_col:
+        if herbID1 in shelf.list_books() and forest004_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -1520,7 +1457,7 @@ screen forest004:
                 xpos 350 ypos 475
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest004_mullein_col:
+        if herbID3 in shelf.list_books() and forest004_mullein_col:
             imagebutton:
                 idle "gui/inv/herb022_idle.png"
                 hover "gui/inv/herb022_hover.png"
@@ -1531,119 +1468,119 @@ screen forest004:
             
     
 label forest004_dandelion:
-    $ pc_inv.take(herb002)
+    $ player_bag.add_item("herb002", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest004
     
 label forest004_blackberry:
-    $ pc_inv.take(herb003)
+    $ player_bag.add_item("herb003", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest004
     
 label forest004_oak:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Oak",item="Oak")
     
     jump forest004
     
 label forest004_mint:
-    $ pc_inv.take(herb006)
+    $ player_bag.add_item("herb006", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest004
     
 label forest004_oregano:
-    $ pc_inv.take(herb007)
+    $ player_bag.add_item("herb007", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest004
     
 label forest004_parsley:
-    $ pc_inv.take(herb008)
+    $ player_bag.add_item("herb008", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Parsley",item="Parsley")
     
     jump forest004
     
 label forest004_plantain:
-    $ pc_inv.take(herb015)
+    $ player_bag.add_item("herb015", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Plantain",item="Plantain")
     
     jump forest004
 
 label forest004_chamomile:
-    $ pc_inv.take(herb016)
+    $ player_bag.add_item("herb016", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Chamomile",item="Chamomile")
     
     jump forest004
 
 label forest004_violet:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Violet",item="Violet")
     
     jump forest004
     
 label forest004_mullein:
-    $ pc_inv.take(herb022)
+    $ player_bag.add_item("herb022", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Mullein",item="Mullein")
     
     jump forest004
     
 label forest004_stjohns:
-    $ pc_inv.take(herb024)
+    $ player_bag.add_item("herb024", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received St. John's Wort",item="St. John's Wort")
     
     jump forest004
     
 label forest004_burdock:
-    $ pc_inv.take(herb026)
+    $ player_bag.add_item("herb026", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Burdock",item="Burdock")
     
     jump forest004
     
 label forest004_sage:
-    $ pc_inv.take(herb009)
+    $ player_bag.add_item("herb009", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest004
     
 label forest004_hyssop:
-    $ pc_inv.take(herb011)
+    $ player_bag.add_item("herb011", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest004
     
 label forest004_calendula:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Calendula",item="Calendula")
     
     jump forest004
 
 label forest004_rosemary:
-    $ pc_inv.take(herb019)
+    $ player_bag.add_item("herb019", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Rosemary",item="Rosemary")
     
     jump forest004
     
 label forest004_licorice:
-    $ pc_inv.take(herb030)
+    $ player_bag.add_item("herb030", quality=70, custom_tags=["bitter"])
     $ F4Harvest = True
     show screen inventory_popup2(message="Received Licorice",item="Licorice")
     
@@ -1674,22 +1611,6 @@ label forest005:
     
     $ current_loc = "forest005"
     
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = True
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = False
-    
     scene bg forest005
     show screen forest005
     show screen basic_overlay
@@ -1707,7 +1628,7 @@ screen forest005:
     
     if forest005_spawn == 1:
     
-        if herb_book3 and forest005_mullein_col:
+        if herbID3 in shelf.list_books() and forest005_mullein_col:
             imagebutton:
                 idle "gui/inv/herb022_idle.png"
                 hover "gui/inv/herb022_hover.png"
@@ -1716,7 +1637,7 @@ screen forest005:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest005_oak_col:
+        if herbID1 in shelf.list_books() and forest005_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -1725,7 +1646,7 @@ screen forest005:
                 xpos 1120 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest005_stjohns_col:
+        if herbID3 in shelf.list_books() and forest005_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -1735,7 +1656,7 @@ screen forest005:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest005_lemonbalm_col:
+        if herbID3 in shelf.list_books() and forest005_lemonbalm_col:
             imagebutton:
                 idle "gui/inv/herb029_idle.png"
                 hover "gui/inv/herb029_hover.png"
@@ -1744,7 +1665,7 @@ screen forest005:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest005_burdock_col:
+        if herbID3 in shelf.list_books() and forest005_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -1755,7 +1676,7 @@ screen forest005:
                 
     if forest005_spawn == 2:
         
-        if herb_book2 and forest005_violet_col:
+        if herbID2 in shelf.list_books() and forest005_violet_col:
             imagebutton:
                 idle "gui/inv/herb018_idle.png"
                 hover "gui/inv/herb018_hover.png"
@@ -1764,7 +1685,7 @@ screen forest005:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest005_blackberry_col:
+        if herbID1 in shelf.list_books() and forest005_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -1773,7 +1694,7 @@ screen forest005:
                 xpos 1120 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest005_licorice_col:
+        if herbID3 in shelf.list_books() and forest005_licorice_col:
             imagebutton:
                 idle "gui/inv/herb030_idle.png"
                 hover "gui/inv/herb030_hover.png"
@@ -1783,7 +1704,7 @@ screen forest005:
                 xanchor 0 yanchor 0
             
             
-        if herb_book2 and forest005_plantain_col:
+        if herbID2 in shelf.list_books() and forest005_plantain_col:
             imagebutton:
                 idle "gui/inv/herb015_idle.png"
                 hover "gui/inv/herb015_hover.png"
@@ -1792,7 +1713,7 @@ screen forest005:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest005_mint_col:
+        if herbID1 in shelf.list_books() and forest005_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -1803,7 +1724,7 @@ screen forest005:
                 
     if forest005_spawn == 3:
     
-        if herbID1_get and forest005_laurel_col:
+        if herbID1 in shelf.list_books() and forest005_laurel_col:
             imagebutton:
                 idle "gui/inv/herb010_idle.png"
                 hover "gui/inv/herb010_hover.png"
@@ -1812,7 +1733,7 @@ screen forest005:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest005_thistle_col:
+        if herbID1 in shelf.list_books() and forest005_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -1821,7 +1742,7 @@ screen forest005:
                 xpos 1120 ypos 550
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest005_dandelion_col:
+        if herbID1 in shelf.list_books() and forest005_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -1830,7 +1751,7 @@ screen forest005:
                 xpos 150 ypos 370
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest005_stjohns_col:
+        if herbID3 in shelf.list_books() and forest005_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -1839,7 +1760,7 @@ screen forest005:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest005_plantain_col:
+        if herbID2 in shelf.list_books() and forest005_plantain_col:
             imagebutton:
                 idle "gui/inv/herb015_idle.png"
                 hover "gui/inv/herb015_hover.png"
@@ -1850,7 +1771,7 @@ screen forest005:
                 
     if forest005_spawn == 4:
     
-        if herbID1_get and forest005_thistle_col:
+        if herbID1 in shelf.list_books() and forest005_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -1859,7 +1780,7 @@ screen forest005:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest005_rosemary_col:
+        if herbID2 in shelf.list_books() and forest005_rosemary_col:
             imagebutton:
                 idle "gui/inv/herb019_idle.png"
                 hover "gui/inv/herb019_hover.png"
@@ -1868,7 +1789,7 @@ screen forest005:
                 xpos 1120 ypos 550
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest005_oak_col:
+        if herbID1 in shelf.list_books() and forest005_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -1878,7 +1799,7 @@ screen forest005:
                 xanchor 0 yanchor 0
             
             
-        if herb_book2 and forest005_violet_col:
+        if herbID2 in shelf.list_books() and forest005_violet_col:
             imagebutton:
                 idle "gui/inv/herb018_idle.png"
                 hover "gui/inv/herb018_hover.png"
@@ -1887,7 +1808,7 @@ screen forest005:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest005_chamomile_col:
+        if herbID2 in shelf.list_books() and forest005_chamomile_col:
             imagebutton:
                 idle "gui/inv/herb016_idle.png"
                 hover "gui/inv/herb016_hover.png"
@@ -1898,7 +1819,7 @@ screen forest005:
     
     if forest005_spawn == 5:
     
-        if herb_book2 and forest005_crownflower_col:
+        if herbID2 in shelf.list_books() and forest005_crownflower_col:
             imagebutton:
                 idle "gui/inv/herb013_idle.png"
                 hover "gui/inv/herb013_hover.png"
@@ -1907,7 +1828,7 @@ screen forest005:
                 xpos 300 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest005_burdock_col:
+        if herbID3 in shelf.list_books() and forest005_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -1916,7 +1837,7 @@ screen forest005:
                 xpos 1120 ypos 550
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest005_garlic_col:
+        if herbID1 in shelf.list_books() and forest005_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -1926,7 +1847,7 @@ screen forest005:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest005_stjohns_col:
+        if herbID3 in shelf.list_books() and forest005_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -1935,7 +1856,7 @@ screen forest005:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest005_mint_col:
+        if herbID1 in shelf.list_books() and forest005_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -1946,126 +1867,126 @@ screen forest005:
             
     
 label forest005_thistle:
-    $ pc_inv.take(herb001)
+    $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest005
 
 label forest005_dandelion:
-    $ pc_inv.take(herb002)
+    $ player_bag.add_item("herb002", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest005
     
 label forest005_blackberry:
-    $ pc_inv.take(herb003)
+    $ player_bag.add_item("herb003", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest005
     
 label forest005_oak:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Oak",item="Oak")
     
     jump forest005
     
 label forest005_garlic:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest005
     
 label forest005_mint:
-    $ pc_inv.take(herb006)
+    $ player_bag.add_item("herb006", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest005
     
 label forest005_plantain:
-    $ pc_inv.take(herb015)
+    $ player_bag.add_item("herb015", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Plantain",item="Plantain")
     
     jump forest005
 
 label forest005_chamomile:
-    $ pc_inv.take(herb016)
+    $ player_bag.add_item("herb016", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Chamomile",item="Chamomile")
     
     jump forest005
 
 label forest005_violet:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Violet",item="Violet")
     
     jump forest005
     
 label forest005_mullein:
-    $ pc_inv.take(herb022)
+    $ player_bag.add_item("herb022", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Mullein",item="Mullein")
     
     jump forest005
     
 label forest005_stjohns:
-    $ pc_inv.take(herb024)
+    $ player_bag.add_item("herb024", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received St. John's Wort",item="St. John's Wort")
     
     jump forest005
     
 label forest005_burdock:
-    $ pc_inv.take(herb026)
+    $ player_bag.add_item("herb026", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Burdock",item="Burdock")
     
     jump forest005
     
 label forest005_laurel:
-    $ pc_inv.take(herb010)
+    $ player_bag.add_item("herb010", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Laurel",item="Laurel")
     
     jump forest005
     
 label forest005_calendula:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Calendula",item="Calendula")
     
     jump forest005
     
 label forest005_rosemary:
-    $ pc_inv.take(herb019)
+    $ player_bag.add_item("herb019", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Rosemary",item="Rosemary")
     
     jump forest005
     
 label forest005_lemonbalm:
-    $ pc_inv.take(herb029)
+    $ player_bag.add_item("herb029", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Lemon Balm",item="Lemon Balm")
     
     jump forest005
 
 label forest005_licorice:
-    $ pc_inv.take(herb030)
+    $ player_bag.add_item("herb030", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Licorice",item="Licorice")
     
     jump forest005
 
 label forest005_crownflower:
-    $ pc_inv.take(herb013)
+    $ player_bag.add_item("herb013", quality=70, custom_tags=["bitter"])
     $ F5Harvest = True
     show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
@@ -2096,22 +2017,6 @@ label forest006:
     
     $ current_loc = "forest006"
     
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = True
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = False
-    
     scene bg forest006
     show screen forest006
     show screen basic_overlay
@@ -2129,7 +2034,7 @@ screen forest006:
     
     if forest006_spawn == 1:
     
-        if herbID1_get and forest006_dandelion_col:
+        if herbID1 in shelf.list_books() and forest006_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2138,7 +2043,7 @@ screen forest006:
                 xpos 400 ypos 500
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest006_mint_col:
+        if herbID1 in shelf.list_books() and forest006_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -2147,7 +2052,7 @@ screen forest006:
                 xpos 1120 ypos 600
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest006_burdock_col:
+        if herbID3 in shelf.list_books() and forest006_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -2157,7 +2062,7 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest006_poppy_col:
+        if herbID3 in shelf.list_books() and forest006_poppy_col:
             imagebutton:
                 idle "gui/inv/herb021_idle.png"
                 hover "gui/inv/herb021_hover.png"
@@ -2166,7 +2071,7 @@ screen forest006:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest006_parsley_col:
+        if herbID1 in shelf.list_books() and forest006_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -2177,7 +2082,7 @@ screen forest006:
                 
     if forest006_spawn == 2:
         
-        if herb_book3 and forest006_goldenseal_col:
+        if herbID3 in shelf.list_books() and forest006_goldenseal_col:
             imagebutton:
                 idle "gui/inv/herb028_idle.png"
                 hover "gui/inv/herb028_hover.png"
@@ -2186,7 +2091,7 @@ screen forest006:
                 xpos 400 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest006_comfrey_col:
+        if herbID3 in shelf.list_books() and forest006_comfrey_col:
             imagebutton:
                 idle "gui/inv/herb027_idle.png"
                 hover "gui/inv/herb027_hover.png"
@@ -2195,7 +2100,7 @@ screen forest006:
                 xpos 1120 ypos 600
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest006_oak_col:
+        if herbID1 in shelf.list_books() and forest006_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -2205,7 +2110,7 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest006_mint_col:
+        if herbID1 in shelf.list_books() and forest006_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -2214,7 +2119,7 @@ screen forest006:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest006_dandelion_col:
+        if herbID1 in shelf.list_books() and forest006_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2225,7 +2130,7 @@ screen forest006:
                 
     if forest006_spawn == 3:
     
-        if herb_book2 and forest006_crownflower_col:
+        if herbID2 in shelf.list_books() and forest006_crownflower_col:
             imagebutton:
                 idle "gui/inv/herb013_idle.png"
                 hover "gui/inv/herb013_hover.png"
@@ -2234,7 +2139,7 @@ screen forest006:
                 xpos 400 ypos 500
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest006_oregano_col:
+        if herbID1 in shelf.list_books() and forest006_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -2243,7 +2148,7 @@ screen forest006:
                 xpos 1120 ypos 600
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest006_garlic_col:
+        if herbID1 in shelf.list_books() and forest006_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -2252,7 +2157,7 @@ screen forest006:
                 xpos 100 ypos 430
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest006_redclover_col:
+        if herbID3 in shelf.list_books() and forest006_redclover_col:
             imagebutton:
                 idle "gui/inv/herb023_idle.png"
                 hover "gui/inv/herb023_hover.png"
@@ -2261,7 +2166,7 @@ screen forest006:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest006_burdock_col:
+        if herbID3 in shelf.list_books() and forest006_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -2272,7 +2177,7 @@ screen forest006:
                 
     if forest006_spawn == 4:
     
-        if herb_book3 and forest006_redclover_col:
+        if herbID3 in shelf.list_books() and forest006_redclover_col:
             imagebutton:
                 idle "gui/inv/herb023_idle.png"
                 hover "gui/inv/herb023_hover.png"
@@ -2281,7 +2186,7 @@ screen forest006:
                 xpos 400 ypos 500
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest006_thistle_col:
+        if herbID1 in shelf.list_books() and forest006_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -2290,7 +2195,7 @@ screen forest006:
                 xpos 1120 ypos 600
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest006_dandelion_col:
+        if herbID1 in shelf.list_books() and forest006_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2300,7 +2205,7 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest006_burdock_col:
+        if herbID3 in shelf.list_books() and forest006_burdock_col:
             imagebutton:
                 idle "gui/inv/herb026_idle.png"
                 hover "gui/inv/herb026_hover.png"
@@ -2309,7 +2214,7 @@ screen forest006:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest006_garlic_col:
+        if herbID1 in shelf.list_books() and forest006_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -2320,7 +2225,7 @@ screen forest006:
     
     if forest006_spawn == 5:
     
-        if herb_book3 and forest006_goldenseal_col:
+        if herbID3 in shelf.list_books() and forest006_goldenseal_col:
             imagebutton:
                 idle "gui/inv/herb028_idle.png"
                 hover "gui/inv/herb028_hover.png"
@@ -2329,7 +2234,7 @@ screen forest006:
                 xpos 400 ypos 500
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest006_calendula_col:
+        if herbID2 in shelf.list_books() and forest006_calendula_col:
             imagebutton:
                 idle "gui/inv/herb017_idle.png"
                 hover "gui/inv/herb017_hover.png"
@@ -2338,7 +2243,7 @@ screen forest006:
                 xpos 1120 ypos 600
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest006_rosemary_col:
+        if herbID2 in shelf.list_books() and forest006_rosemary_col:
             imagebutton:
                 idle "gui/inv/herb019_idle.png"
                 hover "gui/inv/herb019_hover.png"
@@ -2348,7 +2253,7 @@ screen forest006:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest006_parsley_col:
+        if herbID1 in shelf.list_books() and forest006_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -2357,7 +2262,7 @@ screen forest006:
                 xpos 600 ypos 440
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest006_oregano_col:
+        if herbID1 in shelf.list_books() and forest006_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -2368,105 +2273,105 @@ screen forest006:
             
     
 label forest006_thistle:
-    $ pc_inv.take(herb001)
+    $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest006
 
 label forest006_dandelion:
-    $ pc_inv.take(herb002)
+    $ player_bag.add_item("herb002", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest006
     
 label forest006_oak:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Oak",item="Oak")
     
     jump forest006
     
 label forest006_garlic:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest006
     
 label forest006_mint:
-    $ pc_inv.take(herb006)
+    $ player_bag.add_item("herb006", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest006
     
 label forest006_oregano:
-    $ pc_inv.take(herb007)
+    $ player_bag.add_item("herb007", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest006
     
 label forest006_parsley:
-    $ pc_inv.take(herb008)
+    $ player_bag.add_item("herb008", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Parsley",item="Parsley")
     
     jump forest006
     
 label forest006_redclover:
-    $ pc_inv.take(herb023)
+    $ player_bag.add_item("herb023", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Red Clover",item="Red Clover")
     
     jump forest006
     
 label forest006_burdock:
-    $ pc_inv.take(herb026)
+    $ player_bag.add_item("herb026", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Burdock",item="Burdock")
     
     jump forest006
     
 label forest006_calendula:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Calendula",item="Calendula")
     
     jump forest006
 
 label forest006_rosemary:
-    $ pc_inv.take(herb019)
+    $ player_bag.add_item("herb019", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Rosemary",item="Rosemary")
     
     jump forest006
 
 label forest006_comfrey:
-    $ pc_inv.take(herb027)
+    $ player_bag.add_item("herb027", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Comfrey",item="Comfrey")
     
     jump forest006
     
 label forest006_crownflower:
-    $ pc_inv.take(herb013)
+    $ player_bag.add_item("herb013", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Crown Flower",item="Crown Flower")
     
     jump forest006
     
 label forest006_poppy:
-    $ pc_inv.take(herb021)
+    $ player_bag.add_item("herb021", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Poppy",item="Poppy")
     
     jump forest006
 
 label forest006_goldenseal:
-    $ pc_inv.take(herb028)
+    $ player_bag.add_item("herb028", quality=70, custom_tags=["bitter"])
     $ F6Harvest = True
     show screen inventory_popup2(message="Received Goldenseal",item="Goldenseal")
     
@@ -2497,22 +2402,6 @@ label forest007:
     
     $ current_loc = "forest007"
     
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = True
-#    $ in_forest008 = False
-#    $ in_forest009 = False
-    
     scene bg forest007
     show screen forest007
     show screen basic_overlay
@@ -2530,7 +2419,7 @@ screen forest007:
     
     if forest007_spawn == 1:
     
-        if herbID1_get and forest007_oregano_col:
+        if herbID1 in shelf.list_books() and forest007_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -2539,7 +2428,7 @@ screen forest007:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest007_comfrey_col:
+        if herbID3 in shelf.list_books() and forest007_comfrey_col:
             imagebutton:
                 idle "gui/inv/herb027_idle.png"
                 hover "gui/inv/herb027_hover.png"
@@ -2548,7 +2437,7 @@ screen forest007:
                 xpos 1180 ypos 420
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest007_yellowdock_col:
+        if herbID3 in shelf.list_books() and forest007_yellowdock_col:
             imagebutton:
                 idle "gui/inv/herb025_idle.png"
                 hover "gui/inv/herb025_hover.png"
@@ -2558,7 +2447,7 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest007_mint_col:
+        if herbID1 in shelf.list_books() and forest007_mint_col:
             imagebutton:
                 idle "gui/inv/herb006_idle.png"
                 hover "gui/inv/herb006_hover.png"
@@ -2567,7 +2456,7 @@ screen forest007:
                 xpos 500 ypos 390
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest007_marshmarigold_col:
+        if herbID2 in shelf.list_books() and forest007_marshmarigold_col:
             imagebutton:
                 idle "gui/inv/herb014_idle.png"
                 hover "gui/inv/herb014_hover.png"
@@ -2578,7 +2467,7 @@ screen forest007:
                 
     if forest007_spawn == 2:
         
-        if herbID1_get and forest007_parsley_col:
+        if herbID1 in shelf.list_books() and forest007_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -2587,7 +2476,7 @@ screen forest007:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest007_basil_col:
+        if herbID2 in shelf.list_books() and forest007_basil_col:
             imagebutton:
                 idle "gui/inv/herb020_idle.png"
                 hover "gui/inv/herb020_hover.png"
@@ -2596,7 +2485,7 @@ screen forest007:
                 xpos 1180 ypos 420
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest007_comfrey_col:
+        if herbID3 in shelf.list_books() and forest007_comfrey_col:
             imagebutton:
                 idle "gui/inv/herb027_idle.png"
                 hover "gui/inv/herb027_hover.png"
@@ -2606,7 +2495,7 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest007_thistle_col:
+        if herbID1 in shelf.list_books() and forest007_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -2615,7 +2504,7 @@ screen forest007:
                 xpos 500 ypos 390
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest007_lemonbalm_col:
+        if herbID3 in shelf.list_books() and forest007_lemonbalm_col:
             imagebutton:
                 idle "gui/inv/herb029_idle.png"
                 hover "gui/inv/herb029_hover.png"
@@ -2626,7 +2515,7 @@ screen forest007:
                 
     if forest007_spawn == 3:
     
-        if herb_book3 and forest007_stjohns_col:
+        if herbID3 in shelf.list_books() and forest007_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -2635,7 +2524,7 @@ screen forest007:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest007_marshmarigold_col:
+        if herbID2 in shelf.list_books() and forest007_marshmarigold_col:
             imagebutton:
                 idle "gui/inv/herb014_idle.png"
                 hover "gui/inv/herb014_hover.png"
@@ -2644,7 +2533,7 @@ screen forest007:
                 xpos 1180 ypos 420
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest007_basil_col:
+        if herbID2 in shelf.list_books() and forest007_basil_col:
             imagebutton:
                 idle "gui/inv/herb020_idle.png"
                 hover "gui/inv/herb020_hover.png"
@@ -2653,7 +2542,7 @@ screen forest007:
                 xpos 140 ypos 385
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest007_dandelion_col:
+        if herbID1 in shelf.list_books() and forest007_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2662,7 +2551,7 @@ screen forest007:
                 xpos 500 ypos 390
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest007_thistle_col:
+        if herbID1 in shelf.list_books() and forest007_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -2673,7 +2562,7 @@ screen forest007:
                 
     if forest007_spawn == 4:
     
-        if herb_book2 and forest007_marshmarigold_col:
+        if herbID2 in shelf.list_books() and forest007_marshmarigold_col:
             imagebutton:
                 idle "gui/inv/herb014_idle.png"
                 hover "gui/inv/herb014_hover.png"
@@ -2682,7 +2571,7 @@ screen forest007:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest007_basil_col:
+        if herbID2 in shelf.list_books() and forest007_basil_col:
             imagebutton:
                 idle "gui/inv/herb020_idle.png"
                 hover "gui/inv/herb020_hover.png"
@@ -2691,7 +2580,7 @@ screen forest007:
                 xpos 1180 ypos 420
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest007_basil_col:
+        if herbID2 in shelf.list_books() and forest007_basil_col:
             imagebutton:
                 idle "gui/inv/herb020_idle.png"
                 hover "gui/inv/herb020_hover.png"
@@ -2701,7 +2590,7 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if herb_book2 and forest007_violet_col:
+        if herbID2 in shelf.list_books() and forest007_violet_col:
             imagebutton:
                 idle "gui/inv/herb018_idle.png"
                 hover "gui/inv/herb018_hover.png"
@@ -2710,7 +2599,7 @@ screen forest007:
                 xpos 500 ypos 390
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest007_blackberry_col:
+        if herbID1 in shelf.list_books() and forest007_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -2721,7 +2610,7 @@ screen forest007:
     
     if forest007_spawn == 5:
     
-        if herbID1_get and forest007_blackberry_col:
+        if herbID1 in shelf.list_books() and forest007_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -2730,7 +2619,7 @@ screen forest007:
                 xpos 300 ypos 560
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest007_stjohns_col:
+        if herbID3 in shelf.list_books() and forest007_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -2739,7 +2628,7 @@ screen forest007:
                 xpos 1180 ypos 420
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest007_violet_col:
+        if herbID2 in shelf.list_books() and forest007_violet_col:
             imagebutton:
                 idle "gui/inv/herb018_idle.png"
                 hover "gui/inv/herb018_hover.png"
@@ -2749,7 +2638,7 @@ screen forest007:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest007_goldenseal_col:
+        if herbID3 in shelf.list_books() and forest007_goldenseal_col:
             imagebutton:
                 idle "gui/inv/herb028_idle.png"
                 hover "gui/inv/herb028_hover.png"
@@ -2758,7 +2647,7 @@ screen forest007:
                 xpos 500 ypos 390
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest007_dandelion_col:
+        if herbID1 in shelf.list_books() and forest007_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -2769,98 +2658,98 @@ screen forest007:
             
     
 label forest007_thistle:
-    $ pc_inv.take(herb001)
+    $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest007
 
 label forest007_dandelion:
-    $ pc_inv.take(herb002)
+    $ player_bag.add_item("herb002", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest007
     
 label forest007_blackberry:
-    $ pc_inv.take(herb003)
+    $ player_bag.add_item("herb003", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest007
     
 label forest007_mint:
-    $ pc_inv.take(herb006)
+    $ player_bag.add_item("herb006", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Mint",item="Mint")
     
     jump forest007
     
 label forest007_oregano:
-    $ pc_inv.take(herb007)
+    $ player_bag.add_item("herb007", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest007
     
 label forest007_parsley:
-    $ pc_inv.take(herb008)
+    $ player_bag.add_item("herb008", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Parsley",item="Parsley")
     
     jump forest007
     
 label forest007_violet:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Violet",item="Violet")
     
     jump forest007
 
 label forest007_basil:
-    $ pc_inv.take(herb020)
+    $ player_bag.add_item("herb020", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Basil",item="Basil")
     
     jump forest007
     
 label forest007_stjohns:
-    $ pc_inv.take(herb024)
+    $ player_bag.add_item("herb024", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received St. John's Wort",item="St. John's Wort")
     
     jump forest007
 
 label forest007_yellowdock:
-    $ pc_inv.take(herb025)
+    $ player_bag.add_item("herb025", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Yellow Dock",item="Yellow Dock")
     
     jump forest007
     
 label forest007_comfrey:
-    $ pc_inv.take(herb027)
+    $ player_bag.add_item("herb027", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Comfrey",item="Comfrey")
     
     jump forest007
 
 label forest007_lemonbalm:
-    $ pc_inv.take(herb029)
+    $ player_bag.add_item("herb029", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Lemon Balm",item="Lemon Balm")
     
     jump forest007
     
 label forest007_marshmarigold:
-    $ pc_inv.take(herb014)
+    $ player_bag.add_item("herb014", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Marsh Marigold",item="Marsh Marigold")
     
     jump forest007
     
 label forest007_goldenseal:
-    $ pc_inv.take(herb028)
+    $ player_bag.add_item("herb028", quality=70, custom_tags=["bitter"])
     $ F7Harvest = True
     show screen inventory_popup2(message="Received Goldenseal",item="Goldenseal")
     
@@ -2891,22 +2780,6 @@ label forest008:
     
     $ current_loc = "forest008"
     
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = True
-#    $ in_forest009 = False
-    
     scene bg forest008
     show screen forest008
     show screen basic_overlay
@@ -2924,7 +2797,7 @@ screen forest008:
     
     if forest008_spawn == 1:
     
-        if herb_book2 and forest008_borage_col:
+        if herbID2 in shelf.list_books() and forest008_borage_col:
             imagebutton:
                 idle "gui/inv/herb012_idle.png"
                 hover "gui/inv/herb012_hover.png"
@@ -2933,7 +2806,7 @@ screen forest008:
                 xpos 300 ypos 400
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest008_lemonbalm_col:
+        if herbID3 in shelf.list_books() and forest008_lemonbalm_col:
             imagebutton:
                 idle "gui/inv/herb029_idle.png"
                 hover "gui/inv/herb029_hover.png"
@@ -2942,7 +2815,7 @@ screen forest008:
                 xpos 1080 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest008_yellowdock_col:
+        if herbID3 in shelf.list_books() and forest008_yellowdock_col:
             imagebutton:
                 idle "gui/inv/herb025_idle.png"
                 hover "gui/inv/herb025_hover.png"
@@ -2952,7 +2825,7 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest008_oak_col:
+        if herbID1 in shelf.list_books() and forest008_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -2961,7 +2834,7 @@ screen forest008:
                 xpos 620 ypos 360
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest008_parsley_col:
+        if herbID1 in shelf.list_books() and forest008_parsley_col:
             imagebutton:
                 idle "gui/inv/herb008_idle.png"
                 hover "gui/inv/herb008_hover.png"
@@ -2972,7 +2845,7 @@ screen forest008:
                 
     if forest008_spawn == 2:
         
-        if herb_book3 and forest008_yellowdock_col:
+        if herbID3 in shelf.list_books() and forest008_yellowdock_col:
             imagebutton:
                 idle "gui/inv/herb025_idle.png"
                 hover "gui/inv/herb025_hover.png"
@@ -2981,7 +2854,7 @@ screen forest008:
                 xpos 300 ypos 400
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest008_blackberry_col:
+        if herbID1 in shelf.list_books() and forest008_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -2990,7 +2863,7 @@ screen forest008:
                 xpos 1080 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest008_stjohns_col:
+        if herbID3 in shelf.list_books() and forest008_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -3000,7 +2873,7 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if herb_book2 and forest008_marshmarigold_col:
+        if herbID2 in shelf.list_books() and forest008_marshmarigold_col:
             imagebutton:
                 idle "gui/inv/herb014_idle.png"
                 hover "gui/inv/herb014_hover.png"
@@ -3009,7 +2882,7 @@ screen forest008:
                 xpos 620 ypos 360
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest008_basil_col:
+        if herbID2 in shelf.list_books() and forest008_basil_col:
             imagebutton:
                 idle "gui/inv/herb020_idle.png"
                 hover "gui/inv/herb020_hover.png"
@@ -3020,7 +2893,7 @@ screen forest008:
                 
     if forest008_spawn == 3:
     
-        if herb_book3 and forest008_lemonbalm_col:
+        if herbID3 in shelf.list_books() and forest008_lemonbalm_col:
             imagebutton:
                 idle "gui/inv/herb029_idle.png"
                 hover "gui/inv/herb029_hover.png"
@@ -3029,7 +2902,7 @@ screen forest008:
                 xpos 300 ypos 400
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest008_basil_col:
+        if herbID2 in shelf.list_books() and forest008_basil_col:
             imagebutton:
                 idle "gui/inv/herb020_idle.png"
                 hover "gui/inv/herb020_hover.png"
@@ -3038,7 +2911,7 @@ screen forest008:
                 xpos 1080 ypos 450
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest008_oak_col:
+        if herbID1 in shelf.list_books() and forest008_oak_col:
             imagebutton:
                 idle "gui/inv/herb004_idle.png"
                 hover "gui/inv/herb004_hover.png"
@@ -3047,7 +2920,7 @@ screen forest008:
                 xpos 20 ypos 330
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest008_borage_col:
+        if herbID2 in shelf.list_books() and forest008_borage_col:
             imagebutton:
                 idle "gui/inv/herb012_idle.png"
                 hover "gui/inv/herb012_hover.png"
@@ -3056,7 +2929,7 @@ screen forest008:
                 xpos 620 ypos 360
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest008_blackberry_col:
+        if herbID1 in shelf.list_books() and forest008_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3067,7 +2940,7 @@ screen forest008:
                 
     if forest008_spawn == 4:
     
-        if herbID1_get and forest008_dandelion_col:
+        if herbID1 in shelf.list_books() and forest008_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -3076,7 +2949,7 @@ screen forest008:
                 xpos 300 ypos 400
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest008_oregano_col:
+        if herbID1 in shelf.list_books() and forest008_oregano_col:
             imagebutton:
                 idle "gui/inv/herb007_idle.png"
                 hover "gui/inv/herb007_hover.png"
@@ -3085,7 +2958,7 @@ screen forest008:
                 xpos 1080 ypos 450
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest008_thistle_col:
+        if herbID1 in shelf.list_books() and forest008_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -3095,7 +2968,7 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest008_yellowdock_col:
+        if herbID3 in shelf.list_books() and forest008_yellowdock_col:
             imagebutton:
                 idle "gui/inv/herb025_idle.png"
                 hover "gui/inv/herb025_hover.png"
@@ -3104,7 +2977,7 @@ screen forest008:
                 xpos 620 ypos 360
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest008_stjohns_col:
+        if herbID3 in shelf.list_books() and forest008_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -3115,7 +2988,7 @@ screen forest008:
     
     if forest008_spawn == 5:
     
-        if herb_book2 and forest008_plantain_col:
+        if herbID2 in shelf.list_books() and forest008_plantain_col:
             imagebutton:
                 idle "gui/inv/herb015_idle.png"
                 hover "gui/inv/herb015_hover.png"
@@ -3124,7 +2997,7 @@ screen forest008:
                 xpos 300 ypos 400
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest008_blackberry_col:
+        if herbID1 in shelf.list_books() and forest008_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3133,7 +3006,7 @@ screen forest008:
                 xpos 1080 ypos 450
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest008_plantain2_col:
+        if herbID2 in shelf.list_books() and forest008_plantain2_col:
             imagebutton:
                 idle "gui/inv/herb015_idle.png"
                 hover "gui/inv/herb015_hover.png"
@@ -3143,7 +3016,7 @@ screen forest008:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest008_thistle_col:
+        if herbID1 in shelf.list_books() and forest008_thistle_col:
             imagebutton:
                 idle "gui/inv/herb001_idle.png"
                 hover "gui/inv/herb001_hover.png"
@@ -3152,7 +3025,7 @@ screen forest008:
                 xpos 620 ypos 360
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest008_garlic_col:
+        if herbID1 in shelf.list_books() and forest008_garlic_col:
             imagebutton:
                 idle "gui/inv/herb005_idle.png"
                 hover "gui/inv/herb005_hover.png"
@@ -3163,112 +3036,112 @@ screen forest008:
             
     
 label forest008_thistle:
-    $ pc_inv.take(herb001)
+    $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest008
 
 label forest008_dandelion:
-    $ pc_inv.take(herb002)
+    $ player_bag.add_item("herb002", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest008
     
 label forest008_blackberry:
-    $ pc_inv.take(herb003)
+    $ player_bag.add_item("herb003", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest008
     
 label forest008_oak:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Oak",item="Oak")
     
     jump forest008
     
 label forest008_garlic:
-    $ pc_inv.take(herb005)
+    $ player_bag.add_item("herb005", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Garlic",item="Garlic")
     
     jump forest008
     
 label forest008_oregano:
-    $ pc_inv.take(herb007)
+    $ player_bag.add_item("herb007", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Oregano",item="Oregano")
     
     jump forest008
     
 label forest008_parsley:
-    $ pc_inv.take(herb008)
+    $ player_bag.add_item("herb008", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Parsley",item="Parsley")
     
     jump forest008
     
 label forest008_plantain:
-    $ pc_inv.take(herb015)
+    $ player_bag.add_item("herb015", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Plantain",item="Plantain")
     
     jump forest008
     
 label forest008_plantain2:
-    $ pc_inv.take(herb015)
+    $ player_bag.add_item("herb015", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Plantain",item="Plantain")
     
     jump forest008
     
 label forest008_violet:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Violet",item="Violet")
     
     jump forest008
 
 label forest008_basil:
-    $ pc_inv.take(herb020)
+    $ player_bag.add_item("herb020", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Basil",item="Basil")
     
     jump forest008
     
 label forest008_stjohns:
-    $ pc_inv.take(herb024)
+    $ player_bag.add_item("herb024", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received St. John's Wort",item="St. John's Wort")
     
     jump forest008
 
 label forest008_yellowdock:
-    $ pc_inv.take(herb025)
+    $ player_bag.add_item("herb025", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Yellow Dock",item="Yellow Dock")
     
     jump forest008
     
 label forest008_borage:
-    $ pc_inv.take(herb012)
+    $ player_bag.add_item("herb012", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Borage",item="Borage")
     
     jump forest008
     
 label forest008_lemonbalm:
-    $ pc_inv.take(herb029)
+    $ player_bag.add_item("herb029", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Lemon Balm",item="Lemon Balm")
     
     jump forest008
     
 label forest008_marshmarigold:
-    $ pc_inv.take(herb014)
+    $ player_bag.add_item("herb014", quality=70, custom_tags=["bitter"])
     $ F8Harvest = True
     show screen inventory_popup2(message="Received Marsh Marigold",item="Marsh Marigold")
     
@@ -3298,23 +3171,7 @@ label forest009:
         message = "message"
     
     $ current_loc = "forest009"
-    
-#    $ in_overworld01 = False
-#    $ in_overworld02 = False
-#    $ in_apothecary = False
-#    $ in_kitchen = False
-#    $ in_cellar = False
-#    $ in_itemshop = False
-#    $ in_forest001 = False
-#    $ in_forest002 = False
-#    $ in_forest003 = False
-#    $ in_forest004 = False
-#    $ in_forest005 = False
-#    $ in_forest006 = False
-#    $ in_forest007 = False
-#    $ in_forest008 = False
-#    $ in_forest009 = True
-    
+
     scene bg forest009
     show screen forest009
     show screen basic_overlay
@@ -3332,7 +3189,7 @@ screen forest009:
     
     if forest009_spawn == 1:
     
-        if herbID1_get and forest009_blackberry_col:
+        if herbID1 in shelf.list_books() and forest009_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3341,7 +3198,7 @@ screen forest009:
                 xpos 300 ypos 380
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest009_dandelion_col:
+        if herbID1 in shelf.list_books() and forest009_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -3350,7 +3207,7 @@ screen forest009:
                 xpos 1080 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest009_marshmarigold_col:
+        if herbID2 in shelf.list_books() and forest009_marshmarigold_col:
             imagebutton:
                 idle "gui/inv/herb014_idle.png"
                 hover "gui/inv/herb014_hover.png"
@@ -3360,7 +3217,7 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest009_sage_col:
+        if herbID1 in shelf.list_books() and forest009_sage_col:
             imagebutton:
                 idle "gui/inv/herb009_idle.png"
                 hover "gui/inv/herb009_hover.png"
@@ -3369,7 +3226,7 @@ screen forest009:
                 xpos 600 ypos 240
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest009_basil_col:
+        if herbID2 in shelf.list_books() and forest009_basil_col:
             imagebutton:
                 idle "gui/inv/herb020_idle.png"
                 hover "gui/inv/herb020_hover.png"
@@ -3380,7 +3237,7 @@ screen forest009:
                 
     if forest009_spawn == 2:
         
-        if herb_book3 and forest009_yellowdock_col:
+        if herbID3 in shelf.list_books() and forest009_yellowdock_col:
             imagebutton:
                 idle "gui/inv/herb025_idle.png"
                 hover "gui/inv/herb025_hover.png"
@@ -3389,7 +3246,7 @@ screen forest009:
                 xpos 300 ypos 380
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest009_blackberry_col:
+        if herbID1 in shelf.list_books() and forest009_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3398,7 +3255,7 @@ screen forest009:
                 xpos 1080 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book2 and forest009_violet_col:
+        if herbID2 in shelf.list_books() and forest009_violet_col:
             imagebutton:
                 idle "gui/inv/herb018_idle.png"
                 hover "gui/inv/herb018_hover.png"
@@ -3408,7 +3265,7 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if herb_book3 and forest009_stjohns_col:
+        if herbID3 in shelf.list_books() and forest009_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -3417,7 +3274,7 @@ screen forest009:
                 xpos 600 ypos 240
                 xanchor 0 yanchor 0
             
-        if herbID1_get and forest009_laurel_col:
+        if herbID1 in shelf.list_books() and forest009_laurel_col:
             imagebutton:
                 idle "gui/inv/herb010_idle.png"
                 hover "gui/inv/herb010_hover.png"
@@ -3428,7 +3285,7 @@ screen forest009:
                 
     if forest009_spawn == 3:
     
-        if herb_book3 and forest009_stjohns_col:
+        if herbID3 in shelf.list_books() and forest009_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -3437,7 +3294,7 @@ screen forest009:
                 xpos 300 ypos 380
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest009_goldenseal_col:
+        if herbID3 in shelf.list_books() and forest009_goldenseal_col:
             imagebutton:
                 idle "gui/inv/herb028_idle.png"
                 hover "gui/inv/herb028_hover.png"
@@ -3446,7 +3303,7 @@ screen forest009:
                 xpos 1080 ypos 550
                 xanchor 0 yanchor 0
     
-        if herbID1_get and forest009_blackberry_col:
+        if herbID1 in shelf.list_books() and forest009_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3455,7 +3312,7 @@ screen forest009:
                 xpos 190 ypos 210
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest009_violet_col:
+        if herbID2 in shelf.list_books() and forest009_violet_col:
             imagebutton:
                 idle "gui/inv/herb018_idle.png"
                 hover "gui/inv/herb018_hover.png"
@@ -3464,7 +3321,7 @@ screen forest009:
                 xpos 600 ypos 240
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest009_hyssop_col:
+        if herbID2 in shelf.list_books() and forest009_hyssop_col:
             imagebutton:
                 idle "gui/inv/herb011_idle.png"
                 hover "gui/inv/herb011_hover.png"
@@ -3475,7 +3332,7 @@ screen forest009:
                 
     if forest009_spawn == 4:
     
-        if herb_book2 and forest009_marshmarigold_col:
+        if herbID2 in shelf.list_books() and forest009_marshmarigold_col:
             imagebutton:
                 idle "gui/inv/herb014_idle.png"
                 hover "gui/inv/herb014_hover.png"
@@ -3484,7 +3341,7 @@ screen forest009:
                 xpos 300 ypos 380
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest009_marshmarigold2_col:
+        if herbID2 in shelf.list_books() and forest009_marshmarigold2_col:
             imagebutton:
                 idle "gui/inv/herb014_idle.png"
                 hover "gui/inv/herb014_hover.png"
@@ -3493,7 +3350,7 @@ screen forest009:
                 xpos 1080 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest009_stjohns_col:
+        if herbID3 in shelf.list_books() and forest009_stjohns_col:
             imagebutton:
                 idle "gui/inv/herb024_idle.png"
                 hover "gui/inv/herb024_hover.png"
@@ -3503,7 +3360,7 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest009_dandelion_col:
+        if herbID1 in shelf.list_books() and forest009_dandelion_col:
             imagebutton:
                 idle "gui/inv/herb002_idle.png"
                 hover "gui/inv/herb002_hover.png"
@@ -3512,7 +3369,7 @@ screen forest009:
                 xpos 600 ypos 240
                 xanchor 0 yanchor 0
             
-        if herb_book3 and forest009_lemonbalm_col:
+        if herbID3 in shelf.list_books() and forest009_lemonbalm_col:
             imagebutton:
                 idle "gui/inv/herb029_idle.png"
                 hover "gui/inv/herb029_hover.png"
@@ -3523,7 +3380,7 @@ screen forest009:
     
     if forest009_spawn == 5:
     
-        if herb_book3 and forest009_yellowdock_col:
+        if herbID3 in shelf.list_books() and forest009_yellowdock_col:
             imagebutton:
                 idle "gui/inv/herb025_idle.png"
                 hover "gui/inv/herb025_hover.png"
@@ -3532,7 +3389,7 @@ screen forest009:
                 xpos 300 ypos 380
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest009_basil_col:
+        if herbID2 in shelf.list_books() and forest009_basil_col:
             imagebutton:
                 idle "gui/inv/herb020_idle.png"
                 hover "gui/inv/herb020_hover.png"
@@ -3541,7 +3398,7 @@ screen forest009:
                 xpos 1080 ypos 550
                 xanchor 0 yanchor 0
     
-        if herb_book3 and forest009_comfrey_col:
+        if herbID3 in shelf.list_books() and forest009_comfrey_col:
             imagebutton:
                 idle "gui/inv/herb027_idle.png"
                 hover "gui/inv/herb027_hover.png"
@@ -3551,7 +3408,7 @@ screen forest009:
                 xanchor 0 yanchor 0
             
             
-        if herbID1_get and forest009_blackberry_col:
+        if herbID1 in shelf.list_books() and forest009_blackberry_col:
             imagebutton:
                 idle "gui/inv/herb003_idle.png"
                 hover "gui/inv/herb003_hover.png"
@@ -3560,7 +3417,7 @@ screen forest009:
                 xpos 600 ypos 240
                 xanchor 0 yanchor 0
             
-        if herb_book2 and forest009_marshmarigold_col:
+        if herbID2 in shelf.list_books() and forest009_marshmarigold_col:
             imagebutton:
                 idle "gui/inv/herb014_idle.png"
                 hover "gui/inv/herb014_hover.png"
@@ -3571,105 +3428,105 @@ screen forest009:
             
     
 label forest009_thistle:
-    $ pc_inv.take(herb001)
+    $ player_bag.add_item("herb001", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Thistle",item="Thistle")
     
     jump forest009
 
 label forest009_dandelion:
-    $ pc_inv.take(herb002)
+    $ player_bag.add_item("herb002", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Dandelion",item="Dandelion")
     
     jump forest009
     
 label forest009_blackberry:
-    $ pc_inv.take(herb003)
+    $ player_bag.add_item("herb003", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Blackberry",item="Blackberry")
     
     jump forest009
     
 label forest009_violet:
-    $ pc_inv.take(herb017)
+    $ player_bag.add_item("herb017", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Violet",item="Violet")
     
     jump forest009
 
 label forest009_basil:
-    $ pc_inv.take(herb020)
+    $ player_bag.add_item("herb020", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Basil",item="Basil")
     
     jump forest009
     
 label forest009_stjohns:
-    $ pc_inv.take(herb024)
+    $ player_bag.add_item("herb024", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received St. John's Wort",item="St. John's Wort")
     
     jump forest009
 
 label forest009_yellowdock:
-    $ pc_inv.take(herb025)
+    $ player_bag.add_item("herb025", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Yellow Dock",item="Yellow Dock")
     
     jump forest009
     
 label forest009_sage:
-    $ pc_inv.take(herb009)
+    $ player_bag.add_item("herb009", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Sage",item="Sage")
     
     jump forest009
 
 label forest009_laurel:
-    $ pc_inv.take(herb010)
+    $ player_bag.add_item("herb010", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Laurel",item="Laurel")
     
     jump forest009
 
 label forest009_hyssop:
-    $ pc_inv.take(herb011)
+    $ player_bag.add_item("herb011", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Hyssop",item="Hyssop")
     
     jump forest009
     
 label forest009_comfrey:
-    $ pc_inv.take(herb027)
+    $ player_bag.add_item("herb027", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Comfrey",item="Comfrey")
     
     jump forest009
 
 label forest009_lemonbalm:
-    $ pc_inv.take(herb029)
+    $ player_bag.add_item("herb029", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Lemon Balm",item="Lemon Balm")
     
     jump forest009
     
 label forest009_marshmarigold:
-    $ pc_inv.take(herb014)
+    $ player_bag.add_item("herb014", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Marsh Marigold",item="Marsh Marigold")
     
     jump forest009
     
 label forest009_marshmarigold2:
-    $ pc_inv.take(herb014)
+    $ player_bag.add_item("herb014", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Marsh Marigold",item="Marsh Marigold")
     
     jump forest009
     
 label forest009_goldenseal:
-    $ pc_inv.take(herb028)
+    $ player_bag.add_item("herb028", quality=70, custom_tags=["bitter"])
     $ F9Harvest = True
     show screen inventory_popup2(message="Received Goldenseal",item="Goldenseal")
     

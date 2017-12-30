@@ -1,6 +1,6 @@
 {
     "id": "empty_jar",
-    "name": "Empty ar",
+    "name": "Empty Jar",
     "icon": "gui/inv/jar.empty.png",
     "image": "gui/not/Empty Jar_notification.png",
     "description": "An empty jar.",

@@ -1,0 +1,13 @@
+{
+    "id": "herb014",
+    "name": "Marsh Marigold",
+    "icon": "gui/inv/herb014_idle.png",
+    "image": "gui/not/Marsh Marigold_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

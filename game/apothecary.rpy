@@ -47,7 +47,7 @@ screen apothecary:
     imagebutton auto "gui/button.shop.rack_%s.png" xpos 844 ypos 152 focus_mask True action Show("drying_screen")
     imagebutton auto "gui/button.shop.scale_%s.png" xpos 652 ypos 397 focus_mask True action Show("craft_screen")
     imagebutton auto "gui/button.shop.mortar_%s.png" xpos 810 ypos 446 focus_mask True action Show("craft_screen")
-    imagebutton auto "gui/button.shop.storage_%s.png" xpos 1221 ypos 0 focus_mask True action Show("box_screen", player=player_bag, seller=seller_bag)
+    imagebutton auto "gui/button.shop.storage_%s.png" xpos 1221 ypos 0 focus_mask True action Show("box_screen", player=player_bag, seller=box_bag)
     imagebutton auto "gui/button.shop.books_%s.png" xpos 1125 ypos 331 focus_mask True action [Hide("basic_overlay"), Hide("apothecary"), ShowMenu("book_shelf")]
     imagebutton auto "gui/button.shop.door_%s.png" xpos 405 ypos 80 focus_mask True action [Hide("basic_overlay"), SetVariable('current_loc', "none"), Jump("overworld01")]
     

@@ -1,0 +1,13 @@
+{
+    "id": "herb013",
+    "name": "Crown Flower",
+    "icon": "gui/inv/herb013_idle.png",
+    "image": "gui/not/Crown Flower_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

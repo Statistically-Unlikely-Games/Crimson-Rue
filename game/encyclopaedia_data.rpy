@@ -317,7 +317,7 @@ label define_books:
     
 #Herb Identification vol. 2
 
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Hyssop",
         B3_1_image,
         "icon",
@@ -333,7 +333,7 @@ label define_books:
         ],
         5)
     
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Borage",
         B3_2_image,
         "icon",
@@ -354,7 +354,7 @@ label define_books:
         ],
         5)
     
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Crown Flower",
         B3_3_image,
         "icon",
@@ -375,7 +375,7 @@ label define_books:
         ],
         5)
     
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Marsh Marigold",
         B3_4_image,
         "icon",
@@ -396,7 +396,7 @@ label define_books:
         ],
         5)
     
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Plantain",
         B3_5_image,
         "icon",
@@ -410,7 +410,7 @@ label define_books:
         ],
         5)
     
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Chamomile",
         B3_6_image,
         "icon",
@@ -422,7 +422,7 @@ label define_books:
         ],
         5)
     
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Calendula",
         B3_7_image,
         "icon",
@@ -441,7 +441,7 @@ label define_books:
         ],
         5)
     
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Violet",
         B3_8_image,
         "icon",
@@ -454,7 +454,7 @@ label define_books:
         ],
         5)
     
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Rosemary",
         B3_9_image,
         "icon",
@@ -468,7 +468,7 @@ label define_books:
         ],
         5)
     
-    $ book_3.add_page(
+    $ herbID2.add_page(
         "Basil",
         B3_10_image,
         "icon",
@@ -484,7 +484,7 @@ label define_books:
 
     
 #Herb Identification vol. 3
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "Poppy",
         B4_1_image,
         "icon",
@@ -505,7 +505,7 @@ label define_books:
         ],
         5)
     
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "Mullein",
         B4_2_image,
         "icon",
@@ -526,7 +526,7 @@ label define_books:
         ],
         5)
     
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "Red Clover",
         B4_3_image,
         "icon",
@@ -547,7 +547,7 @@ label define_books:
         ],
         5)
         
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "St. John's Wort",
         B4_4_image,
         "icon",
@@ -568,7 +568,7 @@ label define_books:
         ],
         5)
         
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "Yellow Dock",
         B4_5_image,
         "icon",
@@ -589,7 +589,7 @@ label define_books:
         ],
         5)
         
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "Burdock",
         B4_6_image,
         "icon",
@@ -610,7 +610,7 @@ label define_books:
         ],
         5)
     
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "Comfrey",
         B4_7_image,
         "icon",
@@ -631,7 +631,7 @@ label define_books:
         ],
         5)
     
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "Goldenseal",
         B4_8_image,
         "icon",
@@ -652,7 +652,7 @@ label define_books:
         ],
         5)
     
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "Lemon Balm",
         B4_9_image,
         "icon",
@@ -673,7 +673,7 @@ label define_books:
         ],
         5)
     
-    $ book_4.add_page(
+    $ herbID3.add_page(
         "Licorice",
         B4_10_image,
         "icon",
@@ -696,7 +696,7 @@ label define_books:
     
     
 #Medical Journal vol. 1
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Cough",
         Solid("#ffffff"),
         "icon",
@@ -707,7 +707,7 @@ label define_books:
         ],
         0)
 
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Difficulty Swallowing",
         Solid("#ffffff"),
         "icon",
@@ -718,7 +718,7 @@ label define_books:
         ],
         0)
 
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Nausea/Vomiting",
         Solid("#ffffff"),
         "icon",
@@ -730,7 +730,7 @@ label define_books:
         ],
         0)
 
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Diarrhea",
         Solid("#ffffff"),
         "icon",
@@ -741,7 +741,7 @@ label define_books:
         ],
         0)
 
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Chills",
         Solid("#ffffff"),
         "icon",
@@ -752,7 +752,7 @@ label define_books:
         ],
         0)
 
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Fever",
         Solid("#ffffff"),
         "icon",
@@ -764,7 +764,7 @@ label define_books:
         ],
         0)
 
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Hot Flashes",
         Solid("#ffffff"),
         "icon",
@@ -775,7 +775,7 @@ label define_books:
         ],
         0)
 
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Excessive Sweating",
         Solid("#ffffff"),
         "icon",
@@ -786,7 +786,7 @@ label define_books:
         ],
         0)
 
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Difficulty Sleeping",
         Solid("#ffffff"),
         "icon",
@@ -797,7 +797,7 @@ label define_books:
         ],
         0)
 
-    $ book_5.add_page(
+    $ medJNL1.add_page(
         "Difficulty Breathing",
         Solid("#ffffff"),
         "icon",
@@ -810,7 +810,7 @@ label define_books:
 
 
 #Medical Journal vol. 2
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Increased Heart Rate",
         Solid("#ffffff"),
         "icon",
@@ -821,7 +821,7 @@ label define_books:
         ],
         0)
 
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Fainting",
         Solid("#ffffff"),
         "icon",
@@ -832,7 +832,7 @@ label define_books:
         ],
         0)
 
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Low Blood Pressure",
         Solid("#ffffff"),
         "icon",
@@ -843,7 +843,7 @@ label define_books:
         ],
         0)
 
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Fatigue",
         Solid("#ffffff"),
         "icon",
@@ -857,7 +857,7 @@ label define_books:
         ],
         0)
 
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Tremors",
         Solid("#ffffff"),
         "icon",
@@ -868,7 +868,7 @@ label define_books:
         ],
         0)
 
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Lethargy",
         Solid("#ffffff"),
         "icon",
@@ -879,7 +879,7 @@ label define_books:
         ],
         0)
 
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Dizziness",
         Solid("#ffffff"),
         "icon",
@@ -891,7 +891,7 @@ label define_books:
         ],
         0)
 
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Vertigo",
         Solid("#ffffff"),
         "icon",
@@ -902,7 +902,7 @@ label define_books:
         ],
         0)
 
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Delirium",
         Solid("#ffffff"),
         "icon",
@@ -913,7 +913,7 @@ label define_books:
         ],
         0)
 
-    $ book_6.add_page(
+    $ medJNL2.add_page(
         "Memory Loss",
         Solid("#ffffff"),
         "icon",
@@ -925,7 +925,7 @@ label define_books:
         0)
 
 #Medical Journal vol. 3
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Anxiety/Depression",
         Solid("#ffffff"),
         "icon",
@@ -937,7 +937,7 @@ label define_books:
         ],
         0)
 
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Weight Gain",
         Solid("#ffffff"),
         "icon",
@@ -948,7 +948,7 @@ label define_books:
         ],
         0)
     
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Weight Loss",
         Solid("#ffffff"),
         "icon",
@@ -959,7 +959,7 @@ label define_books:
         ],
         0)
 
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Itchy Skin",
         Solid("#ffffff"),
         "icon",
@@ -970,7 +970,7 @@ label define_books:
         ],
         0)
 
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Rash",
         Solid("#ffffff"),
         "icon",
@@ -981,7 +981,7 @@ label define_books:
         ],
         0)
 
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Ring-Shaped Skin Leisons",
         Solid("#ffffff"),
         "icon",
@@ -992,7 +992,7 @@ label define_books:
         ],
         0)
 
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Loss of Skin Color",
         Solid("#ffffff"),
         "icon",
@@ -1003,7 +1003,7 @@ label define_books:
         ],
         0)
 
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Swollen Lymph Nodes",
         Solid("#ffffff"),
         "icon",
@@ -1014,7 +1014,7 @@ label define_books:
         ],
         0)
 
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Numbness",
         Solid("#ffffff"),
         "icon",
@@ -1025,7 +1025,7 @@ label define_books:
         ],
         0)
 
-    $ book_7.add_page(
+    $ medJNL3.add_page(
         "Muscle Pain",
         Solid("#ffffff"),
         "icon",
@@ -1038,7 +1038,7 @@ label define_books:
 
 
 #Medical Journal vol. 4
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Muscle Cramps",
         Solid("#ffffff"),
         "icon",
@@ -1049,7 +1049,7 @@ label define_books:
         ],
         0)
 
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Joint Pain",
         Solid("#ffffff"),
         "icon",
@@ -1060,7 +1060,7 @@ label define_books:
         ],
         0)
 
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Headache",
         Solid("#ffffff"),
         "icon",
@@ -1071,7 +1071,7 @@ label define_books:
         ],
         0)
 
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Eye Pain",
         Solid("#ffffff"),
         "icon",
@@ -1082,7 +1082,7 @@ label define_books:
         ],
         0)
 
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Swollen Eyelid",
         Solid("#ffffff"),
         "icon",
@@ -1093,7 +1093,7 @@ label define_books:
         ],
         0)
 
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Red Eye",
         Solid("#ffffff"),
         "icon",
@@ -1104,7 +1104,7 @@ label define_books:
         ],
         0)
 
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Facial Pain",
         Solid("#ffffff"),
         "icon",
@@ -1115,7 +1115,7 @@ label define_books:
         ],
         0)
 
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Ear Pain",
         Solid("#ffffff"),
         "icon",
@@ -1126,7 +1126,7 @@ label define_books:
         ],
         0)
 
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Ringing Ears",
         Solid("#ffffff"),
         "icon",
@@ -1137,7 +1137,7 @@ label define_books:
         ],
         0)
 
-    $ book_8.add_page(
+    $ medJNL4.add_page(
         "Hearing Loss",
         Solid("#ffffff"),
         "icon",
@@ -1150,7 +1150,7 @@ label define_books:
 
 
 #Medical Journal vol. 5
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Burning Mouth/Tongue",
         Solid("#ffffff"),
         "icon",
@@ -1161,7 +1161,7 @@ label define_books:
         ],
         0)
     
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Mouth Ulcers",
         Solid("#ffffff"),
         "icon",
@@ -1172,7 +1172,7 @@ label define_books:
         ],
         0)
 
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Crying Infant",
         Solid("#ffffff"),
         "icon",
@@ -1183,7 +1183,7 @@ label define_books:
         ],
         0)
 
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Neck Pain",
         Solid("#ffffff"),
         "icon",
@@ -1194,7 +1194,7 @@ label define_books:
         ],
         0)
 
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Shoulder Pain",
         Solid("#ffffff"),
         "icon",
@@ -1205,7 +1205,7 @@ label define_books:
         ],
         0)
 
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Chest Pain",
         Solid("#ffffff"),
         "icon",
@@ -1216,7 +1216,7 @@ label define_books:
         ],
         0)
 
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Breast Pain",
         Solid("#ffffff"),
         "icon",
@@ -1227,7 +1227,7 @@ label define_books:
         ],
         0)
 
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Back Pain",
         Solid("#ffffff"),
         "icon",
@@ -1238,7 +1238,7 @@ label define_books:
         ],
         0)
 
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Flank Pain",
         Solid("#ffffff"),
         "icon",
@@ -1249,7 +1249,7 @@ label define_books:
         ],
         0)
 
-    $ book_9.add_page(
+    $ medJNL5.add_page(
         "Abdominal and Pelvic Pain",
         Solid("#ffffff"),
         "icon",
@@ -1262,7 +1262,7 @@ label define_books:
 
 
 #Medical Journal vol. 6
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Painful or Frequent Urination",
         Solid("#ffffff"),
         "icon",
@@ -1273,7 +1273,7 @@ label define_books:
         ],
         0)
 
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Blood in Urine",
         Solid("#ffffff"),
         "icon",
@@ -1284,7 +1284,7 @@ label define_books:
         ],
         0)
 
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Abnormal Uterine Bleeding",
         Solid("#ffffff"),
         "icon",
@@ -1295,7 +1295,7 @@ label define_books:
         ],
         0)
 
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Genital Sores",
         Solid("#ffffff"),
         "icon",
@@ -1306,7 +1306,7 @@ label define_books:
         ],
         0)
 
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Scrotal Pain",
         Solid("#ffffff"),
         "icon",
@@ -1317,7 +1317,7 @@ label define_books:
         ],
         0)
 
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Hip Pain",
         Solid("#ffffff"),
         "icon",
@@ -1328,7 +1328,7 @@ label define_books:
         ],
         0)
 
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Leg Pain",
         Solid("#ffffff"),
         "icon",
@@ -1339,7 +1339,7 @@ label define_books:
         ],
         0)
 
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Swollen Legs",
         Solid("#ffffff"),
         "icon",
@@ -1350,7 +1350,7 @@ label define_books:
         ],
         0)
 
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Seizure",
         Solid("#ffffff"),
         "icon",
@@ -1361,7 +1361,7 @@ label define_books:
         ],
         0)
 
-    $ book_10.add_page(
+    $ medJNL6.add_page(
         "Stroke",
         Solid("#ffffff"),
         "icon",

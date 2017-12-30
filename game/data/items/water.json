@@ -4,7 +4,7 @@
     "icon": "gui/inv/bottle.water.png",
     "image": "gui/not/Bottle of Water_notification.png",
     "description": "Medicine made with this spread easy but spoil faster.",
-    "kind": "resource",
+    "kind": "ingredient",
     "cost": 300,
     "season": "none",
     "quality": 100,

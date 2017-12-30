@@ -4,7 +4,7 @@
     "icon": "gui/inv/jar.honey.png",
     "image": "gui/not/Empty Jar_notification.png",
     "description": "A jar of honey.",
-    "kind": "container",
+    "kind": "food",
     "cost": 100,
     "season": "none",
     "quality": 100,

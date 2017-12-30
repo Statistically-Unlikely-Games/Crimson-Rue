@@ -1,0 +1,13 @@
+{
+    "id": "herb008",
+    "name": "Parsley",
+    "icon": "gui/inv/herb008_idle.png",
+    "image": "gui/not/Parsley_notification.png",
+    "description": "A medicinal herb.",
+    "kind": "herb",
+    "cost": 100,
+    "season": "fall",
+    "quality": 100,
+    "tags": ["cool", "sweet"],
+    "day_degrade": -1
+}

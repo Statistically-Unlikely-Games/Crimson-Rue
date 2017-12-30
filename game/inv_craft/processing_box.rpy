@@ -26,7 +26,7 @@ init python:
                 item_fermentation_event(item=self.item)
 
                 if self.produces:
-                    player_bag.add_item(item_id=self.produces)
+                    player_bag.add_item(item_id=self.produces, quality=self.item.quality)
                     return "remove"
 
                 elif self.inc_quality:
@@ -34,6 +34,10 @@ init python:
                     return "add_again"
 
             return True
+            
+        @property
+        def days_left(self):
+            return self.added_on + self.days - calendar.daycount_from_gamestart
 
         @property
         def get_produces(self):
@@ -107,21 +111,29 @@ screen fermenting_screen():
                     scrollbars "vertical"
 
                     for item in player_processor.store:
-                        button:
-                            xysize (100, 100)
-                            background item.item.icon
-
-                            add item.item.get_quality_badge xalign 0.95 yalign 0.05 at zoom_out
-
-                            action [ SetScreenVariable("showing", "item"), SetScreenVariable("showing_item", item.get_produces), If(item.inc_quality, true=SetScreenVariable("removeable", item)) ]
-
-                    if len(player_processor.store) < 12:
-                        for i in range(0, 12-len(player_processor.store)):
+                        vbox:
+                            spacing 5
                             button:
                                 xysize (100, 100)
-                                background Solid("#c0c0c0")
+                                background item.item.icon
 
-                                action SetScreenVariable("showing", "inv")
+                                add item.item.get_quality_badge xalign 0.95 yalign 0.05 at zoom_out
+
+                                action [ SetScreenVariable("showing", "item"), SetScreenVariable("showing_item", item.get_produces), If(item.inc_quality, true=SetScreenVariable("removeable", item)) ]
+
+                            text "[item.days_left]" xalign 0.5
+                            
+                    if len(player_processor.store) < 12:
+                        for i in range(0, 12-len(player_processor.store)):
+                            vbox:
+                                spacing 5
+                                button:
+                                    xysize (100, 100)
+                                    background Solid("#c0c0c0")
+
+                                    action SetScreenVariable("showing", "inv")
+
+                                text " "
 
             if showing == "inv":
                 use inventory_base_screen(player_bag, "fermenting")

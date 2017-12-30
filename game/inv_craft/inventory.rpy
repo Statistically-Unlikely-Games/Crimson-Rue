@@ -61,7 +61,7 @@ init python:
                 self.money += item.sell_price
             else:
                 self.money += item.buy_price
-            self.remove_item(item)
+            self.remove_item(item=item)
 
         def refresh_items(self):
             for item in self.store:
@@ -72,7 +72,7 @@ init python:
 
         def sort(self, method):
             if method == "cost":
-                self.store.sort(key=lambda item: item.cost)
+                self.store.sort(key=lambda item: item.sell_price)
             elif method == "name":
                 self.store.sort(key=lambda item: item.name)
             elif method == "quality":
@@ -129,7 +129,10 @@ screen inventory_base_screen(bag, case, seller_bag=None):
         area (0, 0, 570, 675)
         background None
 
-        text "INVENTORY 1" size 40 color "#000000" xalign 0.50
+        text bag.name.upper() size 40 color "#000000" xalign 0.50
+
+        if case == "store":
+            text "[bag.money]" + "g" color "#000000" xalign 0.95
 
         vpgrid:
             area (0, 55, 520, 500)
@@ -163,12 +166,14 @@ screen inventory_base_screen(bag, case, seller_bag=None):
                                 action [Function(player_processor.add_to_box, item=item), SetScreenVariable("showing", "")]
                             elif case == "drying":
                                 action [Function(player_dehydrator.add_to_box, item=item), SetScreenVariable("showing", "")]
-
+                        
                         if case == "store":
                             if bag.is_player:
-                                text "[item.sell_price]" xalign 0.5
+                                text "[item.sell_price]" + "g" xalign 0.5 xmaximum 100 text_align 0.5
                             else:
-                                text "[item.buy_price]" xalign 0.5
+                                text "[item.buy_price]" + "g" xalign 0.5 xmaximum 100 text_align 0.5
+                        else: 
+                            text "[item.name]" xalign 0.5 xmaximum 100 text_align 0.5
 
             if len(bag.list_items()) < 12:
                 for i in range(0, 12-len(bag.list_items())):
@@ -212,7 +217,6 @@ screen store_screen(player, seller):
             spacing 5
 
             use inventory_base_screen(player, case="store", seller_bag=seller)
-            #add Solid("#000000", xysize=(10, 600)) yalign 0.5 xoffset -30
             use inventory_base_screen(seller, case="store", seller_bag=player)
 
     textbutton _("Back") action Hide("store_screen") xalign 1.0
@@ -234,34 +238,11 @@ screen box_screen(player, seller):
         hbox:
             spacing 5
 
-            use inventory_base_screen(player, case="store", seller_bag=seller)
-            #add Solid("#000000", xysize=(10, 600)) yalign 0.5 xoffset -30
-            use inventory_base_screen(seller, case="store", seller_bag=player)
+            use inventory_base_screen(player, case="box", seller_bag=seller)
+            use inventory_base_screen(seller, case="box", seller_bag=player)
 
     textbutton _("Back") action Hide("box_screen") xalign 1.0
 
-screen inventory_popup(message,item):
-    zorder 100
-    imagebutton idle "gui/not/" + item + "_notification.png" xalign 0.5 yalign 0.35
-    frame:
-        style_group "msgstyle"
-        vbox:
-            text message
-    timer 0.8 action Hide("inventory_popup")
-    
-init -2: 
-
-    ## STYLES ##
-    style msgstyle_frame:
-        xalign 0.5
-        yalign 0.61
-        
-    style msgstyle_label_text:
-        size 30
-        
-    style msgstyle_label:
-        xalign 0.5 
-        
 screen inventory_popup(message,item):
     zorder 100
     imagebutton idle "gui/not/" + item + "_notification.png" xalign 0.5 yalign 0.35

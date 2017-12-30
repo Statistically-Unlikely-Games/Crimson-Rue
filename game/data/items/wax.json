@@ -4,7 +4,7 @@
     "icon": "gui/inv/tin.wax.png",
     "image": "gui/not/Empty Tin_notification.png",
     "description": "Useful in combining water based extracts with oil.",
-    "kind": "container",
+    "kind": "ingredient",
     "cost": 200,
     "season": "none",
     "quality": 100,

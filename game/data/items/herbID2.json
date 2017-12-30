@@ -1,0 +1,12 @@
+{
+    "id": "herbID2",
+    "name": "Herb Identification vol. 2",
+    "icon": "gui/inv/book.png",
+    "image": "gui/not/Book_notification.png",
+    "description": "A book of herbs",
+    "kind": "book",
+    "cost": 5000,
+    "season": "none",
+    "quality": 100,
+    "tags": ["cool", "sweet"]
+}
