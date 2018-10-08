@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/forest_screens.rpy", line 43: expected a keyword argument or child statement.
-    "This is a test"
-    ^
+File "game/map_data.rpy", line 77: end of line expected.
+    hide screen map_screen()
+                          ^
 
-Ren'Py Version: Ren'Py 6.99.13.2919
+Ren'Py Version: Ren'Py 7.0.0.108
+Sun Oct 07 16:30:20 2018

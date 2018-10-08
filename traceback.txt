@@ -1,93 +1,62 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/apothecary.rpy", line 30, in script
-    call screen apothecary
-  File "renpy/common/000statements.rpy", line 485, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/inv_craft/recipe.rpy", line 144, in execute
-    screen craft_screen():
-  File "game/inv_craft/recipe.rpy", line 144, in execute
-    screen craft_screen():
-  File "game/inv_craft/recipe.rpy", line 153, in execute
-    frame:
-  File "game/inv_craft/recipe.rpy", line 162, in execute
-    frame:
-  File "game/inv_craft/recipe.rpy", line 167, in execute
-    vbox:
-  File "game/inv_craft/recipe.rpy", line 173, in execute
-    vpgrid:
-  File "game/inv_craft/recipe.rpy", line 185, in execute
-    for i in range(0, 8-len(player_bag.items_in_pot)):
-  File "game/inv_craft/recipe.rpy", line 189, in execute
-    text "[item.name]" xalign 0.5
-NameError: Name 'item' is not defined.
+  File "game/script.rpy", line 429, in script
+    " "
+  File "renpy/common/00action_other.rpy", line 517, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/map.rpy", line 36, in moveDenizen
+    if self.isEmpty(x, y):
+  File "game/map.rpy", line 25, in isEmpty
+    return self.map[y][x].occupant is None
+IndexError: list index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/apothecary.rpy", line 30, in script
-    call screen apothecary
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 1775, in execute
-    self.call("execute")
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ast.py", line 1763, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\statements.py", line 163, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 485, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\exports.py", line 2612, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\ui.py", line 287, in interact
+  File "game/script.rpy", line 429, in script
+    " "
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\ast.py", line 652, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\exports.py", line 1198, in say
+    who(what, *args, **kwargs)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\character.py", line 1016, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\character.py", line 817, in do_display
+    **display_args)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\character.py", line 566, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\ui.py", line 287, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2553, in interact
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\core.py", line 2649, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2821, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 495, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 495, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 495, in visit_all
-    d.visit_all(callback)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 401, in visit_all
-    callback(self)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\core.py", line 2821, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 411, in per_interact
-    self.update()
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\display\screen.py", line 580, in update
-    self.screen.function(**self.scope)
-  File "game/inv_craft/recipe.rpy", line 144, in execute
-    screen craft_screen():
-  File "game/inv_craft/recipe.rpy", line 144, in execute
-    screen craft_screen():
-  File "game/inv_craft/recipe.rpy", line 153, in execute
-    frame:
-  File "game/inv_craft/recipe.rpy", line 162, in execute
-    frame:
-  File "game/inv_craft/recipe.rpy", line 167, in execute
-    vbox:
-  File "game/inv_craft/recipe.rpy", line 173, in execute
-    vpgrid:
-  File "game/inv_craft/recipe.rpy", line 185, in execute
-    for i in range(0, 8-len(player_bag.items_in_pot)):
-  File "game/inv_craft/recipe.rpy", line 189, in execute
-    text "[item.name]" xalign 0.5
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\text\text.py", line 1340, in __init__
-    self.set_text(text, scope, substitute)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\text\text.py", line 1440, in set_text
-    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\substitutions.py", line 242, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in _vformat
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 605, in get_value
-  File "E:\_RenPy\renpy-6.99.13-sdk\renpy\substitutions.py", line 201, in __getitem__
-    raise NameError("Name '{}' is not defined.".format(key))
-NameError: Name 'item' is not defined.
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\core.py", line 3451, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\layout.py", line 992, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\layout.py", line 992, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\layout.py", line 992, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\screen.py", line 697, in event
+    rv = self.child.event(ev, x, y, st)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\layout.py", line 992, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\behavior.py", line 439, in event
+    rv = run(action)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\behavior.py", line 308, in run
+    new_rv = run(i, *args, **kwargs)
+  File "E:\_RenPy\renpy-7.0.0-sdk\renpy\display\behavior.py", line 315, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_other.rpy", line 517, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/map.rpy", line 36, in moveDenizen
+    if self.isEmpty(x, y):
+  File "game/map.rpy", line 25, in isEmpty
+    return self.map[y][x].occupant is None
+IndexError: list index out of range
 
 Windows-8-6.2.9200
-Ren'Py 6.99.13.2919
+Ren'Py 7.0.0.108
 Crimson Rue 1.0
+Sun Oct 07 17:21:55 2018

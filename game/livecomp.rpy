@@ -8,380 +8,7 @@ init-1:
     #This is a preset to keep you from getting an error.
 
 # ----------------------------------------------------
-    image aeth neu = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right neu.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left neu.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right neu.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left neu.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right neu.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left neu.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right neu.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left neu.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right neu.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left neu.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right neu.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left neu.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right neu.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left neu.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right neu.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left neu.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right neu.png"),
-        )
-    
-    image aeth alarmed = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right alarmed.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left alarmed.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right alarmed.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left alarmed.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right alarmed.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left alarmed.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right alarmed.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left alarmed.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right alarmed.png"),
-        )
-    
-    image aeth alert = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right alert.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left alert.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right alert.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left alert.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right alert.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left alert.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right alert.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left alert.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right alert.png"),
-        )
-    
-    image aeth awkward = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right awkward.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left awkward.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right awkward.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left awkward.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right awkward.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left awkward.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right awkward.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left awkward.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right awkward.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left awkward.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right awkward.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left awkward.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right awkward.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left awkward.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right awkward.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left awkward.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right awkward.png"),
-        )
-    
-    image aeth concerned = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right concerned.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left concerned.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right concerned.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left concerned.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right concerned.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left concerned.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right concerned.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left concerned.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right concerned.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left concerned.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right concerned.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left concerned.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right concerned.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left concerned.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right concerned.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left concerned.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right concerned.png"),
-        )
-    
-    image aeth deprecating = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right deprecating.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left deprecating.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right deprecating.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left deprecating.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right deprecating.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left deprecating.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right deprecating.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left deprecating.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right deprecating.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left deprecating.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right deprecating.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left deprecating.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right deprecating.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left deprecating.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right deprecating.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left deprecating.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right deprecating.png"),
-        )
-    
-    image aeth determined = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right determined.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left determined.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right determined.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left determined.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right determined.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left determined.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right determined.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left determined.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right determined.png"),
-        )
-    
-    image aeth disdain = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right disdain.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left disdain.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right disdain.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left disdain.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right disdain.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left disdain.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right disdain.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left disdain.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right disdain.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left disdain.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right disdain.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left disdain.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right disdain.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left disdain.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right disdain.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left disdain.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right disdain.png"),
-        )
-    
-    image aeth eager = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right eager.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left eager.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right eager.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left eager.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right eager.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left eager.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right eager.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left eager.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right eager.png"),
-        )
-    
-    image aeth glare = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right glare.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left glare.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right glare.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left glare.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right glare.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left glare.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right glare.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left glare.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right glare.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left glare.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right glare.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left glare.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right glare.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left glare.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right glare.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left glare.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right glare.png"),
-        )
-    
-    image aeth interested = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right interested.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left interested.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right interested.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left interested.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right interested.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left interested.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right interested.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left interested.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right interested.png"),
-        )
-    
-    image aeth sad = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right sad.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left sad.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right sad.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left sad.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right sad.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left sad.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right sad.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left sad.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right sad.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left sad.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right sad.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left sad.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right sad.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left sad.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right sad.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left sad.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right sad.png"),
-        )
-    
-    image aeth sad_smile = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right sad_smile.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left sad_smile.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right sad_smile.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left sad_smile.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right sad_smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left sad_smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right sad_smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left sad_smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right sad_smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left sad_smile.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right sad_smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left sad_smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right sad_smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left sad_smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right sad_smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left sad_smile.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right sad_smile.png"),
-        )
-    
-    image aeth shocked = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right shocked.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left shocked.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right shocked.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left shocked.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right shocked.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left shocked.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right shocked.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left shocked.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right shocked.png"),
-        )
-    
-    image aeth smile = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right smile.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left smile.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right smile.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left smile.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right smile.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left smile.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right smile.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left smile.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right smile.png"),
-        )
-    
-    image aeth smirk = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right smirk.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left smirk.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right smirk.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left smirk.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right smirk.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left smirk.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right smirk.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left smirk.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right smirk.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left smirk.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right smirk.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left smirk.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right smirk.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left smirk.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right smirk.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left smirk.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right smirk.png"),
-        )
-    
-    image aeth surprised = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right surprised.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left surprised.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right surprised.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left surprised.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right surprised.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left surprised.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right surprised.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left surprised.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right surprised.png"),
-        )
-    
-    image aeth thinking = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right thinking.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left thinking.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right thinking.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left thinking.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right thinking.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left thinking.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right thinking.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left thinking.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right thinking.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left thinking.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right thinking.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left thinking.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right thinking.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left thinking.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right thinking.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left thinking.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right thinking.png"),
-        )
-    
-    image aeth unimpressed = ConditionSwitch(
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_down right unimpressed.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_down left unimpressed.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth vest arms_crossed right unimpressed.png"),
-        "aeth_outfit == 'vest' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth vest arms_crossed left unimpressed.png"),
-        
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_down right unimpressed.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_down left unimpressed.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_up right unimpressed.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_up left unimpressed.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed right unimpressed.png"),
-        "aeth_outfit == 'cloak_up' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_up arms_crossed left unimpressed.png"),
-        
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_down right unimpressed.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_down' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_down left unimpressed.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_up right unimpressed.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_up' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_up left unimpressed.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'right' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed right unimpressed.png"),
-        "aeth_outfit == 'cloak_down' and aeth_pose == 'arms_crossed' and aeth_facing == 'left' ", Image ("images/spr/aeth/aeth cloak_down arms_crossed left unimpressed.png"),
-        
-        "True", Image ("images/spr/aeth/aeth vest arms_down right unimpressed.png"),
-        )
-    
+
     image elaine neu = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right neu.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left neu.png"),
@@ -389,10 +16,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left neu.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right neu.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left neu.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left neu.png"),
         )
-    
+
     image elaine angry = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right angry.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left angry.png"),
@@ -400,10 +27,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left angry.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right angry.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left angry.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left angry.png"),
         )
-    
+
     image elaine disappointed = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right disappointed.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left disappointed.png"),
@@ -411,10 +38,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left disappointed.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right disappointed.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left disappointed.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left disappointed.png"),
         )
-    
+
     image elaine evaluating = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right evaluating.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left evaluating.png"),
@@ -422,10 +49,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left evaluating.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right evaluating.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left evaluating.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left evaluating.png"),
         )
-    
+
     image elaine laugh = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right laugh.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left laugh.png"),
@@ -433,10 +60,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left laugh.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right laugh.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left laugh.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left laugh.png"),
         )
-    
+
     image elaine sad = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right sad.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left sad.png"),
@@ -444,10 +71,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left sad.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right sad.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left sad.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left sad.png"),
         )
-    
+
     image elaine sad_smile = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right sad_smile.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left sad_smile.png"),
@@ -455,10 +82,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left sad_smile.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right sad_smile.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left sad_smile.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left sad_smile.png"),
         )
-    
+
     image elaine shocked = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right shocked.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left shocked.png"),
@@ -466,10 +93,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left shocked.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right shocked.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left shocked.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left shocked.png"),
         )
-    
+
     image elaine shout = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right shout.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left shout.png"),
@@ -477,10 +104,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left shout.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right shout.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left shout.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left shout.png"),
         )
-    
+
     image elaine surprised = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right surprised.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left surprised.png"),
@@ -488,10 +115,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left surprised.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right surprised.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left surprised.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left surprised.png"),
         )
-    
+
     image elaine thinking = ConditionSwitch(
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest hands_hips right thinking.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'hands_hips' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hands_hips left thinking.png"),
@@ -499,10 +126,10 @@ init-1:
         "elaine_outfit == 'vest' and elaine_pose == 'hold_arm' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest hold_arm left thinking.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'right' ", Image ("images/spr/elaine/elaine vest smoke_pipe right thinking.png"),
         "elaine_outfit == 'vest' and elaine_pose == 'smoke_pipe' and elaine_facing == 'left' ", Image ("images/spr/elaine/elaine vest smoke_pipe left thinking.png"),
-        
+
         "True", Image ("images/spr/elaine/elaine vest hands_hips left thinking.png"),
         )
-    
+
     image harte neu = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book neu.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages neu.png"),
@@ -513,7 +140,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book neu.png"),
         )
-    
+
     image harte angry = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book angry.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages angry.png"),
@@ -524,7 +151,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book angry.png"),
         )
-    
+
     image harte competitive = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book competitive.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages competitive.png"),
@@ -535,7 +162,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book competitive.png"),
         )
-    
+
     image harte glare = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book glare.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages glare.png"),
@@ -546,7 +173,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book glare.png"),
         )
-    
+
     image harte grin = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book grin.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages grin.png"),
@@ -557,7 +184,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book grin.png"),
         )
-    
+
     image harte pout = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book pout.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages pout.png"),
@@ -568,7 +195,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book pout.png"),
         )
-    
+
     image harte sad = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book sad.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages sad.png"),
@@ -579,7 +206,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book sad.png"),
         )
-    
+
     image harte shocked = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book shocked.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages shocked.png"),
@@ -590,7 +217,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book shocked.png"),
         )
-    
+
     image harte shout = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book shout.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages shout.png"),
@@ -601,7 +228,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book shout.png"),
         )
-    
+
     image harte smile = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book smile.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages smile.png"),
@@ -612,7 +239,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book smile.png"),
         )
-    
+
     image harte surprised = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book surprised.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages surprised.png"),
@@ -623,7 +250,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book surprised.png"),
         )
-    
+
     image harte thinking = ConditionSwitch(
         "harte_outfit == 'apron' and harte_pose == 'book' ", Image ("images/spr/harte/harte apron book thinking.png"),
         "harte_outfit == 'apron' and harte_pose == 'pages' ", Image ("images/spr/harte/harte apron pages thinking.png"),
@@ -634,7 +261,7 @@ init-1:
 
         "True", Image ("images/spr/harte/harte apron book thinking.png"),
         )
-    
+
     image kayen neu = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down neu.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up neu.png"),
@@ -643,7 +270,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down neu.png"),
         )
-    
+
     image kayen angry = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down angry.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up angry.png"),
@@ -652,7 +279,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down angry.png"),
         )
-    
+
     image kayen annoyed = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down annoyed.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up annoyed.png"),
@@ -661,7 +288,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down annoyed.png"),
         )
-    
+
     image kayen cruel = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down cruel.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up cruel.png"),
@@ -670,7 +297,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down cruel.png"),
         )
-    
+
     image kayen desperate = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down desperate.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up desperate.png"),
@@ -679,7 +306,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down desperate.png"),
         )
-    
+
     image kayen determined = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down determined.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up determined.png"),
@@ -688,7 +315,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down determined.png"),
         )
-    
+
     image kayen disgust = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down disgust.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up disgust.png"),
@@ -697,7 +324,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down disgust.png"),
         )
-    
+
     image kayen displeased = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down displeased.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up displeased.png"),
@@ -706,7 +333,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down displeased.png"),
         )
-    
+
     image kayen eager = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down eager.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up eager.png"),
@@ -715,7 +342,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down eager.png"),
         )
-    
+
     image kayen evaluating = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down evaluating.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up evaluating.png"),
@@ -724,7 +351,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down evaluating.png"),
         )
-    
+
     image kayen furious = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down furious.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up furious.png"),
@@ -733,7 +360,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down furious.png"),
         )
-    
+
     image kayen glare = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down glare.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up glare.png"),
@@ -742,7 +369,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down glare.png"),
         )
-    
+
     image kayen grin = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down grin.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up grin.png"),
@@ -751,7 +378,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down grin.png"),
         )
-    
+
     image kayen laugh = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down laugh.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up laugh.png"),
@@ -760,7 +387,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down laugh.png"),
         )
-    
+
     image kayen sad = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down sad.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up sad.png"),
@@ -769,7 +396,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down sad.png"),
         )
-    
+
     image kayen sad_smile = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down sad_smile.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up sad_smile.png"),
@@ -778,7 +405,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down sad_smile.png"),
         )
-    
+
     image kayen sheepish = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down sheepish.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up sheepish.png"),
@@ -787,7 +414,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down sheepish.png"),
         )
-    
+
     image kayen smile = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down smile.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up smile.png"),
@@ -796,7 +423,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down smile.png"),
         )
-    
+
     image kayen smirk = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down smirk.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up smirk.png"),
@@ -805,7 +432,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down smirk.png"),
         )
-    
+
     image kayen speechless = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down speechless.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up speechless.png"),
@@ -814,7 +441,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down speechless.png"),
         )
-    
+
     image kayen surprised = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down surprised.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up surprised.png"),
@@ -823,7 +450,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down surprised.png"),
         )
-    
+
     image kayen sympathetic = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down sympathetic.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up sympathetic.png"),
@@ -832,7 +459,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down sympathetic.png"),
         )
-    
+
     image kayen teasing = ConditionSwitch(
         "kayen_outfit == 'dress' and kayen_pose == 'arm_down' ", Image ("images/spr/kayen/kayen dress arm_down teasing.png"),
         "kayen_outfit == 'dress' and kayen_pose == 'arm_up' ", Image ("images/spr/kayen/kayen dress arm_up teasing.png"),
@@ -841,7 +468,7 @@ init-1:
 
         "True", Image ("images/spr/kayen/kayen dress arm_down teasing.png"),
         )
-        
+
     image lufte neu = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right neu.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left neu.png"),
@@ -849,10 +476,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left neu.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right neu.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left neu.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left neu.png"),
         )
-    
+
     image lufte angry = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right angry.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left angry.png"),
@@ -860,10 +487,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left angry.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right angry.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left angry.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left angry.png"),
         )
-    
+
     image lufte depressed = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right depressed.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left depressed.png"),
@@ -871,10 +498,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left depressed.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right depressed.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left depressed.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left depressed.png"),
         )
-    
+
     image lufte glare = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right glare.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left glare.png"),
@@ -882,10 +509,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left glare.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right glare.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left glare.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left glare.png"),
         )
-    
+
     image lufte laugh = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right laugh.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left laugh.png"),
@@ -893,10 +520,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left laugh.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right laugh.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left laugh.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left laugh.png"),
         )
-    
+
     image lufte pleading = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right pleading.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left pleading.png"),
@@ -904,10 +531,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left pleading.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right pleading.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left pleading.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left pleading.png"),
         )
-    
+
     image lufte pout = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right pout.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left pout.png"),
@@ -915,10 +542,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left pout.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right pout.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left pout.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left pout.png"),
         )
-    
+
     image lufte sad = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right sad.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left sad.png"),
@@ -926,10 +553,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left sad.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right sad.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left sad.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left sad.png"),
         )
-    
+
     image lufte sad = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right sad.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left sad.png"),
@@ -937,10 +564,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left sad.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right sad.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left sad.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left sad.png"),
         )
-    
+
     image lufte shocked = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right shocked.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left shocked.png"),
@@ -948,10 +575,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left shocked.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right shocked.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left shocked.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left shocked.png"),
         )
-    
+
     image lufte smile = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right smile.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left smile.png"),
@@ -959,10 +586,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left smile.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right smile.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left smile.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left smile.png"),
         )
-    
+
     image lufte surprised = ConditionSwitch(
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt arms_down right surprised.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_down' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_down left surprised.png"),
@@ -970,10 +597,10 @@ init-1:
         "lufte_outfit == 'shirt' and lufte_pose == 'arms_up' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt arms_up left surprised.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'right' ", Image ("images/spr/lufte/lufte shirt biting right surprised.png"),
         "lufte_outfit == 'shirt' and lufte_pose == 'biting' and lufte_facing == 'left' ", Image ("images/spr/lufte/lufte shirt biting left surprised.png"),
-        
+
         "True", Image ("images/spr/lufte/lufte shirt arms_down left surprised.png"),
         )
-    
+
     image mikael neu = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right neu.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left neu.png"),
@@ -981,10 +608,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left neu.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right neu.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left neu.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left neu.png"),
         )
-    
+
     image mikael alert = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right alert.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left alert.png"),
@@ -992,10 +619,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left alert.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right alert.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left alert.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left alert.png"),
         )
-    
+
     image mikael angry = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right angry.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left angry.png"),
@@ -1003,10 +630,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left angry.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right angry.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left angry.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left angry.png"),
         )
-    
+
     image mikael annoyed = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right annoyed.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left annoyed.png"),
@@ -1014,10 +641,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left annoyed.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right annoyed.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left annoyed.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left annoyed.png"),
         )
-    
+
     image mikael content = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right content.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left content.png"),
@@ -1025,10 +652,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left content.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right content.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left content.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left content.png"),
         )
-    
+
     image mikael depressed = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right depressed.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left depressed.png"),
@@ -1036,10 +663,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left depressed.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right depressed.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left depressed.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left depressed.png"),
         )
-    
+
     image mikael disapproving = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right disapproving.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left disapproving.png"),
@@ -1047,10 +674,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left disapproving.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right disapproving.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left disapproving.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left disapproving.png"),
         )
-    
+
     image mikael furious = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right furious.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left furious.png"),
@@ -1058,10 +685,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left furious.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right furious.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left furious.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left furious.png"),
         )
-    
+
     image mikael laugh = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right laugh.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left laugh.png"),
@@ -1069,10 +696,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left laugh.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right laugh.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left laugh.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left laugh.png"),
         )
-    
+
     image mikael pained = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right pained.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left pained.png"),
@@ -1080,10 +707,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left pained.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right pained.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left pained.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left pained.png"),
         )
-    
+
     image mikael pout = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right pout.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left pout.png"),
@@ -1091,10 +718,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left pout.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right pout.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left pout.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left pout.png"),
         )
-    
+
     image mikael sad = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right sad.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left sad.png"),
@@ -1102,10 +729,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left sad.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right sad.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left sad.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left sad.png"),
         )
-    
+
     image mikael sad_smile = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right sad_smile.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left sad_smile.png"),
@@ -1113,10 +740,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left sad_smile.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right sad_smile.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left sad_smile.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left sad_smile.png"),
         )
-    
+
     image mikael shocked = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right shocked.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left shocked.png"),
@@ -1124,10 +751,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left shocked.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right shocked.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left shocked.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left shocked.png"),
         )
-    
+
     image mikael surprised = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right surprised.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left surprised.png"),
@@ -1135,10 +762,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left surprised.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right surprised.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left surprised.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left surprised.png"),
         )
-    
+
     image mikael uncomfortable = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right uncomfortable.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left uncomfortable.png"),
@@ -1146,10 +773,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left uncomfortable.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right uncomfortable.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left uncomfortable.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left uncomfortable.png"),
         )
-    
+
     image mikael unimpressed = ConditionSwitch(
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt arms_crossed right unimpressed.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_crossed' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_crossed left unimpressed.png"),
@@ -1157,10 +784,10 @@ init-1:
         "mikael_outfit == 'shirt' and mikael_pose == 'arms_down' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt arms_down left unimpressed.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'right' ", Image ("images/spr/mikael/mikael shirt hand_ear right unimpressed.png"),
         "mikael_outfit == 'shirt' and mikael_pose == 'hand_ear' and mikael_facing == 'left' ", Image ("images/spr/mikael/mikael shirt hand_ear left unimpressed.png"),
-        
+
         "True", Image ("images/spr/mikael/mikael shirt arms_crossed left unimpressed.png"),
         )
-    
+
     image orthrus neu = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right neu.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left neu.png"),
@@ -1168,10 +795,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left neu.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right neu.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left neu.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left neu.png"),
         )
-    
+
     image orthrus angry = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right angry.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left angry.png"),
@@ -1179,10 +806,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left angry.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right angry.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left angry.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left angry.png"),
         )
-    
+
     image orthrus awkward = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right awkward.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left awkward.png"),
@@ -1190,10 +817,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left awkward.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right awkward.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left awkward.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left awkward.png"),
         )
-    
+
     image orthrus competitive = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right competitive.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left competitive.png"),
@@ -1201,10 +828,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left competitive.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right competitive.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left competitive.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left competitive.png"),
         )
-    
+
     image orthrus complaining = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right complaining.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left complaining.png"),
@@ -1212,10 +839,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left complaining.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right complaining.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left complaining.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left complaining.png"),
         )
-    
+
     image orthrus disgust = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right disgust.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left disgust.png"),
@@ -1223,10 +850,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left disgust.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right disgust.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left disgust.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left disgust.png"),
         )
-    
+
     image orthrus furious = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right furious.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left furious.png"),
@@ -1234,10 +861,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left furious.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right furious.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left furious.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left furious.png"),
         )
-    
+
     image orthrus glare = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right glare.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left glare.png"),
@@ -1245,10 +872,21 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left glare.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right glare.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left glare.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left glare.png"),
         )
-    
+
+    image orthrus grin = ConditionSwitch(
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right grin.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left grin.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_up right grin.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left grin.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right grin.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left grin.png"),
+
+        "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left grin.png"),
+        )
+
     image orthrus interested = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right interested.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left interested.png"),
@@ -1256,10 +894,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left interested.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right interested.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left interested.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left interested.png"),
         )
-    
+
     image orthrus laugh = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right laugh.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left laugh.png"),
@@ -1267,10 +905,21 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left laugh.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right laugh.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left laugh.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left laugh.png"),
         )
-    
+
+    image orthrus playful = ConditionSwitch(
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right playful.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left playful.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_up right playful.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left playful.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right playful.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left playful.png"),
+
+        "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left playful.png"),
+        )
+
     image orthrus sad = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right sad.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left sad.png"),
@@ -1278,10 +927,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left sad.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right sad.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left sad.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left sad.png"),
         )
-    
+
     image orthrus seductive = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right seductive.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left seductive.png"),
@@ -1289,10 +938,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left seductive.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right seductive.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left seductive.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left seductive.png"),
         )
-    
+
     image orthrus shocked = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right shocked.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left shocked.png"),
@@ -1300,10 +949,21 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left shocked.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right shocked.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left shocked.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left shocked.png"),
         )
-    
+
+    image orthrus smile = ConditionSwitch(
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right smile.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left smile.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_up right smile.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left smile.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right smile.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left smile.png"),
+
+        "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left smile.png"),
+        )
+
     image orthrus smirk = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right smirk.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left smirk.png"),
@@ -1311,10 +971,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left smirk.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right smirk.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left smirk.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left smirk.png"),
         )
-    
+
     image orthrus sneer = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right sneer.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left sneer.png"),
@@ -1322,10 +982,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left sneer.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right sneer.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left sneer.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left sneer.png"),
         )
-    
+
     image orthrus snicker = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right snicker.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left snicker.png"),
@@ -1333,10 +993,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left snicker.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right snicker.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left snicker.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left snicker.png"),
         )
-    
+
     image orthrus suggestive = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right suggestive.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left suggestive.png"),
@@ -1344,10 +1004,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left suggestive.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right suggestive.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left suggestive.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left suggestive.png"),
         )
-    
+
     image orthrus surprised = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right surprised.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left surprised.png"),
@@ -1355,10 +1015,21 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left surprised.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right surprised.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left surprised.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left surprised.png"),
         )
-    
+
+    image orthrus suspicious = ConditionSwitch(
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right suspicious.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left suspicious.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_up right suspicious.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left suspicious.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right suspicious.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left suspicious.png"),
+
+        "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left suspicious.png"),
+        )
+
     image orthrus thinking = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right thinking.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left thinking.png"),
@@ -1366,10 +1037,10 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left thinking.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right thinking.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left thinking.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left thinking.png"),
         )
-    
+
     image orthrus unhappy = ConditionSwitch(
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right unhappy.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left unhappy.png"),
@@ -1377,10 +1048,21 @@ init-1:
         "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left unhappy.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right unhappy.png"),
         "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left unhappy.png"),
-        
+
         "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left unhappy.png"),
         )
-    
+
+    image orthrus wary = ConditionSwitch(
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed right wary.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_crossed' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_crossed left wary.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt arms_up right wary.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'arms_up' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt arms_up left wary.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'right' ", Image ("images/spr/orthrus/orthrus shirt hands_hips right wary.png"),
+        "orthrus_outfit == 'shirt' and orthrus_pose == 'hands_hips' and orthrus_facing == 'left' ", Image ("images/spr/orthrus/orthrus shirt hands_hips left wary.png"),
+
+        "True", Image ("images/spr/orthrus/orthrus shirt hands_hips left wary.png"),
+        )
+
     image teal neu = ConditionSwitch(
         "teal_outfit == 'vest' and teal_pose == 'arm_up' and teal_facing == 'right' ", Image ("images/spr/teal/teal vest arm_up right neu.png"),
         "teal_outfit == 'vest' and teal_pose == 'arm_up' and teal_facing == 'left' ", Image ("images/spr/teal/teal vest arm_up left neu.png"),
@@ -1388,6 +1070,6 @@ init-1:
         "teal_outfit == 'vest' and teal_pose == 'arms_down' and teal_facing == 'left' ", Image ("images/spr/teal/teal vest arms_down left neu.png"),
         "teal_outfit == 'vest' and teal_pose == 'hand_hair' and teal_facing == 'right' ", Image ("images/spr/teal/teal vest hand_hair right neu.png"),
         "teal_outfit == 'vest' and teal_pose == 'hand_hair' and teal_facing == 'left' ", Image ("images/spr/teal/teal vest hand_hair left neu.png"),
-        
+
         "True", Image ("images/spr/teal/teal vest hand_hair left neu.png"),
         )

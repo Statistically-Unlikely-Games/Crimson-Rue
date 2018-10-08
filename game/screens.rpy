@@ -310,9 +310,9 @@ screen navigation():
             textbutton _("Save") action ShowMenu("save")
 
         textbutton _("Load") action ShowMenu("load")
-        
+
         textbutton _("CG Gallery") action ShowMenu("cg_gallery")
-        
+
         textbutton _("BG Gallery") action ShowMenu("bg_gallery")
 
         textbutton _("Preferences") action ShowMenu("preferences")
@@ -1513,6 +1513,22 @@ style slider_pref_slider:
     xsize 600
 
 
+screen image_attributes:
 
+    drag:
+        draggable True
 
+        frame:
+            style "empty"
+            background "#0004"
+            padding (5, 5)
 
+            has vbox
+
+            text "Image Attributes" color "#fff" size 14
+
+            null height 10
+
+            for tag in renpy.get_showing_tags(sort=True):
+                $ attributes = " ".join(renpy.get_attributes(tag))
+                text "[tag] [attributes]" color "#fff" size 14

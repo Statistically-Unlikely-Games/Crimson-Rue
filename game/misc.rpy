@@ -75,14 +75,14 @@ init python:
         return _data
 
     def item_added_event(item):
-        #If the item is added to the player's inventory only!
-        if item.kind != "useless":
-            renpy.show_screen("inventory_popup", message="Received " + item.name,item=item.name)
-        else: 
-            renpy.show_screen("inventory_popup", message="Crafting Failed!",item=item.name)
-        if item.kind == "book":
-            #shelf.add_book(eval(item.id))
-            pass # do something
+        if day_cnt != 1: 
+            if item.kind != "useless":
+                renpy.show_screen("inventory_popup", message="Received " + item.name,item=item.name)
+            else: 
+                renpy.show_screen("inventory_popup", message="Crafting Failed!",item=item.name)
+            if item.kind == "book":
+                #shelf.add_book(eval(item.id))
+                pass # do something
 
     def item_sell_event(item):
         if renpy.get_screen("store_screen"):

@@ -9,7 +9,7 @@ init offset = -2
 ## Calling gui.init resets the styles to sensible default values, and sets the
 ## width and height of the game.
 init python:
-    gui.init(1280, 720)
+    gui.init(1920, 1080)
 
 
 
@@ -58,7 +58,7 @@ define gui.muted_color = '#003d51'
 define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#3D2200' 
+define gui.text_color = '#3D2200'
 # Textbox text
 # Inventory money display
 # Inventory item quantity (list and grid mode)
@@ -499,6 +499,3 @@ init python:
 
         gui.nvl_button_width = 1240
         gui.nvl_button_xpos = 20
-
-
-
